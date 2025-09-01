@@ -34,7 +34,7 @@ export default function Home() {
 {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#00A7DE] hover:text-[#00A7DE]">
+                <Link href="/" className="text-black hover:text-[#00A7DE]">
                   Industries
                 </Link>
 

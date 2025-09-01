@@ -34,8 +34,9 @@ export default function ReviewSlider({ testimonials }) {
 
             {/* Quote */}
             <p className="text-gray-700 text-left text-sm flex-grow">
-              "{t.quote}"
-            </p>
+  &quot;{t.quote}&quot;
+</p>
+
 
             {/* Client Info */}
             <div className="mt-6 flex items-center text-left justify-start">
