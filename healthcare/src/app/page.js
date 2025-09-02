@@ -184,13 +184,71 @@ export default function Home() {
                   Features
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/industries"
-                  className="text-black hover:text-[#00A7DE]"
-                >
+              {/* Dropdown list */}
+              <li className="relative group">
+                {/* Parent Link */}
+                <Link href="/" className="text-[#000000] hover:text-[#00A7DE]">
                   Industries
                 </Link>
+
+                {/* Dropdown */}
+                <ul
+                  className="
+    absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md
+    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+    transition-all duration-300 ease-in-out delay-200
+    z-[100]
+  "
+                >
+                  <li>
+                    <Link
+                      href="/industries/Physotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Physiotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/myotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Myotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/personaltrainer"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      personal Trainer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/massagetherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Massage Therapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/psychology"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      psychology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/chiropractor"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Chiropractor
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link
