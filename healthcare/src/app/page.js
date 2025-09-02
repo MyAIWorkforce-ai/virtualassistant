@@ -445,7 +445,7 @@ export default function Home() {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/ai-phone.svg"
+                      src="/images/ai-phone.png"
                       alt="Receptionist using AI phone handling interface"
                       width={400}
                       height={250}
@@ -540,7 +540,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.svg"
+                      src="/images/thumbs-up-icon.png"
                       alt=""
                       width={16}
                       height={16}
