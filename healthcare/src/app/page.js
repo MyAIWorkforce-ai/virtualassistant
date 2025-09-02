@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import FadeInOnScroll from "../_components/animations/FadeInScroll";
-import HoverSlide from "../_components/animations/HoverSlider";
-import HeroAnimation from "../_components/heroanimation";
-import ScrollSlide from "../_components/animations/scrollslide";
-import RotateIn from "../_components/animations/RotateIn";
-import ScaleUp from "../_components/animations/ScaleUp";
-import ReviewSlider from "../_components/animations/reviewslider";
-import { ScrollAnimation, fadeInUp } from "../_components/animations/demo";
-import { slideUp } from "../_components/animations/footer";
-import { slideUpChild } from "../_components/animations/footer";
-import { staggerContainer } from "../_components/animations/footer";
+import FadeInOnScroll from "./_components/animations/FadeInScroll";
+import HoverSlide from "./_components/animations/HoverSlider";
+import HeroAnimation from "./_components/heroanimation";
+import ScrollSlide from "./_components/animations/scrollslide";
+import RotateIn from "./_components/animations/RotateIn";
+import ScaleUp from "./_components/animations/ScaleUp";
+import ReviewSlider from "./_components/animations/reviewslider";
+import { ScrollAnimation, fadeInUp } from "./_components/animations/demo";
+import { slideUp } from "./_components/animations/footer";
+import { slideUpChild } from "./_components/animations/footer";
+import { staggerContainer } from "./_components/animations/footer";
 // import { Pricing } from "../_components/animations/pricing";
 
 export default function Home() {
@@ -276,7 +276,7 @@ export default function Home() {
             </h1>
             <p className="mt-4 text-gray-600">
               Tailored solutions for every industry, designed to save time, cut
-              costs, and <br /> boost productivity.
+              costs, and  boost productivity.
             </p>
 
             {/* Buttons */}
