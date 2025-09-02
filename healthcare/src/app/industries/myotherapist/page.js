@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+
 import { motion } from "framer-motion";
 import { pageFadeIn } from "../../_components/animations/physo3";
 import { staggeredList } from "../../_components/animations/physo3";
@@ -23,6 +25,27 @@ import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
 export default function Home() {
+    const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [phone, setPhone] = useState("");
+  const [isPhoneValid, setIsPhoneValid] = useState(true);
+  const [countryCode, setCountryCode] = useState("+1");
+
+  // Email validation
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+    const valid = /\S+@\S+\.\S+/.test(value); // simple regex
+    setIsEmailValid(valid || value === "");
+  };
+
+  // Phone validation (only numbers, 7–15 digits)
+  const handlePhoneChange = (e) => {
+    const value = e.target.value;
+    setPhone(value);
+    const valid = /^[0-9]{7,15}$/.test(value);
+    setIsPhoneValid(valid || value === "");
+  };
   return (
     <div className="min-h-screen  flex flex-col">
       <header className="w-full  bg-white shadow-sm">
@@ -42,7 +65,7 @@ export default function Home() {
           <nav>
             <ul className="flex items-center space-x-8 text-sm font-medium">
               <li>
-                <Link href="/home" className="text-black hover:text-[#00A7DE]">
+                <Link href="/h" className="text-black hover:text-[#00A7DE]">
                   Home
                 </Link>
               </li>
@@ -58,7 +81,7 @@ export default function Home() {
               {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#00A7DE] hover:text-[#00A7DE]">
+                <Link href="/industries" className="text-[#00A7DE] hover:text-[#00A7DE]">
                   Industries
                 </Link>
 
@@ -148,13 +171,13 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link
+               <Link
                   href="/signup"
-                  className="relative inline-block px-5 py-2 rounded-full font-semibold text-white overflow-hidden group"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-                  <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                  <span className="relative">Sign Up</span>
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -189,25 +212,28 @@ export default function Home() {
               </motion.h1>
 
               <motion.p className="text-lg mb-6" variants={fadeUp}>
-                Your Virtual Assistant for Stress-Free Therapy <br />{" "}
+                Your Virtual Assistant for Stress-Free Therapy <br />
                 Management.
               </motion.p>
 
               {/* Flipper Button */}
-              <motion.button
-                variants={buttonHover}
-                initial="initial"
-                whileHover="hover"
-                viewport={{ once: false }}
-                className="font-medium py-2 px-4 rounded flex items-center gap-2"
-              >
-                Get Started
-                <img
-                  src="/images/svg.png"
-                  alt="Start Icon"
-                  className="h-3 w-3"
-                />
-              </motion.button>
+             <motion.button
+  variants={buttonHover}
+  initial="initial"
+  whileHover="hover"
+  viewport={{ once: false }}
+  className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+>
+  Get Started
+  <img
+    src="/images/svg.png"
+    alt="Start Icon"
+    className="h-3 w-3"
+  />
+</motion.button>
+
             </motion.div>
             {/* Session Confirmed Notification - Bottom Center */}
             <motion.div className="absolute bottom-24 left-153 transform -translate-x-1/2 bg-white text-gray-800 px-6 py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer">
@@ -507,10 +533,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Automated Reminders
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-regular text-[#797A7D]">
                   Book and manage manual therapy or soft-tissue treatment
                   sessions without back-and-forth messaging.
                 </p>
@@ -529,10 +555,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Exercise Reminder
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-regular text-[#797A7D]">
                   Send patients automated reminders for stretches and corrective
                   exercises to improve recovery.
                 </p>
@@ -551,10 +577,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Calendar Sync
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-regular text-[#797A7D]">
                   Sync with calendars to avoid overlapping bookings and
                   conflicts.
                 </p>
@@ -576,10 +602,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Patient Progress Tracking
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-regular text-[#797A7D]">
                   Record treatment notes, track muscle function improvements,
                   and monitor recovery timelines.
                 </p>
@@ -598,10 +624,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-[#797A7D]">
                   AI Assistant
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-regular text-gray-600">
                   Answer common patient inquiries via AI chat or voice
                   assistant.
                 </p>
@@ -646,7 +672,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Time Savings</h3>
+            <h3 className="text-base font-semibold">Time Savings</h3>
             <p className="text-sm">
               Save hours weekly by automated
               <br /> scheduling and admin tasks
@@ -664,7 +690,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Reduced Drop-offs</h3>
+            <h3 className="text-base font-semibold">Reduced Drop-offs</h3>
             <p className="text-sm">
               Reduces missed appointments with
               <br /> smart confirmation and tracking
@@ -682,7 +708,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Better Care</h3>
+            <h3 className="text-base font-semibold">Better Care</h3>
             <p className="text-sm">
               Improve consistency in patient care with <br /> accurate records
             </p>
@@ -699,7 +725,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">More Patient Focus</h3>
+            <h3 className="text-base font-semibold">More Patient Focus</h3>
             <p className="text-sm">
               {" "}
               Frees up time for hands-on <br /> therapy instead of admin work
@@ -731,7 +757,7 @@ Example use cases
           viewport={{ once: false }}
           className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
         >
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="text-base font-semibold mb-2">
             Chronic Back Pain Consultation
           </h3>
           <p className="text-sm text-[#797A7D] leading-relaxed">
@@ -782,7 +808,7 @@ Example use cases
             >
               <div className="flex items-center gap-4 mb-2">
                 <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                <h3 className="text-lg text-[#000000] font-semibold">
+                <h3 className="text-base text-[#000000] font-semibold">
                   {box.title}
                 </h3>
               </div>
@@ -797,126 +823,162 @@ Example use cases
 from
 ======================== */}
 
-      <section className="w-full bg-[#00A7DE] py-16">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          variants={formVariant}
-          className="max-w-3xl mx-auto px-6 text-center"
+     <section className="w-full bg-[#00A7DE] py-16">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
+        variants={formVariant}
+        className="max-w-3xl mx-auto px-6 text-center"
+      >
+        {/* Heading */}
+        <motion.h2
+          variants={staggerChild}
+          className="text-2xl md:text-3xl font-bold text-white"
         >
-          {/* Heading */}
-          <motion.h2
-            variants={staggerChild}
-            className="text-2xl md:text-3xl font-bold text-white"
-          >
-            Get Your AI Assistant for Healthcare
-          </motion.h2>
-          <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
-            Join thousands of industries who are transforming patient care with
-            our AI solutions.
-          </motion.p>
+          Get Your AI Assistant for Healthcare
+        </motion.h2>
+        <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
+          Join thousands of industries who are transforming patient care with
+          our AI solutions.
+        </motion.p>
 
-          {/* Form */}
-          <motion.form
-            variants={staggerParent}
-            initial="hidden"
-            animate="show"
-            className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
-          >
-            {/* Floating gradient background effect */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
-              animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-            />
+        {/* Form */}
+        <motion.form
+          variants={staggerParent}
+          initial="hidden"
+          animate="show"
+          className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
+        >
+          {/* Floating gradient background effect */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
+            animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+          />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-              {/* Full Name */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Email */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Phone */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your organization"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Industry */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Industry
-                </label>
-                <select className="w-full border border-[#D1D5DB] text-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]">
-                  <option value="" className="text-[#D1D5DB]">
-                    {" "}
-                    Search or select your industry{" "}
-                  </option>
-                  <option>Healthcare</option>
-                  <option>Pharmaceutical</option>
-                  <option>Technology</option>
-                  <option>Education</option>
-                  <option>Other</option>
-                </select>
-              </motion.div>
-            </div>
-
-            {/* Message */}
-            <motion.div variants={staggerChild} className="mt-6 relative z-10">
-              <label className="block text-sm font-medium text-black mb-1">
-                How can we help?
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            {/* Full Name */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Full Name
               </label>
-              <textarea
-                placeholder="Tell us about your specific needs or challenges"
-                rows={4}
-                className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full border border-[#D1D5DB]  text-black placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
               />
             </motion.div>
 
-            {/* Submit */}
-            <motion.div
-              variants={staggerChild}
-              className="mt-6 text-center relative z-10"
-            >
-              <motion.button
-                whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
-                whileTap={{ scale: 0.95 }}
-                type="submit"
-                className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
-              >
-                Submit
-              </motion.button>
+            {/* Email */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Email Address
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={handleEmailChange}
+                placeholder="Enter your email"
+                className={`w-full border border-[#D1D5DB]  text-black placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                  ${
+                    isEmailValid
+                      ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
+                      : "border-red-500 focus:ring-red-500"
+                  }`}
+              />
             </motion.div>
-          </motion.form>
-        </motion.div>
-      </section>
 
+            {/* Phone with Country Code */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Phone Number
+              </label>
+              <div className="flex gap-2">
+                {/* Country code dropdown */}
+                <select
+                  value={countryCode}
+                  onChange={(e) => setCountryCode(e.target.value)}
+                  className="border border-[#D1D5DB] rounded-md px-3 py-2 text-black focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                >
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+92">🇵🇰 +92</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+81">🇯🇵 +81</option>
+                  <option value="+971">🇦🇪 +971</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+86">🇨🇳 +86</option>
+                </select>
+
+                {/* Phone input */}
+                <input
+                  type="text"
+                  value={phone}
+                  onChange={handlePhoneChange}
+                  placeholder="Enter your number"
+                  className={`w-full border border-[#D1D5DB]  text-black placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                    ${
+                      isPhoneValid
+                        ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
+                        : "border-red-500 focus:ring-red-500"
+                    }`}
+                />
+              </div>
+            </motion.div>
+
+            {/* Industry */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Industry
+              </label>
+              <select className="w-full border border-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]">
+                <option value="" className="text-[#D1D5DB]">
+                  Search or select your industry
+                </option>
+                <option>Healthcare</option>
+                <option>Pharmaceutical</option>
+                <option>Technology</option>
+                <option>Education</option>
+                <option>Other</option>
+              </select>
+            </motion.div>
+          </div>
+
+          {/* Message */}
+          <motion.div variants={staggerChild} className="mt-6 relative z-10">
+            <label className="block text-sm font-medium text-black mb-1">
+              How can we help?
+            </label>
+            <textarea
+              placeholder="Tell us about your specific needs or challenges"
+              rows={4}
+              className="w-full border border-[#D1D5DB]  text-black placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+            />
+          </motion.div>
+
+          {/* Submit */}
+          <motion.div
+            variants={staggerChild}
+            className="mt-6 text-center relative z-10"
+          >
+           <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  type="submit"
+  className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE]"
+>
+  Submit
+</motion.button>
+
+          </motion.div>
+        </motion.form>
+      </motion.div>
+    </section>
       {/* ======================
 Explore other industries
 ========================== */}

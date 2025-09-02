@@ -141,7 +141,7 @@ export default function Home() {
           <nav>
             <ul className="flex items-center space-x-8 text-sm font-medium ">
               <li>
-                <Link href="/home" className="text-black hover:text-[#00A7DE]">
+                <Link href="/" className="text-black hover:text-[#00A7DE]">
                   Home
                 </Link>
               </li>
@@ -157,7 +157,10 @@ export default function Home() {
               {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#00A7DE] hover:text-[#00A7DE]">
+                <Link
+                  href="/industries"
+                  className="text-[#00A7DE] hover:text-[#00A7DE]"
+                >
                   Industries
                 </Link>
 
@@ -178,11 +181,11 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                     <Link
+                    <Link
                       href="/industries/myotherapist"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     Myotherapist
+                      Myotherapist
                     </Link>
                   </li>
                   <li>
@@ -206,7 +209,7 @@ export default function Home() {
                       href="/industries/psychology"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     psychology
+                      psychology
                     </Link>
                   </li>
                   <li>
@@ -214,7 +217,7 @@ export default function Home() {
                       href="/industries/chiropractor"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     Chiropractor
+                      Chiropractor
                     </Link>
                   </li>
                 </ul>
@@ -249,11 +252,11 @@ export default function Home() {
               <li>
                 <Link
                   href="/signup"
-                  className="relative inline-block px-5 py-2 rounded-full font-semibold text-white overflow-hidden group"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
+                    transition-all duration-300 ease-in-out
+                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-                  <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                  <span className="relative">Sign Up</span>
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -334,7 +337,7 @@ export default function Home() {
               </div>
 
               {/* Description */}
-              <p className="text-sm text-gray-700 mt-4">
+              <p className="text-sm text-[#797A7D] mt-4">
                 {service.description}
               </p>
 
@@ -384,7 +387,7 @@ export default function Home() {
                 />
                 <h3 className="text-lg text-black font-semibold">Accountant</h3>
               </div>
-              <p className="text-gray-600 text-sm mt-3">
+              <p className="text-[#797A7D] text-sm mt-3">
                 Smarter Scheduling for Consultants. Books client calls, manages
                 packages, and tracks deliverables.
               </p>
@@ -524,7 +527,7 @@ export default function Home() {
                 />
                 <h3 className="text-lg text-black font-semibold">Mechanic</h3>
               </div>
-              <p className="text-gray-600 text-sm mt-3">
+              <p className="text-[#797A7D] text-sm mt-3">
                 Reservation Management Made Easy. Manages table bookings,
                 cancellations, and automated waitlists.
               </p>
@@ -664,7 +667,7 @@ export default function Home() {
                 />
                 <h3 className="text-lg text-black font-semibold">Accountant</h3>
               </div>
-              <p className="text-gray-600 text-sm mt-3">
+              <p className="text-[#797A7D] text-sm mt-3">
                 Reservation Management Made Easy.
                 <br /> Manages table bookings, cancellations, and <br />{" "}
                 automated waitlists.

@@ -31,8 +31,8 @@ export const fadeInItem = {
 export const buttonHover = {
   initial: { backgroundColor: "#FFFFFF", color: "#00A7DE" }, // default white bg, blue text
   hover: {
-    backgroundColor: "#000000", // black bg
-    color: "#FFFFFF",           // white text
+    backgroundColor: "#ffffff", // black bg
+    color: "#00A7DE",           // white text
     transition: {
       duration: 0.3,
       ease: "easeInOut",

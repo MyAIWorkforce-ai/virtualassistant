@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { pageFadeIn } from "../../_components/animations/physo3";
@@ -23,6 +25,27 @@ import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
 export default function Home() {
+  
+ const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [phone, setPhone] = useState("");
+  const [isPhoneValid, setIsPhoneValid] = useState(true);
+  const [countryCode, setCountryCode] = useState("+1");
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+    setIsEmailValid(value.includes("@"));
+  };
+
+  // Phone validation (basic: only digits, min 7–15 length)
+  const handlePhoneChange = (e) => {
+    const value = e.target.value;
+    setPhone(value);
+    const valid = /^[0-9]{7,15}$/.test(value);
+    setIsPhoneValid(valid || value === "");
+    
+  };
   return (
     <div className="min-h-screen  flex flex-col">
       <header className="w-full  bg-white shadow-sm">
@@ -42,7 +65,7 @@ export default function Home() {
           <nav>
             <ul className="flex items-center space-x-8 text-sm font-medium">
               <li>
-                <Link href="/home" className="text-black hover:text-[#00A7DE]">
+                <Link href="/" className="text-black hover:text-[#00A7DE]">
                   Home
                 </Link>
               </li>
@@ -54,24 +77,25 @@ export default function Home() {
                   Features
                 </Link>
               </li>
-             
+
               {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#00A7DE] hover:text-[#00A7DE]">
+                <Link
+                  href="/industries"
+                  className="text-[#00A7DE] hover:text-[#00A7DE]"
+                >
                   Industries
                 </Link>
 
                 {/* Dropdown */}
                 <ul
-                  
-  className="
+                  className="
     absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md
     opacity-0 invisible group-hover:opacity-100 group-hover:visible
     transition-all duration-300 ease-in-out delay-200
     z-[100]
   "
-
                 >
                   <li>
                     <Link
@@ -82,11 +106,11 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                     <Link
+                    <Link
                       href="/industries/myotherapist"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     Myotherapist
+                      Myotherapist
                     </Link>
                   </li>
                   <li>
@@ -110,7 +134,7 @@ export default function Home() {
                       href="/industries/psychology"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     psychology
+                      psychology
                     </Link>
                   </li>
                   <li>
@@ -118,7 +142,7 @@ export default function Home() {
                       href="/industries/chiropractor"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                     Chiropractor
+                      Chiropractor
                     </Link>
                   </li>
                 </ul>
@@ -153,11 +177,11 @@ export default function Home() {
               <li>
                 <Link
                   href="/signup"
-                  className="relative inline-block px-5 py-2 rounded-full font-semibold text-white overflow-hidden group"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-                  <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                  <span className="relative">Sign Up</span>
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -169,122 +193,138 @@ export default function Home() {
       <>
         {/* Hero Section */}
         <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
+          <div className="absolute inset-0 backdrop-blur-sm"></div>
 
-  <div className="absolute inset-0 backdrop-blur-sm"></div>
+          <div className="relative z-10 flex flex-col md:flex-row pl-30 items-center justify-between px-8 py-16 border-b border-white">
+            {/* Text on Left */}
+            <motion.div
+              className="text-white max-w-xl"
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false }}
+            >
+              <motion.div
+                className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+                variants={fadeUp}
+              >
+                Physio Therapy
+              </motion.div>
 
-  <div className="relative z-10 flex flex-col md:flex-row pl-30 items-center justify-between px-8 py-16 border-b border-white">
-    {/* Text on Left */}
-    <motion.div
-      className="text-white max-w-xl"
-      variants={fadeUp}
-      initial="hidden"
-      animate="show"
-      viewport={{ once: false }}
-    >
-      <motion.div
-        className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
-        variants={fadeUp}
-      >
-        Physio Therapy
-      </motion.div>
+              <motion.h1 className="text-4xl font-bold mb-4" variants={fadeUp}>
+                AI for Physiotherapists
+              </motion.h1>
 
-      <motion.h1 className="text-4xl font-bold mb-4" variants={fadeUp}>
-        AI for Physiotherapists
-      </motion.h1>
+              <motion.p className="text-lg mb-6" variants={fadeUp}>
+                A virtual assistant that books, reminds, and <br /> records,
+                while you work on your patients.
+              </motion.p>
 
-      <motion.p className="text-lg mb-6" variants={fadeUp}>
-        A virtual assistant that books, reminds, and <br /> records,
-        while you work on your patients.
-      </motion.p>
+              {/* Flipper Button */}
+            <motion.button
+  whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3, ease: "easeInOut" }}
+  className="relative overflow-hidden bg-[#ffffff] text-[#00A7DE] font-medium py-2 px-4 rounded flex items-center gap-2 
+             transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] group"
+>
+  
 
-      {/* Flipper Button */}
-      <motion.button
-        variants={buttonHover}
-        initial="initial"
-        whileHover="hover"
-        viewport={{ once: false }}
-        className="font-medium py-2 px-4 rounded flex items-center gap-2"
-      >
-        Get Started
-        <img src="/images/svg.png" alt="Start Icon" className="h-3 w-3" />
-      </motion.button>
-    </motion.div>
+  <span className="relative z-10 flex items-center gap-2">
+    Get Started
+    <img src="/images/svg.png" alt="Start Icon" className="h-3 w-3" />
+  </span>
+</motion.button>
 
-    {/* Image on Right */}
-    <motion.div
-      className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden"
-      variants={fadeUp}
-      initial="hidden"
-      animate="show"
-      viewport={{ once: false }}
-    >
-      <img
-        src="/images/doctor.png"
-        alt="Doctor"
-        className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
-        style={{ objectPosition: "right center" }}
-      />
-    </motion.div>
-  </div>
-</section>
 
-{/* 🌟 New Background Section with Gradient/Grid */}
-<section className="relative w-full h-32 -mt-16  md:h-40 bg-white">
-  {/* Optional: Add grid overlay */}
-  <div className="absolute inset-0 grid grid-cols-12  gap-4 opacity-10">
-    {Array.from({ length: 12 }).map((_, i) => (
-      <div key={i} className="border-l border-white/20 h-full"></div>
-    ))}
-  </div>
-</section>
 
-{/* Stats Section (Overlay Card) */}
-<section className="relative z-20 -mt-20 flex justify-center px-8">
-  <motion.div
+            </motion.div>
+
+            {/* Image on Right */}
+            <motion.div
+              className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden"
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false }}
+            >
+              <img
+                src="/images/doctor.png"
+                alt="Doctor"
+                className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
+                style={{ objectPosition: "right center" }}
+              />
+            </motion.div>
+          </div>
+        </section>
+
+        {/*  New Background Section with Gradient/Grid */}
+        <section className="relative w-full h-32 -mt-16  md:h-40 bg-white">
+          {/* Optional: Add grid overlay */}
+          <div className="absolute inset-0 grid grid-cols-12  gap-4 opacity-10">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <div key={i} className="border-l border-white/20 h-full"></div>
+            ))}
+          </div>
+        </section>
+
+        {/* Stats Section (Overlay Card) */}
+        <section className="relative z-20 -mt-20 flex justify-center px-8">
+          <motion.div
             className="flex items-center justify-center gap-45 border rounded-2xl p-6 shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full"
-    variants={staggerFadeUp}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false }}
-  >
-    {/* Stat 1 */}
-    <motion.div
-      className="flex flex-col items-center"
-      variants={fadeInItem}
-    >
-      <img src="/images/clock.png" alt="Icon 1" className="h-7 w-7 mb-2" />
-      <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-      <p className="text-[#797A7D] text-sm text-center">
-        Reduction in admin time for therapy <br /> professionals.
-      </p>
-    </motion.div>
+            variants={staggerFadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+          >
+            {/* Stat 1 */}
+            <motion.div
+              className="flex flex-col items-center"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/clock.png"
+                alt="Icon 1"
+                className="h-7 w-7 mb-2"
+              />
+              <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
+              <p className="text-[#797A7D] text-sm text-center">
+                Reduction in admin time for therapy <br /> professionals.
+              </p>
+            </motion.div>
 
-    {/* Stat 2 */}
-    <motion.div
-      className="flex flex-col items-center"
-      variants={fadeInItem}
-    >
-      <img src="/images/frame.png" alt="Icon 2" className="h-7 w-7 mb-2" />
-      <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-      <p className="text-[#797A7D] text-sm text-center">
-        Patient satisfaction with AI-assisted <br /> therapy
-      </p>
-    </motion.div>
+            {/* Stat 2 */}
+            <motion.div
+              className="flex flex-col items-center"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/frame.png"
+                alt="Icon 2"
+                className="h-7 w-7 mb-2"
+              />
+              <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
+              <p className="text-[#797A7D] text-sm text-center">
+                Patient satisfaction with AI-assisted <br /> therapy
+              </p>
+            </motion.div>
 
-    {/* Stat 3 */}
-    <motion.div
-      className="flex flex-col items-center"
-      variants={fadeInItem}
-    >
-      <img src="/images/wave.png" alt="Icon 3" className="h-7 w-7 mb-2" />
-      <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-      <p className="text-[#797A7D] text-sm text-center">
-        Boost in patient retention
-      </p>
-    </motion.div>
-  </motion.div>
-</section>
-
+            {/* Stat 3 */}
+            <motion.div
+              className="flex flex-col items-center"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/wave.png"
+                alt="Icon 3"
+                className="h-7 w-7 mb-2"
+              />
+              <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
+              <p className="text-[#797A7D] text-sm text-center">
+                Boost in patient retention
+              </p>
+            </motion.div>
+          </motion.div>
+        </section>
       </>
       {/* =======================
          Key features
@@ -470,11 +510,11 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Automated Reminders
                 </h3>
-                <p className="text-sm text-gray-600">
-                  Send automated reminders for upcoming physio sessions <br />{" "}
+                <p className="text-sm text-[#797A7D]">
+                  Send automated reminders for upcoming physio sessions 
                   and appointments.
                 </p>
               </div>
@@ -492,10 +532,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Exercise Routines
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#797A7D]">
                   Provide patients with personalized exercise routines and{" "}
                   <br /> reminders.
                 </p>
@@ -514,10 +554,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Calendar Sync
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#797A7D]">
                   Sync with calendars to avoid overlapping bookings and <br />{" "}
                   conflicts.
                 </p>
@@ -539,10 +579,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   Patient Progress Tracking
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#797A7D]">
                   Track rehabilitation milestones and log patient progress{" "}
                   <br /> digitally.
                 </p>
@@ -561,10 +601,10 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-base font-semibold text-gray-900">
                   AI Assistant
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#797A7D]">
                   Answer common patient inquiries via AI chat or voice <br />{" "}
                   assistant.
                 </p>
@@ -609,7 +649,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Time Savings</h3>
+            <h3 className="text-base font-semibold">Time Savings</h3>
             <p className="text-sm">
               Save hours weekly on scheduling and <br /> admin tasks.
             </p>
@@ -626,9 +666,10 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Reduced Drop-offs</h3>
+            <h3 className="text-base font-semibold">Reduced Drop-offs</h3>
             <p className="text-sm">
-              Reduce patient drop-off with smart<br/> reminders.
+              Reduce patient drop-off with smart
+              <br /> reminders.
             </p>
           </motion.div>
 
@@ -643,7 +684,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">Better Care</h3>
+            <h3 className="text-base font-semibold">Better Care</h3>
             <p className="text-sm">
               Improve consistency in patient care with <br /> accurate records.
             </p>
@@ -660,7 +701,7 @@ Productivity Gains
               className="w-14 h-14 transition-transform"
               whileHover={{ scale: 1.2 }}
             />
-            <h3 className="text-lg font-semibold">More Face Time</h3>
+            <h3 className="text-base font-semibold">More Face Time</h3>
             <p className="text-sm">Get more face-to-face time with patients.</p>
           </motion.div>
         </motion.div>
@@ -689,7 +730,7 @@ Example use cases
           viewport={{ once: false }}
           className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
         >
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="text-base font-semibold mb-2">
             Sports Injury Recovery Patient
           </h3>
           <p className="text-sm text-[#797A7D] leading-relaxed">
@@ -740,7 +781,7 @@ Example use cases
             >
               <div className="flex items-center gap-4 mb-2">
                 <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                <h3 className="text-lg text-[#000000] font-semibold">
+                <h3 className="text-base text-[#000000] font-semibold">
                   {box.title}
                 </h3>
               </div>
@@ -755,122 +796,156 @@ Example use cases
 from
 ======================== */}
 
-      <section className="w-full bg-[#00A7DE] py-16">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          variants={formVariant}
-          className="max-w-3xl mx-auto px-6 text-center"
+    <section className="w-full bg-[#00A7DE] py-16">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
+        variants={formVariant}
+        className="max-w-3xl mx-auto px-6 text-center"
+      >
+        {/* Heading */}
+        <motion.h2
+          variants={staggerChild}
+          className="text-2xl md:text-3xl font-bold text-white"
         >
-          {/* Heading */}
-          <motion.h2
-            variants={staggerChild}
-            className="text-2xl md:text-3xl font-bold text-white"
-          >
-            Get Your AI Assistant for Healthcare
-          </motion.h2>
-          <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
-            Join thousands of industries who are transforming patient care with
-            our AI solutions.
-          </motion.p>
+          Get Your AI Assistant for Healthcare
+        </motion.h2>
+        <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
+          Join thousands of industries who are transforming patient care with
+          our AI solutions.
+        </motion.p>
 
-          {/* Form */}
-          <motion.form
-            variants={staggerParent}
-            initial="hidden"
-            animate="show"
-            className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
-          >
-            {/* Floating gradient background effect */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
-              animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-            />
+        {/* Form */}
+        <motion.form
+          variants={staggerParent}
+          initial="hidden"
+          animate="show"
+          className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
+        >
+          {/* Floating gradient background effect */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
+            animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+          />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-              {/* Full Name */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Email */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Phone */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your organization"
-                  className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                />
-              </motion.div>
-
-              {/* Industry */}
-              <motion.div variants={staggerChild}>
-                <label className="block text-sm text-black font-medium mb-1">
-                  Industry
-                </label>
-                <select className="w-full border border-[#D1D5DB] text-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]">
-                  <option value=""  className="text-[#D1D5DB]"> Search or select your industry </option>
-                  <option>Healthcare</option>
-                  <option>Pharmaceutical</option>
-                  <option>Technology</option>
-                  <option>Education</option>
-                  <option>Other</option>
-                </select>
-              </motion.div>
-            </div>
-
-            {/* Message */}
-            <motion.div variants={staggerChild} className="mt-6 relative z-10">
-              <label className="block text-sm font-medium text-black mb-1">
-                How can we help?
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            {/* Full Name */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Full Name
               </label>
-              <textarea
-                placeholder="Tell us about your specific needs or challenges"
-                rows={4}
-                className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
               />
             </motion.div>
 
-            {/* Submit */}
-            <motion.div
-              variants={staggerChild}
-              className="mt-6 text-center relative z-10"
-            >
-              <motion.button
-                whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
-                whileTap={{ scale: 0.95 }}
-                type="submit"
-                className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
-              >
-                Submit
-              </motion.button>
+            {/* Email */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black boder font-medium mb-1">
+                Email Address
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={handleEmailChange}
+                placeholder="Enter your email"
+                className={`w-full border border-[#D1D5DB] placeholder-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]
+                ${isEmailValid ? "border-[#D1D5DB] focus:ring-[#00A7DE]" : "border-red-500 focus:ring-red-500"}`}
+              />
             </motion.div>
-          </motion.form>
-        </motion.div>
-      </section>
+
+            {/* Phone with Country Code */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Phone Number
+              </label>
+              <div className="flex gap-2">
+                {/* Country code dropdown */}
+                <motion.select
+                  value={countryCode}
+                  onChange={(e) => setCountryCode(e.target.value)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border border-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                >
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+92">🇵🇰 +92</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+81">🇯🇵 +81</option>
+                  <option value="+971">🇦🇪 +971</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+86">🇨🇳 +86</option>
+                </motion.select>
+
+                {/* Phone input */}
+                <input
+                  type="text"
+                  value={phone}
+                  onChange={handlePhoneChange}
+                  placeholder="Enter your number"
+                  className={`w-full border border-[#D1D5DB] placeholder-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]
+                  ${isPhoneValid ? "border-[#D1D5DB] focus:ring-[#00A7DE]" : "border-red-500 focus:ring-red-500"}`}
+                />
+              </div>
+            </motion.div>
+
+            {/* Industry */}
+            <motion.div variants={staggerChild}>
+              <label className="block text-sm text-black font-medium mb-1">
+                Industry
+              </label>
+              <select className="w-full border border-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]">
+                <option value="" className="text-[#D1D5DB]">
+                  Search or select your industry
+                </option>
+                <option>Healthcare</option>
+                <option>Pharmaceutical</option>
+                <option>Technology</option>
+                <option>Education</option>
+                <option>Other</option>
+              </select>
+            </motion.div>
+          </div>
+
+          {/* Message */}
+          <motion.div variants={staggerChild} className="mt-6 relative z-10">
+            <label className="block text-sm font-medium text-black mb-1">
+              How can we help?
+            </label>
+            <textarea
+              placeholder="Tell us about your specific needs or challenges"
+              rows={4}
+              className="w-full border border-[#D1D5DB] placeholder-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+            />
+          </motion.div>
+
+          {/* Submit */}
+          <motion.div
+            variants={staggerChild}
+            className="mt-6 text-center relative z-10"
+          >
+            <motion.button
+  whileTap={{ scale: 0.95 }}
+  type="submit"
+  className="relative overflow-hidden bg-[#00A7DE] text-white px-10 py-3 rounded-lg text-lg font-medium 
+             transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 group"
+>
+  
+
+  <span className="relative z-10">Submit</span>
+</motion.button>
+
+          </motion.div>
+        </motion.form>
+      </motion.div>
+    </section>
 
       {/* ======================
 Explore other industries

@@ -28,12 +28,23 @@ export default function Home() {
     {
       icon: "/images/myotherapist.png",
       title: "Myotherapist",
-      desc: "Automates client bookings, tracks therapy sessions, and keeps your calendar organized.",
+      desc: (
+        <>
+          Automates client bookings, tracks therapy sessions, and keeps your
+          calendar
+          <br /> organized.
+        </>
+      ),
     },
     {
       icon: "/images/massage-therapist.png",
       title: "Massage Therapist",
-      desc: "Effortless Bookings for Massage Therapists. Relax your clients while we handle your schedule.",
+      desc: (
+        <>
+          Effortless Bookings for Massage Therapists. Relax your clients while
+          we handle your schedule.
+        </>
+      ),
     },
     {
       icon: "/images/lawyer.png",
@@ -151,9 +162,7 @@ export default function Home() {
 
   //   Section 1 Home page
   return (
-   <div className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-[1260px] h-[800px]">
- 
-
+    <div className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-[1260px] h-[800px]">
       {/* HEADER */}
       <header className="w-full bg-white shadow-lg">
         <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
@@ -187,7 +196,10 @@ export default function Home() {
               {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#000000] hover:text-[#00A7DE]">
+                <Link
+                  href="/industries"
+                  className="text-[#000000] hover:text-[#00A7DE]"
+                >
                   Industries
                 </Link>
 
@@ -279,16 +291,11 @@ export default function Home() {
               <li>
                 <Link
                   href="/signup"
-                  className="relative inline-block px-5 py-2 rounded-full font-semibold text-white overflow-hidden group"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  {/* Default background (blue) */}
-                  <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-
-                  {/* Hover background (black) sliding in */}
-                  <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-
-                  {/* Button text stays on top */}
-                  <span className="relative">Sign Up</span>
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -332,9 +339,9 @@ export default function Home() {
                 deleteSpeed={50}
               />
             </h1>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-base text-[#797A7D]">
               Tailored solutions for every industry, designed to save time, cut
-              costs, and  boost productivity.
+              costs, and boost productivity.
             </p>
 
             {/* Buttons */}
@@ -342,20 +349,21 @@ export default function Home() {
               {/* Primary button with slide hover */}
               <Link
                 href="/get-started"
-                className="relative inline-block px-6 py-3 rounded-full font-semibold text-white overflow-hidden group"
+                className="bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
-                <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-                <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                <span className="relative">Get Started</span>
+                Get Started
               </Link>
 
               {/* Outline button with slide hover */}
               <Link
                 href="/industries"
-                className="relative inline-block px-6 py-3 rounded-full font-semibold text-black border-2 border-[#00A7DE] overflow-hidden group"
+                className=" text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] 
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
-                <span className="absolute inset-0 bg-blue-100 -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                <span className="relative">Explore Industries</span>
+                Explore Industries
               </Link>
             </div>
           </motion.div>
@@ -408,11 +416,11 @@ export default function Home() {
                       width={20}
                       height={28}
                     />
-                    <h3 className="text-lg font-bold text-black">
+                    <h3 className="text-xl font-bold text-black">
                       AI Phone Handling
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-left font-medium mt-2 text-sm">
+                  <p className="text-[#797A7D] text-left font-medium mt-2 text-sm">
                     Professional call answering with natural responses and
                     context awareness (like “We’re right next to the post
                     office”).
@@ -424,7 +432,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       98% Satisfaction
                     </p>
                   </div>
@@ -452,11 +460,11 @@ export default function Home() {
                       width={20}
                       height={28}
                     />
-                    <h3 className="text-lg font-bold text-black">
+                    <h3 className="text-xl font-bold text-black">
                       Appointment Scheduling
                     </h3>
                   </div>
-                  <p className="text-gray-600 font-medium text-left mt-2 text-sm">
+                  <p className="text-[#797A7D] font-medium text-left mt-2 text-sm">
                     Direct bookings with Google Calendar or Cal.com integration,
                     eliminating scheduling conflicts and back-and-forth emails.
                   </p>
@@ -467,7 +475,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       95% Satisfaction
                     </p>
                   </div>
@@ -495,11 +503,11 @@ export default function Home() {
                       width={20}
                       height={28}
                     />
-                    <h3 className="text-lg font-bold text-black">
+                    <h3 className="text-xl font-bold text-black">
                       Smart Transcription
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-left font-medium mt-2 text-sm">
+                  <p className="text-[#797A7D] text-left font-medium mt-2 text-sm">
                     Conversations transcribed instantly, stored with session
                     notes for easy reference and searchability.
                   </p>
@@ -510,7 +518,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       92% Satisfaction
                     </p>
                   </div>
@@ -538,11 +546,11 @@ export default function Home() {
                       width={20}
                       height={28}
                     />
-                    <h3 className="text-lg font-bold text-black">
+                    <h3 className="text-xl font-bold text-black">
                       Voice Memo Capture
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-left font-medium mt-2 text-sm">
+                  <p className="text-[#797A7D] text-left font-medium mt-2 text-sm">
                     Record voice memos after appointments and automatically link
                     them to client files for comprehensive record-keeping.
                   </p>
@@ -553,7 +561,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       89% Satisfaction
                     </p>
                   </div>
@@ -581,11 +589,11 @@ export default function Home() {
                       width={20}
                       height={28}
                     />
-                    <h3 className="text-lg font-bold text-black">
+                    <h3 className="text-xl font-bold text-black">
                       Branded Dashboard
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-left font-medium mt-2 text-sm">
+                  <p className="text-[#797A7D] text-left font-medium mt-2 text-sm">
                     Easy-to-use backend customized for your business with your
                     logo, colors, and preferred layout options.
                   </p>
@@ -596,7 +604,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       96% Satisfaction
                     </p>
                   </div>
@@ -628,7 +636,7 @@ export default function Home() {
                       White-Labeled Booking Page
                     </h3>
                   </div>
-                  <p className="text-gray-600 font-medium text-left mt-2 text-sm">
+                  <p className="text-[#797A7D] font-medium text-left mt-2 text-sm">
                     Seamless, branded booking experience for your clients that
                     matches your company’s visual identity.
                   </p>
@@ -639,7 +647,7 @@ export default function Home() {
                       width={16}
                       height={16}
                     />
-                    <p className="mt-0 ml-1 text-sm text-gray-500">
+                    <p className="mt-0 ml-1 text-xs text-[#6B7280]">
                       94% Satisfaction
                     </p>
                   </div>
@@ -664,7 +672,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center p-10">
           {/* Heading */}
           <RotateIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#00A7DE] mb-2">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-2">
               Why Choose Us?
             </h2>
           </RotateIn>
@@ -676,11 +684,11 @@ export default function Home() {
 
           {/* Subheading + Description */}
           <RotateIn delay={0.4}>
-            <h3 className="text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-xl md:text-4xl font-semibold text-gray-800 mb-4">
               Why Businesses Trust Our <br />
               Virtual Receptionist
             </h3>
-            <p className="text-gray-500 max-w-2xl font-regular mx-auto mb-10">
+            <p className="text-[#797A7D] max-w-2xl font-regular text-base mx-auto mb-10">
               We combine human-like AI with powerful automation so you can focus
               on growing your business.
             </p>
@@ -728,10 +736,10 @@ export default function Home() {
                     className="w-6 h-6 flex-shrink-0 mt-1"
                   />
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800">
+                    <h4 className="text-lg font-semibold text-[#000000]">
                       {item.title}
                     </h4>
-                    <p className="text-gray-500 text-sm">{item.description}</p>
+                    <p className="text-[#797A7D] text-sm">{item.description}</p>
                   </div>
                 </div>
               </RotateIn>
@@ -743,18 +751,21 @@ export default function Home() {
             <div className="mt-10 flex justify-center space-x-4">
               <a
                 href="#"
-                className="relative overflow-hidden px-6 py-3 bg-[#00A7DE] text-white rounded-lg shadow group"
+                className="bg-[#00A7DE] text-white px-6 py-3 rounded-lg shadow font-medium
+             transition-all duration-300 ease-in-out
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
-                <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
-                <span className="relative">Start Free Trial</span>
+                Start Free Trial
               </a>
 
               <a
                 href="#"
-                className="relative overflow-hidden px-6 py-3 border border-[#00A7DE] text-[#00A7DE] rounded-lg group"
+                className="border border-[#00A7DE] text-[#00A7DE] px-6 py-3 rounded-lg font-medium
+             transition-all duration-300 ease-in-out
+             hover:bg-[#00A7DE] hover:text-white
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
-                <span className="absolute inset-0 bg-[#00A7DE]/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
-                <span className="relative">Schedule Demo</span>
+                Schedule Demo
               </a>
             </div>
           </RotateIn>
@@ -773,7 +784,7 @@ export default function Home() {
           {/* underline bar */}
           <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-6 rounded-full"></div>
 
-          <p className="text-gray-600 mb-12">
+          <p className="text-[#797A7D] text-base mb-12">
             Our AI receptionist adapts to your specific industry needs with
             specialized vocabulary and ,<br /> workflows.
           </p>
@@ -798,7 +809,7 @@ export default function Home() {
 
                   {/* Description and link remain left-aligned */}
                   <div className="text-left">
-                    <p className="text-gray-600 mb-4">{item.desc}</p>
+                    <p className="text-[#797A7D] text-sm mb-4">{item.desc}</p>
                     <a
                       href="#"
                       className="text-[#00A7DE] font-medium hover:underline"
@@ -813,14 +824,13 @@ export default function Home() {
 
           {/* Button */}
           <div className="mt-12">
-            <button className="relative px-6 py-3 bg-[#EFF6FF] text-black font-medium rounded-md shadow overflow-hidden group">
-              {/* Sliding background */}
-              <span className="absolute inset-0 bg-[#00A7DE] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-
-              {/* Button text */}
-              <span className="relative z-10 group-hover:text-white">
-                View All Industries
-              </span>
+            <button
+              className="px-6 py-3 bg-[#EFF6FF] text-black font-medium rounded-md shadow
+             transition-all duration-300 ease-in-out
+             hover:bg-[#00A7DE] hover:text-white
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+            >
+              View All Industries
             </button>
           </div>
         </div>
@@ -836,7 +846,7 @@ export default function Home() {
 
           {/* underline bar */}
           <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
-          <p className="text-gray-600 mb-12">
+          <p className="text-[#797A7D] mb-12">
             Our AI assistant handles your calls from start to finish, just like
             a human receptionist.
           </p>
@@ -865,7 +875,7 @@ export default function Home() {
                   <h3 className="font-semibold text-gray-800 mb-2">
                     Client calls
                   </h3>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-[#797A7D] text-sm">
                     AI answers with your business greeting
                   </p>
 
@@ -899,7 +909,7 @@ export default function Home() {
                   <h3 className="font-semibold text-gray-800 mb-2">
                     Appointment booked
                   </h3>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-[#797A7D] text-sm">
                     Syncs with your calendar instantly
                   </p>
 
@@ -932,7 +942,7 @@ export default function Home() {
                   <h3 className="font-semibold text-gray-800 mb-2">
                     Notes & transcript
                   </h3>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-[#797A7D] text-sm">
                     Saved in your CRM automatically
                   </p>
 
@@ -951,8 +961,6 @@ export default function Home() {
 
       {/* Transparent Pricing */}
       <ScaleUp>
-          
-
         <section className="bg-[#F9FAFB] py-20 ">
           <div className="max-w-6xl mx-auto px-6 text-center">
             {/* Heading */}
@@ -960,7 +968,7 @@ export default function Home() {
               Simple, Transparent Pricing
               <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-5 mb-5"></span>
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#797A7D] mb-6">
               Choose the perfect plan for your business needs.
             </p>
 
@@ -970,7 +978,7 @@ export default function Home() {
                 className={`cursor-pointer text-sm ${
                   billingCycle === "monthly"
                     ? "text-blue-400 font-semibold"
-                    : "text-gray-500"
+                    : "text-[#797A7D]"
                 }`}
                 onClick={() => setBillingCycle("monthly")}
               >
@@ -993,7 +1001,7 @@ export default function Home() {
                 className={`cursor-pointer text-sm ${
                   billingCycle === "yearly"
                     ? "text-[#098DC9] font-semibold"
-                    : "text-gray-500"
+                    : "text-[#797A7D]"
                 }`}
                 onClick={() => setBillingCycle("yearly")}
               >
@@ -1044,10 +1052,10 @@ export default function Home() {
                       ))}
                     </ul>
                     <button
-                      className={`mt-8 w-full py-3 rounded-lg font-medium transition ${
+                      className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
                         plan.highlighted
-                          ? "bg-[#00A7DE] text-white hover:bg-[#098DC9]"
-                          : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                          ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                          : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
                       }`}
                     >
                       {plan.button}
@@ -1058,7 +1066,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
       </ScaleUp>
       {/* WHAT OUR CLIENT SAY SECTION */}
       <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8">
@@ -1070,7 +1077,7 @@ export default function Home() {
           </h2>
 
           {/* Subheading */}
-          <p className="text-gray-500 text-base mb-12">
+          <p className="text-[#797A7D] text-base mb-12">
             Businesses across industries are saving time and improving customer
             satisfaction
             <br /> with our virtual receptionist solution.

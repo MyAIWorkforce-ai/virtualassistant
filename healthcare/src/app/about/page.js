@@ -36,7 +36,7 @@ export default function HomePage() {
               <ul className="flex items-center space-x-8 text-sm font-medium ">
                 <li>
                   <Link
-                    href="/home"
+                    href="/"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Home
@@ -53,7 +53,7 @@ export default function HomePage() {
                 {/* Dropdown list */}
               <li className="relative group">
                 {/* Parent Link */}
-                <Link href="/" className="text-[#000000] hover:text-[#00A7DE]">
+                <Link href="/industries" className="text-[#000000] hover:text-[#00A7DE]">
                   Industries
                 </Link>
 
@@ -146,14 +146,15 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/signup"
-                    className="relative inline-block px-5 py-2 rounded-full font-semibold text-white overflow-hidden group"
-                  >
-                    <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-300 ease-out group-hover:translate-x-full"></span>
-                    <span className="absolute inset-0 bg-[#050607] -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-                    <span className="relative">Sign Up</span>
-                  </Link>
+                 <Link
+  href="/signup"
+  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
+             transition-all duration-300 ease-in-out 
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 inline-block text-center"
+>
+  Sign Up
+</Link>
+
                 </li>
               </ul>
             </nav>
@@ -177,43 +178,39 @@ export default function HomePage() {
             {/* CTA Buttons */}
             <div className="flex space-x-3">
               {/* Swiper Get Started Button */}
-              <Link
-                href="/get-started"
-                className="relative inline-block px-6 py-2.5 font-semibold text-white rounded-lg overflow-hidden group"
-              >
-                {/* Background Slide */}
-                <span className="absolute inset-0 bg-[#00A7DE] transition-transform duration-500 ease-out group-hover:-translate-x-full"></span>
-                <span className="absolute inset-0 bg-[#050607] translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0"></span>
+<Link
+  href="/get-started"
+  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
+             flex items-center gap-2 justify-center 
+             transition-all duration-300 ease-in-out 
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+>
+  Get Started
+  <Image
+    src="/images/arrow.png"
+    alt="Get Started"
+    width={12.25}
+    height={20}
+  />
+</Link>
 
-                {/* Text + Icon */}
-                <span className="relative flex items-center gap-2">
-                  Get Started
-                  <Image
-                    src="/images/arrow.png"
-                    alt="Get Started"
-                    width={12.25}
-                    height={20}
-                  />
-                </span>
-              </Link>
 
               {/* Swiper Watch Demo Button */}
-              <button className="relative inline-block px-6 py-2.5 font-medium text-gray-700 rounded-lg overflow-hidden group border border-gray-300">
-                {/* Background Slide */}
-                <span className="absolute inset-0 bg-[#F9FAFB] transition-transform duration-500 ease-out group-hover:-translate-x-full"></span>
-                <span className="absolute inset-0 bg-gray-300 translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0"></span>
+             <button
+  className="relative  px-6 py-2.5 font-medium text-gray-700 rounded-lg 
+             border border-gray-300 flex items-center gap-2 justify-center
+             transition-all duration-300 ease-in-out 
+             hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
+>
+  <Image
+    src="/images/play.png"
+    alt="Watch Demo"
+    width={12.25}
+    height={20}
+  />
+  Watch Demo
+</button>
 
-                {/* Text + Icon */}
-                <span className="relative flex items-center gap-2">
-                  <Image
-                    src="/images/play.png"
-                    alt="Watch Demo"
-                    width={12.25}
-                    height={20}
-                  />
-                  Watch Demo
-                </span>
-              </button>
             </div>
           </div>
 
@@ -376,7 +373,7 @@ export default function HomePage() {
                   <Image src={f.icon} alt={f.title} width={40} height={40} />
                   <div>
                     <h3 className="font-semibold text-gray-800">{f.title}</h3>
-                    <p className="text-gray-600 text-sm">{f.text}</p>
+                    <p className="text-[#797A7D] text-sm">{f.text}</p>
                   </div>
                 </motion.div>
               ))}
@@ -419,7 +416,7 @@ export default function HomePage() {
                 text: "Gain valuable insights from client  interactions to improve service delivery and  identify new business opportunities.",
               },
               {
-                icon: "/images/hand.png",
+                icon: "/images/hand1.png",
                 title: "Client-Focused",
                 text: "Deliver personalized experiences that make clients feel valued and understood, strengthening relationships.",
               },
@@ -445,7 +442,7 @@ export default function HomePage() {
               >
                 <Image src={c.icon} alt={c.title} width={48} height={48} />
                 <h3 className="mt-4 font-semibold text-gray-800">{c.title}</h3>
-                <p className="text-gray-600 text-sm mt-2">{c.text}</p>
+                <p className="text-[#797A7D] text-sm mt-2">{c.text}</p>
               </motion.div>
             ))}
           </div>
