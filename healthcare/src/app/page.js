@@ -445,7 +445,7 @@ export default function Home() {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/ai-phone.png"
+                      src="/images/ai-phone.svg"
                       alt="Receptionist using AI phone handling interface"
                       width={400}
                       height={250}
