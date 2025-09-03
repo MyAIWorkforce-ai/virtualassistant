@@ -1,13 +1,15 @@
 "use client";
 
+
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideUp, slideUpChild, staggerContainer } from "../_components/animations/footer";
 import { fadeUp, fadeInItem, blinkButton, staggerContainer as staggerFormContainer } from "../_components/animations/formanimation";
 import { useState } from "react";
+ import Head from "next/head";
 
-export default function Home() {
+export default function ContactPage() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -26,23 +28,21 @@ export default function Home() {
   const countryCodes = [
     { code: "+1", country: "USA" },
     { code: "+44", country: "UK" },
-    { code: "+92", country: "Pakistan" },
-    { code: "+61", country: "Australia" },
-    { code: "+91", country: "India" },
-    { code: "+81", country: "Japan" },
-    { code: "+49", country: "Germany" },
-    { code: "+33", country: "France" },
+    { code: "+92", country: "Pk" },
+    { code: "+61", country: "AU" },
+    { code: "+91", country: "IN" },
+    { code: "+81", country: "JP" },
+    { code: "+49", country: "GE" },
+    { code: "+33", country: "FR" },
   ];
 
   const handleChange = (field, value) => {
     setFormData({ ...formData, [field]: value });
 
-    // Email validation
     if (field === "email") {
       setErrors({ ...errors, email: !value.includes("@") });
     }
 
-    // Phone validation (numbers only)
     if (field === "phone") {
       const regex = /^[0-9]*$/;
       setErrors({ ...errors, phone: !regex.test(value) });
@@ -50,178 +50,302 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-sky-100 to-white">
-      {/* Header */}
-      <header className="w-full bg-white shadow-sm">
-        <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Image src="/images/logo1.png" alt="Logo" width={177} height={40} className="pl-4" />
+    <>
+      {/* SEO Head */}
+      <Head>
+        <title>Contact Us | AI Business Assistant Solutions</title>
+        <meta
+          name="description"
+          content="Get started with our AI-powered business assistant solutions. Contact us today to explore packages for healthcare, finance, education, and more."
+        />
+        <meta name="keywords" content="AI Assistant, Business Automation, Contact, Packages" />
+      </Head>
+
+      <div className="min-h-screen bg-gradient-to-r from-sky-100 to-white">
+        {/* Header */}
+        <header className="w-full bg-white shadow-sm">
+          <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
+            {/* Logo with SEO-friendly alt */}
+            <div className="flex items-center">
+              <Image
+                src="/images/logo1.png"
+                alt="AI Business Assistant Logo"
+                width={177}
+                height={40}
+                className="pl-4"
+              />
+            </div>
+
+            {/* Navigation */}
+           <nav>
+              <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
+                <li>
+                  <Link href="/" className="text-black hover:text-[#00A7DE]">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/features"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Features
+                  </Link>
+                </li>
+                <li className="relative group">
+                  <Link
+                    href="/industries"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Industries
+                  </Link>
+                  <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
+                    <li>
+                      <Link
+                        href="/industries/Physotherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Physiotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/myotherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Myotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/personaltrainer"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Personal Trainer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/massagetherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Massage Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/psychology"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Psychology
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/chiropractor"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Chiropractor
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link
+                    href="/pricing"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-[#00A7DE]"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/login"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Log In
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/signup"
+                    className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                  >
+                    Sign Up
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </div>
+        </header>
 
-          {/* Navigation */}
-          <nav>
-            <ul className="flex items-center space-x-8 text-sm font-medium">
-              <li><Link href="/" className="text-black hover:text-[#00A7DE]">Home</Link></li>
-              <li><Link href="/features" className="text-black hover:text-[#00A7DE]">Features</Link></li>
-              <li className="relative group">
-                <Link href="/industries" className="text-black hover:text-[#00A7DE]">Industries</Link>
-                <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
-                  {["Physiotherapist","Myotherapist","Personal Trainer","Massage Therapist","Psychology","Chiropractor"].map((item,i)=>(
-                    <li key={i}><Link href={`/industries/${item.toLowerCase().replace(/\s/g,'')}`} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">{item}</Link></li>
-                  ))}
-                </ul>
-              </li>
-              <li><Link href="/pricing" className="text-black hover:text-[#00A7DE]">Pricing</Link></li>
-              <li><Link href="/about" className="text-black hover:text-[#00A7DE]">About</Link></li>
-              <li><Link href="/contact" className="text-[#00A7DE]">Contact</Link></li>
-              <li><Link href="/login" className="text-black hover:text-[#00A7DE]">Log In</Link></li>
-              <li>
-                <Link href="/signup" className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 inline-block text-center">
-                  Sign Up
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        {/* Main Section */}
+        <main className="flex-1 flex flex-col items-center justify-center px-6 py-16">
+          {/* Hero */}
+          <motion.div
+            className="text-center max-w-2xl mb-10"
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+          >
+            <h1 className="text-3xl md:text-5xl font-bold text-[#00A7DE]">
+              Let’s Get You Started
+            </h1>
+            <p className="mt-2 text-[#797A7D]">
+              Whether you’re exploring AI for your business or ready to scale,
+              our team is here<br/> to help.
+            </p>
+          </motion.div>
 
-      {/* Main Section */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6 py-16">
-        {/* Hero */}
-        <motion.div className="text-center max-w-2xl mb-10" variants={fadeUp} initial="hidden" animate="visible" viewport={{ once: false }}>
-          <h1 className="text-3xl md:text-5xl font-bold text-[#00A7DE]">Let’s Get You Started</h1>
-          <p className="mt-2 text-[#797A7D]">Whether you’re exploring AI for your business or ready to scale, our team is here <br /> to help.</p>
-        </motion.div>
+          {/* Form */}
+          <motion.div
+            className="bg-white shadow-md rounded-lg p-6 sm:p-8 w-full max-w-2xl"
+            variants={staggerFormContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            
 
-        {/* Form */}
-       <motion.div
-  className="bg-white shadow-md rounded-lg p-8 w-full max-w-2xl"
-  variants={staggerFormContainer}
-  initial="hidden"
-  animate="visible"
-  viewport={{ once: false }}
->
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* Full Name */}
-    <motion.div variants={fadeInItem}>
-      <label className="block text-black text-sm mb-2">Full Name*</label>
-      <input
-        type="text"
-        required
-        placeholder="Admin Assistant"
-        value={formData.fullName}
-        onChange={(e) => handleChange("fullName", e.target.value)}
-        className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
-      />
-    </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Full Name */}
+              <motion.div variants={fadeInItem}>
+                <label className="block text-black text-sm mb-2">Full Name*</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="Admin Assistant"
+                  value={formData.fullName}
+                  onChange={(e) => handleChange("fullName", e.target.value)}
+                  className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
+                />
+              </motion.div>
 
-    {/* Phone Number */}
-<motion.div variants={fadeInItem}>
-  <label className="block text-black text-sm mb-2">Phone Number*</label>
-  <div className="flex">
-    <select
-      required
-      value={formData.countryCode}
-      onChange={(e) => handleChange("countryCode", e.target.value)}
-      className="w-15 border border-gray-300 text-xs text-black rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500"
-    >
-      {countryCodes.map((c, i) => (
-        <option key={i} value={c.code}>
-          {c.country} ({c.code})
-        </option>
-      ))}
-    </select>
-    <input
-      type="tel"
-      required
-      placeholder="1234567890"
-      value={formData.phone}
-      onChange={(e) => handleChange("phone", e.target.value)}
-      className={`flex-1 border-t border-b border-r rounded-r-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
-        errors.phone ? "border-red-500 ring-red-500" : "border-gray-300 ring-sky-500"
-      }`}
-    />
-  </div>
-</motion.div>
+              {/* Phone Number */}
+              <motion.div variants={fadeInItem}>
+                <label className="block text-black text-sm mb-2">Phone Number*</label>
+                <div className="flex">
+                  <select
+                    required
+                    value={formData.countryCode}
+                    onChange={(e) => handleChange("countryCode", e.target.value)}
+                    className="w-24 border border-gray-300 text-sm text-black rounded-l-lg px-0 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  >
+                    {countryCodes.map((c, i) => (
+                      <option key={i} value={c.code}>
+                        {c.country} ({c.code})
+                      </option>
+                    ))}
+                  </select>
+                  <input
+                    type="tel"
+                    required
+                    placeholder="1234567890"
+                    value={formData.phone}
+                    onChange={(e) => handleChange("phone", e.target.value)}
+                    className={`flex-1 border-t border-b border-r rounded-r-lg px-0 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
+                      errors.phone
+                        ? "border-red-500 ring-red-500"
+                        : "border-gray-300 ring-sky-500"
+                    }`}
+                  />
+                </div>
+              </motion.div>
 
+              {/* Email */}
+              <motion.div variants={fadeInItem} className="md:col-span-2">
+                <label className="block text-black text-sm mb-2">Email Address*</label>
+                <input
+                  type="email"
+                  required
+                  placeholder="Admin123@gmail.com"
+                  value={formData.email}
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  className={`w-full border rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
+                    errors.email
+                      ? "border-red-500 ring-red-500"
+                      : "border-gray-300 ring-sky-500"
+                  }`}
+                />
+              </motion.div>
 
-    {/* Email */}
-    <motion.div variants={fadeInItem} className="md:col-span-2">
-      <label className="block text-black text-sm mb-2">Email Address*</label>
-      <input
-        type="email"
-        required
-        placeholder="Admin123@gmail.com"
-        value={formData.email}
-        onChange={(e) => handleChange("email", e.target.value)}
-        className={`w-full border rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
-          errors.email ? "border-red-500 ring-red-500" : "border-gray-300 ring-sky-500"
-        }`}
-      />
-    </motion.div>
+              {/* Assistant Team */}
+              <motion.div variants={fadeInItem}>
+                <label className="block text-black text-sm mb-2">
+                  Assistant Team (Industry)*
+                </label>
+                <select
+                  required
+                  value={formData.assistantTeam}
+                  onChange={(e) => handleChange("assistantTeam", e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
+                >
+                  <option value="">Select an industry</option>
+                  <option>Healthcare</option>
+                  <option>Finance</option>
+                  <option>Education</option>
+                </select>
+              </motion.div>
 
-    {/* Assistant Team */}
-    <motion.div variants={fadeInItem}>
-      <label className="block text-black text-sm mb-2">Assistant Team (Industry)*</label>
-      <select
-        required
-        value={formData.assistantTeam}
-        onChange={(e) => handleChange("assistantTeam", e.target.value)}
-        className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
-      >
-        <option value="">Select an industry</option>
-        <option>Healthcare</option>
-        <option>Finance</option>
-        <option>Education</option>
-      </select>
-    </motion.div>
+              {/* Package Selection */}
+              <motion.div variants={fadeInItem}>
+                <label className="block text-black text-sm mb-2">Package Selection*</label>
+                <select
+                  required
+                  value={formData.package}
+                  onChange={(e) => handleChange("package", e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
+                >
+                  <option value="">Select a package</option>
+                  <option>Basic</option>
+                  <option>Pro</option>
+                  <option>Enterprise</option>
+                </select>
+              </motion.div>
 
-    {/* Package Selection */}
-    <motion.div variants={fadeInItem}>
-      <label className="block text-black text-sm mb-2">Package Selection*</label>
-      <select
-        required
-        value={formData.package}
-        onChange={(e) => handleChange("package", e.target.value)}
-        className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
-      >
-        <option value="">Select a package</option>
-        <option>Basic</option>
-        <option>Pro</option>
-        <option>Enterprise</option>
-      </select>
-    </motion.div>
+              {/* Message */}
+              <motion.div variants={fadeInItem} className="md:col-span-2">
+                <label className="block text-black text-sm mb-2">Message / Comments</label>
+                <textarea
+                  rows={4}
+                  placeholder="Your message..."
+                  value={formData.message}
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
+                />
+              </motion.div>
+            </div>
 
-    {/* Message / Comments */}
-    <motion.div variants={fadeInItem} className="md:col-span-2">
-      <label className="block text-black text-sm mb-2">Message / Comments</label>
-      <textarea
-        rows={4}
-        placeholder="Your message..."
-        value={formData.message}
-        onChange={(e) => handleChange("message", e.target.value)}
-        className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
-      />
-    </motion.div>
-  </div>
-
-  {/* Submit Button */}
-  <div className="mt-6 text-center">
-    <motion.button
-      type="submit"
-      className="px-6 py-3 bg-[#00A7DE] text-white rounded-lg shadow-lg hover:bg-[#0090C0] transition-colors"
-      variants={blinkButton}
-      initial="rest"
-      animate="rest"
-      viewport={{ once: false }}
-      whileHover="hover"
-    >
-      Submit Request
-    </motion.button>
-  </div>
-</motion.div>
-
+            {/* Submit */}
+            <div className="mt-6 text-center">
+              <motion.button
+                type="submit"
+                className="px-6 py-3 bg-[#00A7DE] text-white rounded-lg shadow-lg hover:bg-[#0090C0] transition-colors"
+                variants={blinkButton}
+                initial="rest"
+                animate="rest"
+                whileHover="hover"
+              >
+                Submit Request
+              </motion.button>
+            </div>
+          </motion.div>
+      
 
         {/* Contact Info */}
         <motion.div className="text-center mt-10 text-[#797A7D]" variants={fadeUp} initial="hidden" viewport={{ once: false }} animate="visible">
@@ -293,5 +417,6 @@ export default function Home() {
         </motion.div>
       </motion.footer>
     </div>
+    </>
   );
 }

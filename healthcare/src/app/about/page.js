@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
+
 import { ScrollAnimation, fadeInUp } from "../_components/animations/demo";
 import { slideUp } from "../_components/animations/footer";
 import { slideUpChild } from "../_components/animations/footer";
@@ -16,29 +18,45 @@ export default function HomePage() {
   // ===========================
 
   return (
-    <main className="min-h-screen  bg-gradient-to-r from-white to-sky-100">
-      <ZoomTransition routeKey="home">
-        <header className="w-full bg-white ">
-          <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
-            {/* Logo */}
-            <div className="flex items-center">
-              <Image
-                src="/images/logo1.png"
-                alt="Logo"
-                width={177.01}
-                height={40}
-                className="pl-4"
-              />
-            </div>
+   <>
+      {/* ✅ SEO Meta Tags */}
+      <Head>
+        <title>AI Business Assistant | Smart Technology for Your Workflow</title>
+        <meta
+          name="description"
+          content="Discover the AI-powered assistant combining top technologies to streamline, secure, and simplify your business operations. Get started today!"
+        />
+        <meta
+          name="keywords"
+          content="AI Assistant, Business Automation, Smart Chat, Workflow Technology, Digital Assistant"
+        />
+        <meta name="author" content="Your Company Name" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.yoursite.com/" />
+      </Head>
 
-            {/* Navigation */}
-            <nav>
-              <ul className="flex items-center space-x-8 text-sm font-medium ">
+      <main className="min-h-screen bg-gradient-to-r from-white to-sky-100">
+        <ZoomTransition routeKey="home">
+          {/* ✅ Navbar */}
+          <header className="w-full bg-white">
+            <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
+              {/* Logo */}
+              <div className="flex items-center">
+                <Image
+                  src="/images/logo1.png"
+                  alt="Company Logo"
+                  width={177}
+                  height={40}
+                  className="pl-4"
+                  priority
+                />
+              </div>
+
+              {/* Navigation */}
+              <nav>
+              <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
                 <li>
-                  <Link
-                    href="/"
-                    className="text-black hover:text-[#00A7DE]"
-                  >
+                  <Link href="/" className="text-black hover:text-[#00A7DE]">
                     Home
                   </Link>
                 </li>
@@ -50,72 +68,64 @@ export default function HomePage() {
                     Features
                   </Link>
                 </li>
-                {/* Dropdown list */}
-              <li className="relative group">
-                {/* Parent Link */}
-                <Link href="/industries" className="text-[#000000] hover:text-[#00A7DE]">
-                  Industries
-                </Link>
-
-                {/* Dropdown */}
-                <ul
-                  className="
-    absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md
-    opacity-0 invisible group-hover:opacity-100 group-hover:visible
-    transition-all duration-300 ease-in-out delay-200
-    z-[100]
-  "
-                >
-                  <li>
-                    <Link
-                      href="/industries/Physotherapist"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Physiotherapist
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/industries/myotherapist"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Myotherapist
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/industries/personaltrainer"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      personal Trainer
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/industries/massagetherapist"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Massage Therapist
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/industries/psychology"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      psychology
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/industries/chiropractor"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Chiropractor
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+                <li className="relative group">
+                  <Link
+                    href="/industries"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Industries
+                  </Link>
+                  <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
+                    <li>
+                      <Link
+                        href="/industries/Physotherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Physiotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/myotherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Myotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/personaltrainer"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Personal Trainer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/massagetherapist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Massage Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/psychology"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Psychology
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/chiropractor"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Chiropractor
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
                 <li>
                   <Link
                     href="/pricing"
@@ -125,7 +135,10 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-[#00A7DE]">
+                  <Link
+                    href="/about"
+                    className="text-[#00A7DE]"
+                  >
                     About
                   </Link>
                 </li>
@@ -146,194 +159,198 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                 <Link
-  href="/signup"
-  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 inline-block text-center"
->
-  Sign Up
-</Link>
-
+                  <Link
+                    href="/signup"
+                    className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                  >
+                    Sign Up
+                  </Link>
                 </li>
               </ul>
             </nav>
-          </div>
-        </header>
-
-        {/* Hero Section */}
-        <section className="flex flex-col-reverse pl-13 lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-12">
-          {/* Left Content */}
-          <div className="flex-1 pl-6  ">
-            <h1 className="text-5xl lg:text-5xl font-bold text-gray-900 mb-6">
-              The Technology Behind{" "}
-              <span className="text-[#00A7DE]">the Assistant</span>
-            </h1>
-            <p className="text-[#797A7D] mb-8 max-w-lg">
-              We've combined leading technologies to create a <br /> reliable,
-              secure, and human-like assistant that works <br /> seamlessly for
-              your business.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex space-x-3">
-              {/* Swiper Get Started Button */}
-<Link
-  href="/get-started"
-  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
-             flex items-center gap-2 justify-center 
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
->
-  Get Started
-  <Image
-    src="/images/arrow.png"
-    alt="Get Started"
-    width={12.25}
-    height={20}
-  />
-</Link>
-
-
-              {/* Swiper Watch Demo Button */}
-             <button
-  className="relative  px-6 py-2.5 font-medium text-gray-700 rounded-lg 
-             border border-gray-300 flex items-center gap-2 justify-center
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
->
-  <Image
-    src="/images/play.png"
-    alt="Watch Demo"
-    width={12.25}
-    height={20}
-  />
-  Watch Demo
-</button>
-
             </div>
-          </div>
+          </header>
 
-          {/* Right Image (Chat widget screenshot) */}
-          <motion.div
-            className="flex-1 flex pr-5 justify-center items-center"
-            initial={{ opacity: 0, scale: 0.9, y: 40 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <Image
-              src="/images/assistant.png"
-              alt="AI Chat"
-              width={608}
-              height={430}
-            />
-          </motion.div>
-        </section>
-      </ZoomTransition>
+          {/* ✅ Hero Section */}
+          <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-12">
+            {/* Left Content */}
+            <div className="flex-1 pl-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                The Technology Behind{" "}
+                <span className="text-[#00A7DE]">Our AI Assistant</span>
+              </h1>
+              <p className="text-[#797A7D] mb-8 max-w-lg">
+                We’ve combined advanced AI technologies to create a reliable,
+                secure, and human-like assistant that works seamlessly for your
+                business.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/get-started"
+                  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
+                  flex items-center gap-2 justify-center 
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                >
+                  Get Started
+                  <Image
+                    src="/images/arrow.png"
+                    alt="Arrow icon for Get Started"
+                    width={12}
+                    height={20}
+                  />
+                </Link>
+
+                <button
+                  className="relative px-6 py-2.5 font-medium text-gray-700 rounded-lg 
+                  border border-gray-300 flex items-center gap-2 justify-center
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
+                >
+                  <Image
+                    src="/images/play.png"
+                    alt="Play icon for Watch Demo"
+                    width={12}
+                    height={20}
+                  />
+                  Watch Demo
+                </button>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <motion.div
+              className="flex-1 flex pr-5 justify-center hover items-center"
+              initial={{ opacity: 0, scale: 0.9, y: 40 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Image
+                src="/images/assistant.png"
+                alt="AI Assistant Chat Interface"
+                width={608}
+                height={430}
+                className="max-w-full h-auto "
+                priority
+              />
+            </motion.div>
+          </section>
+        </ZoomTransition>
 
       {/* Technology Section */}
      <>
-      {/* ==== Powered by Leading Technologies ==== */}
-      <section className="w-full bg-white py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold text-[#00A7DE] mb-4">
-            Powered by Leading Technologies
-          </h2>
-          <p className="text-[#797A7D] mb-10 max-w-1xl mx-auto">
-            Our assistant combines best-in-class technologies to deliver a
-            seamless, intelligent <br /> experience that adapts to your business
-            needs.
-          </p>
+  {/* ==== Powered by Leading Technologies ==== */}
+  <section
+    className="w-full bg-white py-16"
+    aria-labelledby="leading-tech-title"
+  >
+    <div className="max-w-7xl mx-auto px-6 text-center">
+      {/* Main H1 for SEO */}
+      <h1
+        id="leading-tech-title"
+        className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-4"
+      >
+        Powered by Leading Technologies
+      </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {[
-              {
-                title: "Twilio",
-                description:
-                  "Enabling seamless communication through calls and SMS to keep you connected with clients.",
-                bgColor: "bg-white",
-                icon: "/images/twillio.png",
-              },
-              {
-                title: "Speech Recognition",
-                description:
-                  "Whisper, AssemblyAI, and Google Speech-to-Text for accurate transcriptions.",
-                bgColor: "bg-white",
-                icon: "/images/speech.png",
-              },
-              {
-                title: "Automation",
-                description:
-                  "n8n and Make.com to automate workflows between calendar, CRM, and client records.",
-                bgColor: "bg-white",
-                icon: "/images/automation.png",
-              },
-              {
-                title: "CRM Integration",
-                description:
-                  "HubSpot and custom CRM solutions to manage and track client relationships.",
-                bgColor: "bg-white",
-                icon: "/images/CRM.png",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                transition={{ delay: index * 0.2 }}
-                className={`flex flex-col items-start justify-start w-[280px] h-[256px] p-6 rounded-lg shadow-md transition-transform hover:scale-105 hover:shadow-xl ${item.bgColor}`}
-              >
-                <Image
-                  src={item.icon}
-                  alt={`${item.title} icon`}
-                  width={48}
-                  height={48}
-                  className="mb-4"
-                />
-                <h3 className="text-xl font-medium text-black mb-2 text-left">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-[#797A7D] text-left">
-                  {item.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* SEO-friendly intro text */}
+      <p className="text-[#797A7D] mb-10 max-w-2xl mx-auto text-base md:text-lg">
+      Our assistant combines best-in-class technologies to deliver a seamless, intelligent experience that adapts to your business needs.
+      </p>
 
-      {/* ==== How Our Technology Works ==== */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center">
+        {[
+          {
+            title: "Twilio",
+            description:
+              "Enabling seamless communication through calls and SMS to keep you connected with clients.",
+            bgColor: "bg-white",
+            icon: "/images/twillio.png",
+          },
+          {
+            title: "Speech Recognition",
+            description:
+              "Whisper, AssemblyAI, and Google Speech-to-Text for accurate transcriptions.",
+            bgColor: "bg-white",
+            icon: "/images/speech.png",
+          },
+          {
+            title: "Automation",
+            description:
+              "n8n and Make.com to automate workflows between calendar, CRM, and client records.",
+            bgColor: "bg-white",
+            icon: "/images/automation.png",
+          },
+          {
+            title: "CRM Integration",
+            description:
+              "HubSpot and custom CRM solutions to manage and track client relationships.",
+            bgColor: "bg-white",
+            icon: "/images/CRM.png",
+          },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ delay: index * 0.2 }}
+            className={`flex flex-col items-start justify-start w-[280px] h-[256px] p-6 rounded-lg shadow-md transition-transform hover:scale-105 hover:shadow-xl ${item.bgColor}`}
+          >
+            <Image
+              src={item.icon}
+              alt={`${item.title} technology logo`}
+              width={48}
+              height={48}
+              className="mb-4"
+            />
+            <h2 className="text-xl font-medium text-black mb-2 text-left">
+              {item.title}
+            </h2>
+            <p className="text-sm text-[#797A7D] text-left">
+              {item.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+        {/* ==== How Our Technology Works ==== */}
+
       <section className="w-full bg-gradient-to-r from-sky-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Centered Heading */}
+          {/* ==== Centered Heading ==== */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-[#00A7DE] mb-3">
+            <h1 className="text-2xl md:text-5xl font-bold text-[#00A7DE] mb-3">
               How Our Technology Works
-            </h2>
+            </h1>
             <p className="text-[#797A7D]">
-              A seamless integration of technologies working behind the scenes,
-              so you can
-              <br /> focus on what matters most – your clients.
+              A seamless integration of technologies working behind the scenes, so
+              you can <br /> focus on what matters most – your clients.
             </p>
           </div>
 
-          {/* Content Grid */}
-          <div className="grid grid-cols-1 pr-14 md:grid-cols-2 gap-12 items-center">
+          {/* ==== Content Grid ==== */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Side Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false }}
-              className="flex justify-center pl-7"
+              className="flex justify-center px-4 md:px-0"
             >
               <Image
                 src="/images/div.png"
-                alt="AI Assistant Technology Flow"
+                alt="AI assistant technology flow diagram"
                 width={500}
                 height={400}
+                className="w-full max-w-[500px] h-auto"
+                priority
               />
             </motion.div>
 
@@ -366,13 +383,21 @@ export default function HomePage() {
                   variants={fadeRight}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once:false, amount: 0.3 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   transition={{ delay: i * 0.3 }}
                   className="flex items-start gap-4"
                 >
-                  <Image src={f.icon} alt={f.title} width={40} height={40} />
+                  <Image
+                    src={f.icon}
+                    alt={`${f.title} icon`}
+                    width={40}
+                    height={40}
+                    className="w-10 h-10"
+                  />
                   <div>
-                    <h3 className="font-semibold text-gray-800">{f.title}</h3>
+                    <h2 className="font-semibold text-gray-800 text-lg">
+                      {f.title}
+                    </h2>
                     <p className="text-[#797A7D] text-sm">{f.text}</p>
                   </div>
                 </motion.div>
@@ -382,73 +407,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ==== Why Our Technology Matters ==== */}
-      <section className="w-full bg-[#F9FAFB] py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-3">
-              Why Our Technology Matters
-            </h2>
-            <p className="text-[#797A7D]">
-              Our technology stack is designed to work seamlessly in the
-              background,
-              <br />
-              delivering tangible benefits to your business.
-            </p>
-          </div>
+        {/* ==== Why Our Technology Matters ==== */}
+       <section className="w-full bg-[#F9FAFB] py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Section Heading */}
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      {/* ✅ Use H1 only once per page (this could be your main title if this is the page’s focus) */}
+      <h1 className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-3">
+        Why Our Technology Matters
+      </h1>
+      <p className="text-[#797A7D] text-lg ">
+        Our technology stack is designed to work seamlessly in the background,<br/> delivering tangible benefits to your business.
+      </p>
+    </div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              {
-                icon: "/images/secure.png",
-                title: "Secure & Reliable",
-                text: "Enterprise-grade security protocols protect  your data and ensure consistent uptime for mission-critical operations.",
-              },
-              {
-                icon: "/images/saving.png",
-                title: "Time-Saving",
-                text: "Automate routine tasks freeing up your  team to focus on high-value activities  and strategic initiatives.",
-              },
-              {
-                icon: "/images/data.png",
-                title: "Data-Driven",
-                text: "Gain valuable insights from client  interactions to improve service delivery and  identify new business opportunities.",
-              },
-              {
-                icon: "/images/hand1.png",
-                title: "Client-Focused",
-                text: "Deliver personalized experiences that make clients feel valued and understood, strengthening relationships.",
-              },
-              {
-                icon: "/images/arrows.png",
-                title: "Centralized",
-                text: "Bring together all your communication channels, client data, and business tools in one unified system.",
-              },
-              {
-                icon: "/images/div (5).png",
-                title: "Scalable",
-                text: "Grow your business without proportionally increasing overhead, as our technology scales with your needs.",
-              },
-            ].map((c, index) => (
-              <motion.div
-                key={index}
-                variants={scaleFade}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                transition={{ delay: index * 0.2 }}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300"
-              >
-                <Image src={c.icon} alt={c.title} width={48} height={48} />
-                <h3 className="mt-4 font-semibold text-gray-800">{c.title}</h3>
-                <p className="text-[#797A7D] text-sm mt-2">{c.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
+    {/* Features Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pr-5 pl-5 gap-4">
+      {[
+        {
+          icon: "/images/secure.png",
+          title: "Secure & Reliable",
+          text: "Enterprise-grade security protocols protect your data and ensure consistent uptime for mission-critical operations.",
+          alt: "Secure technology icon"
+        },
+        {
+          icon: "/images/saving.png",
+          title: "Time-Saving",
+          text: "Automate routine tasks, freeing up your team to focus on high-value activities and strategic initiatives.",
+          alt: "Time-saving automation icon"
+        },
+        {
+          icon: "/images/data.png",
+          title: "Data-Driven",
+          text: "Gain valuable insights from client interactions to improve service delivery and identify new opportunities.",
+          alt: "Data analytics technology icon"
+        },
+        {
+          icon: "/images/shakehand.png",
+          title: "Client-Focused",
+          text: "Deliver personalized experiences that strengthen relationships and make clients feel valued and understood.",
+          alt: "Client-focused handshake icon"
+        },
+        {
+          icon: "/images/arrows.png",
+          title: "Centralized",
+          text: "Bring together all your communication channels, client data, and business tools in one unified system.",
+          alt: "Centralized business system icon"
+        },
+        {
+          icon: "/images/div (5).png",
+          title: "Scalable",
+          text: "Grow your business without proportionally increasing overhead, as our technology scales with your needs.",
+          alt: "Scalable growth technology icon"
+        },
+      ].map((c, index) => (
+        <motion.article
+          key={index}
+          variants={scaleFade}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ delay: index * 0.2 }}
+          className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 text-center md:text-left"
+        >
+          <Image
+            src={c.icon}
+            alt={c.alt}
+            width={64}
+            height={64}
+            className="mx-auto md:mx-0"
+          />
+          <h3 className="mt-4 font-semibold text-gray-800 text-lg">
+            {c.title}
+          </h3>
+          <p className="text-[#797A7D] text-sm md:text-base mt-2 leading-relaxed">
+            {c.text}
+          </p>
+        </motion.article>
+      ))}
+    </div>
+  </div>
+</section>
+</>
       {/* demo section */}
       <section className="w-full bg-gradient-to-b from-[#0097DA] via-[#00BAF2] to-[#8FD8F8] py-20 text-center">
         <div className="max-w-3xl mx-auto px-4">
@@ -665,5 +705,6 @@ export default function HomePage() {
         </motion.div>
       </motion.footer>
     </main>
+    </>
   );
 }
