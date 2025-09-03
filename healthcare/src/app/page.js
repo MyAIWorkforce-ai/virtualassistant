@@ -166,7 +166,7 @@ export default function Home() {
       stars: "/images/star4.png",
     },
   ];
-  //How it wroks section
+  //How it works section
   const sectionHeading =
     "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; // update once → applies everywhere
   const stepTitle = "font-semibold text-black mb-2";
@@ -195,7 +195,7 @@ export default function Home() {
         <meta property="og:image" content="/images/card.png" />
         <meta
           property="og:url"
-          content="https://virtual-assistant-6tdp.vercel.app/"
+          content="https://virtual-assistant-62k4.vercel.app/"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -482,12 +482,13 @@ export default function Home() {
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up-icon.png"
-                      alt=""
+                      alt="Thumbs Up"
                       width={16}
                       height={16}
                       aria-hidden="true"
-                      loading="lazy"
+                      priority // ensures immediate loading
                     />
+
                     <p className="ml-1 text-xs text-[#6B7280]">
                       98% Satisfaction
                     </p>
