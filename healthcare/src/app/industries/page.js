@@ -428,7 +428,7 @@ Healthcare Section
             >
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/Electrician.png"
+                  src="/images/estate.png"
                   alt="Real Estate Agent AI scheduling icon"
                   width={64}
                   height={64}
