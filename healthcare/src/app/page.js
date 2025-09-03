@@ -18,6 +18,127 @@ import { slideUp } from "./_components/animations/footer";
 import { slideUpChild } from "./_components/animations/footer";
 import { staggerContainer } from "./_components/animations/footer";
 // import { Pricing } from "../_components/animations/pricing";
+function FeatureCard({ image, icon, title, description, satisfaction, alt }) {
+  return (
+    <FadeInOnScroll>
+      <article
+        className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
+        aria-labelledby={`feature-${title}-title`}
+      >
+        <HoverSlide>
+          <figure className="m-0">
+            <Image
+              src={image}
+              alt={alt}
+              width={400}
+              height={250}
+              className="rounded-t-lg w-full h-auto object-cover"
+              priority
+            />
+            <figcaption className="sr-only">{title} image</figcaption>
+          </figure>
+        </HoverSlide>
+
+        <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
+          <div className="flex items-center gap-2">
+            <Image
+              src={icon}
+              alt={`${title} icon`}
+              width={24}
+              height={24}
+              priority
+            />
+            <h3
+              id={`feature-${title}-title`}
+              className="text-lg sm:text-xl font-bold text-black"
+            >
+              {title}
+            </h3>
+          </div>
+
+          <p className="text-[#797A7D] font-medium mt-2 text-sm">{description}</p>
+
+          <div className="flex items-center mt-3">
+            <Image
+              src="/images/thumbs-up-icon.png"
+              alt={`${satisfaction} Satisfaction`}
+              width={16}
+              height={16}
+              aria-hidden="true"
+              priority
+            />
+            <p className="ml-1 text-xs text-[#6B7280]">{satisfaction} Satisfaction</p>
+          </div>
+        </div>
+      </article>
+    </FadeInOnScroll>
+  );
+}
+
+// Features Section
+
+  const features = [
+    {
+      id: 1,
+      title: "AI Phone Handling",
+      description:
+        "Professional call answering with natural responses and context awareness (like “We’re right next to the post office”).",
+      image: "/images/ai-phone.png",
+      icon: "/images/ai-phone-icon.png",
+      satisfaction: "98%",
+      alt: "Receptionist using AI phone handling interface",
+    },
+    {
+      id: 2,
+      title: "Appointment Scheduling",
+      description:
+        "Direct bookings with Google Calendar or Cal.com integration, eliminating scheduling conflicts and back-and-forth emails.",
+      image: "/images/appointment.png",
+      icon: "/images/appointment-icon.png",
+      satisfaction: "95%",
+      alt: "Appointment scheduling interface with calendar slots",
+    },
+    {
+      id: 3,
+      title: "Smart Transcription",
+      description:
+        "Conversations transcribed instantly, stored with session notes for easy reference and searchability.",
+      image: "/images/transcription.png",
+      icon: "/images/transcription-icon.png",
+      satisfaction: "92%",
+      alt: "Transcription interface showing text from conversation",
+    },
+    {
+      id: 4,
+      title: "Voice Memo Capture",
+      description:
+        "Record voice memos after appointments and automatically link them to client files for comprehensive record-keeping.",
+      image: "/images/voice-memo.png",
+      icon: "/images/voice-memo-icon.png",
+      satisfaction: "89%",
+      alt: "Voice memo capture linked to client file",
+    },
+    {
+      id: 5,
+      title: "Branded Dashboard",
+      description:
+        "Easy-to-use backend customized for your business with your logo, colors, and preferred layout options.",
+      image: "/images/branded.png",
+      icon: "/images/branded-icon.png",
+      satisfaction: "96%",
+      alt: "Branded dashboard showcasing company colors and logo",
+    },
+    {
+      id: 6,
+      title: "White-Labeled Booking Page",
+      description:
+        "Seamless, branded booking experience for your clients that matches your company’s visual identity.",
+      image: "/images/booking.png",
+      icon: "/images/booking-icon.png",
+      satisfaction: "94%",
+      alt: "White-labeled booking page frontend preview",
+    },
+  ];
 
 export default function Home() {
   // build 20+ industries
@@ -416,405 +537,48 @@ export default function Home() {
 
       {/* KEY FEATURES SECTION  */}
 
-      <section
-        className="py-16 bg-[#F9FAFB]"
-        aria-labelledby="key-features-heading"
-        role="region"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Section Title */}
-          <h2
-            id="key-features-heading"
-            className="text-3xl sm:text-4xl font-semibold text-[#00A7DE] mb-2"
-          >
-            Key Features
-          </h2>
-          <div
-            className="w-12 h-0.5 bg-[#098DC9] mx-auto mb-6 rounded-full"
-            aria-hidden="true"
-          ></div>
+        <section
+      className="py-16 bg-[#F9FAFB]"
+      aria-labelledby="key-features-heading"
+      role="region"
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Section Title */}
+        <h2
+          id="key-features-heading"
+          className="text-3xl sm:text-4xl font-semibold text-[#00A7DE] mb-2"
+        >
+          Key Features
+        </h2>
+        <div
+          className="w-12 h-0.5 bg-[#098DC9] mx-auto mb-6 rounded-full"
+          aria-hidden="true"
+        ></div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Feature 1 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-1-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/ai-phone.png"
-                      alt="Receptionist using AI phone handling interface"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      AI Phone Handling illustration
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/ai-phone-icon.png"
-                      alt="AI phone icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-1-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      AI Phone Handling
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Professional call answering with natural responses and
-                    context awareness (like “We’re right next to the post
-                    office”).
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt="Thumbs Up"
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      priority // ensures immediate loading
-                    />
-
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      98% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 2 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-2-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/Appointment.png"
-                      alt="Appointment scheduling interface with calendar slots"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      Appointment Scheduling image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/appointment-icon.png"
-                      alt="Appointment icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-2-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      Appointment Scheduling
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Direct bookings with Google Calendar or Cal.com integration,
-                    eliminating scheduling conflicts and back-and-forth emails.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      loading="lazy"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      95% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 3 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-3-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/transcription.png"
-                      alt="Transcription interface showing text from conversation"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      Smart Transcription image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/transcription-icon.png"
-                      alt="Transcription icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-3-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      Smart Transcription
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Conversations transcribed instantly, stored with session
-                    notes for easy reference and searchability.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      loading="lazy"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      92% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 4 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-4-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/voice-memo.png"
-                      alt="Voice memo capture linked to client file"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      Voice Memo Capture image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/voice-memo-icon.png"
-                      alt="Voice memo icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-4-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      Voice Memo Capture
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Record voice memos after appointments and automatically link
-                    them to client files for comprehensive record-keeping.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      loading="lazy"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      89% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 5 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-5-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/branded.png"
-                      alt="Branded dashboard showcasing company colors and logo"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      Branded Dashboard image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/branded-icon.png"
-                      alt="Branded dashboard icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-5-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      Branded Dashboard
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Easy-to-use backend customized for your business with your
-                    logo, colors, and preferred layout options.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      loading="lazy"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      96% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 6 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-6-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/images/booking.png"
-                      alt="White-labeled booking page frontend preview"
-                      width={400}
-                      height={250}
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
-                    />
-                    <figcaption className="sr-only">
-                      White-Labeled Booking Page image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/booking-icon.png"
-                      alt="Booking icon"
-                      width={20}
-                      height={28}
-                      loading="lazy"
-                    />
-                    <h3
-                      id="feature-6-title"
-                      className="text-lg sm:text-xl font-bold text-black"
-                    >
-                      White-Labeled Booking Page
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Seamless, branded booking experience for your clients that
-                    matches your company’s visual identity.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/images/thumbs-up-icon.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                      aria-hidden="true"
-                      loading="lazy"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      94% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-          </div>
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {features.map((feature) => (
+            <FeatureCard key={feature.id} {...feature} />
+          ))}
         </div>
+      </div>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Key Features",
-              description:
-                "Key features like AI phone handling, appointment scheduling, smart transcription, voice memo capture, branded dashboards and white-labeled booking pages.",
-              mainEntity: [
-                { "@type": "Feature", name: "AI Phone Handling" },
-                { "@type": "Feature", name: "Appointment Scheduling" },
-                { "@type": "Feature", name: "Smart Transcription" },
-                { "@type": "Feature", name: "Voice Memo Capture" },
-                { "@type": "Feature", name: "Branded Dashboard" },
-                { "@type": "Feature", name: "White-Labeled Booking Page" },
-              ],
-            }),
-          }}
-        />
-      </section>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Key Features",
+            description:
+              "Key features like AI phone handling, appointment scheduling, smart transcription, voice memo capture, branded dashboards and white-labeled booking pages.",
+            mainEntity: features.map((f) => ({ "@type": "Feature", name: f.title })),
+          }),
+        }}
+      />
+    </section>
+
 
       {/* Why choose us  */}
       <main>
