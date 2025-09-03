@@ -195,7 +195,7 @@ export default function Home() {
         <meta property="og:image" content="/images/card.png" />
         <meta
           property="og:url"
-          content="https://virtual-assistant-62k4.vercel.app/"
+          content="https://virtual-assistant-uwfn.vercel.app/"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -338,7 +338,7 @@ export default function Home() {
         <section className="relative w-full overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <Image
-              src="/dots-bg.png"
+              src="/images/bg.png"
               alt="Background"
               width={1260}
               height={800}
