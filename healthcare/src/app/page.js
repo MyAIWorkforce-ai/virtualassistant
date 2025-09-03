@@ -481,7 +481,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt="Thumbs Up"
                       width={16}
                       height={16}
@@ -541,7 +541,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt=""
                       width={16}
                       height={16}
@@ -600,7 +600,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt=""
                       width={16}
                       height={16}
@@ -659,7 +659,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt=""
                       width={16}
                       height={16}
@@ -718,7 +718,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt=""
                       width={16}
                       height={16}
@@ -777,7 +777,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up-icon.png"
+                      src="/images/thumbs-up.png"
                       alt=""
                       width={16}
                       height={16}
