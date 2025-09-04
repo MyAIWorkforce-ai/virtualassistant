@@ -450,7 +450,7 @@ export default function Home() {
         >
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             <span className="text-black">
-              Smart Scheduling <br /> for
+              AI Powered Assistants  & <br /> Smart Scheduling for
             </span>{" "}
             <span className="text-[#00A7DE]">Every Industry</span>
           </h1>
