@@ -672,7 +672,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: false }}
         >
-          {/* ✅ H2 Section Heading */}
+          {/* H2 Section Heading */}
           <motion.h2
             className="text-5xl font-bold text-center text-[#00A7DE] mb-12 -mt-15"
             variants={listItemFade}
@@ -1196,7 +1196,7 @@ Explore other industries
               className="text-gray-600 mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8}}
             >
               Discover how our AI solutions are transforming various industries.
             </motion.p>

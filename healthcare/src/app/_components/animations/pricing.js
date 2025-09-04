@@ -13,7 +13,7 @@ export const ScaleUp = ({ children, delay = 0 }) => (
     whileInView="visible"
     viewport={{ once: true, amount: 0.3 }}
     variants={scaleUpVariant}
-    transition={{ duration: 0.7, delay, ease: "easeOut" }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
   >
     {children}
   </motion.div>

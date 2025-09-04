@@ -15,7 +15,7 @@ export default function ScaleUp({ children, delay = 0 }) {
       initial="hidden"
       whileInView="visible"                 // 
       viewport={{ once: false, amount: 0.3 }} //
-      transition={{ duration: 0.4, delay }}
+      transition={{ duration: 0.4 }}
     >
       {children}
     </motion.div>

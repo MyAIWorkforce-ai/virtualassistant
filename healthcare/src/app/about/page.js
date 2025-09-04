@@ -539,7 +539,7 @@ export default function HomePage() {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: false, amount: 0.3 }}
-                      transition={{ delay: i * 0.3 }}
+                      
                       className="flex items-start gap-4"
                     >
                       <Image
@@ -624,7 +624,7 @@ export default function HomePage() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
-                    transition={{ delay: index * 0.2 }}
+                    
                     className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 text-center md:text-left"
                   >
                     <Image

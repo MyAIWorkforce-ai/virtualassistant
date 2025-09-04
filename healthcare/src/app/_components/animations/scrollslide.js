@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function ScrollSlide({ children, direction = "up", delay = 0 }) {
+export default function ScrollSlide({ children, direction = "up"}) {
   const variants = {
     hidden: {
       opacity: 0,
@@ -13,7 +13,7 @@ export default function ScrollSlide({ children, direction = "up", delay = 0 }) {
       opacity: 1,
       x: 0,
       y: 0,
-      transition: { duration: 0.8, delay },
+      transition: { duration: 0.8 },
     },
   };
 
