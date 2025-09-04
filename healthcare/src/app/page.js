@@ -86,68 +86,66 @@ export default function Home() {
   // ========================
   const [billingCycle, setBillingCycle] = useState("monthly");
   const plans = [
-  {
-    name: "SOLO",
-    price: "$300",
-    cycle: "/month",
-    description: "1 User",
-    features: [
-      "AI call answering",
-      "10 hours of call time/month",
-      "Basic appointment booking",
-      "Email notifications",
-      "Call transcriptions",
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Professional",
-    price: "$400",
-    cycle: "/month",
-    description: "Upto 3 Users",
-    features: [
-      "AI Virtual Assistant 24/7",
-      "Advanced Dashboard with Analytics",
-      "Advanced CRM for all Client Data and History",
-      "AI Powered Smart Calendars",
-      "New Dedicated Number or Call Forwarding Options",
-      "Front End AI Prompt Training for your AI",
-      "AI Appointment Scheduling",
-      "Unlimited Incoming Calls 24/7",
-    ],
-    button: "Start Now",
-    highlighted: true,
-  },
-  {
-    name: "Enterprise",
-    price: "$500",
-    cycle: "/month",
-    description: "Upto 5 Users",
-    features: [
-      "Everything in Pro",
-      "Multiple phone lines",
-      "API access",
-      "Custom integrations",
-      "White-labeled solution",
-      "Dedicated account manager",
-      "99.9% uptime SLA",
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Custom Package",
-    price: "",
-    cycle: "",
-    description: "",
-    features: [
-      
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-];
+    {
+      name: "SOLO",
+      price: "$300",
+      cycle: "/month",
+      description: "1 User",
+      features: [
+        "AI call answering",
+        "10 hours of call time/month",
+        "Basic appointment booking",
+        "Email notifications",
+        "Call transcriptions",
+      ],
+      button: "Start Now",
+      highlighted: false,
+    },
+    {
+      name: "Professional",
+      price: "$400",
+      cycle: "/month",
+      description: "Upto 3 Users",
+      features: [
+        "AI Virtual Assistant 24/7",
+        "Advanced Dashboard with Analytics",
+        "Advanced CRM for all Client Data and History",
+        "AI Powered Smart Calendars",
+        "New Dedicated Number or Call Forwarding Options",
+        "Front End AI Prompt Training for your AI",
+        "AI Appointment Scheduling",
+        "Unlimited Incoming Calls 24/7",
+      ],
+      button: "Start Now",
+      highlighted: true,
+    },
+    {
+      name: "Enterprise",
+      price: "$500",
+      cycle: "/month",
+      description: "Upto 5 Users",
+      features: [
+        "Everything in Pro",
+        "Multiple phone lines",
+        "API access",
+        "Custom integrations",
+        "White-labeled solution",
+        "Dedicated account manager",
+        "99.9% uptime SLA",
+      ],
+      button: "Start Now",
+      highlighted: false,
+    },
+    {
+      name: "Custom Package",
+      price: "",
+      cycle: "",
+      description: "",
+      features: [],
+      button: "Start Now",
+      highlighted: false,
+    },
+  ];
 
   // =================================
   //   what our client says
@@ -530,7 +528,9 @@ export default function Home() {
               </h3>
               <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
                 <Typewriter
-                  words={["Transform Your Business with AI-Powered Virtual Assistants"]}
+                  words={[
+                    "Transform Your Business with AI-Powered Virtual Assistants",
+                  ]}
                   loop={true}
                   cursor
                   cursorStyle="|"
@@ -762,7 +762,8 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Conversations, Call summary and recordings transcribed instantly, stored with notes for easy searchability.
+                    Conversations, Call summary and recordings transcribed
+                    instantly, stored with notes for easy searchability.
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -1182,115 +1183,124 @@ export default function Home() {
         </section>
       </main>
       {/* HOW IT WORKS SECTION */}
-     <section
-  id="how-it-works"
-  className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
->
-  <div className="max-w-5xl mx-auto text-center px-4">
-    {/* ==== Heading ==== */}
-    <h2 className={sectionHeading}>How It Works</h2>
+      <section
+        id="how-it-works"
+        className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
+      >
+        <div className="max-w-5xl mx-auto text-center px-4">
+          {/* ==== Heading ==== */}
+          <h2 className={sectionHeading}>How It Works</h2>
 
-    {/* underline bar */}
-    <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
+          {/* underline bar */}
+          <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
 
-    <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
-      Our AI assistant handles your calls from start to finish, just like
-      a human receptionist.
-    </p>
+          <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
+            Our AI assistant handles your calls from start to finish, just like
+            a human receptionist.
+          </p>
 
-    {/* ==== Steps ==== */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-      {/* Step 1 */}
-      <ScrollSlide direction="left">
-        <article className="flex flex-col items-center h-full">
-          {/* Icon */}
-          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
-            <Image
-              src="/images/phone.png"
-              alt="Client calling phone icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+          {/* ==== Steps ==== */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 items-stretch">
+            {/* Step 1 */}
+            <ScrollSlide direction="left">
+              <article className="flex flex-col items-center h-full">
+                {/* Icon */}
+                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
+                  <Image
+                    src="/images/phone.png"
+                    alt="Client calling phone icon"
+                    width={68.97}
+                    height={68.97}
+                  />
+                </div>
 
-          {/* Box */}
-          <div className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Client calls</h3>
-            <p className={stepDesc}>
-              AI answers with your business greeting
-            </p>
-            {/* Step Number */}
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                {/* Box */}
+                <div
+                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>Client calls</h3>
+                  <p className={stepDesc}>
+                    AI answers with your business
+                    <br /> greeting
+                  </p>
+                  {/* Step Number */}
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 1"
-            >
-              1
-            </span>
-          </div>
-        </article>
-      </ScrollSlide>
+                    aria-label="Step 1"
+                  >
+                    1
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
 
-      {/* Step 2 */}
-      <ScrollSlide direction="up" delay={0.2}>
-        <article className="flex flex-col items-center h-full">
-          <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
-            <Image
-              src="/images/calender1.png"
-              alt="Calendar booking icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+            {/* Step 2 */}
+            <ScrollSlide direction="up" delay={0.2}>
+              <article className="flex flex-col items-center h-full">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
+                  <Image
+                    src="/images/calender1.png"
+                    alt="Calendar booking icon"
+                    width={68.97}
+                    height={68.97}
+                  />
+                </div>
 
-          <div className="relative mt-6 bg-white rounded-lg  shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Appointment booked</h3>
-            <p className={stepDesc}>Syncs with your calendar instantly</p>
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                <div
+                  className="relative mt-6 bg-white rounded-lg  shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>Appointment booked</h3>
+                  <p className={stepDesc}>Syncs with your calendar instantly</p>
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 2"
-            >
-              2
-            </span>
-          </div>
-        </article>
-      </ScrollSlide>
+                    aria-label="Step 2"
+                  >
+                    2
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
 
-      {/* Step 3 */}
-      <ScrollSlide direction="right" delay={0.4}>
-        <article className="flex flex-col items-center h-full">
-          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
-            <Image
-              src="/images/doc.png"
-              alt="Notes and transcript document icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+            {/* Step 3 */}
+            <ScrollSlide direction="right" delay={0.4}>
+              <article className="flex flex-col items-center h-full">
+                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
+                  <Image
+                    src="/images/doc.png"
+                    alt="Notes and transcript document icon"
+                    width={68.97}
+                    height={68.97}
+                  />
+                </div>
 
-          <div className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Call Summary, Transcript & Recordings</h3>
-            <p className={stepDesc}>Saved in your CRM automatically</p>
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                <div
+                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>
+                    Call Summary, Transcript &<br /> Recordings
+                  </h3>
+                  <p className={stepDesc}>Saved in your CRM automatically</p>
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 3"
-            >
-              3
-            </span>
+                    aria-label="Step 3"
+                  >
+                    3
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
           </div>
-        </article>
-      </ScrollSlide>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Transparent Pricing */}
       <ScaleUp>
@@ -1342,60 +1352,59 @@ export default function Home() {
             </div>
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-  {plans.map((plan, index) => (
-    <ScaleUp key={index} delay={index * 0.1}>
-      <div
-        className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
-          plan.highlighted
-            ? "border-[#00A7DE] scale-105"
-            : "border-[#797A7D]"
-        } hover:border-[#00A7DE]`}
-      >
-        {plan.highlighted && (
-          <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
-            MOST POPULAR
-          </span>
-        )}
-        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-          {plan.name}
-        </h3>
-        <p className="text-gray-500 mb-4">{plan.description}</p>
-        <div className="text-3xl font-bold text-gray-800 mb-6">
-          {plan.price}
-          <span className="text-base font-normal text-gray-500">
-            {plan.cycle}
-          </span>
-        </div>
-        <ul className="space-y-3 flex-1">
-          {plan.features.map((feature, i) => (
-            <li
-              key={i}
-              className="flex items-start space-x-2 text-gray-600"
-            >
-              <Image
-                src="/images/check.png"
-                alt="check"
-                width={23}
-                height={23}
-              />
-              <span>{feature}</span>
-            </li>
-          ))}
-        </ul>
-        <button
-          className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
-            plan.highlighted
-              ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-              : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
-          }`}
-        >
-          {plan.button}
-        </button>
-      </div>
-    </ScaleUp>
-  ))}
-</div>
-
+              {plans.map((plan, index) => (
+                <ScaleUp key={index} delay={index * 0.1}>
+                  <div
+                    className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
+                      plan.highlighted
+                        ? "border-[#00A7DE] scale-105"
+                        : "border-[#797A7D]"
+                    } hover:border-[#00A7DE]`}
+                  >
+                    {plan.highlighted && (
+                      <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
+                        MOST POPULAR
+                      </span>
+                    )}
+                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-gray-500 mb-4">{plan.description}</p>
+                    <div className="text-3xl font-bold text-gray-800 mb-6">
+                      {plan.price}
+                      <span className="text-base font-normal text-gray-500">
+                        {plan.cycle}
+                      </span>
+                    </div>
+                    <ul className="space-y-3 flex-1">
+                      {plan.features.map((feature, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start space-x-2 text-gray-600"
+                        >
+                          <Image
+                            src="/images/check.png"
+                            alt="check"
+                            width={23}
+                            height={23}
+                          />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <button
+                      className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
+                        plan.highlighted
+                          ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                          : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
+                      }`}
+                    >
+                      {plan.button}
+                    </button>
+                  </div>
+                </ScaleUp>
+              ))}
+            </div>
           </div>
         </section>
       </ScaleUp>

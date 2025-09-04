@@ -375,23 +375,23 @@ export default function Home() {
                 viewport={{ once: false }}
               >
                 <motion.div
-                  className="inline-block bg-white text-[#00A7DE] font-medium px-5 py-2 rounded-full mb-4 shadow text-sm md:text-base"
+                  className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
                   variants={fadeUp}
                 >
                   Physio Therapy
                 </motion.div>
 
                 <motion.h1
-                  className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+                  className="text-4xl font-bold mb-4"
                   variants={fadeUp}
                 >
                   AI for Physiotherapists
                 </motion.h1>
 
-                <motion.p className="text-base sm:text-lg mb-6">
-                  A virtual assistant that books, reminds, and <br /> records,
-                  while you work on your patients.
+                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                  A virtual assistant that books, reminds, and<br/> records, while you focus on your patients.
                 </motion.p>
+
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
