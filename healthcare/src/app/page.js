@@ -570,23 +570,7 @@ export default function Home() {
       </div>
     </motion.div>
 
-    {/* Right Content (optional image or illustration) */}
-    <motion.div
-      className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
-    >
-      <Image
-        src="/images/hero-image.png"
-        alt="Hero Illustration"
-        width={500}
-        height={500}
-        className="w-full max-w-md h-auto object-contain"
-      />
-    </motion.div>
-  
+   
 
 
             {/* Right side image with animation */}
