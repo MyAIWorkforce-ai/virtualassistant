@@ -4,6 +4,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+
 import { motion } from "framer-motion";
 import {
   slideUp,
@@ -16,8 +17,9 @@ import {
   blinkButton,
   staggerContainer as staggerFormContainer,
 } from "../_components/animations/formanimation";
-
+import useScrollAnimation from "../_components/animations/scrolleranimation";
 export default function ContactPage() {
+   useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({

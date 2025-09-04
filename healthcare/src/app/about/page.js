@@ -11,9 +11,11 @@ import { slideUpChild } from "../_components/animations/footer";
 import { staggerContainer } from "../_components/animations/footer";
 import ZoomTransition from "../_components/animations/zoomabout1";
 import { fadeUp } from "../_components/animations/variants";
+import useScrollAnimation from "../_components/animations/scrolleranimation";
 import { fadeRight } from "../_components/animations/variants";
 import { scaleFade } from "../_components/animations/variants";
 export default function HomePage() {
+   useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   // ===========================
   //        section 1

@@ -34,3 +34,4 @@ html, body {
 body {
   overflow-y: auto; /* normal scroll if needed */
 }
+/* Scroll-triggered animation */

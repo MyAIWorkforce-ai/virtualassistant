@@ -25,7 +25,9 @@ import { formVariant } from "../../_components/animations/physo7";
 import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
+import useScrollAnimation from "../../_components/animations/scrolleranimation";
 export default function Home() {
+   useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -362,92 +364,97 @@ export default function Home() {
         {/* Main Banner Section */}
         <>
           {/* Hero Section */}
-          <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
-            {/* Overlay blur */}
-            <div className="absolute inset-0 backdrop-blur-sm"></div>
-            <div className="relative z-10 flex flex-col md:flex-row pl-30 items-center justify-between px-8 py-16 border-b border-white">
-              {/* Text on Left */}
-              <motion.div
-                className="text-white max-w-xl"
-                variants={fadeUp}
-                initial="hidden"
-                animate="show"
-                viewport={{ once: false }}
-              >
+<section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
+  {/* Overlay blur */}
+  <div className="absolute inset-0 backdrop-blur-sm"></div>
+
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between 
+      px-6 md:px-12 py-16 border-b border-white">
+    
+    {/* Text on Left */}
+    <motion.div
+      className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
+      variants={fadeUp}
+      initial="hidden"
+      animate="show"
+      viewport={{ once: false }}
+    >
+      <motion.div
+        className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+        variants={fadeUp}
+      >
+        Personal Trainer
+      </motion.div>
+
+      <motion.h1
+        className="text-4xl font-bold mb-4"
+        variants={fadeUp}
+      >
+        AI for Personal Trainer
+      </motion.h1>
+
+      <motion.p className="text-lg mb-6" variants={fadeUp}>
+        Your virtual assistant streamlines fitness management by
+        automating scheduling, progress tracking, reminders, and
+        training notes.
+      </motion.p>
+
+      {/* Flipper Button */}
+      <motion.button
+        variants={buttonHover}
+        initial="initial"
+        whileHover={{ scale: 1.05 }}
+        viewport={{ once: false }}
+        className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
+        transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+      >
+        Get Started
+        <img
+          src="/images/svg.png"
+          alt="Start Icon"
+          className="h-3 w-3"
+        />
+      </motion.button>
+    </motion.div>
+
+    {/* Session Confirmed Notification - Responsive */}
+    <motion.div
+      className="bg-white text-gray-800 px-6 py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 
+      transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
+      mt-6 w-full max-w-sm md:mt-0 md:w-auto 
+      md:absolute md:bottom-24 md:left-1/2 md:-translate-x-1/2
+      sm:mx-auto sm:left-1/2 sm:-translate-x-1/2"
+    >
+      <img
+        src="/images/green wave.png"
+        alt="Logo"
+        className="w-8 h-8 object-contain"
+      />
+      <div className="text-sm leading-tight">
+        <div className="font-semibold text-[#000000]">
+          Client Progress
+        </div>
+        <div className="text-xs text-gray-500">
+          +15% strength gain
+        </div>
+      </div>
+    </motion.div>
+ 
+{/* image */}
                 <motion.div
-                  className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
-                  variants={fadeUp}
-                >
-                  Personal Trainer
-                </motion.div>
-
-                <motion.h1
-                  className="text-4xl font-bold mb-4"
-                  variants={fadeUp}
-                >
-                  AI for Personal Trainer
-                </motion.h1>
-
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
-                  Your virtual assistant streamlines fitness management by
-                  automating scheduling, progress tracking, reminders, and
-                  training notes.
-                </motion.p>
-
-                {/* Flipper Button */}
-                <motion.button
-                  variants={buttonHover}
-                  initial="initial"
-                  whileHover={{ scale: 1.05 }}
-                  viewport={{ once: false }}
-                  className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
-                  transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-                >
-                  Get Started
-                  <img
-                    src="/images/svg.png"
-                    alt="Start Icon"
-                    className="h-3 w-3"
-                  />
-                </motion.button>
-              </motion.div>
-
-              {/* Session Confirmed Notification - Responsive */}
-              <motion.div
-                className="bg-white text-gray-800 px-6 py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 
-                transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
-                 mt-6 w-full max-w-sm md:mt-0 md:w-auto md:absolute md:bottom-24 md:left-1/2 md:-translate-x-1/2"
-              >
-                <img
-                  src="/images/green wave.png"
-                  alt="Logo"
-                  className="w-8 h-8 object-contain"
-                />
-                <div className="text-sm leading-tight">
-                  <div className="font-semibold text-[#000000]">
-                    Client Progress
-                  </div>
-                  <div className="text-xs text-gray-500">
-                    +15% strength gain
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Image on Right */}
-              <motion.div
-                className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden mt-8 md:mt-0"
-                variants={fadeUp}
-                initial="hidden"
-                animate="show"
-                viewport={{ once: false }}
-              >
-                <img
-                  src="/images/trainer.png"
-                  alt="Trainer"
-                  className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
-                  style={{ objectPosition: "right center" }}
-                />
-              </motion.div>
+  className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+  variants={fadeUp}
+  initial="hidden"
+  animate="show"
+  viewport={{ once: false }}
+>
+  <img
+    src="/images/trainer.png"
+    alt="Trainer"
+    className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
+    style={{ objectPosition: "right center" }}
+  />
+</motion.div>
             </div>
           </section>
 

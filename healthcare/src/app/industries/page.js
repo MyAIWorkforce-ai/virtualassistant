@@ -16,6 +16,7 @@ import { slideUp } from "../_components/animations/footer";
 import { slideUpChild } from "../_components/animations/footer";
 import { staggerContainer } from "../_components/animations/footer";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
+import useScrollAnimation from "../_components/animations/scrolleranimation";
 
 // Healthcare and wellness
 const services = [
@@ -115,6 +116,7 @@ const professionalServicesData = [
 //  First section
 //  ===============
 export default function Home() {
+   useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>

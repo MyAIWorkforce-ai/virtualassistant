@@ -25,7 +25,9 @@ import { formVariant } from "../../_components/animations/physo7";
 import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
+import useScrollAnimation from "../../_components/animations/scrolleranimation";
 export default function Home() {
+  useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -365,10 +367,10 @@ export default function Home() {
           <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
             <div className="absolute inset-0 backdrop-blur-sm"></div>
 
-            <div className="relative z-10 flex pl-15 flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 border-b border-white">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between pl-15 md:pl-15 px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full pl-15 md:max-w-xl mb-10 md:mb-0"
+                className="text-white max-w-full pb-9 md:max-w-xl mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -389,9 +391,9 @@ export default function Home() {
                 </motion.h1>
 
                 <motion.p className="text-lg mb-6" variants={fadeUp}>
-                  A virtual assistant that books, reminds, and<br/> records, while you focus on your patients.
+                  A virtual assistant that books, reminds, and records, while
+                  you focus on your patients.
                 </motion.p>
-
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -411,18 +413,16 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden"
+                className="flex-shrink-0 flex justify-center pl-9 md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
                 viewport={{ once: false }}
               >
-                <Image
+                <img
                   src="/images/doctor.png"
-                  alt="Doctor assisting patient"
-                  width={650}
-                  height={600}
-                  className="object-cover relative -mb-16 md:-mb-39 pr-0 md:pr-30"
+                  alt="Doctor"
+                  className="w-[650px] h-auto object-cover relative mr-19 md:-mb-39 md:pr-30"
                   style={{ objectPosition: "right center" }}
                 />
               </motion.div>
@@ -954,7 +954,7 @@ Example use cases
                 bg: "bg-[#3B82F6]/8",
               },
               {
-                icon: "/images/three.png",
+                icon: "/images/two.png",
                 title: "Smart Reminders",
                 text: 'Sends reminders with prep instructions like "wear flexible clothing".',
                 bg: "bg-[#10B981]/8",
@@ -1214,7 +1214,7 @@ Explore other industries
               className="text-gray-600 mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8}}
+              transition={{ duration: 0.8 }}
             >
               Discover how our AI solutions are transforming various industries.
             </motion.p>

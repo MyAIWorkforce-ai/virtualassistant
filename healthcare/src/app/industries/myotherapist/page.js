@@ -25,7 +25,9 @@ import { formVariant } from "../../_components/animations/physo7";
 import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
+import useScrollAnimation from "../../_components/animations/scrolleranimation";
 export default function Home() {
+  useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -361,11 +363,16 @@ export default function Home() {
         </header>
         {/* Hero Section */}
         <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
+          {/* Overlay blur */}
           <div className="absolute inset-0 backdrop-blur-sm"></div>
-          <div className="relative z-10 flex flex-col md:flex-row pl-30  items-center justify-between px-8  py-16 border-b border-white">
-            {/* Text */}
+
+          <div
+            className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between 
+      px-6 md:px-12 py-16 border-b border-white"
+          >
+            {/* Text on Left */}
             <motion.div
-              className="text-white max-w-xl"
+              className="text-white max-w-xl flex flex-col pb-9 items-center md:items-start text-center md:text-left"
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -383,37 +390,41 @@ export default function Home() {
               </motion.h1>
 
               <motion.p className="text-lg mb-6" variants={fadeUp}>
-                Your Virtual Assistant for Stress-Free Therapy 
-                Management.
+                Your Virtual Assistant for Stress-Free Therapy Management.
               </motion.p>
 
+              {/* Flipper Button */}
               <motion.button
                 variants={buttonHover}
                 initial="initial"
-                whileHover="hover"
-                className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+                viewport={{ once: false }}
+                className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
+        transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
               >
                 Get Started
                 <img
                   src="/images/svg.png"
-                  alt="Get Started Icon"
+                  alt="Start Icon"
                   className="h-3 w-3"
                 />
               </motion.button>
             </motion.div>
 
-            {/* Session Confirmed */}
+            {/* Session Confirmed Notification - Responsive */}
             <motion.div
-              className="bg-white text-gray-800 px-6 -ml-9 py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
-             md:absolute md:bottom-24 md:left-1/2 md:-translate-x-1/2
-             mt-6 md:mt-0 w-full md:w-auto max-w-sm"
+              className="bg-white text-gray-800 px-2 pb-5 mr-9 w-auto max-w-sm py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 
+      transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
+      mt-6  md:mt-0 md:w-auto 
+      md:absolute md:bottom-24 -pl-21 md:left-1/2 md:-translate-x-1/2
+      sm:mx-auto sm:left-1/2 sm:-translate-x-1/2"
             >
               <img
                 src="/images/Tick-icon.png"
-                alt="Tick Icon"
+                alt="Logo"
                 className="w-8 h-8 object-contain"
               />
-              <div className="text-sm leading-tight">
+              <div className="text-sm  leading-tight">
                 <div className="font-semibold text-[#000000]">
                   Session Confirmed
                 </div>
@@ -423,9 +434,8 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Hero Image */}
             <motion.div
-              className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden"
+              className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -433,8 +443,8 @@ export default function Home() {
             >
               <img
                 src="/images/myso.png"
-                alt="Doctor"
-                className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
+                alt="mysotherapist"
+                className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
                 style={{ objectPosition: "right center" }}
               />
             </motion.div>
@@ -538,8 +548,7 @@ export default function Home() {
             variants={fadeUp}
           >
             Streamline your practice with intelligent automation that enhances
-            patient
-            <br /> care and reduces administrative burden.
+            patient care and reduces administrative burden.
           </motion.p>
 
           {/* Cards */}
@@ -959,7 +968,7 @@ Example use cases
                 bg: "bg-[#3B82F6]/8",
               },
               {
-                icon: "/images/three.png",
+                icon: "/images/two.png",
                 title: "Smart Reminders",
                 text: 'Sends reminders with prep instructions like "wear flexible clothing".',
                 bg: "bg-[#10B981]/8",
@@ -1219,7 +1228,7 @@ Explore other industries
               className="text-gray-600 mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8}}
+              transition={{ duration: 0.8 }}
             >
               Discover how our AI solutions are transforming various industries.
             </motion.p>

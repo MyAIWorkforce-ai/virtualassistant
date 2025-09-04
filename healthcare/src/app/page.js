@@ -14,11 +14,15 @@ import ScaleUp from "./_components/animations/ScaleUp";
 import ReviewSlider from "./_components/animations/reviewslider";
 import { ScrollAnimation, fadeInUp } from "./_components/animations/demo";
 import { slideUp } from "./_components/animations/footer";
+import useScrollAnimation from "./_components/animations/scrolleranimation";
 import { slideUpChild } from "./_components/animations/footer";
 import { staggerContainer } from "./_components/animations/footer";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
 
+
 export default function Home() {
+    useScrollAnimation();
+
   const [isOpen, setIsOpen] = useState(false);
   // =======================
   // build 20+ industries
@@ -193,6 +197,7 @@ export default function Home() {
     "bg-white rounded-lg shadow-md p-6 border-t-4 border-[#0097DA] text-center relative transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl";
   //   Section 1 Home page
   return (
+
     <>
       {/* Meta Tags */}
       <Head>
@@ -218,6 +223,7 @@ export default function Home() {
         />
       </Head>
       {/* Main section */}
+    
       <main className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
         {/* HEADER */}
         <header className="w-full bg-white shadow-lg">
@@ -1643,6 +1649,8 @@ export default function Home() {
           © 2025 VirtualAssistant. All rights reserved.
         </motion.div>
       </motion.footer>
+       
     </>
+
   );
 }
