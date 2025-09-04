@@ -2,8 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import Head from "next/head";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react"; // hamburger & close icons
 import { pageFadeIn } from "../../_components/animations/physo3";
 import { staggeredList } from "../../_components/animations/physo3";
 import { listItemFade } from "../../_components/animations/physo3";
@@ -25,6 +26,7 @@ import { containerVariants } from "../../_components/animations/physo77";
 import { leftVariant } from "../../_components/animations/physo77";
 import { rightVariant } from "../../_components/animations/physo77";
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [phone, setPhone] = useState("");
@@ -39,7 +41,7 @@ export default function Home() {
     setIsEmailValid(valid || value === "");
   };
 
-  // Phone validation (numbers only, 7-15 digits)
+  // Phone validation (numbers 7–15 digits)
   const handlePhoneChange = (e) => {
     const value = e.target.value;
     setPhone(value);
@@ -47,25 +49,198 @@ export default function Home() {
     setIsPhoneValid(valid || value === "");
   };
   return (
-    <div className="min-h-screen  flex flex-col">
-      <header className="w-full  bg-white shadow-sm">
-        <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Image
-              src="/images/logo1.png"
-              alt="Logo"
-              width={177}
-              height={40}
-              className="pl-4"
-            />
-          </div>
+    <>
+      <div className="min-h-screen  flex flex-col">
+        {/* SEO Meta Tags */}
+        <Head>
+          {/* Basic SEO */}
+          <title>AI Virtual Assistant for Massage Therapists | YourBrand</title>
+          <meta
+            name="description"
+            content="AI-powered assistant for massage therapists. Simplify bookings, reminders, and client notes so you can focus on delivering better care."
+          />
+          <meta name="robots" content="index, follow" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
 
-          {/* Navigation */}
-          <nav>
-            <ul className="flex items-center space-x-8 text-sm font-medium">
+          {/* Open Graph (Social Sharing) */}
+          <meta
+            property="og:title"
+            content="AI Virtual Assistant for Massage Therapists | YourBrand"
+          />
+          <meta
+            property="og:description"
+            content="Automate scheduling, reminders, and session notes with an AI assistant made for massage therapists."
+          />
+          <meta property="og:image" content="/images/social-preview.png" />
+          <meta
+            property="og:url"
+            content="https://www.yourbrand.com/industries/massagetherapist"
+          />
+          <meta property="og:type" content="website" />
+        </Head>
+        <header className="w-full  bg-white shadow-sm">
+          <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-6">
+            {/* Logo */}
+            <div className="flex items-center">
+              <Image
+                src="/images/logo1.png"
+                alt="Logo"
+                width={177}
+                height={40}
+                className="pl-4"
+              />
+            </div>
+
+            {/* Navigation */}
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:block">
+              <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
+                <li>
+                  <Link href="/" className="text-black hover:text-[#00A7DE]">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/features"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Features
+                  </Link>
+                </li>
+                <li className="relative group">
+                  <Link href="/industries" className="text-[#00A7DE]">
+                    Industries
+                  </Link>
+                  {/* Dropdown */}
+                  <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
+                    <li>
+                      <Link
+                        href="/industries/Physotherapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Physiotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/myotherapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Myotherapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/personaltrainer"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Personal Trainer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/massagetherapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Massage Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/psychology"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Psychology
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/chiropractor"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Chiropractor
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link
+                    href="/pricing"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/login"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
+                    Log In
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/signup"
+                    className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                  >
+                    Sign Up
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            {/* Mobile Hamburger */}
+            <button
+              className="lg:hidden text-black"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+          {/* Mobile Sidebar */}
+          <div
+            className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-40 ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <Image
+                src="/images/logo1.png"
+                alt="Logo"
+                width={150}
+                height={40}
+              />
+              <button onClick={() => setIsOpen(false)}>
+                <X size={28} />
+              </button>
+            </div>
+            <ul className="flex flex-col space-y-4 p-6 text-sm font-medium">
               <li>
-                <Link href="/h" className="text-black hover:text-[#00A7DE]">
+                <Link
+                  href="/"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
                   Home
                 </Link>
               </li>
@@ -73,27 +248,20 @@ export default function Home() {
                 <Link
                   href="/features"
                   className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
                 >
                   Features
                 </Link>
               </li>
-
-              {/* Dropdown list */}
               <li className="relative group">
-                {/* Parent Link */}
-                <Link href="/industries" className="text-[#00A7DE] hover:text-[#00A7DE]">
+                <Link
+                  href="/industries"
+                  className="text-black hover:text-[#00A7DE]"
+                >
                   Industries
                 </Link>
-
                 {/* Dropdown */}
-                <ul
-                  className="
-    absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md
-    opacity-0 invisible group-hover:opacity-100 group-hover:visible
-    transition-all duration-300 ease-in-out delay-200
-    z-[100]
-  "
-                >
+                <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
                   <li>
                     <Link
                       href="/industries/Physotherapist"
@@ -115,7 +283,7 @@ export default function Home() {
                       href="/industries/personaltrainer"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      personal Trainer
+                      Personal Trainer
                     </Link>
                   </li>
                   <li>
@@ -131,7 +299,7 @@ export default function Home() {
                       href="/industries/psychology"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
-                      psychology
+                      Psychology
                     </Link>
                   </li>
                   <li>
@@ -148,12 +316,17 @@ export default function Home() {
                 <Link
                   href="/pricing"
                   className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
                 >
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-black hover:text-[#00A7DE]">
+                <Link
+                  href="/about"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
                   About
                 </Link>
               </li>
@@ -161,1120 +334,1159 @@ export default function Home() {
                 <Link
                   href="/contact"
                   className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/login" className="text-black hover:text-[#00A7DE]">
+                <Link
+                  href="/login"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
                   Log In
                 </Link>
               </li>
               <li>
                 <Link
-  href="/signup"
-  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 inline-block text-center"
->
-  Sign Up
-</Link>
-
+                  href="/signup"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full sm:w-auto text-center sm:text-left"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sign Up
+                </Link>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
+          </div>
+        </header>
 
-      {/* Main Banner Section */}
-      <>
-        {/* Hero Section */}
-        <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
-          <div className="absolute inset-0 backdrop-blur-sm"></div>
-
-          <div className="relative z-10 flex flex-col md:flex-row pl-30 items-center justify-between px-8 py-16 border-b border-white">
-            {/* Text on Left */}
-            <motion.div
-              className="text-white max-w-xl"
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              viewport={{ once: false }}
-            >
+        {/* Main Banner Section */}
+        <>
+          {/* Hero Section */}
+          <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
+            {/* Overlay blur */}
+            <div className="absolute inset-0 backdrop-blur-sm"></div>
+            <div className="relative z-10 flex flex-col md:flex-row pl-30 items-center justify-between px-8 py-16 border-b border-white">
+              {/* Text on Left */}
               <motion.div
-                className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+                className="text-white max-w-xl"
                 variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                viewport={{ once: false }}
               >
-                Massage Therapy
+                <motion.div
+                  className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+                  variants={fadeUp}
+                >
+                  Massage Therapy
+                </motion.div>
+
+                <motion.h1
+                  className="text-4xl font-bold mb-4"
+                  variants={fadeUp}
+                >
+                  AI for Massage Therapist
+                </motion.h1>
+
+                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                  Your virtual assistant handles bookings, reminders,and notes,
+                  so you can focus on delivering care, not admin.
+                </motion.p>
+
+                {/* Flipper Button */}
+                <motion.button
+                  variants={buttonHover}
+                  initial="initial"
+                  whileHover={{ scale: 1.05 }}
+                  viewport={{ once: false }}
+                  className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
+             transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                >
+                  Get Started
+                  <img
+                    src="/images/svg.png"
+                    alt="Start Icon"
+                    className="h-3 w-3"
+                  />
+                </motion.button>
               </motion.div>
 
-              <motion.h1 className="text-4xl font-bold mb-4" variants={fadeUp}>
-                AI for Massage Therapist
-              </motion.h1>
+              {/* Image on Right */}
+              <motion.div
+                className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden mt-8 md:mt-0"
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                viewport={{ once: false }}
+              >
+                <img
+                  src="/images/massage-therapist1.png"
+                  alt="Trainer"
+                  className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
+                  style={{ objectPosition: "right center" }}
+                />
+              </motion.div>
+            </div>
+          </section>
 
-              <motion.p className="text-lg mb-6" variants={fadeUp}>
-                Your virtual assistant handles bookings, reminders,
-                <br /> and notes, so you can focus on delivering care, not
-                <br /> admin.
-              </motion.p>
+          {/* New Background Section with Gradient/Grid */}
+          <section className="relative w-full h-32 -mt-16 md:h-40 bg-white">
+            <div className="absolute inset-0 grid grid-cols-12 gap-3 opacity-10">
+              {Array.from({ length: 12 }).map((_, i) => (
+                <div key={i} className="border-l border-white/20 h-full"></div>
+              ))}
+            </div>
+          </section>
 
-              {/* Flipper Button */}
-              <motion.button
-  variants={buttonHover}
-  initial="initial"
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  viewport={{ once: false }}
-  className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
-             transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
->
-  Get Started
-  <img
-    src="/images/svg.png"
-    alt="Start Icon"
-    className="h-3 w-3"
-  />
-</motion.button>
-
-            </motion.div>
-
-            {/* Image on Right */}
+          {/* Stats Section (Overlay Card) */}
+          <section className="relative z-20 -mt-12 md:-mt-20 flex justify-center px-4 md:px-8">
             <motion.div
-              className="flex-shrink-0 flex justify-center items-end h-full overflow-hidden"
-              variants={fadeUp}
+              className="grid grid-cols-1 md:grid-cols-3 gap-6 border rounded-2xl p-6 shadow-xl bg-white/95 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full overflow-hidden"
               initial="hidden"
-              animate="show"
+              variants={staggerFadeUp}
+              whileInView="show"
               viewport={{ once: false }}
             >
-              <img
-                src="/images/massage-therapist1.png"
-                alt="Doctor"
-                className="w-[650px] h-auto object-cover relative -mb-39 pr-30"
-                style={{ objectPosition: "right center" }}
-              />
-            </motion.div>
-          </div>
-        </section>
-
-        {/* 🌟 New Background Section with Gradient/Grid */}
-        <section className="relative w-full h-32 -mt-16  md:h-40 bg-white">
-          {/* Optional: Add grid overlay */}
-          <div className="absolute inset-0 grid grid-cols-12  gap-3 opacity-10">
-            {Array.from({ length: 12 }).map((_, i) => (
-              <div key={i} className="border-l border-white/20 h-full"></div>
-            ))}
-          </div>
-        </section>
-
-        {/* Stats Section (Overlay Card) */}
-        <section className="relative z-20 -mt-20 flex justify-center px-8">
-          <motion.div
-                      className="flex items-center justify-center gap-45 border rounded-2xl p-6 shadow-xl bg-white/90 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full"
-
-            initial="hidden"
-            variants={staggerFadeUp}
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            {/* Stat 1 */}
-            <motion.div
-              className="flex flex-col items-center"
-              variants={fadeInItem}
-            >
-              <img
-                src="/images/clock.png"
-                alt="Icon 1"
-                className="h-7 w-7 mb-2"
-              />
-              <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-              <p className="text-[#797A7D] text-sm text-center">
-                Less time on scheduling and note-
-                <br />
-                taking, more time with clients.
-              </p>
-            </motion.div>
-
-            {/* Stat 2 */}
-            <motion.div
-              className="flex flex-col items-center"
-              variants={fadeInItem}
-            >
-              <img
-                src="/images/frame.png"
-                alt="Icon 2"
-                className="h-7 w-7 mb-2"
-              />
-              <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-              <p className="text-[#797A7D] text-sm text-center">
-                Automated reminders ensure better
-                <br /> attendance.{" "}
-              </p>
-            </motion.div>
-
-            {/* Stat 3 */}
-            <motion.div
-              className="flex flex-col items-center"
-              variants={fadeInItem}
-            >
-              <img
-                src="/images/wave.png"
-                alt="Icon 3"
-                className="h-7 w-7 mb-2"
-              />
-              <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-              <p className="text-[#797A7D] text-sm text-center">
-                Follow-up tracking and <br />
-                reminders help maintain regular
-                <br /> sessions.
-              </p>
-            </motion.div>
-          </motion.div>
-        </section>
-      </>
-      {/* =======================
-         Key features
-============================= */}
-      <motion.section
-        className="py-12 px-4 mt-15 md:px-8 lg:px-16"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.2 }} // triggers once when 20% visible
-      >
-        {/* Heading */}
-        <motion.h2
-          className="text-3xl font-bold mb-8 text-black text-center"
-          variants={fadeUp}
-        >
-          Key Benefits
-        </motion.h2>
-
-        {/* Subheading */}
-        <motion.p
-          className="text-sm font-regular -mt-6 mb-8 text-[#797A7D] text-center"
-          variants={fadeUp}
-        >
-          Simplify your massage practice with smart automation that improves
-          client
-          <br /> care and reduces admin tasks.
-        </motion.p>
-
-        {/* Cards */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          variants={staggerFadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          {/* Card 1 */}
-          <motion.div
-            className="bg-gradient-to-br from-[#FAF5FF] to-[#F3E8FF] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-            variants={fadeInItem}
-          >
-            <div className="mb-4">
-              <Image
-                src="/images/automated-scheduling.png"
-                alt="Automated Scheduling"
-                width={48}
-                height={48}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Automated Scheduling</h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
-              Session scheduling, reminders, and
-              <br /> follow-ups handled automatically, <br />
-              reducing no-shows and improving
-              <br /> patient adherence.
-            </p>
-          </motion.div>
-
-          {/* Card 2 */}
-          <motion.div
-            className="bg-gradient-to-br from-[#ECFEFF] to-[#CFFAFE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-            variants={fadeInItem}
-          >
-            <div className="mb-4">
-              <Image
-                src="/images/secure-records.png"
-                alt="Secure Patient Records"
-                width={48}
-                height={48}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Organized Records</h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
-              Record massage details, focus areas,
-              <br /> and client preferences in seconds.
-            </p>
-          </motion.div>
-
-          {/* Card 3 */}
-          <motion.div
-            className="bg-gradient-to-br from-[#E6EEFF] to-[#C7D8FE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-            variants={fadeInItem}
-          >
-            <div className="mb-4">
-              <Image
-                src="/images/stronger.png"
-                alt="Personalized Care"
-                width={48}
-                height={48}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">
-              Stronger Client Retention
-            </h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
-              Regular follow-ups encourage ongoing
-              <br /> wellness sessions.
-            </p>
-          </motion.div>
-
-          {/* Card 4 */}
-          <motion.div
-            className="bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-            variants={fadeInItem}
-          >
-            <div className="mb-4">
-              <Image
-                src="/images/better-adherence.png"
-                alt="Better Adherence"
-                width={48}
-                height={48}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
-              Track client progress over time with
-              <br /> detailed notes and reminders, ensuring
-              <br /> each session builds toward long-term
-              <br /> health and recovery goals.
-            </p>
-          </motion.div>
-
-          {/* Card 5 */}
-          <motion.div
-            className="bg-gradient-to-br from-[#FFF1F2] to-[#FFE4E6] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-            variants={fadeInItem}
-          >
-            <div className="mb-4">
-              <Image
-                src="/Images/stress.png"
-                alt="Smooth Communication"
-                width={48}
-                height={48}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">More Care </h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
-              Spend less time on admin and
-              <br /> more time delivering relaxation
-              <br /> and therapy.
-            </p>
-          </motion.div>
-        </motion.div>
-      </motion.section>
-
-      {/* ======================
-    Primary uses
-======================     */}
-
-      <div className="w-full h-[2px] bg-gray-200 my-12"></div>
-      <div className="max-w-6xl mx-auto px-4 text-center"></div>
-
-      <motion.section
-        className="px-6 py-12 max-w-6xl mx-auto"
-        variants={pageFadeIn}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        {/* Centered Heading */}
-        <motion.h2
-          className="text-5xl font-bold text-center -mt-15 text-[#00A7DE] mb-12"
-          variants={listItemFade}
-        >
-          Primary Uses
-        </motion.h2>
-
-        {/* Two-column layout */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 p-20 border rounded-lg shadow-none hover:shadow-lg transition max-w-5xl mx-auto"
-          variants={staggeredList}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-        >
-          {/* Left Column */}
-          <div className="space-y-8">
-            {/* Item 1 */}
-            <motion.div
-              className="flex items-start gap-4"
-              variants={listItemFade}
-            >
-              <Image
-                src="/images/fitness.png"
-                alt="Automated Reminders"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">
-                  Stress Relief Management
-                </h3>
-                <p className="text-sm text-[#797A7D]">
-                  Help clients reduce stress, anxiety, and tension through
-                  <br /> regular massage sessions.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Item 2 */}
-            <motion.div
-              className="flex items-start gap-4"
-              variants={listItemFade}
-            >
-              <Image
-                src="/images/pain & Injury.png"
-                alt="Exercise Routines"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">
-                  Pain & Injury Recovery
-                </h3>
-                <p className="text-sm text-[#797A7D]">
-                  Support healing from muscle strain, stiffness, or sports-
-                  <br />
-                  related injuries.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Item 3 */}
-            <motion.div
-              className="flex items-start gap-4"
-              variants={listItemFade}
-            >
-              <Image
-                src="/images/releax.png"
-                alt="Calendar Sync"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">
-                  Wellness & Relaxation
-                </h3>
-                <p className="text-sm text-[#797A7D]">
-                  Enhance overall wellbeing, relaxation, and sleep quality.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-8">
-            {/* Item 4 */}
-            <motion.div
-              className="flex items-start gap-4"
-              variants={listItemFade}
-            >
-              <Image
-                src="/images/tracking.png"
-                alt="Patient Progress Tracking"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">
-                  Patient Progress Tracking
-                </h3>
-                <p className="text-sm text-[#797A7D]">
-                  Record personalized notes and monitor treatment effectiveness
-                  over time.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Item 5 */}
-            <motion.div
-              className="flex items-start gap-4"
-              variants={listItemFade}
-            >
-              <Image
-                src="/images/tracking (2).png"
-                alt="AI Assistant"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">
-                  AI Assistant
-                </h3>
-                <p className="text-sm text-[#797A7D]">
-                  Answer common patient inquiries via AI chat or voice <br />{" "}
-                  assistant.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </motion.section>
-
-      {/* ==========================
-Productivity Gains
-========================== */}
-
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeInUp}
-        className="w-full flex flex-col items-center justify-center bg-gradient-to-r from-[#00A7DE] to-[#0578AC] px-6 py-12 text-white"
-      >
-        {/* Heading */}
-        <motion.h2
-          variants={fadeInUp}
-          className="text-3xl md:text-4xl font-bold mb-8 mt-4 text-center"
-        >
-          Productivity Gains
-        </motion.h2>
-
-        {/* Grid */}
-        <motion.div
-          variants={stagger}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 -gap-14 max-w-7xl w-full text-center"
-        >
-          {/* Card 1 */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col items-center space-y-2"
-          >
-            <motion.img
-              src="/images/time.png"
-              alt="Time Savings"
-              className="w-14 h-14 transition-transform"
-              whileHover={{ scale: 1.2 }}
-            />
-            <h3 className="text-base font-semibold">Time Savings</h3>
-            <p className="text-sm">
-              Bookings are automatically confirmed
-              <br /> with reminders, saving time on client
-              <br /> communication.
-            </p>
-          </motion.div>
-
-          {/* Card 2 */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col items-center space-y-2"
-          >
-            <motion.img
-              src="/images/bells.png"
-              alt="Reduced Drop-offs"
-              className="w-14 h-14 transition-transform"
-              whileHover={{ scale: 1.2 }}
-            />
-            <h3 className="text-base font-semibold">Reduced Drop-offs</h3>
-            <p className="text-sm">
-              Reduces missed appointments with
-              <br /> smart confirmation and tracking
-            </p>
-          </motion.div>
-
-          {/* Card 3 */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col items-center space-y-2"
-          >
-            <motion.img
-              src="/images/care.png"
-              alt="Better Care"
-              className="w-14 h-14 transition-transform"
-              whileHover={{ scale: 1.2 }}
-            />
-            <h3 className="text-base font-semibold">Record Keeping</h3>
-            <p className="text-sm">
-              Session notes (techniques, pressure
-              <br /> points, progress) are logged digitally
-              <br /> without manual effort.{" "}
-            </p>
-          </motion.div>
-
-          {/* Card 4 */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col items-center space-y-2"
-          >
-            <motion.img
-              src="/images/hand.png"
-              alt="More Face Time"
-              className="w-14 h-14 transition-transform"
-              whileHover={{ scale: 1.2 }}
-            />
-            <h3 className="text-base font-semibold">Care Support</h3>
-            <p className="text-sm">
-              {" "}
-              AI-generated exercise/stretch
-              <br /> reminders tailored to each client’s
-              <br /> recovery plan.{" "}
-            </p>
-          </motion.div>
-        </motion.div>
-      </motion.div>
-      {/* =====================
-Example use cases
-===================== */}
-
-      <section className="px-4 py-12 max-w-6xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false }}
-          className="text-5xl font-bold text-center text-[#00A7DE] mb-10"
-        >
-          Example Use Case
-        </motion.h2>
-
-        {/* Top Full-Width Box */}
-        <motion.div
-          variants={cardMotion}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
-        >
-          <h3 className="text-base font-semibold mb-2">
-            Chronic Back Pain Consultation
-          </h3>
-          <p className="text-sm text-[#797A7D] leading-relaxed">
-            A patient experiencing chronic back stiffness books a massage
-            session through your virtual assistant.
-          </p>
-        </motion.div>
-
-        {/* Bottom 4 Boxes */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-        >
-          {[
-            {
-              icon: "/images/one.png",
-              title: "Instant Confirmation",
-              text: (
-                <>
-                  {" "}
-                  Confirms their appointments instantly with available <br />
-                  time slots.
-                </>
-              ),
-              bg: "bg-[#3B82F6]/8",
-            },
-            {
-              icon: "/images/two.png",
-              title: "Smart Reminders",
-              text: (
-                <>
-                  Sends reminders with prep instructions like "wear
-                  <br /> flexible clothing".
-                </>
-              ),
-              bg: "bg-[#10B981]/8",
-            },
-            {
-              icon: "/images/three.png",
-              title: "Treatment Logging",
-              text: (
-                <>
-                  Logs treatment updates after each session
-                  <br /> automatically.
-                </>
-              ),
-              bg: "bg-[#F5B80B]/8",
-            },
-            {
-              icon: "/images/four.png",
-              title: "Home Care Support",
-              text: (
-                <>
-                  Sends daily or weekly reminders for stretching, or
-                  <br /> posture tips tailored to the patient’s recovery plan.
-                </>
-              ),
-              bg: "bg-[#FAF5FF]/8",
-            },
-          ].map((box, i) => (
-            <motion.div
-              key={i}
-              variants={cardMotion}
-              whileHover={{ scale: 1.04, rotateZ: 1 }}
-              className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-            >
-              <div className="flex items-center gap-4 mb-2">
-                <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                <h3 className="text-base text-[#000000] font-semibold">
-                  {box.title}
-                </h3>
-              </div>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
-                {box.text}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
-      {/* =======================
-from
-======================== */}
-
-      <section className="w-full bg-[#00A7DE] py-16">
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false }}
-        variants={formVariant}
-        className="max-w-3xl mx-auto px-6 text-center"
-      >
-        {/* Heading */}
-        <motion.h2
-          variants={staggerChild}
-          className="text-2xl md:text-3xl font-bold text-white"
-        >
-          Get Your AI Assistant for Healthcare
-        </motion.h2>
-        <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
-          Join thousands of industries who are transforming patient care with
-          our AI solutions.
-        </motion.p>
-
-        {/* Form */}
-        <motion.form
-          variants={staggerParent}
-          initial="hidden"
-          animate="show"
-          className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
-        >
-          {/* Floating gradient background effect */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
-            animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-            {/* Full Name */}
-            <motion.div variants={staggerChild}>
-              <label className="block text-sm text-black font-medium mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-              />
-            </motion.div>
-
-            {/* Email */}
-            <motion.div variants={staggerChild}>
-              <label className="block text-sm text-black font-medium mb-1">
-                Email Address
-              </label>
-              <input
-                type="email"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="Enter your email"
-                className={`w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE] ${
-                  isEmailValid
-                    ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
-                    : "border-red-500 focus:ring-red-500"
-                }`}
-              />
-            </motion.div>
-
-            {/* Phone with Country Code */}
-            <motion.div variants={staggerChild}>
-              <label className="block text-sm text-black font-medium mb-1">
-                Phone Number
-              </label>
-              <div className="flex gap-2">
-                <select
-                  value={countryCode}
-                  onChange={(e) => setCountryCode(e.target.value)}
-                  className="border border-[#D1D5DB] text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                >
-                  <option value="+1">🇺🇸 +1</option>
-                  <option value="+44">🇬🇧 +44</option>
-                  <option value="+92">🇵🇰 +92</option>
-                  <option value="+91">🇮🇳 +91</option>
-                  <option value="+61">🇦🇺 +61</option>
-                  <option value="+81">🇯🇵 +81</option>
-                  <option value="+971">🇦🇪 +971</option>
-                  <option value="+49">🇩🇪 +49</option>
-                  <option value="+33">🇫🇷 +33</option>
-                  <option value="+86">🇨🇳 +86</option>
-                </select>
-
-                <input
-                  type="text"
-                  value={phone}
-                  onChange={handlePhoneChange}
-                  placeholder="Enter your number"
-                  className={`w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE] ${
-                    isPhoneValid
-                      ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
-                      : "border-red-500 focus:ring-red-500"
-                  }`}
+              {/* Stat 1 */}
+              <motion.div
+                className="flex flex-col items-center text-center p-4 md:p-6"
+                variants={fadeInItem}
+              >
+                <img
+                  src="/images/clock.png"
+                  alt="Missed Appointments"
+                  className="h-7 w-7 mb-2"
                 />
-              </div>
+                <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
+                <p className="text-[#797A7D] text-sm mt-2">
+                  Less time on scheduling and note-
+                  <br />
+                  taking, more time with clients.
+                </p>
+              </motion.div>
+
+              {/* Stat 2 */}
+              <motion.div
+                className="flex flex-col items-center text-center p-4 md:p-6"
+                variants={fadeInItem}
+              >
+                <img
+                  src="/images/Frame.png"
+                  alt="Scheduling Automation"
+                  className="h-7 w-7 mb-2"
+                />
+                <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
+                <p className="text-[#797A7D] text-sm mt-2">
+                  Automated reminders ensure better
+                  <br /> attendance.
+                </p>
+              </motion.div>
+
+              {/* Stat 3 */}
+              <motion.div
+                className="flex flex-col items-center text-center p-4 md:p-6"
+                variants={fadeInItem}
+              >
+                <img
+                  src="/images/wave.png"
+                  alt="Patient Recovery"
+                  className="h-7 w-7 mb-2"
+                />
+                <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
+                <p className="text-[#797A7D] text-sm mt-2">
+                  Follow-up tracking and
+                  <br /> reminders help maintain regular sessions.
+                </p>
+              </motion.div>
             </motion.div>
+          </section>
+        </>
 
-            {/* Industry */}
-            <motion.div variants={staggerChild}>
-              <label className="block text-sm text-black font-medium mb-1">
-                Industry
-              </label>
-              <select className="w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]">
-                <option value="" className="text-[#D1D5DB]">
-                  Search or select your industry
-                </option>
-                <option>Healthcare</option>
-                <option>Pharmaceutical</option>
-                <option>Technology</option>
-                <option>Education</option>
-                <option>Other</option>
-              </select>
-            </motion.div>
-          </div>
-
-          {/* Message */}
-          <motion.div variants={staggerChild} className="mt-6 relative z-10">
-            <label className="block text-sm font-medium text-black mb-1">
-              How can we help?
-            </label>
-            <textarea
-              placeholder="Tell us about your specific needs or challenges"
-              rows={4}
-              className="w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-            />
-          </motion.div>
-
-          {/* Submit */}
-          <motion.div
-  variants={staggerChild}
-  className="mt-6 text-center relative z-10"
->
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    type="submit"
-    className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md
-               transition-all duration-300 ease-in-out
-               hover:shadow-[0_0_15px_#00A7DE]"
-  >
-    Submit
-  </motion.button>
-</motion.div>
-
-        </motion.form>
-      </motion.div>
-    </section>
-      {/* ======================
-Explore other industries
-========================== */}
-      <section className="w-full bg-gray-50 py-16">
-        <motion.div
-          className="max-w-6xl mx-auto px-6 text-center"
+        {/* =======================
+         Key features
+         ======================= */}
+        <motion.section
+          className="py-12 px-4 mt-15 md:px-8 lg:px-16"
+          variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          variants={containerVariants}
+          viewport={{ once: false, amount: 0.2 }} // triggers once when 20% visible
         >
           {/* Heading */}
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-[#00A7DE] mb-2"
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            className="text-4xl font-bold mb-8 text-black text-center"
+            variants={fadeUp}
           >
-            Explore Other Industries
+            Key Benefits
           </motion.h2>
+
+          {/* Subheading */}
           <motion.p
-            className="text-gray-600 mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4sm font-regular -mt-6 mb-8 text-[#797A7D] text-center"
+            variants={fadeUp}
           >
-            Discover how our AI solutions are transforming various industries.
+            Simplify your massage practice with smart automation that improves
+            client
+            <br /> care and reduces admin tasks.
           </motion.p>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Personal Trainer */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            variants={staggerFadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {/* Card 1 */}
             <motion.div
-              variants={leftVariant}
-              className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              className="bg-gradient-to-br from-[#FAF5FF] to-[#F3E8FF] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="mb-4">
                 <Image
-                  src="/images/personal.png"
-                  alt="Personal Trainer"
-                  width={64}
-                  height={64}
+                  src="/images/automated-scheduling.png"
+                  alt="Automated Scheduling"
+                  width={48}
+                  height={48}
                 />
-                <h3 className="text-lg text-black font-semibold">
-                  Personal Trainer
-                </h3>
               </div>
-              <p className="text-[#797A7D] mb-4">
-                Power Up Your Training Business Automates client scheduling,
-                payment reminders, and progress updates.
+              <h3 className="text-xl font-semibold mb-2">
+                Automated Scheduling
+              </h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Session scheduling, reminders, and
+                <br /> follow-ups handled automatically,
+                <br /> reducing no-shows and improving
+                <br /> patient adherence.
               </p>
-              <a
-                href="#"
-                className="text-[#00A7DE] font-medium hover:underline"
-              >
-                Learn More
-              </a>
             </motion.div>
 
-            {/* Psychologist */}
+            {/* Card 2 */}
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9 }}
-              className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              className="bg-gradient-to-br from-[#ECFEFF] to-[#CFFAFE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="mb-4">
                 <Image
-                  src="/images/psychologist.png"
-                  alt="Psychologist"
-                  width={64}
-                  height={64}
+                  src="/images/secure-records.png"
+                  alt="Secure Patient Records"
+                  width={48}
+                  height={48}
                 />
-                <h3 className="text-lg text-black font-semibold">
-                  Psychologist
-                </h3>
               </div>
-              <p className="text-[#797A7D] mb-4">
-                Automates client bookings, tracks therapy sessions, and keeps
-                your calendar organized.
+              <h3 className="text-xl font-semibold mb-2">Organized Records</h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Record workout details, focus areas,
+                <br /> and client preferences in seconds.
               </p>
-              <a
-                href="#"
-                className="text-[#00A7DE] font-medium hover:underline"
-              >
-                Learn More
-              </a>
             </motion.div>
 
-            {/* Chiropractor */}
+            {/* Card 3 */}
             <motion.div
-              variants={rightVariant}
-              className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              className="bg-gradient-to-br from-[#E6EEFF] to-[#C7D8FE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="mb-4">
                 <Image
-                  src="/images/chiropractor.png"
-                  alt="Chiropractor"
-                  width={64}
-                  height={64}
+                  src="/images/stronger.png"
+                  alt="Personalized Care"
+                  width={48}
+                  height={48}
                 />
-                <h3 className="text-lg text-black font-semibold">
-                  Chiropractor
-                </h3>
               </div>
-              <p className="text-[#797A7D] mb-4">
-                Precision Scheduling for Chiropractors. Organizes client visits,
-                recalls, and automates reminders.
+              <h3 className="text-xl font-semibold mb-2">
+                Stronger Client Retention
+              </h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Regular follow-ups encourage ongoing
+                <br /> wellness sessions.
               </p>
-              <a
-                href="#"
-                className="text-[#00A7DE] font-medium hover:underline"
-              >
-                Learn More
-              </a>
             </motion.div>
-          </div>
-        </motion.div>
-      </section>
-      {/* =====================
-            FOOTER SECTION
-            =================== */}
-      <motion.footer
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false }}
-        variants={slideUp} // Footer slides up as a whole
-        className="bg-[#FFFFFF] text-black py-10"
-      >
-        <motion.div
-          className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
-          variants={staggerContainer} // Stagger child animation for columns
+
+            {/* Card 4 */}
+            <motion.div
+              className="bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/better-adherence.png"
+                  alt="Better Adherence"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Track client progress over time with
+                <br /> detailed notes and reminders, ensuring
+                <br /> each session builds toward long-term
+                <br /> health and recovery goals.
+              </p>
+            </motion.div>
+
+            {/* Card 5 */}
+            <motion.div
+              className="bg-gradient-to-br from-[#FFF1F2] to-[#FFE4E6] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/Images/stress.png"
+                  alt="Consistent Follow-Ups"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">More Care </h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Spend less time on admin and
+                <br /> more time delivering relaxation and therapy.
+              </p>
+            </motion.div>
+          </motion.div>
+        </motion.section>
+
+        {/* ======================
+          Primary uses
+       ======================     */}
+        {/* Divider */}
+        <div className="w-full h-[2px] bg-gray-200 my-12"></div>
+
+        <motion.section
+          className="px-6 py-12 max-w-6xl mx-auto"
+          variants={pageFadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false }}
         >
-          {/* Logo & Info */}
-          <motion.div className="col-span-1" variants={slideUpChild}>
-            <Image
-              src="/images/logo1.png"
-              alt="Virtual Assistant Logo"
-              width={180}
-              height={60}
-              className="mb-4"
-            />
-            <p className="text-sm mb-4 text-gray-500">
-              Transforming industries with intelligent virtual assistants.
-            </p>
+          {/* H2 Section Heading */}
+          <motion.h2
+            className="text-5xl font-bold text-center text-[#00A7DE] mb-12 -mt-15"
+            variants={listItemFade}
+          >
+            Primary Uses
+          </motion.h2>
 
-            <div className="flex space-x-4">
-              <Link href="#">
+          {/* Two-column Grid */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 p-8 md:p-20 border rounded-lg shadow-none hover:shadow-lg transition max-w-5xl mx-auto"
+            variants={staggeredList}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+          >
+            {/* Left Column */}
+            <div className="space-y-8">
+              {/* Item 1 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+              >
                 <Image
-                  src="/images/twitter.png"
-                  alt="Twitter"
-                  width={20}
-                  height={20}
-                  className="transition duration-300 hover:brightness-0 hover:invert hover:hue-rotate-180"
+                  src="/images/fitness.png"
+                  alt="AI Fitness Goal Setting"
+                  width={40}
+                  height={40}
                 />
-              </Link>
-              <Link href="#">
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    Stress Relief Management
+                  </h3>
+                  <p className="text-sm text-[#797A7D]">
+                    Help clients reduce stress, anxiety, and tension through
+                    <br /> regular massage sessions.
+                  </p>
+                </div>
+              </motion.article>
+
+              {/* Item 2 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+              >
                 <Image
-                  src="/images/linkedln.png"
-                  alt="LinkedIn"
-                  width={20}
-                  height={20}
+                  src="/images/pain & injury.png"
+                  alt="AI Workout Management"
+                  width={40}
+                  height={40}
                 />
-              </Link>
-              <Link href="#">
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    Pain & Injury Recovery
+                  </h3>
+                  <p className="text-sm text-[#797A7D]">
+                    Support healing from muscle strain, stiffness, or sports-
+                    <br />
+                    related injuries.
+                  </p>
+                </div>
+              </motion.article>
+
+              {/* Item 3 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+              >
                 <Image
-                  src="/images/facebook.png"
-                  alt="Facebook"
-                  width={20}
-                  height={20}
+                  src="/images/releax.png"
+                  alt="AI Nutrition Guidance"
+                  width={40}
+                  height={40}
                 />
-              </Link>
-              <Link href="#">
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    Wellness & Relaxation
+                  </h3>
+                  <p className="text-sm text-[#797A7D]">
+                    Enhance overall wellbeing, relaxation, and sleep quality.
+                  </p>
+                </div>
+              </motion.article>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-8">
+              {/* Item 4 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+              >
                 <Image
-                  src="/images/instagram.png"
-                  alt="Instagram"
-                  width={20}
-                  height={20}
+                  src="/images/tracking.png"
+                  alt="Patient Progress Tracking"
+                  width={40}
+                  height={40}
                 />
-              </Link>
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    Patient Progress Tracking
+                  </h3>
+                  <p className="text-sm text-[#797A7D]">
+                    Record personalized notes and monitor treatment
+                    <br /> effectiveness over time.
+                  </p>
+                </div>
+              </motion.article>
+
+              {/* Item 5 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+              >
+                <Image
+                  src="/images/tracking (2).png"
+                  alt="AI Assistant for Patients"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">
+                    AI Assistant
+                  </h3>
+                  <p className="text-sm text-[#797A7D]">
+                    Answer common patient inquiries via AI chat or voice
+                    assistant.
+                  </p>
+                </div>
+              </motion.article>
             </div>
           </motion.div>
+        </motion.section>
 
-          {/* Pages */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Pages</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                "Home",
-                "About",
-                "Industries",
-                "Pricing",
-                "About",
-                "Contact Us",
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href="#"
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+        {/* ==========================
+           Productivity Gains
+         ========================== */}
 
-          {/* Industries col 1 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                "Physiotherapist",
-                "Myotherapist",
-                "Massage Therapist",
-                "Personal Trainer",
-                "Psychologist",
-                "Chiropractor",
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href="#"
-                    className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Industries col 2 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                "Podiatrist",
-                "Beauty Therapist",
-                "Hairdresser",
-                "Dentist",
-                "Accountant",
-                "Lawyer",
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href="#"
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Industries col 3 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                "Consultant",
-                "Real Estate Agent",
-                "Mechanic",
-                "Plumber",
-                "Electrician",
-                "Window Cleaning",
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href="#"
-                    className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </motion.div>
-
-        {/* Bottom Line */}
-        <motion.div
-          variants={slideUpChild}
-          className="border-t border-gray-300 mt-8 pt-4 text-center text-sm"
+        <motion.section
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInUp}
+          className="w-full flex flex-col items-center justify-center bg-gradient-to-r from-[#00A7DE] to-[#0578AC] px-6 py-12 text-white"
         >
-          © 2025 VirtualAssistant. All rights reserved.
-        </motion.div>
-      </motion.footer>
-    </div>
+          {/* H2 Section Heading */}
+          <motion.h2
+            variants={fadeInUp}
+            className="text-3xl md:text-4xl font-bold mb-8 mt-4 text-center"
+          >
+            Productivity Gains
+          </motion.h2>
+
+          {/* Grid of Features */}
+          <motion.div
+            variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full text-center"
+          >
+            {/* Card 1 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+            >
+              <motion.img
+                src="/images/time.png"
+                alt="Time Savings with AI scheduling"
+                className="w-14 h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-base font-semibold">Time Savings</h3>
+              <p className="text-sm">
+                Bookings are automatically confirmed
+                <br /> with reminders, saving time on client
+                <br /> communication.
+              </p>
+            </motion.article>
+
+            {/* Card 2 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+            >
+              <motion.img
+                src="/images/bells.png"
+                alt="Increased client attendance"
+                className="w-14 h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-base font-semibold">Reduced Drop-offs</h3>
+              <p className="text-sm">
+                Reduces missed appointments with
+                <br /> smart confirmation and tracking
+              </p>
+            </motion.article>
+
+            {/* Card 3 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+            >
+              <motion.img
+                src="/images/care.png"
+                alt="Effective client sessions"
+                className="w-14 h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-base font-semibold">Record Keeping</h3>
+              <p className="text-sm">
+                Session notes (techniques, pressure
+                <br /> points, progress) are logged digitally
+                <br /> without manual effort.
+              </p>
+            </motion.article>
+
+            {/* Card 4 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+            >
+              <motion.img
+                src="/images/hand.png"
+                alt="Personalized care support"
+                className="w-14 h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-base font-semibold">Care Support</h3>
+              <p className="text-sm">
+                AI-generated workout and nutrition <br /> reminders tailored to
+                each client’s <br /> fitness goals.
+              </p>
+            </motion.article>
+          </motion.div>
+        </motion.section>
+
+        {/* =====================
+         Example use cases
+        ===================== */}
+
+        <section className="px-4 py-12 max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false }}
+            className="text-5xl font-bold text-center text-[#00A7DE] mb-10"
+          >
+            Example Use Case
+          </motion.h2>
+
+          {/* Top Full-Width Box */}
+          <motion.div
+            variants={cardMotion}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
+          >
+            <h3 className="text-base font-semibold mb-2">
+              Chronic Back Pain Consultation
+            </h3>
+            <p className="text-sm text-[#797A7D] leading-relaxed">
+              A patient experiencing chronic back stiffness books a massage
+              session through your virtual assistant.
+            </p>
+          </motion.div>
+
+          {/* Bottom 4 Boxes */}
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          >
+            {[
+              {
+                icon: "/images/one.png",
+                title: "Instant Confirmation",
+                text: (
+                  <>
+                    Confirms their appointments instantly with available time
+                    slots.
+                  </>
+                ),
+                bg: "bg-[#3B82F6]/8",
+              },
+              {
+                icon: "/images/two.png",
+                title: "Smart Reminders",
+                text: (
+                  <>
+                    Sends reminders with prep instructions like "wear flexible
+                    clothing".
+                  </>
+                ),
+                bg: "bg-[#10B981]/8",
+              },
+              {
+                icon: "/images/three.png",
+                title: "Treatment Logging",
+                text: (
+                  <>Logs treatment updates after each session automatically.</>
+                ),
+                bg: "bg-[#F5B80B]/8",
+              },
+              {
+                icon: "/images/four.png",
+                title: "Home Care Support",
+                text: (
+                  <>
+                    Sends daily or weekly reminders for stretching, or
+                    <br /> posture tips tailored tothe patient’s recovery plan.
+                  </>
+                ),
+                bg: "bg-[#FAF5FF]/8",
+              },
+            ].map((box, i) => (
+              <motion.div
+                key={i}
+                variants={cardMotion}
+                whileHover={{ scale: 1.04, rotateZ: 1 }}
+                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+              >
+                <div className="flex items-center gap-4 mb-2">
+                  <img src={box.icon} alt={box.title} className="w-10 h-10" />
+                  <h3 className="text-base text-[#000000] font-semibold">
+                    {box.title}
+                  </h3>
+                </div>
+                <p className="text-sm text-[#797A7D] leading-relaxed">
+                  {box.text}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </section>
+        {/* =======================
+               from
+           ======================== */}
+
+        <section className="w-full bg-[#00A7DE] py-16">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            variants={formVariant}
+            className="max-w-3xl mx-auto px-6 text-center"
+          >
+            <motion.h2
+              variants={staggerChild}
+              className="text-2xl md:text-3xl font-bold text-white"
+            >
+              Get Your AI Assistant for Healthcare
+            </motion.h2>
+            <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
+              Join thousands of industries who are transforming patient care
+              with our AI solutions.
+            </motion.p>
+
+            <motion.form
+              variants={staggerParent}
+              initial="hidden"
+              animate="show"
+              className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
+              noValidate
+            >
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/10 to-[#098DC9]/5 pointer-events-none"
+                animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 8,
+                  ease: "easeInOut",
+                }}
+              />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+                {/* Full Name */}
+                <motion.div variants={staggerChild}>
+                  <label
+                    htmlFor="fullName"
+                    className="block text-sm text-black font-medium mb-1"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                    required
+                  />
+                </motion.div>
+
+                {/* Email */}
+                <motion.div variants={staggerChild}>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm text-black font-medium mb-1"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    value={email}
+                    onChange={handleEmailChange}
+                    placeholder="Enter your email"
+                    aria-invalid={!isEmailValid}
+                    aria-describedby="email-error"
+                    className={`w-full border rounded-md px-3 py-2 placeholder-gray-300 text-black focus:outline-none focus:ring-2 ${
+                      isEmailValid
+                        ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
+                        : "border-red-500 focus:ring-red-500"
+                    }`}
+                    required
+                  />
+                  {!isEmailValid && (
+                    <p id="email-error" className="text-red-500 text-xs mt-1">
+                      Please enter a valid email address
+                    </p>
+                  )}
+                </motion.div>
+
+                {/* Phone (merged with country code) */}
+                <motion.div variants={staggerChild}>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm text-black font-medium mb-1"
+                  >
+                    Phone Number
+                  </label>
+                  <div className="flex border border-[#D1D5DB] rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#00A7DE]">
+                    {/* Country Code */}
+                    <select
+                      value={countryCode}
+                      onChange={(e) => setCountryCode(e.target.value)}
+                      className=" text-black px-3 py-2 border-r border-[#D1D5DB] outline-none"
+                    >
+                      <option value="+1">🇺🇸 +1</option>
+                      <option value="+44">🇬🇧 +44</option>
+                      <option value="+92">🇵🇰 +92</option>
+                      <option value="+91">🇮🇳 +91</option>
+                      <option value="+61">🇦🇺 +61</option>
+                      <option value="+81">🇯🇵 +81</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+49">🇩🇪 +49</option>
+                      <option value="+33">🇫🇷 +33</option>
+                      <option value="+86">🇨🇳 +86</option>
+                    </select>
+
+                    {/* Phone Input */}
+                    <input
+                      id="phone"
+                      type="tel"
+                      value={phone}
+                      onChange={handlePhoneChange}
+                      placeholder="Enter your number"
+                      aria-invalid={!isPhoneValid}
+                      aria-describedby="phone-error"
+                      className={`flex-1 px-3 py-2 text-black placeholder-gray-300 outline-none ${
+                        isPhoneValid ? "" : "border-l border-red-500"
+                      }`}
+                      required
+                    />
+                  </div>
+                  {!isPhoneValid && (
+                    <p id="phone-error" className="text-red-500 text-xs mt-1">
+                      Please enter a valid phone number
+                    </p>
+                  )}
+                </motion.div>
+
+                {/* Industry */}
+                <motion.div variants={staggerChild}>
+                  <label
+                    htmlFor="industry"
+                    className="block text-sm text-black font-medium mb-1"
+                  >
+                    Industry
+                  </label>
+                  <select
+                    id="industry"
+                    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                    required
+                  >
+                    <option value="" className="text-[#D1D5DB]">
+                      Search or select your industry
+                    </option>
+                    <option>Healthcare</option>
+                    <option>Pharmaceutical</option>
+                    <option>Technology</option>
+                    <option>Education</option>
+                    <option>Other</option>
+                  </select>
+                </motion.div>
+              </div>
+
+              {/* Message */}
+              <motion.div
+                variants={staggerChild}
+                className="mt-6 relative z-10"
+              >
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-black mb-1"
+                >
+                  How can we help?
+                </label>
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your specific needs or challenges"
+                  rows={4}
+                  className="w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                  required
+                />
+              </motion.div>
+
+              {/* Submit */}
+              <motion.div
+                variants={staggerChild}
+                className="mt-6 text-center relative z-10"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
+                  whileTap={{ scale: 0.95 }}
+                  type="submit"
+                  className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
+                >
+                  Submit
+                </motion.button>
+              </motion.div>
+            </motion.form>
+          </motion.div>
+        </section>
+        {/* ======================
+Explore other industries
+========================== */}
+        <section className="w-full bg-gray-50 py-16">
+          <motion.div
+            className="max-w-6xl mx-auto px-6 text-center"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={containerVariants}
+          >
+            {/* Heading */}
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold text-[#00A7DE] mb-2"
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Explore Other Industries
+            </motion.h2>
+            <motion.p
+              className="text-gray-600 mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Discover how our AI solutions are transforming various industries.
+            </motion.p>
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Personal Trainer */}
+              <motion.div
+                variants={leftVariant}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/personal.png"
+                    alt="Personal Trainer"
+                    width={64}
+                    height={64}
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Personal Trainer
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Power Up Your Training Business Automates client scheduling,
+                  payment reminders, and progress updates.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+
+              {/* Psychologist */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/psychologist.png"
+                    alt="Psychologist"
+                    width={64}
+                    height={64}
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Psychologist
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Automates client bookings, tracks therapy sessions, and keeps
+                  your calendar organized.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+
+              {/* Chiropractor */}
+              <motion.div
+                variants={rightVariant}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/chiropractor.png"
+                    alt="Chiropractor"
+                    width={64}
+                    height={64}
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Chiropractor
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Precision Scheduling for Chiropractors. Organizes client
+                  visits, recalls, and automates reminders.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
+        {/* =====================
+            FOOTER SECTION
+            =================== */}
+        <motion.footer
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false }}
+          variants={slideUp} // Footer slides up as a whole
+          className="bg-[#FFFFFF] text-black py-10"
+        >
+          <motion.div
+            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
+            variants={staggerContainer} // Stagger child animation for columns
+          >
+            {/* Logo & Info */}
+            <motion.div className="col-span-1" variants={slideUpChild}>
+              <Image
+                src="/images/logo1.png"
+                alt="Virtual Assistant Logo"
+                width={180}
+                height={60}
+                className="mb-4"
+              />
+              <p className="text-sm mb-4 text-gray-500">
+                Transforming industries with intelligent virtual assistants.
+              </p>
+
+              <div className="flex space-x-4">
+                <Link href="#">
+                  <Image
+                    src="/images/twitter.png"
+                    alt="Twitter"
+                    width={20}
+                    height={20}
+                    className="transition duration-300 hover:brightness-0 hover:invert hover:hue-rotate-180"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/linkedln.png"
+                    alt="LinkedIn"
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/facebook.png"
+                    alt="Facebook"
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/instagram.png"
+                    alt="Instagram"
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Pages */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Pages</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  "Home",
+                  "About",
+                  "Industries",
+                  "Pricing",
+                  "About",
+                  "Contact Us",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href="#"
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 1 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  "Physiotherapist",
+                  "Myotherapist",
+                  "Massage Therapist",
+                  "Personal Trainer",
+                  "Psychologist",
+                  "Chiropractor",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href="#"
+                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 2 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  "Podiatrist",
+                  "Beauty Therapist",
+                  "Hairdresser",
+                  "Dentist",
+                  "Accountant",
+                  "Lawyer",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href="#"
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 3 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  "Consultant",
+                  "Real Estate Agent",
+                  "Mechanic",
+                  "Plumber",
+                  "Electrician",
+                  "Window Cleaning",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href="#"
+                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
+
+          {/* Bottom Line */}
+          <motion.div
+            variants={slideUpChild}
+            className="border-t border-gray-300 mt-8 pt-4 text-center text-sm"
+          >
+            © 2025 VirtualAssistant. All rights reserved.
+          </motion.div>
+        </motion.footer>
+      </div>
+    </>
   );
 }

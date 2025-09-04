@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Head from "next/head";
+import { Menu, X } from "lucide-react"; // hamburger & close icons
 import { motion } from "framer-motion";
 import { pageFadeIn } from "../../_components/animations/physo3";
 import { staggeredList } from "../../_components/animations/physo3";
@@ -27,6 +28,7 @@ import { rightVariant } from "../../_components/animations/physo77";
 
 // form
 export default function Home() {
+   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [phone, setPhone] = useState("");
@@ -75,9 +77,9 @@ export default function Home() {
             </div>
 
             {/* Navigation */}
-
-            <nav>
-              <ul className="flex items-center space-x-8 text-sm font-medium">
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:block">
+              <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
                 <li>
                   <Link href="/" className="text-black hover:text-[#00A7DE]">
                     Home
@@ -91,30 +93,16 @@ export default function Home() {
                     Features
                   </Link>
                 </li>
-
-                {/* Dropdown list */}
                 <li className="relative group">
-                  {/* Parent Link */}
-                  <Link
-                    href="/industries"
-                    className="text-[#00A7DE] hover:text-[#00A7DE]"
-                  >
+                  <Link href="/industries" className="text-[#00A7DE]">
                     Industries
                   </Link>
-
                   {/* Dropdown */}
-                  <ul
-                    className="
-    absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md
-    opacity-0 invisible group-hover:opacity-100 group-hover:visible
-    transition-all duration-300 ease-in-out delay-200
-    z-[100]
-  "
-                  >
+                  <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
                     <li>
                       <Link
                         href="/industries/Physotherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Physiotherapist
                       </Link>
@@ -122,7 +110,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/myotherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Myotherapist
                       </Link>
@@ -130,15 +118,15 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/personaltrainer"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
-                        personal Trainer
+                        Personal Trainer
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/industries/massagetherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Massage Therapist
                       </Link>
@@ -146,15 +134,15 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/psychology"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
-                        psychology
+                        Psychology
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/industries/chiropractor"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Chiropractor
                       </Link>
@@ -182,7 +170,7 @@ export default function Home() {
                     href="/contact"
                     className="text-black hover:text-[#00A7DE]"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </li>
                 <li>
@@ -196,19 +184,165 @@ export default function Home() {
                 <li>
                   <Link
                     href="/signup"
-                    className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold 
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 inline-block text-center"
+                    className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                   >
                     Sign Up
                   </Link>
                 </li>
               </ul>
             </nav>
+            {/* Mobile Hamburger */}
+            <button
+              className="lg:hidden text-black"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+          {/* Mobile Sidebar */}
+          <div
+            className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-40 ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <Image
+                src="/images/logo1.png"
+                alt="Logo"
+                width={150}
+                height={40}
+              />
+              <button onClick={() => setIsOpen(false)}>
+                <X size={28} />
+              </button>
+            </div>
+            <ul className="flex flex-col space-y-4 p-6 text-sm font-medium">
+              <li>
+                <Link
+                  href="/"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/features"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Features
+                </Link>
+              </li>
+              <li className="relative group">
+                <Link
+                  href="/industries"
+                  className="text-black hover:text-[#00A7DE]"
+                >
+                  Industries
+                </Link>
+                {/* Dropdown */}
+                <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
+                  <li>
+                    <Link
+                      href="/industries/Physotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Physiotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/myotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Myotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/personaltrainer"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Personal Trainer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/massagetherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Massage Therapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/psychology"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Psychology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/chiropractor"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Chiropractor
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  href="/pricing"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/login"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Log In
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/signup"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full sm:w-auto text-center sm:text-left"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sign Up
+                </Link>
+              </li>
+            </ul>
           </div>
         </header>
-
-        {/* Hero Section */}
+      
         {/* Hero Section */}
         <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
           <div className="absolute inset-0 backdrop-blur-sm"></div>
@@ -330,7 +464,7 @@ export default function Home() {
       variants={fadeInItem}
     >
       <img
-        src="/images/frame.png"
+        src="/images/Frame.png"
         alt="Scheduling Automation"
         className="h-7 w-7 mb-2"
       />
@@ -760,103 +894,102 @@ Productivity Gains
 Example use cases
 ===================== */}
 
-       <section
-  id="example-use-case"
-  className="px-4 py-12 max-w-6xl mx-auto"
-  aria-labelledby="example-use-case-heading"
->
-  {/* ✅ SEO heading */}
-  <motion.h2
-    id="example-use-case-heading"
-    initial={{ opacity: 0, y: -40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-    viewport={{ once: false }}
-    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#00A7DE] mb-10"
-  >
-    Example Use Case
-  </motion.h2>
+      <section className="px-4 py-12 max-w-6xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false }}
+          className="text-5xl font-bold text-center text-[#00A7DE] mb-10"
+        >
+          Example Use Case
+        </motion.h2>
 
-  {/* Top Full-Width Box */}
-  <motion.div
-    variants={cardMotion}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false }}
-    className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#FFFFFF] hover:scale-[1.03] transition-transform mb-6"
-  >
-    <h3 className="text-lg font-semibold mb-2 text-black">
-      Lower Back Pain Journey
-    </h3>
-    <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-      A patient with recurring lower back pain books a chiropractic session
-      through your virtual assistant.
-    </p>
-  </motion.div>
-
-  {/* Bottom 4 Boxes */}
-  <motion.div
-    variants={container}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false }}
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-  >
-    {[
-      {
-        icon: "/images/one.png",
-        title: "Instant Confirmation",
-        text: "Confirms the appointment automatically with a pre-session reminder.",
-        bg: "bg-[#3B82F6]/10",
-        alt: "AI appointment confirmation",
-      },
-      {
-        icon: "/images/two.png",
-        title: "Adjustment & Feedback",
-        text: "Chiropractor logs adjustments and feedback after each visit.",
-        bg: "bg-[#10B981]/10",
-        alt: "Chiropractor adjustment feedback",
-      },
-      {
-        icon: "/images/three.png",
-        title: "Follow-up Care",
-        text: "Recurring sessions scheduled for consistent care.",
-        bg: "bg-[#F5B80B]/10",
-        alt: "AI follow-up care scheduling",
-      },
-      {
-        icon: "/images/four.png",
-        title: "Recovery Reminders",
-        text: "AI-generated posture and stretch tips tailored to each client.",
-        bg: "bg-[#A855F7]/10",
-        alt: "AI recovery reminders and posture tips",
-      },
-    ].map((box, i) => (
-      <motion.div
-        key={i}
-        variants={cardMotion}
-        whileHover={{ scale: 1.04, rotateZ: 1 }}
-        className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-      >
-        <div className="flex items-center gap-4 mb-3">
-          <img
-            src={box.icon}
-            alt={box.alt}
-            className="w-10 h-10 object-contain"
-            loading="lazy"
-          />
-          <h3 className="text-base md:text-lg font-semibold text-black">
-            {box.title}
+        {/* Top Full-Width Box */}
+        <motion.div
+          variants={cardMotion}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false }}
+          className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
+        >
+          <h3 className="text-base font-semibold mb-2">
+            Lower Back Pain Journey
           </h3>
-        </div>
-        <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-          {box.text}
-        </p>
-      </motion.div>
-    ))}
-  </motion.div>
-</section>
+          <p className="text-sm text-[#797A7D] leading-relaxed">
+            A patient with recurring lower back pain books a chiropractic session through your virtual assistant.
+          </p>
+        </motion.div>
 
+        {/* Bottom 4 Boxes */}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false }}
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+        >
+          {[
+            {
+              icon: "/images/one.png",
+              title: "Instant Confirmation",
+              text: (
+                <>
+                  Confirms the appointment automatically  with a pre-session reminder.
+                </>
+              ),
+              bg: "bg-[#3B82F6]/8",
+            },
+            {
+              icon: "/images/two.png",
+              title: "Adjustment & Feedback",
+              text: (
+                <>
+                  Chiropractor logs adjustments and feedback after each visit.
+                </>
+              ),
+              bg: "bg-[#10B981]/8",
+            },
+            {
+              icon: "/images/three.png",
+              title: "Follow-up Care",
+              text: (
+                <>
+                  Recurring sessions scheduled for consistent care.
+                </>
+              ),
+              bg: "bg-[#F5B80B]/8",
+            },
+            {
+              icon: "/images/four.png",
+              title: "Recovery Reminders",
+              text: (
+                <>
+                  AI-generated posture and stretch tips tailored to each client.
+                </>
+              ),
+              bg: "bg-[#FAF5FF]/8",
+            },
+          ].map((box, i) => (
+            <motion.div
+              key={i}
+              variants={cardMotion}
+              whileHover={{ scale: 1.04, rotateZ: 1 }}
+              className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+            >
+              <div className="flex items-center gap-4 mb-2">
+                <img src={box.icon} alt={box.title} className="w-10 h-10" />
+                <h3 className="text-base text-[#000000] font-semibold">
+                  {box.title}
+                </h3>
+              </div>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                {box.text}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </section>
 
         {/* =======================
 from

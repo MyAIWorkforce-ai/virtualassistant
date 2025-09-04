@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-
 import { useState } from "react";
 import FadeInOnScroll from "./_components/animations/FadeInScroll";
 import HoverSlide from "./_components/animations/HoverSlider";
@@ -17,10 +16,13 @@ import { ScrollAnimation, fadeInUp } from "./_components/animations/demo";
 import { slideUp } from "./_components/animations/footer";
 import { slideUpChild } from "./_components/animations/footer";
 import { staggerContainer } from "./_components/animations/footer";
-// import { Pricing } from "../_components/animations/pricing";
+import { Menu, X } from "lucide-react"; // hamburger & close icons
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  // =======================
   // build 20+ industries
+  // =======================
   const industries = [
     {
       icon: "/images/physiotherapist.png",
@@ -79,8 +81,9 @@ export default function Home() {
       desc: "Step into better practice management. Tracks appointments, follow-ups, and organizes treatment schedules.",
     },
   ];
-
-  // Transparent Pricing
+  // ========================
+  //   Transparent Pricing
+  // ========================
   const [billingCycle, setBillingCycle] = useState("monthly");
   const plans = [
     {
@@ -133,9 +136,9 @@ export default function Home() {
       highlighted: false,
     },
   ];
-
+  // =================================
   //   what our client says
-  // ===== CENTRALIZED STYLES =====
+  // ==================================
   const sectionHeading1 =
     "text-4xl md:text-4xl font-bold text-black text-primary relative inline-block";
   const subHeading = "text-muted text-[#797A7D] text-base mb-12";
@@ -166,9 +169,11 @@ export default function Home() {
       stars: "/images/star4.png",
     },
   ];
-  //How it works section
+  //  =========================
+  //   //How it works section
+  //  ==========================
   const sectionHeading =
-    "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; // update once → applies everywhere
+    "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; // update once  applies everywhere
   const stepTitle = "font-semibold text-black mb-2";
   const stepDesc = "text-[#797A7D] text-sm";
   const stepBox =
@@ -176,6 +181,7 @@ export default function Home() {
   //   Section 1 Home page
   return (
     <>
+      {/* Meta Tags */}
       <Head>
         <title>Transform Your Business with AI-Powered Assistants</title>
         <meta
@@ -197,9 +203,8 @@ export default function Home() {
           property="og:url"
           content="https://virtual-assistant-uwfn.vercel.app/"
         />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
+      {/* Main section */}
       <main className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
         {/* HEADER */}
         <header className="w-full bg-white shadow-lg">
@@ -215,8 +220,8 @@ export default function Home() {
               />
             </div>
 
-            {/* Navigation */}
-            <nav>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:block">
               <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
                 <li>
                   <Link href="/" className="text-[#00A7DE]">
@@ -238,11 +243,12 @@ export default function Home() {
                   >
                     Industries
                   </Link>
+                  {/* Dropdown */}
                   <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
                     <li>
                       <Link
                         href="/industries/Physotherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Physiotherapist
                       </Link>
@@ -250,7 +256,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/myotherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Myotherapist
                       </Link>
@@ -258,7 +264,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/personaltrainer"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Personal Trainer
                       </Link>
@@ -266,7 +272,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/massagetherapist"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Massage Therapist
                       </Link>
@@ -274,7 +280,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/psychology"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Psychology
                       </Link>
@@ -282,7 +288,7 @@ export default function Home() {
                     <li>
                       <Link
                         href="/industries/chiropractor"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                       >
                         Chiropractor
                       </Link>
@@ -331,6 +337,157 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
+
+            {/* Mobile Hamburger */}
+            <button
+              className="lg:hidden text-black"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+
+          {/* Mobile Sidebar */}
+          <div
+            className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-40 ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <Image
+                src="/images/logo1.png"
+                alt="Logo"
+                width={150}
+                height={40}
+              />
+              <button onClick={() => setIsOpen(false)}>
+                <X size={28} />
+              </button>
+            </div>
+            <ul className="flex flex-col space-y-4 p-6 text-sm font-medium">
+              <li>
+                <Link
+                  href="/"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/features"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Features
+                </Link>
+              </li>
+              <li className="relative group">
+                <Link
+                  href="/industries"
+                  className="text-black hover:text-[#00A7DE]"
+                >
+                  Industries
+                </Link>
+                {/* Dropdown */}
+                <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100]">
+                  <li>
+                    <Link
+                      href="/industries/Physotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Physiotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/myotherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Myotherapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/personaltrainer"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Personal Trainer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/massagetherapist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Massage Therapist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/psychology"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Psychology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries/chiropractor"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Chiropractor
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  href="/pricing"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/login"
+                  className="text-black hover:text-[#00A7DE]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Log In
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/signup"
+                  className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full sm:w-auto text-center sm:text-left"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sign Up
+                </Link>
+              </li>
+            </ul>
           </div>
         </header>
 
@@ -346,7 +503,6 @@ export default function Home() {
               loading="lazy"
             />
           </div>
-
           <div className="max-w-7xl pl-15 mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
             {/* Left content */}
             <motion.div
@@ -389,8 +545,7 @@ export default function Home() {
                 </Link>
               </div>
             </motion.div>
-
-            {/* Right side image with animation (no gap) */}
+            {/* Right side image with animation */}
             <motion.div
               className="flex justify-center items-center  w-full  lg:w-1/2"
               initial={{ opacity: 0, x: 100 }}
@@ -405,7 +560,6 @@ export default function Home() {
                   width={640}
                   height={360}
                   quality={100}
-                  loading="lazy"
                   className="max-w-full translate-x-[50px] h-auto"
                 />
               </HeroAnimation>
@@ -793,7 +947,6 @@ export default function Home() {
             </FadeInOnScroll>
           </div>
         </div>
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -815,26 +968,25 @@ export default function Home() {
           }}
         />
       </section>
-
-      {/* Why choose us  */}
+      {/* =============================     
+ {/* WHY CHOOSE US SECTION */}
+      {/* ===============================*/}
       <main>
-        {/* WHY CHOOSE US SECTION */}
         <section
           className="py-16 relative w-full bg-background- min-h-screen
-        bg-[linear-gradient(120deg,#e6f0ff_0%,#ffffff_100%),url('/images/choose.png')] 
-        bg-cover bg-center bg-no-repeat"
+          bg-[linear-gradient(120deg,#e6f0ff_0%,#ffffff_100%),url('/images/choose.png')] 
+          bg-cover bg-center bg-no-repeat"
           aria-labelledby="why-choose-heading"
         >
           {/* Decorative Quarter Circles */}
           <div
             aria-hidden="true"
-            className="absolute top-0 right-0 w-32 h-32 bg-[#e6f0ff] rounded-bl-[100%]"
+            className="absolute top-0 right-0 w-20 h-20 bg-[#e6f0ff] rounded-bl-[100%]"
           ></div>
           <div
             aria-hidden="true"
-            className="absolute bottom-0 left-0 w-32 h-32 bg-[#e6f0ff] rounded-tr-[100%]"
+            className="absolute bottom-0 left-0 w-20 h-20 bg-[#e6f0ff] rounded-tr-[100%]"
           ></div>
-
           <div className="max-w-5xl mx-auto px-6 text-center p-10">
             {/* Heading */}
             <RotateIn>
@@ -845,12 +997,10 @@ export default function Home() {
                 Why Choose Us?
               </h2>
             </RotateIn>
-
             {/* Bar */}
             <RotateIn delay={0.2}>
               <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-6 rounded-full"></div>
             </RotateIn>
-
             {/* Subheading + Description */}
             <RotateIn delay={0.4}>
               <h3 className="text-xl md:text-4xl font-semibold text-gray-800 mb-4">
@@ -862,7 +1012,6 @@ export default function Home() {
                 focus on growing your business.
               </p>
             </RotateIn>
-
             {/* Features List */}
             <ul className="space-y-6 text-left max-w-2xl mx-auto">
               {[
@@ -918,15 +1067,14 @@ export default function Home() {
                 </RotateIn>
               ))}
             </ul>
-
             {/* Buttons */}
             <RotateIn delay={1.2}>
               <div className="mt-10 flex justify-center space-x-4">
                 <Link
                   href="/free-trial"
                   className="bg-[#00A7DE] text-white px-6 py-3 rounded-lg shadow font-medium
-             transition-all duration-300 ease-in-out
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                  transition-all duration-300 ease-in-out
+                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
                   Start Free Trial
                 </Link>
@@ -934,9 +1082,9 @@ export default function Home() {
                 <Link
                   href="/schedule-demo"
                   className="border border-[#00A7DE] text-[#00A7DE] px-6 py-3 rounded-lg font-medium
-             transition-all duration-300 ease-in-out
-             hover:bg-[#00A7DE] hover:text-white
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                  transition-all duration-300 ease-in-out
+               hover:bg-[#00A7DE] hover:text-white
+                 hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
                   Schedule Demo
                 </Link>
@@ -953,7 +1101,7 @@ export default function Home() {
           {/* Decorative Quarter Circle */}
           <div
             aria-hidden="true"
-            className="absolute top-0 left-0 w-32 h-32 bg-[#e6f0ff] rounded-br-[100%]"
+            className="absolute top-0 left-0 w-20 h-20 bg-[#e6f0ff] rounded-br-[100%]"
           ></div>
 
           <div className="max-w-6xl mx-auto px-6 text-center">
@@ -964,7 +1112,6 @@ export default function Home() {
             >
               Built for 20+ Industries
             </h2>
-
             {/* underline bar */}
             <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-6 rounded-full"></div>
 
@@ -1007,7 +1154,6 @@ export default function Home() {
                 </ScaleUp>
               ))}
             </div>
-
             {/* Button */}
             <div className="mt-12">
               <Link
@@ -1039,7 +1185,6 @@ export default function Home() {
             Our AI assistant handles your calls from start to finish, just like
             a human receptionist.
           </p>
-
           {/* ==== Steps ==== */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Step 1 */}
@@ -1054,14 +1199,12 @@ export default function Home() {
                     height={68.97}
                   />
                 </div>
-
                 {/* Box */}
                 <div className={stepBox}>
                   <h3 className={stepTitle}>Client calls</h3>
                   <p className={stepDesc}>
                     AI answers with your business greeting
                   </p>
-
                   {/* Step Number */}
                   <span
                     className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 w-8 h-8 flex items-center justify-center text-sm font-semibold text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
@@ -1084,11 +1227,9 @@ export default function Home() {
                     height={68.97}
                   />
                 </div>
-
                 <div className={stepBox}>
                   <h3 className={stepTitle}>Appointment booked</h3>
                   <p className={stepDesc}>Syncs with your calendar instantly</p>
-
                   <span
                     className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 w-8 h-8 flex items-center justify-center text-sm font-semibold text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
                     aria-label="Step 2"
@@ -1098,7 +1239,6 @@ export default function Home() {
                 </div>
               </article>
             </ScrollSlide>
-
             {/* Step 3 */}
             <ScrollSlide direction="right" delay={0.4}>
               <article className="flex flex-col items-center">
@@ -1110,7 +1250,6 @@ export default function Home() {
                     height={68.97}
                   />
                 </div>
-
                 <div className={stepBox}>
                   <h3 className={stepTitle}>Notes & transcript</h3>
                   <p className={stepDesc}>Saved in your CRM automatically</p>
@@ -1127,7 +1266,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Transparent Pricing */}
       <ScaleUp>
         <section className="bg-[#F9FAFB] py-20 ">
@@ -1140,7 +1278,6 @@ export default function Home() {
             <p className="text-[#797A7D] mb-6">
               Choose the perfect plan for your business needs.
             </p>
-
             {/* Toggle */}
             <div className="flex justify-center items-center mb-12 space-x-2">
               <span
@@ -1177,7 +1314,6 @@ export default function Home() {
                 Yearly <span className="text-green-600 ml-1">Save 20%</span>
               </span>
             </div>
-
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {plans.map((plan, index) => (
@@ -1238,7 +1374,6 @@ export default function Home() {
       </ScaleUp>
       {/* WHAT OUR CLIENT SAY SECTION */}
       <>
-        {/* ===== TESTIMONIAL SECTION ===== */}
         <section
           className="bg-gradient-to-r from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8"
           aria-labelledby="testimonials-title"
@@ -1249,7 +1384,6 @@ export default function Home() {
               What Our Clients Say
               <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-4 mb-5"></span>
             </h2>
-
             {/* Subheading */}
             <p className={subHeading}>
               Businesses across industries are saving time and improving
