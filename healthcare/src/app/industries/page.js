@@ -11,8 +11,6 @@ import { slideFadeTransition } from "../_components/animations/slidefadeind2";
 import { slideInLeft } from "../_components/animations/diaginalwipeind3";
 import { slideInRight } from "../_components/animations/diaginalwipeind3";
 import { slideInUp } from "../_components/animations/diaginalwipeind3";
-import { hoverLift } from "../_components/animations/hoverliftind4";
-import { fadeSlideUp } from "../_components/animations/hoverliftind4";
 import { ScrollAnimation, fadeInUp } from "../_components/animations/demo";
 import { slideUp } from "../_components/animations/footer";
 import { slideUpChild } from "../_components/animations/footer";
