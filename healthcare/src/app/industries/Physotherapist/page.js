@@ -365,51 +365,53 @@ export default function Home() {
         {/* Main Banner Section */}
         <main>
           <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
-            <div className="absolute inset-0 backdrop-blur-sm"></div>
+  <div className="absolute inset-0 backdrop-blur-sm"></div>
 
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between pl-15 md:pl-15 px-6 md:px-12 py-16 border-b border-white">
-              {/* Text on Left */}
-              <motion.div
-                className="text-white max-w-full pb-9 md:max-w-xl mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
-                variants={fadeUp}
-                initial="hidden"
-                animate="show"
-                viewport={{ once: false }}
-              >
-                <motion.div
-                  className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
-                  variants={fadeUp}
-                >
-                  Physio Therapy
-                </motion.div>
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
+    {/* Text on Left */}
+    <motion.div
+      className="text-white max-w-full md:max-w-xl mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+      variants={fadeUp}
+      initial="hidden"
+      animate="show"
+      viewport={{ once: false }}
+    >
+      <motion.div
+        className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+        variants={fadeUp}
+      >
+        Physio Therapy
+      </motion.div>
 
-                <motion.h1
-                  className="text-4xl font-bold mb-4"
-                  variants={fadeUp}
-                >
-                  AI for Physiotherapists
-                </motion.h1>
+      <motion.h1
+        className="text-4xl font-bold mb-4"
+        variants={fadeUp}
+      >
+        AI for Physiotherapists
+      </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
-                  A virtual assistant that books, reminds, and records, while
-                  you focus on your patients.
-                </motion.p>
+      <motion.p className="text-lg mb-6" variants={fadeUp}>
+        A virtual assistant that books, reminds, and records, while
+        you focus on your patients.
+      </motion.p>
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="relative overflow-hidden bg-[#ffffff] text-[#00A7DE] font-medium py-2 px-4 rounded flex items-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] group text-sm md:text-base"
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    Get Started
-                    <img
-                      src="/images/svg.png"
-                      alt="Start Icon"
-                      className="h-3 w-3"
-                    />
-                  </span>
-                </motion.button>
-              </motion.div>
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="bg-[#ffffff] text-[#00A7DE] font-medium py-2 px-4 rounded flex items-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] group text-sm md:text-base"
+      >
+        <span className="flex items-center gap-2">
+          Get Started
+          <img
+            src="/images/svg.png"
+            alt="Start Icon"
+            className="h-3 w-3"
+          />
+        </span>
+      </motion.button>
+    </motion.div>
+
+    
 
               {/* Image on Right */}
               <motion.div
