@@ -643,7 +643,7 @@ export default function Home() {
             >
               <div className="mb-4">
                 <Image
-                  src="/Images/stress.png"
+                  src="/images/stress.png"
                   alt="Consistent Follow-Ups"
                   width={48}
                   height={48}
