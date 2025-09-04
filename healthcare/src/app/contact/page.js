@@ -374,7 +374,7 @@ export default function ContactPage() {
 
           {/* Form */}
           <motion.div
-            className="bg-white shadow-md rounded-lg p-6 sm:p-8 w-full max-w-2xl"
+            className="bg-white shadow-md placeholder-gray-300 rounded-lg p-6 sm:p-8 w-full max-w-2xl"
             variants={staggerFormContainer}
             initial="hidden"
             animate="visible"
@@ -390,8 +390,9 @@ export default function ContactPage() {
                   required
                   placeholder="Admin Assistant"
                   value={formData.fullName}
+
                   onChange={(e) => handleChange("fullName", e.target.value)}
-                  className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-gray-300 text-regular focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
               </motion.div>
 
@@ -421,7 +422,7 @@ export default function ContactPage() {
                     placeholder="1234567890"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
-                    className={`flex-1 border-t border-b border-r rounded-r-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
+                    className={`flex-1 border-t border-b border-r rounded-r-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
                       errors.phone
                         ? "border-red-500 ring-red-500"
                         : "border-gray-300 ring-sky-500"
@@ -446,7 +447,7 @@ export default function ContactPage() {
                   placeholder="Admin123@gmail.com"
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
-                  className={`w-full border rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 ${
+                  className={`w-full border rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
                     errors.email
                       ? "border-red-500 ring-red-500"
                       : "border-gray-300 ring-sky-500"
@@ -461,8 +462,10 @@ export default function ContactPage() {
 
               {/* Assistant Team */}
               <motion.div variants={fadeInItem}>
-                <label className="block text-black text-sm mb-2">
+                <label className="block text-black placeholder-[#CCCCCC] text-sm mb-2">
+                  <input>
                   Assistant Team (Industry)*
+                  </input>
                 </label>
                 <select
                   required
@@ -470,7 +473,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     handleChange("assistantTeam", e.target.value)
                   }
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none placeholder-gray-300 focus:ring-2 focus:ring-sky-500"
                 >
                   <option value="">Select an industry</option>
                   <option>Healthcare</option>
@@ -488,7 +491,7 @@ export default function ContactPage() {
                   required
                   value={formData.package}
                   onChange={(e) => handleChange("package", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 placeholder-gray-300 focus:ring-sky-500"
                 >
                   <option value="">Select a package</option>
                   <option>Basic</option>
@@ -507,7 +510,7 @@ export default function ContactPage() {
                   placeholder="Your message..."
                   value={formData.message}
                   onChange={(e) => handleChange("message", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black placeholder-[#797A7D] focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
               </motion.div>
             </div>
