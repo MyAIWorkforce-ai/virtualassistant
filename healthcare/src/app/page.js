@@ -520,7 +520,6 @@ export default function Home() {
       width={1260}
       height={800}
       className="w-full h-full object-cover opacity-90"
-      
     />
   </div>
 
@@ -529,7 +528,7 @@ export default function Home() {
     
     {/* Left Content */}
     <motion.div
-      className="w-full lg:w-1/2 flex flex-col pl-9 items-center lg:items-start"
+      className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -538,6 +537,7 @@ export default function Home() {
       <h3 className="text-[#00A7DE] font-semibold tracking-wide">
         Take Your Business Into The Future
       </h3>
+
       <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
         <Typewriter
           words={["Transform Your Business with AI-Powered Virtual Assistants"]}
@@ -548,6 +548,7 @@ export default function Home() {
           deleteSpeed={50}
         />
       </h1>
+
       <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
         Tailored solutions for every industry, designed to save time, cut costs, and boost productivity.
       </p>
@@ -559,6 +560,7 @@ export default function Home() {
         >
           Get Started
         </Link>
+
         <Link
           href="/industries"
           className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
@@ -567,6 +569,24 @@ export default function Home() {
         </Link>
       </div>
     </motion.div>
+
+    {/* Right Content (optional image or illustration) */}
+    <motion.div
+      className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      <Image
+        src="/images/hero-image.png"
+        alt="Hero Illustration"
+        width={500}
+        height={500}
+        className="w-full max-w-md h-auto object-contain"
+      />
+    </motion.div>
+  
 
 
             {/* Right side image with animation */}
