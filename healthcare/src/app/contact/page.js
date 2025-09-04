@@ -5,14 +5,21 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { slideUp, slideUpChild, staggerContainer } from "../_components/animations/footer";
-import { fadeUp, fadeInItem, blinkButton, staggerContainer as staggerFormContainer } from "../_components/animations/formanimation";
-
+import {
+  slideUp,
+  slideUpChild,
+  staggerContainer,
+} from "../_components/animations/footer";
+import {
+  fadeUp,
+  fadeInItem,
+  blinkButton,
+  staggerContainer as staggerFormContainer,
+} from "../_components/animations/formanimation";
 
 export default function ContactPage() {
-
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -175,7 +182,10 @@ export default function ContactPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="text-black hover:text-[#00A7DE]">
+                  <Link
+                    href="/about"
+                    className="text-black hover:text-[#00A7DE]"
+                  >
                     About
                   </Link>
                 </li>
@@ -390,7 +400,6 @@ export default function ContactPage() {
                   required
                   placeholder="Admin Assistant"
                   value={formData.fullName}
-
                   onChange={(e) => handleChange("fullName", e.target.value)}
                   className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-gray-300 text-regular focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
@@ -462,10 +471,8 @@ export default function ContactPage() {
 
               {/* Assistant Team */}
               <motion.div variants={fadeInItem}>
-                <label className="block text-black placeholder-[#CCCCCC] text-sm mb-2">
-                  <input>
+                <label className="block text-black text-sm mb-2">
                   Assistant Team (Industry)*
-                  </input>
                 </label>
                 <select
                   required
