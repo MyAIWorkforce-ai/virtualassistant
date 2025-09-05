@@ -1018,11 +1018,14 @@ Example use cases
                 className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
               >
                 <div className="flex items-center gap-4 mb-2">
-                  <img
-                    src={box.icon}
-                    alt={`${box.title} - AI Assistant Feature`}
-                    className="w-10 h-10"
-                  />
+                 <Image
+  src={box.icon}
+  alt={`${box.title} - AI Assistant Feature`}
+  width={40}
+  height={40}
+  priority
+/>
+
                   <h3 className="text-base text-[#000000] font-semibold">
                     {box.title}
                   </h3>

@@ -199,8 +199,6 @@ export default function Home() {
     "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; // update once  applies everywhere
   const stepTitle = "font-semibold text-3sm text-black mb-2";
   const stepDesc = "text-[#797A7D] text-sm";
-  const stepBox =
-    "bg-white rounded-lg shadow-md p-6 border-t-4 border-[#0097DA] text-center relative transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl";
   // ============================
   //   //   Section 1 Home page
   // =============================

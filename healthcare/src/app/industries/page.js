@@ -84,33 +84,7 @@ const services = [
   },
 ];
 
-// professional Services
-const professionalServicesData = [
-  {
-    title: "Accountant",
-    description:
-      "Smarter Scheduling for Consultants. Books client calls, manages packages, and tracks deliverables.",
-    iconSrc: "/icons/accountant.png",
-  },
-  {
-    title: "Lawyer",
-    description:
-      "Smarter Scheduling for Consultants. Books client calls, manages packages, and tracks deliverables.",
-    iconSrc: "/icons/lawyer.png",
-  },
-  {
-    title: "Consultant",
-    description:
-      "Power Up Your Training Business. Automates client scheduling, reminders, and progress updates.",
-    iconSrc: "/icons/consultant.png",
-  },
-  {
-    title: "Real Estate Agent",
-    description:
-      "Smarter Scheduling for Consultants. Books client calls, manages packages, and tracks deliverables.",
-    iconSrc: "/icons/real-estate.png",
-  },
-];
+
 
 // ================
 //  First section
