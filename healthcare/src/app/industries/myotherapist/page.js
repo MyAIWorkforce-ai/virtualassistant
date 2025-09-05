@@ -406,11 +406,13 @@ export default function Home() {
         transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
               >
                 Get Started
-                <img
-                  src="/images/svg.png"
-                  alt="Start Icon"
-                  className="h-3 w-3"
-                />
+               <Image
+  src="/images/svg.png"
+  alt="Start Icon"
+  width={12}   // convert h-3/w-3 (Tailwind) to px, 1rem = 16px, so 0.75rem = 12px
+  height={12}
+  priority
+/>
               </motion.button>
             </motion.div>
 
@@ -646,10 +648,11 @@ w-[265px] h-[76px]"
               </div>
               <h3 className="text-xl font-semibold mb-2">Personalized Care</h3>
               <p className="text-sm text-[#797A7D] leading-relaxed">
-                Custom treatment plans and exercise
-                <br /> logs tailored to each patient's specific
-                <br /> muscle therapy needs.
-              </p>
+  {`Custom treatment plans and exercise
+  logs tailored to each patient's specific
+  muscle therapy needs.`}
+</p>
+
             </motion.div>
 
             {/* Card 4 */}

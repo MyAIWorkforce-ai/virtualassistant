@@ -1112,14 +1112,17 @@ export default function Home() {
                   >
                     Full Name
                   </label>
-                  <input
-                    id="fullName"
-                    type="text"
-                    placeholder="Enter your name"
-                    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-                    required
-                  />
-                </motion.div>
+                   <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-700">
+    Full Name
+  </label>
+  <input
+    id="fullName"
+    type="text"
+    placeholder="Enter your name"
+    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+    required
+  />
+</motion.div>
 
                 {/* Email */}
                 <motion.div variants={staggerChild}>
@@ -1247,16 +1250,16 @@ export default function Home() {
 
               {/* Submit */}
               <motion.div
-                variants={staggerChild}
-                className="mt-6 text-center relative z-10"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
-                  whileTap={{ scale: 0.95 }}
-                  type="submit"
-                  className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
-                >
-                  Submit
+  variants={staggerChild}
+  className="mt-6 text-center relative z-10"
+>
+  <motion.button
+    whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
+    whileTap={{ scale: 0.95 }}
+    type="submit"
+    className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
+  >
+    Submit
                 </motion.button>
               </motion.div>
             </motion.form>
