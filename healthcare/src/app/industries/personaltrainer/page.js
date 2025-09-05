@@ -504,7 +504,7 @@ w-[220px] h-[76px]"
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
-                  Fewer missed appointments with <br /> automated reminders.
+                 Less time spent on scheduling and<br/> logging.
                 </p>
               </motion.div>
 
@@ -523,7 +523,7 @@ w-[220px] h-[76px]"
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
-                  Reduced hours spent on scheduling <br /> and note-taking.
+                 Higher retention from consistent<br/> follow-ups and progress tracking.
                 </p>
               </motion.div>
 
@@ -543,8 +543,7 @@ w-[220px] h-[76px]"
 
                 <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
-                  Higher patient adherence to <br /> recovery exercises and care
-                  plans.
+                  increase in patients completing<br/> assigned workouts.
                 </p>
               </motion.div>
             </motion.div>
@@ -575,7 +574,7 @@ w-[220px] h-[76px]"
             variants={fadeUp}
           >
             Simplify your massage practice with smart automation that improves
-            client care and reduces admin tasks.
+            client care and<br/> reduces admin tasks.
           </motion.p>
 
           {/* Cards */}

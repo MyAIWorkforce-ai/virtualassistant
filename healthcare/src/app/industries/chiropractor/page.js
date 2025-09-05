@@ -874,7 +874,7 @@ export default function Home() {
           {/* ✅ Responsive Grid */}
           <motion.div
             variants={stagger}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-items-center max-w-6xl w-full text-center"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-10 lg:gap-1 justify-items-center max-w-6xl w-full text-center"
             role="list"
           >
             {/* Card 1 */}
