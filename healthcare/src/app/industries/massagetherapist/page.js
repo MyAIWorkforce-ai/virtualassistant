@@ -1439,104 +1439,116 @@ Explore other industries
                 </Link>
               </div>
             </motion.div>
-
-            {/* Pages */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Pages</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Home",
-                  "About",
-                  "Industries",
-                  "Pricing",
-                  "About",
-                  "Contact Us",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 1 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Physiotherapist",
-                  "Myotherapist",
-                  "Massage Therapist",
-                  "Personal Trainer",
-                  "Psychologist",
-                  "Chiropractor",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 2 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Podiatrist",
-                  "Beauty Therapist",
-                  "Hairdresser",
-                  "Dentist",
-                  "Accountant",
-                  "Lawyer",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 3 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Consultant",
-                  "Real Estate Agent",
-                  "Mechanic",
-                  "Plumber",
-                  "Electrician",
-                  "Window Cleaning",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+{/* Pages */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Pages</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Industries", href: "/industries" },
+                { name: "Pricing", href: "/pricing" },
+                { name: "Contact Us", href: "/contact" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.div>
 
+          {/* Industries col 1 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Physiotherapist", href: "/industries/Physotherapist" },
+                { name: "Myotherapist", href: "/industries/myotherapist" },
+                {
+                  name: "Massage Therapist",
+                  href: "/industries/massagetherapist",
+                },
+                {
+                  name: "Personal Trainer",
+                  href: "/industries/personaltrainer",
+                },
+                { name: "Psychologist", href: "/industries/psychology" },
+                { name: "Chiropractor", href: "/industries/chiropractor" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Industries col 2 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Podiatrist", href: "/industries/podiatrist" },
+                {
+                  name: "Beauty Therapist",
+                  href: "/industries/beauty-therapist",
+                },
+                { name: "Hairdresser", href: "/industries/hairdresser" },
+                { name: "Dentist", href: "/industries/dentist" },
+                { name: "Accountant", href: "/industries/accountant" },
+                { name: "Lawyer", href: "/industries/lawyer" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Industries col 3 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Consultant", href: "/industries/consultant" },
+                {
+                  name: "Real Estate Agent",
+                  href: "/industries/real-estate-agent",
+                },
+                { name: "Mechanic", href: "/industries/mechanic" },
+                { name: "Plumber", href: "/industries/plumber" },
+                { name: "Electrician", href: "/industries/electrician" },
+                {
+                  name: "Window Cleaning",
+                  href: "/industries/window-cleaning",
+                },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.div>
           {/* Bottom Line */}
           <motion.div
             variants={slideUpChild}

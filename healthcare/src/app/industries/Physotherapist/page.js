@@ -849,13 +849,16 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/time.png"
-                alt="Time Savings"
-                priority
-                className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
-                whileHover={{ scale: 1.2 }}
-              />
+              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
+  <Image
+    src="/images/time.png"
+    alt="Time Savings"
+    width={56}   // sm:w-14 = 56px
+    height={56}  // sm:h-14 = 56px
+    className="w-12 h-12 sm:w-14 sm:h-14"
+    priority
+  />
+</motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Time Savings
               </h3>
@@ -869,13 +872,16 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/member.png"
-                alt="Reduced Drop-offs"
-                priority
-                className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
-                whileHover={{ scale: 1.2 }}
-              />
+              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
+  <Image
+    src="/images/member.png"
+    alt="Reduced Drop-offs"
+    width={56}   // sm:w-14 = 56px
+    height={56}  // sm:h-14 = 56px
+    className="w-12 h-12 sm:w-14 sm:h-14"
+    priority
+  />
+</motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Reduced Drop-offs
               </h3>
@@ -889,13 +895,16 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/heart.png"
-                alt="Better Care"
-                priority
-                className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
-                whileHover={{ scale: 1.2 }}
-              />
+              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
+  <Image
+    src="/images/heart.png"
+    alt="Better Care"
+    width={56}   // sm:w-14 = 56px
+    height={56}  // sm:h-14 = 56px
+    className="w-12 h-12 sm:w-14 sm:h-14"
+    priority
+  />
+</motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Better Care
               </h3>
@@ -909,13 +918,16 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/hand.png"
-                alt="More Face Time"
-                priority
-                className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
-                whileHover={{ scale: 1.2 }}
-              />
+              <motion.div whileHover={{ scale: 1.2 }} className="w-12 sm:w-14 h-12 sm:h-14">
+  <Image
+    src="/images/hand.png"
+    alt="More Face Time"
+    width={56}  // 14*4 = 56px
+    height={56} // 14*4 = 56px
+    className="object-contain w-full h-full"
+    priority
+  />
+</motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 More Face Time
               </h3>
@@ -946,7 +958,7 @@ Example use cases
             variants={cardMotion}
             initial="hidden"
             whileInView="show"
-            priority
+          
             viewport={{ once: false }}
             className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
           >
@@ -1398,101 +1410,115 @@ Explore other industries
             </motion.div>
 
             {/* Pages */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Pages</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Home",
-                  "About",
-                  "Industries",
-                  "Pricing",
-                  "About",
-                  "Contact Us",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 1 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Physiotherapist",
-                  "Myotherapist",
-                  "Massage Therapist",
-                  "Personal Trainer",
-                  "Psychologist",
-                  "Chiropractor",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 2 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Podiatrist",
-                  "Beauty Therapist",
-                  "Hairdresser",
-                  "Dentist",
-                  "Accountant",
-                  "Lawyer",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Industries col 3 */}
-            <motion.div variants={slideUpChild}>
-              <h3 className="font-semibold mb-3">Industries</h3>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "Consultant",
-                  "Real Estate Agent",
-                  "Mechanic",
-                  "Plumber",
-                  "Electrician",
-                  "Window Cleaning",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      href="#"
-                      className="hover:text-[#00A7DE] 0 transition-colors duration-300"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Pages</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Industries", href: "/industries" },
+                { name: "Pricing", href: "/pricing" },
+                { name: "Contact Us", href: "/contact" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.div>
+
+          {/* Industries col 1 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Physiotherapist", href: "/industries/Physotherapist" },
+                { name: "Myotherapist", href: "/industries/myotherapist" },
+                {
+                  name: "Massage Therapist",
+                  href: "/industries/massagetherapist",
+                },
+                {
+                  name: "Personal Trainer",
+                  href: "/industries/personaltrainer",
+                },
+                { name: "Psychologist", href: "/industries/psychology" },
+                { name: "Chiropractor", href: "/industries/chiropractor" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Industries col 2 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Podiatrist", href: "/industries/podiatrist" },
+                {
+                  name: "Beauty Therapist",
+                  href: "/industries/beauty-therapist",
+                },
+                { name: "Hairdresser", href: "/industries/hairdresser" },
+                { name: "Dentist", href: "/industries/dentist" },
+                { name: "Accountant", href: "/industries/accountant" },
+                { name: "Lawyer", href: "/industries/lawyer" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Industries col 3 */}
+          <motion.div variants={slideUpChild}>
+            <h3 className="font-semibold mb-3">Industries</h3>
+            <ul className="space-y-2 text-gray-600">
+              {[
+                { name: "Consultant", href: "/industries/consultant" },
+                {
+                  name: "Real Estate Agent",
+                  href: "/industries/real-estate-agent",
+                },
+                { name: "Mechanic", href: "/industries/mechanic" },
+                { name: "Plumber", href: "/industries/plumber" },
+                { name: "Electrician", href: "/industries/electrician" },
+                {
+                  name: "Window Cleaning",
+                  href: "/industries/window-cleaning",
+                },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00A7DE] transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.div>
 
           {/* Bottom Line */}
           <motion.div
