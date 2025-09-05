@@ -628,13 +628,13 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Stronger Client Retention
-              </h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
-                Regular follow-ups encourage ongoing
-                <br /> wellness sessions.
-              </p>
+             <h3 className="text-xl font-semibold mb-2">
+  Stronger Client Retention
+</h3>
+<p className="text-sm text-[#797A7D] leading-relaxed">
+  Regular follow-ups encourage ongoing
+  <br /> wellness sessions.
+</p>
             </motion.div>
 
             {/* Card 4 */}
@@ -1015,14 +1015,14 @@ export default function Home() {
               },
               {
                 icon: "/images/two.png",
-                title: "Smart Reminders",
-                text: (
-                  <>
-                    Sends reminders with prep instructions like "wear flexible
-                    clothing".
-                  </>
-                ),
-                bg: "bg-[#10B981]/8",
+title: "Smart Reminders",
+text: (
+  <>
+    Sends reminders with prep instructions like &quot;wear flexible clothing&quot;.
+  </>
+),
+bg: "bg-[#10B981]/8",
+
               },
               {
                 icon: "/images/three.png",
@@ -1047,14 +1047,20 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
+                 whileHover={{ scale: 1.04, rotateZ: 1 }}
+  className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+>
+  <div className="flex items-center gap-4 mb-2">
+    <Image
+      src={box.icon}
+      alt={box.title}
+      width={40}   // w-10 = 40px
+      height={40}  // h-10 = 40px
+      className="w-10 h-10"
+    />
+    <h3 className="text-base text-[#000000] font-semibold">
+      {box.title}
+    </h3>
                 </div>
                 <p className="text-sm text-[#797A7D] leading-relaxed">
                   {box.text}
