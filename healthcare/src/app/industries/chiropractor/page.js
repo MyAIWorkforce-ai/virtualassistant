@@ -1047,12 +1047,21 @@ export default function Home() {
                 whileHover={{ scale: 1.04, rotateZ: 1 }}
                 className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
               >
-                <div className="flex items-center gap-4 mb-2">
-                  <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
+                import Image from "next/image";
+
+<div className="flex items-center gap-4 mb-2">
+  <Image
+    src={box.icon}
+    alt={box.title}
+    width={40}    // Tailwind w-10 = 40px
+    height={40}   // Tailwind h-10 = 40px
+    priority      // optional, for important above-the-fold images
+  />
+  <h3 className="text-base text-[#000000] font-semibold">
+    {box.title}
+  </h3>
+</div>
+               
                 <p className="text-sm text-[#797A7D] leading-relaxed">
                   {box.text}
                 </p>
