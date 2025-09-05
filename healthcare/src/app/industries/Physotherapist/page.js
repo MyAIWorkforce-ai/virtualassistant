@@ -75,7 +75,7 @@ export default function Home() {
         <meta property="og:image" content="/images/social-preview.png" />
         <meta
           property="og:url"
-          content="https://www.yourbrand.com/physiotherapists"
+          content="https://virtual-assistant-website-aus-n7zq.vercel.app/industries/Physotherapist"
         />
         <meta property="og:type" content="website" />
       </Head>
@@ -849,16 +849,19 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
-  <Image
-    src="/images/time.png"
-    alt="Time Savings"
-    width={56}   // sm:w-14 = 56px
-    height={56}  // sm:h-14 = 56px
-    className="w-12 h-12 sm:w-14 sm:h-14"
-    priority
-  />
-</motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/time.png"
+                  alt="Time Savings"
+                  width={56} // sm:w-14 = 56px
+                  height={56} // sm:h-14 = 56px
+                  className="w-12 h-12 sm:w-14 sm:h-14"
+                  priority
+                />
+              </motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Time Savings
               </h3>
@@ -872,16 +875,19 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
-  <Image
-    src="/images/member.png"
-    alt="Reduced Drop-offs"
-    width={56}   // sm:w-14 = 56px
-    height={56}  // sm:h-14 = 56px
-    className="w-12 h-12 sm:w-14 sm:h-14"
-    priority
-  />
-</motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/member.png"
+                  alt="Reduced Drop-offs"
+                  width={56} // sm:w-14 = 56px
+                  height={56} // sm:h-14 = 56px
+                  className="w-12 h-12 sm:w-14 sm:h-14"
+                  priority
+                />
+              </motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Reduced Drop-offs
               </h3>
@@ -895,16 +901,19 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.div whileHover={{ scale: 1.2 }} className="transition-transform">
-  <Image
-    src="/images/heart.png"
-    alt="Better Care"
-    width={56}   // sm:w-14 = 56px
-    height={56}  // sm:h-14 = 56px
-    className="w-12 h-12 sm:w-14 sm:h-14"
-    priority
-  />
-</motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/heart.png"
+                  alt="Better Care"
+                  width={56} // sm:w-14 = 56px
+                  height={56} // sm:h-14 = 56px
+                  className="w-12 h-12 sm:w-14 sm:h-14"
+                  priority
+                />
+              </motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 Better Care
               </h3>
@@ -918,21 +927,25 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.div whileHover={{ scale: 1.2 }} className="w-12 sm:w-14 h-12 sm:h-14">
-  <Image
-    src="/images/hand.png"
-    alt="More Face Time"
-    width={56}  // 14*4 = 56px
-    height={56} // 14*4 = 56px
-    className="object-contain w-full h-full"
-    priority
-  />
-</motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="w-12 sm:w-14 h-12 sm:h-14"
+              >
+                <Image
+                  src="/images/hand.png"
+                  alt="More Face Time"
+                  width={56} // 14*4 = 56px
+                  height={56} // 14*4 = 56px
+                  className="object-contain w-full h-full"
+                  priority
+                />
+              </motion.div>
               <h3 className="text-sm sm:text-base font-semibold">
                 More Face Time
               </h3>
               <p className="text-xs sm:text-sm">
-                Get more face-to-face time with patients.
+                Get more face-to-face time with
+                <br /> patients.
               </p>
             </motion.article>
           </motion.div>
@@ -958,7 +971,6 @@ Example use cases
             variants={cardMotion}
             initial="hidden"
             whileInView="show"
-          
             viewport={{ once: false }}
             className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
           >
@@ -1276,7 +1288,7 @@ Explore other industries
                   payment reminders, and progress updates.
                 </p>
                 <a
-                  href="#"
+                  href="/industries/personaltrainer"
                   className="text-[#00A7DE] font-medium hover:underline"
                 >
                   Learn More
@@ -1307,7 +1319,7 @@ Explore other industries
                   your calendar organized.
                 </p>
                 <a
-                  href="#"
+                  href="/industries/psychology"
                   className="text-[#00A7DE] font-medium hover:underline"
                 >
                   Learn More
@@ -1336,7 +1348,7 @@ Explore other industries
                   visits, recalls, and automates reminders.
                 </p>
                 <a
-                  href="#"
+                  href="/industries/chiropractor"
                   className="text-[#00A7DE] font-medium hover:underline"
                 >
                   Learn More
@@ -1345,6 +1357,7 @@ Explore other industries
             </div>
           </motion.div>
         </section>
+
         {/* =====================
             FOOTER SECTION
             =================== */}
@@ -1356,7 +1369,7 @@ Explore other industries
           className="bg-[#FFFFFF] text-black py-10"
         >
           <motion.div
-            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
+            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-6"
             variants={staggerContainer} // Stagger child animation for columns
           >
             {/* Logo & Info */}
@@ -1366,6 +1379,7 @@ Explore other industries
                 alt="Virtual Assistant Logo"
                 width={180}
                 height={60}
+                priority
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
@@ -1379,7 +1393,7 @@ Explore other industries
                     alt="Twitter"
                     width={20}
                     height={20}
-                    className="transition duration-300 hover:brightness-0 hover:invert hover:hue-rotate-180"
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1388,6 +1402,7 @@ Explore other industries
                     alt="LinkedIn"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1396,6 +1411,7 @@ Explore other industries
                     alt="Facebook"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1404,121 +1420,135 @@ Explore other industries
                     alt="Instagram"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
               </div>
             </motion.div>
 
             {/* Pages */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Pages</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Industries", href: "/industries" },
-                { name: "Pricing", href: "/pricing" },
-                { name: "Contact Us", href: "/contact" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Pages</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "About", href: "/about" },
+                  { name: "Industries", href: "/industries" },
+                  { name: "Pricing", href: "/pricing" },
+                  { name: "Contact Us", href: "/contact" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Industries col 1 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Physiotherapist", href: "/industries/Physotherapist" },
-                { name: "Myotherapist", href: "/industries/myotherapist" },
-                {
-                  name: "Massage Therapist",
-                  href: "/industries/massagetherapist",
-                },
-                {
-                  name: "Personal Trainer",
-                  href: "/industries/personaltrainer",
-                },
-                { name: "Psychologist", href: "/industries/psychology" },
-                { name: "Chiropractor", href: "/industries/chiropractor" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Industries col 1 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  {
+                    name: "Physiotherapist",
+                    href: "/industries/Physotherapist",
+                  },
+                  { name: "Myotherapist", href: "/industries/myotherapist" },
+                  {
+                    name: "Massage Therapist",
+                    href: "/industries/massagetherapist",
+                  },
+                  {
+                    name: "Personal Trainer",
+                    href: "/industries/personaltrainer",
+                  },
+                  { name: "Psychologist", href: "/industries/psychology" },
+                  { name: "Chiropractor", href: "/industries/chiropractor" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Industries col 2 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Podiatrist", href: "/industries/podiatrist" },
-                {
-                  name: "Beauty Therapist",
-                  href: "/industries/beauty-therapist",
-                },
-                { name: "Hairdresser", href: "/industries/hairdresser" },
-                { name: "Dentist", href: "/industries/dentist" },
-                { name: "Accountant", href: "/industries/accountant" },
-                { name: "Lawyer", href: "/industries/lawyer" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Industries col 2 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Podiatrist", href: "/industries/podiatrist" },
+                  {
+                    name: "Beauty Therapist",
+                    href: "/industries/beauty-therapist",
+                  },
+                  { name: "Hairdresser", href: "/industries/hairdresser" },
+                  { name: "Dentist", href: "/industries/dentist" },
+                  { name: "Accountant", href: "/industries/accountant" },
+                  { name: "Lawyer", href: "/industries/lawyer" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Industries col 3 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Consultant", href: "/industries/consultant" },
-                {
-                  name: "Real Estate Agent",
-                  href: "/industries/real-estate-agent",
-                },
-                { name: "Mechanic", href: "/industries/mechanic" },
-                { name: "Plumber", href: "/industries/plumber" },
-                { name: "Electrician", href: "/industries/electrician" },
-                {
-                  name: "Window Cleaning",
-                  href: "/industries/window-cleaning",
-                },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Industries col 3 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Consultant", href: "/industries/consultant" },
+                  {
+                    name: "Real Estate Agent",
+                    href: "/industries/real-estate-agent",
+                  },
+                  { name: "Mechanic", href: "/industries/mechanic" },
+                  { name: "Plumber", href: "/industries/plumber" },
+                  { name: "Electrician", href: "/industries/electrician" },
+                  {
+                    name: "Window Cleaning",
+                    href: "/industries/window-cleaning",
+                  },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </motion.div>
-        </motion.div>
 
           {/* Bottom Line */}
           <motion.div

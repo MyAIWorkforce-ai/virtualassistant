@@ -16,6 +16,7 @@ import { fadeRight } from "../_components/animations/variants";
 import { scaleFade } from "../_components/animations/variants";
 export default function HomePage() {
   useScrollAnimation();
+  // Hamnburger Button
   const [isOpen, setIsOpen] = useState(false);
   // ===========================
   //        section 1
@@ -42,7 +43,10 @@ export default function HomePage() {
           content="This is a description of my page."
         />
         <meta property="og:image" content="https://example.com/image.jpg" />
-        <meta property="og:url" content="https://example.com/page" />
+        <meta
+          property="og:url"
+          content="https://virtual-assistant-website-aus-n7zq.vercel.app/about"
+        />
         <meta property="og:type" content="website" />
       </Head>
 
@@ -374,6 +378,7 @@ export default function HomePage() {
                     alt="Play icon for Watch Demo"
                     width={12}
                     height={20}
+                    priority
                   />
                   Watch Demo
                 </button>
@@ -467,6 +472,7 @@ export default function HomePage() {
                       alt={`${item.title} technology logo`}
                       width={48}
                       height={48}
+                      priority
                       className="mb-4"
                     />
                     <h2 className="text-xl font-medium text-black mb-2 text-left">
@@ -554,6 +560,7 @@ export default function HomePage() {
                         alt={`${f.title} icon`}
                         width={40}
                         height={40}
+                        priority
                         className="w-10 h-10"
                       />
                       <div>
@@ -609,7 +616,7 @@ export default function HomePage() {
                   {
                     icon: "/images/shakehand.png",
                     title: "Client-Focused",
-                    text: "Deliver personalized experiences that strengthen relationships and make clients feel valued and understood.",
+                    text: "Deliver personalized experiences that make clients feel valued and understood, strengthening relationships.",
                     alt: "Client-focused handshake icon",
                   },
                   {
@@ -635,7 +642,7 @@ export default function HomePage() {
                   >
                     <Image
                       src={c.icon}
-                      alt={c.alt}
+                      alt={`${c.alt} icon`}
                       width={64}
                       height={64}
                       priority
@@ -659,14 +666,14 @@ export default function HomePage() {
             {/* Heading */}
             <ScrollAnimation variant={fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Transform Your Business?
+                Our tech works behind the scenes, so you can focus on clients.
               </h2>
             </ScrollAnimation>
 
             {/* Subheading */}
             <ScrollAnimation variant={fadeInUp} threshold={0.1}>
               <p className="text-white/90 text-lg mb-8">
-                Join thousands of businesses already using our AI receptionist
+                Experience the power of intelligent automation and seamless integration today.
               </p>
             </ScrollAnimation>
 
@@ -695,6 +702,7 @@ export default function HomePage() {
                     alt="Calendar Icon"
                     width={20}
                     height={20}
+                    priority
                   />
                   Book a Demo
                 </span>
@@ -711,7 +719,7 @@ export default function HomePage() {
           className="bg-[#FFFFFF] text-black py-10"
         >
           <motion.div
-            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
+            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-6"
             variants={staggerContainer} // Stagger child animation for columns
           >
             {/* Logo & Info */}
@@ -768,116 +776,130 @@ export default function HomePage() {
               </div>
             </motion.div>
 
-          {/* Pages */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Pages</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Industries", href: "/industries" },
-                { name: "Pricing", href: "/pricing" },
-                { name: "Contact Us", href: "/contact" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Pages */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Pages</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "About", href: "/about" },
+                  { name: "Industries", href: "/industries" },
+                  { name: "Pricing", href: "/pricing" },
+                  { name: "Contact Us", href: "/contact" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 1 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  {
+                    name: "Physiotherapist",
+                    href: "/industries/Physotherapist",
+                  },
+                  { name: "Myotherapist", href: "/industries/myotherapist" },
+                  {
+                    name: "Massage Therapist",
+                    href: "/industries/massagetherapist",
+                  },
+                  {
+                    name: "Personal Trainer",
+                    href: "/industries/personaltrainer",
+                  },
+                  { name: "Psychologist", href: "/industries/psychology" },
+                  { name: "Chiropractor", href: "/industries/chiropractor" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 2 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Podiatrist", href: "/industries/podiatrist" },
+                  {
+                    name: "Beauty Therapist",
+                    href: "/industries/beauty-therapist",
+                  },
+                  { name: "Hairdresser", href: "/industries/hairdresser" },
+                  { name: "Dentist", href: "/industries/dentist" },
+                  { name: "Accountant", href: "/industries/accountant" },
+                  { name: "Lawyer", href: "/industries/lawyer" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 3 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Consultant", href: "/industries/consultant" },
+                  {
+                    name: "Real Estate Agent",
+                    href: "/industries/real-estate-agent",
+                  },
+                  { name: "Mechanic", href: "/industries/mechanic" },
+                  { name: "Plumber", href: "/industries/plumber" },
+                  { name: "Electrician", href: "/industries/electrician" },
+                  {
+                    name: "Window Cleaning",
+                    href: "/industries/window-cleaning",
+                  },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </motion.div>
 
-          {/* Industries col 1 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Physiotherapist", href: "/industries/Physotherapist" },
-                { name: "Myotherapist", href: "/industries/myotherapist" },
-                {
-                  name: "Massage Therapist",
-                  href: "/industries/massagetherapist",
-                },
-                {
-                  name: "Personal Trainer",
-                  href: "/industries/personaltrainer",
-                },
-                { name: "Psychologist", href: "/industries/psychology" },
-                { name: "Chiropractor", href: "/industries/chiropractor" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Industries col 2 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Podiatrist", href: "/industries/podiatrist" },
-                {
-                  name: "Beauty Therapist",
-                  href: "/industries/beauty-therapist",
-                },
-                { name: "Hairdresser", href: "/industries/hairdresser" },
-                { name: "Dentist", href: "/industries/dentist" },
-                { name: "Accountant", href: "/industries/accountant" },
-                { name: "Lawyer", href: "/industries/lawyer" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Industries col 3 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Consultant", href: "/industries/consultant" },
-                {
-                  name: "Real Estate Agent",
-                  href: "/industries/real-estate-agent",
-                },
-                { name: "Mechanic", href: "/industries/mechanic" },
-                { name: "Plumber", href: "/industries/plumber" },
-                { name: "Electrician", href: "/industries/electrician" },
-                {
-                  name: "Window Cleaning",
-                  href: "/industries/window-cleaning",
-                },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </motion.div>
           {/* Bottom Line */}
           <motion.div
             variants={slideUpChild}

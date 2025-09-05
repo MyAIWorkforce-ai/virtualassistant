@@ -148,7 +148,7 @@ export default function Home() {
         <meta property="og:image" content="/images/social-preview.png" />
         <meta
           property="og:url"
-          content="https://www.yourdomain.com/industries"
+          content="https://virtual-assistant-website-aus-n7zq.vercel.app/industries"
         />
         <meta property="og:type" content="website" />
       </Head>
@@ -669,8 +669,7 @@ Healthcare Section
                     </h2>
                   </div>
                   <p className="text-gray-600 text-sm mt-3">
-                    Smarter Scheduling for Consultants. Books client calls,
-                    manages packages, and tracks deliverables.
+                    From Listings to Closings, Streamlines property management, client communication, and sales tracking.
                   </p>
                   <a
                     href="/services/real-estate-agent"
@@ -722,8 +721,7 @@ Healthcare Section
                     </h2>
                   </div>
                   <p className="text-[#797A7D] text-sm mt-3">
-                    Reliable auto repair and maintenance. Book mechanic services
-                    with easy scheduling, cancellations, and reminders.
+                    Service Scheduling Simplified – Organizes repair appointments, reschedules with ease, and manages waitlists for busy garages.
                   </p>
                   <a
                     href="/services/mechanic"
@@ -753,8 +751,7 @@ Healthcare Section
                     <h2 className="text-lg font-semibold">Plumber</h2>
                   </div>
                   <p className="text-gray-600 text-sm mt-3">
-                    Trusted plumbing solutions for leaks, repairs, and
-                    installations. Get fast service with automated booking.
+                   Schedules service calls, manages emergency repairs, and tracks work orders with ease.
                   </p>
                   <a
                     href="/services/plumber"
@@ -784,8 +781,7 @@ Healthcare Section
                     <h2 className="text-lg font-semibold">Window Cleaning</h2>
                   </div>
                   <p className="text-gray-600 text-sm mt-3">
-                    Affordable and professional window cleaning services. Book
-                    appointments and enjoy sparkling results.
+                    Manages cleaning appointments, handles rescheduling, and tracks repeat clients with ease.
                   </p>
                   <a
                     href="/services/window-cleaning"
@@ -815,8 +811,7 @@ Healthcare Section
                     <h2 className="text-lg font-semibold">Electrician</h2>
                   </div>
                   <p className="text-gray-600 text-sm mt-3">
-                    Licensed electrician for installations, repairs, and safety
-                    inspections. Easy booking and reliable support.
+                    Assigns electrical service calls, tracks technician availability, and reduces missed appointments.
                   </p>
                   <a
                     href="/services/electrician"
@@ -870,9 +865,7 @@ Healthcare Section
                   </h2>
                 </div>
                 <p className="text-[#797A7D] text-sm mt-3">
-                  Simplify reservation management with automated bookings,
-                  cancellations, and waitlists. Improve customer experience with
-                  seamless table scheduling.
+                 Reservation Management Made Easy.<br/>  Manages table bookings, cancellations, and automated waitlists.
                 </p>
                 <a
                   href="/restaurant-reservation"
@@ -905,9 +898,7 @@ Healthcare Section
                   <h2 className="text-lg text-black font-semibold">Lawyer</h2>
                 </div>
                 <p className="text-gray-600 text-sm mt-3">
-                  Automate legal workflows with client scheduling, payment
-                  reminders, and progress updates. Streamline case management
-                  while saving time.
+                  Power Up Your Training Business Automates client scheduling, payment reminders, and progress updates.
                 </p>
                 <a
                   href="/lawyer-automation"
@@ -982,7 +973,7 @@ Healthcare Section
           className="bg-[#FFFFFF] text-black py-10"
         >
           <motion.div
-            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
+            className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-6"
             variants={staggerContainer} // Stagger child animation for columns
           >
             {/* Logo & Info */}
@@ -992,6 +983,7 @@ Healthcare Section
                 alt="Virtual Assistant Logo"
                 width={180}
                 height={60}
+                priority
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
@@ -1005,7 +997,7 @@ Healthcare Section
                     alt="Twitter"
                     width={20}
                     height={20}
-                    className="transition duration-300 hover:brightness-0 hover:invert hover:hue-rotate-180"
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1014,6 +1006,7 @@ Healthcare Section
                     alt="LinkedIn"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1022,6 +1015,7 @@ Healthcare Section
                     alt="Facebook"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -1030,120 +1024,135 @@ Healthcare Section
                     alt="Instagram"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
               </div>
             </motion.div>
-{/* Pages */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Pages</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Industries", href: "/industries" },
-                { name: "Pricing", href: "/pricing" },
-                { name: "Contact Us", href: "/contact" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
 
-          {/* Industries col 1 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Physiotherapist", href: "/industries/Physotherapist" },
-                { name: "Myotherapist", href: "/industries/myotherapist" },
-                {
-                  name: "Massage Therapist",
-                  href: "/industries/massagetherapist",
-                },
-                {
-                  name: "Personal Trainer",
-                  href: "/industries/personaltrainer",
-                },
-                { name: "Psychologist", href: "/industries/psychology" },
-                { name: "Chiropractor", href: "/industries/chiropractor" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Pages */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Pages</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "About", href: "/about" },
+                  { name: "Industries", href: "/industries" },
+                  { name: "Pricing", href: "/pricing" },
+                  { name: "Contact Us", href: "/contact" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Industries col 2 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Podiatrist", href: "/industries/podiatrist" },
-                {
-                  name: "Beauty Therapist",
-                  href: "/industries/beauty-therapist",
-                },
-                { name: "Hairdresser", href: "/industries/hairdresser" },
-                { name: "Dentist", href: "/industries/dentist" },
-                { name: "Accountant", href: "/industries/accountant" },
-                { name: "Lawyer", href: "/industries/lawyer" },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Industries col 1 */}
+            <motion.div variants={slideUpChild}>
+              <h3 className="font-semibold mb-3">Industries</h3>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  {
+                    name: "Physiotherapist",
+                    href: "/industries/Physotherapist",
+                  },
+                  { name: "Myotherapist", href: "/industries/myotherapist" },
+                  {
+                    name: "Massage Therapist",
+                    href: "/industries/massagetherapist",
+                  },
+                  {
+                    name: "Personal Trainer",
+                    href: "/industries/personaltrainer",
+                  },
+                  { name: "Psychologist", href: "/industries/psychology" },
+                  { name: "Chiropractor", href: "/industries/chiropractor" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Industries col 3 */}
-          <motion.div variants={slideUpChild}>
-            <h3 className="font-semibold mb-3">Industries</h3>
-            <ul className="space-y-2 text-gray-600">
-              {[
-                { name: "Consultant", href: "/industries/consultant" },
-                {
-                  name: "Real Estate Agent",
-                  href: "/industries/real-estate-agent",
-                },
-                { name: "Mechanic", href: "/industries/mechanic" },
-                { name: "Plumber", href: "/industries/plumber" },
-                { name: "Electrician", href: "/industries/electrician" },
-                {
-                  name: "Window Cleaning",
-                  href: "/industries/window-cleaning",
-                },
-              ].map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#00A7DE] transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Industries col 2 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Podiatrist", href: "/industries/podiatrist" },
+                  {
+                    name: "Beauty Therapist",
+                    href: "/industries/beauty-therapist",
+                  },
+                  { name: "Hairdresser", href: "/industries/hairdresser" },
+                  { name: "Dentist", href: "/industries/dentist" },
+                  { name: "Accountant", href: "/industries/accountant" },
+                  { name: "Lawyer", href: "/industries/lawyer" },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Industries col 3 */}
+            <motion.div
+              variants={slideUpChild}
+              className="space-y-2 sm:space-y-3"
+            >
+              <h3 className="font-semibold mb-2 sm:mb-3 hidden sm:block">
+                &nbsp;
+              </h3>
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                {[
+                  { name: "Consultant", href: "/industries/consultant" },
+                  {
+                    name: "Real Estate Agent",
+                    href: "/industries/real-estate-agent",
+                  },
+                  { name: "Mechanic", href: "/industries/mechanic" },
+                  { name: "Plumber", href: "/industries/plumber" },
+                  { name: "Electrician", href: "/industries/electrician" },
+                  {
+                    name: "Window Cleaning",
+                    href: "/industries/window-cleaning",
+                  },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#00A7DE] transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </motion.div>
-        </motion.div>
 
           {/* Bottom Line */}
           <motion.div
@@ -1155,6 +1164,5 @@ Healthcare Section
         </motion.footer>
       </motion.main>
     </>
-    // Healthcare & Wellness
   );
 }
