@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
-import dynamic from "next/dynamic";
 import FadeInOnScroll from "./_components/animations/FadeInScroll";
 import HoverSlide from "./_components/animations/HoverSlider";
 import HeroAnimation from "./_components/heroanimation";
@@ -19,10 +18,6 @@ import useScrollAnimation from "./_components/animations/scrolleranimation";
 import { slideUpChild } from "./_components/animations/footer";
 import { staggerContainer } from "./_components/animations/footer";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
-const Features = dynamic(() => import("./_components/animations/Features"), {
-  ssr: false,
-  loading: () => <p>Loading features...</p>, // optional
-});
 
 export default function Home({}) {
   useScrollAnimation();
