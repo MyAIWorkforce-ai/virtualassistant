@@ -1196,126 +1196,129 @@ export default function Home({}) {
       </main>
       {/* HOW IT WORKS SECTION */}
       <section
-        id="how-it-works"
-        className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
-      >
-        <div className="max-w-5xl mx-auto text-center px-4">
-          {/* ==== Heading ==== */}
-          <h2 className={sectionHeading}>How It Works</h2>
+  id="how-it-works"
+  className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
+>
+  <div className="max-w-5xl mx-auto text-center px-4">
+    {/* ==== Heading ==== */}
+    <h2 className={sectionHeading}>How It Works</h2>
 
-          {/* underline bar */}
-          <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
+    {/* underline bar */}
+    <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
 
-          <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
-            Our AI assistant handles your calls from start to finish, just like
-            a human receptionist.
-          </p>
+    <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
+      Our AI assistant handles your calls from start to finish, just like
+      a human receptionist.
+    </p>
 
-          {/* ==== Steps ==== */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 items-stretch">
-            {/* Step 1 */}
-            <ScrollSlide direction="left">
-              <article className="flex flex-col items-center h-full">
-                {/* Icon */}
-                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
-                  <Image
-                    src="/images/phone.png"
-                    alt="Client calling phone icon"
-                    width={68.97}
-                    height={68.97}
-                     priority
-                  />
-                </div>
-
-                {/* Box */}
-                <div
-                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
-                >
-                  <h3 className={stepTitle}>Client calls</h3>
-                  <p className={stepDesc}>
-                    AI answers with your business
-                    <br /> greeting
-                  </p>
-                  {/* Step Number */}
-                  <span
-                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
-                         w-8 h-8 flex items-center justify-center text-sm font-semibold 
-                         text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-                    aria-label="Step 1"
-                  >
-                    1
-                  </span>
-                </div>
-              </article>
-            </ScrollSlide>
-
-            {/* Step 2 */}
-            <ScrollSlide direction="up" delay={0.2}>
-              <article className="flex flex-col items-center h-full">
-                <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
-                  <Image
-                    src="/images/calender1.png"
-                    alt="Calendar booking icon"
-                    width={68.97}
-                    height={68.97}
-                     priority
-                  />
-                </div>
-
-                <div
-                  className="relative mt-6 bg-white rounded-lg  shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
-                >
-                  <h3 className={stepTitle}>Appointment booked</h3>
-                  <p className={stepDesc}>Syncs with your calendar instantly</p>
-                  <span
-                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
-                         w-8 h-8 flex items-center justify-center text-sm font-semibold 
-                         text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-                    aria-label="Step 2"
-                  >
-                    2
-                  </span>
-                </div>
-              </article>
-            </ScrollSlide>
-
-            {/* Step 3 */}
-            <ScrollSlide direction="right" delay={0.4}>
-              <article className="flex flex-col items-center h-full">
-                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
-                  <Image
-                    src="/images/doc.png"
-                    alt="Notes and transcript document icon"
-                    width={68.97}
-                    height={68.97}
-                     priority
-                  />
-                </div>
-
-                <div
-                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
-                >
-                  <h3 className={stepTitle}>
-                    Call Summary, Transcript &<br /> Recordings
-                  </h3>
-                  <p className={stepDesc}>Saved in your CRM automatically</p>
-                  <span
-                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
-                         w-8 h-8 flex items-center justify-center text-sm font-semibold 
-                         text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-                    aria-label="Step 3"
-                  >
-                    3
-                  </span>
-                </div>
-              </article>
-            </ScrollSlide>
+    {/* ==== Steps ==== */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 items-stretch justify-center">
+      {/* Step 1 */}
+      <ScrollSlide direction="left">
+        <article className="flex flex-col items-center">
+          {/* Icon */}
+          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
+            <Image
+              src="/images/phone.png"
+              alt="Client calling phone icon"
+              width={68.97}
+              height={68.97}
+              priority
+            />
           </div>
-        </div>
-      </section>
+
+          {/* Box */}
+          <div
+            className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between 
+                       border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+            style={{ width: "309.19px", height: "116.38px", minWidth: "100%" }}
+          >
+            <h3 className={stepTitle}>Client calls</h3>
+            <p className={stepDesc}>
+              AI answers with your business
+              <br /> greeting
+            </p>
+            <span
+              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                     w-8 h-8 flex items-center justify-center text-sm font-semibold 
+                     text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
+              aria-label="Step 1"
+            >
+              1
+            </span>
+          </div>
+        </article>
+      </ScrollSlide>
+
+      {/* Step 2 */}
+      <ScrollSlide direction="up" delay={0.2}>
+        <article className="flex flex-col items-center">
+          <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
+            <Image
+              src="/images/calender1.png"
+              alt="Calendar booking icon"
+              width={68.97}
+              height={68.97}
+              priority
+            />
+          </div>
+
+          <div
+            className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between 
+                       border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+            style={{ width: "309.19px", height: "116.38px", minWidth: "100%" }}
+          >
+            <h3 className={stepTitle}>Appointment booked</h3>
+            <p className={stepDesc}>Syncs with your calendar instantly</p>
+            <span
+              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                     w-8 h-8 flex items-center justify-center text-sm font-semibold 
+                     text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
+              aria-label="Step 2"
+            >
+              2
+            </span>
+          </div>
+        </article>
+      </ScrollSlide>
+
+      {/* Step 3 */}
+      <ScrollSlide direction="right" delay={0.4}>
+        <article className="flex flex-col items-center">
+          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
+            <Image
+              src="/images/doc.png"
+              alt="Notes and transcript document icon"
+              width={68.97}
+              height={68.97}
+              priority
+            />
+          </div>
+
+          <div
+            className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between 
+                       border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+            style={{ width: "309.19px", height: "116.38px", minWidth: "100%" }}
+          >
+            <h3 className={stepTitle}>
+              Call Summary, Transcript &<br /> Recordings
+            </h3>
+            <p className={stepDesc}>Saved in your CRM automatically</p>
+            <span
+              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                     w-8 h-8 flex items-center justify-center text-sm font-semibold 
+                     text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
+              aria-label="Step 3"
+            >
+              3
+            </span>
+          </div>
+        </article>
+      </ScrollSlide>
+    </div>
+  </div>
+</section>
+
 
       {/* Transparent Pricing */}
       <ScaleUp>
