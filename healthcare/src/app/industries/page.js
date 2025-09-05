@@ -478,7 +478,7 @@ Healthcare Section
           variants={slideFadeVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={slideFadeTransition}
         >
           <div className="text-center mb-12">
@@ -501,7 +501,7 @@ Healthcare Section
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ ...slideFadeTransition, delay: index * 0.2 }}
+                transition={{ ...slideFadeTransition, delay: index * 0.1 }}
               >
                 <div className="flex items-center gap-3">
                   <Image
@@ -509,6 +509,7 @@ Healthcare Section
                     alt={`${service.title} scheduling AI`}
                     width={64}
                     height={64}
+                    priority
                   />
                   <h3 className="text-lg font-semibold text-gray-800">
                     {service.title}
@@ -564,6 +565,7 @@ Healthcare Section
                       alt="Accountant AI scheduling icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg text-black font-semibold">
                       Accountant
@@ -587,7 +589,7 @@ Healthcare Section
                   variants={slideInRight}
                   initial="hidden"
                   whileInView="visible"
-                  transition={{ duration: 0.6, delay: 0.2 }}
+                  transition={{ duration: 0.3 }}
                   viewport={{ once: false }}
                 >
                   <div className="flex items-center gap-3">
@@ -596,6 +598,7 @@ Healthcare Section
                       alt="Lawyer AI scheduling icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg text-black font-semibold">Lawyer</h2>
                   </div>
@@ -626,6 +629,7 @@ Healthcare Section
                       alt="Consultant AI scheduling icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg text-black font-semibold">
                       Consultant
@@ -658,6 +662,7 @@ Healthcare Section
                       alt="Real Estate Agent AI scheduling icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg text-black font-semibold">
                       Real Estate Agent
@@ -710,6 +715,7 @@ Healthcare Section
                       alt="Professional mechanic service icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg text-black font-semibold">
                       Mechanic
@@ -742,6 +748,7 @@ Healthcare Section
                       alt="Certified plumber service icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg font-semibold">Plumber</h2>
                   </div>
@@ -772,6 +779,7 @@ Healthcare Section
                       alt="Window cleaning service icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg font-semibold">Window Cleaning</h2>
                   </div>
@@ -802,6 +810,7 @@ Healthcare Section
                       alt="Licensed electrician service icon"
                       width={64}
                       height={64}
+                      priority
                     />
                     <h2 className="text-lg font-semibold">Electrician</h2>
                   </div>
@@ -854,6 +863,7 @@ Healthcare Section
                     alt="Restaurant reservation management system"
                     width={64}
                     height={64}
+                    priority
                   />
                   <h2 className="text-lg text-black font-semibold">
                     Restaurant Reservation
@@ -890,6 +900,7 @@ Healthcare Section
                     alt="Lawyer client scheduling automation"
                     width={64}
                     height={64}
+                    priority
                   />
                   <h2 className="text-lg text-black font-semibold">Lawyer</h2>
                 </div>
@@ -952,6 +963,7 @@ Healthcare Section
                     alt="Calendar Icon"
                     width={20}
                     height={20}
+                    priority
                   />
                   Book a Demo
                 </span>

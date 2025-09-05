@@ -523,7 +523,7 @@ export default function Home({}) {
           <div className="flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
             {/* Left Content */}
             <motion.div
-              className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left"
+              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -583,6 +583,7 @@ export default function Home({}) {
                   width={640}
                   height={360}
                   quality={100}
+                  priority
                   className="max-w-full translate-x-[50px] h-auto"
                 />
               </HeroAnimation>
