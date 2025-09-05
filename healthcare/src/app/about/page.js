@@ -15,7 +15,7 @@ import useScrollAnimation from "../_components/animations/scrolleranimation";
 import { fadeRight } from "../_components/animations/variants";
 import { scaleFade } from "../_components/animations/variants";
 export default function HomePage() {
-   useScrollAnimation();
+  useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
   // ===========================
   //        section 1
@@ -147,15 +147,15 @@ export default function HomePage() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="/about"
-                      className="text-[#00A7DE]"
-                    >
+                    <Link href="/about" className="text-[#00A7DE]">
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-black hover:text-[#00A7DE]">
+                    <Link
+                      href="/contact"
+                      className="text-black hover:text-[#00A7DE]"
+                    >
                       Contact Us
                     </Link>
                   </li>
@@ -424,25 +424,29 @@ export default function HomePage() {
                 {[
                   {
                     title: "Twilio",
-                    description:"Enabling seamless communication through calls and SMS to keep you connected with clients.",
+                    description:
+                      "Enabling seamless communication through calls and SMS to keep you connected with clients.",
                     bgColor: "bg-white",
                     icon: "/images/twillio.png",
                   },
                   {
                     title: "Speech Recognition",
-                    description:"Whisper, AssemblyAI, and Google Speech-to-Text for accurate transcriptions.",
+                    description:
+                      "Whisper, AssemblyAI, and Google Speech-to-Text for accurate transcriptions.",
                     bgColor: "bg-white",
                     icon: "/images/speech.png",
                   },
                   {
                     title: "Automation",
-                    description:"n8n and Make.com to automate workflows between calendar, CRM, and client records.",
+                    description:
+                      "n8n and Make.com to automate workflows between calendar, CRM, and client records.",
                     bgColor: "bg-white",
                     icon: "/images/automation.png",
                   },
                   {
                     title: "CRM Integration",
-                    description:"HubSpot and custom CRM solutions to manage and track client relationships.",
+                    description:
+                      "HubSpot and custom CRM solutions to manage and track client relationships.",
                     bgColor: "bg-white",
                     icon: "/images/CRM.png",
                   },
@@ -541,7 +545,6 @@ export default function HomePage() {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: false, amount: 0.3 }}
-                      
                       className="flex items-start gap-4"
                     >
                       <Image
@@ -626,7 +629,6 @@ export default function HomePage() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
-                    
                     className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 text-center md:text-left"
                   >
                     <Image

@@ -19,7 +19,7 @@ import {
 } from "../_components/animations/formanimation";
 import useScrollAnimation from "../_components/animations/scrolleranimation";
 export default function ContactPage() {
-   useScrollAnimation();
+  useScrollAnimation();
   const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({

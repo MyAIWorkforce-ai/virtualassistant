@@ -29,8 +29,8 @@ import useScrollAnimation from "../../_components/animations/scrolleranimation";
 
 // form
 export default function Home() {
-   useScrollAnimation();
-   const [isOpen, setIsOpen] = useState(false);
+  useScrollAnimation();
+  const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [phone, setPhone] = useState("");
@@ -344,76 +344,74 @@ export default function Home() {
             </ul>
           </div>
         </header>
-      
+
         {/* Hero Section */}
-       <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
-  {/* Overlay blur */}
-  <div className="absolute inset-0 backdrop-blur-sm"></div>
+        <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-visible">
+          {/* Overlay blur */}
+          <div className="absolute inset-0 backdrop-blur-sm"></div>
 
-  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between 
-      px-6 md:px-12 py-16 border-b border-white">
-    
-    {/* Text on Left */}
-    <motion.div
-      className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
-      variants={fadeUp}
-      initial="hidden"
-      animate="show"
-      viewport={{ once: false }}
-    >
-      <motion.div
-        className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
-        variants={fadeUp}
-      >
-        Spinal Therapy
-      </motion.div>
+          <div
+            className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between 
+      px-6 md:px-12 py-16 border-b border-white"
+          >
+            {/* Text on Left */}
+            <motion.div
+              className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false }}
+            >
+              <motion.div
+                className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
+                variants={fadeUp}
+              >
+                Spinal Therapy
+              </motion.div>
 
-      <motion.h1
-        className="text-4xl font-bold mb-4"
-        variants={fadeUp}
-      >
-        AI for Chiropractor
-      </motion.h1>
+              <motion.h1 className="text-4xl font-bold mb-4" variants={fadeUp}>
+                AI for Chiropractor
+              </motion.h1>
 
-      <motion.p className="text-lg mb-6" variants={fadeUp}>
-        Your virtual assistant supports your chiropractic practice by handling appointments, reminders, treatment notes, and follow-ups.
-      </motion.p>
+              <motion.p className="text-lg mb-6" variants={fadeUp}>
+                Your virtual assistant supports your chiropractic practice by
+                handling appointments, reminders, treatment notes, and
+                follow-ups.
+              </motion.p>
 
-      {/* Flipper Button */}
-      <motion.button
-        variants={buttonHover}
-        initial="initial"
-        whileHover={{ scale: 1.05 }}
-        viewport={{ once: false }}
-        className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
+              {/* Flipper Button */}
+              <motion.button
+                variants={buttonHover}
+                initial="initial"
+                whileHover={{ scale: 1.05 }}
+                viewport={{ once: false }}
+                className="bg-[#00A7DE] text-white font-medium py-2 px-4 rounded flex items-center gap-2
         transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-      >
-        Get Started
-        <img
-          src="/images/svg.png"
-          alt="Start Icon"
-          className="h-3 w-3"
-        />
-      </motion.button>
-    </motion.div>
-
-   
+              >
+                Get Started
+                <img
+                  src="/images/svg.png"
+                  alt="Start Icon"
+                  className="h-3 w-3"
+                />
+              </motion.button>
+            </motion.div>
 
             {/* Image */}
-             <motion.div
-  className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
-  variants={fadeUp}
-  initial="hidden"
-  animate="show"
-  viewport={{ once: false }}
->
-  <img
-    src="/images/chiro.png"
-    alt="Trainer"
-    className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
-    style={{ objectPosition: "right center" }}
-  />
-</motion.div>
+            <motion.div
+              className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false }}
+            >
+              <img
+                src="/images/chiro.png"
+                alt="Trainer"
+                className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
+                style={{ objectPosition: "right center" }}
+              />
+            </motion.div>
           </div>
         </section>
 
@@ -438,219 +436,220 @@ export default function Home() {
 
         {/* Stats Section */}
         <section className="relative z-20 -mt-12 md:-mt-20 flex justify-center px-4 md:px-8">
-  <motion.div
-    className="grid grid-cols-1 md:grid-cols-3 gap-6 border rounded-2xl p-6 shadow-xl bg-white/95 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full overflow-hidden"
-    initial="hidden"
-    variants={staggerFadeUp}
-    whileInView="show"
-    viewport={{ once: false }}
-  >
-    {/* Stat 1 */}
-    <motion.div
-      className="flex flex-col items-center text-center p-4 md:p-6"
-      variants={fadeInItem}
-    >
-      <img
-        src="/images/clock.png"
-        alt="Missed Appointments"
-        className="h-7 w-7 mb-2"
-      />
-      <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
-      <p className="text-[#797A7D] text-sm mt-2">
-        Fewer missed appointments with <br /> automated reminders.
-      </p>
-    </motion.div>
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 border rounded-2xl p-6 shadow-xl bg-white/95 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full overflow-hidden"
+            initial="hidden"
+            variants={staggerFadeUp}
+            whileInView="show"
+            viewport={{ once: false }}
+          >
+            {/* Stat 1 */}
+            <motion.div
+              className="flex flex-col items-center text-center p-4 md:p-6"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/clock.png"
+                alt="Missed Appointments"
+                className="h-7 w-7 mb-2"
+              />
+              <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
+              <p className="text-[#797A7D] text-sm mt-2">
+                Fewer missed appointments with <br /> automated reminders.
+              </p>
+            </motion.div>
 
-    {/* Stat 2 */}
-    <motion.div
-      className="flex flex-col items-center text-center p-4 md:p-6"
-      variants={fadeInItem}
-    >
-      <img
-        src="/images/Frame.png"
-        alt="Scheduling Automation"
-        className="h-7 w-7 mb-2"
-      />
-      <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
-      <p className="text-[#797A7D] text-sm mt-2">
-        Reduced hours spent on scheduling <br /> and note-taking.
-      </p>
-    </motion.div>
+            {/* Stat 2 */}
+            <motion.div
+              className="flex flex-col items-center text-center p-4 md:p-6"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/Frame.png"
+                alt="Scheduling Automation"
+                className="h-7 w-7 mb-2"
+              />
+              <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
+              <p className="text-[#797A7D] text-sm mt-2">
+                Reduced hours spent on scheduling <br /> and note-taking.
+              </p>
+            </motion.div>
 
-    {/* Stat 3 */}
-    <motion.div
-      className="flex flex-col items-center text-center p-4 md:p-6"
-      variants={fadeInItem}
-    >
-      <img
-        src="/images/wave.png"
-        alt="Patient Recovery"
-        className="h-7 w-7 mb-2"
-      />
-      <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
-      <p className="text-[#797A7D] text-sm mt-2">
-        Higher patient adherence to <br /> recovery exercises and care plans.
-      </p>
-    </motion.div>
-  </motion.div>
-</section>
+            {/* Stat 3 */}
+            <motion.div
+              className="flex flex-col items-center text-center p-4 md:p-6"
+              variants={fadeInItem}
+            >
+              <img
+                src="/images/wave.png"
+                alt="Patient Recovery"
+                className="h-7 w-7 mb-2"
+              />
+              <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
+              <p className="text-[#797A7D] text-sm mt-2">
+                Higher patient adherence to <br /> recovery exercises and care
+                plans.
+              </p>
+            </motion.div>
+          </motion.div>
+        </section>
 
         {/* =======================
          Key features
 ============================= */}
 
-       <motion.section
-  className="py-12 px-4 mt-15 md:px-8 lg:px-16"
-  variants={fadeUp}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: false, amount: 0.2 }}
-  aria-labelledby="benefits-heading"
->
-  {/* ✅ Main Heading (H1 for SEO) */}
-  <motion.h1
-    id="benefits-heading"
-    className="text-3xl md:text-4xl font-bold mb-8 text-black text-center"
-    variants={fadeUp}
-  >
-    Key Benefits
-  </motion.h1>
+        <motion.section
+          className="py-12 px-4 mt-15 md:px-8 lg:px-16"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          aria-labelledby="benefits-heading"
+        >
+          {/* ✅ Main Heading (H1 for SEO) */}
+          <motion.h1
+            id="benefits-heading"
+            className="text-3xl md:text-4xl font-bold mb-8 text-black text-center"
+            variants={fadeUp}
+          >
+            Key Benefits
+          </motion.h1>
 
-  {/* ✅ Subheading (H2) */}
-  <motion.h2
-    className="text-base font-normal -mt-4 mb-8 text-[#797A7D] text-center max-w-2xl mx-auto"
-    variants={fadeUp}
-  >
-    Enhance your chiropractic practice with intelligent automation that reduces
-    <br /> admin work and improves efficiency.
-  </motion.h2>
+          {/* ✅ Subheading (H2) */}
+          <motion.h2
+            className="text-base font-normal -mt-4 mb-8 text-[#797A7D] text-center max-w-2xl mx-auto"
+            variants={fadeUp}
+          >
+            Enhance your chiropractic practice with intelligent automation that
+            reduces
+            <br /> admin work and improves efficiency.
+          </motion.h2>
 
-  {/* ✅ Responsive Cards Grid (uses article for SEO & accessibility) */}
-  <motion.div
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-    variants={staggerFadeUp}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.2 }}
-  >
-    {/* Card 1 */}
-    <motion.article
-      className="bg-gradient-to-br from-[#FAF5FF] to-[#F3E8FF] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-      variants={fadeInItem}
-    >
-      <div className="mb-4">
-        <Image
-          src="/images/automated-scheduling.png"
-          alt="Automated scheduling for chiropractors"
-          width={48}
-          height={48}
-        />
-      </div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">
-        Automated Scheduling
-      </h3>
-      <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-        Session scheduling, reminders, and
-        <br /> follow-ups handled automatically,
-        <br /> reducing no-shows and improving
-        <br /> patient adherence.
-      </p>
-    </motion.article>
+          {/* ✅ Responsive Cards Grid (uses article for SEO & accessibility) */}
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            variants={staggerFadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {/* Card 1 */}
+            <motion.article
+              className="bg-gradient-to-br from-[#FAF5FF] to-[#F3E8FF] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/automated-scheduling.png"
+                  alt="Automated scheduling for chiropractors"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Automated Scheduling
+              </h3>
+              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+                Session scheduling, reminders, and
+                <br /> follow-ups handled automatically,
+                <br /> reducing no-shows and improving
+                <br /> patient adherence.
+              </p>
+            </motion.article>
 
-    {/* Card 2 */}
-    <motion.article
-      className="bg-gradient-to-br from-[#ECFEFF] to-[#CFFAFE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-      variants={fadeInItem}
-    >
-      <div className="mb-4">
-        <Image
-          src="/images/secure-records.png"
-          alt="Secure patient records for chiropractic care"
-          width={48}
-          height={48}
-        />
-      </div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">
-        Organized Records
-      </h3>
-      <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-        Secure storage of spine therapy notes
-        <br /> and progress records, accessible
-        <br /> anytime for better treatment
-        <br /> continuity.
-      </p>
-    </motion.article>
+            {/* Card 2 */}
+            <motion.article
+              className="bg-gradient-to-br from-[#ECFEFF] to-[#CFFAFE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/secure-records.png"
+                  alt="Secure patient records for chiropractic care"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Organized Records
+              </h3>
+              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+                Secure storage of spine therapy notes
+                <br /> and progress records, accessible
+                <br /> anytime for better treatment
+                <br /> continuity.
+              </p>
+            </motion.article>
 
-    {/* Card 3 */}
-    <motion.article
-      className="bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-      variants={fadeInItem}
-    >
-      <div className="mb-4">
-        <Image
-          src="/images/personalized-care.png"
-          alt="Personalized chiropractic care plans"
-          width={48}
-          height={48}
-        />
-      </div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">
-        Personalized Care
-      </h3>
-      <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-        Custom treatment plans and exercise logs tailored to each
-        patient's specific spinal therapy needs.
-      </p>
-    </motion.article>
+            {/* Card 3 */}
+            <motion.article
+              className="bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/personalized-care.png"
+                  alt="Personalized chiropractic care plans"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Personalized Care
+              </h3>
+              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+                Custom treatment plans and exercise logs tailored to each
+                patient's specific spinal therapy needs.
+              </p>
+            </motion.article>
 
-    {/* Card 4 */}
-    <motion.article
-      className="bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-      variants={fadeInItem}
-    >
-      <div className="mb-4">
-        <Image
-          src="/images/better-adherence.png"
-          alt="Better chiropractic outcomes"
-          width={48}
-          height={48}
-        />
-      </div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">
-        Better Outcomes
-      </h3>
-      <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-        Improved treatment results through
-        <br /> timely follow-ups and consistent
-        <br /> patient engagement.
-      </p>
-    </motion.article>
+            {/* Card 4 */}
+            <motion.article
+              className="bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/better-adherence.png"
+                  alt="Better chiropractic outcomes"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Better Outcomes
+              </h3>
+              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+                Improved treatment results through
+                <br /> timely follow-ups and consistent
+                <br /> patient engagement.
+              </p>
+            </motion.article>
 
-    {/* Card 5 */}
-    <motion.article
-      className="bg-gradient-to-br from-[#FFF1F2] to-[#FFE4E6] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
-      variants={fadeInItem}
-    >
-      <div className="mb-4">
-        <Image
-          src="/images/stress.png"
-          alt="Reduced stress for chiropractors"
-          width={48}
-          height={48}
-        />
-      </div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">
-        Reduced Stress
-      </h3>
-      <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-        Less administrative burden means
-        <br /> more time dedicated to hands-on
-        <br /> therapy and patient care.
-      </p>
-    </motion.article>
-  </motion.div>
-</motion.section>
-
+            {/* Card 5 */}
+            <motion.article
+              className="bg-gradient-to-br from-[#FFF1F2] to-[#FFE4E6] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              variants={fadeInItem}
+            >
+              <div className="mb-4">
+                <Image
+                  src="/images/stress.png"
+                  alt="Reduced stress for chiropractors"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Reduced Stress
+              </h3>
+              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+                Less administrative burden means
+                <br /> more time dedicated to hands-on
+                <br /> therapy and patient care.
+              </p>
+            </motion.article>
+          </motion.div>
+        </motion.section>
 
         {/* ======================
     Primary uses
@@ -660,339 +659,348 @@ export default function Home() {
         <div className="w-full h-[2px] bg-gray-200 my-12"></div>
 
         {/* Empty container for spacing */}
-       <div className="max-w-6xl mx-auto px-4 text-center"></div>
+        <div className="max-w-6xl mx-auto px-4 text-center"></div>
 
-{/* ✅ Primary Uses Section */}
-<motion.section
-  id="primary-uses"
-  className="px-4 sm:px-6 py-12 max-w-6xl mx-auto"
-  variants={pageFadeIn}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: false }}
-  aria-labelledby="primary-uses-heading"
->
-  {/* Centered Heading */}
-  <motion.h2
-    id="primary-uses-heading"
-    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center -mt-12 text-[#00A7DE] mb-10 sm:mb-12"
-    variants={listItemFade}
-  >
-    Primary Uses
-  </motion.h2>
+        {/* ✅ Primary Uses Section */}
+        <motion.section
+          id="primary-uses"
+          className="px-4 sm:px-6 py-12 max-w-6xl mx-auto"
+          variants={pageFadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false }}
+          aria-labelledby="primary-uses-heading"
+        >
+          {/* Centered Heading */}
+          <motion.h2
+            id="primary-uses-heading"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-center -mt-12 text-[#00A7DE] mb-10 sm:mb-12"
+            variants={listItemFade}
+          >
+            Primary Uses
+          </motion.h2>
 
-  {/* ✅ Two-column responsive grid with semantic list */}
-  <motion.div
-    className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 p-4 sm:p-8 md:p-12 border rounded-lg shadow-none hover:shadow-lg transition max-w-5xl mx-auto"
-    variants={staggeredList}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false }}
-    role="list"
-  >
-    {/* Left Column */}
-    <div className="space-y-8">
-      {/* Item 1 */}
-      <motion.article
-        className="flex items-start gap-4"
-        variants={listItemFade}
-        role="listitem"
-      >
-        <Image
-          src="/images/spinal.png"
-          alt="Spinal and posture care with AI assistant"
-          width={40}
-          height={40}
-        />
-        <div>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-            Spinal & Posture Care
-          </h3>
-          <p className="text-sm sm:text-base text-[#797A7D]">
-            Manage patients with back pain scoliosis, or posture correction.
-          </p>
-        </div>
-      </motion.article>
+          {/* ✅ Two-column responsive grid with semantic list */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 p-4 sm:p-8 md:p-12 border rounded-lg shadow-none hover:shadow-lg transition max-w-5xl mx-auto"
+            variants={staggeredList}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            role="list"
+          >
+            {/* Left Column */}
+            <div className="space-y-8">
+              {/* Item 1 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+                role="listitem"
+              >
+                <Image
+                  src="/images/spinal.png"
+                  alt="Spinal and posture care with AI assistant"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                    Spinal & Posture Care
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#797A7D]">
+                    Manage patients with back pain scoliosis, or posture
+                    correction.
+                  </p>
+                </div>
+              </motion.article>
 
-      {/* Item 2 */}
-      <motion.article
-        className="flex items-start gap-4"
-        variants={listItemFade}
-        role="listitem"
-      >
-        <Image
-          src="/images/injury1.png"
-          alt="AI-assisted injury recovery and rehabilitation"
-          width={40}
-          height={40}
-        />
-        <div>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-            Injury Recovery
-          </h3>
-          <p className="text-sm sm:text-base text-[#797A7D]">
-            Support recovery from sports injuries, joint pain, and misalignments.
-          </p>
-        </div>
-      </motion.article>
+              {/* Item 2 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+                role="listitem"
+              >
+                <Image
+                  src="/images/injury1.png"
+                  alt="AI-assisted injury recovery and rehabilitation"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                    Injury Recovery
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#797A7D]">
+                    Support recovery from sports injuries, joint pain, and
+                    misalignments.
+                  </p>
+                </div>
+              </motion.article>
 
-      {/* Item 3 */}
-      <motion.article
-        className="flex items-start gap-4"
-        variants={listItemFade}
-        role="listitem"
-      >
-        <Image
-          src="/images/wellness.png"
-          alt="AI wellness maintenance for spinal health"
-          width={40}
-          height={40}
-        />
-        <div>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-            Wellness Maintenance
-          </h3>
-          <p className="text-sm sm:text-base text-[#797A7D]">
-            Encourage regular visits for overall spinal health and mobility.
-          </p>
-        </div>
-      </motion.article>
-    </div>
+              {/* Item 3 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+                role="listitem"
+              >
+                <Image
+                  src="/images/wellness.png"
+                  alt="AI wellness maintenance for spinal health"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                    Wellness Maintenance
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#797A7D]">
+                    Encourage regular visits for overall spinal health and
+                    mobility.
+                  </p>
+                </div>
+              </motion.article>
+            </div>
 
-    {/* Right Column */}
-    <div className="space-y-8">
-      {/* Item 4 */}
-      <motion.article
-        className="flex items-start gap-4"
-        variants={listItemFade}
-        role="listitem"
-      >
-        <Image
-          src="/images/tracking.png"
-          alt="AI patient progress tracking system"
-          width={40}
-          height={40}
-        />
-        <div>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-            Patient Progress Tracking
-          </h3>
-          <p className="text-sm sm:text-base text-[#797A7D]">
-            Document patient progress milestones and therapy outcomes securely.
-          </p>
-        </div>
-      </motion.article>
+            {/* Right Column */}
+            <div className="space-y-8">
+              {/* Item 4 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+                role="listitem"
+              >
+                <Image
+                  src="/images/tracking.png"
+                  alt="AI patient progress tracking system"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                    Patient Progress Tracking
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#797A7D]">
+                    Document patient progress milestones and therapy outcomes
+                    securely.
+                  </p>
+                </div>
+              </motion.article>
 
-      {/* Item 5 */}
-      <motion.article
-        className="flex items-start gap-4"
-        variants={listItemFade}
-        role="listitem"
-      >
-        <Image
-          src="/images/tracking (2).png"
-          alt="AI-powered virtual assistant for patient support"
-          width={40}
-          height={40}
-        />
-        <div>
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-            AI Assistant
-          </h3>
-          <p className="text-sm sm:text-base text-[#797A7D]">
-            Answer common patient inquiries via AI chat or voice assistant.
-          </p>
-        </div>
-      </motion.article>
-    </div>
-  </motion.div>
-</motion.section>
-
+              {/* Item 5 */}
+              <motion.article
+                className="flex items-start gap-4"
+                variants={listItemFade}
+                role="listitem"
+              >
+                <Image
+                  src="/images/tracking (2).png"
+                  alt="AI-powered virtual assistant for patient support"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                    AI Assistant
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#797A7D]">
+                    Answer common patient inquiries via AI chat or voice
+                    assistant.
+                  </p>
+                </div>
+              </motion.article>
+            </div>
+          </motion.div>
+        </motion.section>
 
         {/* ==========================
 Productivity Gains
 ========================== */}
 
-       <motion.section
-  id="productivity-gains"
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: false, amount: 0.2 }}
-  variants={fadeInUp}
-  className="w-full flex flex-col items-center justify-center bg-gradient-to-r from-[#00A7DE] to-[#0578AC] px-4 sm:px-6 py-12 text-white"
-  aria-labelledby="productivity-heading"
->
-  {/* ✅ Heading with SEO */}
-  <motion.h2
-    id="productivity-heading"
-    variants={fadeInUp}
-    className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 mt-4 text-center"
-  >
-    Productivity Gains
-  </motion.h2>
+        <motion.section
+          id="productivity-gains"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInUp}
+          className="w-full flex flex-col items-center justify-center bg-gradient-to-r from-[#00A7DE] to-[#0578AC] px-4 sm:px-6 py-12 text-white"
+          aria-labelledby="productivity-heading"
+        >
+          {/* ✅ Heading with SEO */}
+          <motion.h2
+            id="productivity-heading"
+            variants={fadeInUp}
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 mt-4 text-center"
+          >
+            Productivity Gains
+          </motion.h2>
 
-  {/* ✅ Responsive Grid */}
-  <motion.div
-    variants={stagger}
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-items-center max-w-6xl w-full text-center"
-    role="list"
-  >
-    {/* Card 1 */}
-    <motion.article
-      variants={fadeInUp}
-      className="flex flex-col items-center space-y-2"
-      role="listitem"
-    >
-      <motion.img
-        src="/images/time.png"
-        alt="AI reminders reducing missed sessions"
-        className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
-        whileHover={{ scale: 1.2 }}
-      />
-      <h3 className="text-sm sm:text-base font-medium">Fewer Missed Sessions</h3>
-      <p className="text-xs sm:text-sm">Through timely reminders</p>
-    </motion.article>
+          {/* ✅ Responsive Grid */}
+          <motion.div
+            variants={stagger}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-items-center max-w-6xl w-full text-center"
+            role="list"
+          >
+            {/* Card 1 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+              role="listitem"
+            >
+              <motion.img
+                src="/images/time.png"
+                alt="AI reminders reducing missed sessions"
+                className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-sm sm:text-base font-medium">
+                Fewer Missed Sessions
+              </h3>
+              <p className="text-xs sm:text-sm">Through timely reminders</p>
+            </motion.article>
 
-    {/* Card 2 */}
-    <motion.article
-      variants={fadeInUp}
-      className="flex flex-col items-center space-y-2"
-      role="listitem"
-    >
-      <motion.img
-        src="/images/reduced workload.png"
-        alt="AI automation reducing workload for chiropractors"
-        className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
-        whileHover={{ scale: 1.2 }}
-      />
-      <h3 className="text-sm sm:text-base font-medium">Reduced Workload</h3>
-      <p className="text-xs sm:text-sm">
-        Less back-and-forth with the
-        <br /> patients
-      </p>
-    </motion.article>
+            {/* Card 2 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+              role="listitem"
+            >
+              <motion.img
+                src="/images/reduced workload.png"
+                alt="AI automation reducing workload for chiropractors"
+                className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-sm sm:text-base font-medium">
+                Reduced Workload
+              </h3>
+              <p className="text-xs sm:text-sm">
+                Less back-and-forth with the
+                <br /> patients
+              </p>
+            </motion.article>
 
-    {/* Card 3 */}
-    <motion.article
-      variants={fadeInUp}
-      className="flex flex-col items-center space-y-2"
-      role="listitem"
-    >
-      <motion.img
-        src="/images/engaggement.png"
-        alt="AI improving patient engagement for chiropractors"
-        className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
-        whileHover={{ scale: 1.2 }}
-      />
-      <h3 className="text-sm sm:text-base font-medium">Patient Engagement</h3>
-      <p className="text-xs sm:text-sm">
-        Chiropractors spend more time
-        <br /> treating, less on admin.
-      </p>
-    </motion.article>
-  </motion.div>
-</motion.section>
+            {/* Card 3 */}
+            <motion.article
+              variants={fadeInUp}
+              className="flex flex-col items-center space-y-2"
+              role="listitem"
+            >
+              <motion.img
+                src="/images/engaggement.png"
+                alt="AI improving patient engagement for chiropractors"
+                className="w-12 h-12 sm:w-14 sm:h-14 transition-transform"
+                whileHover={{ scale: 1.2 }}
+              />
+              <h3 className="text-sm sm:text-base font-medium">
+                Patient Engagement
+              </h3>
+              <p className="text-xs sm:text-sm">
+                Chiropractors spend more time
+                <br /> treating, less on admin.
+              </p>
+            </motion.article>
+          </motion.div>
+        </motion.section>
 
         {/* =====================
 Example use cases
 ===================== */}
 
-      <section className="px-4 py-12 max-w-6xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false }}
-          className="text-5xl font-bold text-center text-[#00A7DE] mb-10"
-        >
-          Example Use Case
-        </motion.h2>
+        <section className="px-4 py-12 max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false }}
+            className="text-5xl font-bold text-center text-[#00A7DE] mb-10"
+          >
+            Example Use Case
+          </motion.h2>
 
-        {/* Top Full-Width Box */}
-        <motion.div
-          variants={cardMotion}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
-        >
-          <h3 className="text-base font-semibold mb-2">
-            Lower Back Pain Journey
-          </h3>
-          <p className="text-sm text-[#797A7D] leading-relaxed">
-            A patient with recurring lower back pain books a chiropractic session through your virtual assistant.
-          </p>
-        </motion.div>
+          {/* Top Full-Width Box */}
+          <motion.div
+            variants={cardMotion}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
+          >
+            <h3 className="text-base font-semibold mb-2">
+              Lower Back Pain Journey
+            </h3>
+            <p className="text-sm text-[#797A7D] leading-relaxed">
+              A patient with recurring lower back pain books a chiropractic
+              session through your virtual assistant.
+            </p>
+          </motion.div>
 
-        {/* Bottom 4 Boxes */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-        >
-          {[
-            {
-              icon: "/images/one.png",
-              title: "Instant Confirmation",
-              text: (
-                <>
-                  Confirms the appointment automatically  with a pre-session reminder.
-                </>
-              ),
-              bg: "bg-[#3B82F6]/8",
-            },
-            {
-              icon: "/images/two.png",
-              title: "Adjustment & Feedback",
-              text: (
-                <>
-                  Chiropractor logs adjustments and feedback after each visit.
-                </>
-              ),
-              bg: "bg-[#10B981]/8",
-            },
-            {
-              icon: "/images/three.png",
-              title: "Follow-up Care",
-              text: (
-                <>
-                  Recurring sessions scheduled for consistent care.
-                </>
-              ),
-              bg: "bg-[#F5B80B]/8",
-            },
-            {
-              icon: "/images/four.png",
-              title: "Recovery Reminders",
-              text: (
-                <>
-                  AI-generated posture and stretch tips tailored to each client.
-                </>
-              ),
-              bg: "bg-[#FAF5FF]/8",
-            },
-          ].map((box, i) => (
-            <motion.div
-              key={i}
-              variants={cardMotion}
-              whileHover={{ scale: 1.04, rotateZ: 1 }}
-              className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-            >
-              <div className="flex items-center gap-4 mb-2">
-                <img src={box.icon} alt={box.title} className="w-10 h-10" />
-                <h3 className="text-base text-[#000000] font-semibold">
-                  {box.title}
-                </h3>
-              </div>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
-                {box.text}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
+          {/* Bottom 4 Boxes */}
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          >
+            {[
+              {
+                icon: "/images/one.png",
+                title: "Instant Confirmation",
+                text: (
+                  <>
+                    Confirms the appointment automatically with a pre-session
+                    reminder.
+                  </>
+                ),
+                bg: "bg-[#3B82F6]/8",
+              },
+              {
+                icon: "/images/two.png",
+                title: "Adjustment & Feedback",
+                text: (
+                  <>
+                    Chiropractor logs adjustments and feedback after each visit.
+                  </>
+                ),
+                bg: "bg-[#10B981]/8",
+              },
+              {
+                icon: "/images/three.png",
+                title: "Follow-up Care",
+                text: <>Recurring sessions scheduled for consistent care.</>,
+                bg: "bg-[#F5B80B]/8",
+              },
+              {
+                icon: "/images/four.png",
+                title: "Recovery Reminders",
+                text: (
+                  <>
+                    AI-generated posture and stretch tips tailored to each
+                    client.
+                  </>
+                ),
+                bg: "bg-[#FAF5FF]/8",
+              },
+            ].map((box, i) => (
+              <motion.div
+                key={i}
+                variants={cardMotion}
+                whileHover={{ scale: 1.04, rotateZ: 1 }}
+                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+              >
+                <div className="flex items-center gap-4 mb-2">
+                  <img src={box.icon} alt={box.title} className="w-10 h-10" />
+                  <h3 className="text-base text-[#000000] font-semibold">
+                    {box.title}
+                  </h3>
+                </div>
+                <p className="text-sm text-[#797A7D] leading-relaxed">
+                  {box.text}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </section>
 
         {/* =======================
 from

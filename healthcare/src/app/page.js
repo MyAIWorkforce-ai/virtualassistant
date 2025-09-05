@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import FadeInOnScroll from "./_components/animations/FadeInScroll";
 import HoverSlide from "./_components/animations/HoverSlider";
 import HeroAnimation from "./_components/heroanimation";
@@ -18,10 +19,13 @@ import useScrollAnimation from "./_components/animations/scrolleranimation";
 import { slideUpChild } from "./_components/animations/footer";
 import { staggerContainer } from "./_components/animations/footer";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
+const Features = dynamic(() => import("./_components/animations/Features"), {
+  ssr: false,
+  loading: () => <p>Loading features...</p>, // optional
+});
 
-
-export default function Home() {
-    useScrollAnimation();
+export default function Home({}) {
+  useScrollAnimation();
 
   const [isOpen, setIsOpen] = useState(false);
   // =======================
@@ -90,68 +94,66 @@ export default function Home() {
   // ========================
   const [billingCycle, setBillingCycle] = useState("monthly");
   const plans = [
-  {
-    name: "SOLO",
-    price: "$300",
-    cycle: "/month",
-    description: "1 User",
-    features: [
-      "AI call answering",
-      "10 hours of call time/month",
-      "Basic appointment booking",
-      "Email notifications",
-      "Call transcriptions",
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Professional",
-    price: "$400",
-    cycle: "/month",
-    description: "Upto 3 Users",
-    features: [
-      "AI Virtual Assistant 24/7",
-      "Advanced Dashboard with Analytics",
-      "Advanced CRM for all Client Data and History",
-      "AI Powered Smart Calendars",
-      "New Dedicated Number or Call Forwarding Options",
-      "Front End AI Prompt Training for your AI",
-      "AI Appointment Scheduling",
-      "Unlimited Incoming Calls 24/7",
-    ],
-    button: "Start Now",
-    highlighted: true,
-  },
-  {
-    name: "Enterprise",
-    price: "$500",
-    cycle: "/month",
-    description: "Upto 5 Users",
-    features: [
-      "Everything in Pro",
-      "Multiple phone lines",
-      "API access",
-      "Custom integrations",
-      "White-labeled solution",
-      "Dedicated account manager",
-      "99.9% uptime SLA",
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Custom Package",
-    price: "",
-    cycle: "",
-    description: "",
-    features: [
-      
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-];
+    {
+      name: "SOLO",
+      price: "$300",
+      cycle: "/month",
+      description: "1 User",
+      features: [
+        "AI call answering",
+        "10 hours of call time/month",
+        "Basic appointment booking",
+        "Email notifications",
+        "Call transcriptions",
+      ],
+      button: "Start Now",
+      highlighted: false,
+    },
+    {
+      name: "Professional",
+      price: "$400",
+      cycle: "/month",
+      description: "Upto 3 Users",
+      features: [
+        "AI Virtual Assistant 24/7",
+        "Advanced Dashboard with Analytics",
+        "Advanced CRM for all Client Data and History",
+        "AI Powered Smart Calendars",
+        "New Dedicated Number or Call Forwarding Options",
+        "Front End AI Prompt Training for your AI",
+        "AI Appointment Scheduling",
+        "Unlimited Incoming Calls 24/7",
+      ],
+      button: "Start Now",
+      highlighted: true,
+    },
+    {
+      name: "Enterprise",
+      price: "$500",
+      cycle: "/month",
+      description: "Upto 5 Users",
+      features: [
+        "Everything in Pro",
+        "Multiple phone lines",
+        "API access",
+        "Custom integrations",
+        "White-labeled solution",
+        "Dedicated account manager",
+        "99.9% uptime SLA",
+      ],
+      button: "Start Now",
+      highlighted: false,
+    },
+    {
+      name: "Custom Package",
+      price: "",
+      cycle: "",
+      description: "",
+      features: [],
+      button: "Start Now",
+      highlighted: false,
+    },
+  ];
 
   // =================================
   //   what our client says
@@ -197,7 +199,6 @@ export default function Home() {
     "bg-white rounded-lg shadow-md p-6 border-t-4 border-[#0097DA] text-center relative transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl";
   //   Section 1 Home page
   return (
-
     <>
       {/* Meta Tags */}
       <Head>
@@ -223,7 +224,7 @@ export default function Home() {
         />
       </Head>
       {/* Main section */}
-    
+
       <main className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
         {/* HEADER */}
         <header className="w-full bg-white shadow-lg">
@@ -512,66 +513,65 @@ export default function Home() {
 
         {/* HERO SECTION */}
         <section className="relative w-full h-auto overflow-hidden">
-  {/* Background Image */}
-  <div className="absolute inset-0 -z-10">
-    <Image
-      src="/images/bg.png"
-      alt="Background"
-      width={1260}
-      height={800}
-      className="w-full h-full object-cover opacity-90"
-    />
-  </div>
+          {/* Background Image */}
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src="/images/bg.png"
+              alt="Background"
+              width={1260}
+              height={800}
+              className="w-full h-full object-cover opacity-90"
+            />
+          </div>
 
-  {/* Content Container */}
-  <div className="flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
-    
-    {/* Left Content */}
-    <motion.div
-      className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
-    >
-      <h3 className="text-[#00A7DE] font-semibold tracking-wide">
-        Take Your Business Into The Future
-      </h3>
+          {/* Content Container */}
+          <div className="flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
+            {/* Left Content */}
+            <motion.div
+              className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-[#00A7DE] font-semibold tracking-wide">
+                Take Your Business Into The Future
+              </h3>
 
-      <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
-        <Typewriter
-          words={["Transform Your Business with AI-Powered Virtual Assistants"]}
-          loop={true}
-          cursor
-          cursorStyle="|"
-          typeSpeed={60}
-          deleteSpeed={50}
-        />
-      </h1>
+              <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+                <Typewriter
+                  words={[
+                    "Transform Your Business with AI-Powered Virtual Assistants",
+                  ]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={60}
+                  deleteSpeed={50}
+                />
+              </h1>
 
-      <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
-        Tailored solutions for every industry, designed to save time, cut costs, and boost productivity.
-      </p>
+              <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
+                Tailored solutions for every industry, designed to save time,
+                cut costs, and boost productivity.
+              </p>
 
-      <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
-        <Link
-          href="/get-started"
-          className="bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-        >
-          Get Started
-        </Link>
+              <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
+                <Link
+                  href="/get-started"
+                  className="bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                >
+                  Get Started
+                </Link>
 
-        <Link
-          href="/industries"
-          className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-        >
-          Explore Industries
-        </Link>
-      </div>
-    </motion.div>
-
-   
-
+                <Link
+                  href="/industries"
+                  className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                >
+                  Explore Industries
+                </Link>
+              </div>
+            </motion.div>
 
             {/* Right side image with animation */}
             <motion.div
@@ -631,6 +631,7 @@ export default function Home() {
                       alt="Receptionist using AI phone handling interface"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
@@ -646,7 +647,7 @@ export default function Home() {
                       alt="AI phone icon"
                       width={20}
                       height={28}
-                      
+                       priority
                     />
                     <h3
                       id="feature-1-title"
@@ -666,7 +667,7 @@ export default function Home() {
                       alt="Thumbs Up"
                       width={16}
                       height={16}
-                      
+                       priority
                     />
 
                     <p className="ml-1 text-xs text-[#6B7280]">
@@ -690,9 +691,9 @@ export default function Home() {
                       alt="Appointment scheduling interface with calendar slots"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      
                     />
                     <figcaption className="sr-only">
                       Appointment Scheduling image
@@ -706,7 +707,7 @@ export default function Home() {
                       alt="Appointment icon"
                       width={20}
                       height={28}
-                      
+                       priority
                     />
                     <h3
                       id="feature-2-title"
@@ -722,11 +723,12 @@ export default function Home() {
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up.png"
-                      alt=""
+                      alt="thumbs-up"
                       width={16}
+
                       height={16}
+                       priority
                       aria-hidden="true"
-                      
                     />
                     <p className="ml-1 text-xs text-[#6B7280]">
                       95% Satisfaction
@@ -749,9 +751,9 @@ export default function Home() {
                       alt="Transcription interface showing text from conversation"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      
                     />
                     <figcaption className="sr-only">
                       Smart Transcription image
@@ -765,7 +767,7 @@ export default function Home() {
                       alt="Transcription icon"
                       width={20}
                       height={28}
-                     
+                       priority
                     />
                     <h3
                       id="feature-3-title"
@@ -775,16 +777,17 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Conversations, Call summary and recordings transcribed instantly, stored with notes for easy searchability.
+                    Conversations, Call summary and recordings transcribed
+                    instantly, stored with notes for easy searchability.
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up.png"
-                      alt=""
+                      alt="thumbs-up"
                       width={16}
                       height={16}
+                       priority
                       aria-hidden="true"
-                     
                     />
                     <p className="ml-1 text-xs text-[#6B7280]">
                       92% Satisfaction
@@ -807,9 +810,9 @@ export default function Home() {
                       alt="Voice memo capture linked to client file"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      
                     />
                     <figcaption className="sr-only">
                       Voice Memo Capture image
@@ -823,7 +826,7 @@ export default function Home() {
                       alt="Voice memo icon"
                       width={20}
                       height={28}
-                     
+                       priority
                     />
                     <h3
                       id="feature-4-title"
@@ -839,11 +842,11 @@ export default function Home() {
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up.png"
-                      alt=""
+                      alt="thumbs-up"
                       width={16}
                       height={16}
+                       priority
                       aria-hidden="true"
-                      
                     />
                     <p className="ml-1 text-xs text-[#6B7280]">
                       89% Satisfaction
@@ -866,9 +869,9 @@ export default function Home() {
                       alt="Branded dashboard showcasing company colors and logo"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      
                     />
                     <figcaption className="sr-only">
                       Branded Dashboard image
@@ -882,7 +885,7 @@ export default function Home() {
                       alt="Branded dashboard icon"
                       width={20}
                       height={28}
-                      
+                       priority
                     />
                     <h3
                       id="feature-5-title"
@@ -898,11 +901,11 @@ export default function Home() {
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up.png"
-                      alt=""
+                      alt="thumbs-up"
                       width={16}
                       height={16}
+                       priority
                       aria-hidden="true"
-                      
                     />
                     <p className="ml-1 text-xs text-[#6B7280]">
                       96% Satisfaction
@@ -925,9 +928,9 @@ export default function Home() {
                       alt="White-labeled booking page frontend preview"
                       width={400}
                       height={250}
+                       priority
                       className="rounded-t-lg w-full h-auto object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      
                     />
                     <figcaption className=" text-3xl sr-only">
                       White-Labeled Booking Page image
@@ -941,7 +944,7 @@ export default function Home() {
                       alt="Booking icon"
                       width={20}
                       height={28}
-                     
+                       priority
                     />
                     <h3
                       id="feature-6-title"
@@ -957,11 +960,11 @@ export default function Home() {
                   <div className="flex items-center mt-3">
                     <Image
                       src="/images/thumbs-up.png"
-                      alt=""
+                      alt="thumb-up"
                       width={16}
                       height={16}
+                       priority
                       aria-hidden="true"
-                      
                     />
                     <p className="ml-1 text-xs text-[#6B7280]">
                       94% Satisfaction
@@ -1079,6 +1082,7 @@ export default function Home() {
                       width={24}
                       height={24}
                       className="mt-1"
+                       priority
                     />
                     <div>
                       <h4 className="text-lg font-semibold text-[#000000]">
@@ -1157,6 +1161,7 @@ export default function Home() {
                         alt={`${item.title} industry icon`}
                         width={64}
                         height={64}
+                         priority
                       />
                       <h3 className="text-lg text-black font-semibold">
                         {item.title}
@@ -1195,115 +1200,127 @@ export default function Home() {
         </section>
       </main>
       {/* HOW IT WORKS SECTION */}
-     <section
-  id="how-it-works"
-  className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
->
-  <div className="max-w-5xl mx-auto text-center px-4">
-    {/* ==== Heading ==== */}
-    <h2 className={sectionHeading}>How It Works</h2>
+      <section
+        id="how-it-works"
+        className="w-full bg-gradient-to-r from-white to-blue-50 py-16"
+      >
+        <div className="max-w-5xl mx-auto text-center px-4">
+          {/* ==== Heading ==== */}
+          <h2 className={sectionHeading}>How It Works</h2>
 
-    {/* underline bar */}
-    <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
+          {/* underline bar */}
+          <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
 
-    <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
-      Our AI assistant handles your calls from start to finish, just like
-      a human receptionist.
-    </p>
+          <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
+            Our AI assistant handles your calls from start to finish, just like
+            a human receptionist.
+          </p>
 
-    {/* ==== Steps ==== */}
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 items-stretch">
-      {/* Step 1 */}
-      <ScrollSlide direction="left">
-        <article className="flex flex-col items-center h-full">
-          {/* Icon */}
-          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
-            <Image
-              src="/images/phone.png"
-              alt="Client calling phone icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+          {/* ==== Steps ==== */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 items-stretch">
+            {/* Step 1 */}
+            <ScrollSlide direction="left">
+              <article className="flex flex-col items-center h-full">
+                {/* Icon */}
+                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
+                  <Image
+                    src="/images/phone.png"
+                    alt="Client calling phone icon"
+                    width={68.97}
+                    height={68.97}
+                     priority
+                  />
+                </div>
 
-          {/* Box */}
-          <div className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Client calls</h3>
-            <p className={stepDesc}>
-              AI answers with your business<br/> greeting
-            </p>
-            {/* Step Number */}
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                {/* Box */}
+                <div
+                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>Client calls</h3>
+                  <p className={stepDesc}>
+                    AI answers with your business
+                    <br /> greeting
+                  </p>
+                  {/* Step Number */}
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 1"
-            >
-              1
-            </span>
-          </div>
-        </article>
-      </ScrollSlide>
+                    aria-label="Step 1"
+                  >
+                    1
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
 
-      {/* Step 2 */}
-      <ScrollSlide direction="up" delay={0.2}>
-        <article className="flex flex-col items-center h-full">
-          <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
-            <Image
-              src="/images/calender1.png"
-              alt="Calendar booking icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+            {/* Step 2 */}
+            <ScrollSlide direction="up" delay={0.2}>
+              <article className="flex flex-col items-center h-full">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
+                  <Image
+                    src="/images/calender1.png"
+                    alt="Calendar booking icon"
+                    width={68.97}
+                    height={68.97}
+                     priority
+                  />
+                </div>
 
-          <div className="relative mt-6 bg-white rounded-lg  shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Appointment booked</h3>
-            <p className={stepDesc}>Syncs with your calendar instantly</p>
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                <div
+                  className="relative mt-6 bg-white rounded-lg  shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>Appointment booked</h3>
+                  <p className={stepDesc}>Syncs with your calendar instantly</p>
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 2"
-            >
-              2
-            </span>
-          </div>
-        </article>
-      </ScrollSlide>
+                    aria-label="Step 2"
+                  >
+                    2
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
 
-      {/* Step 3 */}
-      <ScrollSlide direction="right" delay={0.4}>
-        <article className="flex flex-col items-center h-full">
-          <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
-            <Image
-              src="/images/doc.png"
-              alt="Notes and transcript document icon"
-              width={68.97}
-              height={68.97}
-            />
-          </div>
+            {/* Step 3 */}
+            <ScrollSlide direction="right" delay={0.4}>
+              <article className="flex flex-col items-center h-full">
+                <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
+                  <Image
+                    src="/images/doc.png"
+                    alt="Notes and transcript document icon"
+                    width={68.97}
+                    height={68.97}
+                     priority
+                  />
+                </div>
 
-          <div className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
-                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
-            <h3 className={stepTitle}>Call Summary, Transcript &<br/> Recordings</h3>
-            <p className={stepDesc}>Saved in your CRM automatically</p>
-            <span
-              className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
+                <div
+                  className="relative mt-6 bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between h-full 
+                          border-t-4 border-[#00A7DE] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  <h3 className={stepTitle}>
+                    Call Summary, Transcript &<br /> Recordings
+                  </h3>
+                  <p className={stepDesc}>Saved in your CRM automatically</p>
+                  <span
+                    className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 
                          w-8 h-8 flex items-center justify-center text-sm font-semibold 
                          text-[#00A7DE] border border-[#00A7DE] bg-white rounded-full shadow-sm"
-              aria-label="Step 3"
-            >
-              3
-            </span>
+                    aria-label="Step 3"
+                  >
+                    3
+                  </span>
+                </div>
+              </article>
+            </ScrollSlide>
           </div>
-        </article>
-      </ScrollSlide>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Transparent Pricing */}
       <ScaleUp>
@@ -1355,60 +1372,60 @@ export default function Home() {
             </div>
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-  {plans.map((plan, index) => (
-    <ScaleUp key={index} delay={index * 0.1}>
-      <div
-        className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
-          plan.highlighted
-            ? "border-[#00A7DE] scale-105"
-            : "border-[#797A7D]"
-        } hover:border-[#00A7DE]`}
-      >
-        {plan.highlighted && (
-          <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
-            MOST POPULAR
-          </span>
-        )}
-        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-          {plan.name}
-        </h3>
-        <p className="text-gray-500 mb-4">{plan.description}</p>
-        <div className="text-3xl font-bold text-gray-800 mb-6">
-          {plan.price}
-          <span className="text-base font-normal text-gray-500">
-            {plan.cycle}
-          </span>
-        </div>
-        <ul className="space-y-3 flex-1">
-          {plan.features.map((feature, i) => (
-            <li
-              key={i}
-              className="flex items-start space-x-2 text-gray-600"
-            >
-              <Image
-                src="/images/check.png"
-                alt="check"
-                width={23}
-                height={23}
-              />
-              <span>{feature}</span>
-            </li>
-          ))}
-        </ul>
-        <button
-          className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
-            plan.highlighted
-              ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-              : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
-          }`}
-        >
-          {plan.button}
-        </button>
-      </div>
-    </ScaleUp>
-  ))}
-</div>
-
+              {plans.map((plan, index) => (
+                <ScaleUp key={index} delay={index * 0.1}>
+                  <div
+                    className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
+                      plan.highlighted
+                        ? "border-[#00A7DE] scale-105"
+                        : "border-[#797A7D]"
+                    } hover:border-[#00A7DE]`}
+                  >
+                    {plan.highlighted && (
+                      <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
+                        MOST POPULAR
+                      </span>
+                    )}
+                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-gray-500 mb-4">{plan.description}</p>
+                    <div className="text-3xl font-bold text-gray-800 mb-6">
+                      {plan.price}
+                      <span className="text-base font-normal text-gray-500">
+                        {plan.cycle}
+                      </span>
+                    </div>
+                    <ul className="space-y-3 flex-1">
+                      {plan.features.map((feature, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start space-x-2 text-gray-600"
+                        >
+                          <Image
+                            src="/images/check.png"
+                            alt="check"
+                            width={23}
+                            height={23}
+                             priority
+                          />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <button
+                      className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
+                        plan.highlighted
+                          ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                          : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
+                      }`}
+                    >
+                      {plan.button}
+                    </button>
+                  </div>
+                </ScaleUp>
+              ))}
+            </div>
           </div>
         </section>
       </ScaleUp>
@@ -1479,6 +1496,7 @@ export default function Home() {
                     alt="Calendar icon for demo booking"
                     width={20}
                     height={20}
+                     priority
                   />
                   Book a Demo
                 </span>
@@ -1506,6 +1524,7 @@ export default function Home() {
               alt="Virtual Assistant Logo"
               width={180}
               height={60}
+               priority
               className="mb-4"
             />
             <p className="text-sm mb-4 text-gray-500">
@@ -1519,6 +1538,7 @@ export default function Home() {
                   alt="Twitter"
                   width={20}
                   height={20}
+                   priority
                 />
               </Link>
               <Link href="#">
@@ -1527,6 +1547,7 @@ export default function Home() {
                   alt="LinkedIn"
                   width={20}
                   height={20}
+                   priority
                 />
               </Link>
               <Link href="#">
@@ -1535,6 +1556,7 @@ export default function Home() {
                   alt="Facebook"
                   width={20}
                   height={20}
+                   priority
                 />
               </Link>
               <Link href="#">
@@ -1543,6 +1565,7 @@ export default function Home() {
                   alt="Instagram"
                   width={20}
                   height={20}
+                   priority
                 />
               </Link>
             </div>
@@ -1653,8 +1676,6 @@ export default function Home() {
           © 2025 VirtualAssistant. All rights reserved.
         </motion.div>
       </motion.footer>
-       
     </>
-
   );
 }

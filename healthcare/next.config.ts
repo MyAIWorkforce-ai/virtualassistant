@@ -6,5 +6,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 };
+module.exports = {
+  compress: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
+}
 
 export default nextConfig;
