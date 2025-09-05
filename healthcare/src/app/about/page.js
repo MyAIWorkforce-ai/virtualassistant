@@ -197,6 +197,7 @@ export default function HomePage() {
                   alt="Logo"
                   width={150}
                   height={40}
+                  priority
                 />
                 <button onClick={() => setIsOpen(false)}>
                   <X size={28} />
@@ -358,6 +359,7 @@ export default function HomePage() {
                     alt="Arrow icon for Get Started"
                     width={12}
                     height={20}
+                    priority
                   />
                 </Link>
 
@@ -516,7 +518,7 @@ export default function HomePage() {
                 </motion.div>
 
                 {/* Right Side Features */}
-                <div className="space-y-8">
+                <div className="  space-y-8">
                   {[
                     {
                       icon: "/images/div (1).png",
@@ -555,10 +557,10 @@ export default function HomePage() {
                         className="w-10 h-10"
                       />
                       <div>
-                        <h2 className="font-semibold text-gray-800 text-lg">
+                        <h2 className="font-semibold text-gray-800  text-lg">
                           {f.title}
                         </h2>
-                        <p className="text-[#797A7D] text-sm">{f.text}</p>
+                        <p className="text-[#797A7D] mr-19 text-sm">{f.text}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -636,6 +638,7 @@ export default function HomePage() {
                       alt={c.alt}
                       width={64}
                       height={64}
+                      priority
                       className="mx-auto md:mx-0"
                     />
                     <h3 className="mt-4 font-semibold text-gray-800 text-lg">
@@ -718,6 +721,7 @@ export default function HomePage() {
                 alt="Virtual Assistant Logo"
                 width={180}
                 height={60}
+                priority
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
@@ -731,6 +735,7 @@ export default function HomePage() {
                     alt="Twitter"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -739,6 +744,7 @@ export default function HomePage() {
                     alt="LinkedIn"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -747,6 +753,7 @@ export default function HomePage() {
                     alt="Facebook"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
                 <Link href="#">
@@ -755,6 +762,7 @@ export default function HomePage() {
                     alt="Instagram"
                     width={20}
                     height={20}
+                    priority
                   />
                 </Link>
               </div>

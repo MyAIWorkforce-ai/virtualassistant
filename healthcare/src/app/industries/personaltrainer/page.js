@@ -369,12 +369,12 @@ export default function Home() {
             <div className="absolute inset-0 backdrop-blur-sm"></div>
 
             <div
-              className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between 
+              className="relative z-10 flex flex-col  md:flex-row items-center justify-center md:justify-between 
       px-6 md:px-12 py-16 border-b border-white"
             >
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-xl flex flex-col pl-4 items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -410,27 +410,32 @@ export default function Home() {
         transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
                 >
                   Get Started
-                  <img
+                  <Image
                     src="/images/svg.png"
                     alt="Start Icon"
-                    className="h-3 w-3"
+                    width={12} // Tailwind w-3 = 12px
+                    height={12} // Tailwind h-3 = 12px
+                    priority
                   />
                 </motion.button>
               </motion.div>
 
               {/* Session Confirmed Notification - Responsive */}
               <motion.div
-                className="bg-white text-gray-800 px-6 py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 
-      transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
-      mt-6 w-full max-w-sm md:mt-0 md:w-auto 
-      md:absolute md:bottom-24 md:left-1/2 md:-translate-x-1/2
-      sm:mx-auto sm:left-1/2 sm:-translate-x-1/2"
+                className="bg-white text-gray-800 px-2 pb-5 mr-9 w-auto max-w-sm py-4 rounded-xl shadow-lg flex items-center gap-4 z-20
+    transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
+    mt-6 md:mt-0 md:w-auto
+    absolute bottom-24 left-1/2 -translate-x-1/2 sm:left-1/2 sm:-translate-x-1/50"
               >
-                <img
+                <Image
                   src="/images/green wave.png"
                   alt="Logo"
-                  className="w-8 h-8 object-contain"
+                  width={32}
+                  height={32}
+                  className="object-contain"
+                  priority
                 />
+
                 <div className="text-sm leading-tight">
                   <div className="font-semibold text-[#000000]">
                     Client Progress
@@ -449,10 +454,13 @@ export default function Home() {
                 animate="show"
                 viewport={{ once: false }}
               >
-                <img
+                <Image
                   src="/images/trainer.png"
                   alt="Trainer"
-                  className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
+                  width={650}
+                  height={650}
+                  priority
+                  className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
                   style={{ objectPosition: "right center" }}
                 />
               </motion.div>
@@ -482,10 +490,13 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/clock.png"
                   alt="Missed Appointments"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  priority
+                  className="mb-2"
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
@@ -498,10 +509,13 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/Frame.png"
                   alt="Scheduling Automation"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority // Preloads this image for faster page load
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
@@ -514,11 +528,15 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/wave.png"
                   alt="Patient Recovery"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority
                 />
+
                 <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
                   Higher patient adherence to <br /> recovery exercises and care
@@ -575,6 +593,7 @@ export default function Home() {
                   alt="Automated Scheduling"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -598,6 +617,7 @@ export default function Home() {
                   alt="Secure Patient Records"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Organized Records</h3>
@@ -618,6 +638,7 @@ export default function Home() {
                   alt="Personalized Care"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -641,6 +662,7 @@ export default function Home() {
                   alt="Better Adherence"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
@@ -662,6 +684,7 @@ export default function Home() {
                   alt="Consistent Follow-Ups"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -716,6 +739,7 @@ export default function Home() {
                   alt="AI Fitness Goal Setting"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -738,6 +762,7 @@ export default function Home() {
                   alt="AI Workout Management"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -759,6 +784,7 @@ export default function Home() {
                   alt="AI Nutrition Guidance"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -783,6 +809,7 @@ export default function Home() {
                   alt="Patient Progress Tracking"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -805,6 +832,7 @@ export default function Home() {
                   alt="AI Assistant for Patients"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -849,12 +877,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/time.png"
-                alt="Time Savings with AI scheduling"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/time.png"
+                  alt="Time Savings with AI scheduling"
+                  width={56} //
+                  height={56} //
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Time Savings</h3>
               <p className="text-sm">
                 Save hours weekly by automated <br /> scheduling and admin
@@ -867,12 +901,19 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/members.png"
-                alt="Increased client attendance"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/members.png"
+                  alt="Increased client attendance"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
+
               <h3 className="text-base font-semibold">Increased Attendance</h3>
               <p className="text-sm">
                 Automated reminders boost client <br /> attendance and
@@ -885,12 +926,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/sessions.png"
-                alt="Effective client sessions"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/sessions.png"
+                  alt="Effective client sessions"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Effective Sessions</h3>
               <p className="text-sm">
                 Instant access to client history <br /> makes sessions more
@@ -903,12 +950,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/hand.png"
-                alt="Personalized care support"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/hand.png"
+                  alt="Personalized care support"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Care Support</h3>
               <p className="text-sm">
                 AI-generated workout and nutrition <br /> reminders tailored to

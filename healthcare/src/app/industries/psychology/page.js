@@ -373,7 +373,7 @@ export default function Home() {
             >
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-xl pb-3 pl-4 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -409,28 +409,33 @@ export default function Home() {
                   transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
                 >
                   Get Started
-                  <img
+                  <Image
                     src="/images/svg.png"
                     alt="Start Icon"
-                    className="h-3 w-3"
+                    width={12}
+                    height={12}
+                    priority
                   />
                 </motion.button>
               </motion.div>
 
               {/* Session Confirmed Notification - Responsive */}
               <motion.div
-                className="bg-white text-gray-800 px-2 pb-5 mr-9 w-auto max-w-sm py-4 rounded-xl shadow-lg flex items-center gap-4 z-20 
-      transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
-      mt-6  md:mt-0 md:w-auto 
-      md:absolute md:bottom-24 -pl-21 md:left-1/2 md:-translate-x-1/2
-      sm:mx-auto sm:left-1/2 sm:-translate-x-1/2"
+                className="bg-white text-gray-800 px-2 pb-5 mr-9 w-auto max-w-sm py-4 rounded-xl shadow-lg flex items-center gap-4 z-20
+    transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer
+    mt-6 md:mt-0 md:w-auto
+    absolute bottom-24 left-1/2 -translate-x-1/2 sm:left-1/2 sm:-translate-x-1/50"
               >
-                <img
+                <Image
                   src="/images/broken.png"
                   alt="Logo"
-                  className="w-8 h-8 object-contain"
+                  width={32}
+                  height={32}
+                  className="object-contain"
+                  priority
                 />
-                <div className="text-sm  leading-tight">
+
+                <div className="text-sm leading-tight">
                   <div className="font-semibold text-[#000000]">
                     Mental Wellness
                   </div>
@@ -446,10 +451,13 @@ export default function Home() {
                 animate="show"
                 viewport={{ once: false }}
               >
-                <img
+                <Image
                   src="/images/psychology.png"
-                  alt="Trainer"
-                  className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
+                  alt="Psychology"
+                  width={650}
+                  height={650}
+                  priority
+                  className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
                   style={{ objectPosition: "right center" }}
                 />
               </motion.div>
@@ -479,11 +487,15 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/clock.png"
                   alt="Missed Appointments"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority
                 />
+
                 <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
                   Fewer missed appointments with <br /> automated reminders.
@@ -495,10 +507,13 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/Frame.png"
                   alt="Scheduling Automation"
-                  className="h-7 w-7 mb-2"
+                  width={28} // Tailwind w-7 = 28px
+                  height={28} // Tailwind h-7 = 28px
+                  className="mb-2"
+                  priority // Preloads this image for faster page load
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
@@ -511,11 +526,15 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/wave.png"
                   alt="Patient Recovery"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority
                 />
+
                 <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
                   More patient continuing regular therapy sessions.
@@ -572,6 +591,7 @@ export default function Home() {
                   alt="Automated Scheduling"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -596,6 +616,7 @@ export default function Home() {
                   alt="Secure Patient Records"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Confidential Notes</h3>
@@ -607,7 +628,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <motion.div
-              className="bg-gradient-to-br from-[#F3E8FF] to-[#E7D1FF] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-br from-[#E6EEFF] to-[#C7D8FE] text-black rounded-xl p-6 shadow-md hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
               variants={fadeInItem}
             >
               <div className="mb-4">
@@ -616,6 +637,7 @@ export default function Home() {
                   alt="Personalized Care"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Therapy Continuity</h3>
@@ -636,6 +658,7 @@ export default function Home() {
                   alt="Better Adherence"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Patient Engagement</h3>
@@ -656,6 +679,7 @@ export default function Home() {
                   alt="Consistent Follow-Ups"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -711,6 +735,7 @@ export default function Home() {
                   alt="AI Fitness Goal Setting"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -733,6 +758,7 @@ export default function Home() {
                   alt="AI Workout Management"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -755,6 +781,7 @@ export default function Home() {
                   alt="AI Nutrition Guidance"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -780,6 +807,7 @@ export default function Home() {
                   alt="Patient Progress Tracking"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -802,6 +830,7 @@ export default function Home() {
                   alt="AI Assistant for Patients"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -846,12 +875,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-3"
             >
-              <motion.img
-                src="/images/time.png"
-                alt="Time Savings"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/time.png"
+                  alt="Time Savings"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Fewer Missed Sessions</h3>
               <p className="text-sm">Through timely reminders</p>
             </motion.div>
@@ -861,12 +896,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-3"
             >
-              <motion.img
-                src="/images/session.png"
-                alt="Reduced Drop-offs"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/session.png"
+                  alt="Reduced Drop-offs"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Effective Sessions</h3>
               <p className="text-sm">
                 With automated bookings and <br />
@@ -879,12 +920,18 @@ Productivity Gains
               variants={fadeInUp}
               className="flex flex-col items-center space-y-3"
             >
-              <motion.img
-                src="/images/engaggement.png"
-                alt="Better Care"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/engaggement.png"
+                  alt="Better Care"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Patient Engagement</h3>
               <p className="text-sm">
                 More patient engagement outside <br />

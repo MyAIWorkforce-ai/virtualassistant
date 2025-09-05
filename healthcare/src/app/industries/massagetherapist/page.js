@@ -377,7 +377,7 @@ export default function Home() {
             >
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-xl"
+                className="text-white pl-4 max-w-xl"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -412,15 +412,18 @@ export default function Home() {
           transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] mx-auto md:mx-0"
                 >
                   Get Started
-                  <img
+                  <Image
                     src="/images/svg.png"
                     alt="Start Icon"
-                    className="h-3 w-3"
+                    width={12}
+                    height={12}
+                    priority
                   />
                 </motion.button>
               </motion.div>
 
               {/* Image on Right */}
+              {/* image */}
               <motion.div
                 className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
                 variants={fadeUp}
@@ -428,10 +431,13 @@ export default function Home() {
                 animate="show"
                 viewport={{ once: false }}
               >
-                <img
+                <Image
                   src="/images/massage-therapist1.png"
-                  alt="Trainer"
-                  className="w-[650px] h-auto object-cover relative md:-mb-39 md:pr-30"
+                  alt="massage"
+                  width={650}
+                  height={650}
+                  priority
+                  className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
                   style={{ objectPosition: "right center" }}
                 />
               </motion.div>
@@ -461,11 +467,15 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/clock.png"
                   alt="Missed Appointments"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority
                 />
+
                 <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
                   Less time on scheduling and note-
@@ -479,10 +489,13 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/Frame.png"
                   alt="Scheduling Automation"
-                  className="h-7 w-7 mb-2"
+                  width={28} // Tailwind w-7 = 28px
+                  height={28} // Tailwind h-7 = 28px
+                  className="mb-2"
+                  priority // Preloads this image for faster page load
                 />
                 <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
@@ -496,11 +509,15 @@ export default function Home() {
                 className="flex flex-col items-center text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
-                <img
+                <Image
                   src="/images/wave.png"
                   alt="Patient Recovery"
-                  className="h-7 w-7 mb-2"
+                  width={28}
+                  height={28}
+                  className="mb-2"
+                  priority
                 />
+
                 <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
                 <p className="text-[#797A7D] text-sm mt-2">
                   Follow-up tracking and
@@ -558,6 +575,7 @@ export default function Home() {
                   alt="Automated Scheduling"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -602,6 +620,7 @@ export default function Home() {
                   alt="Personalized Care"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
@@ -624,6 +643,7 @@ export default function Home() {
                   alt="Better Adherence"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
@@ -646,6 +666,7 @@ export default function Home() {
                   alt="Consistent Follow-Ups"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">More Care </h3>
@@ -698,6 +719,7 @@ export default function Home() {
                   alt="AI Fitness Goal Setting"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -720,6 +742,7 @@ export default function Home() {
                   alt="AI Workout Management"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -743,6 +766,7 @@ export default function Home() {
                   alt="AI Nutrition Guidance"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -767,6 +791,7 @@ export default function Home() {
                   alt="Patient Progress Tracking"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -789,6 +814,7 @@ export default function Home() {
                   alt="AI Assistant for Patients"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">
@@ -833,12 +859,18 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/time.png"
-                alt="Time Savings with AI scheduling"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/time.png"
+                  alt="Time Savings with AI scheduling"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Time Savings</h3>
               <p className="text-sm">
                 Bookings are automatically confirmed
@@ -852,12 +884,18 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/bells.png"
-                alt="Increased client attendance"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/bells.png"
+                  alt="Increased client attendance"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
               <h3 className="text-base font-semibold">Reduced Drop-offs</h3>
               <p className="text-sm">
                 Reduces missed appointments with
@@ -870,12 +908,19 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/care.png"
-                alt="Effective client sessions"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/care.png"
+                  alt="Effective client sessions"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
+
               <h3 className="text-base font-semibold">Record Keeping</h3>
               <p className="text-sm">
                 Session notes (techniques, pressure
@@ -889,12 +934,19 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col items-center space-y-2"
             >
-              <motion.img
-                src="/images/hand.png"
-                alt="Personalized care support"
-                className="w-14 h-14 transition-transform"
+              <motion.div
                 whileHover={{ scale: 1.2 }}
-              />
+                className="transition-transform"
+              >
+                <Image
+                  src="/images/hand.png"
+                  alt="Personalized care support"
+                  width={56} // Tailwind w-14 = 56px
+                  height={56} // Tailwind h-14 = 56px
+                  priority
+                />
+              </motion.div>
+
               <h3 className="text-base font-semibold">Care Support</h3>
               <p className="text-sm">
                 AI-generated workout and nutrition <br /> reminders tailored to

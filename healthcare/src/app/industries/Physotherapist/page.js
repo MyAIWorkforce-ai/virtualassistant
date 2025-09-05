@@ -370,7 +370,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pl-9 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -402,10 +402,11 @@ export default function Home() {
                 >
                   <span className="flex items-center gap-2">
                     Get Started
-                    <img
+                    <Image
                       src="/images/svg.png"
                       alt="Start Icon"
-                      className="h-3 w-3"
+                      width={12} // h-3 w-3 = 0.75rem ≈ 12px
+                      height={12}
                     />
                   </span>
                 </motion.button>
@@ -413,16 +414,18 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center pl-9 md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
                 viewport={{ once: false }}
               >
-                <img
+                <Image
                   src="/images/doctor.png"
                   alt="Doctor"
-                  className="w-[650px] h-auto object-cover relative mr-19 md:-mb-39 md:pr-30"
+                  width={650}
+                  height={650}
+                  className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
                   style={{ objectPosition: "right center" }}
                 />
               </motion.div>
@@ -458,6 +461,7 @@ export default function Home() {
                   width={28}
                   height={28}
                   className="mb-2"
+                  priority
                 />
                 <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
                 <p className="text-[#797A7D] text-sm">
@@ -475,6 +479,7 @@ export default function Home() {
                   alt="Patient satisfaction icon"
                   width={28}
                   height={28}
+                  priority
                   className="mb-2"
                 />
                 <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
@@ -493,6 +498,7 @@ export default function Home() {
                   alt="Patient retention boost icon"
                   width={28}
                   height={28}
+                  priority
                   className="mb-2"
                 />
                 <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
@@ -552,6 +558,7 @@ export default function Home() {
                   alt="Automated Scheduling"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -575,6 +582,7 @@ export default function Home() {
                   alt="Secure Patient Records"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -597,6 +605,7 @@ export default function Home() {
                   alt="Personalized Care"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -619,6 +628,7 @@ export default function Home() {
                   alt="Better Adherence"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -641,6 +651,7 @@ export default function Home() {
                   alt="Smooth Communication"
                   width={48}
                   height={48}
+                  priority
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -699,6 +710,7 @@ export default function Home() {
                   alt="Automated Reminders"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">
@@ -721,6 +733,7 @@ export default function Home() {
                   alt="Exercise Routines"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">
@@ -743,6 +756,7 @@ export default function Home() {
                   alt="Calendar Sync"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">
@@ -768,6 +782,7 @@ export default function Home() {
                   alt="Patient Progress Tracking"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">
@@ -790,6 +805,7 @@ export default function Home() {
                   alt="AI Assistant"
                   width={40}
                   height={40}
+                  priority
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">
@@ -836,6 +852,7 @@ export default function Home() {
               <motion.img
                 src="/images/time.png"
                 alt="Time Savings"
+                priority
                 className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
                 whileHover={{ scale: 1.2 }}
               />
@@ -855,6 +872,7 @@ export default function Home() {
               <motion.img
                 src="/images/member.png"
                 alt="Reduced Drop-offs"
+                priority
                 className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
                 whileHover={{ scale: 1.2 }}
               />
@@ -874,6 +892,7 @@ export default function Home() {
               <motion.img
                 src="/images/heart.png"
                 alt="Better Care"
+                priority
                 className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
                 whileHover={{ scale: 1.2 }}
               />
@@ -893,6 +912,7 @@ export default function Home() {
               <motion.img
                 src="/images/hand.png"
                 alt="More Face Time"
+                priority
                 className="w-12 sm:w-14 h-12 sm:h-14 transition-transform"
                 whileHover={{ scale: 1.2 }}
               />
@@ -926,6 +946,7 @@ Example use cases
             variants={cardMotion}
             initial="hidden"
             whileInView="show"
+            priority
             viewport={{ once: false }}
             className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
           >
@@ -1232,6 +1253,7 @@ Explore other industries
                     alt="Personal Trainer"
                     width={64}
                     height={64}
+                    priority
                   />
                   <h3 className="text-lg text-black font-semibold">
                     Personal Trainer
@@ -1262,6 +1284,7 @@ Explore other industries
                     alt="Psychologist"
                     width={64}
                     height={64}
+                    priority
                   />
                   <h3 className="text-lg text-black font-semibold">
                     Psychologist
@@ -1290,6 +1313,7 @@ Explore other industries
                     alt="Chiropractor"
                     width={64}
                     height={64}
+                    priority
                   />
                   <h3 className="text-lg text-black font-semibold">
                     Chiropractor
