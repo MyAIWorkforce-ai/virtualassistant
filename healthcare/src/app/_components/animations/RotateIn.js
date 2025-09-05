@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function FadeUp({ children, delay = 0 }) {
+export default function FadeUp({ children}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}       // start slightly below and invisible

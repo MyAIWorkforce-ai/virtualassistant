@@ -6,7 +6,7 @@ export const scaleUpVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-export const ScaleUp = ({ children, delay = 0 }) => (
+export const ScaleUp = ({ children}) => (
   <motion.div
     className="bg-white" // ensures no black flash
     initial="hidden"

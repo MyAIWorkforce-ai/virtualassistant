@@ -14,7 +14,6 @@ import { staggerContainer } from "../../_components/animations/footer";
 import { fadeUp } from "../../_components/animations/variantsphyso";
 import { staggerFadeUp } from "../../_components/animations/variantsphyso";
 import { fadeInItem } from "../../_components/animations/variantsphyso";
-import { buttonHover } from "../../_components/animations/variantsphyso";
 import { fadeInUp } from "../../_components/animations/physo5";
 import { stagger } from "../../_components/animations/physo5";
 import { cardMotion } from "../../_components/animations/physo6";
@@ -1024,7 +1023,14 @@ Example use cases
                 className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
               >
                 <div className="flex items-center gap-4 mb-2">
-                  <img src={box.icon} alt={box.title} className="w-10 h-10" />
+                 <Image
+  src={box.icon}
+  alt={box.title}
+  width={40}
+  height={40}
+  priority
+/>
+
                   <h3 className="text-base text-[#000000] font-semibold">
                     {box.title}
                   </h3>
