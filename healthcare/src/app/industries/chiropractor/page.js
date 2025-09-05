@@ -628,9 +628,10 @@ export default function Home() {
                 Personalized Care
               </h3>
               <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
-                Custom treatment plans and exercise logs tailored to each
-                patient's specific spinal therapy needs.
-              </p>
+  Custom treatment plans and exercise logs tailored to each
+  patient&apos;s specific spinal therapy needs.
+</p>
+
             </motion.article>
 
             {/* Card 4 */}
@@ -1041,13 +1042,13 @@ export default function Home() {
                 bg: "bg-[#FAF5FF]/8",
               },
             ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                import Image from "next/image";
+             <motion.div
+  key={i}
+  variants={cardMotion}
+  whileHover={{ scale: 1.04, rotateZ: 1 }}
+  className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+>
+
 
 <div className="flex items-center gap-4 mb-2">
   <Image
