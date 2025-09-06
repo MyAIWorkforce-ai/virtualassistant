@@ -140,6 +140,30 @@ export default function HomePage() {
                           Chiropractor
                         </Link>
                       </li>
+                      <li>
+                      <Link
+                        href="/industries/podiatrist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Podiatrist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/beauty-therapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Beauty Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/hairdresser"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Hair Dresser
+                      </Link>
+                    </li>
                     </ul>
                   </li>
                   <li>
@@ -673,7 +697,8 @@ export default function HomePage() {
             {/* Subheading */}
             <ScrollAnimation variant={fadeInUp} threshold={0.1}>
               <p className="text-white/90 text-lg mb-8">
-                Experience the power of intelligent automation and seamless integration today.
+                Experience the power of intelligent automation and seamless
+                integration today.
               </p>
             </ScrollAnimation>
 

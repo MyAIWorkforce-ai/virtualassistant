@@ -165,6 +165,30 @@ export default function Home() {
                         Chiropractor
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/industries/podiatrist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Podiatrist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/beauty-therapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Beauty Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/hairdresser"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Hair Dresser
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -1023,13 +1047,13 @@ Example use cases
                 className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
               >
                 <div className="flex items-center gap-4 mb-2">
-                 <Image
-  src={box.icon}
-  alt={box.title}
-  width={40}
-  height={40}
-  priority
-/>
+                  <Image
+                    src={box.icon}
+                    alt={box.title}
+                    width={40}
+                    height={40}
+                    priority
+                  />
 
                   <h3 className="text-base text-[#000000] font-semibold">
                     {box.title}

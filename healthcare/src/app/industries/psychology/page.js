@@ -164,6 +164,30 @@ export default function Home() {
                         Chiropractor
                       </Link>
                     </li>
+                    <li>
+                                          <Link
+                                            href="/industries/podiatrist"
+                                            className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                                          >
+                                            Podiatrist
+                                          </Link>
+                                        </li>
+                                        <li>
+                                          <Link
+                                            href="/industries/beauty-therapist"
+                                            className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                                          >
+                                            Beauty Therapist
+                                          </Link>
+                                        </li>
+                                        <li>
+                                          <Link
+                                            href="/industries/hairdresser"
+                                            className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                                          >
+                                            Hair Dresser
+                                          </Link>
+                                        </li>
                   </ul>
                 </li>
                 <li>

@@ -171,6 +171,30 @@ export default function Home() {
                         Chiropractor
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/industries/podiatrist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Podiatrist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/beauty-therapist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Beauty Therapist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/industries/hairdresser"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Hair Dresser
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -628,13 +652,13 @@ export default function Home() {
                   priority
                 />
               </div>
-             <h3 className="text-xl font-semibold mb-2">
-  Stronger Client Retention
-</h3>
-<p className="text-sm text-[#797A7D] leading-relaxed">
-  Regular follow-ups encourage ongoing
-  <br /> wellness sessions.
-</p>
+              <h3 className="text-xl font-semibold mb-2">
+                Stronger Client Retention
+              </h3>
+              <p className="text-sm text-[#797A7D] leading-relaxed">
+                Regular follow-ups encourage ongoing
+                <br /> wellness sessions.
+              </p>
             </motion.div>
 
             {/* Card 4 */}
@@ -1015,14 +1039,14 @@ export default function Home() {
               },
               {
                 icon: "/images/two.png",
-title: "Smart Reminders",
-text: (
-  <>
-    Sends reminders with prep instructions like &quot;wear flexible clothing&quot;.
-  </>
-),
-bg: "bg-[#10B981]/8",
-
+                title: "Smart Reminders",
+                text: (
+                  <>
+                    Sends reminders with prep instructions like &quot;wear
+                    flexible clothing&quot;.
+                  </>
+                ),
+                bg: "bg-[#10B981]/8",
               },
               {
                 icon: "/images/three.png",
@@ -1047,20 +1071,20 @@ bg: "bg-[#10B981]/8",
               <motion.div
                 key={i}
                 variants={cardMotion}
-                 whileHover={{ scale: 1.04, rotateZ: 1 }}
-  className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
->
-  <div className="flex items-center gap-4 mb-2">
-    <Image
-      src={box.icon}
-      alt={box.title}
-      width={40}   // w-10 = 40px
-      height={40}  // h-10 = 40px
-      className="w-10 h-10"
-    />
-    <h3 className="text-base text-[#000000] font-semibold">
-      {box.title}
-    </h3>
+                whileHover={{ scale: 1.04, rotateZ: 1 }}
+                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
+              >
+                <div className="flex items-center gap-4 mb-2">
+                  <Image
+                    src={box.icon}
+                    alt={box.title}
+                    width={40} // w-10 = 40px
+                    height={40} // h-10 = 40px
+                    className="w-10 h-10"
+                  />
+                  <h3 className="text-base text-[#000000] font-semibold">
+                    {box.title}
+                  </h3>
                 </div>
                 <p className="text-sm text-[#797A7D] leading-relaxed">
                   {box.text}
@@ -1118,17 +1142,20 @@ bg: "bg-[#10B981]/8",
                   >
                     Full Name
                   </label>
-                   <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-700">
-    Full Name
-  </label>
-  <input
-    id="fullName"
-    type="text"
-    placeholder="Enter your name"
-    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
-    required
-  />
-</motion.div>
+                  <label
+                    htmlFor="fullName"
+                    className="block mb-2 text-sm font-medium text-gray-700"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
+                    required
+                  />
+                </motion.div>
 
                 {/* Email */}
                 <motion.div variants={staggerChild}>
@@ -1256,16 +1283,16 @@ bg: "bg-[#10B981]/8",
 
               {/* Submit */}
               <motion.div
-  variants={staggerChild}
-  className="mt-6 text-center relative z-10"
->
-  <motion.button
-    whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
-    whileTap={{ scale: 0.95 }}
-    type="submit"
-    className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
-  >
-    Submit
+                variants={staggerChild}
+                className="mt-6 text-center relative z-10"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05, backgroundColor: "#098DC9" }}
+                  whileTap={{ scale: 0.95 }}
+                  type="submit"
+                  className="bg-[#00A7DE] text-white font-medium px-6 py-2 rounded-md transition"
+                >
+                  Submit
                 </motion.button>
               </motion.div>
             </motion.form>
@@ -1274,125 +1301,125 @@ bg: "bg-[#10B981]/8",
         {/* ======================
          Explore other industries
         ========================== */}
-       <section className="w-full bg-gray-50 py-16">
-         <motion.div
-           className="max-w-6xl mx-auto px-6 text-center"
-           initial="hidden"
-           whileInView="show"
-           viewport={{ once: false, amount: 0.2 }}
-           variants={containerVariants}
-         >
-           {/* Heading */}
-           <motion.h2
-             className="text-3xl md:text-4xl font-bold text-[#00A7DE] mb-2"
-             initial={{ opacity: 0, y: -30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8 }}
-           >
-             Explore Other Industries
-           </motion.h2>
-           <motion.p
-             className="text-gray-600 mb-12"
-             initial={{ opacity: 0, y: 20 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8 }}
-           >
-             Discover how our AI solutions are transforming various industries.
-           </motion.p>
-       
-           {/* Cards */}
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-             {/* Personal Trainer */}
-             <motion.div
-               variants={leftVariant}
-               className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
-             >
-               <div className="flex items-center gap-3 mb-4">
-                 <Image
-                   src="/images/personal.png"
-                   alt="Personal Trainer"
-                   width={64}
-                   height={64}
-                   priority
-                 />
-                 <h3 className="text-lg text-black font-semibold">
-                   Personal Trainer
-                 </h3>
-               </div>
-               <p className="text-[#797A7D] mb-4">
-                 Power Up Your Training Business Automates client scheduling,
-                 payment reminders, and progress updates.
-               </p>
-               <a
-                 href="/industries/personaltrainer"
-                 className="text-[#00A7DE] font-medium hover:underline"
-               >
-                 Learn More
-               </a>
-             </motion.div>
-       
-             {/* Psychologist */}
-             <motion.div
-               initial={{ opacity: 0, y: 40 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.9 }}
-               className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
-             >
-               <div className="flex items-center gap-3 mb-4">
-                 <Image
-                   src="/images/psychologist.png"
-                   alt="Psychologist"
-                   width={64}
-                   height={64}
-                   priority
-                 />
-                 <h3 className="text-lg text-black font-semibold">
-                   Psychologist
-                 </h3>
-               </div>
-               <p className="text-[#797A7D] mb-4">
-                 Automates client bookings, tracks therapy sessions, and keeps
-                 your calendar organized.
-               </p>
-               <a
-                 href="/industries/psychology"
-                 className="text-[#00A7DE] font-medium hover:underline"
-               >
-                 Learn More
-               </a>
-             </motion.div>
-       
-             {/* Chiropractor */}
-             <motion.div
-               variants={rightVariant}
-               className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
-             >
-               <div className="flex items-center gap-3 mb-4">
-                 <Image
-                   src="/images/chiropractor.png"
-                   alt="Chiropractor"
-                   width={64}
-                   height={64}
-                   priority
-                 />
-                 <h3 className="text-lg text-black font-semibold">
-                   Chiropractor
-                 </h3>
-               </div>
-               <p className="text-[#797A7D] mb-4">
-                 Precision Scheduling for Chiropractors. Organizes client
-                 visits, recalls, and automates reminders.
-               </p>
-               <a
-                 href="/industries/chiropractor"
-                 className="text-[#00A7DE] font-medium hover:underline"
-               >
-                 Learn More
-               </a>
-             </motion.div>
-           </div>
-         </motion.div>
-       </section>
+        <section className="w-full bg-gray-50 py-16">
+          <motion.div
+            className="max-w-6xl mx-auto px-6 text-center"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={containerVariants}
+          >
+            {/* Heading */}
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold text-[#00A7DE] mb-2"
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Explore Other Industries
+            </motion.h2>
+            <motion.p
+              className="text-gray-600 mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Discover how our AI solutions are transforming various industries.
+            </motion.p>
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Personal Trainer */}
+              <motion.div
+                variants={leftVariant}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/personal.png"
+                    alt="Personal Trainer"
+                    width={64}
+                    height={64}
+                    priority
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Personal Trainer
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Power Up Your Training Business Automates client scheduling,
+                  payment reminders, and progress updates.
+                </p>
+                <a
+                  href="/industries/personaltrainer"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+
+              {/* Psychologist */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/psychologist.png"
+                    alt="Psychologist"
+                    width={64}
+                    height={64}
+                    priority
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Psychologist
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Automates client bookings, tracks therapy sessions, and keeps
+                  your calendar organized.
+                </p>
+                <a
+                  href="/industries/psychology"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+
+              {/* Chiropractor */}
+              <motion.div
+                variants={rightVariant}
+                className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/chiropractor.png"
+                    alt="Chiropractor"
+                    width={64}
+                    height={64}
+                    priority
+                  />
+                  <h3 className="text-lg text-black font-semibold">
+                    Chiropractor
+                  </h3>
+                </div>
+                <p className="text-[#797A7D] mb-4">
+                  Precision Scheduling for Chiropractors. Organizes client
+                  visits, recalls, and automates reminders.
+                </p>
+                <a
+                  href="/industries/chiropractor"
+                  className="text-[#00A7DE] font-medium hover:underline"
+                >
+                  Learn More
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
         {/* =====================
             FOOTER SECTION
             =================== */}
