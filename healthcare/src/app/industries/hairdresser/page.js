@@ -190,6 +190,14 @@ export default function Home() {
                         Hair Dresser
                       </Link>
                     </li>
+                     <li>
+                      <Link
+                        href="/industries/dentist"
+                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                      >
+                        Dentist
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -402,7 +410,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl pl-5 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -466,7 +474,7 @@ export default function Home() {
           </section>
 
           {/* Grid Section */}
-          <section className="relative w-full h-32 -mt-16 md:h-40 bg-white">
+          <section className="relative w-full h-32 -mt-16  md:h-40 bg-white">
             <div className="absolute inset-0 grid grid-cols-12 gap-3 opacity-10">
               {Array.from({ length: 12 }).map((_, i) => (
                 <div key={i} className="border-l border-white/20 h-full"></div>
