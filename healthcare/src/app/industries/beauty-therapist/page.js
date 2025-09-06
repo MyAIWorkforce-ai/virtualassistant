@@ -988,7 +988,7 @@ A patient books facial and manicure treatment through your virtual assistant.   
               {
                 icon: "/images/one.png",
                 title: "Instant Confirmation",
-                text:<> Appointment confirmed instantly with preparation<br/> advice like ("avoid heavy makeup before facial").</>,
+               text: <> Appointment confirmed instantly with preparation<br/> advice like (&quot;avoid heavy makeup before facial&quot;).</>,
                 bg: "bg-[#3B82F6]/8",
               },
               {

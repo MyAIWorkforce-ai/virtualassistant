@@ -1021,11 +1021,12 @@ Example use cases
                 icon: "/images/one.png",
                 title: "Instant Confirmation",
                 text: (
-                  <>
-                    {" "}
-                    Appointment is confirmed instantly with preparation
-                    <br /> advice ( "arrive with clean, product-free hair").
-                  </>
+                <>
+  {" "}
+  Appointment is confirmed instantly with preparation
+  <br /> advice (&quot;arrive with clean, product-free hair&quot;).
+</>
+
                 ),
                 bg: "bg-[#3B82F6]/8",
               },
