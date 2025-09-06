@@ -141,29 +141,37 @@ export default function HomePage() {
                         </Link>
                       </li>
                       <li>
-                      <Link
-                        href="/industries/podiatrist"
-                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
-                      >
-                        Podiatrist
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/industries/beauty-therapist"
-                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
-                      >
-                        Beauty Therapist
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/industries/hairdresser"
-                        className="block px-4 py-2 text-black hover:text-[#00A7DE]"
-                      >
-                        Hair Dresser
-                      </Link>
-                    </li>
+                        <Link
+                          href="/industries/podiatrist"
+                          className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                        >
+                          Podiatrist
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/industries/beauty-therapist"
+                          className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                        >
+                          Beauty Therapist
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/industries/hairdresser"
+                          className="block px-4 py-2 text-black hover:text-[#00A7DE]"
+                        >
+                          Hair Dresser
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/industries/dentist"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Dentist
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                   <li>

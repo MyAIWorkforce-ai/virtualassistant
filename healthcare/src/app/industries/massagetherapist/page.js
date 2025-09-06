@@ -195,6 +195,14 @@ export default function Home() {
                         Hair Dresser
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/industries/dentist"
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >
+                        Dentist
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -405,7 +413,7 @@ export default function Home() {
             >
               {/* Text on Left */}
               <motion.div
-                className="text-white pl-4 max-w-xl"
+                className="text-white pl-2 max-w-xl"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"

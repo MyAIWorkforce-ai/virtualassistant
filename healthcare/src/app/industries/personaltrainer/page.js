@@ -191,6 +191,14 @@ export default function Home() {
                         Hair Dresser
                       </Link>
                     </li>
+                    <li>
+                    <Link
+                      href="/industries/dentist"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Dentist
+                    </Link>
+                  </li>
                   </ul>
                 </li>
                 <li>
@@ -395,7 +403,7 @@ export default function Home() {
             <div className="absolute inset-0 backdrop-blur-sm"></div>
 
             <div
-              className="relative z-10 flex flex-col   md:flex-row items-center justify-center md:justify-between 
+              className="relative z-10 flex flex-col  pl-2  md:flex-row items-center justify-center md:justify-between 
       px-6 md:px-12 py-16 border-b border-white"
             >
               {/* Text on Left */}
