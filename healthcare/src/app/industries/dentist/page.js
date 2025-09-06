@@ -410,7 +410,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl pl-3 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
