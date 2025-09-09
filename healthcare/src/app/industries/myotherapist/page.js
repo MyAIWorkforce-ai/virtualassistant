@@ -205,7 +205,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -350,7 +350,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -420,11 +420,11 @@ export default function Home() {
                 Muscle Therapy
               </motion.div>
 
-              <motion.h1 className="text-4xl font-bold mb-4" variants={fadeUp}>
+              <motion.h1 className="text-5xl font-bold mb-4" variants={fadeUp}>
                 AI for Myotherapist
               </motion.h1>
 
-              <motion.p className="text-lg mb-6" variants={fadeUp}>
+              <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6" variants={fadeUp}>
                 Your Virtual Assistant for Stress-Free Therapy Management.
               </motion.p>
 
@@ -529,8 +529,8 @@ w-[265px] h-[76px]"
                 priority
               />
 
-              <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">30%</h2>
+              <p className="text-[#797A7D] text-base font-regular mt-2">
                 Reduction in admin time for therapy
                 <br /> professionals.
               </p>
@@ -538,7 +538,7 @@ w-[265px] h-[76px]"
 
             {/* Stat 2 */}
             <motion.div
-              className="flex flex-col items-center text-center p-4 md:p-6"
+              className="flex flex-col items-center mt-2 text-center p-4 md:p-6"
               variants={fadeInItem}
             >
               <Image
@@ -550,8 +550,8 @@ w-[265px] h-[76px]"
                 priority
               />
 
-              <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">98%</h2>
+              <p className="text-[#797A7D] text-base font-regular mt-2">
                 increase in client retention with timely
                 <br /> reminders and follow-ups.
               </p>
@@ -570,8 +570,8 @@ w-[265px] h-[76px]"
                 className="mb-2"
                 priority // Preloads the image for faster above-the-fold rendering
               />
-              <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">25%</h2>
+              <p className="text-[#797A7D] text-base font-regular mt-2">
                 improvement in appointment <br />
                 consistency.
               </p>
@@ -593,7 +593,7 @@ w-[265px] h-[76px]"
           {/* Heading */}
           <motion.h2
             id="key-benefits-heading"
-            className="text-4xl font-bold mb-8 text-black text-center"
+            className="text-5xl font-bold mb-8 text-black text-center"
             variants={fadeUp}
           >
             Key Benefits
@@ -601,11 +601,11 @@ w-[265px] h-[76px]"
 
           {/* Subheading */}
           <motion.p
-            className="text-sm sm:text-base font-regular -mt-6 mb-8 text-[#797A7D] text-center"
+            className="text-xl font-light -mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
             Streamline your practice with intelligent automation that enhances
-            patient care and reduces administrative burden.
+            patient<br/> care and reduces administrative burden.
           </motion.p>
 
           {/* Cards */}
@@ -633,7 +633,7 @@ w-[265px] h-[76px]"
               <h3 className="text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Session scheduling, reminders, and
                 <br /> follow-ups handled automatically,
                 <br /> reducing no-shows and improving
@@ -656,7 +656,7 @@ w-[265px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Organized Records</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Secure storage of muscle therapy <br /> notes and progress
                 records, accessible
                 <br /> anytime for better treatment
@@ -679,7 +679,7 @@ w-[265px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Personalized Care</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 {`Custom treatment plans and exercise
   logs tailored to each patient's specific
   muscle therapy needs.`}
@@ -701,7 +701,7 @@ w-[265px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Improved treatment results through
                 <br /> timely follow-ups and consistent
                 <br /> patient engagement.
@@ -723,7 +723,7 @@ w-[265px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Reduced Stress</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Less administrative burden means
                 <br /> more time dedicated to hands-on
                 <br /> therapy and patient care.
@@ -1445,7 +1445,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1494,9 +1494,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

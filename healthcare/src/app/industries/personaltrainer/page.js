@@ -203,7 +203,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -348,7 +348,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -422,13 +422,13 @@ export default function Home() {
                 </motion.div>
 
                 <motion.h1
-                  className="text-4xl font-bold mb-4"
+                  className="text-5xl font-bold mb-4"
                   variants={fadeUp}
                 >
                   AI for Personal Trainer
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6" variants={fadeUp}>
                   Your virtual assistant streamlines fitness management by
                   automating scheduling, progress tracking, reminders, and
                   training notes.
@@ -484,7 +484,7 @@ w-[220px] h-[76px]"
 
               {/* image */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-11 md:mt-11"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -534,8 +534,8 @@ w-[220px] h-[76px]"
                   priority
                   className="mb-2"
                 />
-                <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
-                <p className="text-[#797A7D] text-sm mt-2">
+                <h2 className="text-[#000000] font-semibold text-4xl">30%</h2>
+                <p className="text-[#797A7D] text-base font-regular mt-2">
                   Less time spent on scheduling and
                   <br /> logging.
                 </p>
@@ -543,7 +543,7 @@ w-[220px] h-[76px]"
 
               {/* Stat 2 */}
               <motion.div
-                className="flex flex-col items-center text-center p-4 md:p-6"
+                className="flex flex-col items-center mt-2 text-center p-4 md:p-6"
                 variants={fadeInItem}
               >
                 <Image
@@ -554,8 +554,8 @@ w-[220px] h-[76px]"
                   className="mb-2"
                   priority // Preloads this image for faster page load
                 />
-                <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
-                <p className="text-[#797A7D] text-sm mt-2">
+                <h2 className="text-[#000000] font-semibold text-4xl">98%</h2>
+                <p className="text-[#797A7D] text-base font-regular mt-2">
                   Higher retention from consistent
                   <br /> follow-ups and progress tracking.
                 </p>
@@ -575,8 +575,8 @@ w-[220px] h-[76px]"
                   priority
                 />
 
-                <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
-                <p className="text-[#797A7D] text-sm mt-2">
+                <h2 className="text-[#000000] font-semibold text-4xl">25%</h2>
+                <p className="text-[#797A7D] text-base font-regular mt-2">
                   increase in patients completing
                   <br /> assigned workouts.
                 </p>
@@ -597,7 +597,7 @@ w-[220px] h-[76px]"
         >
           {/* Heading */}
           <motion.h2
-            className="text-4xl font-bold mb-8 text-black text-center"
+            className="text-5xl font-bold mb-8 text-black text-center"
             variants={fadeUp}
           >
             Key Benefits
@@ -605,7 +605,7 @@ w-[220px] h-[76px]"
 
           {/* Subheading */}
           <motion.p
-            className="text-4sm font-regular -mt-6 mb-8 text-[#797A7D] text-center"
+            className="text-xl font-regular -mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
             Simplify your massage practice with smart automation that improves
@@ -638,9 +638,9 @@ w-[220px] h-[76px]"
               <h3 className="text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Session scheduling, reminders, and follow-ups handled
-                automatically, reducing no-shows and improving patient
+                automatically, reducing no-shows and improving patient<br/>
                 adherence.
               </p>
             </motion.div>
@@ -660,7 +660,7 @@ w-[220px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Organized Records</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Record workout details, focus areas, and client preferences in
                 seconds.
               </p>
@@ -683,7 +683,7 @@ w-[220px] h-[76px]"
               <h3 className="text-xl font-semibold mb-2">
                 Personalized Programs
               </h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Tailors workout and nutrition plans to
                 <br />
                 individual client needs.
@@ -705,7 +705,7 @@ w-[220px] h-[76px]"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">Better Outcomes</h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Track client progress over time with detailed notes and
                 reminders, ensuring each session builds toward long-term health
                 and recovery goals.
@@ -729,9 +729,9 @@ w-[220px] h-[76px]"
               <h3 className="text-xl font-semibold mb-2">
                 Consistent Follow-Ups
               </h3>
-              <p className="text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Ensures clients stay accountable with reminders
-                <br /> and motivational check-ins.
+                and motivational check-ins.
               </p>
             </motion.div>
           </motion.div>
@@ -781,10 +781,10 @@ w-[220px] h-[76px]"
                   priority
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Fitness Goal Setting
                   </h3>
-                  <p className="text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Create and track customized fitness plans for weight loss,
                     strength, or endurance.
                   </p>
@@ -804,10 +804,10 @@ w-[220px] h-[76px]"
                   priority
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Workout Management
                   </h3>
-                  <p className="text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Schedule, log, and adjust exercise routines with ease.
                   </p>
                 </div>
@@ -826,10 +826,10 @@ w-[220px] h-[76px]"
                   priority
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Nutrition Guidance
                   </h3>
-                  <p className="text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Record meal plans and track diet notes alongside workouts.
                   </p>
                 </div>
@@ -851,10 +851,10 @@ w-[220px] h-[76px]"
                   priority
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Keep clients on track with timely reminders and progress
                     reports.
                   </p>
@@ -874,10 +874,10 @@ w-[220px] h-[76px]"
                   priority
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     AI Assistant
                   </h3>
-                  <p className="text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -928,8 +928,8 @@ w-[220px] h-[76px]"
                   priority
                 />
               </motion.div>
-              <h3 className="text-base font-semibold">Time Savings</h3>
-              <p className="text-sm">
+              <h3 className="text-base font-medium">Time Savings</h3>
+              <p className="text-sm font-regular">
                 Save hours weekly by automated <br /> scheduling and admin
                 tasks.
               </p>
@@ -953,8 +953,8 @@ w-[220px] h-[76px]"
                 />
               </motion.div>
 
-              <h3 className="text-base font-semibold">Increased Attendance</h3>
-              <p className="text-sm">
+              <h3 className="text-base font-medium">Increased Attendance</h3>
+              <p className="text-sm font-regular">
                 Automated reminders boost client <br /> attendance and
                 consistency.
               </p>
@@ -977,8 +977,8 @@ w-[220px] h-[76px]"
                   priority
                 />
               </motion.div>
-              <h3 className="text-base font-semibold">Effective Sessions</h3>
-              <p className="text-sm">
+              <h3 className="text-base font-medium">Effective Sessions</h3>
+              <p className="text-sm font-regular">
                 Instant access to client history <br /> makes sessions more
                 targeted.
               </p>
@@ -1001,8 +1001,8 @@ w-[220px] h-[76px]"
                   priority
                 />
               </motion.div>
-              <h3 className="text-base font-semibold">Care Support</h3>
-              <p className="text-sm">
+              <h3 className="text-base font-medium">Care Support</h3>
+              <p className="text-sm font-regular">
                 AI-generated workout and nutrition <br /> reminders tailored to
                 each client’s <br /> fitness goals.
               </p>
@@ -1034,10 +1034,10 @@ w-[220px] h-[76px]"
             viewport={{ once: false }}
             className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
           >
-            <h2 className="text-lg font-semibold mb-2">
+            <h2 className="text-base  font-semibold mb-2">
               Chronic Back Pain Consultation
             </h2>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
+            <p className="text-base font-regular text-[#797A7D] leading-relaxed">
               A patient recovering from chronic muscle tension books a
               consultation through your AI assistant.
             </p>
@@ -1045,63 +1045,60 @@ w-[220px] h-[76px]"
 
           {/* Bottom 4 Boxes */}
           <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-                text: "Confirms their appointments instantly with available time slots.",
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Workout Training",
-                text: "Logs sets, reps, and exercises with automatic progress updates.",
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Progress Insights",
-                text: "Weekly summaries of improvements and achievements.",
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Motivational Reminders",
-                text: "Keeps clients accountable between sessions with encouragement.",
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.article
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <Image
-                    src={box.icon}
-                    alt={`${box.title} - AI Assistant Feature`}
-                    width={40}
-                    height={40}
-                    priority
-                  />
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: "Confirms their appointments instantly with available time slots.",
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Workout Training",
+      text: "Logs sets, reps, and exercises with automatic progress updates.",
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Progress Insights",
+      text: "Weekly summaries of improvements and achievements.",
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Motivational Reminders",
+      text: "Keeps clients accountable between sessions with encouragement.",
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.article
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full sm:w-[436px] sm:h-[140px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-center p-[2%]`}
+    >
+      <div className="flex items-center gap-3 mb-[2%]">
+        <Image
+          src={box.icon}
+          alt={`${box.title} - AI Assistant Feature`}
+          width={32}
+          height={32}
+          className="w-8 h-8"
+          priority
+        />
+        <h3 className="text-base  text-[#000000] font-semibold">{box.title}</h3>
+      </div>
+      <p className="text-base pl-1 font-regular text-[#797A7D] leading-relaxed">{box.text}</p>
+    </motion.article>
+  ))}
+</motion.div>
 
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.article>
-            ))}
-          </motion.div>
         </section>
         {/* =======================
            from
@@ -1449,7 +1446,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1498,9 +1495,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

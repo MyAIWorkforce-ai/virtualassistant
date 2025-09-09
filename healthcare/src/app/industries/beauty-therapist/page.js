@@ -201,7 +201,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -409,7 +409,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pb-3 pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -429,7 +429,7 @@ export default function Home() {
                   AI for Beauty Therapist
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl text-[#E0F2FE] mb-6" variants={fadeUp}>
                  Your virtual assistant streamlines beauty care by managing appointments, recording treatment notes, sending skincare or wellness reminders, and follow-ups.
                 </motion.p>
 
@@ -452,7 +452,7 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center  md:justify-end items-end h-full overflow-hidden mt-9 md:mt-7"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -501,8 +501,8 @@ export default function Home() {
                   className="mb-2"
                   priority
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">30%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Fewer missed appointments with<br/> automated reminders.
                 </p>
               </motion.div>
@@ -520,8 +520,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">98%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Reduced hours spent on scheduling<br/> and note-taking.
                 </p>
               </motion.div>
@@ -539,8 +539,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">25%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Higher client adherence to post-<br/>treatment care and routines.
                 </p>
               </motion.div>
@@ -570,7 +570,7 @@ export default function Home() {
 
           {/* Subheading */}
           <motion.p
-            className="text-xs sm:text-sm md:text-base font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
+            className="text-xl font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
            Enhance your podiatry practice with intelligent automation that reduces<br/> admin work, streamlines patient care, and improves efficiency.
@@ -598,10 +598,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
 Automatically manage appointments,<br/> follow-ups, and reminders without <br/>manual intervention.              </p>
             </motion.article>
 
@@ -619,10 +619,10 @@ Automatically manage appointments,<br/> follow-ups, and reminders without <br/>m
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Improved Client Retention
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
 Smart reminders and personalized <br/>care keep clients coming back for more treatments.              </p>
             </motion.article>
 
@@ -640,10 +640,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Centralized Treatment Records
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Easily access client history,<br/> preferences, and progress in one <br/>organized system.
               </p>
             </motion.article>
@@ -662,10 +662,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Enhanced Care Quality
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base fot-regular text-[#797A7D] leading-relaxed">
                 Tailored post-treatment guidance<br/> ensures better results and client<br/> satisfaction.
               </p>
             </motion.article>
@@ -684,10 +684,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Reduce Stress
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
 Instant confirmations reduce back-<br/> and-forth communication with<br/> clients.              </p>
             </motion.article>
           </motion.div>
@@ -741,11 +741,11 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     Skincare & Beauty Treatments
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
-                  Manage facials, hair treatments, manicures, pedicures,<br/> and wellness services with automated scheduling.
+                  <p className="text-base font-regular text-[#797A7D]">
+                  Manage facials, hair treatments, manicures, pedicures,and wellness services with automated scheduling.
                   </p>
                 </div>
               </motion.article>
@@ -763,11 +763,11 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Regular Maintenance
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
-                    Encourage recurring visits for glowing skin, healthy hair,<br/> and overall beauty wellness through smart reminders.
+                  <p className="text-base font-regular text-[#797A7D]">
+                    Encourage recurring visits for glowing skin, healthy hair, and overall beauty wellness through smart reminders.
                   </p>
                 </div>
               </motion.article>
@@ -785,11 +785,11 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                    Client Wellness Support
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
-                   Provide guidance on at-home care, product usage, and<br/> personalized beauty routines for optimal results.
+                  <p className="text-base font-regular text-[#797A7D]">
+                   Provide guidance on at-home care, product usage, and personalized beauty routines for optimal results.
                   </p>
                 </div>
               </motion.article>
@@ -810,11 +810,11 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
-                   Log client preferences, treatment history, results, and <br/>product reactions for personalized care.
+                  <p className="text-base font-regular text-[#797A7D]">
+                   Log client preferences, treatment history, results, and product reactions for personalized care.
                   </p>
                 </div>
               </motion.article>
@@ -832,10 +832,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     AI Assistant
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -890,10 +890,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                           priority
                         />
                       </motion.div>
-                      <h3 className="text-sm sm:text-base font-medium">
+                      <h3 className="text-base font-medium">
                         Automated Follow-Ups
                       </h3>
-                      <p className="text-xs sm:text-sm">Save time by letting AI schedule<br/> recurring beauty sessions<br/> automatically. </p>
+                      <p className="text-sm font-regular text-[#E0F2FE]">Save time by letting AI schedule<br/> recurring beauty sessions<br/> automatically. </p>
                     </motion.article>
         
                     {/* Card 2 */}
@@ -916,10 +916,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                         />
                       </motion.div>
         
-                      <h3 className="text-sm sm:text-base font-medium">
+                      <h3 className="text-base font-medium">
                      Smart Reminders
                       </h3>
-                      <p className="text-xs sm:text-sm">
+                      <p className="text-sm font-regular text-[#E0F2FE]">
                        Reduce missed visits with timely <br/>alerts and  preparation instructions.
                       </p>
                     </motion.article>
@@ -943,10 +943,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                           priority
                         />
                       </motion.div>
-                      <h3 className="text-sm sm:text-base font-medium">
+                      <h3 className="text-base font-medium">
                          Patient Records
                       </h3>
-                      <p className="text-xs sm:text-sm">
+                      <p className="text-sm font-regular text-[#E0F2FE]">
                        Quickly review treatment history<br/> without manual searches.
                       </p>
                     </motion.article>
@@ -980,69 +980,81 @@ Example use cases
             <h3 className="text-base font-semibold mb-2">
               Facial & Manicure Treatment
             </h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
+            <p className="text-sm font-regular text-[#797A7D] leading-relaxed">
 A patient books facial and manicure treatment through your virtual assistant.            </p>
           </motion.div>
 
-          {/* Bottom 4 Boxes */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-               text: <> Appointment confirmed instantly with preparation<br/> advice like (&quot;avoid heavy makeup before facial&quot;).</>,
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Treatment Notes Logging",
-                text:<>Records skin analysis, products used, and steps performed<br/> after each session</> ,
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Recurring Checkups",
-                text: <>Automatically schedules follow-ups for facials, hair<br/> treatments, or wellness sessions.</>,
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Recovery Reminders",
-                text: <>Sends tailored skincare tips, product reminders,<br/> and post-treatment guidance</>,
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                 <Image
-  src={box.icon}
-  alt={box.title}
-  width={40}
-  height={40}
-  priority
-/>
+      <motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: (
+        <>
+          Appointment confirmed instantly with preparation advice like
+          (&quot;avoid heavy makeup before facial&quot;).
+        </>
+      ),
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Treatment Notes Logging",
+      text: (
+        <>
+          Records skin analysis, products used, and steps performed after each
+          session
+        </>
+      ),
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Recurring Checkups",
+      text: (
+        <>
+          Automatically schedules follow-ups for facials, hair treatments, or
+          wellness sessions.
+        </>
+      ),
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Recovery Reminders",
+      text: (
+        <>
+          Sends tailored skincare tips, product reminders, and post-treatment
+          guidance
+        </>
+      ),
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.div
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full h-auto sm:w-[436px] sm:h-[116px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-between p-4`}
+    >
+      <div className="flex items-center gap-3">
+        <Image src={box.icon} alt={box.title} width={32} height={32} priority />
+        <h3 className="text-base text-[#000000] font-semibold">{box.title}</h3>
+      </div>
+      <p className="text-sm font-regular text-[#797A7D] leading-relaxed">
+        {box.text}
+      </p>
+    </motion.div>
+  ))}
+</motion.div>
 
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
+
         </section>
         {/* =======================
 from
@@ -1197,11 +1209,16 @@ from
                     <option value="" className="text-[#D1D5DB]">
                       Search or select your industry
                     </option>
-                    <option>Healthcare</option>
-                    <option>Pharmaceutical</option>
-                    <option>Technology</option>
-                    <option>Education</option>
-                    <option>Other</option>
+                   <option>Physiotherapist</option>
+    <option>Myotherapist</option>
+    <option>Massagetherapist</option>
+    <option>personaltrainer</option>
+    <option>Podiatrist</option>
+    <option>Psychologist</option>
+    <option>Hairdresser</option>
+    <option>Chiropractor</option>
+    <option>Dentist</option>
+    <option>Beauty-Therapist</option>
                   </select>
                 </motion.div>
               </div>
@@ -1391,7 +1408,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1440,9 +1457,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

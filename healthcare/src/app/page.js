@@ -163,7 +163,7 @@ export default function Home() {
   //   what our client says
   // ==================================
   const sectionHeading1 =
-    "text-4xl md:text-4xl font-bold text-black text-primary relative inline-block";
+    "text-4xl md:text-4xl font-bold text-[#00A7DE] text-primary relative inline-block";
   const subHeading = "text-muted text-[#797A7D] text-base mb-12";
 
   const testimonials = [
@@ -352,12 +352,9 @@ export default function Home() {
                   </ul>
                 </li>
                 <li>
-                  <Link
-                    href="/pricing"
-                    className="text-black hover:text-[#00A7DE]"
-                  >
-                    Pricing
-                  </Link>
+                 <Link href="/#pricing" className="text-black hover:text-[#00A7DE]">
+  Pricing
+</Link>
                 </li>
                 <li>
                   <Link
@@ -500,7 +497,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -1159,7 +1156,7 @@ export default function Home() {
         </section>
 
         {/* BUILT FOR 20+ INDUSTRIES */}
-        <section
+        <motion.section
           className="w-full bg-[#F9FAFB] py-16 relative"
           aria-labelledby="industries-heading"
         >
@@ -1231,7 +1228,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
       {/* HOW IT WORKS SECTION */}
       <section
@@ -1360,10 +1357,10 @@ export default function Home() {
 
       {/* Transparent Pricing */}
       <ScaleUp>
-        <section className="bg-[#F9FAFB] py-20 ">
+        <section id="pricing"   className= "bg-[#F9FAFB] py-20 ">
           <div className="max-w-6xl mx-auto px-6 text-center">
             {/* Heading */}
-            <h2 className="text-5xl md:text-4xl font-bold text-[#00A7DE] relative inline-block">
+            <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
               Simple, Transparent Pricing
               <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-5 mb-5"></span>
             </h2>
@@ -1564,7 +1561,7 @@ export default function Home() {
               className="mb-4"
             />
             <p className="text-sm mb-4 text-gray-500">
-              Transforming industries with intelligent virtual assistants.
+              Transforming industries with<br/> intelligent virtual <br/>assistants.
             </p>
 
             <div className="flex space-x-4">
@@ -1613,9 +1610,10 @@ export default function Home() {
             <ul className="space-y-2 text-gray-600">
               {[
                 { name: "Home", href: "/" },
+                { name: "Features", href: "" },
                 { name: "About", href: "/about" },
                 { name: "Industries", href: "/industries" },
-                { name: "Pricing", href: "/pricing" },
+                { name: "Pricing", href: "/#pricing" },
                 { name: "Contact Us", href: "/contact" },
               ].map((item, i) => (
                 <li key={i}>

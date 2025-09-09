@@ -192,7 +192,7 @@ export default function Home() {
                     <li>
                                         <Link
                                           href="/industries/dentist"
-                                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                                          className="block px-4 py-2 text-black hover:text-[#00A7DE]"
                                         >
                                           Dentist
                                         </Link>
@@ -201,7 +201,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -346,7 +346,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -421,7 +421,7 @@ export default function Home() {
                   AI for Physiotherapists
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl mb-6 text-[#E0F2FE]" variants={fadeUp}>
                   A virtual assistant that books, reminds, and records, while
                   you focus on your patients.
                 </motion.p>
@@ -445,7 +445,7 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-9"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -483,22 +483,22 @@ export default function Home() {
             >
               {/* Stat 1 */}
               <motion.div
-                className="flex flex-col items-center text-center p-4 md:p-6"
-                variants={fadeInItem}
-              >
-                <Image
-                  src="/images/clock.png"
-                  alt="Clock icon showing 30% reduction"
-                  width={28}
-                  height={28}
-                  className="mb-2"
-                  priority
-                />
-                <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-                <p className="text-[#797A7D] text-sm">
-                  Reduction in admin time for therapy <br /> professionals.
-                </p>
-              </motion.div>
+  className="flex flex-col items-center justify-center text-center p-3 md:p-6"
+  variants={fadeInItem}
+>
+  <Image
+    src="/images/clock.png"
+    alt="Clock icon showing 30% reduction"
+    width={30}
+    height={30}
+    className="mb-2 mx-auto"  // ensures it centers
+    priority
+  />
+  <h3 className="text-[#000000] font-bold text-4xl">30%</h3>
+  <p className="text-[#797A7D] pt-3 text-base">
+    Reduction in admin time for therapy <br /> professionals.
+  </p>
+</motion.div>
 
               {/* Stat 2 */}
               <motion.div
@@ -508,13 +508,13 @@ export default function Home() {
                 <Image
                   src="/images/Frame.png"
                   alt="Patient satisfaction icon"
-                  width={28}
-                  height={28}
+                  width={30}
+                  height={30}
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-bold text-4xl">98%</h3>
+                <p className="text-[#797A7D] pt-3 text-base">
                   Patient satisfaction with AI-assisted <br /> therapy
                 </p>
               </motion.div>
@@ -527,13 +527,13 @@ export default function Home() {
                 <Image
                   src="/images/wave.png"
                   alt="Patient retention boost icon"
-                  width={28}
-                  height={28}
+                  width={30}
+                  height={30}
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-bold text-4xl">25%</h3>
+                <p className="text-[#797A7D] pt-3 text-base">
                   Boost in patient retention
                 </p>
               </motion.div>
@@ -592,10 +592,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl  sm:text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base  text-[#797A7D] leading-relaxed">
                 Automated appointment bookings,
                 <br /> reminders, and follow-ups to keep <br /> your schedule
                 organized.
@@ -616,10 +616,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl sm:text-xl font-semibold mb-2">
                 Secure Patient Records
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base  text-[#797A7D] leading-relaxed">
                 Secure storage of patient progress <br /> notes, treatment
                 history, and exercise <br /> routines.
               </p>
@@ -639,10 +639,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl sm:text-xl font-semibold mb-2">
                 Personalized Care
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-medium  text-[#797A7D] leading-relaxed">
                 Personalized scheduling for rehab <br /> plans and recurring
                 therapy sessions.
               </p>
@@ -662,10 +662,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl sm:text-xl font-semibold mb-2">
                 Better Adherence
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base  text-[#797A7D] leading-relaxed">
                 Fewer no-shows and better <br /> treatment adherence tracking
                 for <br /> improved outcomes.
               </p>
@@ -685,10 +685,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl sm:text-xl font-semibold mb-2">
                 Smooth Communication
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base text-[#797A7D] leading-relaxed">
                 Seamless communication with <br /> patients about home exercises
                 and <br /> care instructions.
               </p>
@@ -744,10 +744,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-black">
                     Automated Reminders
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-regular pt-2 text-[#797A7D]">
                     Send automated reminders for upcoming physio sessions and
                     appointments.
                   </p>
@@ -767,10 +767,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Exercise Routines
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-regular pt-2 text-[#797A7D]">
                     Provide patients with personalized exercise routines and
                     reminders.
                   </p>
@@ -790,10 +790,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Calendar Sync
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-regular pt-2 text-[#797A7D]">
                     Sync with calendars to avoid overlapping bookings and
                     conflicts.
                   </p>
@@ -816,10 +816,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-regular pt-2 text-[#797A7D]">
                     Track rehabilitation milestones and log patient progress
                     digitally.
                   </p>
@@ -839,10 +839,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     AI Assistant
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base pt-2 text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -887,16 +887,16 @@ export default function Home() {
                 <Image
                   src="/images/time.png"
                   alt="Time Savings"
-                  width={56} // sm:w-14 = 56px
-                  height={56} // sm:h-14 = 56px
+                  width={56} // 
+                  height={56} // 
                   className="w-12 h-12 sm:w-14 sm:h-14"
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-semibold">
+              <h3 className="text-base font-medium">
                 Time Savings
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular ">
                 Save hours weekly on scheduling and admin tasks.
               </p>
             </motion.article>
@@ -919,10 +919,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-semibold">
+              <h3 className="text-base font-medium">
                 Reduced Drop-offs
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Reduce patient drop-off with smart reminders.
               </p>
             </motion.article>
@@ -945,10 +945,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-semibold">
+              <h3 className="text-base font-medium">
                 Better Care
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Improve consistency in patient care with accurate records.
               </p>
             </motion.article>
@@ -971,10 +971,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-semibold">
+              <h3 className="text-base font-medium">
                 More Face Time
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm  font-regular">
                 Get more face-to-face time with
                 <br /> patients.
               </p>
@@ -1015,64 +1015,56 @@ Example use cases
           </motion.div>
 
           {/* Bottom 4 Boxes */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-                text: "Confirms their appointments instantly with available time slots.",
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Smart Reminders",
-                text: 'Sends reminders with prep instructions like "wear flexible clothing".',
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Progress Logging",
-                text: "Logs treatment updates after each session automatically.",
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Exercise Reminders",
-                text: "Reminds the patient daily about prescribed home exercises.",
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <Image
-                    src={box.icon}
-                    alt={box.title}
-                    width={40}
-                    height={40}
-                    priority
-                  />
+        <motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: "Confirms their appointments instantly with available time slots.",
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Smart Reminders",
+      text: 'Sends reminders with prep instructions like "wear flexible clothing".',
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Progress Logging",
+      text: "Logs treatment updates after each session automatically.",
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Exercise Reminders",
+      text: "Reminds the patient daily about prescribed home exercises.",
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.div
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full sm:w-[436px] h-auto sm:h-[116px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-between p-4`}
+    >
+      <div className="flex items-center gap-3">
+        <Image src={box.icon} alt={box.title} width={32} height={32} priority />
+        <h3 className="text-base text-[#000000] font-semibold">{box.title}</h3>
+      </div>
+      <p className="text-sm font-regular text-[#797A7D] leading-relaxed">
+        {box.text}
+      </p>
+    </motion.div>
+  ))}
+</motion.div>
 
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
         </section>
         {/* =======================
 from
@@ -1227,11 +1219,16 @@ from
                     <option value="" className="text-[#D1D5DB]">
                       Search or select your industry
                     </option>
-                    <option>Healthcare</option>
-                    <option>Pharmaceutical</option>
-                    <option>Technology</option>
-                    <option>Education</option>
-                    <option>Other</option>
+                   <option>Physiotherapist</option>
+    <option>Myotherapist</option>
+    <option>Massagetherapist</option>
+    <option>personaltrainer</option>
+    <option>Podiatrist</option>
+    <option>Psychologist</option>
+    <option>Hairdresser</option>
+    <option>Chiropractor</option>
+    <option>Dentist</option>
+    <option>Beauty-Therapist</option>
                   </select>
                 </motion.div>
               </div>
@@ -1421,7 +1418,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1470,9 +1467,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

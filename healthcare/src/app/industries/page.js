@@ -255,7 +255,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -424,7 +424,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -591,7 +591,7 @@ Healthcare Section
                 >
                   <div className="flex items-center gap-3">
                     <Image
-                      src="/images/mechanic.png"
+                      src="/images/accountant.png"
                       alt="Accountant AI scheduling icon"
                       width={64}
                       height={64}
@@ -602,8 +602,7 @@ Healthcare Section
                     </h2>
                   </div>
                   <p className="text-[#797A7D] text-sm mt-3">
-                    Smarter Scheduling for Consultants. Books client calls,
-                    manages packages, and tracks deliverables.
+                   Simplify and automates bookkeeping, generates financial reports, and streamlines client invoicing.
                   </p>
                   <a
                     href="/services/accountant"
@@ -624,7 +623,7 @@ Healthcare Section
                 >
                   <div className="flex items-center gap-3">
                     <Image
-                      src="/images/plumver.png"
+                      src="/images/lawyer.png"
                       alt="Lawyer AI scheduling icon"
                       width={64}
                       height={64}
@@ -633,8 +632,7 @@ Healthcare Section
                     <h2 className="text-lg text-black font-semibold">Lawyer</h2>
                   </div>
                   <p className="text-gray-600 text-sm mt-3">
-                    Smarter Scheduling for Consultants. Books client calls,
-                    manages packages, and tracks deliverables.
+                   Organizes case files, legal practices, tracks deadlines, and automates client communications.
                   </p>
                   <a
                     href="/services/lawyer"
@@ -655,7 +653,7 @@ Healthcare Section
                 >
                   <div className="flex items-center gap-3">
                     <Image
-                      src="/images/window.png"
+                      src="/images/container.png"
                       alt="Consultant AI scheduling icon"
                       width={64}
                       height={64}
@@ -1017,7 +1015,7 @@ Healthcare Section
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1066,9 +1064,10 @@ Healthcare Section
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

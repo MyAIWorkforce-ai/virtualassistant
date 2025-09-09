@@ -213,7 +213,7 @@ export default function ContactPage() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -356,7 +356,7 @@ export default function ContactPage() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -484,67 +484,57 @@ export default function ContactPage() {
                 )}
               </motion.div>
 
-              {/* Email */}
-              <motion.div variants={fadeInItem} className="md:col-span-2">
-                <label className="block text-black text-sm mb-2">
-                  Email Address*
-                </label>
-                <input
-                  type="email"
-                  required
-                  placeholder="Admin123@gmail.com"
-                  value={formData.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
-                  className={`w-full border rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
-                    errors.email
-                      ? "border-red-500 ring-red-500"
-                      : "border-gray-300 ring-sky-500"
-                  }`}
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">
-                    Please enter a valid email address
-                  </p>
-                )}
-              </motion.div>
+             {/* Email */}
+<motion.div variants={fadeInItem} className="w-full">
+  <label className="block text-black text-sm mb-2">
+    Email Address*
+  </label>
+  <input
+    type="email"
+    required
+    placeholder="Admin123@gmail.com"
+    value={formData.email}
+    onChange={(e) => handleChange("email", e.target.value)}
+    className={`w-full border rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
+      errors.email
+        ? "border-red-500 ring-red-500"
+        : "border-gray-300 ring-sky-500"
+    }`}
+  />
+  {errors.email && (
+    <p className="text-red-500 text-sm mt-1">
+      Please enter a valid email address
+    </p>
+  )}
+</motion.div>
 
-              {/* Assistant Team */}
-              <motion.div variants={fadeInItem}>
-                <label className="block text-black text-sm mb-2">
-                  Assistant Team (Industry)*
-                </label>
-                <select
-                  required
-                  value={formData.assistantTeam}
-                  onChange={(e) =>
-                    handleChange("assistantTeam", e.target.value)
-                  }
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black  focus:outline-none placeholder-gray-300 focus:ring-2 focus:ring-sky-500"
-                >
-                  <option value="">Select an industry</option>
-                  <option>Healthcare</option>
-                  <option>Finance</option>
-                  <option>Education</option>
-                </select>
-              </motion.div>
+{/* Assistant Team */}
+<motion.div variants={fadeInItem} className="w-full">
+  <label className="block text-black text-sm mb-2">
+    Assistant Team (Industry)*
+  </label>
+  <select
+    required
+    value={formData.assistantTeam}
+    onChange={(e) =>
+      handleChange("assistantTeam", e.target.value)
+    }
+    className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none placeholder-gray-300 focus:ring-2 focus:ring-sky-500"
+  >
+    <option value="">Select an industry</option>
+    <option>Physiotherapist</option>
+    <option>Myotherapist</option>
+    <option>Massagetherapist</option>
+    <option>personaltrainer</option>
+    <option>Podiatrist</option>
+    <option>Psychologist</option>
+    <option>Hairdresser</option>
+    <option>Chiropractor</option>
+    <option>Dentist</option>
+    <option>Beauty-Therapist</option>
+  </select>
+</motion.div>
 
-              {/* Package Selection */}
-              <motion.div variants={fadeInItem}>
-                <label className="block text-black text-sm mb-2">
-                  Package Selection*
-                </label>
-                <select
-                  required
-                  value={formData.package}
-                  onChange={(e) => handleChange("package", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 placeholder-gray-300 focus:ring-sky-500"
-                >
-                  <option value="">Select a package</option>
-                  <option>Basic</option>
-                  <option>Pro</option>
-                  <option>Enterprise</option>
-                </select>
-              </motion.div>
 
               {/* Message */}
               <motion.div variants={fadeInItem} className="md:col-span-2">
@@ -633,7 +623,7 @@ export default function ContactPage() {
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with <br/>intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -682,9 +672,10 @@ export default function ContactPage() {
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

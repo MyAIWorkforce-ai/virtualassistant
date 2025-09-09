@@ -200,7 +200,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -345,7 +345,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -419,13 +419,13 @@ export default function Home() {
                 </motion.div>
 
                 <motion.h1
-                  className="text-4xl font-bold mb-4"
+                  className="text-5xl font-bold mb-4"
                   variants={fadeUp}
                 >
                   AI for Psychology
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6" variants={fadeUp}>
                   Your virtual assistant supports mental health care by managing
                   session bookings, reminders, progress notes, and follow-up
                   care.
@@ -480,7 +480,7 @@ w-[220px] h-[76px]"
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-10 md:mt-12"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -531,8 +531,8 @@ w-[220px] h-[76px]"
                   priority
                 />
 
-                <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
-                <p className="text-[#797A7D] text-sm mt-2">
+                <h2 className="text-[#000000] font-semibold text-4xl">30%</h2>
+                <p className="text-[#797A7D] text-base mt-2">
                   Fewer missed appointments with <br /> automated reminders.
                 </p>
               </motion.div>
@@ -1416,7 +1416,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1465,9 +1465,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

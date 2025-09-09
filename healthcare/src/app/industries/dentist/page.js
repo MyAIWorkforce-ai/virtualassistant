@@ -202,7 +202,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -355,7 +355,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -410,7 +410,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pb-5 pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -430,7 +430,7 @@ export default function Home() {
                   AI for Dentist  
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl font-medium text-[#E0F2FE] mb-6" variants={fadeUp}>
                  Your virtual assistant modernizes dental care by managing appointments, recording treatment notes, sending hygiene reminders, and scheduling follow-ups.
                 </motion.p>
 
@@ -453,7 +453,7 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-9 md:mt-9"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -502,8 +502,8 @@ export default function Home() {
                   className="mb-2"
                   priority
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">30%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Fewer missed appointments with
                   <br /> automated reminders.
                 </p>
@@ -522,8 +522,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">98%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Reduced hours spent on scheduling
                   <br /> and note-taking.
                 </p>
@@ -542,8 +542,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">25%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Higher client adherence with
                   <br /> consistent style tracking and tailored
                   <br /> care.{" "}
@@ -575,7 +575,7 @@ export default function Home() {
 
           {/* Subheading */}
           <motion.p
-            className="text-xs sm:text-sm md:text-base font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
+            className="text-xl md:text-base font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
             Enhance your podiatry practice with intelligent automation that
@@ -606,10 +606,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Automatically manage appointments,
                 <br /> follow-ups, and reminders without <br />
                 manual intervention.{" "}
@@ -630,10 +630,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Improved Client Retention
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Dental charts, X-rays, and treatment<br/> notes ensure every visit feels consistent and personalized.
               </p>
             </motion.article>
@@ -652,11 +652,11 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Time-Saving Automation
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
-                AI manages reminders, follow-ups, and patient<br/> records so you can focus on delivering quality dental care.
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
+                AI manages reminders, follow-ups, and patient records so you can focus on delivering quality dental care.
               </p>
             </motion.article>
 
@@ -674,10 +674,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Boosted Client Retention
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                Regular checkups and personalized<br/> oral care tips keep patients coming<br/> back.
               </p>
             </motion.article>
@@ -696,10 +696,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Centralized History
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Easy access to past treatments, X-rays,<br/> and dental charts for seamless care.
               </p>
             </motion.article>
@@ -754,11 +754,11 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     General Dental Care
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
-                    Manage routine checkups, deep cleanings, fillings,<br/> treatments, whitening, and other dental procedures.
+                  <p className="text-base font-regular text-[#797A7D]">
+                    Manage routine checkups, deep cleanings, fillings, treatments, whitening, and other dental procedures.
                   </p>
                 </div>
               </motion.article>
@@ -776,10 +776,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-regular text-gray-900">
                     Specialized Treatments
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Support orthodontics, implants, root canals, and cosmetic dentistry.
                   </p>
                 </div>
@@ -798,10 +798,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-regular text-gray-900">
                     Routine  Maintenance
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Encourage bi-annual visits for preventive care and long-term oral health.
                   </p>
                 </div>
@@ -823,10 +823,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-regular text-gray-900">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                    Log dental charts, X-rays, treatment history, and follow- up notes.
                   </p>
                 </div>
@@ -845,10 +845,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-regular text-gray-900">
                     AI Assistant
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -903,10 +903,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Automated Follow-Ups
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Save time by letting AI schedule
                 <br /> recurring beauty sessions
                 <br /> automatically.{" "}
@@ -933,10 +933,10 @@ export default function Home() {
                 />
               </motion.div>
 
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Smart Reminders
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Reduce missed visits with AI-
                 <br />
                 powered alerts.{" "}
@@ -962,10 +962,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                Records
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                Quickly review client history without<br/> manual searches.
               </p>
             </motion.article>
@@ -998,87 +998,80 @@ Example use cases
             <h3 className="text-base font-semibold mb-2">
              Haircut &  Color Treatment
             </h3>
-            <p className="text-sm text-[#797A7D] leading-relaxed">
+            <p className="text-sm text-regular text-[#797A7D] leading-relaxed">
              A patient books a checkup and cleaning through your virtual assistant
             </p>
           </motion.div>
 
-          {/* Bottom 4 Boxes */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-                text: (
-                <>
-  Save time by letting AI schedule recurring beauty  <br/>sessions automatically. 
-</>
+      {/* Bottom 4 Boxes */}
+<motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: (
+        <>
+          Save time by letting AI schedule recurring beauty
+          <br /> sessions automatically.
+        </>
+      ),
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Treatment Notes",
+      text: (
+        <>
+          Records dental charts, X-rays, and treatment steps
+          after each visit automatically.
+        </>
+      ),
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Recurring Checkups",
+      text: (
+        <>
+          Automatically schedules routine cleanings, cavity checks,
+         and orthodontic adjustments.
+        </>
+      ),
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Care Reminders",
+      text: (
+        <>
+          Sends tailored oral hygiene tips, flossing reminders,
+           and product suggestions.
+        </>
+      ),
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.div
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full sm:w-[436px] sm:h-[140px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-center p-[2%]`}
+    >
+      <div className="flex items-center gap-3 mb-[2%]">
+        <Image src={box.icon} alt={box.title} width={32} height={32} priority />
+        <h3 className="text-base  text-[#000000] font-semibold">{box.title}</h3>
+      </div>
+      <p className="text-sm pl-3 font regular text-[#797A7D] leading-relaxed">{box.text}</p>
+    </motion.div>
+  ))}
+</motion.div>
 
-                ),
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Treatment Notes",
-                text: (
-                  <>
-                    Records dental charts, X-rays, and treatment steps<br/>  after  each visit automatically.
-                  </>
-                ),
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Recurring Checkups",
-                text: (
-                  <>
-                    Automatically schedules routine cleanings, cavity  checks,and orthodontic<br/>  adjustments.
-                  </>
-                ),
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Care Reminders",
-                text: (
-                  <>
-                    Sends tailored oral hygiene tips, flossing reminders,<br/> and product suggestions
-                  </>
-                ),
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <Image
-                    src={box.icon}
-                    alt={box.title}
-                    width={40}
-                    height={40}
-                    priority
-                  />
-
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
         </section>
         {/* =======================
 from
@@ -1427,7 +1420,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1476,9 +1469,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

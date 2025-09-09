@@ -175,12 +175,9 @@ export default function HomePage() {
                     </ul>
                   </li>
                   <li>
-                    <Link
-                      href="/pricing"
-                      className="text-black hover:text-[#00A7DE]"
-                    >
-                      Pricing
-                    </Link>
+                     <Link href="/#pricing" className="text-black hover:text-[#00A7DE]">
+  Pricing
+</Link>
                   </li>
                   <li>
                     <Link href="/about" className="text-[#00A7DE]">
@@ -318,9 +315,7 @@ export default function HomePage() {
                   </ul>
                 </li>
                 <li>
-                  <Link
-                    href="/pricing"
-                    className="text-black hover:text-[#00A7DE]"
+                  <Link href="/#pricing" className="text-black hover:text-[#00A7DE]"
                     onClick={() => setIsOpen(false)}
                   >
                     Pricing
@@ -766,7 +761,7 @@ export default function HomePage() {
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual <br/>assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -815,9 +810,10 @@ export default function HomePage() {
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

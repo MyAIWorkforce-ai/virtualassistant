@@ -197,7 +197,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -342,7 +342,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -417,7 +417,7 @@ export default function Home() {
                 AI for Chiropractor
               </motion.h1>
 
-              <motion.p className="text-lg mb-6" variants={fadeUp}>
+              <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6" variants={fadeUp}>
                 Your virtual assistant supports your chiropractic practice by
                 handling appointments, reminders, treatment notes, and
                 follow-ups.
@@ -445,7 +445,7 @@ export default function Home() {
 
             {/* Image */}
             <motion.div
-              className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+              className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-9 md:mt-7"
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -475,7 +475,7 @@ export default function Home() {
 
         {/* Stats Section */}
         {/* Background Section with visible grid lines */}
-        <section className="relative w-full h-20 md:h-32 bg-white -mt-10 md:-mt-16">
+        <section className="relative w-full h-20 md:h-32 bg-white -mt-10  md:-mt-16">
           <div className="absolute inset-0 grid grid-cols-12 gap-0 opacity-30 pointer-events-none">
             {Array.from({ length: 12 }).map((_, i) => (
               <div key={i} className="border-l border-gray-200 h-full"></div>
@@ -484,7 +484,7 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="relative z-20 -mt-12 md:-mt-20 flex justify-center px-4 md:px-8">
+        <section className="relative z-20 -mt-12 md:-mt-20 flex justify-center  px-4 md:px-8">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-6 border rounded-2xl p-6 shadow-xl bg-white/95 backdrop-blur-md hover:shadow-2xl transition max-w-6xl w-full overflow-hidden"
             initial="hidden"
@@ -506,15 +506,15 @@ export default function Home() {
                 priority
               />
 
-              <h2 className="text-[#000000] font-bold text-2xl">30%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">30%</h2>
+              <p className="text-[#797A7D] text-base font-regular mt-2">
                 Fewer missed appointments with <br /> automated reminders.
               </p>
             </motion.div>
 
             {/* Stat 2 */}
             <motion.div
-              className="flex flex-col items-center text-center p-4 md:p-6"
+              className="flex flex-col items-center text-center p-4 mt-2 md:p-6"
               variants={fadeInItem}
             >
               <Image
@@ -525,8 +525,8 @@ export default function Home() {
                 className="mb-2"
                 priority // Preloads this image for faster page load
               />
-              <h2 className="text-[#000000] font-bold text-2xl">98%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">98%</h2>
+              <p className="text-[#797A7D] text-base font-regular mt-2">
                 Reduced hours spent on scheduling <br /> and note-taking.
               </p>
             </motion.div>
@@ -544,8 +544,8 @@ export default function Home() {
                 className="mb-2"
                 priority
               />
-              <h2 className="text-[#000000] font-bold text-2xl">25%</h2>
-              <p className="text-[#797A7D] text-sm mt-2">
+              <h2 className="text-[#000000] font-semibold text-4xl">25%</h2>
+              <p className="text-[#797A7D] text-base font-regular  mt-2">
                 Higher patient adherence to <br /> recovery exercises and care
                 plans.
               </p>
@@ -576,7 +576,7 @@ export default function Home() {
 
           {/* ✅ Subheading (H2) */}
           <motion.h2
-            className="text-base font-normal -mt-4 mb-8 text-[#797A7D] text-center max-w-2xl mx-auto"
+            className="text-xl font-normal -mt-4 mb-8 text-[#797A7D] text-center max-w-2xl mx-auto"
             variants={fadeUp}
           >
             Enhance your chiropractic practice with intelligent automation that
@@ -606,10 +606,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
+              <h3 className="text-xl  font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Session scheduling, reminders, and
                 <br /> follow-ups handled automatically,
                 <br /> reducing no-shows and improving
@@ -631,10 +631,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Organized Records
               </h3>
-              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Secure storage of spine therapy notes
                 <br /> and progress records, accessible
                 <br /> anytime for better treatment
@@ -656,10 +656,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Personalized Care
               </h3>
-              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Custom treatment plans and exercise logs tailored to each
                 patient&apos;s specific spinal therapy needs.
               </p>
@@ -679,10 +679,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Better Outcomes
               </h3>
-              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Improved treatment results through
                 <br /> timely follow-ups and consistent
                 <br /> patient engagement.
@@ -703,10 +703,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Reduced Stress
               </h3>
-              <p className="text-sm md:text-base text-[#797A7D] leading-relaxed">
+              <p className="text-base text-regular text-[#797A7D] leading-relaxed">
                 Less administrative burden means
                 <br /> more time dedicated to hands-on
                 <br /> therapy and patient care.
@@ -769,10 +769,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-black">
                     Spinal & Posture Care
                   </h3>
-                  <p className="text-sm sm:text-base text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Manage patients with back pain scoliosis, or posture
                     correction.
                   </p>
@@ -793,10 +793,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-black">
                     Injury Recovery
                   </h3>
-                  <p className="text-sm sm:text-base text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Support recovery from sports injuries, joint pain, and
                     misalignments.
                   </p>
@@ -817,10 +817,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-black">
                     Wellness Maintenance
                   </h3>
-                  <p className="text-sm sm:text-base text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Encourage regular visits for overall spinal health and
                     mobility.
                   </p>
@@ -844,10 +844,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-black">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-sm sm:text-base text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Document patient progress milestones and therapy outcomes
                     securely.
                   </p>
@@ -868,10 +868,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-black">
                     AI Assistant
                   </h3>
-                  <p className="text-sm sm:text-base text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -928,10 +928,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Fewer Missed Sessions
               </h3>
-              <p className="text-xs sm:text-sm">Through timely reminders</p>
+              <p className="text-sm font-regular">Through timely reminders</p>
             </motion.article>
 
             {/* Card 2 */}
@@ -954,10 +954,10 @@ export default function Home() {
                 />
               </motion.div>
 
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Reduced Workload
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Less back-and-forth with the
                 <br /> patients
               </p>
@@ -982,10 +982,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Patient Engagement
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Chiropractors spend more time
                 <br /> treating, less on admin.
               </p>
@@ -1026,78 +1026,60 @@ export default function Home() {
           </motion.div>
 
           {/* Bottom 4 Boxes */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-                text: (
-                  <>
-                    Confirms the appointment automatically with a pre-session
-                    reminder.
-                  </>
-                ),
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Adjustment & Feedback",
-                text: (
-                  <>
-                    Chiropractor logs adjustments and feedback after each visit.
-                  </>
-                ),
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Follow-up Care",
-                text: <>Recurring sessions scheduled for consistent care.</>,
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Recovery Reminders",
-                text: (
-                  <>
-                    AI-generated posture and stretch tips tailored to each
-                    client.
-                  </>
-                ),
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <Image
-                    src={box.icon}
-                    alt={box.title}
-                    width={40}
-                    height={40}
-                    priority // optional, for important above-the-fold images
-                  />
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
+         <motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: (
+        <>
+          Confirms the appointment automatically with a pre-session reminder.
+        </>
+      ),
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Adjustment & Feedback",
+      text: <>Chiropractor logs adjustments and feedback after each visit.</>,
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Follow-up Care",
+      text: <>Recurring sessions scheduled for consistent care.</>,
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Recovery Reminders",
+      text: (
+        <>AI-generated posture and stretch tips tailored to each client.</>
+      ),
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.div
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full sm:w-[436px] sm:h-[116px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-center p-[2%]`}
+    >
+      <div className="flex items-center gap-3 mb-[2%]">
+        <Image src={box.icon} alt={box.title} width={32} height={32} priority />
+        <h3 className="text-base text-[#000000] font-semibold">{box.title}</h3>
+      </div>
+      <p className="text-sm text-[#797A7D] leading-relaxed">{box.text}</p>
+    </motion.div>
+  ))}
+</motion.div>
 
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
         </section>
 
         {/* =======================
@@ -1455,7 +1437,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1504,9 +1486,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>

@@ -201,7 +201,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/pricing"
+                    href="/#pricing"
                     className="text-black hover:text-[#00A7DE]"
                   >
                     Pricing
@@ -354,7 +354,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:text-[#00A7DE]"
                   onClick={() => setIsOpen(false)}
                 >
@@ -409,7 +409,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
               {/* Text on Left */}
               <motion.div
-                className="text-white max-w-full md:max-w-xl pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
+                className="text-white max-w-full md:max-w-xl pb-4 pl-2 mb-10 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -429,7 +429,7 @@ export default function Home() {
                   AI for Podiatrist
                 </motion.h1>
 
-                <motion.p className="text-lg mb-6" variants={fadeUp}>
+                <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6" variants={fadeUp}>
                   Your virtual assistant streamlines podiatry care by managing
                   appointments, recording treatment notes, sending recovery
                   reminders, and scheduling follow-ups.
@@ -454,7 +454,7 @@ export default function Home() {
 
               {/* Image on Right */}
               <motion.div
-                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
+                className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-11 md:mt-10"
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
@@ -503,8 +503,8 @@ export default function Home() {
                   className="mb-2"
                   priority
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">30%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">30%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Fewer missed appointments with
                   <br /> automated reminders.
                 </p>
@@ -523,8 +523,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">98%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">98%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   Reduced hours spent on scheduling
                   <br /> and note-taking.
                 </p>
@@ -543,8 +543,8 @@ export default function Home() {
                   priority
                   className="mb-2"
                 />
-                <h3 className="text-[#000000] font-bold text-2xl">25%</h3>
-                <p className="text-[#797A7D] text-sm">
+                <h3 className="text-[#000000] font-semibold text-4xl">25%</h3>
+                <p className="text-[#797A7D] text-base font-regular">
                   More patient continuing regular
                   <br /> therapy sessions.
                 </p>
@@ -567,7 +567,7 @@ export default function Home() {
           {/* Heading */}
           <motion.h2
             id="key-benefits-heading"
-            className="text-2xl sm:text-3xl md:text-3xl font-bold mb-4 md:mb-8 text-black text-center"
+            className="text-5xl sm:text-3xl md:text-3xl font-bold mb-4 md:mb-8 text-black text-center"
             variants={fadeUp}
           >
             Key Benefits
@@ -575,7 +575,7 @@ export default function Home() {
 
           {/* Subheading */}
           <motion.p
-            className="text-xs sm:text-sm md:text-base font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
+            className="text-xl font-light -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
             Enhance your podiatry practice with intelligent automation that
@@ -606,10 +606,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Automated Scheduling
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Session scheduling, reminders, and follow-ups handled
                 automatically, reducing no-shows and improving patient
                 adherence.
@@ -630,10 +630,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Secure Patient Records
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Treatment notes, scans, and progress
                 <br /> tracked automatically.
               </p>
@@ -653,10 +653,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Personalized Care
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 AI-generated reminders for stretches,
                 <br /> footwear care, and exercises.
               </p>
@@ -676,10 +676,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Continue Care
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Automatic recurring checkups
                 <br /> ensure consistent monitoring.
               </p>
@@ -699,10 +699,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Reduce Stress
               </h3>
-              <p className="text-xs sm:text-sm text-[#797A7D] leading-relaxed">
+              <p className="text-base font-regular text-[#797A7D] leading-relaxed">
                 Less administrative burden means
                 <br /> more time dedicated to hands-on
                 <br /> therapy and patient care.
@@ -759,10 +759,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     Foot & Ankle Care
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Manage patients with heel pain, plantar fasciitis, bunions,
                     or general foot discomfort.
                   </p>
@@ -782,10 +782,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base s font-medium text-gray-900">
                     Injury Recovery
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Support recovery from sports injuries, sprains, fractures,
                     or gait-related issues.
                   </p>
@@ -805,10 +805,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     Wellness Maintenance
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Encourage regular checkups for overall foot health,
                     mobility, and proper footwear guidance.
                   </p>
@@ -831,10 +831,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base font-medium text-gray-900">
                     Patient Progress Tracking
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Log treatment notes, orthotic adjustments, pain levels, and
                     exercise adherence.
                   </p>
@@ -854,10 +854,10 @@ export default function Home() {
                   priority
                 />
                 <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base  font-medium text-gray-900">
                     AI Assistant
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#797A7D]">
+                  <p className="text-base font-regular text-[#797A7D]">
                     Answer common patient inquiries via AI chat or voice
                     assistant.
                   </p>
@@ -912,10 +912,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Automated Follow-Ups
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Save time by letting AI schedule
                 <br /> recurring podiatry checkups.
               </p>
@@ -941,10 +941,10 @@ export default function Home() {
                 />
               </motion.div>
 
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Smart Reminders
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Reduce missed visits with timely,
                 <br /> personalized alerts.
               </p>
@@ -969,10 +969,10 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-              <h3 className="text-sm sm:text-base font-medium">
+              <h3 className="text-base font-medium">
                 Patient Records
               </h3>
-              <p className="text-xs sm:text-sm">
+              <p className="text-sm font-regular">
                 Quickly review treatment history
                 <br /> without manual searches.
               </p>
@@ -1013,85 +1013,86 @@ Example use cases
           </motion.div>
 
           {/* Bottom 4 Boxes */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {[
-              {
-                icon: "/images/one.png",
-                title: "Instant Confirmation",
-                text: (
-                  <>
-                    {" "}
-                    Appointment is confirmed instantly with preparation
-                    <br /> advice (“bring previous footwear for assessment”).
-                  </>
-                ),
-                bg: "bg-[#3B82F6]/8",
-              },
-              {
-                icon: "/images/two.png",
-                title: "Treatment Notes Logging",
-                text: (
-                  <>
-                    Records observations, scans, and treatment steps after each
-                    session.
-                  </>
-                ),
-                bg: "bg-[#10B981]/8",
-              },
-              {
-                icon: "/images/three.png",
-                title: "Recurring Checkups",
-                text: (
-                  <>
-                    Automatically schedules follow-up visits for orthotic
-                    <br /> adjustments or progress monitoring.
-                  </>
-                ),
-                bg: "bg-[#F5B80B]/8",
-              },
-              {
-                icon: "/images/four.png",
-                title: "Recovery Reminders",
-                text: (
-                  <>
-                    Sends tailored stretching, exercise, or footwear tips for
-                    ongoing care.
-                  </>
-                ),
-                bg: "bg-[#FAF5FF]/8",
-              },
-            ].map((box, i) => (
-              <motion.div
-                key={i}
-                variants={cardMotion}
-                whileHover={{ scale: 1.04, rotateZ: 1 }}
-                className={`rounded-xl p-6 text-black shadow-lg ${box.bg} transition-transform`}
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <Image
-                    src={box.icon}
-                    alt={box.title}
-                    width={40}
-                    height={40}
-                    priority
-                  />
+         <motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center"
+>
+  {[
+    {
+      icon: "/images/one.png",
+      title: "Instant Confirmation",
+      text: (
+        <>
+          Appointment is confirmed instantly with preparation
+          <br /> advice (“bring previous footwear for assessment”).
+        </>
+      ),
+      bg: "bg-[#3B82F6]/8",
+    },
+    {
+      icon: "/images/two.png",
+      title: "Treatment Notes Logging",
+      text: (
+        <>
+          Records observations, scans, and treatment steps after each
+          session.
+        </>
+      ),
+      bg: "bg-[#10B981]/8",
+    },
+    {
+      icon: "/images/three.png",
+      title: "Recurring Checkups",
+      text: (
+        <>
+          Automatically schedules follow-up visits for orthotic
+          <br /> adjustments or progress monitoring.
+        </>
+      ),
+      bg: "bg-[#F5B80B]/8",
+    },
+    {
+      icon: "/images/four.png",
+      title: "Recovery Reminders",
+      text: (
+        <>
+          Sends tailored stretching, exercise, or footwear tips for
+          ongoing care.
+        </>
+      ),
+      bg: "bg-[#FAF5FF]/8",
+    },
+  ].map((box, i) => (
+    <motion.div
+      key={i}
+      variants={cardMotion}
+      whileHover={{ scale: 1.04, rotateZ: 1 }}
+      className={`w-full sm:w-[436px] sm:h-[140px] rounded-xl text-black shadow-lg ${box.bg} transition-transform mx-auto flex flex-col justify-center p-[2%]`}
+    >
+      {/* Icon + Title */}
+      <div className="flex items-center gap-3 mb-[2%]">
+        <Image
+          src={box.icon}
+          alt={box.title}
+          width={32}
+          height={32}
+          className="w-8 h-8"
+          priority
+        />
+        <h3 className="text-base text-[#000000] font-semibold">
+          {box.title}
+        </h3>
+      </div>
 
-                  <h3 className="text-base text-[#000000] font-semibold">
-                    {box.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#797A7D] leading-relaxed">
-                  {box.text}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
+      {/* Text */}
+      <p className="text-sm text-[#797A7D] leading-relaxed">{box.text}</p>
+    </motion.div>
+  ))}
+</motion.div>
+
         </section>
         {/* =======================
 from
@@ -1440,7 +1441,7 @@ Explore other industries
                 className="mb-4"
               />
               <p className="text-sm mb-4 text-gray-500">
-                Transforming industries with intelligent virtual assistants.
+                Transforming industries with<br/> intelligent virtual<br/> assistants.
               </p>
 
               <div className="flex space-x-4">
@@ -1489,9 +1490,10 @@ Explore other industries
               <ul className="space-y-2 text-gray-600">
                 {[
                   { name: "Home", href: "/" },
+                  { name: "Features", href: "" },
                   { name: "About", href: "/about" },
                   { name: "Industries", href: "/industries" },
-                  { name: "Pricing", href: "/pricing" },
+                  { name: "Pricing", href: "/#pricing" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item, i) => (
                   <li key={i}>
