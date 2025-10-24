@@ -99,18 +99,19 @@ export default function Home() {
                   className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow"
                   variants={fadeUp}
                 >
-                  Skin & Beauty Care
+                  Accounting
                 </motion.div>
 
                 <motion.h1
                   className="text-4xl font-bold mb-4"
                   variants={fadeUp}
                 >
-                  AI for Beauty Therapist
+                  AI for Accountant  
                 </motion.h1>
 
                 <motion.p className="text-2xl text-[#E0F2FE] mb-6" variants={fadeUp}>
-                 Your virtual assistant streamlines beauty care by managing appointments, recording treatment notes, sending skincare or wellness reminders, and follow-ups.
+            Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, 
+            and scheduling client follow-ups.
                 </motion.p>
 
                 <motion.button
@@ -139,8 +140,8 @@ export default function Home() {
                 viewport={{ once: false }}
               >
                 <Image
-                  src="/images/beauty therapist.png"
-                  alt="Beauty Therapist"
+                  src="/images/accountant.png"
+                  alt="Accountant"
                   width={650}
                   height={650}
                   className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
@@ -221,7 +222,7 @@ export default function Home() {
                 />
                 <h3 className="text-[#000000] font-semibold text-4xl">25%</h3>
                 <p className="text-[#797A7D] text-base font-regular">
-                  Higher client adherence to post-<br/>treatment care and routines.
+                 Higher client adherence with consistent style tracking and tailored care.
                 </p>
               </motion.div>
             </motion.div>
@@ -253,7 +254,7 @@ export default function Home() {
             className="text-xl font-normal -mt-2 md:-mt-6 mb-8 text-[#797A7D] text-center"
             variants={fadeUp}
           >
-           Enhance your podiatry practice with intelligent automation that reduces<br/> admin work, streamlines patient care, and improves efficiency.
+          Enhance your accounting practice with intelligent automation that reduces admin work, personalizes client care, and increases efficiency.
           </motion.p>
 
           {/* Cards */}
@@ -282,7 +283,7 @@ export default function Home() {
                 Automated Scheduling
               </h3>
               <p className="text-base font-regular text-[#797A7D] leading-relaxed">
-Automatically manage appointments,<br/> follow-ups, and reminders without <br/>manual intervention.              </p>
+Automatically manage deadlines and appointments without manual intervention. </p>
             </motion.article>
 
             {/* Card 2 */}
@@ -300,10 +301,10 @@ Automatically manage appointments,<br/> follow-ups, and reminders without <br/>m
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Improved Client Retention
+        Improved Client Care
               </h3>
               <p className="text-base font-regular text-[#797A7D] leading-relaxed">
-Smart reminders and personalized <br/>care keep clients coming back for more treatments.              </p>
+Financial charts, reminders, and communications are consistent and personalized.              </p>
             </motion.article>
 
             {/* Card 3 */}
@@ -321,10 +322,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Centralized Treatment Records
+                Time-Saving Automation
               </h3>
               <p className="text-base font-regular text-[#797A7D] leading-relaxed">
-                Easily access client history,<br/> preferences, and progress in one <br/>organized system.
+                AI manages recurring tasks, follow-ups, and reminders to deliver quality accounting service.
               </p>
             </motion.article>
 
@@ -343,10 +344,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Enhanced Care Quality
+                Boosted Client Retention
               </h3>
               <p className="text-base fot-regular text-[#797A7D] leading-relaxed">
-                Tailored post-treatment guidance<br/> ensures better results and client<br/> satisfaction.
+                Regular check-ins and personalized service plans keep clients returning.
               </p>
             </motion.article>
 
@@ -365,10 +366,10 @@ Smart reminders and personalized <br/>care keep clients coming back for more tre
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Reduce Stress
+                Centralized History
               </h3>
               <p className="text-base font-regular text-[#797A7D] leading-relaxed">
-Instant confirmations reduce back-<br/> and-forth communication with<br/> clients.              </p>
+Easy access to past invoices, receipts, and client records for seamless service.   </p>
             </motion.article>
           </motion.div>
         </motion.section>
@@ -422,10 +423,11 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                 />
                 <div>
                   <h3 className="text-base  font-medium text-gray-900">
-                    Skincare & Beauty Treatments
+                    General Accounting
                   </h3>
                   <p className="text-base font-regular text-[#797A7D]">
-                  Manage facials, hair treatments, manicures, pedicures,and wellness services with automated scheduling.
+Manage bookkeeping, expense tracking, invoicing, and quarterly/annual tax preparation.
+
                   </p>
                 </div>
               </motion.article>
@@ -444,10 +446,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                 />
                 <div>
                   <h3 className="text-base font-medium text-gray-900">
-                    Regular Maintenance
+                   Specialized Services
                   </h3>
                   <p className="text-base font-regular text-[#797A7D]">
-                    Encourage recurring visits for glowing skin, healthy hair, and overall beauty wellness through smart reminders.
+                   Support payroll, auditing, compliance, and consultancy.
                   </p>
                 </div>
               </motion.article>
@@ -466,10 +468,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                 />
                 <div>
                   <h3 className="text-base  font-medium text-gray-900">
-                   Client Wellness Support
+                  Routine  Maintenance
                   </h3>
                   <p className="text-base font-regular text-[#797A7D]">
-                   Provide guidance on at-home care, product usage, and personalized beauty routines for optimal results.
+                 Automate recurring financial reviews for consistent long-term stability.
                   </p>
                 </div>
               </motion.article>
@@ -491,10 +493,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                 />
                 <div>
                   <h3 className="text-base font-medium text-gray-900">
-                    Patient Progress Tracking
+                   Client Progress Tracking
                   </h3>
                   <p className="text-base font-regular text-[#797A7D]">
-                   Log client preferences, treatment history, results, and product reactions for personalized care.
+                  Log client transactions, invoices, payment history, and follow-up updates.
                   </p>
                 </div>
               </motion.article>
@@ -516,8 +518,8 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                     AI Assistant
                   </h3>
                   <p className="text-base font-regular text-[#797A7D]">
-                    Answer common patient inquiries via AI chat or voice
-                    assistant.
+                    Answer client inquiries via AI chat or voice assistant.
+
                   </p>
                 </div>
               </motion.article>
@@ -573,7 +575,7 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                       <h3 className="text-base font-medium">
                         Automated Follow-Ups
                       </h3>
-                      <p className="text-sm font-regular text-[#E0F2FE]">Save time by letting AI schedule<br/> recurring beauty sessions<br/> automatically. </p>
+                      <p className="text-sm font-regular text-[#E0F2FE]">Save time by letting AI schedule recurring client meetings automatically. </p>
                     </motion.article>
         
                     {/* Card 2 */}
@@ -600,7 +602,7 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                      Smart Reminders
                       </h3>
                       <p className="text-sm font-regular text-[#E0F2FE]">
-                       Reduce missed visits with timely <br/>alerts and  preparation instructions.
+Reduce missed deadlines with AI-powered alerts.
                       </p>
                     </motion.article>
         
@@ -624,10 +626,10 @@ Instant confirmations reduce back-<br/> and-forth communication with<br/> client
                         />
                       </motion.div>
                       <h3 className="text-base font-medium">
-                         Patient Records
+                         Centralized Records
                       </h3>
                       <p className="text-sm font-regular text-[#E0F2FE]">
-                       Quickly review treatment history<br/> without manual searches.
+                       Quickly retrieve client histories without manual searches.
                       </p>
                     </motion.article>
                   </motion.div>
@@ -658,10 +660,10 @@ Example use cases
             className="rounded-xl p-6 text-black shadow-lg bg-gradient-to-br from-[#F9FAFB] to-[#F9FAFB] hover:scale-[1.03] transition-transform mb-6"
           >
             <h3 className="text-base font-semibold mb-2">
-              Facial & Manicure Treatment
+              Expense & Tax Management
             </h3>
             <p className="text-sm font-regular text-[#797A7D] leading-relaxed">
-A patient books facial and manicure treatment through your virtual assistant.            </p>
+A client schedules a consultation and receives reminders and updates through your virtual assistant.           </p>
           </motion.div>
 
       <motion.div
@@ -677,41 +679,37 @@ A patient books facial and manicure treatment through your virtual assistant.   
       title: "Instant Confirmation",
       text: (
         <>
-          Appointment confirmed instantly with preparation advice like
-          (&quot;avoid heavy makeup before facial&quot;).
+          Save time by letting AI send appointment confirmation and reminders automatically.
         </>
       ),
       bg: "bg-[#3B82F6]/8",
     },
     {
       icon: "/images/two.png",
-      title: "Treatment Notes Logging",
+      title: "Financial Notes",
       text: (
         <>
-          Records skin analysis, products used, and steps performed after each
-          session
+         Records invoices, expenses, and financial notes for each client.
         </>
       ),
       bg: "bg-[#10B981]/8",
     },
     {
       icon: "/images/three.png",
-      title: "Recurring Checkups",
+      title: "Recurring Alerts",
       text: (
         <>
-          Automatically schedules follow-ups for facials, hair treatments, or
-          wellness sessions.
+          Automatically schedule review meetings, payment reminders, and compliance updates.
         </>
       ),
       bg: "bg-[#F5B80B]/8",
     },
     {
       icon: "/images/four.png",
-      title: "Recovery Reminders",
+      title: "Service Reminders",
       text: (
         <>
-          Sends tailored skincare tips, product reminders, and post-treatment
-          guidance
+         Sends reminders for quarterly tax filings, renewal deadlines, and account updates.
         </>
       ),
       bg: "bg-[#FAF5FF]/8",
@@ -752,11 +750,10 @@ from
               variants={staggerChild}
               className="text-2xl md:text-3xl font-bold text-white"
             >
-              Get Your AI Assistant for Healthcare
+             Get Your AI Assistant for Accounting
             </motion.h2>
             <motion.p variants={staggerChild} className="text-white mt-2 mb-8">
-              Join thousands of industries who are transforming patient care
-              with our AI solutions.
+              Join thousands of accounting professionals transforming practice management with our AI solutions.
             </motion.p>
 
 <FormSection />
