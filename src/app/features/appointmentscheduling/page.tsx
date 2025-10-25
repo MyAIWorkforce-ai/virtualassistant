@@ -14,7 +14,7 @@ import {
 export default function AppointmentScheduling() {
   return (
     <>
-      {/* ✅ SEO Meta */}
+      {/* SEO Meta */}
       <Head>
         <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
         <meta
@@ -30,7 +30,7 @@ export default function AppointmentScheduling() {
       <Navbar />
 
 
-{/* ✅ FIRST SECTION */}
+{/* FIRST SECTION */}
 <motion.section
   variants={fadeUp}
   initial="hidden"
@@ -129,6 +129,7 @@ export default function AppointmentScheduling() {
         </p>
       </div>
     </motion.div>
+
 
     {/* Right Icon Cards */}
 <motion.div

@@ -39,11 +39,11 @@ export default function Navbar() {
               {/* Dropdown */}
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[250px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] p-2">
                 <ul>
-                  <li><Link href="/features/" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature One</Link></li>
+                  <li><Link href="/features/ai-receptionist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">AI-Receptionist</Link></li>
                   <li><Link href="/features/appointmentscheduling" className="block px-4 py-2 text-black hover:text-[#00A7DE]">AI-Appointment Scheduling </Link></li>
-                  <li><Link href="/features/feature3" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Three</Link></li>
-                  <li><Link href="/features/feature4" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Four</Link></li>
-                  <li><Link href="/features/feature5" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Five</Link></li>
+                  <li><Link href="/features/virtualassistent" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Smart AI-Assistant for Clients</Link></li>
+                  <li><Link href="/features/postsection" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Post-Session Tools</Link></li>
+                  <li><Link href="/features/" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Five</Link></li>
                   <li><Link href="/features/feature6" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Six</Link></li>
                 </ul>
               </div>
