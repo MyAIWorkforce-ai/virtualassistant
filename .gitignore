@@ -3,46 +3,39 @@
 # dependencies
 /node_modules
 /.pnp
-<<<<<<< HEAD
 .pnp.*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-=======
-.pnp.js
->>>>>>> 9b785e3933d24b00821f16fbad31733118db240c
 
 # testing
 /coverage
 
 # next.js
 /.next/
-/out/
+out/
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-=======
-
-# local env files
-.env*.local
+# environment variables
 .env
->>>>>>> 9b785e3933d24b00821f16fbad31733118db240c
+.env.local
+.env.*.local
+.env*.local
 
 # vercel
 .vercel
@@ -50,54 +43,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-<<<<<<< HEAD
-# dependencies
-/node_modules
-
-# build
-/.next
-
-# environment variables
-.env
-.env.local
-.env.*.local
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-.next/
-dist/
-build/
-.env
-.DS_Store
-# dependencies
-node_modules/
-
-# build output
-.next/
-out/
-dist/
-build/
-
-# env files
-.env
-.env.local
-
-# misc
-.DS_Store
-# dependencies
-node_modules/
-
-# production
-.next/
-out/
-
-# misc
-.DS_Store
-
-# local env files
-.env*
-=======
->>>>>>> 9b785e3933d24b00821f16fbad31733118db240c
