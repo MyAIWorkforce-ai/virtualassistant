@@ -65,7 +65,7 @@ export default function AiReceptionist() {
             <Navbar />
 
 
-            {/* FIRST SECTION */}
+            {/*  FIRST SECTION  */}
             {/* ----------- HERO SECTION ----------- */}
             <motion.section
                 className="relative flex items-center justify-center min-h-[100vh] bg-cover bg-center px-6 md:px-12"
@@ -76,8 +76,6 @@ export default function AiReceptionist() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-
-
                 {/* Content Container */}
                 <div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 py-20">
                     <div className="text-white max-w-lg space-y-6">
@@ -328,10 +326,10 @@ export default function AiReceptionist() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-white/90 text-lg font-medium mt-8 mb-10 max-w-5xl"
       >
-        <p>No training downtime or onboarding needed</p>
-        <p>Works in multiple languages and accents</p>
-        <p>Learns from every conversation</p>
-        <p>Scales with your business automatically</p>
+        <p>•No training downtime or onboarding needed</p>
+        <p>•Works in multiple languages and accents</p>
+        <p>•Learns from every conversation</p>
+        <p>•Scales with your business automatically</p>
       </motion.div>
 
   <motion.button

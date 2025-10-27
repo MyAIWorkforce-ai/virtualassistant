@@ -41,7 +41,7 @@ export default function Navbar() {
                 <ul>
                   <li><Link href="/features/ai-receptionist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">AI-Receptionist</Link></li>
                   <li><Link href="/features/appointmentscheduling" className="block px-4 py-2 text-black hover:text-[#00A7DE]">AI-Appointment Scheduling </Link></li>
-                  <li><Link href="/features/virtualassistent" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Smart AI-Assistant for Clients</Link></li>
+                  <li><Link href="/features/smartai-assistant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Smart AI-Assistant for Clients</Link></li>
                   <li><Link href="/features/postsection" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Post-Session Tools</Link></li>
                   <li><Link href="/features/" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Five</Link></li>
                   <li><Link href="/features/feature6" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Six</Link></li>
