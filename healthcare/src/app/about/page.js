@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // hamburger & close icons
+import { Menu, X } from "lucide-react"; //  & close icons
 import { ScrollAnimation, fadeInUp } from "../_components/animations/demo";
 import { slideUp } from "../_components/animations/footer";
 import { slideUpChild } from "../_components/animations/footer";
