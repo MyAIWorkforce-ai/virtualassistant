@@ -48,33 +48,27 @@ export default function Home() {
     };
     return (
         <>
-            {/* SEO Head */}
-            <Head>
-                {/* Basic SEO */}
-                <title>AI Virtual Assistant for Physiotherapists | YourBrand</title>
-                <meta
-                    name="description"
-                    content="AI-powered virtual assistant for physiotherapists. Automate bookings, reminders, and patient records to save time and improve care."
-                />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="robots" content="index, follow" />
+        {/* SEO Meta */}
+ <Head>
+  <title>AI Virtual Receptionist for Lawyer</title>
+<meta
+ name="description"
+  content="Enhance your law firm or solo legal practice with our Al Virtual Receptionist. Manage calls, schedule consultations, and respond to client inquiries 24/7 - maintaining professionalism, confidentiality, and precision."
+   />
+ <meta
+   name="keywords"
+  content="Al virtual receptionist for lawyers
 
-                {/* Open Graph (Social Sharing) */}
-                <meta
-                    property="og:title"
-                    content="AI Virtual Assistant for Physiotherapists | YourBrand"
-                />
-                <meta
-                    property="og:description"
-                    content="Automate bookings, reminders, and patient records with an AI-powered assistant built for physiotherapists."
-                />
-                <meta property="og:image" content="/images/social-preview.png" />
-                <meta
-                    property="og:url"
-                    content="https://virtual-assistant-website-aus-n7zq.vercel.app/industries/Physotherapist"
-                />
-                <meta property="og:type" content="website" />
-            </Head>
+Al receptionist for law firms,
+Al receptionist for solo lawyers,
+legal call answering service,
+virtual assistant for lawyers,
+automated appointment booking for law firms,
+Al phone answering for legal practices,
+24/7 receptionist for law offices,
+VirtualAssistant.com.au"
+                    />
+                </Head>
 
             <div className="min-h-screen flex flex-col">
                 {/* Header */}

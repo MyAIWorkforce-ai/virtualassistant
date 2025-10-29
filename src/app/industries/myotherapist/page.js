@@ -53,33 +53,26 @@ export default function Home() {
 
   return (
     <>
-      {/* SEO Meta Tags */}
-      <Head>
-        {/* SEO Basics */}
-        <title>AI Muscle Therapy for Myotherapists | Stress-Free Therapy</title>
-        <meta
-          name="description"
-          content="AI-powered virtual assistant for myotherapists. Reduce admin time, improve client retention, and manage therapy sessions efficiently."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/*Open Graph  */}
-        <meta
-          property="og:title"
-          content="AI Muscle Therapy for Myotherapists | Stress-Free Therapy"
-        />
-        <meta
-          property="og:description"
-          content="Automate scheduling, reminders, and session management with an AI assistant built for myotherapists."
-        />
-        <meta property="og:image" content="/images/social-preview.png" />
-        <meta
-          property="og:url"
-          content="https://virtual-assistant-website-aus-n7zq.vercel.app/industries/myotherapist"
-        />
-        <meta property="og:type" content="website" />
-      </Head>
+       {/* SEO Meta */}
+                <Head>
+                    <title>AI Virtual Receptionist for Myotherapists</title>
+                    <meta
+                        name="description"
+                        content="Streamline your myotherpy clinic with our AI Virtual Receptionist.Book, reschedule, 
+                        and manage appointments automatically while delivering professional service 24/7."
+                    />
+                    <meta
+                        name="keywords"
+                        content="AI Virtual Receptionist for Myotherapists, 
+                        AI receptionist for myotherapy clinic, 
+                        myotherapy call answering service, 
+                        virtual assistant for myotherapists,
+                         automated appointment booking for myotherapy, 
+                         Al phone answering for allied health, 
+                         24/7 receptionist for myotherapists,
+                         VirtualAssistant.com.au"
+                    />
+                </Head>
 
       <div className="min-h-screen flex flex-col">
        <Navbar />

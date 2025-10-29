@@ -53,32 +53,25 @@ export default function Home() {
   return (
     <>
       {/* SEO Head */}
-      <Head>
-        {/*  Basic SEO */}
-        <title>AI Virtual Assistant for Personal Trainers | YourBrand</title>
-        <meta
-          name="description"
-          content="AI-powered virtual assistant for personal trainers. Automate scheduling, reminders, progress tracking, and training notes to save time and boost client results."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-
-        {/*  Open Graph (Social Sharing) */}
-        <meta
-          property="og:title"
-          content="AI Virtual Assistant for Personal Trainers | YourBrand"
-        />
-        <meta
-          property="og:description"
-          content="Automate fitness management with an AI assistant. Simplify scheduling, progress tracking, reminders, and client training notes."
-        />
-        <meta property="og:image" content="/images/social-preview.png" />
-        <meta
-          property="og:url"
-          content="https://virtual-assistant-website-aus-n7zq.vercel.app/industries/personaltrainer"
-        />
-        <meta property="og:type" content="website" />
-      </Head>
+      
+                <Head>
+ <title>AI Virtual Receptionist for Personal Trainer </title>
+ <meta
+       name="description"
+   content="Grow your fitness business with our Al Virtual Receptionist for personal trainers. Handle calls, manage bookings, and respond to client inquiries 24/7 - whether you're training clients in the gym or outdoors."
+  />
+  <meta
+ name="keywords"
+ content="Al virtual receptionist for personal trainers,
+Al receptionist for fitness coaches,
+personal training call answering service,
+virtual assistant for personal trainers,
+automated session booking for personal trainers,
+Al phone answering for fitness business,
+24/7 receptionist for personal trainers,
+VirtualAssistant.com.au"
+                    />
+                </Head>
       {/* Main Section */}
       <div className="min-h-screen  flex flex-col">
       <Navbar />
