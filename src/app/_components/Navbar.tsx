@@ -30,7 +30,7 @@ export default function Navbar() {
               </Link>
             </li>
 
-            {/* ✅ Features Dropdown */}
+            {/*  Features Dropdown */}
             <li className="relative group">
               <Link href="/features" className="text-black hover:text-[#00A7DE]">
                 Features
@@ -43,8 +43,8 @@ export default function Navbar() {
                   <li><Link href="/features/appointmentscheduling" className="block px-4 py-2 text-black hover:text-[#00A7DE]">AI-Appointment Scheduling </Link></li>
                   <li><Link href="/features/smartai-assistant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Smart AI-Assistant for Clients</Link></li>
                   <li><Link href="/features/postsection" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Post-Session Tools</Link></li>
-                  <li><Link href="/features/" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Five</Link></li>
-                  <li><Link href="/features/feature6" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Feature Six</Link></li>
+                  <li><Link href="/features/onlineintegration" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Online Integration</Link></li>
+                  <li><Link href="/features/advanceddashboard" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Advanced dashboard</Link></li>
                 </ul>
               </div>
             </li>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[500px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] grid grid-cols-2 gap-2 p-2">
                 {/* Column 1 */}
                 <ul>
-                  <li><Link href="/industries/Physotherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Physiotherapist</Link></li>
+                  <li><Link href="/industries/physiotherapy" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Physiotherapist</Link></li>
                   <li><Link href="/industries/myotherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Myotherapist</Link></li>
                   <li><Link href="/industries/personaltrainer" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Personal Trainer</Link></li>
                   <li><Link href="/industries/massagetherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Massage Therapist</Link></li>

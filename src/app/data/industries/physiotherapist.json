@@ -1,0 +1,73 @@
+{
+  "slug": "physiotherapy",
+  "heroSection": {
+    "tag": "Physio Therapy",
+    "title": "AI for Physiotherapists",
+    "description": "A virtual assistant that books, reminds, and records, while you focus on your patients.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Reduction in admin time for therapy professionals."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Patient satisfaction with AI-assisted therapy."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Boost in patient retention."
+      }
+    ]
+  },
+  
+  "about": {
+    "heading": "AI Virtual Receptionist for Myotherapists",
+    "sections": [
+      {
+        "subheading": "Revolutionize How Your Myotherapy Practice Operates",
+        "paragraph": "At VirtualAssistant.com.au, our AI Virtual Receptionist is purpose-built for myotherapists and hands-on therapy professionals. It answers calls immediately, handles scheduling, provides detailed information about your services, and ensures every client interaction feels professional and personal."
+      },
+      {
+        "subheading": "Focus on Treatments, Not Admin Tasks",
+        "paragraph": "Our AI Receptionist takes the pressure off your front desk by managing routine admin tasks. It can handle appointment bookings, reschedules, cancellations, reminders, and common client queries in natural conversation — giving you more time to focus on client care."
+      },
+      {
+        "subheading": "Never Miss a Call or Booking Again",
+        "paragraph": "Whether you’re in session with a client or your reception is unattended, our AI Receptionist steps in to handle calls and inquiries instantly. It answers questions about treatment types, duration, and availability, then confirms bookings directly in your calendar. Your clients are always looked after — even when you’re hands-on."
+      }
+    ]
+  },
+
+   "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your physiotherapy practice with intelligent automation that reduces admin work, streamlines patient care, and improves efficiency.",
+    "cards": [
+      {
+        "title": "Automated Scheduling",
+        "description": "Automatically manage appointments, follow-ups, and reminders without manual intervention."
+      },
+      {
+        "title": "Improved Client Retention",
+        "description": "Smart reminders and personalized care keep clients coming back for more treatments."
+      },
+      {
+        "title": "Centralized Treatment Records",
+        "description": "Easily access client history, preferences, and progress in one organized system."
+      },
+      {
+        "title": "Enhanced Care Quality",
+        "description": "Tailored post-treatment guidance ensures better results and client satisfaction."
+      },
+      {
+        "title": "Reduce Stress",
+        "description": "Instant confirmations reduce back-and-forth communication with clients."
+      }
+    ]
+  }
+
+}

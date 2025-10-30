@@ -84,7 +84,7 @@ export default function AiReceptionist() {
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                             AI Receptionist-24/7 Coverage
-                        </h1>
+                        </h1> 
                         <p className="text-lg text-gray-200">
                             Never miss a call or opportunity again. Deliver instant, professional phone support—day or night—with our
                             intelligent AI receptionist answering every customer, every time.
@@ -241,11 +241,11 @@ export default function AiReceptionist() {
       <img
         src="/images/cr.png"
         alt="Step 1"
-        className="w-[120px] h-[120px] mb-6 rounded-[12px] border-t-[2px] border-[#00BAF2]"
+        className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
         <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
-          Step 1: Connect
+          Connect
         </h3>
         <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
           Link your calendar and communication tools seamlessly for automation.
@@ -261,11 +261,11 @@ export default function AiReceptionist() {
       <img
         src="/images/ts.png"
         alt="Step 2"
-        className="w-[120px] h-[120px] mb-6 rounded-[12px] border-t-[2px] border-[#00BAF2]"
+        className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
         <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
-          Step 2: Automate
+         Automate
         </h3>
         <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
           Our AI intelligently manages calls, bookings, and reminders 24/7.
@@ -281,11 +281,11 @@ export default function AiReceptionist() {
       <img
         src="/images/fu.png"
         alt="Step 3"
-        className="w-[120px] h-[120px] mb-6 rounded-[12px] border-t-[2px] border-[#00BAF2]"
+        className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
         <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
-          Step 3: Grow
+         Grow
         </h3>
         <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
           Save time, reduce cancellations, and focus on scaling your business.

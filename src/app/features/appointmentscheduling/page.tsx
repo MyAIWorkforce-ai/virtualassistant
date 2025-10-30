@@ -32,22 +32,23 @@ export default function AppointmentScheduling() {
 
 {/* FIRST SECTION */}
 <motion.section
-  variants={fadeUp}
   initial="hidden"
   animate="show"
   className="relative flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-16 py-12 sm:py-16 md:py-20 overflow-hidden font-[Poppins]"
   style={{
-    background: "#BCE2FF",
+    backgroundImage: "url('/images/appointmentimage.png')", 
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   }}
 >
-  {/* 🖼️ Left Side - Image */}
+  {/* Left Side - Image */}
   <motion.div
-    variants={fadeInItem}
     className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start md:mt-0"
   >
-    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] lg:-rotate-10 -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
+    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px]  -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
       <Image
-        src="/images/appointment-calender.png"
+        src="/images/scheduling.png"
         alt="AI Appointment Calendar"
         fill
         className="object-contain drop-shadow-lg opacity-95"
@@ -55,51 +56,45 @@ export default function AppointmentScheduling() {
     </div>
   </motion.div>
 
-  {/* 🔵 Right Half Blue Rounded Background */}
-  <div className="absolute top-0 right-0 w-full md:w-1/2 h-[55%] sm:h-[60%] md:h-[65%] bg-gradient-to-br from-[#0098DB] to-[#7CD6F8] rounded-bl-[100px] sm:rounded-bl-[140px] md:rounded-bl-[220px] flex items-center justify-center md:justify-start">
-    <motion.div
-      variants={fadeInItem}
-      className="relative z-20 w-[90%] sm:w-[80%] md:w-full text-center md:text-left text-white flex flex-col justify-center items-center md:items-start space-y-3 sm:space-y-4 p-4 sm:p-6 md:pl-12"
+  {/* Right Half - Content Box */}
+  <motion.div>
+    {/* Badge */}
+    <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-5 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide  shadow-sm">
+      Smart, Seamless, Always On
+    </div>
+
+    {/* Heading */}
+    <h1
+      className="text-2xl sm:text-4xl md:text-[48px] py-10 text-white leading-[110%] font-bold "
+      style={{ fontFamily: "Poppins, sans-serif" }}
     >
-      {/* Badge */}
-      <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
-        Smart, Seamless, Always On
-      </div>
+      AI Appointment Scheduling
+    </h1>
 
-      {/* Heading */}
-      <h1
-        className="text-2xl sm:text-4xl md:text-[48px] leading-[110%] font-bold"
-        style={{ fontFamily: "Poppins, sans-serif" }}
-      >
-        AI Appointment Scheduling
-      </h1>
+    {/* Subtext */}
+    <p className="text-sm sm:text-base md:text-lg text-white text-[24px] leading-relaxed max-w-sm sm:max-w-md">
+      Never miss an appointment or double-book again. Your AI assistant
+      automatically manages scheduling, reminders, and rescheduling — keeping
+      your calendar full and your clients happy.
+    </p>
 
-      {/* Subtext */}
-      <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-sm sm:max-w-md">
-        Never miss an appointment or double-book again. Your AI assistant
-        automatically manages scheduling, reminders, and rescheduling — keeping
-        your calendar full and your clients happy.
-      </p>
-
-      {/* CTA Button */}
-      <button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
-        Start your free trial
-      </button>
-    </motion.div>
-  </div>
+    {/* CTA Button */}
+    <button className="bg-[#00A7DE] text-white px-6 sm:px-7 py- sm:py-3.5 rounded-lg font-semibold shadow-md hover:bg-[#008FCC] transition text-sm sm:text-base">
+      Start your free trial
+    </button>
+  </motion.div>
 </motion.section>
 
 
 
-{/* ✅ SECOND SECTION */}
+{/* SECOND SECTION */}
 <motion.section
-  variants={staggerFadeUp}
   initial="hidden"
   whileInView="show"
   viewport={{ once: true }}
   className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#D4EFFF] via-[#EEF8FF] to-[#FFFFFF] overflow-hidden font-[Poppins]"
 >
-  {/* Background Shapes */}
+ 
   <div className="absolute top-12 left-8 w-20 h-20 bg-[#BCE2FF]/40 rounded-full blur-xl"></div>
   <div className="absolute bottom-16 right-16 w-32 h-32 bg-[#7CD6F8]/30 rounded-full blur-2xl"></div>
 
@@ -107,7 +102,6 @@ export default function AppointmentScheduling() {
   <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
     {/* Left Text Card */}
     <motion.div
-      variants={fadeUp}
       className="md:w-1/2 flex justify-center md:justify-start"
     >
       <div
@@ -133,38 +127,37 @@ export default function AppointmentScheduling() {
 
     {/* Right Icon Cards */}
 <motion.div
-  variants={staggerFadeUp}
   className="md:w-1/2 flex flex-col gap-6 justify-center"
 >
   {[
     {
-      icon: "📅",
+      icon: "images/fully-automated.png",
       title: "Fully Automated:",
       desc: "Books, reschedules, and cancels appointments directly into your calendar.",
     },
     {
-      icon: "🔗",
+      icon: "images/calender-syncing.png",
       title: "Calendar Syncing:",
       desc: "Works seamlessly with Google Calendar or Outlook.",
     },
     {
-      icon: "🔔",
+      icon: "images/smart-reminders.png",
       title: "Smart Reminders:",
       desc: "Clients automatically receive SMS and email confirmations — cutting down no-shows.",
     },
     {
-      icon: "⚙️",
+      icon: "images/flexible-options.png",
       title: "Flexible Options:",
       desc: "Choose whether to use your new dedicated number or keep your current one with forwarding.",
     },
   ].map((card, i) => (
     <motion.div
       key={i}
-      variants={fadeInItem}
       className="w-full md:w-[670px] bg-white shadow-md rounded-2xl p-5 hover:shadow-xl transition-all flex items-center gap-4"
+
     >
       {/* Icon */}
-      <div className="text-[28px] bg-[#4FC7FA]  w-12 h-12 flex items-center justify-center  shadow-sm shrink-0">
+      <div className="text-[28px]   w-12 h-12 flex items-center justify-center  shadow-sm shrink-0">
         {card.icon}
       </div>
 
@@ -182,9 +175,8 @@ export default function AppointmentScheduling() {
 
 
 
-      {/* ✅ THIRD SECTION */}
+      {/*  THIRD SECTION */}
 <motion.section
-  variants={fadeUp}
   initial="hidden"
   whileInView="show"
   viewport={{ once: true }}
@@ -194,7 +186,6 @@ export default function AppointmentScheduling() {
   <div className="flex flex-col md:flex-row items-center justify-between gap-5 mb-5">
     {/* Left Text */}
   <motion.div
-      variants={fadeUp}
       className="md:w-1/2 bg-[#BCE2FF] rounded-2xl p-8 shadow-[4px_4px_20px_#00000040] hover:shadow-[6px_6px_25px_#00000040] transition-all duration-300 flex flex-col justify-center w-[250px] h-[250px]"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-[#000000] mb-3">
@@ -208,7 +199,6 @@ Your team no longer needs to manage calls or track appointments manually.
 
     {/* Right Image */}
     <motion.div
-      variants={fadeInItem}
       className="md:w-1/2 flex justify-center md:justify-end items-start"
     >
       <div className="relative w-[700px] h-[600px] md:mr-0 md:mt-0">
@@ -224,7 +214,7 @@ Your team no longer needs to manage calls or track appointments manually.
 
   {/* Bottom Cards */}
   <motion.div
-    variants={staggerFadeUp}
+
     className="grid grid-cols-1 md:grid-cols-3 gap-3 justify-items-center"
   >
     {[
@@ -243,7 +233,6 @@ Your team no longer needs to manage calls or track appointments manually.
     ].map((card, i) => (
       <motion.div
         key={i}
-        variants={fadeInItem}
         className="bg-[#BCE2FF] w-[350px] h-[250px] rounded-2xl p-8 text-left mb-2 shadow-[4px_4px_20px_#00000040] hover:shadow-[6px_6px_25px_#00000040] transition-all duration-300 flex flex-col justify-center"
       >
         <h3 className="text-xl font-semibold text-[#000000] mb-2">

@@ -1,0 +1,315 @@
+"use client";
+
+import Image from "next/image";
+import Head from "next/head";
+import { motion } from "framer-motion";
+import Navbar from "../../_components/Navbar";
+import Footer from "../../_components/Footer";
+import {
+    fadeUp,
+    fadeInItem,
+    staggerFadeUp,
+} from "../../_components/animations/variantsphyso"
+
+export default function SmartAIassistant() {
+
+    return (
+        <>
+            {/* SEO Meta */}
+            <Head>
+                <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
+                <meta
+                    name="description"
+                    content="AI Appointment Scheduling — Automatically book, confirm and manage meetings using intelligent automation to improve productivity and efficiency."
+                />
+                <meta
+                    name="keywords"
+                    content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
+                />
+            </Head>
+            <Navbar />
+            {/*  FIRST SECTION  */}
+            {/* Hero Section */}
+            <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
+                style={{
+                    backgroundImage: "url('/images/hero-image.svg')",
+                }}
+                 initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+            >
+                {/* Context Container */}
+                <motion.div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 pt-30 mx-auto"
+                 initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}>
+                    <motion.div className="text-white max-w-lg space-y-6">
+                        <motion.div className="inline-block bg-[#E8F6FF] text-[#00A7DE] p-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
+                            Wrap Up Every Session with Ease
+                        </motion.div>
+                        <motion.h1 className="text-3xl md:text-5xl font-bold eading-tight">
+                            Post-Session Tools
+                        </motion.h1>
+                        <motion.p className="text-lg  text-gray-200">
+                            Keep every client interaction organized, documented,  and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
+                        </motion.p>
+                        <motion.button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
+                            Start your free trial
+                        </motion.button>
+                    </motion.div>
+                </motion.div>
+
+            </motion.section>
+
+
+            {/*  SECOND SECTION*/}
+            <motion.section className="relative flex flex-col items-center justify-center w-full min-h-screen py-24 bg-[#F9FAFB]"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+            >
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="w-[90%] md:w-[759px] bg-white rounded-[20px] shadow-lg text-center p-10 mb-20"
+                >
+                    <h2 className="font-poppins font-bold text-3xl md:text-[36px] text-gray-900 mb-4">
+                        Key Capabilities:
+                    </h2>
+                    <p className="font-poppins text-[#797A7D] text-base md:text-[16px] leading-relaxed max-w-2xl mx-auto">
+                        Smart tools that help you stay organized, informed, and always ready for the next appointment.
+                    </p>
+                </motion.div>
+
+                {/* Capability Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
+                    {[
+                        {
+                            icon: "/images/client-notes.png",
+                            title: "1. Client Notes",
+                            desc: "Add written notes after each appointment."
+                        },
+                        {
+                            icon: "/images/voicememo.png",
+                            title: "2. Voice Memos ",
+                            desc: "Record a quick voice memo instead of typing, it’s transcribed and attached automatically"
+                        },
+                        {
+                            icon: "/images/documents.png",
+                            title: "3. Photos & Documents",
+                            desc: "Upload forms, images, or documents directly to the client’s record."
+                        },
+                        {
+                            icon: "/images/history.png",
+                            title: "4. Complete Client History",
+                            desc: "All notes, memos, and documents stay attached to each appointment, making future sessions smoother and more personalised"
+                        },
+                    ].map((card, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 200 }}
+                            className="flex flex-col items-center text-center"
+                        >
+                            <div
+                                className="bg-white rounded-[15px]  shadow-lg p-6 flex flex-col justify-center"
+                                style={{
+                                    width: "278px",
+                                    height: "212px",
+                                    boxShadow: "0 4px 15px rgba(115, 113, 113, 0.25)",
+                                }}
+                            >
+                                <div className="flex justify-center mb-4">
+                                    <img
+                                        src={card.icon}
+                                        alt={card.title}
+                                        className="w-12 h-12 object-contain mx-auto"
+                                    />
+                                </div>
+                                <h3 className="font-[Poppins] font-semibold text-[20px] text-[#000000] mb-3">
+                                    {card.title}
+                                </h3>
+                                <p className="font-[Poppins] text-[16px] text-[#797A7D] leading-[24px]">
+                                    {card.desc}
+                                </p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.section>
+
+            {/* THIRD SECTION */}
+            <motion.section
+                className="relative flex flex-col md:flex-row items-center justify-between w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
+                style={{
+                    backgroundImage: "url('/images/postsection-bg.svg')",
+                }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+            >
+     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-2">
+                    {/* Left Section */}
+                  <div className="w-full md:w-2/5 text-left mr-10 space-y-8">
+    <h2 className="font-[Poppins] font-bold text-[36px] md:text-[48px] leading-[150%] text-[#00A7DE]">
+      Productivity & Business Impact
+    </h2>
+
+    <ul className="space-y-3 pl-1"> 
+      {[
+        {
+          heading: "Reduce Admin Time:",
+          desc: "Save hours every week by replacing manual note-taking and filing.",
+        },
+        {
+          heading: "Improve Accuracy:",
+          desc: "Automatic organization reduces the risk of missing or misplaced data.",
+        },
+        {
+          heading: "Enhance Client Trust:",
+          desc: "Clients appreciate your precision and recall in follow-ups.",
+        },
+        {
+          heading: "Ensure Continuity:",
+          desc: "Perfect for multi-staff environments or long-term client relationships.",
+        },
+        {
+          heading: "Boost Professionalism:",
+          desc: "Arrive at every session prepared and informed.",
+        },
+      ].map((item, index) => (
+        <motion.li
+          key={index}
+          className="flex items-baseline gap-2"
+          whileHover={{ scale: 1.02 }}
+          transition={{ type: "spring", stiffness: 200 }}
+        >
+          <div className="w-[6px] h-[6px] bg-[#000] rounded-full shrink-0 mt-[3px]" />
+          <p className="text-[#333] font-[Poppins] text-[15px] leading-[26px]">
+            <span className="font-semibold text-[#000]">{item.heading}</span>{" "}
+            {item.desc}
+          </p>
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+
+                    {/* Right Section */}
+                    <div className="w-full md:w-4/5 flex justify-center relative">
+                        <Image
+                            src="/images/productivity-image.svg"
+                            alt="Productivity Illustration"
+                            width={700}
+                            height={500}
+                        />
+                    </div>
+                </div>
+
+            </motion.section>
+
+
+            {/* FOURTH SECTION */}
+            <motion.section
+                className="w-full bg-cover bg-center py-20 px-6 flex flex-col items-center justify-center"
+                style={{
+                    background: "linear-gradient(#FFFFFF, #E9F6FF)",
+                }}
+            >
+                {/* Title */}
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="font-[Poppins] font-semibold text-[51px] leading-[43px] text-[#00A7DE] text-center mb-6"
+                >
+                    How It Works
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.8 }}
+                    className="font-[Poppins] font-normal text-[16px] leading-[30px] text-[#797A7D] text-center max-w-2xl mb-16"
+                >
+                    A simple three-step process to keep every session organized.
+                </motion.p>
+
+                {/* 3 Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl">
+                    {[
+                        {
+                            title: "Instant Support",
+                            desc: "Clients get the answers they need immediately, even after hours.",
+                        },
+                        {
+                            title: "Reduced Admin Load",
+                            desc: "Fewer phone calls and emails for your team to handle.",
+                        },
+                        {
+                            title: "Higher Conversion Rates",
+                            desc: "Clients feel confident booking after getting clear, helpful information.",
+                        },
+                    ].map((card, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 200 }}
+                            className="flex flex-col items-center text-center"
+                        >
+                            <div
+                                className="bg-white  shadow-lg p-6 flex flex-col justify-center"
+                                style={{
+                                    width: "278px",
+                                    height: "202px",
+                                    boxShadow: "0 4px 15px rgba(115, 113, 113, 0.25)",
+                                }}
+                            >
+                                <h3 className="font-[Poppins] font-semibold text-[20px] text-[#000000] mb-3">
+                                    {card.title}
+                                </h3>
+                                <p className="font-[Poppins] text-[16px] text-[#797A7D] leading-[24px]">
+                                    {card.desc}
+                                </p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.section>
+
+
+            {/* FIFTH SECTION */}
+
+            <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+                style={{
+                    background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
+                }}
+            >
+                {/* Heading */}
+                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+                    Ready to Streamline Your Follow-Ups?
+                </h1>
+
+                {/* Subtext */}
+                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-10">
+                    Let your AI handle post-session management — from note-taking to file organization. Focus on your clients, not your paperwork.
+                </p>
+
+                <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
+                    Start Your Free Trial
+                </button>
+            </motion.section>
+
+            {/* Footer */}
+            <Footer />
+        </>
+    )
+}
+
+
+

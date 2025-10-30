@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://virtual-assistant-6tdp.vercel.app/
-
-# Sitemaps
-Sitemap: https://virtual-assistant-6tdp.vercel.app/sitemap.xml
