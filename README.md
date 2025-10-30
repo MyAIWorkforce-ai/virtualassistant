@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -38,4 +37,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # VirtualAssistantWebsite-aus
 This is a website for the Virtual Assistant providing services in Australia in 20+ industries built on Next.js using Tailwind CSS
->>>>>>> 9b785e3933d24b00821f16fbad31733118db240c
