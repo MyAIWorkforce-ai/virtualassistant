@@ -1,0 +1,199 @@
+{
+  "slug": "",
+  "heroSection": {
+    "tag": "",
+    "title": "",
+    "description": "",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": ""
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": ""
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": ""
+      }
+    ]
+  },
+  "about": {
+    "heading": "",
+    "sections": [
+      {
+        "subheading": "",
+        "paragraph": ""
+      },
+      {
+        "subheading": "",
+        "paragraph": ""
+      },
+      {
+        "subheading": "",
+        "paragraph": ""
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#FFF0FA] to-[#FFD6F3]",
+        "title": "",
+        "description": " "
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFEDED] to-[#FFD6D7]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#F0FFEA] to-[#D9FFC8]",
+        "title": "",
+        "description": ": "
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "",
+    "description": "",
+    "leftBox": {
+      "heading": "",
+      "description": ""
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "",
+        "description": ""
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "",
+      "description": ""
+    },
+       {
+      "icon": "/images/patient record.png",
+      "title": "",
+      "description": " "
+    }
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "",
+      "description": ""
+    },
+    "useCases": [
+      {
+        "title": "",
+        "text": ""
+      },
+      {
+        "title": "",
+        "text": ""
+      },
+      {
+        "title": "",
+        "text": ""
+      },
+      {
+        "title": "",
+        "text": ""
+      }
+    ]
+  },
+   "form": {
+    "title": "",
+    "subtitle": ""
+  }
+
+}

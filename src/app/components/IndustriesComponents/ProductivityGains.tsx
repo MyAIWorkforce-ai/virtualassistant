@@ -32,31 +32,38 @@ export default function ProductivityGains({ heading, cards }: ProductivityGainsP
           {heading}
         </h2>
       </div>
+{/* Cards */}
+<div
+  className={`grid gap-8 sm:gap-10 md:gap-12 px-20 justify-items-center max-w-6xl w-full text-center mx-auto ${
+    cards.length === 4
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center"
+  }`}
+>
+  {cards.map((card, index) => (
+    <motion.article
+      key={index}
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 250, damping: 18 }}
+      className="flex flex-col items-center space-y-3"
+    >
+      <Image
+        src={card.icon}
+        alt={card.title}
+        width={56}
+        height={56}
+        className="w-12 h-12 sm:w-14 sm:h-14 mb-2"
+        priority
+      />
+      <h3 className="text-lg font-semibold font-[Poppins]">{card.title}</h3>
+      <p className="text-sm font-[Poppins] text-[#E0F2FE] leading-relaxed">
+        {card.description}
+      </p>
+    </motion.article>
+  ))}
+</div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 justify-items-center max-w-6xl w-full text-center">
-        {cards.map((card, index) => (
-          <motion.article
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 250, damping: 18 }}
-            className="flex flex-col items-center space-y-3"
-          >
-            <Image
-              src={card.icon}
-              alt={card.title}
-              width={56}
-              height={56}
-              className="w-12 h-12 sm:w-14 sm:h-14 mb-2"
-              priority
-            />
-            <h3 className="text-lg font-semibold font-[Poppins]">{card.title}</h3>
-            <p className="text-sm font-[Poppins] text-[#E0F2FE] leading-relaxed">
-              {card.description}
-            </p>
-          </motion.article>
-        ))}
-      </div>
+
     </motion.section>
   );
 }

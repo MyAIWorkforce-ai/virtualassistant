@@ -5,15 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import industriesListData from "../../data/industries/industriesList.json";
 
-// TypeScript interface for your industry JSON
 interface Industry {
   name: string;
   slug: string;
   image: string;
+  description: string; 
 }
 
 interface ExploreOtherIndustriesProps {
-  activeSlug: string; // current industry slug (e.g., "physiotherapy")
+  activeSlug: string;
 }
 
 export default function ExploreOtherIndustries({
@@ -43,6 +43,7 @@ export default function ExploreOtherIndustries({
         >
           Explore Other Industries
         </motion.h2>
+
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -53,7 +54,7 @@ export default function ExploreOtherIndustries({
           Discover how our AI solutions are transforming other industries too.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-25">
           {nextIndustries.map((industry, index) => (
             <motion.div
               key={industry.slug}
@@ -61,27 +62,32 @@ export default function ExploreOtherIndustries({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              className="bg-white shadow-md rounded-2xl p-6 text-left hover:shadow-lg transition-transform hover:scale-105"
             >
-              <div className="relative w-full h-48">
+              <div className="flex items-center gap-3 mb-4">
                 <Image
                   src={industry.image}
                   alt={industry.name}
-                  fill
-                  className="object-cover"
+                  width={64}
+                  height={64}
+                  className="rounded-lg object-cover"
+                  priority
                 />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                <h3 className="text-lg text-black font-semibold">
                   {industry.name}
                 </h3>
-                <Link
-                  href={`/industries/${industry.slug}`}
-                  className="inline-block mt-3 bg-[#00A7DE] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-[#008fc3] transition-all"
-                >
-                  Read More
-                </Link>
               </div>
+
+              <p className="text-[#797A7D] mb-4">
+                {industry.description}
+              </p>
+
+              <Link
+                href={`/industries/${industry.slug}`}
+                className="text-[#00A7DE] font-medium hover:underline"
+              >
+                Learn More
+              </Link>
             </motion.div>
           ))}
         </div>
