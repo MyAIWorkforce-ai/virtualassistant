@@ -70,7 +70,17 @@ const Footer = () => {
                       priority
                     />
                   </Link>
+
                 </div>
+
+   <div className="flex space-x-3 mt-4">
+ <Link href="/privacy-policy" className="text-sm text-[#797A7D] font-size: 1rem;  hover:text-[#00A7DE]">
+ Privacy Policy
+  </Link>
+<Link href="/termsService" className="text-sm text-[#797A7D] font-size: 1rem;  hover:text-[#00A7DE]">
+    Terms of Service
+   </Link>
+ </div>
               </motion.div>
   
               {/* Pages */}

@@ -116,9 +116,9 @@ export default function HeroSection({
   >
     {metrics.map((item, index) => {
       const staticIcons = [
-        "/images/clock.png",
-        "/images/Frame.png",
-        "/images/wave.png",
+        "/industries-images/reuse-icons/clock.png",
+        "/industries-images/reuse-icons/Frame.png",
+        "/industries-images/reuse-icons/wave.png",
       ];
 
       return (

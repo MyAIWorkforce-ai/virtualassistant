@@ -1,0 +1,22 @@
+[
+  { "name": "Physiotherapist", "slug": "physiotherapy", "image": "/industries-images/physiotherapist/hero.png" },
+  { "name": "Myotherapist", "slug": "myotherapist", "image": "/industries-images/myotherapist/hero.png" },
+  { "name": "Personal Trainer", "slug": "personaltrainer", "image": "/industries-images/personaltrainer/hero.png" },
+  { "name": "Massage Therapist", "slug": "massagetherapist", "image": "/industries-images/massagetherapist/hero.png" },
+  { "name": "Psychology", "slug": "psychology", "image": "/industries-images/psychology/hero.png" },
+  { "name": "Chiropractor", "slug": "chiropractor", "image": "/industries-images/chiropractor/hero.png" },
+  { "name": "Podiatrist", "slug": "podiatrist", "image": "/industries-images/podiatrist/hero.png" },
+  { "name": "Beauty Therapist", "slug": "beauty-therapist", "image": "/industries-images/beauty-therapist/hero.png" },
+  { "name": "Hair Dresser", "slug": "hairdresser", "image": "/industries-images/hairdresser/hero.png" },
+  { "name": "Dentist", "slug": "dentist", "image": "/industries-images/dentist/hero.png" },
+  { "name": "Lawyer", "slug": "lawyer", "image": "/industries-images/lawyer/hero.png" },
+  { "name": "Accountant", "slug": "accountant", "image": "/industries-images/accountant/hero.png" },
+  { "name": "Cleaning", "slug": "cleaning", "image": "/industries-images/cleaning/hero.png" },
+  { "name": "Electricians", "slug": "electricians", "image": "/industries-images/electricians/hero.png" },
+  { "name": "Estate Agent", "slug": "estateagent", "image": "/industries-images/estateagent/hero.png" },
+  { "name": "For Others", "slug": "forothers", "image": "/industries-images/forothers/hero.png" },
+  { "name": "Machanic", "slug": "machanic", "image": "/industries-images/machanic/hero.png" },
+  { "name": "Plumber", "slug": "plumber", "image": "/industries-images/plumber/hero.png" },
+  { "name": "Resturant", "slug": "resaturant", "image": "/industries-images/resaturant/hero.png" },
+  { "name": "Consultant", "slug": "consultant", "image": "/industries-images/consultant/hero.png" }
+]

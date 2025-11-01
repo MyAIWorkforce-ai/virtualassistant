@@ -24,7 +24,6 @@
       }
     ]
   },
-  
   "about": {
     "heading": "AI Virtual Receptionist for Myotherapists",
     "sections": [
@@ -42,32 +41,156 @@
       }
     ]
   },
-
-   "keyBenefits": {
+  "keyBenefits": {
     "heading": "Key Benefits",
-    "subheading": "Enhance your physiotherapy practice with intelligent automation that reduces admin work, streamlines patient care, and improves efficiency.",
+    "subheading": "Streamline your practice with intelligent automation and patient care tools",
     "cards": [
       {
-        "title": "Automated Scheduling",
-        "description": "Automatically manage appointments, follow-ups, and reminders without manual intervention."
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Increased Efficiency",
+        "description": "Automated appointment bookings,  reminders, and follow-ups to keep  your schedule organized."
       },
       {
-        "title": "Improved Client Retention",
-        "description": "Smart reminders and personalized care keep clients coming back for more treatments."
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Secure Patient Records",
+        "description": "Enhance relationships through timely communication and consistent follow-ups."
       },
       {
-        "title": "Centralized Treatment Records",
-        "description": "Easily access client history, preferences, and progress in one organized system."
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Better Adherence",
+        "description": "Fewer no-shows and better treatment adherence tracking for improved outcomes."
       },
       {
-        "title": "Enhanced Care Quality",
-        "description": "Tailored post-treatment guidance ensures better results and client satisfaction."
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Better Adherence",
+        "description": "Fewer no-shows and better treatment adherence tracking for improved outcomes."
       },
       {
-        "title": "Reduce Stress",
-        "description": "Instant confirmations reduce back-and-forth communication with clients."
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
+        "title": "Smooth Communication",
+        "description": "Streamline administrative work so you can focus on what matters most."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#FFF0FA] to-[#FFD6F3]",
+        "title": "Enhanced Patient Experience",
+        "description": "No hold times or unanswered calls — your patients always get a professional, friendly response."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFEDED] to-[#FFD6D7]",
+        "title": "Customizable to Your Practice",
+        "description": "We tailor the assistant’s tone, responses, and knowledge to sound exactly like your clinic."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
+        "title": "Cost-Effective and Reliable",
+        "description": "Save thousands on reception staff while having a 24/7 assistant that never misses a call."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#F0FFEA] to-[#D9FFC8]",
+        "title": "Boosts Online Reputation",
+        "description": "Better communication leads to happier patients, more 5-star reviews, and stronger SEO visibility."
       }
     ]
-  }
+  },
+  "whyChoose": {
+    "heading": "Why Physiotherapists Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is built to meet the specific needs of Australian physiotherapists. It integrates with your existing systems, handles calls professionally, and keeps your business running smoothly around the clock. Let our AI take care of admin — so you can take care of your patients.",
+    "leftBox": {
+      "heading": "Streamlined Follow-Up and Client Management",
+      "description": "After each appointment, physiotherapists can add notes, record voice memos that are transcribed and summarized, and upload documents or photos directly to the client’s record. Everything is stored securely in one place, providing a complete client history for seamless follow-ups and continuity of care."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "Automated Reminders",
+        "description": "Send automated reminders for upcoming physio sessions and appointments."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Exercise Routines",
+        "description": "Provide patients with personalized exercise routines and reminders."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Calendar Sync",
+        "description": "Sync with calendars to avoid overlapping bookings and conflicts."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Patient Progress Tracking",
+        "description": "Track rehabilitation milestones and log patient progress digitally."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer common patient inquiries via AI chat or voice assistant."
+      }
+    ]
+  },
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Sports Injury Recovery Patient",
+      "description": "A patient books facial and manicure treatment through your virtual assistant.A patient recovering from a sports injury books recurring sessions through your AI assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Confirms their appointments instantly with available"
+      },
+      {
+        "title": "Smart Reminders",
+        "text": "Sends reminders with prep instructions like  wear flexible clothing."
+      },
+      {
+        "title": "Progress Logging",
+        "text": "Logs treatment updates after each session automatically."
+      },
+      {
+        "title": "Exercise Reminders",
+        "text": "Reminds the patient daily about prescribed home exercises."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Healthcare",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  },
+  "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "Save time by letting AI schedule recurring beauty sessions automatically."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Reminders",
+      "description": "Reduce missed visits with timely alerts and preparation instructions."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Patient Records",
+      "description": "Quickly review treatment history without manual searches."
+    }
+  ]
+}
+
+
+
 
 }
