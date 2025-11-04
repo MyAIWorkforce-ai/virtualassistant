@@ -5,7 +5,7 @@
     "title": "AI for Window Cleaning",
     "description": "Your virtual assistant modernizes your window cleaning business by bookings, tracking job routes, sending cleaning reminders, and scheduling follow-ups, so you can focus on shining windows",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/window-cleaning/window-cleaning-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -46,55 +46,55 @@
     "subheading": "Enhance your restaurant operations with AI-driven automation that simplifies reservations, personalizes service, and boosts customer retention.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Capture Every Call",
         "description": "Never miss a booking or client inquiry — even when you’re working on-site."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/resue-icons/kb-scheduling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Automated Scheduling",
         "description":" Books, confirms, and reschedules cleaning jobs automatically to keep your calendar full."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from once-off cleans to regular maintenance plans."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/resue-icons/kb-size.png.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Ideal for solo cleaners, small teams, and large cleaning companies — scaling effortlessly as you grow."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/resue-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
-        "title": "Affordable 24/7 Coverage",
+        "title": "Affordable 24/7 Support",
         "description": "Operates like a full-time receptionist without the cost or downtime."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/resue-icons/kb-experience.png",
         "gradient": "from-[#F5FFF9] to-[#DFFFED]",
         "title": "Improved Customer Experience",
         "description": "Delivers quick, friendly, and accurate responses that help build trust and repeat business."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/window-cleaning/kb-automation.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Time-Saving Automation",
         "description": "AI handles reminders, quote confirmations, and post-cleaning follow-ups so you can focus on growing your business."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/window-cleaning/kb-retention.png",
         "gradient": "from-[#F9FFE4] to-[#F4FFCE]",
         "title": "Boosted Client Retention",
         "description": "Automated check-ins and seasonal cleaning reminders keep your clients engaged and ensure regular bookings."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/window-cleaning/kb-records.png",
         "gradient": "from-[#FAF4FF] to-[#F2E4FF]",
         "title": "Centralized Job Records",
         "description": "Store all client data, service history, and job photos in one place — easily accessible for repeat or team jobs."
@@ -108,33 +108,33 @@
       "heading": "Simplify Client Notes and Follow-Ups",
       "description":"After each clean, record a quick voice memo that’s automatically transcribed and summarized — perfect for noting specific client preferences, access details, or maintenance notes. Upload invoices, service reports, and client photos directly into your dashboard for simple, organized record-keeping."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/window-cleaning/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/window-cleaning/pu-cleaning.png",
         "title": "Residential Cleaning",
         "description": "Manage window cleaning for homes, apartments, and residential complexes."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/window-cleaning/pu-project.png",
         "title": "High-Rise Projects",
         "description": "Schedule certified cleaners for multi-story or specialized building jobs."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/resue-icons/pu-maintanance.png",
         "title": "Routine Maintenance",
         "description": "Encourage regular cleanings with automated seasonal or monthly reminders."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/window-cleaning/pu-commercial-cleaning.png",
         "title": "Commercial Cleaning",
         "description": "Coordinate office buildings, storefronts, and property management clients."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/resue-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Respond to client inquiries, handle bookings, and send automated notifications via chat or SMS."
       }

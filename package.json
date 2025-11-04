@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "framer-motion": "^12.23.12",
+    "git": "^0.1.5",
     "lucide-react": "^0.542.0",
     "next": "^15.5.0",
     "next-sitemap": "^4.2.3",

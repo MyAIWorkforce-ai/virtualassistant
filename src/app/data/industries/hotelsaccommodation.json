@@ -5,7 +5,7 @@
     "title": "AI for Hotels and Accommodation",
     "description": "Your virtual assistant modernizes hospitality operations by managing bookings, guest communication, housekeeping coordination, and follow-up services.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/hotel-and-accomudation/hotel-and-accomudation.main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -46,55 +46,55 @@
     "subheading": "Enhance your hotel operations with intelligent automation that reduces manual work, personalizes guest experiences, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "24/7 Booking Management",
         "description": "Handles room inquiries, reservations, and cancellations automatically — day or night."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icon/kb-communication.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Professional Guest Communication",
         "description": "Delivers accurate and friendly responses to every inquiry, ensuring a polished first impression."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Property",
         "description": "Your AI Receptionist can be trained specifically to your business — matching your tone, guest experience, and operational process."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-sizes.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Perfect for boutique hotels, motels, lodges, caravan parks, serviced apartments, or Airbnb property managers — scaling as you grow."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-reliabel.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable and Reliable",
         "description": "Acts as your full-time receptionist for a fraction of the cost, ensuring constant guest support."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-experience.png",
         "gradient": "from-[#F8FFF2] to-[#E8FFDB]",
         "title": "Enhanced Guest Experience",
         "description": ": : Responds instantly and professionally, improving guest satisfaction and boosting bookings."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-automation.png",
         "gradient": "from-[#F5F9FF] to-[#E4F1FF]",
         "title": "Time-Saving Automation",
         "description": "AI manages inquiries, bookings, and service requests so staff can focus on delivering top-quality hospitality."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-retention.png",
         "gradient": "from-[#FFFFF6] to-[#FFFEE4]",
         "title": "Boosted Guest Retention",
         "description": "Regular communication, loyalty offers, and personalized follow-ups encourage repeat stays."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/hotel-and-accommodation/kb-history.png",
         "gradient": "from-[#F4FBFF] to-[#E4F6FF]",
         "title": "Centralized Data History",
         "description": "Instant access to guest preferences, booking history, and service records for smooth operations."
@@ -108,33 +108,33 @@
       "heading": "Simplify Guest Notes and Follow-Ups",
       "description": "After each stay or guest interaction, your team can record a short voice memo that’s automatically transcribed and summarized — perfect for noting special requests or VIP preferences. You can upload booking details, maintenance notes, or feedback directly into your dashboard, ensuring seamless guest service and team coordination."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/hotel-and-accomudation/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/hotel-and-accommodation/pu-management.png",
         "title": "General Hotel Management",
         "description": "Handle bookings, room allocations, check-ins, and check-outs seamlessly."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/hotel-and-accommodation/pu-tracking.png",
         "title": "Guest Progress Tracking",
         "description": "Keep track of guest preferences, feedback, and past stays for improved personalization."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/hotel-and-accommodation/pu-maintanance.png",
         "title": "Routine Maintenance",
         "description": "Automate housekeeping schedules, equipment checks, and inventory management."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/hotel-and-accommodation/pu-services.png",
         "title": "Specialized Services",
         "description": "Support spa reservations, event hosting, restaurant bookings, and VIP guest handling."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Respond to common guest inquiries via AI chat or voice assistant for faster service."
       }
