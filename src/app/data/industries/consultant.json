@@ -1,0 +1,195 @@
+{
+  "slug": "consultant",
+  "heroSection": {
+    "tag": "Consulting Care",
+    "title": "AI for Consultant",
+    "description": "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, sending follow-up reminders, and streamlining client communication.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Fewer missed meetings and project deadlines with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduced hours spent on scheduling, note-taking, and administrative tasks."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher client satisfaction through consistent follow-ups and personalized care."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Consultants",
+    "sections": [
+      {
+        "subheading": "Smart Support for Every Type of Consultant",
+        "paragraph": "AAt VirtualAssistant.com.au, we understand that consultants juggle multiple clients, meetings, and deadlines daily. Our AI Virtual Receptionist is built to handle your admin tasks efficiently — answering calls, booking consultations, and managing client inquiries, so you can focus on strategy, delivery, and results. Whether you’re a solo business consultant, marketing strategist, or part of a larger advisory firm, our AI adapts to your business perfectly."
+      },
+      {
+        "subheading": "Stay Focused on Clients, Not Admin ",
+        "paragraph": "Your AI Receptionist handles incoming calls and messages professionally, ensuring clients always receive a prompt, polished response. It can answer questions like ‘How can I book a consultation?’, ‘Do you offer business coaching?’, or ‘Can we arrange a strategy call this week?’ — all while reflecting your brand’s professional tone. It also manages bookings, reschedules, sends reminders, and ensures your schedule stays organized and up to date."
+      },
+      {
+        "subheading": "Never Miss a Client or Opportunity",
+        "paragraph": "Whether you’re in a meeting, on a call, or traveling between clients, your AI Receptionist keeps your business running smoothly. It captures every inquiry, books discovery calls, and provides information about your consulting packages, services, or speaking engagements. You’ll never miss a lead or follow-up opportunity again."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your consulting practice with intelligent automation that reduces admin work, personalizes client service, and increases productivity.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Professional and Reliable",
+        "description": "Ensures your clients always experience a high level of professionalism and responsiveness."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Effortless Appointment Management",
+        "description": "Automates consultation scheduling, rescheduling, and follow-up reminders to keep your day running smoothly."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Fully Customizable to Your Business",
+        "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and client approach."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "24/7 Client Support",
+        "description": "Works around the clock to manage calls, inquiries, and leads, even outside your normal business hours."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Scalable for Solo or Team Consultants",
+        "description": "Perfect for independent consultants, small advisory teams, or larger firms needing consistent client communication."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#FDF2FF] to-[#F5D8FF]",
+        "title": "Automated Scheduling",
+        "description": "Automatically manage client appointments, meetings, and deadlines without manual intervention."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFFFEB] to-[#FDFFD2]",
+        "title": "Improved Client Care",
+        "description": "Meeting notes, project updates, and client communications remain consistent and personalized."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#EAF9FF] to-[#CCF1FF]",
+        "title": "Time-Saving Automation",
+        "description": "AI manages routine follow-ups, reminders, and recurring tasks for efficient consulting service."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#FFF3E5] to-[#FFE9D0]",
+        "title": "Boosted Client Retention",
+        "description": "Regular check-ins, status updates, and personalized action plans help cultivate strong client relationships."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Consultants Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by consultants across industries — from finance and business strategy to digital marketing and coaching. It integrates seamlessly with your booking systems, email, and CRM tools, ensuring a consistent and professional experience for every client. Most importantly, your AI Receptionist can be trained to match your business’s exact workflow, tone, and service offerings — helping you maintain your brand’s personal touch while scaling your operations. Let our AI manage your communication so you can focus on delivering results, growing your client base, and building long-term success.",
+    "leftBox": {
+      "heading": "Simplify Client Notes and Follow-Ups",
+      "description": "After each meeting, you can record a short voice memo that’s automatically transcribed and summarized for easy reference. You can also upload proposals, project notes, or client feedback directly into your system, keeping your workflow efficient and your records organized."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "General Consulting Practice",
+        "description": "Manage project workflows, client onboarding, meeting scheduling, and result tracking."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Specialized Consulting Services",
+        "description": "Support management, IT, HR, strategy, and compliance consulting with automated processes."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine  Maintenance",
+        "description": "Automate recurring project reviews, client check-ins, and regular reporting."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Client Progress Tracking",
+        "description": "Log project status, deliverables, milestones, and follow-up actions for each client."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer client inquiries, schedule meetings, and provide real-time support via AI assistant."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-ups",
+      "description": "Save time by having AI schedule recurring client meetings and reminders."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Project Management",
+      "description": "Reduce missed deadlines and improve efficiency with AI-powered notifications."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Centralized Client History",
+      "description": "Quickly access past meeting notes, files, and project details without manual searches."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Client Project Review & Action Plan",
+      "description": "A client schedules a review session and receives updates, reminders, and next steps through your virtual assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Clients receive automatic meeting confirmations and reminders."
+      },
+      {
+        "title": "Action Notes",
+        "text": "Records project status, deliverables, and meeting outcomes for each client."
+      },
+      {
+        "title": "Recurring Follow-ups",
+        "text": "Automates scheduling of project reviews, progress check-ins, and feedback requests."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Sends reminders for upcoming milestones, deadlines, and reporting needs."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Consulting",
+    "subtitle": "Join thousands of professionals who are transforming their consulting workflow and client service with our AI solutions."
+  }
+
+}

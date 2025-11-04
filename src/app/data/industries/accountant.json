@@ -1,0 +1,195 @@
+{
+  "slug": "accountant",
+  "heroSection": {
+    "tag": "Accounting",
+    "title": "AI for Accountant  ",
+    "description": "Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, and scheduling client follow-ups.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Fewer missed appointments with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduced hours spent on scheduling and note-taking."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher client adherence with consistent style tracking and tailored care."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Accountants",
+    "sections": [
+      {
+        "subheading": "Modern Solutions for a Modern Accounting Firm",
+        "paragraph": "At VirtualAssistant.com.au, we understand that every call to your accounting firm represents potential value — a client query, a consultation booking, or a new business lead. Our AI Virtual Receptionist ensures no opportunity is missed, managing your firm’s calls, bookings, and inquiries with precision, professionalism, and confidentiality."
+      },
+      {
+        "subheading": "Focus on Clients, Not Calls",
+        "paragraph": "Your AI Receptionist handles day-to-day administrative communication while you focus on providing expert accounting and advisory services. It can answer questions such as ‘When can I book a tax consultation?’, or ‘Can I schedule a meeting with my accountant?’, all with an intelligent and professional tone. It also manages appointments, sends reminders, and captures key details to keep your calendar organized."
+      },
+      {
+        "subheading": "Never Miss a Client or Lead Again",
+        "paragraph": "Whether you’re in a meeting, reviewing reports, or outside business hours, your AI Receptionist ensures every call and inquiry is answered promptly. It provides details about your services — from tax returns and financial planning to business advisory and bookkeeping — and books or reschedules appointments automatically. You’ll never lose a client lead or miss a new business opportunity again."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your accounting practice with intelligent automation that reduces admin work, personalizes client care, and increases efficiency.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Professional and Reliable",
+        "description": "Ensures your firm always presents a consistent, polished image with every call and inquiry."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Streamlined Appointment Management",
+        "description": "Automates scheduling, rescheduling, and reminders for consultations and client meetings."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Fully Customizable to Your Firm",
+        "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and service structure."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "24/7 Coverage",
+        "description": "Provides reliable, around-the-clock availability to support clients and prospects, even outside office hours."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Secure and Confidential",
+        "description": "Maintains strict professionalism, ensuring client information and communication remain private at all times."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#F9FFEA] to-[#F3FFD7]",
+        "title": "Improved Client Care",
+        "description": "Financial charts, reminders, and communications are consistent and personalized."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "AI manages recurring tasks, follow-ups, and reminders to deliver quality accounting service."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#FEF4FF] to-[#D8F8FF]",
+        "title": "Boosted Client Retention",
+        "description": "Regular check-ins and personalized service plans keep clients returning."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#FEF4FF] to-[#F9D0FF]",
+        "title": "Centralized History",
+        "description": "Easy access to past invoices, receipts, and client records for seamless service."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Accounting Firms Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by accountants, bookkeepers, and financial advisors across Australia. It integrates seamlessly with your scheduling and CRM systems, delivering accurate, courteous, and consistent communication. Most importantly, your AI Receptionist can be tailored to your firm’s specific processes, ensuring it operates as an extension of your professional team. Let our AI manage your reception so you can focus on delivering financial clarity and growth for your clients.",
+    "leftBox": {
+      "heading": "Streamline Follow-Ups and Client Communication",
+      "description": "After each consultation, your team can record short voice memos that are automatically transcribed and summarized, helping maintain accurate client notes. The AI system can also manage follow-up reminders for tax deadlines, document submissions, and client appointments — keeping your workflow efficient and compliant."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "General Accounting",
+        "description": "Manage bookkeeping, expense tracking, invoicing, and quarterly/annual tax preparation."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Specialized Services",
+        "description": "Support payroll, auditing, compliance, and consultancy."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine  Maintenance",
+        "description": "Automate recurring financial reviews for consistent long-term stability."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Client Progress Tracking",
+        "description": "Log client transactions, invoices, payment history, and follow-up updates."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer client inquiries via AI chat or voice assistant."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "Save time by letting AI schedule recurring client meetings automatically."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Reminders",
+      "description": "Reduce missed deadlines with AI-powered alerts."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Centralized Records",
+      "description": "Quickly retrieve client histories without manual searches."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Expense & Tax Management",
+      "description": "A client schedules a consultation and receives reminders and updates through your virtual assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Save time by letting AI send appointment confirmation and reminders automatically."
+      },
+      {
+        "title": "Financial Notes",
+        "text": "Records invoices, expenses, and financial notes for each client."
+      },
+      {
+        "title": "Recurring Alerts",
+        "text": "Automatically schedule review meetings, payment reminders, and compliance updates."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Sends reminders for quarterly tax filings, renewal deadlines, and account updates."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Accounting",
+    "subtitle": "Join thousands of accounting professionals transforming practice management with our AI solutions."
+  }
+
+}

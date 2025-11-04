@@ -1,0 +1,197 @@
+{
+  "slug": "electricians",
+  "heroSection": {
+    "tag": "Electrical Services",
+    "title": "AI for Electricians",
+    "description": "Your virtual assistant modernizes electrical operations by managing appointments, diagnosing, sending safety reminders, and scheduling followups , so you can focus on powering homes.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Fewer missed service appointments with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduction in hours spent on scheduling and documentation."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher client satisfaction with consistent safety tracking and follow-up maintenance."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Electricians",
+    "sections": [
+      {
+        "subheading": "A Smarter Way to Manage Your Electrical Business",
+        "paragraph": "At VirtualAssistant.com.au, we understand that electricians are constantly on the go, from emergency power outages to large-scale installations. Whether you’re a one-man operation working from your van, part of a small electrical team, or running a large company, our AI Virtual Receptionist adapts to your business perfectly. It handles your calls, bookings, and urgent job inquiries automatically, so you never miss a client, a quote request, or a new job."
+      },
+      {
+        "subheading": "Focus on the Job, Not the Phone",
+        "paragraph": "Your AI Receptionist answers every call while you’re on-site or up a ladder. It can respond instantly to questions like ‘Can you come out today?’, ‘Do you install ceiling fans?’, or ‘Is this a 24-hour service?’ with clear, professional answers. It also books jobs, reschedules appointments, and sends reminders, keeping your day organized and your clients informed."
+      },
+      {
+        "subheading": "Never Miss an Emergency or New Client Again",
+        "paragraph": "Even after hours or during busy periods, your AI Receptionist ensures every inquiry is handled. It provides information about your services — from residential wiring and safety inspections to switchboard upgrades and industrial maintenance — and books jobs directly into your calendar. Whether you work alone or manage a large electrical team, it helps you stay efficient and responsive 24/7."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your electrical business with intelligent automation that reduces admin time, increases response speed, and ensures safety compliance.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Capture Every Call",
+        "description": "Never miss a lead, emergency, or service inquiry — even while you’re on another job."
+
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Streamlined Job Scheduling",
+        "description":" Automates bookings, reschedules, and reminders to keep your workload organized and efficient."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Fully Customizable to Your Business",
+        "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from urgent callouts to major installations."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Works for All Business Sizes",
+        "description": "Perfect for solo electricians, small teams, and large companies — scaling easily as your business grows."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Affordable 24/7 Coverage",
+        "description": "Operates like a full-time receptionist at a fraction of the cost."
+
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#F5FFF9] to-[#DFFFED]",
+        "title": "Improved Customer Experience",
+        "description": "Provides fast, friendly, and accurate responses that keep your clients coming back."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "AI handles appointment confirmations, estimates, invoicing notes, and post-job communications, giving you more time for on-site work."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#FFFCF1] to-[#FFFAE0]",
+        "title": "Boosted Client Retention",
+        "description":" Automated maintenance alerts keep customers engaged and ensure timely electrical servicing."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#F6FBFF] to-[#E5F3FF]",
+        "title": "Centralized Job Records",
+        "description": "Easily access past installations, and inspection reports all organized per property for a seamless workflow."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Electricians Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by electricians across Australia — from home-based tradies to large-scale electrical companies. It integrates seamlessly with your scheduling and job management tools, ensuring clear communication and efficient service delivery. Best of all, your AI Receptionist can be trained specifically to your electrical business — matching your tone, services, and workflow. Let our AI handle the admin so you can focus on what you do best — keeping the lights on and your clients safe.",
+    "leftBox": {
+      "heading": "Simplify Job Notes and Follow-Ups",
+      "description":"After each job, record a quick voice memo that’s automatically transcribed and summarized — perfect for tracking what was done, materials used, or follow-up work needed. Upload quotes, invoices, or compliance certificates directly into your dashboard, keeping your admin streamlined and secure."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.pngResidential Cleaning",
+        "description": "General Electrical Services",
+        "title": "Manage wiring, lighting installations, power outlet repairs, and electrical upgrades."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Specialized Installations",
+        "description": "Support for solar systems, smart home setups, EV chargers, and security systems."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine Maintenance",
+        "description": "Encourage annual electrical safety inspections and preventative maintenance checks."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Emergency Repairs",
+        "description": "Rapid scheduling for power outages, short circuits, and urgent electrical faults."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer common inquiries via chat, voice, or SMS, and assist with troubleshooting and dispatching.."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "AI schedules routine maintenance and inspection reminders automatically."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Notifications",
+      "description": "Reduce missed jobs with intelligent reminders for upcoming or delayed appointments."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Accurate Job Records",
+      "description": "Access service history, inspection results, and repair details in one organized system."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Lighting Installation & Safety Check",
+      "description": "A homeowner requests an LED lighting upgrade. The AI assistant:"
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Collects customer details and service requirements."
+      },
+      {
+        "title": "Repair Notes",
+        "text": "Suggests the best time slot based on technician availability."
+      },
+      {
+        "title": "Recurring Services",
+        "text": "Confirms the appointment and sends pre-visit safety reminders."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Schedules a follow-up maintenance reminder and warranty check."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Electrical Services ",
+    "subtitle": "Join thousands of electricians using AI to enhance customer communication, safety compliance, and business efficiency."
+  }
+
+}

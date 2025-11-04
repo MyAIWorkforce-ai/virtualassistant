@@ -1,0 +1,196 @@
+{
+  "slug": "massagetherapist",
+  "heroSection": {
+    "tag": "Massage Therapy",
+    "title": "AI for Massage Therapist",
+    "description": "Your virtual assistant handles bookings, reminders, and notes, so you can focus on delivering care, not admin.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/massagetherapist/massagetherapist-main.png",
+    "metrics": [
+      {
+        "value": "30%",
+        "title": "Less time on scheduling and note-taking, more time with clients."
+      },
+      {
+        "value": "98%",
+        "title": "Automated reminders ensure better attendance."
+      },
+      {
+        "value": "25%",
+        "title": "Follow-up tracking and reminders help maintain regular sessions."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Massage Therapists",
+    "sections": [
+      {
+        "subheading": "Simplify and Modernize Your Massage Practice",
+        "paragraph": "At VirtualAssistant.com.au, we know how busy massage therapists can be between back-to-back appointments. Our AI Virtual Receptionist is designed to take care of your phone calls, bookings, and client inquiries — so you can focus entirely on delivering a relaxing, professional experience."
+      },
+      {
+        "subheading": "More Time for Clients, Less Time on the Phone",
+        "paragraph": "Our AI Receptionist works like your personal front desk assistant — answering every call, explaining services, handling bookings, and sending appointment reminders. Whether you’re with a client or the clinic is closed, your AI receptionist ensures no message or potential booking slips through."
+      },
+      {
+        "subheading": "Never Miss a Client Opportunity Again",
+        "paragraph": "Even when you’re busy giving treatments, your AI Receptionist keeps your business moving. It can discuss available services like relaxation, remedial, or deep tissue massage, provide accurate pricing and duration details, and confirm bookings instantly. You’ll never lose a client because of a missed call again."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Streamline your practice with intelligent automation that enhances patient care and reduces administrative burden.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Automated Scheduling",
+        "description": "Session scheduling, reminders, and follow-ups handled automatically, reducing no-shows and improving patient adherence."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Organized Records",
+        "description": "Record massage details, focus areas, and client preferences in seconds."
+      },
+      {
+        "icon": "/industries-images/massagetherapist/kb-retention.png",
+        "gradient": "from-[#E6EEFF] to-[#C7D8FE]",
+        "title": "Stronger Client Retention",
+        "description": "Regular follow-ups encourage ongoing wellness sessions."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-enhanced.png",
+        "gradient": "from-[#FFF0FA] to-[#FFD6F3]",
+        "title": "Smooth Client Communication",
+        "description": "Your clients are always greeted with warmth and professionalism — no waiting or voicemail frustration."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "More Care ",
+        "description": "Spend less time on admin and more time delivering relaxation and therapy."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Build Client Loyalty",
+        "description": " Provide a seamless, responsive experience that encourages repeat bookings and 5-star reviews."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "gradient": "from-[#FFEDED] to-[#FFD6D7]",
+        "title": "Custom-Fitted for Your Clinic",
+        "description": "We personalize the assistant’s tone, vocabulary, and booking flow to match your massage brand and service list."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-reliable.png",
+        "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
+        "title": "Affordable and Consistent",
+        "description": "Enjoy 24/7 coverage for a low monthly cost — reliable, accurate, and always available. "
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-boosts.png",
+        "gradient": "from-[#F0FFEA] to-[#D9FFC8]",
+        "title": "Hands-Free Admin",
+        "description": "Let the AI manage calls, bookings, cancellations, and reminders so you can focus on your work."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Massage Therapists Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by massage therapists across Australia to save time, reduce admin, and improve professionalism. It integrates with your booking system, handles calls gracefully, and keeps your clients informed 24/7. Let our AI take care of reception — so you can focus on relaxation, recovery, and results for your clients.",
+    "leftBox": {
+      "heading": "Streamlined Client Notes and Follow-Ups",
+      "description": "After each appointment, massage therapists can record short voice memos that are automatically transcribed and summarized, add treatment notes, and upload client records or documents. All information is organized securely in your dashboard, making it easy to track sessions, manage follow-ups, and deliver a personalized client experience."
+    },
+    "image": "/industries-images/massagetherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/reuse-icons/pu-stressrelief.png",
+        "title": "Stress Relief Management",
+        "description": "Help clients reduce stress, anxiety, and tension through regular massage sessions."
+      },
+      {
+        "icon": "/industries-images/massagetherapist/pu-paininjury.png",
+        "title": "Pain & Injury Recovery",
+        "description": "Support healing from muscle strain, stiffness, or sports-related injuries."
+      },
+        {
+        "icon": "/industries-images/massagetherapist/pu-wellness.png",
+        "title": "Wellness & Relaxation",
+        "description": "nhance overall wellbeing, relaxation, and sleep quality."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
+        "title": "Patient Progress Tracking",
+        "description": "Record personalized notes and monitor treatment effectiveness over time."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer common patient inquiries via AI chat or voice assistant."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/industries-images/reuse-icons/pg-timesaving.png",
+      "title": "Time Savings",
+      "description": "Bookings are automatically confirmed with reminders, saving time on client communication."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-dropoffs.png",
+      "title": "Reduced Drop-offs",
+      "description": "Reduces missed appointments with smart confirmation and tracking"
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-recordkeeping.png",
+      "title": "Record Keeping",
+      "description": "Session notes (techniques, pressure points, progress) are logged digitally without manual effort."
+    },
+       {
+      "icon": "/industries-images/reuse-icons/pg-facetime.png",
+      "title": "Care Support",
+      "description": "AI-generated exercise/stretch reminders tailored to each client’s recovery plan. "
+    }
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Chronic Back Pain Consultation",
+      "description": "A patient experiencing chronic back stiffness books a massage session through your virtual assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Confirms the appointment automatically  with available time slots."
+      },
+      {
+        "title": "Smart Reminders",
+        "text": "Sends reminders with prep instructions like 'wear' flexible clothing."
+      },
+      {
+        "title": "Treatment Logging",
+        "text": "Logs treatment updates after each session"
+      },
+      {
+        "title": "Home Care Support",
+        "text": "Sends daily or weekly reminders for stretching, or posture tips tailored to the patient’s recovery plan."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Healthcare",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}

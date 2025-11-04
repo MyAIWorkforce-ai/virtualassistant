@@ -1,0 +1,197 @@
+{
+  "slug": "plumber",
+  "heroSection": {
+    "tag": "Plumbing Services",
+    "title": "AI for Plumber",
+    "description": "Your virtual plumbing assistant modernizes service operations by managing appointments,recording job notes, sending maintenance reminders, and scheduling follow-ups — so you can fix pipes.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Fewer missed appointments with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduction in hours spent on scheduling and note-taking."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher repeat bookings with consistent service tracking and tailored maintenance plans."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Plumbers",
+    "sections": [
+      {
+        "subheading": "A Smarter Way to Manage Your Plumbing Business",
+        "paragraph": "At VirtualAssistant.com.au, we understand that plumbers are constantly on the move, from blocked drains to burst pipes, you’re always on call. Whether you’re a one-man operation working from your van, part of a small plumbing team, or running a large plumbing company, our AI Virtual Receptionist adapts perfectly to your needs. It handles your calls, job bookings, and emergency inquiries automatically, ensuring you never miss a customer or urgent job."
+      },
+      {
+        "subheading": "Focus on the Job, Not the Phone ",
+        "paragraph": " Your AI Receptionist answers every call while you’re on site. It can respond instantly to questions like ‘Can you come out today?’, ‘Do you fix hot water systems?’, or ‘What’s your call-out fee?’ — providing clear, friendly, and accurate responses. It can also schedule new jobs, reschedule existing ones, send reminders, and notify clients when you’re on your way — saving you valuable time. "
+      },
+      {
+        "subheading": "Never Miss an Emergency or New Job Again ",
+        "paragraph": "Even after hours, on weekends, or when you’re up to your elbows in a repair, your AI Receptionist ensures every call is answered. It provides information about your plumbing services — from leak detection and drain cleaning to hot water repairs and renovations — and can book jobs directly into your calendar. Whether you’re working solo or managing a team, it helps you stay organized, responsive, and available 24/7. "
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your electrical business with intelligent automation that reduces admin time, increases response speed, and ensures safety compliance.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Capture Every Call",
+        "description": "Never miss a lead, emergency, or booking — even when you’re on another job. "
+
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Streamlined Job Scheduling",
+        "description":" Automates bookings, reschedules, and reminders for smooth day-to-day operations. "
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Fully Customizable to Your Business",
+        "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from emergency callouts to scheduled maintenance. "
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Works for All Business Sizes",
+        "description": "Ideal for solo plumbers, small teams, and large plumbing companies — scaling as your business grows. "
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Affordable 24/7 Coverage",
+        "description": "Operates around the clock at a fraction of the cost of hiring full-time admin staff."
+
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#F7FFF4] to-[#E4FFDB]",
+        "title": "Improved Customer Experience",
+        "description": "Provides fast, friendly, and accurate responses that keep your clients coming back."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "AI takes care of appointment confirmations, invoicing notes, and maintenance reminders so you can spend more time on solving problems."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#DBECFF] to-[#DBECFF]",
+        "title": "Boosted Client Retention",
+        "description":" Automated maintenance alerts keep customers engaged and ensure timely electrical servicing."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#FFFFF1] to-[#FEFFDA]",
+        "title": "Centralized Job Records",
+        "description": "Easy access to past jobs, parts used, diagnostics, photos, and customer preferences — all linked to the property address for seamless continuity."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Plumbers Choose VirtualAssistant.com.au ",
+    "description": "Our AI Virtual Receptionist is trusted by plumbers across Australia — from home-based sole traders to large-scale plumbing companies. It integrates seamlessly with your scheduling and job management systems, ensuring clear, professional communication with every client. Best of all, your AI Receptionist can be trained specifically to your plumbing business — adapting to your tone, services, and daily workflow. Let our AI handle your calls and admin so you can focus on what matters most — keeping your clients’ water flowing and their homes leak-free. ",
+    "leftBox": {
+      "heading": "Simplify Job Notes and Follow-Ups ",
+      "description":"After each job, you can record a quick voice memo that’s automatically transcribed and summarized — ideal for noting completed work, materials used, or follow-up needs. Upload invoices, service reports, or compliance certificates directly into your dashboard for easy tracking and organization. "
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.pngResidential Cleaning",
+        "description": "General Plumbing Services",
+        "title": "Manage routine repairs, drain cleaning, leak fixes, and fixture installations."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Specialized Treatments",
+        "description": "Support for sewer line work, water heaters, backflow, and gas appliance servicing."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine Maintenance Plans",
+        "description": "Encourage annual inspections, preventative servicing, and seasonal tune-ups."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Emergency Repairs",
+        "description": "Rapid triage and scheduling for burst pipes, severe leaks, or gas emergencies."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer common customer inquiries via chat, voice, or SMS and help dispatch the right technician.\\\\\\\\\\\\\\\\\\\\"
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "Save time by letting AI schedule recurring maintenance and reminder campaigns automatically."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Notifications",
+      "description": "Reduce missed visits with AI-powered alerts and rescheduling suggestions."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Accurate Job Records",
+      "description": "Quickly review service history, parts used, and previous diagnostics without searching paper files."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Leaky Shower Repair",
+      "description": "A homeowner reports a persistent shower leak. The AI assistant:"
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Confirms urgency and captures key details (location, symptoms, photos)."
+      },
+      {
+        "title": "Repair Notes",
+        "text": "Suggests likely causes and required parts to the dispatcher."
+      },
+      {
+        "title": "Recurring Services",
+        "text": "Automatically schedules the nearest qualified technician and sends an ETA."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Schedules a follow-up maintenance reminder and warranty check."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Plumbing ",
+    "subtitle": "Join thousands of tradespeople using AI to transform customer care and streamline operations."
+  }
+
+}

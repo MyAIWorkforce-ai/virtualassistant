@@ -1,0 +1,192 @@
+{
+  "slug": "podiatrist",
+  "heroSection": {
+    "tag": "Foot & Ankle Care",
+    "title": "AI for Podiatrist    ",
+    "description": "Your virtual assistant streamlines podiatry care by managing appointments, recording treatment notes, sending recovery reminders, and scheduling follow-ups.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/podiatrist/podiatrist-main.svg",
+    "metrics": [
+      {
+        "value": "30%",
+        "title": "Fewer missed appointments with automated reminders."
+      },
+      {
+        "value": "98%",
+        "title": "Reduced hours spent on scheduling and note-taking."
+      },
+      {
+        "value": "25%",
+        "title": "More patient continuing regular therapy sessions."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Podiatrists",
+    "sections": [
+      {
+        "subheading": "Purpose-Built for Podiatrists",
+        "paragraph": "At VirtualAssistant.com.au, we understand that podiatry clinics need to balance clinical care with patient communication and admin. Our AI Virtual Receptionist is designed to do exactly that — handling phone calls, booking appointments, and answering patient questions while you stay focused on treatments. From general foot care to orthotic therapy, your AI Receptionist ensures patients always feel supported and informed."
+      },
+      {
+        "subheading": " Stay Focused on Your Patients",
+        "paragraph": "Your AI Receptionist can manage new patient inquiries, reschedule appointments, and handle cancellations automatically. It can respond to questions like ‘Do you treat heel pain?’ or ‘Can I claim my visit through private health?’ with natural, accurate answers — creating a professional first impression for every patient."
+      },
+      {
+        "subheading": "Never Miss a Patient or Referral",
+        "paragraph": "Whether you’re performing a biomechanical assessment, fitting orthotics, or managing diabetic foot care, your AI Receptionist ensures every call is answered. It can share information about your services, explain your consultation process, and confirm bookings directly in your schedule. You’ll never miss a new patient lead or important follow-up again."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your podiatry practice with intelligent automation that reduces admin work, streamlines patient care, and improves efficiency.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Automated Scheduling",
+        "description": "Session scheduling, reminders, and follow-ups handled automatically, reducing no-shows and improving patient adherence."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Organized Records",
+        "description": "Treatment notes, scans, and progress tracked automatically."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-care.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Improved Patient Experience",
+        "description": "Enhances patient satisfaction with instant replies and smooth communication."
+      },
+      {
+        "icon": "/industries-images/podiatrists/kb-care.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Continuous Care",
+        "description": "Enhances patient satisfaction with instant replies and smooth communication."
+      },
+      {
+        "icon": "/industries-images/podiatrists/kb-coverage.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Affordable 24/7 Coverage",
+        "description": "A cost-effective solution that supports your clinic around the clock."
+      },
+      {
+        "icon": "/industries-images/podiatrists/kb-compassionate.png",
+        "gradient": "from-[#FDFEFF] to-[#E4F8FF]",
+        "title": "Professional and Compassionate",
+        "description": "Provides warm, knowledgeable communication that reflects your clinic’s care standards."
+      },
+      {
+        "icon": "/industries-images/podiatrists/kb-management.png",
+        "gradient": "from-[#FFF8ED] to-[#FFEED2]",
+        "title": "Automated Appointment Management",
+        "description": "Provides warm, knowledgeable communication that reflects your clinic’s care standards."
+      },
+      {
+        "icon": "/industries-images/podiatrists/kb-information.png",
+        "gradient": "from-[#F7F4FF] to-[#E7E0FF]",
+        "title": "Accurate Patient Information",
+        "description": "Explains podiatry services clearly, including orthotic fittings, sports injury management, and nail surgery."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Fully Customizable to Your Clinic",
+        "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and patient experience."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Podiatrists Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by podiatrists across Australia to deliver reliable, professional, and personalized service. It integrates seamlessly with your booking system, provides accurate responses, and helps maintain your clinic’s reputation for efficiency and care. Best of all, your AI Receptionist can be trained specifically to your business requirements — ensuring every interaction matches your brand, tone, and workflow. Let our AI handle the admin while you help your patients walk comfortably and live pain-free.",
+    "leftBox": {
+      "heading": "Streamlined Client Notes and Progress Tracking",
+      "description": "After each session, personal trainers can record short voice memos that are automatically transcribed and summarized — perfect for tracking client progress or noting adjustments for their next session. You can also upload client assessments, progress photos, and nutrition plans. All data is stored securely in your dashboard, making it easy to stay organized and deliver a personalized, professional experience for every client."
+    },
+    "image": "/industries-images/podiatrist/why-choose.svg"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/chiropractors/pu-care.png",
+        "title": "Foot & Ankle Care",
+        "description": "Manage patients with heel pain, plantar fasciitis, bunions, or general foot discomfort."
+      },
+      {
+        "icon": "/industires-images/chiropractors/pu-recovery.png",
+        "title": "Injury Recovery",
+        "description": "Support recovery from sports injuries, sprains, fractures, or gait-related issues."
+      },
+      {
+        "icon": "/industires-images/chiropractors/pu-maintanance.png",
+        "title": "Wellness Maintenance",
+        "description": "Encourage regular checkups for overall foot health, mobility, and proper footwear guidance."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
+        "title": "Client Progress Tracking",
+        "description": "Log treatment notes, orthotic adjustments, pain levels, and exercise adherence."
+      },
+      {
+         "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer common patient inquiries via AI chat or voice assistant."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/industries-images/podiatrists/pg-follow-ups.png",
+      "title": "Automated Follow-Ups",
+      "description": "Save time by letting AI schedule recurring podiatry checkups."
+    },
+    {
+      "icon":  "/industries-images/podiatrists/pg-records.png",
+      "title": "Smart Reminders",
+      "description": "Reduce missed visits with timely, personalized alerts."
+    },
+    {
+      "icon":  "/industries-images/podiatrists/pg-reminder.png",
+      "title": "  Patient Records",
+      "description": "Quickly review treatment history without manual searches."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Heel Pain Consultation",
+      "description": "A patient struggling with heel pain books a consultation through your virtual assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Appointment is confirmed instantly with preparation advice (“bring previous footwear for assessment”)."
+      },
+      {
+        "title": "Treatment Notes Logging",
+        "text": "Records observations, scans, and treatment steps after each session."
+      },
+      {
+        "title": "Recurring Checkups",
+        "text": "Automatically schedules follow-up visits for orthotic adjustments or progress monitoring."
+      },
+      {
+        "title": "Recovery Reminders",
+        "text": "Sends tailored stretching, exercise, or footwear tips for ongoing care."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Healthcare",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}

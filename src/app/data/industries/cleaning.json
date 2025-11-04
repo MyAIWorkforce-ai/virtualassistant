@@ -1,0 +1,195 @@
+{
+  "slug": "cleaning",
+  "heroSection": {
+    "tag": "Cleaning Services",
+    "title": "AI for Window Cleaning",
+    "description": "Your virtual assistant modernizes your window cleaning business by bookings, tracking job routes, sending cleaning reminders, and scheduling follow-ups, so you can focus on shining windows",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "30%",
+        "title": "Fewer missed service appointments with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduction in hours spent scheduling and updating job notes."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher repeat bookings with personalized cleaning schedules and follow-ups."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Window Cleaning Businesses",
+    "sections": [
+      {
+        "subheading": "A Smarter Way to Run Your Window Cleaning Business",
+        "paragraph": "At VirtualAssistant.com.au, we know how busy window cleaners can get — juggling jobs, managing quotes, and keeping clients happy. Whether you’re a one-person operation working locally, a small cleaning crew, or managing a large commercial cleaning business, our AI Virtual Receptionist keeps things running smoothly. It answers calls, takes bookings, handles repeat schedules, and manages inquiries automatically — so you never miss a client or job."
+      },
+      {
+        "subheading": "Focus on the Job, Not the Phone",
+        "paragraph": "Your AI Receptionist takes care of calls and messages while you’re on-site or up a ladder. It can respond instantly to questions like ‘Do you clean double-storey homes?’, ‘Can I get a quote for commercial windows?’, or ‘When’s my next appointment?’ with clear, friendly, and professional replies. It also books appointments, reschedules regular cleans, and sends reminders to help reduce no-shows and cancellations."
+      },
+      {
+        "subheading": "Never Miss a Booking or Repeat Client",
+        "paragraph": "Even during busy workdays or after hours, your AI Receptionist ensures every client is looked after. It provides information about your services — from residential window cleaning and solar panel washing to gutter cleaning and high-rise jobs — and books new jobs straight into your calendar. Whether you’re working solo or managing a full team, it helps you stay organized and efficient 24/7."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your restaurant operations with AI-driven automation that simplifies reservations, personalizes service, and boosts customer retention.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Capture Every Call",
+        "description": "Never miss a booking or client inquiry — even when you’re working on-site."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Automated Scheduling",
+        "description":" Books, confirms, and reschedules cleaning jobs automatically to keep your calendar full."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Fully Customizable to Your Business",
+        "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from once-off cleans to regular maintenance plans."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Works for All Business Sizes",
+        "description": "Ideal for solo cleaners, small teams, and large cleaning companies — scaling effortlessly as you grow."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Affordable 24/7 Coverage",
+        "description": "Operates like a full-time receptionist without the cost or downtime."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#F5FFF9] to-[#DFFFED]",
+        "title": "Improved Customer Experience",
+        "description": "Delivers quick, friendly, and accurate responses that help build trust and repeat business."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "AI handles reminders, quote confirmations, and post-cleaning follow-ups so you can focus on growing your business."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#F9FFE4] to-[#F4FFCE]",
+        "title": "Boosted Client Retention",
+        "description": "Automated check-ins and seasonal cleaning reminders keep your clients engaged and ensure regular bookings."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#FAF4FF] to-[#F2E4FF]",
+        "title": "Centralized Job Records",
+        "description": "Store all client data, service history, and job photos in one place — easily accessible for repeat or team jobs."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Window Cleaners Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by window cleaners across Australia — from local sole traders to large commercial cleaning companies. It integrates seamlessly with your scheduling software, CRM, and communication tools, handling every call and booking with professionalism. Best of all, your AI Receptionist can be trained specifically to your business — matching your tone, services, and customer approach. Let our AI take care of your admin so you can focus on what you do best — delivering spotless results and happy customers.",
+    "leftBox": {
+      "heading": "Simplify Client Notes and Follow-Ups",
+      "description":"After each clean, record a quick voice memo that’s automatically transcribed and summarized — perfect for noting specific client preferences, access details, or maintenance notes. Upload invoices, service reports, and client photos directly into your dashboard for simple, organized record-keeping."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "Residential Cleaning",
+        "description": "Manage window cleaning for homes, apartments, and residential complexes."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "High-Rise Projects",
+        "description": "Schedule certified cleaners for multi-story or specialized building jobs."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine Maintenance",
+        "description": "Encourage regular cleanings with automated seasonal or monthly reminders."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Commercial Cleaning",
+        "description": "Coordinate office buildings, storefronts, and property management clients."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Respond to client inquiries, handle bookings, and send automated notifications via chat or SMS."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "AI schedules routine maintenance and inspection reminders automatically."
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Notifications",
+      "description": "Reduce no-shows and delays with AI-powered alerts and confirmations.."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": "Instant Access to Job History",
+      "description": "Quickly view past cleaning details, notes, and customer feedback."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Office Building Cleaning",
+      "description": "A property manager books a recurring window cleaning service. The AI assistant:"
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Confirms reservation and notes it’s a special occasion."
+      },
+      {
+        "title": "Repair Notes",
+        "text": "Schedules the most suitable team and optimizes the route."
+      },
+      {
+        "title": "Recurring Services",
+        "text": "Automatically schedules the next visit based on the cleaning frequency."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Sends reminders to both cleaner and client before the job."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Healthcare",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}
