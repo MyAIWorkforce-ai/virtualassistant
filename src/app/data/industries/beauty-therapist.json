@@ -5,20 +5,17 @@
     "title": "AI for Beauty Therapist    ",
     "description": "Your virtual assistant streamlines beauty care by managing appointments, recording treatment notes, sending skincare or wellness reminders, and follow-ups.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/therapists/therapists-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed appointments with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and note-taking."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client adherence to post-treatment care and routines."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your beauty practice with intelligent automation that reduces admin work, streamlines client care, and boosts efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Automated Scheduling",
         "description": "Automatically manage appointments, follow-ups, and reminders without manual intervention."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/therapists/kb-retention.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Improved Client Retention",
         "description": "Smart reminders and personalized care keep clients coming back for more treatments."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/therapists/kb-records.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Centralized Treatment Records",
         "description": "Easily access client history, preferences, and progress in one organized system."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/therapists/kb-quality.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Enhanced Care Quality",
         "description": "Tailored post-treatment guidance ensures better results and client satisfaction."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/therapists/kb-friendly.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Professional and Friendly",
         "description": "Creates a welcoming experience that matches your salon’s tone and personality."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/therapists/kb-management.png",
         "gradient": "from-[#F6FFF5] to-[#E4FFE4]",
         "title": "Streamlined Appointment Management",
         "description": "Books, reschedules, and confirms appointments automatically, helping reduce no-shows."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/therapists/kb-business.png",
         "gradient": "from-[#FFFEEA] to-[#FFFBD4]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, services, and client experience."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/reuse-icons/kb-reliable.png",
         "gradient": "from-[#F4FFFF] to-[#DFFCFD]",
         "title": "Affordable 24/7 Coverage",
         "description": "Operate like a full-time reception team at a fraction of the cost."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/therapists/kb-experience.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Improved Client Experience",
         "description": "Responds instantly and professionally, ensuring your clients always feel valued and cared for."
@@ -108,18 +105,18 @@
       "heading": "Simplify Client Notes and Follow-Ups",
       "description": "After each appointment, you or your team can record quick voice memos — which are automatically transcribed and summarized for easy reference. You can also upload treatment notes, product preferences, and client feedback, all stored securely in one dashboard. This helps you personalize future visits and deliver the perfect experience every time."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/therapists/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/reuse-icons/pu-patta.png",
         "title": "Skincare & Beauty Treatments",
         "description": "Manage facials, hair treatments, manicures, pedicures, and wellness services with automated scheduling."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-sync.png",
         "title": "Regular Maintenance",
         "description": "Encourage recurring visits for glowing skin, healthy hair, and overall beauty wellness through smart reminders."
       },
@@ -129,12 +126,12 @@
         "description": "Provide guidance on at-home care, product usage, and personalized beauty routines for optimal results."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log client preferences, treatment history, results, and product reactions for personalized care."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/resue-icons/pg-fllows-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring beauty sessions automatically.  "
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/resue-icons/pg-reminders.png",
       "title": "Smart Reminders",
       "description": "Reduce missed visits with timely alerts and  preparation instructions."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/resue-icons/pg-records.png",
       "title": " Records",
       "description": "Quickly review treatment history without manual searches."
     }

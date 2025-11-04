@@ -5,7 +5,7 @@
     "title": "AI for Podiatrist    ",
     "description": "Your virtual assistant streamlines podiatry care by managing appointments, recording treatment notes, sending recovery reminders, and scheduling follow-ups.",
     "buttonText": "Get Started",
-    "image": "/industries-images/podiatrist/podiatrist-main.svg",
+    "image": "/industries-images/podiatrists/podiatrists-main.svg",
     "metrics": [
       {
         "value": "30%",
@@ -105,7 +105,7 @@
       "heading": "Streamlined Client Notes and Progress Tracking",
       "description": "After each session, personal trainers can record short voice memos that are automatically transcribed and summarized — perfect for tracking client progress or noting adjustments for their next session. You can also upload client assessments, progress photos, and nutrition plans. All data is stored securely in your dashboard, making it easy to stay organized and deliver a personalized, professional experience for every client."
     },
-    "image": "/industries-images/podiatrist/why-choose.svg"
+    "image": "/industries-images/podiatrists/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
@@ -116,12 +116,12 @@
         "description": "Manage patients with heel pain, plantar fasciitis, bunions, or general foot discomfort."
       },
       {
-        "icon": "/industires-images/chiropractors/pu-recovery.png",
+        "icon": "/industries-images/chiropractors/pu-recovery.png",
         "title": "Injury Recovery",
         "description": "Support recovery from sports injuries, sprains, fractures, or gait-related issues."
       },
       {
-        "icon": "/industires-images/chiropractors/pu-maintanance.png",
+        "icon": "/industries-images/chiropractors/pu-maintanance.png",
         "title": "Wellness Maintenance",
         "description": "Encourage regular checkups for overall foot health, mobility, and proper footwear guidance."
       },
@@ -141,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/industries-images/podiatrists/pg-follow-ups.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-ups.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring podiatry checkups."
     },
     {
-      "icon":  "/industries-images/podiatrists/pg-records.png",
+      "icon":  "/industries-images/reuse-icons/pg-reminder.png",
       "title": "Smart Reminders",
       "description": "Reduce missed visits with timely, personalized alerts."
     },
     {
-      "icon":  "/industries-images/podiatrists/pg-reminder.png",
+      "icon":  "/industries-images/reuse-icons/pg-records.png",
       "title": "  Patient Records",
       "description": "Quickly review treatment history without manual searches."
     }

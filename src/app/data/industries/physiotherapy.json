@@ -116,12 +116,12 @@
         "description": "Send automated reminders for upcoming physio sessions and appointments."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-routines.png",
+        "icon": "/industries-images/reuse-icons/pu-routines.png",
         "title": "Exercise Routines",
         "description": "Provide patients with personalized exercise routines and reminders."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-sync.png",
+        "icon": "/industries-images/reuse-icons/pu-sync.png",
         "title": "Calendar Sync",
         "description": "Sync with calendars to avoid overlapping bookings and conflicts."
       },

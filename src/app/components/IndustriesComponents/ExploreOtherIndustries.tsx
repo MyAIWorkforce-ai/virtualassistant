@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import industriesListData from "../../data/industries/industriesList.json";
+import industriesListData from "@/app/data/industries/industriesList.json";
 
 interface Industry {
   name: string;
