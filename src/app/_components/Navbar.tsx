@@ -49,43 +49,52 @@ export default function Navbar() {
               </div>
             </li>
 
-            {/* Industries Dropdown */}
-            <li className="relative group">
-              <Link href="/industries" className="text-[#00A7DE]">
-                Industries
-              </Link>
+    {/* Industries Dropdown */}
+<li className="relative group">
+  <Link href="/industries" className="text-[#00A7DE]">
+    Industries
+  </Link>
 
-              {/* Dropdown */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[500px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] grid grid-cols-2 gap-2 p-2">
-                {/* Column 1 */}
-                <ul>
-                  <li><Link href="/industries/physiotherapy" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Physiotherapist</Link></li>
-                  <li><Link href="/industries/myotherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Myotherapist</Link></li>
-                  <li><Link href="/industries/personaltrainer" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Personal Trainer</Link></li>
-                  <li><Link href="/industries/massagetherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Massage Therapist</Link></li>
-                  <li><Link href="/industries/psychology" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Psychology</Link></li>
-                  <li><Link href="/industries/chiropractor" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Chiropractor</Link></li>
-                  <li><Link href="/industries/podiatrist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Podiatrist</Link></li>
-                  <li><Link href="/industries/beauty-therapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Beauty Therapist</Link></li>
-                  <li><Link href="/industries/hairdresser" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Hair Dresser</Link></li>
-                  <li><Link href="/industries/dentist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Dentist</Link></li>
-                </ul>
+  {/* Dropdown */}
+  <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[700px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] grid grid-cols-3 gap-2 p-3">
 
-                {/* Column 2 */}
-                <ul>
-                  <li><Link href="/industries/lawyer" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Lawyer</Link></li>
-                  <li><Link href="/industries/accountant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Accountant</Link></li>
-                  <li><Link href="/industries/cleaning" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Cleaning</Link></li>
-                  <li><Link href="/industries/electricians" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Electricians</Link></li>
-                  <li><Link href="/industries/estateagent" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Estate Agent</Link></li>
-                  <li><Link href="/industries/forothers" className="block px-4 py-2 text-black hover:text-[#00A7DE]">For Others</Link></li>
-                  <li><Link href="/industries/machanic" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Machanic</Link></li>
-                  <li><Link href="/industries/plumber" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Plumber</Link></li>
-                  <li><Link href="/industries/resaturant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Resturant</Link></li>
-                  <li><Link href="/industries/consultant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Consultant</Link></li>
-                </ul>
-              </div>
-            </li>
+    {/* Column 1 */}
+    <ul>
+      <li><Link href="/industries/physiotherapy" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Physiotherapist</Link></li>
+      <li><Link href="/industries/myotherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Myotherapist</Link></li>
+      <li><Link href="/industries/personaltrainer" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Personal Trainer</Link></li>
+      <li><Link href="/industries/massagetherapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Massage Therapist</Link></li>
+      <li><Link href="/industries/psychology" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Psychology</Link></li>
+      <li><Link href="/industries/chiropractor" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Chiropractor</Link></li>
+      <li><Link href="/industries/podiatrist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Podiatrist</Link></li>
+      <li><Link href="/industries/beauty-therapist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Beauty Therapist</Link></li>
+    </ul>
+
+    {/* Column 2 */}
+    <ul>
+      <li><Link href="/industries/hairdresser" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Hair Dresser</Link></li>
+      <li><Link href="/industries/dentist" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Dentist</Link></li>
+      <li><Link href="/industries/osteopaths" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Osteopaths</Link></li>
+      <li><Link href="/industries/lawyer" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Lawyer</Link></li>
+      <li><Link href="/industries/accountant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Accountant</Link></li>
+      <li><Link href="/industries/consultant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Consultant</Link></li>
+      <li><Link href="/industries/realestateagent" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Real Estate Agent</Link></li>
+      <li><Link href="/industries/mechanic" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Mechanic</Link></li>
+    </ul>
+
+    {/* Column 3 */}
+    <ul>
+      <li><Link href="/industries/plumber" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Plumber</Link></li>
+      <li><Link href="/industries/cleaning" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Cleaning</Link></li>
+      <li><Link href="/industries/electricians" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Electricians</Link></li>
+      <li><Link href="/industries/resturant" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Restaurant</Link></li>
+      <li><Link href="/industries/hotelsaccommodation" className="block px-4 py-2 text-black hover:text-[#00A7DE]">Hotels & Accommodation</Link></li>
+      <li><Link href="/industries/forother" className="block px-4 py-2 text-black hover:text-[#00A7DE]">For Others</Link></li>
+    </ul>
+
+  </div>
+</li>
+
 
             <li>
               <Link href="/#pricing" className="text-black hover:text-[#00A7DE]">

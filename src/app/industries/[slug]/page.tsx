@@ -1,4 +1,3 @@
-"use client";
 
 import { notFound } from "next/navigation";
 import HeroSection from "@/app/components/IndustriesComponents/HeroSection";
@@ -13,21 +12,14 @@ import ProductivityGains from "@/app/components/IndustriesComponents/Productivit
 import ExploreOtherIndustries from "@/app/components/IndustriesComponents/ExploreOtherIndustries";
 import Footer from "@/app/_components/Footer";
 
-
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function IndustryPage({ params }: PageProps) {
-  const { slug } = params;
+export default async function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
   let data;
   try {
     data = require(`@/app/data/industries/${slug}.json`);
   } catch (error) {
-    console.error(`JSON file not found for slug: ${slug}`);
+    console.error(`JSON file not found for slug: ${slug} | ${error}`);
     notFound(); 
   }
   return (

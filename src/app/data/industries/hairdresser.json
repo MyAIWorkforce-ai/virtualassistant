@@ -1,0 +1,194 @@
+{
+  "slug": "hairdresser",
+  "heroSection": {
+    "tag": "Hair Care",
+    "title": "AI for Hair Dresser    ",
+    "description": "Your virtual assistant simplifies hair care by managing bookings, recording style preferences, sending care reminders, and scheduling recurring appointments.",
+    "buttonText": "Get Started",
+    "image": "/images/physio-hero.png",
+    "metrics": [
+      {
+        "value": "30%",
+        "title": "Fewer missed appointments with automated reminders."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "98%",
+        "title": "Reduced hours spent on scheduling and note-taking."
+      },
+      {
+        "icon": "/icons/stethoscope.svg",
+        "value": "25%",
+        "title": "Higher client adherence with consistent style tracking and tailored care."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Hairdressers",
+    "sections": [
+      {
+        "subheading": "A Smarter Way to Run Your Salon",
+        "paragraph": "At VirtualAssistant.com.au, we’ve designed our AI Virtual Receptionist to help hairdressers and salons manage their day-to-day operations effortlessly. Whether you’re running a busy salon or working independently, your AI Receptionist handles calls, bookings, and messages — ensuring your clients always receive quick, professional service while you focus on styling."
+      },
+      {
+        "subheading": " Stay Focus on Clint, Not the Phone",
+        "paragraph": "Between colours, cuts, and blow-dries, it’s easy to miss a call. That’s where your AI Receptionist comes in. It can answer questions like ‘Do you do balayage?’, ‘Can I book a cut and colour next week?’, or ‘What’s your cancellation policy?’ instantly. It manages bookings, reschedules, and sends reminders — keeping your day organized and your chairs full."
+      },
+      {
+        "subheading": "Never Miss a Booking or New Client Again",
+        "paragraph": "Your AI Receptionist works around the clock, ensuring every potential client is greeted with warmth and professionalism — even after hours. It provides service information for everything from men’s cuts and blow waves to hair extensions and bridal styling, and confirms bookings directly into your calendar. No more missed opportunities or unanswered calls — your business runs smoothly, 24/7."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Enhance your hairdressing services with intelligent automation that reduces admin work, personalizes client care, and increases efficiency.",
+    "cards": [
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Automated Scheduling",
+        "description": "Automatically manage appointments, follow-ups, and reminders without manual intervention."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Improved Client Experience",
+        "description": "Instant, friendly responses ensure every client feels valued and looked after."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Time-Saving Automation",
+        "description": "AI manages reminders, follow-ups, and records so you can focus on styling."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Boosted Client Retention",
+        "description": "Regular touch-ups and tailored care tips keep clients coming back."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "gradient": "from-[#FFFEE5] to-[#FFFDCF]",
+        "title": "Centralized History",
+        "description": "Easy access to past cuts, treatments, and preferences for seamless service."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Professional and Polished",
+        "description": "Creates a welcoming experience that matches your salon’s brand and tone."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Streamlined Appointment Management",
+        "description": "Books, reschedules, and confirms appointments automatically to reduce no-shows and gaps in your day."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "gradient": "from-[#F8FEFF] to-[#D2F8FF]",
+        "title": "Fully Customizable to Your Salon",
+        "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, services, and customer experience."
+      },
+      {
+        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "gradient": "from-[#FFF5FF] to-[#FECDFF]",
+        "title": "Affordable 24/7 Support",
+        "description": "Acts like a full-time front desk team for a fraction of the cost."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Hairdressers Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by hairdressers and salon owners across Australia. It integrates seamlessly with your booking system, handles calls professionally, and ensures your clients receive a polished, consistent experience. Best of all, your AI Receptionist can be trained specifically to your salon’s workflow — reflecting your brand’s voice, services, and the level of care your clients expect. Let our AI manage your admin so you can focus on what you do best — creating great hair and happy clients.",
+    "leftBox": {
+      "heading": "Simplify Client Notes and Follow-Ups",
+      "description": "After each appointment, you or your team can record short voice memos — automatically transcribed and summarized for easy record-keeping. You can upload client colour formulas, product preferences, and style notes securely to each profile, helping your team deliver a personalized experience every visit."
+    },
+    "image": "/industries-images/physiotherapist/why-choose.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/images/skin care.png",
+        "title": "Haircuts & Styling",
+        "description": "Manage trims, blowouts, updos, coloring, treatments, and daily styling sessions for every occasion."
+      },
+      {
+        "icon": "/images/regular.png",
+        "title": "Color & Treatment Care",
+        "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
+      },
+      {
+        "icon": "/images/wellness support.png",
+        "title": "Routine  Maintenance",
+        "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
+      },
+      {
+        "icon": "/images/tracking.png",
+        "title": "Client Progress Tracking",
+        "description": "Log hair growth, scalp condition, treatment history, color formulas, and style evolution over time."
+      },
+      {
+        "icon": "/images/tracking (2).png",
+        "title": "AI Assistant",
+        "description": "Answer common patient inquiries via AI chat or voice assistant."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/images/automated follow.png",
+      "title": "Automated Follow-Ups",
+      "description": "Save time by letting AI schedule recurring beauty sessions automatically. "
+    },
+    {
+      "icon": "/images/smart Reminder.png",
+      "title": "Smart Reminders",
+      "description": "Reduce missed visits with AI-powered alerts."
+    },
+    {
+      "icon": "/images/patient record.png",
+      "title": " Records",
+      "description": "Quickly review client history without manual searches."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Haircut &  Color Treatment",
+      "description": "A client books a haircut and color treatment through your virtual assistant."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Appointment is confirmed instantly with preparation advice ( ''arrive with clean, product-free hair '').     "
+      },
+      {
+        "title": "Style  Notes Logging",
+        "text": "Records haircut styles, color formulas, and product choices after each session."
+      },
+      {
+        "title": "Recurring Checkups",
+        "text": "Automatically schedules regular trims, touch-ups, or styling sessions."
+      },
+      {
+        "title": "Care Reminders",
+        "text": "Sends tailored hair care tips, product suggestions, or maintenance routines."
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Healthcare",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}

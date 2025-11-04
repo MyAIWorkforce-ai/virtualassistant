@@ -85,8 +85,8 @@ export default function HeroSection({
       <Image
         src={image}
         alt={title}
-        width={650}
-        height={650}
+        width={800}
+        height={800}
         priority
         className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
         style={{ objectPosition: "right center" }}

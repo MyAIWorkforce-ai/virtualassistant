@@ -5,20 +5,17 @@
     "title": "AI for Myotherapist",
     "description": "Your Virtual Assistant for Stress-Free Therapy Management.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+      "image": "/industries-images/myotherapist/mytho-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Reduction in admin time for therapy professionals."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "increase in client retention with timely reminders and follow-ups."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "improvement in appointment consistency."
       }
@@ -46,55 +43,55 @@
     "subheading": "Streamline your practice with intelligent automation that enhances patient care and reduces administrative burden.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Automated Scheduling",
         "description": "Session scheduling, reminders, and follow-ups handled automatically, reducing no-shows and improving patient adherence."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+       "icon": "/industries-images/reuse-icons/kb-patient-records.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Personalized Care",
         "description": "Custom treatment plans and exercise logs tailored to each patient's specific muscle therapy needs."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
-        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+         "icon": "/industries-images/reuse-icons/kb-care.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Better Outcomes",
         "description": "Improved treatment results through timely follow-ups and consistent patient engagement."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+       "icon": "/industries-images/reuse-icons/kb-better.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Reduced Stress",
         "description": "Less administrative burden means more time dedicated to hands-on therapy and patient care."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+       "icon": "/industries-images/reuse-icons/kb-communication.png",
         "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
         "title": "Professional Client Experience",
         "description": "Every caller is greeted warmly, with fast, knowledgeable responses — no waiting or voicemail frustration."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+       "icon": "/industries-images/reuse-icons/kb-enhanced.png",
         "gradient": "from-[#FFF0FA] to-[#FFD6F3]",
         "title": "Custom to Your Brand",
         "description": " The assistant can be trained with your clinic’s tone, terminology, and pricing to sound just like your own receptionist."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFEDED] to-[#FFD6D7]",
         "title": "Affordable and Reliable",
         "description": "Save money on staff and enjoy consistent support from an assistant that operates 24/7 without breaks."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/reuse-icons/kb-reliable.png",
         "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
         "title": "Professional Client Experience",
         "description": "Every caller is greeted warmly, with fast, knowledgeable responses — no waiting or voicemail frustration."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/reuse-icons/kb-boosts.png",
         "gradient": "from-[#F0FFEA] to-[#D9FFC8]",
         "title": "Grow Your Reputation",
         "description": ": Deliver exceptional service every time, improve online reviews, and grow your clinic’s visibility on Google."
@@ -108,33 +105,33 @@
       "heading": "Streamlined Follow-Up and Client Management",
       "description": "After each treatment, myotherapists can easily add notes, record voice memos that are transcribed and summarized, and upload documents or photos linked to the client’s record. All data is securely organized in your dashboard for easy access, ensuring smooth follow-ups, continuity of care, and a clear client history."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/myotherapist/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/physiotherapist/pu-reminders.png",
         "title": "Automated Scheduling",
         "description": "Book and manage manual therapy or soft-tissue treatment sessions without back-and-forth messaging."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/physiotherapist/pu-routines.png",
         "title": "Exercise Reminders",
         "description": "Send patients automated reminders for stretches and corrective exercises to improve recovery."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/physiotherapist/pu-sync.png",
         "title": "Calendar Sync",
         "description": "Sync with calendars to avoid overlapping bookings and conflicts."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/physiotherapist/pu-tracking.png",
         "title": "Patient Progress Tracking",
         "description": "Record treatment notes, track muscle function improvements, and monitor recovery timelines."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/physiotherapist/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }
@@ -144,22 +141,22 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-timesaving.png",
       "title": "Time Savings",
       "description": "Save hours weekly on scheduling and admin tasks"
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-dropoffs.png",
       "title": "Reduced Drop-offs",
       "description": "Reduces missed appointments with smart confirmation and tracking"
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-bettercare.png",
       "title": "Better Care",
       "description": "Improve consistency in patient care with accurate records"
     },
        {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-facetime.png",
       "title": "More Patient Focus",
       "description": " Frees up time for hands-on therapy instead of admin work"
     }
