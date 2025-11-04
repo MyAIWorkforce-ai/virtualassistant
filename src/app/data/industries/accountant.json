@@ -5,7 +5,7 @@
     "title": "AI for Accountant  ",
     "description": "Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, and scheduling client follow-ups.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",

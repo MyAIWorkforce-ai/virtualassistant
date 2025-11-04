@@ -116,7 +116,7 @@
         "description": "Manage patients with back pain scoliosis, or posture correction."
       },
       {
-        "icon": "/industries-images/chiropractors/pu-recovery.png",
+        "icon": "/industries-images/reuse-icons/pu-recovery.png",
         "title": "Injury Recovery",
         "description": "Support recovery from sports injuries, joint pain, and misalignments. "
       },
@@ -131,7 +131,7 @@
         "description": "Document patient progress milestones and therapy outcomes securely."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }

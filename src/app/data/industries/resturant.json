@@ -5,7 +5,7 @@
     "title": "AI for Restaurant",
     "description": "Your virtual assistant modernizes restaurant operations by managing reservations, recording guest preferences, and scheduling follow-ups, so you can focus on great food and service.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/resturant/restaurant-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -46,55 +46,55 @@
     "subheading": "Enhance your restaurant operations with AI-driven automation that simplifies reservations, personalizes service, and boosts customer retention.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Take Orders Instantly",
         "description": "Handles phone orders for pickup or delivery with full order details and confirmation messages."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/resturant/kb-effortlessly.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Manage Reservations Effortlessly",
         "description":" Books, confirms, and updates dine-in reservations while syncing with your schedule."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Cuisine",
         "description": "Your AI Receptionist can be trained to understand your menu, specials, and dietary requirements — whether you serve Italian, Indian, Thai, Japanese, Greek, or modern Australian cuisine."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/resturant/kb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Perfect for cafés, takeaways, and large restaurants — scaling effortlessly as you grow."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/resturant/kb-coverage.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable 24/7 Coverage",
         "description": "Acts as a full-time receptionist that never sleeps — handling calls, orders, and bookings day or night."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/resturant/kb-experience.png",
         "gradient": "from-[#F5FFF9] to-[#DFFFED]",
         "title": "Improved Customer Experience",
         "description": "Delivers quick, friendly, and accurate responses that keep customers coming back for more."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/resturant/kb-reservation.png",
         "gradient": "from-[#F5FEFF] to-[#DBF5FF]",
         "title": "Automated Reservations",
         "description": "Automatically handle table bookings, confirmations, cancellations, and waitlists without manual intervention."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/resturant/kb-automation.png",
         "gradient": "from-[#FFFDEE] to-[#FFFCD8]",
         "title": "Time-Saving Automation",
         "description": "Let AI handle confirmations, feedback collection, and promotional follow-ups so your staff can focus on service and hospitality."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/resturant/kb-loyalty.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Boosted Customer Loyalty",
         "description": "Send tailored offers, birthday greetings, and special-event reminders to keep customers coming back."
@@ -108,33 +108,33 @@
       "heading": "Simplify Orders, Notes, and Follow-Ups",
       "description":" After each shift, your team can record quick voice memos that are automatically transcribed and summarized — great for noting large orders, special requests, or delivery updates. You can also upload menus, pricing updates, or customer feedback directly into your dashboard, keeping everything organized in one place."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/resturant/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/resturant/pu-reservation.png",
         "title": "Table Reservations",
         "description": "Manage real-time bookings, waitlists, and walk-ins efficiently."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/resturant/pu-engagement.png",
         "title": "Customer Engagement",
         "description": "Send personalized offers, newsletters, and loyalty reward"
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Feedback Collection",
         "description": "Gather post-dining feedback automatically to improve quality."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/resturant/pu-management.png",
         "title": "Order Management",
         "description": "Track dine-in, takeaway, and online orders seamlessly."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer customer queries, take orders, and confirm reservations via chat or voice."
       }
