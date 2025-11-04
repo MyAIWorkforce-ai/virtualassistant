@@ -126,12 +126,12 @@
         "description": "nhance overall wellbeing, relaxation, and sleep quality."
       },
        {
-        "icon": "/industries-images/physiotherapist/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Patient Progress Tracking",
         "description": "Record personalized notes and monitor treatment effectiveness over time."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }

@@ -121,12 +121,12 @@
         "description": "Support recovery from sports injuries, joint pain, and misalignments. "
       },
       {
-        "icon": "/industries-images/chiropractors/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-maintanance.png",
         "title": "Wellness Maintenance",
         "description": "Encourage regular visits for overall spinal health and mobility."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-tracking.png",
+        "icon": "/industries-images/resue-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Document patient progress milestones and therapy outcomes securely."
       },

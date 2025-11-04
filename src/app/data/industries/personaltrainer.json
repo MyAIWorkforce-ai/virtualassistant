@@ -126,12 +126,12 @@
         "description": "Record meal plans and track diet notes alongside workouts."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Patient Progress Tracking",
         "description": "Keep clients on track with timely reminders and progress reports."
       },
         {
-        "icon": "/industries-images/physiotherapist/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }

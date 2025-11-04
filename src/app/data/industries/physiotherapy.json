@@ -126,12 +126,12 @@
         "description": "Sync with calendars to avoid overlapping bookings and conflicts."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Patient Progress Tracking",
         "description": "Track rehabilitation milestones and log patient progress digitally."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }

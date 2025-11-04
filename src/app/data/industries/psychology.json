@@ -120,12 +120,12 @@
         "description": "Track and adjust strategies for long-term psychological care."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Document patient progress milestones and therapy outcomes securely."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }
