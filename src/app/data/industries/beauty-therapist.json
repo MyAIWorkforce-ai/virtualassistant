@@ -111,7 +111,7 @@
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/industries-images/reuse-icons/pu-patta.png",
+        "icon": "/industries-images/therapists/pu-treatment.png",
         "title": "Skincare & Beauty Treatments",
         "description": "Manage facials, hair treatments, manicures, pedicures, and wellness services with automated scheduling."
       },
@@ -121,7 +121,7 @@
         "description": "Encourage recurring visits for glowing skin, healthy hair, and overall beauty wellness through smart reminders."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/therapists/pu-support.png",
         "title": "Client Wellness Support",
         "description": "Provide guidance on at-home care, product usage, and personalized beauty routines for optimal results."
       },
@@ -141,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/industries-images/resue-icons/pg-fllows-up.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-ups.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring beauty sessions automatically.  "
     },
     {
-      "icon": "/industries-images/resue-icons/pg-reminders.png",
+      "icon": "/industries-images/reuse-icons/pg-reminder.png",
       "title": "Smart Reminders",
       "description": "Reduce missed visits with timely alerts and  preparation instructions."
     },
     {
-      "icon": "/industries-images/resue-icons/pg-records.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": " Records",
       "description": "Quickly review treatment history without manual searches."
     }

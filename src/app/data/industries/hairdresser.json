@@ -5,19 +5,17 @@
     "title": "AI for Hair Dresser    ",
     "description": "Your virtual assistant simplifies hair care by managing bookings, recording style preferences, sending care reminders, and scheduling recurring appointments.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/hair-dresser/hair-dressers-main.svg",
     "metrics": [
       {
         "value": "30%",
         "title": "Fewer missed appointments with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and note-taking."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client adherence with consistent style tracking and tailored care."
       }
@@ -45,55 +43,55 @@
     "subheading": "Enhance your hairdressing services with intelligent automation that reduces admin work, personalizes client care, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Automated Scheduling",
         "description": "Automatically manage appointments, follow-ups, and reminders without manual intervention."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kbb-care.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Improved Client Experience",
         "description": "Instant, friendly responses ensure every client feels valued and looked after."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-automation.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Time-Saving Automation",
         "description": "AI manages reminders, follow-ups, and records so you can focus on styling."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-retention.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Boosted Client Retention",
         "description": "Regular touch-ups and tailored care tips keep clients coming back."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon":"/industries-images/hair-dresser/kb-history.png",
         "gradient": "from-[#FFFEE5] to-[#FFFDCF]",
         "title": "Centralized History",
         "description": "Easy access to past cuts, treatments, and preferences for seamless service."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/hair-dresser/kb-polished.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Professional and Polished",
         "description": "Creates a welcoming experience that matches your salon’s brand and tone."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Streamlined Appointment Management",
         "description": "Books, reschedules, and confirms appointments automatically to reduce no-shows and gaps in your day."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/hair-dresser/kb-salon.png",
         "gradient": "from-[#F8FEFF] to-[#D2F8FF]",
         "title": "Fully Customizable to Your Salon",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, services, and customer experience."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/hair-dresser/kb-support.png",
         "gradient": "from-[#FFF5FF] to-[#FECDFF]",
         "title": "Affordable 24/7 Support",
         "description": "Acts like a full-time front desk team for a fraction of the cost."
@@ -107,33 +105,33 @@
       "heading": "Simplify Client Notes and Follow-Ups",
       "description": "After each appointment, you or your team can record short voice memos — automatically transcribed and summarized for easy record-keeping. You can upload client colour formulas, product preferences, and style notes securely to each profile, helping your team deliver a personalized experience every visit."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/hair-dresser/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/hair-dresser/pu-styling.png",
         "title": "Haircuts & Styling",
         "description": "Manage trims, blowouts, updos, coloring, treatments, and daily styling sessions for every occasion."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/hair-dresser/pu-care.png",
         "title": "Color & Treatment Care",
         "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-sync.png",
         "title": "Routine  Maintenance",
         "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-maintanance.png",
         "title": "Client Progress Tracking",
         "description": "Log hair growth, scalp condition, treatment history, color formulas, and style evolution over time."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }
@@ -143,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon":  "/industries-images/reuse-icons/pg-follow-ups.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring beauty sessions automatically. "
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/hair-dresser/pg-reminder.png",
       "title": "Smart Reminders",
       "description": "Reduce missed visits with AI-powered alerts."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": " Records",
       "description": "Quickly review client history without manual searches."
     }
