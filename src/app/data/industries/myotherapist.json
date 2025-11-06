@@ -51,44 +51,44 @@
       {
        "icon": "/industries-images/reuse-icons/kb-patient-records.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
-        "title": "Personalized Care",
-        "description": "Custom treatment plans and exercise logs tailored to each patient's specific muscle therapy needs."
+        "title": "Organized Records",
+        "description": "Secure storage of muscle therapy notes and progress records, accessible anytime for better treatment continuity."
       },
       {
          "icon": "/industries-images/reuse-icons/kb-care.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
-        "title": "Better Outcomes",
-        "description": "Improved treatment results through timely follow-ups and consistent patient engagement."
+        "title": "Personalized Care",
+        "description": "Custom treatment plans and exercise logs tailored to each patient's specific muscle therapy needs."
       },
       {
        "icon": "/industries-images/reuse-icons/kb-better.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Better Outcomes",
+        "description": "Improved treatment results through timely follow-ups and consistent patient engagement."
+      },
+      {
+       "icon": "/industries-images/reuse-icons/kbb-care.png",
+        "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
         "title": "Reduced Stress",
         "description": "Less administrative burden means more time dedicated to hands-on therapy and patient care."
       },
       {
-       "icon": "/industries-images/reuse-icons/kb-communication.png",
-        "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
-        "title": "Professional Client Experience",
-        "description": "Every caller is greeted warmly, with fast, knowledgeable responses — no waiting or voicemail frustration."
-      },
-      {
        "icon": "/industries-images/reuse-icons/kb-enhanced.png",
         "gradient": "from-[#FFF0FA] to-[#FFD6F3]",
-        "title": "Custom to Your Brand",
-        "description": " The assistant can be trained with your clinic’s tone, terminology, and pricing to sound just like your own receptionist."
+        "title": "Professional Client Experience",
+        "description": " Every caller is greeted warmly, with fast, knowledgeable responses — no waiting or voicemail frustration."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFEDED] to-[#FFD6D7]",
-        "title": "Affordable and Reliable",
-        "description": "Save money on staff and enjoy consistent support from an assistant that operates 24/7 without breaks."
+        "title": "Custom to Your Brand",
+        "description": "The assistant can be trained with your clinic’s tone, terminology, and pricing to sound just like your own receptionist."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-reliable.png",
         "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
-        "title": "Professional Client Experience",
-        "description": "Every caller is greeted warmly, with fast, knowledgeable responses — no waiting or voicemail frustration."
+        "title": "Affordable and Reliable",
+        "description": "Save money on staff and enjoy consistent support from an assistant that operates 24/7 without breaks."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-boosts.png",
@@ -116,12 +116,12 @@
         "description": "Book and manage manual therapy or soft-tissue treatment sessions without back-and-forth messaging."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-routines.png",
+        "icon": "/industries-images/reuse-icons/pu-recovery.png",
         "title": "Exercise Reminders",
         "description": "Send patients automated reminders for stretches and corrective exercises to improve recovery."
       },
       {
-        "icon": "/industries-images/physiotherapist/pu-sync.png",
+        "icon": "/industries-images/reuse-icons/pu-sync.png",
         "title": "Calendar Sync",
         "description": "Sync with calendars to avoid overlapping bookings and conflicts."
       },
@@ -146,7 +146,7 @@
       "description": "Save hours weekly on scheduling and admin tasks"
     },
     {
-      "icon": "/industries-images/reuse-icons/pg-dropoffs.png",
+      "icon": "/industries-images/reuse-icons/pg.drop-off.png",
       "title": "Reduced Drop-offs",
       "description": "Reduces missed appointments with smart confirmation and tracking"
     },
@@ -166,13 +166,13 @@
   "useCase": {
     "title": "Example Use Case",
     "topBox": {
-      "heading": "Sports Injury Recovery Patient",
+      "heading": "Chronic Back Pain Consultation",
       "description": "A patient recovering from a sports injury books recurring sessions through your AI assistant."
     },
     "useCases": [
       {
-        "title": "Chronic Back Pain Consultation",
-        "text": "A patient recovering from chronic muscle tension books a consultation through your AI assistant."
+        "title": "Instant Confirmation",
+        "text": "Confirms the appointment automatically  with available time slots."
       },
       {
         "title": "Smart Reminders",

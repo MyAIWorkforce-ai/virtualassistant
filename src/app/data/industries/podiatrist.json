@@ -64,7 +64,7 @@
         "icon": "/industries-images/podiatrists/kb-care.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Continuous Care",
-        "description": "Enhances patient satisfaction with instant replies and smooth communication."
+        "description": "Automatic recurring checkups ensure consistent monitoaring."
       },
       {
         "icon": "/industries-images/podiatrists/kb-coverage.png",
@@ -82,7 +82,7 @@
         "icon": "/industries-images/podiatrists/kb-management.png",
         "gradient": "from-[#FFF8ED] to-[#FFEED2]",
         "title": "Automated Appointment Management",
-        "description": "Provides warm, knowledgeable communication that reflects your clinic’s care standards."
+        "description": "Handles bookings, cancellations, and reminders with precision and speed."
       },
       {
         "icon": "/industries-images/podiatrists/kb-information.png",
@@ -116,12 +116,12 @@
         "description": "Manage patients with heel pain, plantar fasciitis, bunions, or general foot discomfort."
       },
       {
-        "icon": "/industries-images/chiropractors/pu-recovery.png",
+        "icon": "/industries-images/reuse-icons/pu-recovery.png",
         "title": "Injury Recovery",
         "description": "Support recovery from sports injuries, sprains, fractures, or gait-related issues."
       },
       {
-        "icon": "/industries-images/chiropractors/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-maintanance.png",
         "title": "Wellness Maintenance",
         "description": "Encourage regular checkups for overall foot health, mobility, and proper footwear guidance."
       },
