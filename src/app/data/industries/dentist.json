@@ -5,20 +5,17 @@
     "title": "AI for Dentist   ",
     "description": "Your virtual assistant modernizes dental care by managing appointments, recording treatment notes, sending hygiene reminders, and scheduling follow-ups.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/dentist/dentist-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed appointments with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and note-taking."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client adherence with consistent style tracking and tailored care."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your dental practice with intelligent automation that reduces admin work, personalizes patient care, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Professional and Reassuring",
         "description": "Communicates with warmth and clarity, ensuring patients feel confident and comfortable."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kbb-care.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Improved Client Care",
         "description": "Dental charts, X-rays, and treatment notes ensure every visit feels consistent and personalized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-automation.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Time-Saving Automation",
         "description": "AI manages reminders, follow-ups, and patient records so you can focus on delivering quality dental care."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-rentation.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Boosted Client Retention",
         "description": "Regular checkups and personalized oral care tips keep patients coming back."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/reuse-icons/kb-history.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Centralized History",
         "description": "Easy access to past treatments, X-rays, and dental charts for seamless care."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/reuse-icons/kb-management.png",
         "gradient": "from-[#F3FFF0] to-[#CFFFCA]",
         "title": "Streamlined Appointment Management",
         "description": "Automates booking, rescheduling, and reminders to improve efficiency and reduce missed appointments."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Fully Customizable to Your Clinic",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and patient care standards."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/reuse-icons/kb-coverage.png",
         "gradient": "from-[#F2FAFF] to-[#D2EEFF]",
         "title": "Affordable 24/7 Coverage",
         "description": "Operate like a full-time reception team at a fraction of the cost."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/dentist/kb-experience.png",
         "gradient": "from-[#FFF4FC] to-[#FFE4F9]",
         "title": "Enhanced Patient Experience",
         "description": "Provides quick, accurate responses, ensuring every patient receives exceptional service from the first call."
@@ -108,33 +105,33 @@
       "heading": "Simplified Patient Notes and Follow-Up Tools",
       "description": "After each appointment, dentists can record short voice memos that are automatically transcribed and summarized for future reference. You can upload treatment plans, X-rays, and notes securely into each patient’s file, making follow-ups and record management simple and organized. This helps your clinic maintain continuity of care and deliver a professional, efficient experience for every patient."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/dentist/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/dentist/pu-care.png",
         "title": "General Dental Care",
         "description": "Manage routine checkups, deep cleanings, fillings, treatments, whitening, and other dental procedures."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/dentist/pu-treatments.png",
         "title": "Specialized Treatments",
         "description": "Support orthodontics, implants, root canals, and cosmetic dentistry."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Encourage bi-annual visits for preventive care and long-term oral health"
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log dental charts, X-rays, treatment history, and follow- up notes."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common patient inquiries via AI chat or voice assistant."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring dental checkups automatically"
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Reminders",
       "description": "Reduce missed visits with AI-powered alerts."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": " Records",
       "description": "Quickly review client history without manual searches."
     }

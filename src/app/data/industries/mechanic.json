@@ -5,20 +5,17 @@
     "title": "AI for Mechanic",
     "description": "Your virtual assistant modernizes auto care by managing service appointments, recording repair notes, sending maintenance reminders, and scheduling follow-ups.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/mechanics/mechanics-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed service appointments with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and logging repairs."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher customer retention with consistent service tracking and tailored care."
       }
@@ -46,57 +43,57 @@
     "subheading": "Enhance your auto repair shop with intelligent automation that reduces admin work, personalizes service, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Capture Every Call",
         "description": "Ensures all customer inquiries are answered, logged, and actioned — even after hours."
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/mechanics/kb-schedulling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Streamlined Job Scheduling",
         "description":"Automates service bookings, reschedules, and customer reminders for a smoother operation."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your workshop’s requirements — matching your tone, services, and workflow."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Ideal for home garages, small local workshops, and large service centers — scaling effortlessly with your business."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/reuse-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable 24/7 Coverage",
         "description": "Acts like a full-time receptionist at a fraction of the cost."
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/mechanics/kb-automated-scheduling.png",
         "gradient": "from-[#FEFFF9] to-[#FBFFE4]",
         "title": "Automated Scheduling",
         "description": "Automatically manage service appointments, inspections, and repairs without manual input."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/mechanics/kb-experience.png",
         "gradient": "from-[#FFFEF1] to-[#FFFDC4]",
         "title": "Improved Customer Experience",
         "description": "Provides friendly, fast, and accurate responses that keep customers coming back."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/mechanics/kb-automated.png",
         "gradient": "from-[#F1F7FF] to-[#D3D5FF]",
         "title": "Time-Saving Automation",
         "description":" AI manages appointments, follow-ups, and reminders, so you can focus on high-quality repairs."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/reuse-icons/kbb-retention.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Boosted Client Retention",
         "description": "Regular maintenance reminders and tailored service bring customers back consistently."
@@ -110,33 +107,33 @@
       "heading": "Simplify Customer Notes and Follow-Ups",
       "description":"After each job, you can record a quick voice memo that’s automatically transcribed and summarized — perfect for noting work completed or parts needed for future reference. Upload job cards, invoices, or inspection reports directly into your dashboard, keeping every detail organized and accessible."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/mechanics/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.pngResidential Cleaning",
+        "icon": "/industries-images/mechanics/pu-maintanance.png",
         "description": "General Auto Maintenance",
         "title": "Manage oil changes, brake services, tire rotations, inspections, and routine maintenance."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Repairs",
         "description": "Support engine diagnostics, transmission repairs, and electrical system services."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Service Follow-ups",
         "description": "Encourage regular visits for preventative care and ongoing vehicle performance."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/mechanics/pu-tracking.png",
         "title": "Repair History Tracking",
         "description": "Log diagnostics, parts replaced, repair history, and technician notes."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common customer questions via AI chatbot or voice assistant."
       }
@@ -146,17 +143,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring services automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon":"/industries-images/reuse-icons/pg-reminders.png" ,
       "title": "Smart Reminders",
       "description": "Reduce missed visits with AI-powered alerts."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Repair Notes Retrieval",
       "description": "Quickly review client history without manual searches."
     }

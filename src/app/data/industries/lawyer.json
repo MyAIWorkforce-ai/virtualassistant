@@ -5,20 +5,17 @@
     "title": "AI for Lawyer",
     "description": "Your virtual assistant modernizes legal practice by managing appointments, recording case notes, tracking deadlines, sending client reminders, and scheduling follow-ups.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/lawyer/lawyer-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed deadlines with automated legal reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and case note-taking."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client retention with consistent deadline tracking and tailored client care."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your law practice with intelligent automation that reduces admin work, personalizes client service, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Professional and Confidential",
         "description": "Delivers clear, courteous communication while maintaining the privacy expected in legal matters."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/lawyer/kb-management.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Streamlined Appointment Management",
         "description": "Automates bookings, reschedules, and reminders to improve efficiency and client satisfaction."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-practice.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Practice",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and client process."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/lawyer/kb-availability.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Adaptable for All Firm Sizes",
         "description": "Ideal for remote lawyers, small boutique practices, and larger legal teams — scaling to fit your operation seamlessly."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/laywer/kb-availability.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "24/7 Availability",
         "description": "Ensures no call or client inquiry goes unanswered, even outside regular office hours."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/lawyer/kb-scheduling.png",
         "gradient": "from-[#F2FBFF] to-[#DAF4FF]",
         "title": "Automated Scheduling",
         "description": "Automatically manage court dates, client appointments, and tasks without manual intervention."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/lawyer/kb-care.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Improved Client Care",
         "description": "Case status, reminders, and communications remain consistent and personalized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/lawyer/kb-automation.png",
         "gradient": "from-[#FFFDE8] to-[#FFFAD0]",
         "title": "Time-Saving Automation",
         "description": "AI manages routine follow-ups, legal reminders, and recurring legal obligations reliably."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/lawyer/kb-retention.png",
         "gradient": "from-[#FFEDFD] to-[#FFCAFB]",
         "title": "Boosted Client Retention",
         "description": "Regular check-ins, proactive reminders, and personalized schedules keep clients engaged."
@@ -108,33 +105,33 @@
       "heading": "Simplified Client Records and Follow-Ups",
       "description": "After each client interaction or meeting, you or your team can record quick voice memos that are automatically transcribed and summarized for efficient record keeping. You can upload case notes, documents, and follow-up actions securely within the dashboard — ensuring continuity, accuracy, and compliance across your practice."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/lawyer/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "General Legal Practice",
         "description": "Manage consultations, case tracking, legal research, and document management."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-practice.png",
         "title": "Specialized Services",
         "description": "Support civil, criminal, family, corporate law, and legal consultancy."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Automate recurring legal reviews, compliance checks, and regular updates."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Client Progress Tracking",
         "description": "Log case status, court dates, client communications, and follow-up deadlines."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common client queries via AI chat or virtual assistant."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Deadline Reminders",
       "description": "Save time with AI scheduling and recurring legal reminders."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Record Keeping",
       "description": "Reduce missed details with AI-powered record management."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Centralized Client History",
       "description": "Quickly review case file, communications, and legal history without manual searches."
     }

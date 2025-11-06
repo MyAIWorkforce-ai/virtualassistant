@@ -40,7 +40,7 @@ export default function KeyBenefits({ heading, subheading, cards }: KeyBenefitsP
 
       {/* Cards */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 justify-center items-stretch max-w-7xl mx-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8  sm:gap-5 justify-center items-stretch max-w-7xl mx-auto"
       >
         {cards.map((card, index) => (
           <motion.article
@@ -62,7 +62,7 @@ export default function KeyBenefits({ heading, subheading, cards }: KeyBenefitsP
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
                 {card.title}
               </h3>
-              <p className="text-sm sm:text-base text-[#797A7D] leading-relaxed text-justify">
+              <p className="text-sm sm:text-sm lg:text-base text-[#797A7D] leading-relaxed text-left">
                 {card.description}
               </p>
             </div>

@@ -5,20 +5,17 @@
     "title": "AI for Accountant  ",
     "description": "Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, and scheduling client follow-ups.",
     "buttonText": "Get Started",
-    "image": "/",
+    "image": "/industries-images/accountant/accounting-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed appointments with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling and note-taking."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client adherence with consistent style tracking and tailored care."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your accounting practice with intelligent automation that reduces admin work, personalizes client care, and increases efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Professional and Reliable",
         "description": "Ensures your firm always presents a consistent, polished image with every call and inquiry."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Streamlined Appointment Management",
         "description": "Automates scheduling, rescheduling, and reminders for consultations and client meetings."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Firm",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and service structure."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "24/7 Coverage",
         "description": "Provides reliable, around-the-clock availability to support clients and prospects, even outside office hours."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/accountant/kb-confidential.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Secure and Confidential",
         "description": "Maintains strict professionalism, ensuring client information and communication remain private at all times."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F9FFEA] to-[#F3FFD7]",
         "title": "Improved Client Care",
         "description": "Financial charts, reminders, and communications are consistent and personalized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/accountant/kb-automation.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Time-Saving Automation",
         "description": "AI manages recurring tasks, follow-ups, and reminders to deliver quality accounting service."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/acountant/kb-retention.png",
         "gradient": "from-[#FEF4FF] to-[#D8F8FF]",
         "title": "Boosted Client Retention",
         "description": "Regular check-ins and personalized service plans keep clients returning."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/accountant/kb-history.png",
         "gradient": "from-[#FEF4FF] to-[#F9D0FF]",
         "title": "Centralized History",
         "description": "Easy access to past invoices, receipts, and client records for seamless service."
@@ -108,33 +105,33 @@
       "heading": "Streamline Follow-Ups and Client Communication",
       "description": "After each consultation, your team can record short voice memos that are automatically transcribed and summarized, helping maintain accurate client notes. The AI system can also manage follow-up reminders for tax deadlines, document submissions, and client appointments — keeping your workflow efficient and compliant."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/accountant/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/accountant/pu-accounting.png",
         "title": "General Accounting",
         "description": "Manage bookkeeping, expense tracking, invoicing, and quarterly/annual tax preparation."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Services",
         "description": "Support payroll, auditing, compliance, and consultancy."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Automate recurring financial reviews for consistent long-term stability."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/accountant/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log client transactions, invoices, payment history, and follow-up updates."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer client inquiries via AI chat or voice assistant."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring client meetings automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Reminders",
       "description": "Reduce missed deadlines with AI-powered alerts."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Centralized Records",
       "description": "Quickly retrieve client histories without manual searches."
     }

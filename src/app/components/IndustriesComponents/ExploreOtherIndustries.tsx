@@ -39,7 +39,7 @@ export default function ExploreOtherIndustries({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl font-bold text-gray-900 mb-4"
+          className="className=font-poppins text-[#00A7DE] font-bold text-[51px] leading-[40px] tracking-[0] text-center"
         >
           Explore Other Industries
         </motion.h2>
@@ -49,9 +49,9 @@ export default function ExploreOtherIndustries({
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-gray-600 max-w-2xl mx-auto mb-10"
+          className="text-gray-600 max-w-2xl mx-auto px-30 mb-10"
         >
-          Discover how our AI solutions are transforming other industries too.
+        Discover how our AI solutions are transforming various industries.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-25">

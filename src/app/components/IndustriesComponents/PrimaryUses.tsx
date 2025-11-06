@@ -54,7 +54,7 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
                 priority
               />
               <div>
-                <h3 className="text-base font-medium text-gray-900">
+                <h3 className="text-base font-medium text-gray-900 mb-2">
                   {item.title}
                 </h3>
                 <p className="text-base font-normal text-[#797A7D]">
@@ -79,7 +79,7 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
                 priority
               />
               <div>
-                <h3 className="text-base font-medium text-gray-900">
+                <h3 className="text-base font-medium text-gray-900 mb-2">
                   {item.title}
                 </h3>
                 <p className="text-base font-normal text-[#797A7D]">

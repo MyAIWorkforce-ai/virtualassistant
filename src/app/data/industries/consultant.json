@@ -5,20 +5,17 @@
     "title": "AI for Consultant",
     "description": "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, sending follow-up reminders, and streamlining client communication.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/consultant/consultant.main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "30%",
         "title": "Fewer missed meetings and project deadlines with automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling, note-taking, and administrative tasks."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher client satisfaction through consistent follow-ups and personalized care."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your consulting practice with intelligent automation that reduces admin work, personalizes client service, and increases productivity.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Professional and Reliable",
         "description": "Ensures your clients always experience a high level of professionalism and responsiveness."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Effortless Appointment Management",
         "description": "Automates consultation scheduling, rescheduling, and follow-up reminders to keep your day running smoothly."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and client approach."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-management.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "24/7 Client Support",
         "description": "Works around the clock to manage calls, inquiries, and leads, even outside your normal business hours."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/consultant/kb-consultant.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Scalable for Solo or Team Consultants",
         "description": "Perfect for independent consultants, small advisory teams, or larger firms needing consistent client communication."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FDF2FF] to-[#F5D8FF]",
         "title": "Automated Scheduling",
         "description": "Automatically manage client appointments, meetings, and deadlines without manual intervention."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon":"/industries-images/consultant/kb-care.png",
         "gradient": "from-[#FFFFEB] to-[#FDFFD2]",
         "title": "Improved Client Care",
         "description": "Meeting notes, project updates, and client communications remain consistent and personalized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/consultant/kb-automation.png",
         "gradient": "from-[#EAF9FF] to-[#CCF1FF]",
         "title": "Time-Saving Automation",
         "description": "AI manages routine follow-ups, reminders, and recurring tasks for efficient consulting service."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/consultant/kb-retention.png",
         "gradient": "from-[#FFF3E5] to-[#FFE9D0]",
         "title": "Boosted Client Retention",
         "description": "Regular check-ins, status updates, and personalized action plans help cultivate strong client relationships."
@@ -108,33 +105,33 @@
       "heading": "Simplify Client Notes and Follow-Ups",
       "description": "After each meeting, you can record a short voice memo that’s automatically transcribed and summarized for easy reference. You can also upload proposals, project notes, or client feedback directly into your system, keeping your workflow efficient and your records organized."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/consultant/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/reuse-icons/puu-practice.png",
         "title": "General Consulting Practice",
         "description": "Manage project workflows, client onboarding, meeting scheduling, and result tracking."
       },
       {
-        "icon": "/images/regular.png",
+        "icon":  "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Consulting Services",
         "description": "Support management, IT, HR, strategy, and compliance consulting with automated processes."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon":  "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Automate recurring project reviews, client check-ins, and regular reporting."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon":  "/industries-images/reuse-icons/puu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log project status, deliverables, milestones, and follow-up actions for each client."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon":  "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer client inquiries, schedule meetings, and provide real-time support via AI assistant."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon":  "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-ups",
       "description": "Save time by having AI schedule recurring client meetings and reminders."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon":  "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Project Management",
       "description": "Reduce missed deadlines and improve efficiency with AI-powered notifications."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon":  "/industries-images/reuse-icons/pg-records.png",
       "title": "Centralized Client History",
       "description": "Quickly access past meeting notes, files, and project details without manual searches."
     }
