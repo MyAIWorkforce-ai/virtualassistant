@@ -29,14 +29,13 @@ export default function HeroSection({
     <>
       {/* ---------------- HERO SECTION ---------------- */}
 <motion.section
-  className="relative w-full bg-cover bg-center overflow-visible"
+  className="relative w-full bg-cover bg-center overflow-hidden"
   style={{
     background: "linear-gradient(to bottom, #0097DA, #00BAF2, #8FD8F8)",
   }}
 >
-
-
-  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 py-16 border-b border-white">
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 border-b border-white">
+    
     {/* LEFT CONTENT */}
     <motion.div
       className="text-white max-w-xl flex flex-col pb-9 items-center md:items-start text-center md:text-left"
@@ -50,50 +49,78 @@ export default function HeroSection({
       </motion.div>
 
       {/* Title */}
-      <motion.h1 className="text-5xl font-bold mb-4">{title}</motion.h1>
+      <motion.h1 className="text-4xl sm:text-5xl font-bold mb-4">{title}</motion.h1>
 
       {/* Description */}
-      <motion.p className="text-2xl font-regular text-[#E0F2FE] mb-6">
+      <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6">
         {description}
       </motion.p>
 
-      {/* Button */}
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-        className="text-[#00A7DE] bg-[#FFFFFF] font-medium py-2 px-4 rounded flex items-center gap-2
-        transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+      {/* BUTTONS */}
+      <motion.div
+        className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
-        {buttonText}
-        <Image
-          src="/images/svg.png"
-          alt="arrow"
-          width={12}
-          height={12}
-          priority
-        />
-      </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Start 14 Day Free Trial
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-poppins font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Book a Demo
+          <Image
+            src="/industries-images/reuse-icons/demo-button.png"
+            alt="demo"
+            width={14}
+            height={14}
+            priority
+          />
+        </motion.button>
+      </motion.div>
     </motion.div>
 
     {/* RIGHT IMAGE */}
-    <motion.div
-      className="flex-shrink-0 flex justify-center md:justify-end items-end h-full overflow-hidden mt-8 md:mt-0"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-    >
-      <Image
-        src={image}
-        alt={title}
-        width={800}
-        height={800}
-        priority
-        className="w-[90%] max-w-[650px] h-auto object-cover md:pl-19 md:-mb-25 md:pr-30"
-        style={{ objectPosition: "right center" }}
-      />
-    </motion.div>
+    <div className="relative mt-10 md:mt-0 w-full md:flex-1 flex justify-center md:justify-end items-end h-[300px] sm:h-[400px] md:h-[480px] lg:h-[550px] xl:h-[600px] overflow-visible">
+      <motion.div
+        className="relative flex justify-center md:justify-end items-end w-full h-full z-0"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <Image
+          src={image}
+          alt={title}
+          width={650}
+          height={650}
+          priority
+          className="
+            w-full
+            max-w-[320px]
+            sm:max-w-[420px]
+            md:max-w-[520px]
+            lg:max-w-[550px]
+            xl:max-w-[680px]
+            h-auto
+            object-contain
+          "
+          style={{ objectPosition: "right bottom" }}
+        />
+      </motion.div>
+    </div>
+
   </div>
 </motion.section>
+
+
 
 
       {/* ---------------- GRID BACKGROUND ---------------- */}

@@ -35,11 +35,11 @@ export default function UseCase({ title, topBox, useCases }: UseCaseProps) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full py-16 px-6 md:px-12 lg:px-20 bg-gradient-to-r from-[#F9FAFB] via-[#E6F8FA] to-[#DCF5F8] overflow-hidden"
+      className="w-full py-16 px-6 md:px-12 lg:px-60 bg-gradient-to-r from-[#F9FAFB] via-[#E6F8FA] to-[#DCF5F8] overflow-hidden"
     >
       {/* HEADING */}
       <div className="max-w-4xl mx-auto text-center mb-14">
-        <h2 className="font-[Poppins] font-semibold text-[#00A7DE] text-3xl sm:text-4xl md:text-[36px] leading-[150%] mb-4">
+        <h2 className="font-Poppins font-semibold text-[#00A7DE] text-3xl sm:text-4xl md:text-[36px] leading-[150%] mb-4">
           {title}
         </h2>
       </div>
@@ -67,7 +67,7 @@ export default function UseCase({ title, topBox, useCases }: UseCaseProps) {
       transition={{ type: "spring", stiffness: 250, damping: 20 }}
       className={`w-full h-auto rounded-xl text-black shadow-md ${bgColors[index]} transition-transform flex flex-col justify-between p-4`}
     >
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 mb-4">
         <Image
           src={icons[index]}
           alt={item.title}

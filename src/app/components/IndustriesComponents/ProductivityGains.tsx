@@ -27,7 +27,7 @@ export default function ProductivityGains({ heading, cards }: ProductivityGainsP
       <div className="max-w-3xl mx-auto text-center mb-10">
         <h2
           id="productivity-heading"
-          className="text-4xl sm:text-5xl font-bold mb-4 font-[Poppins]"
+          className="text-4xl sm:text-5xl font-bold mb-4 font-Poppins"
         >
           {heading}
         </h2>
@@ -52,11 +52,11 @@ export default function ProductivityGains({ heading, cards }: ProductivityGainsP
         alt={card.title}
         width={56}
         height={56}
-        className="w-12 h-12 sm:w-14 sm:h-14 mb-2"
+        className="w-12 h-12 sm:w-14 sm:h-14 mb-1"
         priority
       />
-      <h3 className="text-lg font-semibold font-[Poppins]">{card.title}</h3>
-      <p className="text-sm font-[Poppins] text-[#E0F2FE] leading-relaxed">
+      <h3 className="text-lg font-semibold font-Poppins">{card.title}</h3>
+      <p className="text-sm font-Poppins text-[#E0F2FE] leading-relaxed">
         {card.description}
       </p>
     </motion.article>

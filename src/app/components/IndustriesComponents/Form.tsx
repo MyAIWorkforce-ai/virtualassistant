@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import FormSection from "@/app/_components/FormSection"
 
 interface FormProps {
@@ -23,10 +24,41 @@ export default function Form({ title, subtitle }: FormProps) {
           {title}
         </motion.h2>
         <motion.p
-          className="text-white mt-2 mb-8 text-base md:text-lg"
+          className="text-white mt-2 mb-4 text-base md:text-lg"
         >
           {subtitle}
         </motion.p>
+     
+         {/* BUTTONS */}
+           <motion.div
+             className="flex gap-4 m-6  justify-center items-center"
+             initial={{ opacity: 0, y: 30 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.2 }}
+           >
+             <motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Start 14 Day Free Trial
+             </motion.button>
+             <motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Book a Demo
+               <Image
+                 src="/industries-images/reuse-icons/demo-button.png"
+                 alt="demo"
+                 width={14}
+                 height={14}
+                 priority
+               />
+             </motion.button>
+             
+           </motion.div>
 
         <FormSection />
       </motion.div>

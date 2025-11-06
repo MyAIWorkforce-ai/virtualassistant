@@ -5,20 +5,17 @@
     "title": "AI for Real Estate Agent",
     "description": "Your virtual assistant modernizes real estate by managing property viewings, recording client notes, tracking appointment schedules, sending follow-up reminders, & supporting seamless communication",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/real-state-agent/real-state-agent-main.svg",
     "metrics": [
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Fewer missed viewings and client meetings thanks to automated reminders."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "98%",
         "title": "Reduced hours spent on scheduling, documentation, and client follow-ups."
       },
       {
-        "icon": "/icons/stethoscope.svg",
         "value": "25%",
         "title": "Higher deal closure rates through consistent lead tracking and personalized client care."
       }
@@ -46,55 +43,55 @@
     "subheading": "Enhance your real estate business with intelligent automation that reduces admin work, personalizes service, and increases productivity.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Streamlined Scheduling",
         "description": "Books, confirms, and reschedules inspections or appraisal meetings automatically."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kbb-care.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Capture Every Lead",
         "description": "Automatically answers property inquiries, collects details, and forwards them to your CRM or team instantly."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Agency",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, branding, and process."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-management.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "24/7 Availability",
         "description": ": Handles all client and buyer inquiries around the clock, including after hours and weekends."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/real-state-agent/kb-experience.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Boost Client Experience",
         "description": "Delivers fast, professional responses that make every client feel valued and well-informed."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F2FFEE] to-[#DDFFD4]",
         "title": "Improved Client Care",
         "description": ": : Client profiles, property interests, and communications stay consistent and customized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/real-state-agent/kb-automation.png",
         "gradient": "from-[#FEE2FF] to-[#FAC2FF]",
         "title": "Time-Saving Automation",
         "description": "AI handles reminders, recurring follow-ups, and updates for each client and property."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/real-state-agent/kb-retention.png",
         "gradient": "from-[#EDF3FF] to-[#CFE0FF]",
         "title": "Boosted Client Retention",
         "description": "Regular check-ins, tailored recommendations, and proactive support help keep clients engaged."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/reuse-icons/kb-history.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Centralized History",
         "description": "Instant access to viewing history, client feedback, transaction records, and property notes."
@@ -108,33 +105,33 @@
       "heading": "Simplify Client Notes and Follow-Ups",
       "description": "After each inspection or meeting, you can record short voice memos that are automatically transcribed and summarized. Your AI system can log these notes against each client or property record, ensuring nothing falls through the cracks. Upload property reports, offers, and client feedback directly into your dashboard — keeping everything organized and accessible."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/real-state-agent/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/imaInges/skin care.png",
+        "icon": "/industries-images/real-state-agent/pu-management.png",
         "title": "Property Management",
         "description": "Organize property listings, open houses, appointments, and deal tracking."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Services",
         "description": "Support residential, commercial, rental, and investment properties with automated workflow."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Automate periodic client check-ins, property updates, and follow-up reminders."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/reuse-icons/puu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log communication history, preferences, scheduled viewings, and negotiation milestones."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer buyer or seller queries, schedule viewings, and offer instant virtual support."
       }
@@ -144,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-ups.png",
       "title": "Automated Viewing Reminders",
       "description": "Save time with AI scheduled property tours and appointment notifications."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pu-reminders.png",
       "title": "Smart Lead Management",
       "description": "Improve conversion rates with AI-powered lead follow-up and nurturing."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pu-records.png",
       "title": "Centralized Client and Property Data",
       "description": "Quickly access past interactions, notes, and documents for each deal."
     }
