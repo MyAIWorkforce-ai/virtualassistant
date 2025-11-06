@@ -67,7 +67,7 @@
         "description": "Your clients are always greeted with warmth and professionalism — no waiting or voicemail frustration."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/reuse-icons/kb-more-care.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "More Care ",
         "description": "Spend less time on admin and more time delivering relaxation and therapy."
@@ -146,7 +146,7 @@
       "description": "Bookings are automatically confirmed with reminders, saving time on client communication."
     },
     {
-      "icon": "/industries-images/reuse-icons/pg-dropoffs.png",
+      "icon": "/industries-images/reuse-icons/pg.drop-off.png",
       "title": "Reduced Drop-offs",
       "description": "Reduces missed appointments with smart confirmation and tracking"
     },

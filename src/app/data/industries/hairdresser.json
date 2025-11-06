@@ -118,7 +118,7 @@
       {
         "icon": "/industries-images/hair-dresser/pu-care.png",
         "title": "Color & Treatment Care",
-        "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
+        "description": "Record formulas, track treatments, and schedule retouches."
       },
       {
         "icon": "/industries-images/reuse-icons/pu-sync.png",
@@ -126,7 +126,7 @@
         "description": "Encourage recurring visits for trims, nourishing masks, and scalp health."
       },
       {
-        "icon": "/industries-images/reuse-icons/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log hair growth, scalp condition, treatment history, color formulas, and style evolution over time."
       },
@@ -162,13 +162,13 @@
   "useCase": {
     "title": "Example Use Case",
     "topBox": {
-      "heading": "Haircut &  Color Treatment",
+      "heading": "Haircut % Color Treatment",
       "description": "A client books a haircut and color treatment through your virtual assistant."
     },
     "useCases": [
       {
         "title": "Instant Confirmation",
-        "text": "Appointment is confirmed instantly with preparation advice ( ''arrive with clean, product-free hair '').     "
+        "text": "Appointment is confirmed instantly with preparation advice ( 'arrive with clean, product-free hair')."
       },
       {
         "title": "Style  Notes Logging",

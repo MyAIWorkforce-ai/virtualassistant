@@ -55,7 +55,7 @@
         "description": "Record massage details, focus areas, and client preferences in seconds."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/personal-trainer/kb-program.png",
         "gradient": "from-[#F3E8FF] to-[#E7D1FF]",
         "title": "Personalized Programs",
         "description": "Tailors workout and nutrition plans to individual client needs."
@@ -157,7 +157,7 @@
       "description": "Instant access to client history makes sessions more targeted."
     },
        {
-      "icon": "/industries-images/reuse-icons/pg-timesaving.png",
+      "icon": "/industries-images/reuse-icons/pg-facetime.png",
       "title": "Care Support",
       "description": "AI-generated workout and nutrition reminders tailored to each client’s fitness goals. "
     }

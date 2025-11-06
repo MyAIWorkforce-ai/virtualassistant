@@ -2,7 +2,7 @@
   "slug": "physiotherapy",
   "heroSection": {
     "tag": "Physio Therapy",
-    "title": "AI for Physiotherapists",
+    "title": "AI for Physiotherapist",
     "description": "A virtual assistant that books, reminds, and records, while you focus on your patients.",
     "buttonText": "Get Started",
     "image": "/industries-images/physiotherapist/physio-main.svg",
@@ -52,7 +52,7 @@
         "icon": "/industries-images/reuse-icons/kb-patient-records.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Secure Patient Records",
-        "description": "Enhance relationships through timely communication and consistent follow-ups."
+        "description": "Secure storage of patient progress notes, treatment history, and exercise routines."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-care.png",
@@ -70,7 +70,7 @@
         "icon": "/industries-images/reuse-icons/kb-communication.png",
         "gradient": "from-[#F5FBFF] to-[#CCE9FB]",
         "title": "Smooth Communication",
-        "description": "Streamline administrative work so you can focus on what matters most."
+        "description": "Seamless communication with patients about home exercises and care instructions."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-enhanced.png",

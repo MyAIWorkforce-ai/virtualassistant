@@ -2,7 +2,7 @@
   "slug": "physiotherapy",
   "heroSection": {
     "tag": "Mind Therapy",
-    "title": "AI for Psychology",
+    "title": "AI for Psychologist",
     "description": "Your virtual assistant supports mental health care by managing session bookings, reminders, progress notes, and follow-up care.",
     "buttonText": "Get Started",
     "image": "/industries-images/psychologist/psychologist-main.svg",
@@ -89,6 +89,12 @@
         "gradient": "from-[#FFF5F5] to-[#FFB6B8]",
         "title": "Improved Client Experience",
         "description": "Clients receive immediate, professional responses — even outside of office hours."
+      },
+      {
+        "icon": "/industries-images/psychologist/kb-insights.png",
+        "gradient": "from-[#FFFFFF] to-[#FFF0B6]",
+        "title": "Data-Driven Insights",
+        "description": "Gain valuable insights from client interactions, monitor progress, and improve treatment outcomes through data-informed decisions."
       }
     ]
   },
@@ -174,7 +180,7 @@
       },
       {
         "title": "Wellness Prompts",
-        "text": "Sending calm exercises r mindfulness practices between visits."
+        "text": "Guided questions to help manage stress, emotions, and self-discovery."
       }
     ]
   },
