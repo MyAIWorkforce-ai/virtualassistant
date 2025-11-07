@@ -88,35 +88,35 @@ export default function HeroSection({
       </motion.div>
     </motion.div>
 
-    {/* RIGHT IMAGE */}
-    <div className="relative mt-10 md:mt-0 w-full md:flex-1 flex justify-center md:justify-end items-end h-[300px] sm:h-[400px] md:h-[480px] lg:h-[550px] xl:h-[600px] overflow-visible">
-      <motion.div
-        className="relative flex justify-center md:justify-end items-end w-full h-full z-0"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <Image
-          src={image}
-          alt={title}
-          width={650}
-          height={650}
-          priority
-          className="
-            w-full
-            max-w-[320px]
-            sm:max-w-[420px]
-            md:max-w-[520px]
-            lg:max-w-[550px]
-            xl:max-w-[680px]
-            h-auto
-            object-contain
-          "
-          style={{ objectPosition: "right bottom" }}
-        />
-      </motion.div>
-    </div>
-
+{/* RIGHT IMAGE */}
+<div className="relative mt-10 md:mt-0 w-full md:flex-1 h-[280px] sm:h-[360px] md:h-[420px] lg:h-[450px] xl:h-[460px] overflow-visible">
+  <motion.div
+    className="absolute -mb-15 bottom-0 flex justify-center md:justify-end items-end w-full h-full z-0"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+  >
+    <Image
+      src={image}
+      alt={title}
+      width={500}
+      height={500}
+      priority
+      className="
+        w-full
+        max-w-[300px]
+        sm:max-w-[400px]
+        md:max-w-[450px]
+        lg:max-w-[470px]
+        xl:max-w-[480px]
+        2xl:max-w-[500px]
+        h-auto
+        object-contain
+      "
+      style={{ objectPosition: 'right bottom' }}
+    />
+  </motion.div>
+</div>
   </div>
 </motion.section>
 
