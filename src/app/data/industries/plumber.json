@@ -5,7 +5,7 @@
     "title": "AI for Plumber",
     "description": "Your virtual plumbing assistant modernizes service operations by managing appointments,recording job notes, sending maintenance reminders, and scheduling follow-ups — so you can fix pipes.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/plumber/plumber.main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -43,60 +43,60 @@
   },
   "keyBenefits": {
     "heading": "Key Benefits",
-    "subheading": "Enhance your electrical business with intelligent automation that reduces admin time, increases response speed, and ensures safety compliance.",
+    "subheading": "Enhance your plumbing business with intelligent automation that reduces admin work, improves response times, and increases repeat customers.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Capture Every Call",
         "description": "Never miss a lead, emergency, or booking — even when you’re on another job. "
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kb-scheduling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Streamlined Job Scheduling",
         "description":" Automates bookings, reschedules, and reminders for smooth day-to-day operations. "
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from emergency callouts to scheduled maintenance. "
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Ideal for solo plumbers, small teams, and large plumbing companies — scaling as your business grows. "
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/reuse-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable 24/7 Coverage",
         "description": "Operates around the clock at a fraction of the cost of hiring full-time admin staff."
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F7FFF4] to-[#E4FFDB]",
         "title": "Improved Customer Experience",
-        "description": "Provides fast, friendly, and accurate responses that keep your clients coming back."
+        "description": "Provides friendly, reliable, and fast responses that make a lasting impression on customers."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/plumber/kb-automation.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Time-Saving Automation",
         "description": "AI takes care of appointment confirmations, invoicing notes, and maintenance reminders so you can spend more time on solving problems."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/plumber/kb-booking.png",
         "gradient": "from-[#DBECFF] to-[#DBECFF]",
-        "title": "Boosted Client Retention",
-        "description":" Automated maintenance alerts keep customers engaged and ensure timely electrical servicing."
+        "title": "Faster Repeat Bookings",
+        "description":"Faster Automated maintenance reminders, service offers, and personalized follow-ups keep customers coming back for routine checks and upgrades."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/plumber/kb-records.png",
         "gradient": "from-[#FFFFF1] to-[#FEFFDA]",
         "title": "Centralized Job Records",
         "description": "Easy access to past jobs, parts used, diagnostics, photos, and customer preferences — all linked to the property address for seamless continuity."
@@ -105,38 +105,38 @@
   },
   "whyChoose": {
     "heading": "Why Plumbers Choose VirtualAssistant.com.au ",
-    "description": "Our AI Virtual Receptionist is trusted by plumbers across Australia — from home-based sole traders to large-scale plumbing companies. It integrates seamlessly with your scheduling and job management systems, ensuring clear, professional communication with every client. Best of all, your AI Receptionist can be trained specifically to your plumbing business — adapting to your tone, services, and daily workflow. Let our AI handle your calls and admin so you can focus on what matters most — keeping your clients’ water flowing and their homes leak-free. ",
+    "description": "Our AI Virtual Receptionist is trusted by plumbers across Australia — from home-based sole traders to large-scale plumbing companies. It integrates seamlessly with your scheduling and job management systems, ensuring clear, professional communication with every client. Best of all, your AI Receptionist can be trained specifically to your plumbing business — adapting to your tone, services, and daily workflow. Let our AI handle your calls and admin so you can focus on what matters most — keeping your clients’ water flowing and their homes leak-free.",
     "leftBox": {
       "heading": "Simplify Job Notes and Follow-Ups ",
-      "description":"After each job, you can record a quick voice memo that’s automatically transcribed and summarized — ideal for noting completed work, materials used, or follow-up needs. Upload invoices, service reports, or compliance certificates directly into your dashboard for easy tracking and organization. "
+      "description":"After each job, you can record a quick voice memo that’s automatically transcribed and summarized — ideal for noting completed work, materials used, or follow-up needs. Upload invoices, service reports, or compliance certificates directly into your dashboard for easy tracking and organization."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/plumber/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.pngResidential Cleaning",
-        "description": "General Plumbing Services",
-        "title": "Manage routine repairs, drain cleaning, leak fixes, and fixture installations."
+        "icon": "/industries-images/plumber/pu-services.png",
+        "description": "Manage routine repairs, drain cleaning, leak fixes, and fixture installations.",
+        "title": "General Plumbing Services"
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Treatments",
         "description": "Support for sewer line work, water heaters, backflow, and gas appliance servicing."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine Maintenance Plans",
         "description": "Encourage annual inspections, preventative servicing, and seasonal tune-ups."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/plumber/pu-repair.png",
         "title": "Emergency Repairs",
         "description": "Rapid triage and scheduling for burst pipes, severe leaks, or gas emergencies."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/plumber/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common customer inquiries via chat, voice, or SMS and help dispatch the right technician.\\\\\\\\\\\\\\\\\\\\"
       }
@@ -146,17 +146,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring maintenance and reminder campaigns automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Notifications",
       "description": "Reduce missed visits with AI-powered alerts and rescheduling suggestions."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Accurate Job Records",
       "description": "Quickly review service history, parts used, and previous diagnostics without searching paper files."
     }

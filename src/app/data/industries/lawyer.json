@@ -55,19 +55,19 @@
         "description": "Automates bookings, reschedules, and reminders to improve efficiency and client satisfaction."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "icon": "/industries-images/lawyer/kb-practice.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Practice",
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and client process."
       },
       {
-        "icon": "/industries-images/lawyer/kb-availability.png",
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Adaptable for All Firm Sizes",
         "description": "Ideal for remote lawyers, small boutique practices, and larger legal teams — scaling to fit your operation seamlessly."
       },
       {
-        "icon": "/industries-images/laywer/kb-availability.png",
+        "icon": "/industries-images/lawyer/kb-availability.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "24/7 Availability",
         "description": "Ensures no call or client inquiry goes unanswered, even outside regular office hours."
@@ -111,12 +111,12 @@
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "icon": "/industries-images/reuse-icons/pu-practice.png",
         "title": "General Legal Practice",
         "description": "Manage consultations, case tracking, legal research, and document management."
       },
       {
-        "icon": "/industries-images/reuse-icons/pu-practice.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Specialized Services",
         "description": "Support civil, criminal, family, corporate law, and legal consultancy."
       },
@@ -126,7 +126,7 @@
         "description": "Automate recurring legal reviews, compliance checks, and regular updates."
       },
       {
-        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "icon": "/industries-images/reuse-icons/puu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log case status, court dates, client communications, and follow-up deadlines."
       },

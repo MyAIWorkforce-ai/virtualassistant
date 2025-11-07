@@ -5,7 +5,7 @@
     "title": "AI for Electricians",
     "description": "Your virtual assistant modernizes electrical operations by managing appointments, diagnosing, sending safety reminders, and scheduling followups , so you can focus on powering homes.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/electricians/electricians-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -46,57 +46,57 @@
     "subheading": "Enhance your electrical business with intelligent automation that reduces admin time, increases response speed, and ensures safety compliance.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/electricians/kb-call.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Capture Every Call",
         "description": "Never miss a lead, emergency, or service inquiry — even while you’re on another job."
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/electricians/kb-scheduling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Streamlined Job Scheduling",
         "description":" Automates bookings, reschedules, and reminders to keep your workload organized and efficient."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/electricians/kb-business.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
-        "title": "Fully Customizable to Your Business",
+        "title": "/industries-images/electricians/kb-business.png",
         "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from urgent callouts to major installations."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/electricians/kb-sizes.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Perfect for solo electricians, small teams, and large companies — scaling easily as your business grows."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/electricians/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
-        "title": "Affordable 24/7 Coverage",
+        "title": "Affordable 24/7 Support",
         "description": "Operates like a full-time receptionist at a fraction of the cost."
 
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/electricians/kb-experience.png",
         "gradient": "from-[#F5FFF9] to-[#DFFFED]",
         "title": "Improved Customer Experience",
         "description": "Provides fast, friendly, and accurate responses that keep your clients coming back."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/electricians/kb-automation.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Time-Saving Automation",
         "description": "AI handles appointment confirmations, estimates, invoicing notes, and post-job communications, giving you more time for on-site work."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/electricians/kb-retention.png",
         "gradient": "from-[#FFFCF1] to-[#FFFAE0]",
         "title": "Boosted Client Retention",
         "description":" Automated maintenance alerts keep customers engaged and ensure timely electrical servicing."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/electricians/kb-record.png",
         "gradient": "from-[#F6FBFF] to-[#E5F3FF]",
         "title": "Centralized Job Records",
         "description": "Easily access past installations, and inspection reports all organized per property for a seamless workflow."
@@ -110,33 +110,33 @@
       "heading": "Simplify Job Notes and Follow-Ups",
       "description":"After each job, record a quick voice memo that’s automatically transcribed and summarized — perfect for tracking what was done, materials used, or follow-up work needed. Upload quotes, invoices, or compliance certificates directly into your dashboard, keeping your admin streamlined and secure."
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/electricians/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.pngResidential Cleaning",
-        "description": "General Electrical Services",
-        "title": "Manage wiring, lighting installations, power outlet repairs, and electrical upgrades."
+        "icon": "/industries-images/electricians/pu-services.png",
+        "description": "Manage wiring, lighting installations, power outlet repairs, and electrical upgrades.",
+        "title": "General Electrical Services"
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/electricians/pu-installation.png",
         "title": "Specialized Installations",
         "description": "Support for solar systems, smart home setups, EV chargers, and security systems."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/electricians/pu-maintenance.png",
         "title": "Routine Maintenance",
         "description": "Encourage annual electrical safety inspections and preventative maintenance checks."
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/electricians/pu-repairs.png",
         "title": "Emergency Repairs",
         "description": "Rapid scheduling for power outages, short circuits, and urgent electrical faults."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/electricians/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common inquiries via chat, voice, or SMS, and assist with troubleshooting and dispatching.."
       }
@@ -146,17 +146,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "AI schedules routine maintenance and inspection reminders automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/electricians/pg-alert.png",
       "title": "Smart Notifications",
       "description": "Reduce missed jobs with intelligent reminders for upcoming or delayed appointments."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Accurate Job Records",
       "description": "Access service history, inspection results, and repair details in one organized system."
     }

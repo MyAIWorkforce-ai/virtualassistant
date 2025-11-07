@@ -5,7 +5,7 @@
     "title": "AI for Others",
     "description": "Your virtual assistant brings intelligent automation to any industry. AI for Others is built to adapt to your business needs, no matter your field.",
     "buttonText": "Get Started",
-    "image": "/images/physio-hero.png",
+    "image": "/industries-images/others/others-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -46,55 +46,55 @@
     "subheading": "Empower your organization with intelligent automation that simplifies operations, enhances communication, and drives efficiency.",
     "cards": [
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
         "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
         "title": "Never Miss a Call or Lead",
         "description": "Your AI answers every call instantly, capturing opportunities even outside of business hours."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-patient-records.png",
+        "icon": "/industries-images/reuse-icons/kb-scheduling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Smart Scheduling and Reminders",
         "description": "Books, confirms, and reschedules appointments automatically to keep your calendar organized."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-user.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained to match your services, tone, and workflow — whether professional, casual, or industry-specific."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-better.png",
+        "icon": "/industries-images/reuse-icons/kb-management.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Affordable 24/7 Coverage",
         "description": "Provides full-time support without the cost of hiring staff, improving customer response times."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-communication.png",
+        "icon": "/industries-images/others/kb-growth.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Scales with Your Growth",
         "description": "Perfect for solo operators through to large teams — adaptable to your business structure and size."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-enhanced.png",
+        "icon": "/industries-images/others/kb-experience.png",
         "gradient": "from-[#F9EEFF] to-[#F4E4FF]",
         "title": "Improved Client Experience",
         "description": "Delivers fast, accurate, and friendly responses that leave a lasting impression on customers."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-practice.png",
+        "icon": "/industries-images/others/kb-processes.png",
         "gradient": "from-[#FFFDF4] to-[#FFFADD]",
         "title": "Time-Saving processes",
         "description": "Automate recurring tasks like reports, updates, and notifications."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-reliable.png",
+        "icon": "/industries-images/others/kb-rates.png",
         "gradient": "from-[#F4F8FF] to-[#E2EEFF]",
         "title": "Higher Retention Rates",
         "description": "Maintain client relationships through consistent, personalized engagement."
       },
       {
-        "icon": "/industries-images/physiotherapist/kb-boosts.png",
+        "icon": "/industries-images/others/kb-management.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Centralized Data Management",
         "description": "Access all client and project details in one secure, organized place."
@@ -106,35 +106,35 @@
     "description": "Our AI Virtual Receptionist is trusted by service-based businesses all across Australia — from trades and clinics to salons, studios, and agencies. It integrates seamlessly into your existing workflow, handling calls, bookings, and customer communication around the clock. Best of all, your AI Receptionist can be trained specifically for your industry and business personality — whether friendly and local or professional and corporate. Let our AI take care of the admin so you can focus on what matters most — delivering great service and growing your business.",
     "leftBox": {
       "heading": "Simplify Notes and Follow-Ups",
-      "description": "Record a quick voice memo after each client interaction — your AI automatically transcribes and summarizes it, keeping your notes organized and searchable. Upload invoices, client forms, or service notes directly into your dashboard, keeping everything in one place for easy access and follow-up."
+      "description": "Record a quick voice memo after each client interaction — your AI automatically transcribes and summarizes it, keeping your notes organized and searchable. Upload invoices, client forms, or service notes directly into your dashboard, keeping everything in one place for easy access and follow-up.      "
     },
-    "image": "/industries-images/physiotherapist/why-choose.png"
+    "image": "/industries-images/others/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/images/skin care.png",
+        "icon": "/industries-images/others/pu-management.png",
         "title": "Task & Workflow Management",
         "description": "Automate and track project progress."
       },
       {
-        "icon": "/images/regular.png",
+        "icon": "/industries-images/others/pu-tracking.png",
         "title": "Performance Tracking",
         "description": "Record key metrics, results, and milestones."
       },
       {
-        "icon": "/images/wellness support.png",
+        "icon": "/industries-images/others/pu-maintenance.png",
         "title": "Routine Maintenance",
         "description": "Encourage bi-annual visits for preventive care and long-term oral health"
       },
       {
-        "icon": "/images/tracking.png",
+        "icon": "/industries-images/others/pu-interaction.png",
         "title": "Client Interaction",
         "description": "Send follow-ups, reminders, and responses automatically."
       },
       {
-        "icon": "/images/tracking (2).png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Provide instant answers to client inquiries via chat or voice."
       }
@@ -144,12 +144,12 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save hours each week by letting AI manage reminders and updates."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Notifications",
       "description": "Stay on top of priorities with AI-generated alerts."
     },

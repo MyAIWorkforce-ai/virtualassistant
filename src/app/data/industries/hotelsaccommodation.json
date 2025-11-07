@@ -5,7 +5,7 @@
     "title": "AI for Hotels and Accommodation",
     "description": "Your virtual assistant modernizes hospitality operations by managing bookings, guest communication, housekeeping coordination, and follow-up services.",
     "buttonText": "Get Started",
-    "image": "/industries-images/hotel-and-accomudation/hotel-and-accomudation.main.svg",
+    "image": "/industries-images/hotel-and-accommudation/hotel-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -52,49 +52,49 @@
         "description": "Handles room inquiries, reservations, and cancellations automatically — day or night."
       },
       {
-        "icon": "/industries-images/reuse-icon/kb-communication.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-communication.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Professional Guest Communication",
         "description": "Delivers accurate and friendly responses to every inquiry, ensuring a polished first impression."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Property",
         "description": "Your AI Receptionist can be trained specifically to your business — matching your tone, guest experience, and operational process."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-sizes.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-sizes.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Perfect for boutique hotels, motels, lodges, caravan parks, serviced apartments, or Airbnb property managers — scaling as you grow."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-reliabel.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-relible.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable and Reliable",
         "description": "Acts as your full-time receptionist for a fraction of the cost, ensuring constant guest support."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-experience.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-green-heart.png",
         "gradient": "from-[#F8FFF2] to-[#E8FFDB]",
         "title": "Enhanced Guest Experience",
         "description": ": : Responds instantly and professionally, improving guest satisfaction and boosting bookings."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-automation.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-automation.png",
         "gradient": "from-[#F5F9FF] to-[#E4F1FF]",
         "title": "Time-Saving Automation",
         "description": "AI manages inquiries, bookings, and service requests so staff can focus on delivering top-quality hospitality."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-retention.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-retention.png",
         "gradient": "from-[#FFFFF6] to-[#FFFEE4]",
         "title": "Boosted Guest Retention",
         "description": "Regular communication, loyalty offers, and personalized follow-ups encourage repeat stays."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/kb-history.png",
+        "icon": "/industries-images/hotel-and-accommudation/kb-history.png",
         "gradient": "from-[#F4FBFF] to-[#E4F6FF]",
         "title": "Centralized Data History",
         "description": "Instant access to guest preferences, booking history, and service records for smooth operations."
@@ -108,28 +108,28 @@
       "heading": "Simplify Guest Notes and Follow-Ups",
       "description": "After each stay or guest interaction, your team can record a short voice memo that’s automatically transcribed and summarized — perfect for noting special requests or VIP preferences. You can upload booking details, maintenance notes, or feedback directly into your dashboard, ensuring seamless guest service and team coordination."
     },
-    "image": "/industries-images/hotel-and-accomudation/why-choose.svg"
+    "image": "/industries-images/hotel-and-accommudation/why-choose.svg"
   },
   "primaryUses": {
     "heading": "Primary Uses",
     "items": [
       {
-        "icon": "/industries-images/hotel-and-accommodation/pu-management.png",
+        "icon": "/industries-images/hotel-and-accommudation/pu-management.png",
         "title": "General Hotel Management",
         "description": "Handle bookings, room allocations, check-ins, and check-outs seamlessly."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-services.png",
         "title": "Guest Progress Tracking",
         "description": "Keep track of guest preferences, feedback, and past stays for improved personalization."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine Maintenance",
         "description": "Automate housekeeping schedules, equipment checks, and inventory management."
       },
       {
-        "icon": "/industries-images/hotel-and-accommodation/pu-services.png",
+        "icon": "/industries-images/hotel-and-accommudation/pu-services.png",
         "title": "Specialized Services",
         "description": "Support spa reservations, event hosting, restaurant bookings, and VIP guest handling."
       },
@@ -144,12 +144,12 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule and manage post-stay surveys or review requests automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Reminders",
       "description": "Reduce missed tasks with AI-powered alerts for maintenance, cleaning, and bookings."
     },

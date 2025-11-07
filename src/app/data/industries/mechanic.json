@@ -87,7 +87,7 @@
         "description": "Provides friendly, fast, and accurate responses that keep customers coming back."
       },
       {
-        "icon": "/industries-images/mechanics/kb-automated.png",
+        "icon": "/industries-images/mechanics/kb-automation.png",
         "gradient": "from-[#F1F7FF] to-[#D3D5FF]",
         "title": "Time-Saving Automation",
         "description":" AI manages appointments, follow-ups, and reminders, so you can focus on high-quality repairs."
@@ -114,8 +114,9 @@
     "items": [
       {
         "icon": "/industries-images/mechanics/pu-maintanance.png",
-        "description": "General Auto Maintenance",
-        "title": "Manage oil changes, brake services, tire rotations, inspections, and routine maintenance."
+        "title": "General Auto Maintenance",
+        "description": "Manage oil changes, brake services, tire rotations, inspections, and routine maintenance."
+        
       },
       {
         "icon": "/industries-images/reuse-icons/pu-services.png",
