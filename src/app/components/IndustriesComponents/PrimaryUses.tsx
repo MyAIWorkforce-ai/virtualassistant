@@ -65,30 +65,63 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
           ))}
         </div>
 
-        {/* RIGHT COLUMN */}
-        <div className="space-y-6 sm:space-y-8">
-          {rightColumn.map((item, index) => (
-            <motion.article
-              key={index}
-              className="flex items-start gap-3 sm:gap-4" >
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={40}
-                height={40}
-                priority
-              />
-              <div>
-                <h3 className="text-base font-medium text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-base font-normal text-[#797A7D]">
-                  {item.description}
-                </p>
-              </div>
-            </motion.article>
-          ))}
-        </div>
+    {/* RIGHT COLUMN */}
+<div className="space-y-6 sm:space-y-8">
+  {rightColumn.map((item, index) => (
+    <motion.article
+      key={index}
+      className="flex items-start gap-3 sm:gap-4"
+    >
+      <Image
+        src={item.icon}
+        alt={item.title}
+        width={40}
+        height={40}
+        priority
+      />
+      <div>
+        <h3 className="text-base font-medium text-gray-900 mb-2">
+          {item.title}
+        </h3>
+        <p className="text-base font-normal text-[#797A7D]">
+          {item.description}
+        </p>
+      </div>
+    </motion.article>
+  ))}
+
+  {/* ADDITIONAL SECTION AT END */}
+  <div className="flex items-center gap-2 mt-2">
+    
+   
+<p
+  className="text-[14px] font-poppins pl-5 text-center mt-10"
+  style={{
+    color: "#0090CC",
+    textShadow: "0 0 4px rgba(0, 144, 204, 0.25)",
+  }}
+>
+  Get you Ai Virtual <br />
+Receptionist set up in <br />
+  under 5 minutes.
+</p>
+
+    <Image
+      src="/industries-images/reuse-icons/arrow.png" 
+      alt="Arrow Vector"
+      width={90}
+      height={90}
+      
+    />
+    <button
+      className="bg-[#00A7DE] text-white text-[14px] mb-18 font-medium rounded-md px-4 py-2"
+    >
+      Start 14 Day Free Trial
+    </button>
+  </div>
+</div>
+
+
       </motion.div>
     </motion.section>
   );

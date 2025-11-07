@@ -124,49 +124,50 @@ It’s not just software — it’s your business’s central control hub.
                         />
                     </div>
                     {/* Left Section */}
-  <div className="w-full md:w-2/5 text-left mr-10 space-y-8">
-    <h2 className="font-[Poppins] font-bold text-[36px] md:text-[48px] leading-[150%] text-[#00A7DE]">
-      Productivity Benefits
-    </h2>
-    <ul className="space-y-3 pl-1"> 
-      {[
-        {
-          heading: "Complete Control:",
-          desc: "Save hours every week by replacing manual note-taking and filing.",
-        },
-        {
-          heading: "Total Visibility:",
-          desc: "Adjust, monitor, and train your AI anytime.",
-        },
-        {
-          heading: "Full Cusomization:",
-          desc: "Access all client data, analytics, and performance reports in one place.",
-        },
+<div className="w-full md:w-2/5 text-left mr-10 space-y-6">
+<h2 className="font-[Poppins] font-bold text-[36px] md:text-[45px] text-[#00A7DE] whitespace-nowrap">
+  Productivity Benefits
+</h2>
 
-        {
-          heading: "Smart Operations:",
-          desc: "Analyze results, optimize processes, and continually improve.",
-        },
-        {
-          heading: "Seamless Experience:",
-          desc: " One clean dashboard replaces multiple tools and platforms.",
-        },
-      ].map((item, index) => (
-        <motion.li
-          key={index}
-          className="flex items-baseline gap-2"
-          whileHover={{ scale: 1.02 }}
-          transition={{ type: "spring", stiffness: 200 }}
-        >
-          <div className="w-[6px] h-[6px] bg-[#000] rounded-full shrink-0 mt-[3px]" />
-          <p className="text-[#333] font-[Poppins] text-[15px] leading-[26px]">
-            <span className="font-semibold text-[#000]">{item.heading}</span>{" "}
-            {item.desc}
-          </p>
-        </motion.li>
-      ))}
-    </ul>
-  </div>              
+  <ul className="space-y-2 px-1">
+    {[
+      {
+        heading: "Complete Control:",
+        desc: "Save hours every week by replacing manual note-taking and filing.",
+      },
+      {
+        heading: "Total Visibility:",
+        desc: "Adjust, monitor, and train your AI anytime.",
+      },
+      {
+        heading: "Full Cusomization:",
+        desc: "Access all client data, analytics, and performance reports in one place.",
+      },
+      {
+        heading: "Smart Operations:",
+        desc: "Analyze results, optimize processes, and continually improve.",
+      },
+      {
+        heading: "Seamless Experience:",
+        desc: "One clean dashboard replaces multiple tools and platforms.",
+      },
+    ].map((item, index) => (
+      <motion.li
+        key={index}
+        className="flex items-baseline gap-2"
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: 'spring', stiffness: 200 }}
+      >
+        <div className="w-[6px] h-[6px] bg-[#000] rounded-full shrink-0 mt-[3px]" />
+        <p className="text-[#333] font-Poppins text-[15px] leading-[22px]">
+          <span className="font-semibold text-[#000]">{item.heading}</span>{" "}
+          {item.desc}
+        </p>
+      </motion.li>
+    ))}
+  </ul>
+</div>
+          
   </div>
   </motion.section>
 
@@ -179,10 +180,10 @@ It’s not just software — it’s your business’s central control hub.
 >
   {/* Header Section */}
   <motion.div className="max-w-5xl mx-auto text-center mb-16">
-    <h2 className="font-[Poppins] font-bold text-[36px] text-[#000000] leading-[100%]">
+    <h2 className="font-Poppins font-bold text-[36px] text-[#000000] leading-[100%]">
       Key Capabilities
     </h2>
-    <p className="font-[Poppins] font-normal text-[16px] text-[#797A7D] leading-[100%] mt-4">
+    <p className="font-Poppins font-normal text-[16px] text-[#797A7D] leading-[100%] mt-4">
       Your dashboard pulls everything together into one powerful, easy-to-use system.
     </p>
   </motion.div>
@@ -209,10 +210,10 @@ It’s not just software — it’s your business’s central control hub.
 
           {/* Text Content */}
           <div className="flex flex-col md:flex-row md:items-center md:gap-3 text-left">
-            <h3 className="font-[Poppins] font-semibold text-[20px] text-[#000000] leading-[100%]">
+            <h3 className="font-Poppins font-semibold text-[20px] text-[#000000] leading-[100%]">
               {card.title}
             </h3>
-            <p className="font-[Poppins] font-normal text-[16px] text-[#333] leading-[100%] md:pl-3">
+            <p className="font-Poppins font-normal text-[16px] text-[#333] leading-[100%] md:pl-3">
               {card.desc}
             </p>
           </div>

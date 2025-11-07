@@ -106,127 +106,151 @@ export default function AiReceptionist() {
                 viewport={{ once: true }}
             >
                 {/* Inner Container */}
-                <div className="w-full max-w-7xl bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(221,243,251,1)] rounded-3xl p-4 md:p-16 flex flex-col items-center text-center">
-                    <div className="mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+     <div className="w-full max-w-7xl bg-gradient-to-r from-[#bde8f8] to-[#FFFFFF] rounded-3xl p-4 md:p-6 flex flex-col items-center text-center">
+       <div className="mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
                             Key Capabilities:
                         </h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
+                        <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
                             Empower your business with intelligent call management — always on,
                             always professional.
                         </p>
                     </div>
 
                     {/* Cards Section */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {capabilities.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                                className={`w-full max-w-[384px] h-[276px] mx-auto p-6 rounded-2xl shadow-md flex flex-col text-left ${index % 2 === 0
-                                        ? "bg-[rgba(180,229,245,1)]"
-                                        : "bg-[rgba(217,242,255,1)]"
-                                    }`}
-                            >
-                                <img
-                                    src={item.icon}
-                                    alt={item.title}
-                                    className="w-10 h-10 mb-4 object-contain"
-                                />
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                                    {item.title}
-                                </h3>
-                                <p className="text-gray-700 text-sm leading-relaxed">{item.desc}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  {capabilities.map((item, index) => (
+    <motion.div
+      key={index}
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      className={`w-full max-w-[384px] h-[276px] mx-auto p-6 rounded-2xl shadow-md flex flex-col justify-center items-start text-left ${
+        index % 2 === 0
+          ? "bg-[rgba(180,229,245,1)]"
+          : "bg-[rgba(217,242,255,1)]"
+      }`}
+    >
+      {/* ICON */}
+      <img
+        src={item.icon}
+        alt={item.title}
+        className="w-10 h-10 mb-4 object-contain"
+      />
+
+      {/* TITLE */}
+      <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        {item.title}
+      </h3>
+
+      {/* DESCRIPTION */}
+      <p className="text-gray-700 text-sm leading-relaxed">
+        {item.desc}
+      </p>
+    </motion.div>
+  ))}
+</div>
+ </div>
             </motion.section>;
 
-            {/* THIRD SECTION */}
+{/* THIRD SECTION */}
+<motion.section
+  className="bg-gradient-to-r from-[#EBF8FF] to-[#B9E6F6] py-20"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between pl-20">
 
-<motion.section className="bg-gradient-to-r from-[#B9E6F6] to-[#FEFFFF] py-20 "
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+    {/* LEFT SIDE - 60% */}
+    <div className="md:w-[60%] space-y-6 text-center">
 
-    <div className="md:w-[65%] space-y-6 text-center md:text-left">
-       <h1 className="text-[#00A7DE]  font-poppins font-semibold text-[51px] leading-[40px] tracking-[0] text-center">
-                            Integrations
-                        </h1>
-                        <h2 className="font-poppins font-semibold text-[51px] text-[#000000] leading-[40px] text-center">
-                            Connect Seamlessly with  Your Favorite Tools
-                        </h2>
-                        <p className="font-poppins font-normal text-[16.71px] leading-[25.99px] tracking-[0] text-center text-[#797A7D]">
-                            Sync your AI Receptionist with CRMs, booking apps, and communication platforms like:
-                        </p>
+      {/* H1 with bottom gradient line */}
+      <h1 className="relative font-poppins font-semibold text-[51px] mb-10 text-[#00A7DE] leading-[40px] inline-block mx-auto">
+        Integrations
+         <span className="absolute bottom-[-18px] left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-[#0097DA]"></span>
+      </h1>
 
-<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-  
-  <div className="space-y-3">
-    <div className="flex items-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg p-2 shadow-md hover:shadow-lg transition w-[85%] sm:w-[75%]">
-      <img src="/images/gc.png" alt="Icon 1" className="w-8 h-8 mr-2" />
-      <p className="font-poppins text-white font-medium text-sm">Google Calendar</p>
+      {/* H2 */}
+      <h2 className="font-poppins font-semibold text-[51px] px-10 text-[#000000] leading-[40px]">
+        Connect Seamlessly with Your Favorite Tools
+      </h2>
+
+      {/* Paragraph */}
+      <p className="font-poppins font-normal text-[16.71px] px-30 leading-[25.99px] text-[#797A7D]">
+        Sync your AI Receptionist with CRMs, booking apps, and communication platforms like:
+      </p>
+
+      {/* INTEGRATION CONTAINERS */}
+      <div className="mt-8 flex flex-col items-center space-y-4">
+
+        {/* Container 1 */}
+        <div className="flex items-center justify-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg shadow-md hover:shadow-lg transition w-[252px] h-[62px] p-3">
+          <img src="/feature-images/calender.png" alt="Google Calendar" className="w-[35px] h-[35px] mr-3" />
+          <p className="font-poppins font-semibold text-[18px] text-white">
+            Google Calendar
+          </p>
+        </div>
+
+        {/* Container 2 */}
+        <div className="flex items-center justify-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg shadow-md hover:shadow-lg transition w-[252px] h-[62px] p-3">
+          <img src="/feature-images/outlook.png" alt="Zoho CRM" className="w-[35px] h-[35px] mr-3" />
+          <p className="font-poppins font-semibold text-[18px] text-white">
+          Outlook Calender 
+          </p>
+        </div>
+
+        {/* Container 3 */}
+        <div className="flex items-center justify-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg shadow-md hover:shadow-lg transition w-[252px] h-[62px] p-3">
+          <img src="/feature-images/cal.png" alt="Slack Notifications" className="w-[35px] h-[35px] mr-3" />
+          <p className="font-poppins font-semibold text-[18px] text-white">
+            Cal.com
+          </p>
+        </div>
+
+      </div>
     </div>
 
-    <div className="flex items-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg p-2 shadow-md hover:shadow-lg transition w-[85%] sm:w-[75%]">
-      <img src="/images/zoho.png" alt="Icon 2" className="w-8 h-8 mr-2" />
-      <p className="font-poppins text-white font-medium text-sm">Zoho CRM</p>
-    </div>
-
-    <div className="flex items-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg p-2 shadow-md hover:shadow-lg transition w-[85%] sm:w-[75%]">
-      <img src="/images/slack.png" alt="Icon 3" className="w-8 h-8 mr-2" />
-      <p className="font-poppins text-white font-medium text-sm">Slack Notifications</p>
-    </div>
-  </div>
-
-  <div className="space-y-3 mt-3 sm:mt-8">
-    <div className="flex items-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg p-2 shadow-md hover:shadow-lg transition w-[85%] sm:w-[75%]">
-      <img src="/images/hs.png" alt="Icon 4" className="w-8 h-8 mr-2" />
-      <p className="font-poppins text-white font-medium text-sm">HubSpot</p>
-    </div>
-
-    <div className="flex items-center bg-gradient-to-r from-[#74D3F7] to-[#0097DA] rounded-lg p-2 shadow-md hover:shadow-lg transition w-[85%] sm:w-[75%]">
-      <img src="/images/BW.png" alt="Icon 5" className="w-8 h-8 mr-2" />
-      <p className="font-poppins text-white  font-medium text-sm">WhatsApp Business</p>
-    </div>
-  </div>
+    {/* RIGHT SIDE - 40% IMAGE */}
+<div className="md:w-[40%] mr-0 mt-10 md:mt-0 flex justify-end">
+  <img
+    src="/feature-images/integration.png"
+    alt="Integration"
+    className="rounded-2xl w-full max-w-[400px]"
+    style={{
+      boxShadow: `-20px 20px 15px #000000`, 
+    }}
+  />
 </div>
-    </div>
-
-    <div className="md:w-[35%] pl:0 mt-10 md:mt-0 flex justify-center">
-      <img src="/images/integration-image.png" alt="Integration" className="rounded-2xl shadow-lg w-full max-w-[400px]" />
-    </div>
-
   </div>
-  </motion.section>
+</motion.section>
+
+
+
 
 {/* FOURTH SECTION */}
 <motion.section
   className="w-full bg-cover bg-center py-20 px-6 flex flex-col items-center justify-center"
   style={{
-    backgroundImage: "url('/images/AI-Receptionist-frame3.svg')",
+    backgroundImage: "url(/feature-images/back-ground.png)",
   }}
 >
 
-  <motion.h1
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    className="font-[Poppins] font-semibold text-[51px] leading-[43px] text-[#00A7DE] text-center mb-6"
-  >
-    How It Works
-  </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative font-Poppins font-semibold text-[51px] leading-[43px] text-[#00A7DE] text-center mb-6 inline-block
+    after:content-[''] after:absolute after:left-[38%] after:bottom-[-10px] after:w-[24%] after:h-[4px] after:bg-[#0097DA] after:rounded-full"
+>
+  How It Works
+</motion.h1>
 
   {/* Subtitle */}
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.2, duration: 0.8 }}
-    className="font-[Poppins] font-normal text-[16px] leading-[30px] text-[#797A7D] text-center max-w-2xl mb-16"
+    className="font-Poppins font-normal text-[16px] leading-[30px] text-[#797A7D] text-center max-w-2xl mb-16"
   >
     Seamless Call Handling with Human-Like Precision.
   </motion.p>
@@ -239,15 +263,15 @@ export default function AiReceptionist() {
       className="flex flex-col items-center text-center"
     >
       <img
-        src="/images/cr.png"
+        src="/feature-images/cr.png"
         alt="Step 1"
         className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
-        <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
+        <h3 className="font-Poppins font-semibold text-xl text-[#00A7DE] mb-2">
           Connect
         </h3>
-        <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
+        <p className="font-Poppins text-[#797A7D] text-sm leading-relaxed">
           Link your calendar and communication tools seamlessly for automation.
         </p>
       </div>
@@ -259,15 +283,15 @@ export default function AiReceptionist() {
       className="flex flex-col items-center text-center"
     >
       <img
-        src="/images/ts.png"
+        src="/feature-images/ts.png"
         alt="Step 2"
         className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
-        <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
+        <h3 className="font-Poppins font-semibold text-xl text-[#00A7DE] mb-2">
          Automate
         </h3>
-        <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
+        <p className="font-Poppins text-[#797A7D] text-sm leading-relaxed">
           Our AI intelligently manages calls, bookings, and reminders 24/7.
         </p>
       </div>
@@ -279,15 +303,15 @@ export default function AiReceptionist() {
       className="flex flex-col items-center text-center"
     >
       <img
-        src="/images/fu.png"
+        src="/feature-images/fu.png"
         alt="Step 3"
         className="w-[120px] h-[120px] mb-6"
       />
       <div className="bg-white rounded-[12px] border-t-[4px] border-[#00BAF2] shadow-lg p-6">
-        <h3 className="font-[Poppins] font-semibold text-xl text-[#00A7DE] mb-2">
+        <h3 className="font-Poppins font-semibold text-xl text-[#00A7DE] mb-2">
          Grow
         </h3>
-        <p className="font-[Poppins] text-[#797A7D] text-sm leading-relaxed">
+        <p className="font-Poppins text-[#797A7D] text-sm leading-relaxed">
           Save time, reduce cancellations, and focus on scaling your business.
         </p>
       </div>
@@ -303,7 +327,7 @@ export default function AiReceptionist() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+      className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-Poppins"
       style={{
         background:
           "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
