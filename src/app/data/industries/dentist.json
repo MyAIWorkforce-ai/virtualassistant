@@ -61,7 +61,7 @@
         "description": "AI manages reminders, follow-ups, and patient records so you can focus on delivering quality dental care."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-rentation.png",
+        "icon": "/industries-images/reuse-icons/kb-retention.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Boosted Client Retention",
         "description": "Regular checkups and personalized oral care tips keep patients coming back."
@@ -85,7 +85,7 @@
         "description": "Your AI Receptionist can be trained specifically to your business requirements — matching your tone, workflow, and patient care standards."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-coverage.png",
+        "icon": "/industries-images/reuse-icons/kbbb-size.png",
         "gradient": "from-[#F2FAFF] to-[#D2EEFF]",
         "title": "Affordable 24/7 Coverage",
         "description": "Operate like a full-time reception team at a fraction of the cost."

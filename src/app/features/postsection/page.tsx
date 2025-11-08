@@ -5,11 +5,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
-import {
-    fadeUp,
-    fadeInItem,
-    staggerFadeUp,
-} from "../../_components/animations/variantsphyso"
+
 
 export default function SmartAIassistant() {
 
@@ -68,6 +64,9 @@ export default function SmartAIassistant() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
+                   style={{
+        backgroundImage: "url('/feature-images/post-section-bg.png')",
+    }}
             >
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -79,7 +78,7 @@ export default function SmartAIassistant() {
                         Key Capabilities:
                     </h2>
                     <p className="font-poppins text-[#797A7D] text-base md:text-[16px] leading-relaxed max-w-2xl mx-auto">
-                        Smart tools that help you stay organized, informed, and always ready for the next appointment.
+Smart tools that help you stay organized, informed, and always ready for the next appointment.
                     </p>
                 </motion.div>
 
@@ -87,22 +86,22 @@ export default function SmartAIassistant() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
                     {[
                         {
-                            icon: "/images/client-notes.png",
+                            icon: "/feature-images/client-notes.png",
                             title: "1. Client Notes",
                             desc: "Add written notes after each appointment."
                         },
                         {
-                            icon: "/images/voicememo.png",
+                            icon: "/feature-images/coverage.png",
                             title: "2. Voice Memos ",
                             desc: "Record a quick voice memo instead of typing, it’s transcribed and attached automatically"
                         },
                         {
-                            icon: "/images/documents.png",
+                            icon: "/feature-images/documents.png",
                             title: "3. Photos & Documents",
                             desc: "Upload forms, images, or documents directly to the client’s record."
                         },
                         {
-                            icon: "/images/history.png",
+                            icon: "/feature-images/history.png",
                             title: "4. Complete Client History",
                             desc: "All notes, memos, and documents stay attached to each appointment, making future sessions smoother and more personalised"
                         },
@@ -111,27 +110,27 @@ export default function SmartAIassistant() {
                             key={index}
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 200 }}
-                            className="flex flex-col items-center text-center"
+                            className="flex flex-col items-center   text-center"
                         >
                             <div
                                 className="bg-white rounded-[15px]  shadow-lg p-6 flex flex-col justify-center"
                                 style={{
                                     width: "278px",
-                                    height: "212px",
+                                    height: "260px",
                                     boxShadow: "0 4px 15px rgba(115, 113, 113, 0.25)",
                                 }}
                             >
-                                <div className="flex justify-center mb-4">
+                                <div className="flex justify-center mb-3">
                                     <img
                                         src={card.icon}
                                         alt={card.title}
                                         className="w-12 h-12 object-contain mx-auto"
                                     />
                                 </div>
-                                <h3 className="font-[Poppins] font-semibold text-[20px] text-[#000000] mb-3">
+                                <h3 className="font-Poppins font-semibold text-[20px] text-[#000000] mb-2">
                                     {card.title}
                                 </h3>
-                                <p className="font-[Poppins] text-[16px] text-[#797A7D] leading-[24px]">
+                                <p className="font-Poppins text-[16px] text-[#797A7D] leading-[24px]">
                                     {card.desc}
                                 </p>
                             </div>
@@ -144,7 +143,7 @@ export default function SmartAIassistant() {
             <motion.section
                 className="relative flex flex-col md:flex-row items-center justify-between w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 style={{
-                    backgroundImage: "url('/images/postsection-bg.svg')",
+                    backgroundImage: "url('/feature-images/postsection-bg.svg')",
                 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -153,12 +152,12 @@ export default function SmartAIassistant() {
             >
      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-2">
                     {/* Left Section */}
-                  <div className="w-full md:w-2/5 text-left mr-10 space-y-8">
-    <h2 className="font-[Poppins] font-bold text-[36px] md:text-[48px] leading-[150%] text-[#00A7DE]">
+                  <div className="w-full md:w-2/5   space-y-8">
+    <h2 className="font-Poppins font-bold text-[36px] md:text-[48px] leading-[150%] text-[#00A7DE]">
       Productivity & Business Impact
     </h2>
 
-    <ul className="space-y-3 pl-1"> 
+    <ul className=" pl-2"> 
       {[
         {
           heading: "Reduce Admin Time:",
@@ -188,7 +187,7 @@ export default function SmartAIassistant() {
           transition={{ type: "spring", stiffness: 200 }}
         >
           <div className="w-[6px] h-[6px] bg-[#000] rounded-full shrink-0 mt-[3px]" />
-          <p className="text-[#333] font-[Poppins] text-[15px] leading-[26px]">
+          <p className="text-[#333] font-Poppins text-[15px] leading-[26px]">
             <span className="font-semibold text-[#000]">{item.heading}</span>{" "}
             {item.desc}
           </p>
@@ -200,9 +199,9 @@ export default function SmartAIassistant() {
                     {/* Right Section */}
                     <div className="w-full md:w-4/5 flex justify-center relative">
                         <Image
-                            src="/images/productivity-image.svg"
+                            src="/feature-images/productivity-image.svg"
                             alt="Productivity Illustration"
-                            width={700}
+                            width={650}
                             height={500}
                         />
                     </div>
@@ -223,7 +222,7 @@ export default function SmartAIassistant() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="font-[Poppins] font-semibold text-[51px] leading-[43px] text-[#00A7DE] text-center mb-6"
+                    className="font-Poppins font-semibold text-[51px] leading-[43px] text-[#00A7DE] text-center mb-2"
                 >
                     How It Works
                 </motion.h1>
@@ -231,7 +230,7 @@ export default function SmartAIassistant() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.8 }}
-                    className="font-[Poppins] font-normal text-[16px] leading-[30px] text-[#797A7D] text-center max-w-2xl mb-16"
+                    className="font-Poppins font-normal text-[16px] leading-[30px] text-[#797A7D] text-center max-w-2xl mb-16"
                 >
                     A simple three-step process to keep every session organized.
                 </motion.p>
@@ -266,10 +265,10 @@ export default function SmartAIassistant() {
                                     boxShadow: "0 4px 15px rgba(115, 113, 113, 0.25)",
                                 }}
                             >
-                                <h3 className="font-[Poppins] font-semibold text-[20px] text-[#000000] mb-3">
+                                <h3 className="font-Poppins font-semibold text-[20px] text-[#000000] mb-3">
                                     {card.title}
                                 </h3>
-                                <p className="font-[Poppins] text-[16px] text-[#797A7D] leading-[24px]">
+                                <p className="font-Poppins text-[16px] text-[#797A7D] leading-[24px]">
                                     {card.desc}
                                 </p>
                             </div>
@@ -285,18 +284,18 @@ export default function SmartAIassistant() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-Poppins"
                 style={{
                     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
                 }}
             >
                 {/* Heading */}
-                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">
                     Ready to Streamline Your Follow-Ups?
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-10">
+                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-8">
                     Let your AI handle post-session management — from note-taking to file organization. Focus on your clients, not your paperwork.
                 </p>
 

@@ -116,18 +116,18 @@
         "description": "Manage facials, hair treatments, manicures, pedicures, and wellness services with automated scheduling."
       },
       {
-        "icon": "/industries-images/reuse-icons/pu-sync.png",
+        "icon": "/industries-images/reuse-icons/pu-maintainance-yellow.png",
         "title": "Regular Maintenance",
         "description": "Encourage recurring visits for glowing skin, healthy hair, and overall beauty wellness through smart reminders."
       },
       {
-        "icon": "/industries-images/reuse-icons/pu-maintainance-yellow.png",
+        "icon": "/industries-images/therapists/pu-support.png",
         "title": "Client Wellness Support",
         "description": "Provide guidance on at-home care, product usage, and personalized beauty routines for optimal results."
       },
       {
         "icon": "/industries-images/reuse-icons/pu-tracking.png",
-        "title": "Client Progress Tracking",
+        "title": "Patient Progress Tracking",
         "description": "Log client preferences, treatment history, results, and product reactions for personalized care."
       },
       {

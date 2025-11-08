@@ -5,31 +5,27 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
-import {
-    fadeUp,
-    fadeInItem,
-    staggerFadeUp,
-} from "../../_components/animations/variantsphyso"
+
 
 export default function SmartAIassistant() {
     const capabilities = [
         {
-            icon: "/images/instant-answer.png",
+            icon: "/feature-images/instant-answer.png",
             title: "Answers Questions Instantly:",
             description: "From pricing and services to directions and availability.",
         },
         {
-            icon: "/images/scheduling.png",
+            icon: "/feature-images/scheduling.png",
             title: "Handles changes smoothly:",
             description: "Reschedules or cancels without disrupting your day.",
         },
         {
-            icon: "/images/personalized.png",
+            icon: "/feature-images/personalized.png",
             title: "Explains Your Services Clearly:",
             description: " Gives clients confidence in booking.",
         },
         {
-            icon: "/images/escalation.png",
+            icon: "/feature-images/escalation.png",
             title: "Customizable Personality: ",
             description: "You choose the tone and style — friendly, professional, casual, or a mix.",
         },
@@ -156,7 +152,7 @@ export default function SmartAIassistant() {
 
             {/* THIRD SECTION */}
             <motion.section
-                className="relative w-full py-24 bg-cover bg-center"
+                className="relative w-full py-20 bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/images/smartai-instant2.svg')",
                 }}
@@ -172,17 +168,8 @@ export default function SmartAIassistant() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="bg-[#CBE8FF]/90 border border-black/25 rounded-[20px] p-8 w-full md:w-[507px] shadow-md flex flex-col items-center text-center"
+                        className="bg-[#CBE8FF]/90 border border-black/25 rounded-[20px] p-16 w-full md:w-[450px] h-[370px] shadow-md flex flex-col items-center text-center"
                     >
-                        <div className="w-full h-64 relative mb-6 rounded-[16px] overflow-hidden">
-                            <Image
-                                src="/images/smartai-instant3.svg"
-                                alt="AI Example"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-
                         <h3
                             className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
                             Real-World Example
@@ -201,11 +188,11 @@ export default function SmartAIassistant() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         className="text-left max-w-2xl">
-                        <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-6">
+                        <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-5">
                             Why Choose the Smart <br /> AI Assistant for Clients?
                         </h2>
 
-                        <ul className="space-y-4 text-[#797A7D] text-lg md:text-[24px] font-poppins leading-[150%]">
+                        <ul className=" text-[#797A7D] text-lg md:text-[24px] font-poppins leading-[150%]">
                             <li>• 24/7 automated client engagement</li>
                             <li>• Personalized tone and experience</li>
                             <li>• Reduces staff workload</li>
@@ -219,24 +206,27 @@ export default function SmartAIassistant() {
 
             {/* FOURTH SECTION */}
  <motion.section className="relative flex flex-col items-center justify-center w-full min-h-full py-10 bg-[#F9FAFB] "
+ style={{
+    backgroundImage: "url('/feature-images/forth-section-bg.png')",
+ }}
   initial={{ opacity: 0, y: 20 }}
  whileInView={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.8 }}
   >
-<motion.h1 className="font-[Poppins] text-[#000000] font-bold text-[36px] mb-10 ">
+<motion.h1 className="font-Poppins text-[#000000] font-bold text-[36px] mb-10 ">
 Productivity & Client Benefits  
 </motion.h1>
  
  {/* cards Sections */}
 
-<motion.div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl mx-auto">
+<motion.div className="grid grid-cols-1 sm:grid-cols-2 gap-10  max-w-5xl mx-auto">
     {capabilities.map((items, index)=>(
         <motion.div
         key={index}
          whileHover={{ scale: 1.05 }}
          transition={{ duration: 0.3 }}
-         className="w-[494px] h-[162px] bg-white shadow-lg shadow-[rgba(0,0,0,0.25)] items-center justify-center p-4">
-            <h2 className="font-poppins font-semibold text-[20px] text-black ">
+         className="w-[494px] h-[162px] bg-white shadow-lg shadow-[rgba(0,0,0,0.25)] items-center justify-center px-20 py-10">
+            <h2 className="font-poppins font-semibold text-[20px] mb-2 text-black ">
                 {items.title}
             </h2>
             <p className="font-poppins font-normal text-[16px] leading-[100%] tracking-[0] text-[#797A7D]">
@@ -255,18 +245,18 @@ Productivity & Client Benefits
   initial={{ opacity: 0, y: 20 }}
  whileInView={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.8 }}
-  className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+  className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-Poppins"
   style={{
     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
   }}
 >
   {/* Heading */}
-  <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+  <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">
     Ready to Empower Your Clients?
   </h1>
 
   {/* Subtext */}
-  <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-10">
+  <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-8">
  Offer instant, intelligent, and on-brand assistance — anytime, anywhere. Let your AI handle questions and 
  interactions while you focus on delivering great service.
   </p>

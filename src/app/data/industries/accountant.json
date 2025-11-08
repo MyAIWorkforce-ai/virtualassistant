@@ -5,7 +5,7 @@
     "title": "AI for Accountant  ",
     "description": "Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, and scheduling client follow-ups.",
     "buttonText": "Get Started",
-    "image": "/industries-images/accountant/accounting-main.svg",
+    "image": "/industries-images/accountant/accountant-main.svg",
     "metrics": [
       {
         "value": "30%",
@@ -85,7 +85,7 @@
         "description": "AI manages recurring tasks, follow-ups, and reminders to deliver quality accounting service."
       },
       {
-        "icon": "/industries-images/acountant/kb-retention.png",
+        "icon": "/industries-images/accountant/kb-retention.png",
         "gradient": "from-[#FEF4FF] to-[#D8F8FF]",
         "title": "Boosted Client Retention",
         "description": "Regular check-ins and personalized service plans keep clients returning."

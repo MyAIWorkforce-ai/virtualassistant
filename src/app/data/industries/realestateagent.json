@@ -5,10 +5,10 @@
     "title": "AI for Real Estate Agent",
     "description": "Your virtual assistant modernizes real estate by managing property viewings, recording client notes, tracking appointment schedules, sending follow-up reminders, & supporting seamless communication",
     "buttonText": "Get Started",
-    "image": "/industries-images/real-state-agent/real-state-agent-main.svg",
+    "image": "/industries-images/real-state-agent/main-real-state.svg",
     "metrics": [
       {
-        "value": "25%",
+        "value": "30%",
         "title": "Fewer missed viewings and client meetings thanks to automated reminders."
       },
       {
@@ -76,7 +76,7 @@
         "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F2FFEE] to-[#DDFFD4]",
         "title": "Improved Client Care",
-        "description": ": : Client profiles, property interests, and communications stay consistent and customized."
+        "description": "Client profiles, property interests, and communications stay consistent and customized."
       },
       {
         "icon": "/industries-images/real-state-agent/kb-automation.png",
@@ -141,17 +141,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/industries-images/reuse-icons/pg-follow-ups.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Viewing Reminders",
       "description": "Save time with AI scheduled property tours and appointment notifications."
     },
     {
-      "icon": "/industries-images/reuse-icons/pu-reminders.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Lead Management",
       "description": "Improve conversion rates with AI-powered lead follow-up and nurturing."
     },
     {
-      "icon": "/industries-images/reuse-icons/pu-records.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Centralized Client and Property Data",
       "description": "Quickly access past interactions, notes, and documents for each deal."
     }

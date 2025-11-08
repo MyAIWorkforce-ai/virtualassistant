@@ -58,7 +58,7 @@
         "description":" Books, confirms, and updates dine-in reservations while syncing with your schedule."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Cuisine",
         "description": "Your AI Receptionist can be trained to understand your menu, specials, and dietary requirements — whether you serve Italian, Indian, Thai, Japanese, Greek, or modern Australian cuisine."
@@ -144,12 +144,12 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Confirmations",
       "description": "Reduce no-shows with instant SMS or email confirmations."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Promotions",
       "description": "Use AI to identify repeat customers and send personalized offers."
     },

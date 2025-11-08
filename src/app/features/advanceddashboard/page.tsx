@@ -179,21 +179,21 @@ It’s not just software — it’s your business’s central control hub.
   className="w-full py-20 px-6 md:px-12 bg-gradient-to-r from-[#FFFFFF] to-[#c2ddf1]"
 >
   {/* Header Section */}
-  <motion.div className="max-w-5xl mx-auto text-center mb-16">
+  <motion.div className="max-w-5xl mx-auto text-center mb-8">
     <h2 className="font-Poppins font-bold text-[36px] text-[#000000] leading-[100%]">
       Key Capabilities
     </h2>
-    <p className="font-Poppins font-normal text-[16px] text-[#797A7D] leading-[100%] mt-4">
+    <p className="font-Poppins font-normal text-[16px] text-[#797A7D] leading-[100%] mt-2">
       Your dashboard pulls everything together into one powerful, easy-to-use system.
     </p>
   </motion.div>
 
   {/* Cards Section */}
-  <div className="max-w-[1296px] mx-auto flex flex-col gap-6">
+  <div className="max-w-[1296px] mx-auto flex flex-col gap-2">
     {cards.map((card, index) => {
-      // Define your custom colors
+      
       const bgColors = ["#FFFFFF", "#F1FAFD", "#E9F6FF", "#F8FCFE"];
-      const bgColor = bgColors[index % bgColors.length]; // cycle through colors
+      const bgColor = bgColors[index % bgColors.length]; 
 
       return (
         <motion.div
@@ -226,7 +226,7 @@ It’s not just software — it’s your business’s central control hub.
   
          {/* FORTH SECTION */}
  <motion.section
-                  className="relative w-full py-24 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
+                  className="relative w-full py-15 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -234,19 +234,17 @@ It’s not just software — it’s your business’s central control hub.
                   <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
                   <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 p-20 md:px-12 max-w-7xl mx-auto">
 
-
-
                       {/* RIGHT SIDE CONTENT */}
                       <motion.div
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.8 }}
                           className="text-left max-w-2xl">
-                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-6">
+                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-3">
                             Why Choose the Advanced  <br />Dashboard? 
                           </h2>
   
-                          <ul className="space-y-4 text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
+                          <ul className=" text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
                               <li>• Combines CRM, analytics, and customization in one hub</li>
                               <li>• Empowers you to manage and train your AI in real time</li>
                               <li>• Gives you transparency into every client and assistant interaction</li>
@@ -266,7 +264,7 @@ It’s not just software — it’s your business’s central control hub.
                             Customization & Branding
                           </h3>
   
-                          <p className="text-[#797A7D] font-poppins  text-base md:text-[16px] leading-relaxed">
+                          <p className="text-[#797A7D] font-poppins text-left text-base md:text-[16px] leading-relaxed">
 Your dashboard isn’t just functional — it’s an extension of your brand. Change themes, upload assets, and adjust language so every touchpoint feels consistent with your identity.
 Your clients see professionalism. You see total control.
                           </p>
@@ -280,18 +278,18 @@ Your clients see professionalism. You see total control.
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+                className="w-full flex flex-col items-center justify-center text-center py-16 px-6 font-Poppins"
                 style={{
                     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
                 }}
             >
                 {/* Heading */}
-                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">
                  Ready to Take Control?
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-10">
+                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-8">
 Your business runs better when everything connects. With the Advanced Dashboard, your AI assistant, analytics, and brand management come together — seamlessly.
                 </p>
 

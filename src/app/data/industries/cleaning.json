@@ -5,7 +5,7 @@
     "title": "AI for Window Cleaning",
     "description": "Your virtual assistant modernizes your window cleaning business by bookings, tracking job routes, sending cleaning reminders, and scheduling follow-ups, so you can focus on shining windows",
     "buttonText": "Get Started",
-    "image": "/industries-images/window-cleaning/window-cleaning-main.svg",
+    "image": "/industries-images/window-cleaning/cleaning-main.svg",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
@@ -43,7 +43,7 @@
   },
   "keyBenefits": {
     "heading": "Key Benefits",
-    "subheading": "Enhance your restaurant operations with AI-driven automation that simplifies reservations, personalizes service, and boosts customer retention.",
+    "subheading": "Enhance your cleaning business with smart automation that saves time, improves customer service, and drives repeat clients.",
     "cards": [
       {
         "icon": "/industries-images/reuse-icons/kb-efficiency.png",
@@ -52,31 +52,31 @@
         "description": "Never miss a booking or client inquiry — even when you’re working on-site."
       },
       {
-        "icon": "/industries-images/resue-icons/kb-scheduling.png",
+        "icon": "/industries-images/reuse-icons/kb-scheduling.png",
         "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
         "title": "Automated Scheduling",
         "description":" Books, confirms, and reschedules cleaning jobs automatically to keep your calendar full."
       },
       {
-        "icon": "/industries-images/reuse-icons/kb-practice.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Fully Customizable to Your Business",
         "description": "Your AI Receptionist can be trained specifically to your workflow, tone, and services — from once-off cleans to regular maintenance plans."
       },
       {
-        "icon": "/industries-images/resue-icons/kb-size.png.png",
+        "icon": "/industries-images/reuse-icons/kb-size.png",
         "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
         "title": "Works for All Business Sizes",
         "description": "Ideal for solo cleaners, small teams, and large cleaning companies — scaling effortlessly as you grow."
       },
       {
-        "icon": "/industries-images/resue-icons/kb-support.png",
+        "icon": "/industries-images/reuse-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "Affordable 24/7 Support",
         "description": "Operates like a full-time receptionist without the cost or downtime."
       },
       {
-        "icon": "/industries-images/resue-icons/kb-experience.png",
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F5FFF9] to-[#DFFFED]",
         "title": "Improved Customer Experience",
         "description": "Delivers quick, friendly, and accurate responses that help build trust and repeat business."
@@ -124,7 +124,7 @@
         "description": "Schedule certified cleaners for multi-story or specialized building jobs."
       },
       {
-        "icon": "/industries-images/resue-icons/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine Maintenance",
         "description": "Encourage regular cleanings with automated seasonal or monthly reminders."
       },
@@ -134,7 +134,7 @@
         "description": "Coordinate office buildings, storefronts, and property management clients."
       },
       {
-        "icon": "/industries-images/resue-icons/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Respond to client inquiries, handle bookings, and send automated notifications via chat or SMS."
       }
@@ -144,17 +144,17 @@
   "heading": "Productivity Gains",
   "cards": [
     {
-      "icon": "/images/automated follow.png",
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
       "title": "Automated Follow-Ups",
       "description": "AI schedules routine maintenance and inspection reminders automatically."
     },
     {
-      "icon": "/images/smart Reminder.png",
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
       "title": "Smart Notifications",
       "description": "Reduce no-shows and delays with AI-powered alerts and confirmations.."
     },
     {
-      "icon": "/images/patient record.png",
+      "icon": "/industries-images/reuse-icons/pg-records.png",
       "title": "Instant Access to Job History",
       "description": "Quickly view past cleaning details, notes, and customer feedback."
     }
@@ -171,7 +171,7 @@
     "useCases": [
       {
         "title": "Instant Confirmation",
-        "text": "Confirms reservation and notes it’s a special occasion."
+        "text": "Confirms building size, access hours, and requirements."
       },
       {
         "title": "Repair Notes",

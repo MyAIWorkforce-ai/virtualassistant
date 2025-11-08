@@ -5,11 +5,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
-import {
-    fadeUp,
-    fadeInItem,
-    staggerFadeUp,
-} from "../../_components/animations/variantsphyso"
+
 
 export default function OnlineIntegration() {
 
@@ -93,7 +89,7 @@ export default function OnlineIntegration() {
 
 
         {/*  SECOND SECTION*/}
-            <motion.section
+ <motion.section
      className="relative flex flex-col md:flex-row bg-[#F9FAFB] items-center justify-between w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 
                 initial={{ opacity: 0, y: 20 }}
@@ -101,32 +97,32 @@ export default function OnlineIntegration() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
             >
-<div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-4 px-4 md:px-8">
+
+<div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto ">
   {/* Left Section */}
-  <div className="w-full md:w-2/5 text-left space-y-8">
-    <h2 className="font-[Poppins] font-bold text-[36px] md:text-[48px] leading-[150%] text-[#00A7DE]">
-     Productivity Benefits
+  <div className="w-full md:w-1/2 px-15  align-center space-y-6">
+    <h2 className="font-Poppins font-bold text-[36px] md:text-[48px] leading-[130%] text-[#00A7DE]">
+      Productivity Benefits
     </h2>
 
-    <ul className="space-y-3 pl-1"> 
+    <ul className="space-y-2 pl-5">
       {[
         {
           heading: "Save Time:",
-          desc: " Let your AI handle online bookings and messages automatically."
+          desc: "Let your AI handle online bookings and messages automatically.",
         },
         {
           heading: "Increase Conversions:",
-          desc: " Turn website visitors into confirmed clients 24/7.",
+          desc: "Turn website visitors into confirmed clients 24/7.",
         },
         {
           heading: "Improve Customer Experiences:",
-          desc: "Improve Customer Experience: Provide immediate, accurate responses on any platform.",
+          desc: "Provide immediate, accurate responses on any platform.",
         },
         {
           heading: "Stay Connected:",
-          desc: " Unify all client communication channels into one system.",
+          desc: "Unify all client communication channels into one system.",
         },
-      
       ].map((item, index) => (
         <motion.li
           key={index}
@@ -135,7 +131,7 @@ export default function OnlineIntegration() {
           transition={{ type: "spring", stiffness: 200 }}
         >
           <div className="w-[6px] h-[6px] bg-[#000] rounded-full shrink-0 mt-[3px]" />
-          <p className="text-[#333] font-[Poppins] text-[15px] leading-[26px]">
+          <p className="text-[#333] font-Poppins text-[15px] leading-[22px]">
             <span className="font-semibold text-[#000]">{item.heading}</span>{" "}
             {item.desc}
           </p>
@@ -144,18 +140,18 @@ export default function OnlineIntegration() {
     </ul>
   </div>
 
-  {/* Right Section */}
-  <div className="w-full md:w-2/5 flex justify-center relative">
-    <Image
-      src="/images/on-image1.svg"
-      alt="Productivity Illustration"
-      width={500}
-      height={480}
-    />
-  </div>
+<div className="w-full md:w-1/2 flex items-center justify-center relative">
+  <Image
+    src="/images/on-image1.svg"
+    alt="Productivity Illustration"
+    width={500}
+    height={480}
+    className="object-contain"
+  />
+</div>
 </div>
 
-            </motion.section>
+ </motion.section>
            
 
 {/* THIRD SECTION */}
@@ -163,67 +159,86 @@ export default function OnlineIntegration() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full py-20 px-6 md:px-12 bg-gradient-to-l from-[#bdd8ec] to-[#FFFFFF]"
+      className="w-full py-10 px-6 md:px-12 bg-gradient-to-r from-[#bdd8ec] to-[#FFFFFF]"
     >
       {/* Top Heading */}
       <motion.div
         className="text-center max-w-3xl mx-auto mb-16"
       >
-        <h2 className="font-[Poppins] font-bold text-[36px] md:text-[48px] text-[#00A7DE] leading-[140%]">
+        <h2 className="font-Poppins font-bold text-[36px] md:text-[48px] text-[#00A7DE] leading-[140%]">
           Key Capabilities
         </h2>
-        <p className="text-[#333] font-[Poppins] text-[18px] mt-3">
+        <p className="text-[#333] font-Poppins text-[18px] mt-2">
           Your AI doesn’t just answer the phone — it works online too.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {/* Left Column (White Cards) */}
-        <div className="space-y-8 flex flex-col items-center">
-          {leftCards.map((card, index) => (
-            <motion.div
-              key={index}
-              className="w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-6 flex flex-col items-center text-center"
-            >
-              <div className="w-14 h-14 mb-4 flex items-center justify-center">
-                <Image src={card.icon} alt={card.title} width={56} height={56} />
-              </div>
-              <h3 className="text-[#000] font-[Poppins] font-semibold text-[20px] mb-2">
-                {card.title}
-              </h3>
-              <p className="text-[#333] font-[Poppins] text-[15px] leading-[24px]">
-                {card.desc}
-              </p>
-            </motion.div>
-          ))}
+    <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+  {/* Left Column (White Cards) */}
+  <div className="space-y-8 flex flex-col items-center">
+    {leftCards.map((card, index) => (
+      <motion.div
+        key={index}
+        className="w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-6 flex flex-col"
+      >
+        {/* Center Icon */}
+        <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">
+          <Image
+            src={card.icon}
+            alt={card.title}
+            width={56}
+            height={56}
+            className="object-contain object-center block"
+          />
         </div>
 
-        {/* Right Column (Light Blue Cards) */}
-        <div className="space-y-8 flex flex-col items-center">
-          {rightCards.map((card, index) => (
-            <motion.div
-              key={index}
-              className="w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-6 flex flex-col items-center text-center"
-            >
-              <div className="w-14 h-14 mb-4 flex items-center justify-center">
-                <Image src={card.icon} alt={card.title} width={56} height={56} />
-              </div>
-              <h3 className="text-[#000] font-[Poppins] font-semibold text-[20px] mb-2">
-                {card.title}
-              </h3>
-              <p className="text-[#333] font-[Poppins] text-[15px] leading-[24px]">
-                {card.desc}
-              </p>
-            </motion.div>
-          ))}
+        {/* Text Content */}
+        <h3 className="text-[#000] font-Poppins text-left font-semibold text-[20px] mb-2">
+          {card.title}
+        </h3>
+        <p className="text-[#333] font-Poppins text-left text-[15px] leading-[24px]">
+          {card.desc}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+
+  {/* Right Column (Light Blue Cards) */}
+  <div className="space-y-8 flex flex-col items-center">
+    {rightCards.map((card, index) => (
+      <motion.div
+        key={index}
+        className="w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-6 flex flex-col"
+      >
+        {/* Center Icon */}
+        <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">
+          <Image
+            src={card.icon}
+            alt={card.title}
+            width={56}
+            height={56}
+            className="object-contain object-center block"
+          />
         </div>
-      </div>
+
+        {/* Text Content */}
+        <h3 className="text-[#000] font-Poppins text-left font-semibold text-[20px] mb-2">
+          {card.title}
+        </h3>
+        <p className="text-[#333] font-Poppins text-left text-[15px] leading-[24px]">
+          {card.desc}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
     </motion.section>
 
   
          {/* FORTH SECTION */}
               <motion.section
-                  className="relative w-full py-24 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
+                  className="relative w-full py-15 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -241,8 +256,7 @@ export default function OnlineIntegration() {
                               className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
                               Real-World Example
                           </h3>
-  
-                          <p className="text-[#797A7D] font-poppins text-base md:text-[16px] leading-relaxed">
+ <p className="text-[#797A7D] font-poppins text-base px-6 text-left md:text-[16px] leading-relaxed">
 A physiotherapy clinic installs the AI booking script on their website.Clients now book sessions directly online, receive instant confirmations, and chat with the AI for pre-visit questions.Within weeks, the clinic sees a 25% increase in bookings and fewer
  missed calls — all while staff focus more on care and less on admin.
                           </p>
@@ -254,11 +268,11 @@ A physiotherapy clinic installs the AI booking script on their website.Clients n
                           whileInView={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.8 }}
                           className="text-left max-w-2xl">
-                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-6">
+                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-4">
                              Why Choose Online <br />Integration? 
                           </h2>
   
-                          <ul className="space-y-4 text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
+                          <ul className=" text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
                               <li>• Keeps your business accessible 24/7</li>
                               <li>• Turns your website into a fully functional virtual assistant</li>
                               <li>• Reduces manual admin work and missed opportunities</li>
@@ -274,22 +288,22 @@ A physiotherapy clinic installs the AI booking script on their website.Clients n
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-[Poppins]"
+                className="w-full flex flex-col items-center justify-center text-center py-20 px-6 font-Poppins"
                 style={{
                     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
                 }}
             >
                 {/* Heading */}
-                <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6">
+                <h1 className="text-white text-4xl sm:text-5xl  font-poppins font-bold mb-4">
                   Ready to Bring Your AI Online?
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-10">
+                <p className="text-white/90 text-lg max-w-2xl  font-poppins leading-relaxed mb-10">
                   Let your website do more — answer questions, take bookings, and connect clients with your business anytime, anywhere.
                 </p>
 
-                <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
+                <button className="bg-white text-[#01A0E0]  font-poppins font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
                     Start Your Free Trial
                 </button>
             </motion.section>

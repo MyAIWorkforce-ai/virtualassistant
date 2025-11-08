@@ -5,7 +5,7 @@
     "title": "AI for Consultant",
     "description": "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, sending follow-up reminders, and streamlining client communication.",
     "buttonText": "Get Started",
-    "image": "/industries-images/consultant/consultant.main.svg",
+    "image": "/industries-images/consultant/consultant-main.svg",
     "metrics": [
       {
         "value": "30%",
@@ -26,7 +26,7 @@
     "sections": [
       {
         "subheading": "Smart Support for Every Type of Consultant",
-        "paragraph": "AAt VirtualAssistant.com.au, we understand that consultants juggle multiple clients, meetings, and deadlines daily. Our AI Virtual Receptionist is built to handle your admin tasks efficiently — answering calls, booking consultations, and managing client inquiries, so you can focus on strategy, delivery, and results. Whether you’re a solo business consultant, marketing strategist, or part of a larger advisory firm, our AI adapts to your business perfectly."
+        "paragraph": "At VirtualAssistant.com.au, we understand that consultants juggle multiple clients, meetings, and deadlines daily. Our AI Virtual Receptionist is built to handle your admin tasks efficiently — answering calls, booking consultations, and managing client inquiries, so you can focus on strategy, delivery, and results. Whether you’re a solo business consultant, marketing strategist, or part of a larger advisory firm, our AI adapts to your business perfectly."
       },
       {
         "subheading": "Stay Focused on Clients, Not Admin ",

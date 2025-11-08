@@ -5,7 +5,7 @@
     "title": "AI for Osteopaths  ",
     "description": "Your virtual assistant modernizes osteopathic care by managing patient bookings, recording session notes, sending appointment reminders, and organizing treatment follow-ups.",
     "buttonText": "Get Started",
-    "image": "/industries-images/osteopaths/osteopaths-main.svg",
+    "image": "/industries-images/osteopaths/osteopath-main.svg",
     "metrics": [
       {
         "value": "35%",
@@ -121,17 +121,17 @@
         "description": "Support sports injuries, chronic pain treatment, and posture correction with detailed records."
       },
       {
-        "icon": "/industries-images/osteopaths/pu-maintanance.png",
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
         "title": "Routine  Maintenance",
         "description": "Encourage consistent follow-up visits for ongoing muscle and joint health."
       },
       {
-        "icon": "/industries-images/osteopaths/pu-tracking.png",
+        "icon": "/industries-images/reuse-icons/pu-tracking.png",
         "title": "Client Progress Tracking",
         "description": "Log treatment outcomes, pain levels, range of motion data, and follow-up appointments."
       },
       {
-        "icon": "/industries-images/osteopaths/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer client questions via phone, chat, or email about services, appointment availability, or care tips."
       }
@@ -142,7 +142,7 @@
   "cards": [
     {
       "icon": "/industries-images/reuse-icons/pg-follow-up.png",
-      "title": "AAutomated Follow-Ups",
+      "title": "Automated Follow-Ups",
       "description": "Save time by letting AI schedule recurring osteopathy checkups automatically."
     },
     {
