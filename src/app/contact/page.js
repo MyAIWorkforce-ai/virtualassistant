@@ -33,10 +33,10 @@ export default function ContactPage() {
   });
 
   const countryCodes = [
+    { code: "+61", country: "AU" },
     { code: "+1", country: "US" },
     { code: "+44", country: "UK" },
     { code: "+92", country: "Pk" },
-    { code: "+61", country: "AU" },
     { code: "+91", country: "IN" },
     { code: "+81", country: "JP" },
     { code: "+49", country: "GE" },
@@ -263,18 +263,18 @@ export default function ContactPage() {
             <p>
               📧Email us at:{" "}
               <a
-                href="mailto:support@yourdomain.com"
+                href="mailto:Hi@virtualassistant.com.au"
                 className="text-[#797A7D]"
               >
-                support@yourdomain.com
+                Hi@virtualassistant.com.au
               </a>
             </p>
-            <p>
-              📞 Call us at:{" "}
-              <a href="tel:+10001234567" className="text-[#797A7D]">
-                +1 (000) 123-4567
-              </a>
-            </p>
+            // <p>
+            //   📞 Call us at:{" "}
+            //   <a href="tel:+10001234567" className="text-[#797A7D]">
+            //     +1 (000) 123-4567
+            //   </a>
+            // </p>
             <p className="italic">We typically respond within 24 hours.</p>
             <p className="mt-4 text-sm text-black font-regular">
               Your AI-powered assistant is just one step away. Fill out the
