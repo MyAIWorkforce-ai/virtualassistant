@@ -400,7 +400,8 @@ export default function HomePage() {
               </p>
             </ScrollAnimation>
 
-            {/* Button with animation */}
+
+                              {/* Button with animation */}
             <ScrollAnimation variant={fadeInUp} threshold={0.1}>
               <motion.a
                 href="#"
@@ -456,6 +457,7 @@ export default function HomePage() {
               </div>
               </motion.a>
             </ScrollAnimation>
+
           </div>
         </section>
         {/* FOOTER SECTION */}
