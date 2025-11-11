@@ -1,0 +1,185 @@
+//Hero Section
+import heroData from "@/data/heroSection.json";
+
+export default function HeroSection() {
+  return (
+    <section className="relative flex flex-col justify-center items-start px-8 py-20 bg-gradient-to-b from-sky-50 to-white">
+      <p className="text-sky-600 font-semibold">{heroData.tagline}</p>
+      <h1 className="text-5xl font-bold text-gray-900 mt-2 max-w-3xl leading-tight">
+        {heroData.heading}
+      </h1>
+      <p className="mt-4 text-gray-600 text-lg">{heroData.description}</p>
+    </section>
+  );
+}
+
+//Key Features
+import featuresData from "@/data/keyFeatures.json";
+
+export default function KeyFeatures() {
+  return (
+    <section className="py-16 bg-white">
+      <h2 className="text-center text-4xl font-bold text-sky-600 mb-10">
+        {featuresData.sectionTitle}
+      </h2>
+
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {featuresData.features.map((feature, index) => (
+          <div
+            key={index}
+            className="bg-sky-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+          >
+            <div className="text-3xl mb-3">{feature.icon}</div>
+            <h3 className="text-lg font-semibold text-gray-900">
+              {feature.title}
+            </h3>
+            <ul className="mt-3 space-y-1 text-gray-700 text-sm">
+              {feature.details.map((point, i) => (
+                <li key={i}>– {point}</li>
+              ))}
+            </ul>
+            <p className="mt-4 text-sky-600 text-sm font-semibold">
+              {feature.satisfaction}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// Why choose us
+
+import data from "@/data/whyChooseUs.json";
+
+export default function WhyChooseUs() {
+  return (
+    <section className="py-16 bg-gray-50 text-center">
+      <h2 className="text-4xl font-bold text-sky-600">{data.sectionTitle}</h2>
+      <h3 className="mt-4 text-2xl font-semibold text-gray-900">{data.heading}</h3>
+      <p className="mt-2 text-gray-600 max-w-2xl mx-auto">{data.description}</p>
+
+      <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {data.features.map((item, index) => (
+          <div key={index} className="bg-white shadow-md rounded-2xl p-6 text-left">
+            <h4 className="text-lg font-semibold text-sky-600">{item.title}</h4>
+            <p className="mt-2 text-gray-700">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// Industries
+import data from '../data/industries.json';
+
+export default function IndustriesSection() {
+  const { title, subtitle, industries, cta } = data.section;
+
+  return (
+    <section className="industries-section">
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+      <div className="industry-grid">
+        {industries.map((item) => (
+          <div key={item.name} className="industry-card">
+            <div className={`icon ${item.icon}`} />
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <a href={item.link}>{item.linkText}</a>
+          </div>
+        ))}
+      </div>
+      <div className="cta">
+        <a href={cta.link}>{cta.text}</a>
+      </div>
+    </section>
+  );
+}
+
+//How it works
+import data from '../data/howItWorks.json';
+
+export default function HowItWorks() {
+  const { title, subtitle, steps } = data.section;
+
+  return (
+    <section className="how-it-works">
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+      <div className="steps-container">
+        {steps.map((step) => (
+          <div key={step.stepNumber} className="step-card">
+            <div className={`icon ${step.icon}`} />
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+            <div className="step-number">{step.stepNumber}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// Pricing 
+"use client";
+import { useState } from "react";
+import data from "../data/pricing.json";
+
+export default function Pricing() {
+  const { title, subtitle, billingOptions, plans } = data.section;
+  const [billingCycle, setBillingCycle] = useState("monthly");
+
+  return (
+    <section className="pricing-section">
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+
+      {/* Billing Toggle */}
+      <div className="billing-toggle">
+        <button
+          className={billingCycle === "monthly" ? "active" : ""}
+          onClick={() => setBillingCycle("monthly")}
+        >
+          {billingOptions.monthlyLabel}
+        </button>
+        <button
+          className={billingCycle === "yearly" ? "active" : ""}
+          onClick={() => setBillingCycle("yearly")}
+        >
+          {billingOptions.yearlyLabel}
+          <span className="discount">{billingOptions.yearlyDiscountText}</span>
+        </button>
+      </div>
+
+      {/* Plans */}
+      <div className="plans-container">
+        {plans.map((plan) => (
+          <div
+            key={plan.name}
+            className={`plan-card ${plan.mostPopular ? "popular" : ""}`}
+          >
+            {plan.mostPopular && <span className="badge">Most Popular</span>}
+            <h3>{plan.name}</h3>
+            <p className="tagline">{plan.tagline}</p>
+            <p className="price">
+              ${billingCycle === "monthly" ? plan.monthlyPrice : plan.yearlyPrice}
+              <span>/month</span>
+            </p>
+
+            <ul className="features">
+              {plan.features.map((feature, i) => (
+                <li key={i}>✅ {feature}</li>
+              ))}
+            </ul>
+
+            <a href={plan.cta.link} className="btn-primary">
+              {plan.cta.text}
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
