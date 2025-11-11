@@ -36,18 +36,30 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 mb-4">
-            {[
-              { src: "/industries-images/reuse-icons/tiktok.png", alt: "Tiktok" },
-              { src: "/industries-images/reuse-icons/linkedln.png", alt: "LinkedIn" },
-              { src: "/industries-images/reuse-icons/facebook.png", alt: "Facebook" },
-              { src: "/industries-images/reuse-icons/instagram.png", alt: "Instagram" },
-            ].map((icon, i) => (
-              <Link key={i} href="#">
-                <Image src={icon.src} alt={icon.alt} width={20} height={20} priority />
-              </Link>
-            ))}
-          </div>
+<div className="flex space-x-4 mb-4">
+  {[
+    { src: "/industries-images/reuse-icons/tiktok.png", alt: "Tiktok", href: "https://www.tiktok.com/@aivirtual.assistant?_r=1&_t=ZS-918GkvshE1q" },
+    { src: "/industries-images/reuse-icons/linkedln.png", alt: "LinkedIn", href: "#" },
+    { src: "/industries-images/reuse-icons/facebook.png", alt: "Facebook", href: "#" },
+    { src: "/industries-images/reuse-icons/instagram.png", alt: "Instagram", href: "https://www.instagram.com/aivirtual.assistant?igsh=YjNvcjUxdnY5YXl3" },
+  ].map((icon, i) => (
+    <Link 
+      key={i} 
+      href={icon.href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Image 
+        src={icon.src} 
+        alt={icon.alt} 
+        width={20} 
+        height={20} 
+        priority 
+      />
+    </Link>
+  ))}
+</div>
+
         </motion.div>
 
         {/* -------- Middle (Pages) - 20% -------- */}
