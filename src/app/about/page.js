@@ -115,7 +115,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <Image
-                src="/images/assistant.png"
+                src="/about-images/about-hero-image.png"
                 alt="AI Assistant Chat Interface"
                 width={608}
                 height={430}
