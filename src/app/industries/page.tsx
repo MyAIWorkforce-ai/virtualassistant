@@ -426,58 +426,39 @@ const HospitalityOther = [
                 </p>
 
 
-{/* BUTTONS */}
-<motion.div
-  className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
->
-
-  {/* Start 14 Day Trial */}
-  <Link
-    href="https://admin.virtualassistant.com.au/register"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-    >
-      Start 14 Day Free Trial
-    </motion.button>
-  </Link>
-
-  {/* Book a Demo */}
-  <Link
-    href="https://calendar.app.google/g5bCnhaSJocufjFr5"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-poppins font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-    >
-      <Image
-        src="/industries-images/reuse-icons/demo-button.png"
-        alt="demo"
-        width={14}
-        height={14}
-        priority
-      />
-      Book a Demo
-    </motion.button>
-  </Link>
-</motion.div>
-              </motion.section>
+                   {/* BUTTONS */}
+                   <motion.div
+                     className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
+                     initial={{ opacity: 0, y: 30 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }}
+                   >
+                     <motion.button
+                       whileHover={{ scale: 1.05 }}
+                       transition={{ duration: 0.3 }}
+                       className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                     >
+                       Start 14 Day Free Trial
+                     </motion.button>
+             
+                     <motion.button
+                       whileHover={{ scale: 1.05 }}
+                       transition={{ duration: 0.3 }}
+                       className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-poppins font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                     >  <Image
+                         src="/industries-images/reuse-icons/demo-button.png"
+                         alt="demo"
+                         width={14}
+                         height={14}
+                         priority
+                       />
+                       Book a Demo
+                     </motion.button>
+                   </motion.div>
+            </motion.section>
 
             {/* Footer */}
             <Footer />
         </>
-      
+    )
 }
-
-
-
