@@ -332,7 +332,7 @@ export default function HomePage() {
                   {
                     icon: "/images/data.png",
                     title: "Data-Driven",
-                    text: "Gain valuable insights from client interactions to improve service delivery and identify new opportunities.",
+                    text: "Gain valuable insights from client interactions to improve service delivery and identify new business opportunities.",
                     alt: "Data analytics technology icon",
                   },
                   {
@@ -419,16 +419,41 @@ export default function HomePage() {
                 ></motion.span>
 
                 {/* Button content */}
-                <span className="relative flex items-center gap-2 z-10">
+                <{/* CTA Buttons */}
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/get-started"
+                  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
+                  flex items-center gap-2 justify-center 
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                >
+                  Start 14 Day Free Trial
                   <Image
-                    src="/images/calender.png"
-                    alt="Calendar Icon"
-                    width={20}
+                    src="/images/arrow.png"
+                    alt="Arrow icon for Get Started"
+                    width={12}
+                    height={20}
+                    priority
+                  />
+                </Link>
+
+                <button
+                  className="relative px-6 py-2.5 font-medium text-gray-700 rounded-lg 
+                  border border-gray-300 flex items-center gap-2 justify-center
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
+                >
+                  <Image
+                    src="/images/play.png"
+                    alt="Play icon for Watch Demo"
+                    width={12}
                     height={20}
                     priority
                   />
                   Book a Demo
-                </span>
+                </button>
+              </div>
               </motion.a>
             </ScrollAnimation>
           </div>
