@@ -401,63 +401,46 @@ export default function HomePage() {
             </ScrollAnimation>
 
 
-                              {/* Button with animation */}
-            <ScrollAnimation variant={fadeInUp} threshold={0.1}>
-              <motion.a
-                href="#"
-                className="relative inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-sky-600 font-medium shadow-md overflow-hidden group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {/* Slider overlay */}
-                <span className="absolute inset-0 bg-sky-100 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
-
-                {/* Blink / Glow Animation */}
-                <motion.span
-                  className="absolute inset-0 rounded-lg bg-sky-300 opacity-20"
-                  animate={{ opacity: [0.2, 0.6, 0.2] }}
-                  transition={{ repeat: Infinity, duration: 1.2 }}
-                ></motion.span>
-
-                {/* Button content */}
-                {/* CTA Buttons */}
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/get-started"
-                  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
-                  flex items-center gap-2 justify-center 
-                  transition-all duration-300 ease-in-out 
-                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                >
-                  Start 14 Day Free Trial
-                  <Image
-                    src="/images/arrow.png"
-                    alt="Arrow icon for Get Started"
-                    width={12}
-                    height={20}
-                    priority
-                  />
-                </Link>
-
-                <button
-                  className="relative px-6 py-2.5 font-medium text-gray-700 rounded-lg 
-                  border border-gray-300 flex items-center gap-2 justify-center
-                  transition-all duration-300 ease-in-out 
-                  hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
-                >
-                  <Image
-                    src="/images/play.png"
-                    alt="Play icon for Watch Demo"
-                    width={12}
-                    height={20}
-                    priority
-                  />
-                  Book a Demo
-                </button>
-              </div>
-              </motion.a>
-            </ScrollAnimation>
-
+                               {/* BUTTONS */}
+                   <motion.div
+                     className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
+                     initial={{ opacity: 0, y: 30 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }}
+                   >
+                       <Link
+                        href="https://admin.virtualassistant.com.au/register"
+                        target="_blank"
+                        rel="noopener noreferrer"
+  >
+                     <motion.button
+                       whileHover={{ scale: 1.05 }}
+                       transition={{ duration: 0.3 }}
+                       className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                     >
+                       Start 14 Day Free Trial
+                     </motion.button>
+                         </Link>
+              <Link
+                      href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                             >
+                     <motion.button
+                       whileHover={{ scale: 1.05 }}
+                       transition={{ duration: 0.3 }}
+                       className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-poppins font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                     >  <Image
+                         src="/industries-images/reuse-icons/demo-button.png"
+                         alt="demo"
+                         width={14}
+                         height={14}
+                         priority
+                       />
+                       Book a Demo
+                     </motion.button>
+                     </Link>
+                   </motion.div>
           </div>
         </section>
         {/* FOOTER SECTION */}
