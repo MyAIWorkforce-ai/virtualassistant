@@ -476,7 +476,7 @@ const HospitalityOther = [
             {/* Footer */}
             <Footer />
         </>
-      }
+      
 }
 
 
