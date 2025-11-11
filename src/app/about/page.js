@@ -419,7 +419,7 @@ export default function HomePage() {
                 ></motion.span>
 
                 {/* Button content */}
-                <{/* CTA Buttons */}
+                {/* CTA Buttons */}
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/get-started"
