@@ -32,9 +32,7 @@ export default function Navbar() {
 
             {/*  Features Dropdown */}
             <li className="relative group">
-              <Link href="/features" className="text-black hover:text-[#00A7DE]">
-                Features
-              </Link>
+             <Link href="/#features" className="text-black hover:text-[#00A7DE]">Features</Link>
 
               {/* Dropdown */}
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[250px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] p-2">
@@ -101,6 +99,7 @@ export default function Navbar() {
                 Pricing
               </Link>
             </li>
+         
             <li>
               <Link href="/about" className="text-black hover:text-[#00A7DE]">
                 About

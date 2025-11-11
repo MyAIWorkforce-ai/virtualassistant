@@ -14,14 +14,12 @@ import RotateIn from "./_components/animations/RotateIn";
 import ScaleUp from "./_components/animations/ScaleUp";
 import ReviewSlider from "./_components/animations/reviewslider";
 import { ScrollAnimation, fadeInUp } from "./_components/animations/demo";
-import { slideUp } from "./_components/animations/footer";
 import useScrollAnimation from "./_components/animations/scrolleranimation";
-import { slideUpChild } from "./_components/animations/footer";
-import { staggerContainer } from "./_components/animations/footer";
 import Footer from "./_components/Footer";
 
 export default function Home() {
   useScrollAnimation();
+  
   // Hamburger Button
   const [isOpen, setIsOpen] = useState(false);
   // =======================
@@ -258,13 +256,13 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h3 className="text-[#00A7DE] font-semibold tracking-wide">
-                Take Your Business Into The Future
+                Your Business, Always Answered
               </h3>
 
               <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
                 <Typewriter
                   words={[
-                    "Transform Your Business with AI-Powered Virtual Assistants",
+                    "AI Virtual Assistant that works, speaks, and feels like your business — 24/7.",
                   ]}
                   loop={true}
                   cursor
@@ -275,8 +273,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
-                Tailored solutions for every industry, designed to save time,
-                cut costs, and boost productivity.
+               Never miss a call. Never miss a booking.  Always stay one step ahead.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -322,7 +319,7 @@ export default function Home() {
 
       {/* KEY FEATURES SECTION  */}
 
-      <section
+      <section id="features"
         className="py-16 bg-[#F9FAFB]"
         aria-labelledby="key-features-heading"
         role="region"
@@ -330,7 +327,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Section Title */}
           <h2
-            id="key-features-heading"
+            
             className="text-3xl sm:text-4xl font-semibold text-[#00A7DE] mb-2"
           >
             Key Features
@@ -377,13 +374,17 @@ export default function Home() {
                       id="feature-1-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      AI Phone Handling
+                      AI Receptionist-24/7
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Professional call answering with natural responses and
-                    context awareness (like “We’re right next to the post
-                    office”).
+                   - Answers every call instantly, day or night
+- Unlimited calls & bookings, 24/7
+- Call recordings, summaries & transcripts
+- Professional, consistent service every time
+- Dedicated business number included
+- Call forwarding option with clear step-by-step instructions
+
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -437,12 +438,14 @@ export default function Home() {
                       id="feature-2-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      Appointment Scheduling
+                     AI Appointment Scheduling
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Direct bookings with Google Calendar or Cal.com integration,
-                    eliminating scheduling conflicts and back-and-forth emails.
+- Fully automated: books, reschedules & cancels appointments
+- works seamlessly with Google Calendar, Outlook Calendar & Cal.com
+- Sends SMS & email confirmations and reminders
+
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -496,12 +499,14 @@ export default function Home() {
                       id="feature-3-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      Smart Transcription
+                    Smart Ai Assistant For Clients
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Conversations, Call summary and recordings transcribed
-                    instantly, stored with notes for easy searchability.
+- Answers questions about your services instantly
+- Explains pricing, availability & directions
+- Handles reschedules or cancellations smoothly
+- Customisable personality: friendly, professional, or casual
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -555,12 +560,15 @@ export default function Home() {
                       id="feature-4-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      Voice Memo Capture
+                     Post-Session Tools
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Record voice memos after appointments and automatically link
-                    them to client files for comprehensive record-keeping.
+- Add client notes after each appointment
+- Record voice memos that are auto-Transcribed
+& Summarised
+- Upload photos or documents linked to appointments
+- Build a complete client history file automatically
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -614,12 +622,15 @@ export default function Home() {
                       id="feature-5-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      Branded Dashboard
+                     Advanced Dashboard
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Easy-to-use backend customized for your business with your
-                    logo, colors, and preferred layout options.
+Your control centre gives you everything in one place:
+- Advanced CRM with client data & history
+- AI Smart Calendar that is colour-coded & auto-updating
+- Analytics & insights: calls, bookings, cancellations, no-shows, performance
+- One clean dashboard replaces multiple tools and platforms.
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -673,12 +684,13 @@ export default function Home() {
                       id="feature-6-title"
                       className="text-lg sm:text-1xl font-bold text-black"
                     >
-                      White-Labeled Booking Page
+                      Online Integration
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                    Seamless, branded booking experience for your clients that
-                    matches your company’s visual identity.
+                   - Website booking widget (simple copy & paste script)
+- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)
+- 24/7 online + phone coverage for clients
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
