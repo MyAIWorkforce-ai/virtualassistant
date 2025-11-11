@@ -62,10 +62,10 @@ export default function HomePage() {
             <div className="flex-1 pl-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 The Technology Behind{" "}
-                <span className="text-[#00A7DE]">Our AI Assistant</span>
+                <span className="text-[#00A7DE]">the AI Assistant</span>
               </h1>
               <p className="text-[#797A7D] mb-8 max-w-lg">
-                We’ve combined advanced AI technologies to create a reliable,
+                We’ve combined leading technologies to create a reliable,
                 secure, and human-like assistant that works seamlessly for your
                 business.
               </p>
@@ -79,7 +79,7 @@ export default function HomePage() {
                   transition-all duration-300 ease-in-out 
                   hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  Get Started
+                  Start 14 Day Free Trial
                   <Image
                     src="/images/arrow.png"
                     alt="Arrow icon for Get Started"
@@ -102,7 +102,7 @@ export default function HomePage() {
                     height={20}
                     priority
                   />
-                  Watch Demo
+                  Book a Demo
                 </button>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
 
               {/*  intro text */}
               <p className="text-[#797A7D] mb-10 max-w-2xl mx-auto text-base md:text-lg">
-                Our assistant combines best-in-class technologies to deliver a
+                Our AI Assistant combines best-in-class technologies to deliver a
                 seamless, intelligent experience that adapts to your business
                 needs.
               </p>
@@ -152,7 +152,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center">
                 {[
                   {
-                    title: "Twilio",
+                    title: "Voice & Messaging",
                     description:
                       "Enabling seamless communication through calls and SMS to keep you connected with clients.",
                     bgColor: "bg-white",
@@ -161,21 +161,21 @@ export default function HomePage() {
                   {
                     title: "Speech Recognition",
                     description:
-                      "Whisper, AssemblyAI, and Google Speech-to-Text for accurate transcriptions.",
+                      "Advanced Speech-to-Text processing for accurate and reliable transcriptions in real time.",
                     bgColor: "bg-white",
                     icon: "/images/speech.png",
                   },
                   {
                     title: "Automation",
                     description:
-                      "n8n and Make.com to automate workflows between calendar, CRM, and client records.",
+                      "Smart workflow automation to streamline scheduling, client management and data processing.",
                     bgColor: "bg-white",
                     icon: "/images/automation.png",
                   },
                   {
                     title: "CRM Integration",
                     description:
-                      "HubSpot and custom CRM solutions to manage and track client relationships.",
+                      "Built-in tools to manage client relationships, track interactions, and maintain organized records.",
                     bgColor: "bg-white",
                     icon: "/images/CRM.png",
                   },
@@ -251,7 +251,7 @@ export default function HomePage() {
                     {
                       icon: "/images/div (1).png",
                       title: "Communication Handling",
-                      text: "Twilio processes incoming calls and messages, routing them to our AI system for appropriate handling and response.",
+                      text: "AI Receptionist processes incoming calls and messages, routing them to our AI system for appropriate handling and response.",
                     },
                     {
                       icon: "/images/div (2).png",
