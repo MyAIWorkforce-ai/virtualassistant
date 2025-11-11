@@ -21,7 +21,7 @@ export default function ContactPage() {
     fullName: "",
     email: "",
     phone: "",
-    countryCode: "+1",
+    countryCode: "+61",
     assistantTeam: "",
     package: "",
     message: "",
@@ -269,12 +269,6 @@ export default function ContactPage() {
                 Hi@virtualassistant.com.au
               </a>
             </p>
-            // <p>
-            //   📞 Call us at:{" "}
-            //   <a href="tel:+10001234567" className="text-[#797A7D]">
-            //     +1 (000) 123-4567
-            //   </a>
-            // </p>
             <p className="italic">We typically respond within 24 hours.</p>
             <p className="mt-4 text-sm text-black font-regular">
               Your AI-powered assistant is just one step away. Fill out the
