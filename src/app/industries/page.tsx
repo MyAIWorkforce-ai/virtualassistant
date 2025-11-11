@@ -471,11 +471,12 @@ const HospitalityOther = [
     </motion.button>
   </Link>
 </motion.div>
+              </motion.section>
 
             {/* Footer */}
             <Footer />
         </>
-    
+      }
 }
 
 
