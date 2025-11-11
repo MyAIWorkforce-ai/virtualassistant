@@ -433,6 +433,11 @@ const HospitalityOther = [
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.8, delay: 0.2 }}
                    >
+                       <Link
+                        href="https://admin.virtualassistant.com.au/register"
+                        target="_blank"
+                        rel="noopener noreferrer"
+  >
                      <motion.button
                        whileHover={{ scale: 1.05 }}
                        transition={{ duration: 0.3 }}
@@ -440,7 +445,12 @@ const HospitalityOther = [
                      >
                        Start 14 Day Free Trial
                      </motion.button>
-             
+                         </Link>
+              <Link
+                      href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                             >
                      <motion.button
                        whileHover={{ scale: 1.05 }}
                        transition={{ duration: 0.3 }}
@@ -454,6 +464,7 @@ const HospitalityOther = [
                        />
                        Book a Demo
                      </motion.button>
+                     </Link>
                    </motion.div>
             </motion.section>
 
