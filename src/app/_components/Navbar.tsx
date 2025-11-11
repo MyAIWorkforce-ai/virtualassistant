@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="w-full bg-white shadow-sm">
       <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-4 md:px-6 z-[100]">
         {/* Logo */}
-        <div className="flex items-center">
+         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo1.png"
             alt="YourBrand Logo"
@@ -19,7 +19,7 @@ export default function Navbar() {
             height={40}
             className="pl-4"
           />
-        </div>
+      </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:block">
@@ -111,13 +111,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/login" className="text-black hover:text-[#00A7DE]">
+              <Link href="https://admin.virtualassistant.com.au/login" className="text-black hover:text-[#00A7DE]">
                 Log In
               </Link>
             </li>
             <li>
               <Link
-                href="/signup"
+                href="https://admin.virtualassistant.com.au/register"
                 className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
                 Sign Up
@@ -167,11 +167,11 @@ export default function Navbar() {
             <Link href="/contact" className="text-black hover:text-[#00A7DE]" onClick={() => setIsOpen(false)}>Contact Us</Link>
           </li>
           <li>
-            <Link href="/login" className="text-black hover:text-[#00A7DE]" onClick={() => setIsOpen(false)}>Log In</Link>
+            <Link href="https://admin.virtualassistant.com.au/login" className="text-black hover:text-[#00A7DE]" onClick={() => setIsOpen(false)}>Log In</Link>
           </li>
           <li>
             <Link
-              href="/signup"
+              href="https://admin.virtualassistant.com.au/register"
               className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full sm:w-auto text-center sm:text-left"
               onClick={() => setIsOpen(false)}
             >
