@@ -5,15 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Navbar from "./_components/Navbar";
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react"; 
 import FadeInOnScroll from "./_components/animations/FadeInScroll";
 import HoverSlide from "./_components/animations/HoverSlider";
 import HeroAnimation from "./_components/heroanimation";
 import ScrollSlide from "./_components/animations/scrollslide";
 import RotateIn from "./_components/animations/RotateIn";
 import ScaleUp from "./_components/animations/ScaleUp";
-import ReviewSlider from "./_components/animations/reviewslider";
-import { ScrollAnimation, fadeInUp } from "./_components/animations/demo";
 import useScrollAnimation from "./_components/animations/scrolleranimation";
 import Footer from "./_components/Footer";
 
@@ -28,65 +26,63 @@ export default function Home() {
   const industries = [
     {
       slug: "Physotherapist",
-      icon: "/images/physiotherapist.png",
+      icon: "/industrymain-images/physio.png",
       title: "Physiotherapist",
       desc: "Your AI manages appointment bookings, reminders, follow-ups, and patient records so you spend more time on treatment.",
     },
     {
       slug: "myotherapist",
-      icon: "/images/myotherapist.png",
+      icon: "/industrymain-images/mytho.png",
       title: "Myotherapist",
       desc: (
         <>
-          Automates client bookings, tracks therapy sessions, and keeps your
-          calendar <br /> organized.
+          Automates client bookings, tracks therapy sessions, and keeps your calendar organized.
         </>
       ),
     },
     {
       slug: "massagetherapist",
-      icon: "/images/massage-therapist.png",
+      icon: "/industrymain-images/massage-thera.png",
       title: "Massage Therapist",
       desc: (
         <>
-          Effortless Bookings for Massage Therapists. Relax your clients while
-          we handle your schedule.
+          Effortless Bookings for Massage Therapists. Relax your clients while we handle your schedule.
         </>
       ),
     },
     {
       slug: "lawyer",
-      icon: "/images/lawyer.png",
+      icon: "/industrymain-images/laywer.png",
       title: "Lawyer",
-      desc: "Smarter Scheduling for Consultants. Books client calls, manages packages, and tracks deliverables.",
+      desc: "Your virtual assistant modernizes legal practice by managing appointments, recording case notes, tracking deadlines, sending client reminders, and scheduling follow-ups.",
     },
     {
       slug: "restaurant",
-      icon: "/images/restaurant.png",
+      icon: "/industrymain-images/resturant.png",
       title: "Restaurant",
-      desc: "Reservation Management Made Easy. Manages table bookings, cancellations, and automated waitlists.",
+      desc: "Reservation Management Made Easy.  Manages table bookings, cancellations, and automated waitlists.",
     },
     {
       slug: "personaltrainer",
-      icon: "/images/personal-trainer.png",
+      icon: "/industrymain-images/personal-trainer.png",
       title: "Personal Trainer",
-      desc: "Power Up Your Training Business. Automates client scheduling, payment reminders, and progress updates.",
+      desc: "Power Up Your Training Business Automates client scheduling, payment reminders, and progress updates.",
     },
     {
       slug: "psychology",
-      icon: "/images/psychologist.png",
+      icon: "/industrymain-images/psycolo.png",
       title: "Psychologist",
       desc: "Secure & Smooth Support for Psychologists. Handles patient reminders, intake forms, and secure follow-ups.",
     },
     {
       slug: "chiropractor",
-      icon: "/images/chiropractor.png",
+      icon: "/industrymain-images/chiro.png",
       title: "Chiropractor",
       desc: "Precision Scheduling for Chiropractors. Organizes client visits, recalls, and automates reminders.",
     },
     {
       slug: "podiatrist",
-      icon: "/images/podiatrist.png",
+      icon: "/industrymain-images/podia.png",
       title: "Podiatrist",
       desc: "Step into better practice management. Tracks appointments, follow-ups, and organizes treatment schedules.",
     },
@@ -95,107 +91,139 @@ export default function Home() {
   // ========================
   //   Transparent Pricing
   // ========================
-  const [billingCycle, setBillingCycle] = useState("monthly");
-  const plans = [
-    {
-      name: "SOLO",
-      price: "$300",
-      cycle: "/month",
-      description: "1 User",
-      features: [
-        "AI call answering",
-        "10 hours of call time/month",
-        "Basic appointment booking",
-        "Email notifications",
-        "Call transcriptions",
-      ],
-      button: "Start Now",
-      highlighted: false,
-    },
-    {
-      name: "Professional",
-      price: "$400",
-      cycle: "/month",
-      description: "Upto 3 Users",
-      features: [
-        "AI Virtual Assistant 24/7",
-        "Advanced Dashboard with Analytics",
-        "Advanced CRM for all Client Data and History",
-        "AI Powered Smart Calendars",
-        "New Dedicated Number or Call Forwarding Options",
-        "Front End AI Prompt Training for your AI",
-        "AI Appointment Scheduling",
-        "Unlimited Incoming Calls 24/7",
-      ],
-      button: "Start Now",
-      highlighted: true,
-    },
-    {
-      name: "Enterprise",
-      price: "$500",
-      cycle: "/month",
-      description: "Upto 5 Users",
-      features: [
-        "Everything in Pro",
-        "Multiple phone lines",
-        "API access",
-        "Custom integrations",
-        "White-labeled solution",
-        "Dedicated account manager",
-        "99.9% uptime SLA",
-      ],
-      button: "Start Now",
-      highlighted: false,
-    },
-    {
-      name: "Custom Package",
-      price: "",
-      cycle: "",
-      description: "",
-      features: [],
-      button: "Start Now",
-      highlighted: false,
-    },
-  ];
+const [billingCycle, setBillingCycle] = useState("monthly");
 
+const plans = [
+  {
+    name: "SOLO",
+    price: 300,
+    description: "1 User",
+    features: [
+      "AI call answering",
+      "10 hours of call time/month",
+      "Basic appointment booking",
+      "Email notifications",
+      "Call transcriptions",
+    ],
+    button: "Start Now",
+    highlighted: false,
+  },
+  {
+    name: "Professional",
+    price: 400,
+    description: "Upto 3 Users",
+    features: [
+      "AI Virtual Assistant 24/7",
+      "Advanced Dashboard with Analytics",
+      "Advanced CRM for all Client Data and History",
+      "AI Powered Smart Calendars",
+      "New Dedicated Number or Call Forwarding Options",
+      "Front End AI Prompt Training for your AI",
+      "AI Appointment Scheduling",
+      "Unlimited Incoming Calls 24/7",
+    ],
+    button: "Start Now",
+    highlighted: true,
+  },
+  {
+    name: "Enterprise",
+    price: 500,
+    description: "Upto 5 Users",
+    features: [
+      "Everything in Pro",
+      "Multiple phone lines",
+      "API access",
+      "Custom integrations",
+      "White-labeled solution",
+      "Dedicated account manager",
+      "99.9% uptime SLA",
+    ],
+    button: "Start Now",
+    highlighted: false,
+  },
+  {
+    name: "Custom Package",
+    price: null,
+    description: "",
+    features: [],
+    button: "Start Now",
+    highlighted: false,
+  },
+];
   // =================================
   //   what our client says
   // ==================================
-  const sectionHeading1 =
-    "text-4xl md:text-4xl font-bold text-[#00A7DE] text-primary relative inline-block";
-  const subHeading = "text-muted text-[#797A7D] text-base mb-12";
-
   const testimonials = [
     {
-      name: "Dr. James Wilson",
-      title: "Wellness Clinic Owner",
+      name: "Sarah Mitchell",
+      title: "Owner, BrightPath Wellness",
       quote:
-        "Since implementing this virtual receptionist, we've increased our appointment bookings by 35% and reduced no-shows. The system is incredibly intuitive and our clients love it!",
-      image: "/images/avatar1.png",
+        "Integrating the AI receptionist has completely streamlined our booking process. Clients love the instant responses, and I finally have time to focus on growing my business.",
+      image: "/image/sarah.png",
+      stars: "/images/star5.png",
+    },
+         {
+      name: "Carlos Rivera",
+      title: "Managing Partner, Rivera Legal Group",
+      quote:
+      "The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
+      image: "/image/carlos.png",
       stars: "/images/star5.png",
     },
     {
-      name: "Emily Rodriguez",
-      title: "Law Firm Partner",
+      name: " Hannah Lee",
+      title: "Founder, FitWithHannah Coaching",
       quote:
-        "The white-label feature is a game-changer. Our clients think they're talking to our in-house receptionists, which maintains our professional image while saving us thousands in staffing costs.",
-      image: "/images/avatar2.png",
+"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
+      image: "/image/hannah.png",
       stars: "/images/star5.png",
     },
     {
-      name: "Robert Chen",
-      title: "Tech Startup Founder",
+      name: "Daniel Cooper",
+      title: "CEO, TechNova Consulting",
       quote:
-        "The AI technology is impressive. It handles complex scheduling requests and even manages to answer basic questions about our services. It's like having an extra team member who never takes a day off.",
-      image: "/images/avatar3.png",
+        "We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
+      image: "/image/daniel.png",
       stars: "/images/star4.png",
     },
+    {
+      name: "Olivia Grant",
+      title: "Director, Harmony Therapy Clinic",
+      quote:
+        "The setup was simple, and within days our clients were interacting with the AI like it was a real person. It’s increased bookings and reduced missed calls dramatically.",
+      image: "/image/olivia.png",
+      stars: "/images/star5.png",
+    },
+    {
+      name: "Mark Thompson",
+      title: "Operations Manager, Summit Accounting",
+      quote:
+       "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
+      image: "/image/mark.png",
+      stars: "/images/star5.png",
+    },
+  
   ];
+
+const cardCount = 3; 
+const [activeIndex, setActiveIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveIndex((prev) =>
+      prev + cardCount >= testimonials.length ? 0 : prev + cardCount
+    );
+  }, 9000);
+
+  return () => clearInterval(interval);
+}, [testimonials.length])
+
+
   //  =========================
   //   //How it works section
   //  ==========================
   const sectionHeading =
-    "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; // update once  applies everywhere
+    "text-3xl md:text-5xl font-bold  text-[#00A7DE] text-primary mb-2"; 
   const stepTitle = "font-semibold text-3sm text-black mb-2";
   const stepDesc = "text-[#797A7D] text-sm";
   // ============================
@@ -293,26 +321,54 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Right side image with animation */}
-            <motion.div
-              className="flex justify-center items-center  w-full  lg:w-1/2"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              <HeroAnimation>
-                <Image
-                  src="/images/card.png"
-                  alt="AI Business Assistant"
-                  width={640}
-                  height={360}
-                  quality={100}
-                  priority
-                  className="max-w-full translate-x-[50px] h-auto"
-                />
-              </HeroAnimation>
-            </motion.div>
+        
+ <motion.div
+  className="flex justify-center items-center w-full py-20  px-10 lg:w-1/2"
+  initial={{ opacity: 0, x: 100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  <HeroAnimation>
+  
+    <div className="relative w-[570px] h-[370px] max-w-full -rotate-5 translate-x-[80px] bg-[#00A7DE] py-4  px-10 rounded-2xl overflow-hidden">
+      {(() => {
+        const [index, setIndex] = React.useState(0);
+        const images = [
+          "/image/tab.png",
+          "/image/tab1.png",
+          "/image/tab2.png",
+        ];
+
+        React.useEffect(() => {
+          const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % images.length);
+          }, 4000);
+          return () => clearInterval(interval);
+        }, []);
+
+        return (
+          <div className="relative w-full  h-full">
+            {images.map((src, i) => (
+              <Image
+                key={i}
+                src={src}
+                alt={`Carousel Image ${i + 1}`}
+                fill
+                priority
+                quality={100}
+                className={`object-contain transition-opacity duration-1000 ease-in-out ${
+                  i === index ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
+          </div>
+        );
+      })()}
+    </div>
+  </HeroAnimation>
+</motion.div>
+
           </div>
         </section>
       </main>
@@ -799,13 +855,13 @@ Your control centre gives you everything in one place:
                 {
                   title: "Branded For You",
                   description:
-                    "White-label dashboard & booking interfaces that seamlessly integrate with your brand identity.",
+                    "Fully customisable to your business - upload your logo, choose your brand colours, and tailor the interface to perfectly match your theme.",
                   icon: "/images/Tick-icon.png",
                 },
                 {
                   title: "Future-Proof Tech",
                   description:
-                    "Built on Twilio, AI, & automation to ensure your business stays at the forefront of communication technology.",
+                    "Built with advanced AI and automation to ensure your business stays at the forefront of communication technology.",
                   icon: "/images/Tick-icon.png",
                 },
               ].map((item, idx) => (
@@ -874,14 +930,13 @@ Your control centre gives you everything in one place:
               id="industries-heading"
               className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-2"
             >
-              Built for 20+ Industries
+              Built for all service based Industries
             </h2>
             {/* underline bar */}
             <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-6 rounded-full"></div>
 
             <p className="text-[#797A7D] text-base mb-12">
-              Our AI receptionist adapts to your specific industry needs with
-              specialized vocabulary and workflows.
+              Our AI receptionist adapts to your specific industry needs with specialized vocabulary and  workflows.
             </p>
 
             {/* Grid */}
@@ -1058,188 +1113,188 @@ Your control centre gives you everything in one place:
       </section>
 
       {/* Transparent Pricing */}
-      <ScaleUp>
-        <section id="pricing"   className= "bg-[#F9FAFB] py-20 ">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            {/* Heading */}
-            <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
-              Simple, Transparent Pricing
-              <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-5 mb-5"></span>
-            </h2>
-            <p className="text-[#797A7D] mb-6">
-              Choose the perfect plan for your business needs.
-            </p>
-            {/* Toggle */}
-            <div className="flex justify-center items-center mb-12 space-x-2">
-              <span
-                className={`cursor-pointer text-sm ${
-                  billingCycle === "monthly"
-                    ? "text-blue-400 font-semibold"
-                    : "text-[#797A7D]"
-                }`}
-                onClick={() => setBillingCycle("monthly")}
+    <ScaleUp>
+  <section id="pricing" className="bg-[#F9FAFB] py-20">
+    <div className="max-w-6xl mx-auto px-6 text-center">
+      {/* Heading */}
+      <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
+        Simple, Transparent Pricing
+        <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-5 mb-5"></span>
+      </h2>
+      <p className="text-[#797A7D] mb-6">
+        Choose the perfect plan for your business needs.
+      </p>
+
+      {/* Toggle */}
+      <div className="flex justify-center items-center mb-12 space-x-2">
+        <span
+          className={`cursor-pointer text-sm ${
+            billingCycle === "monthly"
+              ? "text-blue-400 font-semibold"
+              : "text-[#797A7D]"
+          }`}
+          onClick={() => setBillingCycle("monthly")}
+        >
+          Monthly
+        </span>
+        <label className="relative inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            className="sr-only peer"
+            checked={billingCycle === "yearly"}
+            onChange={() =>
+              setBillingCycle(
+                billingCycle === "monthly" ? "yearly" : "monthly"
+              )
+            }
+          />
+          <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-[#098DC9] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+        </label>
+        <span
+          className={`cursor-pointer text-sm ${
+            billingCycle === "yearly"
+              ? "text-[#098DC9] font-semibold"
+              : "text-[#797A7D]"
+          }`}
+          onClick={() => setBillingCycle("yearly")}
+        >
+          Yearly <span className="text-green-600 ml-1">Save 20%</span>
+        </span>
+      </div>
+
+      {/* Pricing Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {plans.map((plan, index) => {
+          // Calculate prices dynamically
+          const isYearly = billingCycle === "yearly";
+          const monthlyPrice = plan.price;
+          const yearlyPrice =
+            monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0); // 20% off
+
+          const displayPrice = isYearly ? yearlyPrice : monthlyPrice;
+          const cycleText = isYearly
+            ? "/year"
+            : monthlyPrice
+            ? "/month"
+            : "";
+
+          return (
+            <ScaleUp key={index} delay={index * 0.1}>
+              <div
+                className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
+                  plan.highlighted
+                    ? "border-[#00A7DE] scale-105"
+                    : "border-[#797A7D]"
+                } hover:border-[#00A7DE]`}
               >
-                Monthly
-              </span>
-              <label className="relative inline-flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="sr-only peer"
-                  checked={billingCycle === "yearly"}
-                  onChange={() =>
-                    setBillingCycle(
-                      billingCycle === "monthly" ? "yearly" : "monthly"
-                    )
-                  }
-                />
-                <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-[#098DC9] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-              </label>
-              <span
-                className={`cursor-pointer text-sm ${
-                  billingCycle === "yearly"
-                    ? "text-[#098DC9] font-semibold"
-                    : "text-[#797A7D]"
-                }`}
-                onClick={() => setBillingCycle("yearly")}
-              >
-                Yearly <span className="text-green-600 ml-1">Save 20%</span>
-              </span>
-            </div>
-            {/* Pricing Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {plans.map((plan, index) => (
-                <ScaleUp key={index} delay={index * 0.1}>
-                  <div
-                    className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
-                      plan.highlighted
-                        ? "border-[#00A7DE] scale-105"
-                        : "border-[#797A7D]"
-                    } hover:border-[#00A7DE]`}
-                  >
-                    {plan.highlighted && (
-                      <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
-                        MOST POPULAR
-                      </span>
-                    )}
-                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                      {plan.name}
-                    </h3>
-                    <p className="text-gray-500 mb-4">{plan.description}</p>
-                    <div className="text-3xl font-bold text-gray-800 mb-6">
-                      {plan.price}
-                      <span className="text-base font-normal text-gray-500">
-                        {plan.cycle}
-                      </span>
-                    </div>
-                    <ul className="space-y-3 flex-1">
-                      {plan.features.map((feature, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start space-x-2 text-gray-600"
-                        >
-                          <Image
-                            src="/images/check.png"
-                            alt="check"
-                            width={23}
-                            height={23}
-                            priority
-                          />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <button
-                      className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
-                        plan.highlighted
-                          ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                          : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
-                      }`}
+                {plan.highlighted && (
+                  <span className="absolute top-0 right-0 bg-[#00A7DE] text-white text-[11px] font-semibold tracking-wide px-3 py-1 rounded-tr-lg rounded-bl-md shadow-sm">
+                    MOST POPULAR
+                  </span>
+                )}
+
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                  {plan.name}
+                </h3>
+                <p className="text-gray-500 mb-4">{plan.description}</p>
+
+                {/* Dynamic Price */}
+                <div className="text-3xl font-bold text-gray-800 mb-6">
+                  {displayPrice ? `$${displayPrice}` : "Custom"}
+                  <span className="text-base font-normal text-gray-500">
+                    {cycleText}
+                  </span>
+                </div>
+
+                <ul className="space-y-3 flex-1">
+                  {plan.features.map((feature, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start space-x-2 text-gray-600"
                     >
-                      {plan.button}
-                    </button>
-                  </div>
-                </ScaleUp>
-              ))}
-            </div>
-          </div>
-        </section>
-      </ScaleUp>
+                      <Image
+                        src="/images/check.png"
+                        alt="check"
+                        width={23}
+                        height={23}
+                        priority
+                      />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <button
+                  className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
+                    plan.highlighted
+                      ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
+                  }`}
+                >
+                  {plan.button}
+                </button>
+              </div>
+            </ScaleUp>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+</ScaleUp>;
       {/* WHAT OUR CLIENT SAY SECTION */}
-      <>
-        <section
-          className="bg-gradient-to-r from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8"
-          aria-labelledby="testimonials-title"
-        >
-          <div className="max-w-7xl mx-auto text-center">
-            {/* Main Heading */}
-            <h2 id="testimonials-title" className={sectionHeading1}>
-              What Our Clients Say
-              <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-4 mb-5"></span>
-            </h2>
-            {/* Subheading */}
-            <p className={subHeading}>
-              Businesses across industries are saving time and improving
-              customer satisfaction
-              <br /> with our virtual receptionist solution.
-            </p>
 
-            {/* Review Slider */}
-            <ReviewSlider testimonials={testimonials} />
+<section className="bg-gradient-to-r from-blue-50 to-white py-16 px-15 sm:px-6 lg:px-8 font-poppins">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-[#00A7DE] relative inline-block mb-6">
+      What Our Clients Say
+      <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-4"></span>
+    </h2>
+    <p className="text-gray-500 mb-12">
+      Businesses across industries are saving time and improving customer satisfaction
+      <br /> with our virtual receptionist solution.
+    </p>
+
+    <div className="overflow-hidden text-left">
+      <motion.div
+        className="flex gap-6"
+        animate={{
+          x: `-${(100 / cardCount) * activeIndex}%`, 
+        }}
+        transition={{ type: "spring", stiffness: 80, damping: 20 }}
+      >
+        {testimonials.map((t, i) => (
+          <div
+            key={i}
+            className={`flex-shrink-0 w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between`}
+          >
+            <div className="flex flex-col mb-6">
+              <div className="mb-5">
+                <Image src={t.stars} alt="Stars" width={300} height={80} />
+              </div>
+              <p className="text-gray-700 text-[16px]">{t.quote}</p>
+            </div>
+           <div className="flex items-center gap-4 mt-auto">
+  <div className="w-16 h-16 relative flex-shrink-0">
+    <Image
+      src={t.image}
+      alt={t.name}
+      fill
+      className="rounded-full object-cover border-2 border-sky-200"
+    />
+  </div>
+
+  <div className="flex flex-col">
+    <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
+    <p className="text-sm text-gray-500">{t.title}</p>
+  </div>
+</div>
           </div>
-        </section>
+        ))}
+      </motion.div>
+    </div>
+  </div>
+</section>
 
-        {/* ===== DEMO SECTION ===== */}
-        <section
-          className="w-full bg-gradient-to-b from-[#0097DA] via-[#00BAF2] to-[#8FD8F8] py-20 text-center"
-          aria-labelledby="demo-title"
-        >
-          <div className="max-w-3xl mx-auto px-4">
-            <ScrollAnimation variant={fadeInUp}>
-              <h2
-                id="demo-title"
-                className="text-3xl md:text-4xl font-bold text-white mb-4"
-              >
-                Ready to Transform Your Business?
-              </h2>
-            </ScrollAnimation>
-
-            <ScrollAnimation variant={fadeInUp} threshold={0.1}>
-              <p className="text-white/90 text-lg mb-8">
-                Join thousands of businesses already using our AI receptionist
-              </p>
-            </ScrollAnimation>
-
-            {/* CTA Button */}
-            <ScrollAnimation variant={fadeInUp} threshold={0.1}>
-              <motion.a
-                href="#book-demo"
-                className="relative inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-sky-600 font-medium shadow-md overflow-hidden group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="absolute inset-0 bg-sky-100 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
-
-                <motion.span
-                  className="absolute inset-0 rounded-lg bg-sky-300 opacity-20"
-                  animate={{ opacity: [0.2, 0.6, 0.2] }}
-                  transition={{ repeat: Infinity, duration: 1.2 }}
-                ></motion.span>
-
-                <span className="relative flex items-center gap-2 z-10">
-                  <Image
-                    src="/images/calender.png"
-                    alt="Calendar icon for demo booking"
-                    width={20}
-                    height={20}
-                    priority
-                  />
-                  Book a Demo
-                </span>
-              </motion.a>
-            </ScrollAnimation>
-          </div>
-        </section>
-      </>
       {/* FOOTER SECTION */}
    <Footer/>
     </>
