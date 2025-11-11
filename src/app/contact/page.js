@@ -269,7 +269,7 @@ export default function ContactPage() {
                 Hi@virtualassistant.com.au
               </a>
             </p>
-            <p className="italic">We typically respond within 24 hours.</p>
+            <p className="italic mt-6">We typically respond within 24 hours.</p>
             <p className="mt-4 text-sm text-black font-regular">
               Your AI-powered assistant is just one step away. Fill out the
               form, and let’s start building your future together.
