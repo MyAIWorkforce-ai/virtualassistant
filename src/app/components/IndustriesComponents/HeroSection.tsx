@@ -88,31 +88,35 @@ export default function HeroSection({
       </motion.div>
     </motion.div>
 
-{/* RIGHT IMAGE - Fixed Aspect Ratio Container */}
-<div className="relative mt-10 md:mt-0 w-full md:flex-1 flex justify-center md:justify-end">
-    <motion.div
-        className="relative w-full max-w-lg rounded-2xl overflow-hidden shadow-lg border border-white/50"
-        style={{
-            // Forces a consistent 4:3 aspect ratio (Height is 75% of Width)
-            paddingTop: '75%', 
-            maxWidth: '520px', // Keeps the maximum width constrained
-        }}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-    >
-        {/* Image fills the parent container completely */}
-        <Image
-            src={image}
-            alt={title}
-            fill // This prop works perfectly within the paddingTop trick
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-center"
-            priority
-        />
-    </motion.motion.div>
+{/* RIGHT IMAGE */}
+<div className="relative mt-10 md:mt-0 w-full md:flex-1 h-[280px] sm:h-[360px] md:h-[420px] lg:h-[450px] xl:h-[460px] overflow-visible">
+  <motion.div
+    className="absolute -mb-12 bottom-0 flex justify-center md:justify-end items-end w-full h-full z-0"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+  >
+    <Image
+      src={image}
+      alt={title}
+      width={500}
+      height={500}
+      priority
+      className="
+        w-full
+        max-w-[300px]
+        sm:max-w-[400px]
+        md:max-w-[450px]
+        lg:max-w-[470px]
+        xl:max-w-[480px]
+        2xl:max-w-[500px]
+        h-auto
+        object-contain
+      "
+      style={{ objectPosition: 'right bottom' }}
+    />
+  </motion.div>
 </div>
-
   </div>
 </motion.section>
 
