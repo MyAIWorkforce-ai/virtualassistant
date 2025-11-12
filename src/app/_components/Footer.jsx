@@ -24,7 +24,7 @@ const Footer = () => {
           variants={slideUpChild}
         >
           <Image
-            src="/images/logo1.png"
+            src="/logo-virtualassistant.com.au.png"
             alt="Virtual Assistant Logo"
             width={180}
             height={60}
