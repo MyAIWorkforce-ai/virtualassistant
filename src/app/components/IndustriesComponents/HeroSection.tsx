@@ -110,8 +110,9 @@ export default function HeroSection({
             className="object-cover object-center"
             priority
         />
-    </motion.motion.div>
+    </motion.div>
 </div>
+
 
   </div>
 </motion.section>
