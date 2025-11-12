@@ -21,8 +21,8 @@ export default function Navbar() {
 
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo1.png"
-            alt="YourBrand Logo"
+            src="/logo-virtualassistant.com.au.png"
+            alt="virtualassistant.com.au Logo"
             width={177}
             height={40}
             className="pl-4"
