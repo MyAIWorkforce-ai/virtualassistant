@@ -90,9 +90,9 @@ export default function HeroSection({
 
 
 {/* RIGHT IMAGE */}
-<div className="relative mt-10 md:mt-0 flex-1 flex justify-center md:justify-end items-end">
+<div className="relative mt-10 md:mt-0 w-full md:flex-1 flex justify-center md:justify-end items-end">
   <motion.div
-    className="relative w-full max-w-[500px] aspect-[4/3] md:aspect-[1/1] overflow-hidden rounded-xl shadow-lg"
+    className="relative w-full max-w-[520px] h-[320px] sm:h-[360px] md:h-[420px] lg:h-[460px] rounded-2xl overflow-hidden shadow-lg"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.2 }}
@@ -101,8 +101,8 @@ export default function HeroSection({
       src={image}
       alt={title}
       fill
-      sizes="(max-width: 768px) 100vw, 500px"
-      className="object-cover md:object-contain"
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 520px"
+      className="object-cover object-center"
       priority
     />
   </motion.div>
