@@ -1,47 +1,39 @@
 "use client";
-
-import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
-import {
-    fadeUp,
-    fadeInItem,
-    staggerFadeUp,
-} from "../../_components/animations/variantsphyso";
-
 
 const capabilities = [
     {
         title: "Always Available",
         desc: "Every call is answered instantly, day or night. No more missed clients, no more lost bookings.",
-        icon: "/images/always.png",
+        icon: "/feature-images/always.png",
     },
     {
         title: "Unlimited Capacity",
         desc: "Handles unlimited incoming calls and bookings 24/7, so your business is always open.",
-        icon: "/images/unlimited.png",
+        icon: "/feature-images/unlimited.png",
     },
     {
         title: "Call Recording & Transcripts",
         desc: "Every conversation is recorded, summarised, and transcribed, giving you a clear record to review at any time.",
-        icon: "/images/recording.png",
+        icon: "/feature-images/recording.png",
     },
     {
         title: "Professional, Consistent Service",
         desc: "Your AI greets clients politely, provides accurate information, and represents your brand exactly the way you want.",
-        icon: "/images/consistent.png",
+        icon: "/feature-images/consistent.png",
     },
     {
         title: "New Dedicated Number Provided",
         desc: "Each business receives its own dedicated number for a professional setup.",
-        icon: "/images/dedicatednumber.png",
+        icon: "/feature-images/dedicatednumber.png",
     },
     {
         title: "Call Forwarding Option",
         desc: "Prefer to keep your existing number? No problem, we provide clear step-by-step instructions.",
-        icon: "/images/call.png",
+        icon: "/feature-images/call.png",
     },
 ];
 
@@ -70,7 +62,7 @@ export default function AiReceptionist() {
             <motion.section
                 className="relative flex items-center justify-center min-h-[100vh] bg-cover bg-center px-6 md:px-12"
                 style={{
-                    backgroundImage: "url('/images/ai-recep-frame1.svg')",
+                    backgroundImage: "url('/feature-images/ai-recep-frame1.svg')",
                 }}
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -124,7 +116,7 @@ export default function AiReceptionist() {
       key={index}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
-      className={`w-full max-w-[384px] h-[276px] mx-auto p-6 rounded-2xl shadow-md flex flex-col justify-center items-start text-left ${
+      className={`w-full max-w-[384px] h-[240px] mx-auto p-6 rounded-2xl py-0 shadow-md flex flex-col justify-center items-start text-left ${
         index % 2 === 0
           ? "bg-[rgba(180,229,245,1)]"
           : "bg-[rgba(217,242,255,1)]"
@@ -362,7 +354,7 @@ export default function AiReceptionist() {
   className="flex items-center gap-3 bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300"
 >
   <img
-    src="/images/cb.png"
+    src="/feature-images/cb.png"
     alt="Start Icon"
     className="w-6 h-6"
   />

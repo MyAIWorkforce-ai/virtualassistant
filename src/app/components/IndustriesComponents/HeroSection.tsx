@@ -91,7 +91,7 @@ export default function HeroSection({
 {/* RIGHT IMAGE */}
 <div className="relative mt-10 md:mt-0 w-full md:flex-1 h-[280px] sm:h-[360px] md:h-[420px] lg:h-[450px] xl:h-[460px] overflow-visible">
   <motion.div
-    className="absolute -mb-15 bottom-0 flex justify-center md:justify-end items-end w-full h-full z-0"
+    className="absolute -mb-12 bottom-0 flex justify-center md:justify-end items-end w-full h-full z-0"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.2 }}

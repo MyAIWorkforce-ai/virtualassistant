@@ -51,7 +51,7 @@ export default function AppointmentScheduling() {
   animate="show"
   className="relative flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-16 py-12 sm:py-16 md:py-20 overflow-hidden font-[Poppins]"
   style={{
-    backgroundImage: "url('/images/appointmentimage.png')", 
+    backgroundImage: "url('/feature-images/appointmentimage.png')", 
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -63,7 +63,7 @@ export default function AppointmentScheduling() {
   >
     <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px]  -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
       <Image
-        src="/images/scheduling.png"
+        src="/feature-images/scheduling.png"
         alt="AI Appointment Calendar"
         fill
         className="object-contain drop-shadow-lg opacity-95"

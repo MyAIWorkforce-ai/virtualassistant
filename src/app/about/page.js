@@ -4,11 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // hamburger & close icons
 import { ScrollAnimation, fadeInUp } from "../_components/animations/demo";
-import { slideUp } from "../_components/animations/footer";
-import { slideUpChild } from "../_components/animations/footer";
-import { staggerContainer } from "../_components/animations/footer";
 import ZoomTransition from "../_components/animations/zoomabout1";
 import { fadeUp } from "../_components/animations/variants";
 import useScrollAnimation from "../_components/animations/scrolleranimation";
@@ -57,7 +53,7 @@ export default function HomePage() {
           {/* Navbar */}
     <Navbar/>
           {/* Hero Section */}
-          <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-12">
+          <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-4">
             {/* Left Content */}
             <div className="flex-1 pl-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -81,7 +77,7 @@ export default function HomePage() {
                 >
                   Start 14 Day Free Trial
                   <Image
-                    src="/images/arrow.png"
+                    src="/about-images/arrow.png"
                     alt="Arrow icon for Get Started"
                     width={12}
                     height={20}
@@ -96,7 +92,7 @@ export default function HomePage() {
                   hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
                 >
                   <Image
-                    src="/images/play.png"
+                    src="/about-images/play.png"
                     alt="Play icon for Watch Demo"
                     width={12}
                     height={20}
@@ -149,35 +145,35 @@ export default function HomePage() {
                 needs.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-8 gap-3 justify-items-center">
                 {[
                   {
                     title: "Voice & Messaging",
                     description:
-                      "Enabling seamless communication through calls and SMS to keep you connected with clients.",
+                      "Enabling seamless communication through voice calls and messages to keep you connected with clients.",
                     bgColor: "bg-white",
-                    icon: "/images/twillio.png",
+                    icon: "/about-images/twillio.png",
                   },
                   {
                     title: "Speech Recognition",
                     description:
-                      "Advanced Speech-to-Text processing for accurate and reliable transcriptions in real time.",
+                      "Enabling seamless communication through voice calls and messages to keep you connected with clients.",
                     bgColor: "bg-white",
-                    icon: "/images/speech.png",
+                    icon: "/about-images/speech.png",
                   },
                   {
                     title: "Automation",
                     description:
                       "Smart workflow automation to streamline scheduling, client management and data processing.",
                     bgColor: "bg-white",
-                    icon: "/images/automation.png",
+                    icon: "/about-images/automation.png",
                   },
                   {
                     title: "CRM Integration",
                     description:
                       "Built-in tools to manage client relationships, track interactions, and maintain organized records.",
                     bgColor: "bg-white",
-                    icon: "/images/CRM.png",
+                    icon: "/about-images/CRM.png",
                   },
                 ].map((item, index) => (
                   <motion.div
@@ -187,7 +183,7 @@ export default function HomePage() {
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ delay: index * 0.2 }}
-                    className={`flex flex-col items-start justify-start w-[280px] h-[256px] p-6 rounded-lg shadow-md transition-transform hover:scale-105 hover:shadow-xl ${item.bgColor}`}
+                    className={`flex flex-col items-start justify-start w-[270px] h-[246px] py-10 px-5 rounded-lg shadow-md transition-transform hover:scale-105 hover:shadow-xl ${item.bgColor}`}
                   >
                     <Image
                       src={item.icon}
@@ -195,9 +191,9 @@ export default function HomePage() {
                       width={48}
                       height={48}
                       priority
-                      className="mb-4"
+                      className="mb-3"
                     />
-                    <h2 className="text-xl font-medium text-black mb-2 text-left">
+                    <h2 className="text-base font-normal text-black mb-2 text-left">
                       {item.title}
                     </h2>
                     <p className="text-sm text-[#797A7D] text-left">
@@ -236,7 +232,7 @@ export default function HomePage() {
                   className="flex justify-center px-4 md:px-0"
                 >
                   <Image
-                    src="/images/div.png"
+                    src="/about-images/div.png"
                     alt="AI assistant technology flow diagram"
                     width={500}
                     height={400}
@@ -249,22 +245,22 @@ export default function HomePage() {
                 <div className="  space-y-8">
                   {[
                     {
-                      icon: "/images/div (1).png",
+                      icon: "/about-images/div (1).png",
                       title: "Communication Handling",
                       text: "AI Receptionist processes incoming calls and messages, routing them to our AI system for appropriate handling and response.",
                     },
                     {
-                      icon: "/images/div (2).png",
+                      icon: "/about-images/div (2).png",
                       title: "Speech Recognition",
                       text: "Advanced speech recognition technology converts voice to text with high accuracy, understanding context and nuance.",
                     },
                     {
-                      icon: "/images/div (3).png",
+                      icon: "/about-images/div (3).png",
                       title: "Workflow Automation",
                       text: "Automation tools connect your calendar, email, and other systems to schedule meetings and manage tasks without manual intervention.",
                     },
                     {
-                      icon: "/images/div (4).png",
+                      icon: "/about-images/div (4).png",
                       title: "CRM Integration",
                       text: "All interactions are logged in your CRM, providing a complete history of client communications and enabling data-driven insights.",
                     },
@@ -299,11 +295,11 @@ export default function HomePage() {
           </section>
 
           {/* ==== Why Our Technology Matters ==== */}
-          <section className="w-full bg-[#F9FAFB] py-20">
+          <section className="w-full bg-[#F9FAFB] py-20 px-10">
             <div className="max-w-7xl mx-auto px-6">
               {/* Section Heading */}
               <div className="text-center max-w-3xl mx-auto mb-16">
-                {/* ✅ Use H1 only once per page (this could be your main title if this is the page’s focus) */}
+              
                 <h1 className="text-3xl md:text-5xl font-bold text-[#00A7DE] mb-3">
                   Why Our Technology Matters
                 </h1>
@@ -315,40 +311,40 @@ export default function HomePage() {
               </div>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pr-5 pl-5 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pr-5 pl-5 gap-6">
                 {[
                   {
-                    icon: "/images/secure.png",
+                    icon: "/about-images/secure.png",
                     title: "Secure & Reliable",
                     text: "Enterprise-grade security protocols protect your data and ensure consistent uptime for mission-critical operations.",
                     alt: "Secure technology icon",
                   },
                   {
-                    icon: "/images/saving.png",
+                    icon: "/about-images/saving.png",
                     title: "Time-Saving",
                     text: "Automate routine tasks, freeing up your team to focus on high-value activities and strategic initiatives.",
                     alt: "Time-saving automation icon",
                   },
                   {
-                    icon: "/images/data.png",
+                    icon: "/about-images/data.png",
                     title: "Data-Driven",
                     text: "Gain valuable insights from client interactions to improve service delivery and identify new business opportunities.",
                     alt: "Data analytics technology icon",
                   },
                   {
-                    icon: "/images/shakehand.png",
+                    icon: "/about-images/shakehand.png",
                     title: "Client-Focused",
                     text: "Deliver personalized experiences that make clients feel valued and understood, strengthening relationships.",
                     alt: "Client-focused handshake icon",
                   },
                   {
-                    icon: "/images/arrows.png",
+                    icon: "/about-images/arrows.png",
                     title: "Centralized",
                     text: "Bring together all your communication channels, client data, and business tools in one unified system.",
                     alt: "Centralized business system icon",
                   },
                   {
-                    icon: "/images/div (5).png",
+                    icon: "/about-images/div (5).png",
                     title: "Scalable",
                     text: "Grow your business without proportionally increasing overhead, as our technology scales with your needs.",
                     alt: "Scalable growth technology icon",
@@ -403,7 +399,7 @@ export default function HomePage() {
 
                                {/* BUTTONS */}
                    <motion.div
-                     className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
+                     className="flex flex-wrap gap-4 mt-4 justify-center md:justify-center"
                      initial={{ opacity: 0, y: 30 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.8, delay: 0.2 }}

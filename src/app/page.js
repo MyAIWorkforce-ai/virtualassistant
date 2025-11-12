@@ -160,7 +160,7 @@ const plans = [
       quote:
         "Integrating the AI receptionist has completely streamlined our booking process. Clients love the instant responses, and I finally have time to focus on growing my business.",
       image: "/image/sarah.png",
-      stars: "/images/star5.png",
+      stars: "/image/star5.png",
     },
          {
       name: "Carlos Rivera",
@@ -168,7 +168,7 @@ const plans = [
       quote:
       "The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
       image: "/image/carlos.png",
-      stars: "/images/star5.png",
+      stars: "/image/star5.png",
     },
     {
       name: " Hannah Lee",
@@ -176,7 +176,7 @@ const plans = [
       quote:
 "The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
       image: "/image/hannah.png",
-      stars: "/images/star5.png",
+      stars: "/image/star5.png",
     },
     {
       name: "Daniel Cooper",
@@ -184,7 +184,7 @@ const plans = [
       quote:
         "We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
       image: "/image/daniel.png",
-      stars: "/images/star4.png",
+      stars: "/image/star4.png",
     },
     {
       name: "Olivia Grant",
@@ -192,7 +192,7 @@ const plans = [
       quote:
         "The setup was simple, and within days our clients were interacting with the AI like it was a real person. It’s increased bookings and reduced missed calls dramatically.",
       image: "/image/olivia.png",
-      stars: "/images/star5.png",
+      stars: "/image/star5.png",
     },
     {
       name: "Mark Thompson",
@@ -200,23 +200,37 @@ const plans = [
       quote:
        "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
       image: "/image/mark.png",
-      stars: "/images/star5.png",
+      stars: "/image/star5.png",
     },
   
   ];
 
-const cardCount = 3; 
-const [activeIndex, setActiveIndex] = useState(0);
+  const [cardCount, setCardCount] = useState(3);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setActiveIndex((prev) =>
-      prev + cardCount >= testimonials.length ? 0 : prev + cardCount
-    );
-  }, 9000);
+  useEffect(() => {
+    const updateCardCount = () => {
+      if (window.innerWidth < 640) setCardCount(1); // mobile
+      else if (window.innerWidth < 1024) setCardCount(2); // tablet
+      else setCardCount(3); 
+    };
 
-  return () => clearInterval(interval);
-}, [testimonials.length])
+    updateCardCount();
+    window.addEventListener("resize", updateCardCount);
+    return () => window.removeEventListener("resize", updateCardCount);
+  }, []);
+
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) =>
+        prev + cardCount >= testimonials.length ? 0 : prev + cardCount
+      );
+    }, 9000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length, cardCount]);
 
 
   //  =========================
@@ -256,7 +270,7 @@ useEffect(() => {
       </Head>
       {/* Main section */}
 
-      <main className="bg-[url('/images/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
+      <main className="bg-[url('/image/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
         {/* HEADER */}
        <Navbar/>
 
@@ -265,7 +279,7 @@ useEffect(() => {
           {/* Background Image */}
           <div className="absolute inset-0 -z-10">
             <Image
-              src="/images/bg.png"
+              src="/image/bg.png"
               alt="Background Image"
               width={1260}
               height={800}
@@ -404,7 +418,7 @@ useEffect(() => {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/ai-phone.png"
+                      src="/image/ai-receptionist.png"
                       alt="Receptionist using AI phone handling interface"
                       width={400}
                       height={250}
@@ -420,7 +434,7 @@ useEffect(() => {
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/ai-phone-icon.png"
+                      src="/image/ai-phone-icon.png"
                       alt="AI phone icon"
                       width={20}
                       height={28}
@@ -444,7 +458,7 @@ useEffect(() => {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="Thumbs Up"
                       width={16}
                       height={16}
@@ -468,7 +482,7 @@ useEffect(() => {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/calender3.png"
+                      src="/image/calender3.png"
                       alt="Appointment scheduling interface with calendar slots"
                       width={400}
                       height={250}
@@ -484,7 +498,7 @@ useEffect(() => {
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/appointment-icon.png"
+                      src="/image/appointment-icon.png"
                       alt="Appointment icon"
                       width={20}
                       height={28}
@@ -505,7 +519,7 @@ useEffect(() => {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="thumbs-up"
                       width={16}
                       height={16}
@@ -529,7 +543,7 @@ useEffect(() => {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/transcription.png"
+                      src="/image/transcription.png"
                       alt="Transcription interface showing text from conversation"
                       width={400}
                       height={250}
@@ -545,7 +559,7 @@ useEffect(() => {
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/transcription-icon.png"
+                      src="/image/transcription-icon.png"
                       alt="Transcription icon"
                       width={20}
                       height={28}
@@ -566,7 +580,7 @@ useEffect(() => {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="thumbs-up"
                       width={16}
                       height={16}
@@ -590,7 +604,7 @@ useEffect(() => {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/voice-memo.png"
+                      src="/image/voice-memo.png"
                       alt="Voice memo capture linked to client file"
                       width={400}
                       height={250}
@@ -606,7 +620,7 @@ useEffect(() => {
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/voice-memo-icon.png"
+                      src="/image/voice-memo-icon.png"
                       alt="Voice memo icon"
                       width={20}
                       height={28}
@@ -628,7 +642,7 @@ useEffect(() => {
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="thumbs-up"
                       width={16}
                       height={16}
@@ -652,7 +666,7 @@ useEffect(() => {
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/branded.png"
+                      src="/image/branded.png"
                       alt="Branded dashboard"
                       width={400}
                       height={250}
@@ -668,7 +682,7 @@ useEffect(() => {
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/branded-icon.png"
+                      src="/image/branded-icon.png"
                       alt="Branded dashboard icon"
                       width={20}
                       height={28}
@@ -690,7 +704,7 @@ Your control centre gives you everything in one place:
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="thumbs-up"
                       width={16}
                       height={16}
@@ -714,7 +728,7 @@ Your control centre gives you everything in one place:
                 <HoverSlide>
                   <figure className="m-0">
                     <Image
-                      src="/images/booking1.png"
+                      src="/image/booking1.png"
                       alt="White-labeled booking page frontend preview"
                       width={400}
                       height={250}
@@ -730,7 +744,7 @@ Your control centre gives you everything in one place:
                 <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/images/booking-icon.png"
+                      src="/image/booking-icon.png"
                       alt="Booking icon"
                       width={20}
                       height={28}
@@ -750,7 +764,7 @@ Your control centre gives you everything in one place:
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
-                      src="/images/thumbs-up.png"
+                      src="/image/thumbs-up.png"
                       alt="thumb-up"
                       width={16}
                       height={16}
@@ -793,7 +807,7 @@ Your control centre gives you everything in one place:
       <main>
         <section
           className="py-16 relative w-full bg-background- min-h-screen
-          bg-[linear-gradient(120deg,#e6f0ff_0%,#ffffff_100%),url('/images/choose.png')] 
+          bg-[linear-gradient(120deg,#e6f0ff_0%,#ffffff_100%),url('/image/choose.png')] 
           bg-cover bg-center bg-no-repeat"
           aria-labelledby="why-choose-heading"
         >
@@ -838,31 +852,31 @@ Your control centre gives you everything in one place:
                   title: "Always Available",
                   description:
                     "Never miss a call again. Our virtual receptionist works 24/7, ensuring your business is always accessible to clients.",
-                  icon: "/images/Tick-icon.png",
+                  icon: "/image/Tick-icon.png",
                 },
                 {
                   title: "Seamless Scheduling",
                   description:
                     "Works with your existing calendars to automate appointment booking and reduce scheduling conflicts.",
-                  icon: "/images/Tick-icon.png",
+                  icon: "/image/Tick-icon.png",
                 },
                 {
                   title: "Industry Ready",
                   description:
                     "From healthcare to wellness, our solution adapts to your industry’s specific needs and requirements.",
-                  icon: "/images/Tick-icon.png",
+                  icon: "/image/Tick-icon.png",
                 },
                 {
                   title: "Branded For You",
                   description:
                     "Fully customisable to your business - upload your logo, choose your brand colours, and tailor the interface to perfectly match your theme.",
-                  icon: "/images/Tick-icon.png",
+                  icon: "/image/Tick-icon.png",
                 },
                 {
                   title: "Future-Proof Tech",
                   description:
                     "Built with advanced AI and automation to ensure your business stays at the forefront of communication technology.",
-                  icon: "/images/Tick-icon.png",
+                  icon: "/image/Tick-icon.png",
                 },
               ].map((item, idx) => (
                 <RotateIn key={idx} delay={0.2 * idx}>
@@ -943,7 +957,7 @@ Your control centre gives you everything in one place:
             <div className="grid gap-8 md:grid-cols-3">
               {industries.map((item, index) => (
                 <ScaleUp key={index} delay={index * 0.1}>
-                  <article className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                  <article className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition h-full flex flex-col justify-between">
                     {/* Flex container for icon and heading */}
                     <div className="flex items-center gap-4 mb-4">
                       <Image
@@ -1012,7 +1026,7 @@ Your control centre gives you everything in one place:
                 {/* Icon */}
                 <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 animation-blink">
                   <Image
-                    src="/images/phone.png"
+                    src="/feature-images/cr.png"
                     alt="Client calling phone icon"
                     width={68.97}
                     height={68.97}
@@ -1048,7 +1062,7 @@ Your control centre gives you everything in one place:
               <article className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/images/calender1.png"
+                    src="/feature-images/ts.png"
                     alt="Calendar booking icon"
                     width={68.97}
                     height={68.97}
@@ -1080,7 +1094,7 @@ Your control centre gives you everything in one place:
               <article className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
                   <Image
-                    src="/images/doc.png"
+                    src="/feature-images/fu.png"
                     alt="Notes and transcript document icon"
                     width={68.97}
                     height={68.97}
@@ -1213,7 +1227,7 @@ Your control centre gives you everything in one place:
                       className="flex items-start space-x-2 text-gray-600"
                     >
                       <Image
-                        src="/images/check.png"
+                        src="/image/check.png"
                         alt="check"
                         width={23}
                         height={23}
@@ -1258,14 +1272,14 @@ Your control centre gives you everything in one place:
       <motion.div
         className="flex gap-6"
         animate={{
-          x: `-${(100 / cardCount) * activeIndex}%`, 
+          x: `-${(100 / cardCount) * activeIndex}%`,
         }}
         transition={{ type: "spring", stiffness: 80, damping: 20 }}
       >
         {testimonials.map((t, i) => (
           <div
             key={i}
-            className={`flex-shrink-0 w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between`}
+            className={`flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between`}
           >
             <div className="flex flex-col mb-6">
               <div className="mb-5">
@@ -1273,21 +1287,22 @@ Your control centre gives you everything in one place:
               </div>
               <p className="text-gray-700 text-[16px]">{t.quote}</p>
             </div>
-           <div className="flex items-center gap-4 mt-auto">
-  <div className="w-16 h-16 relative flex-shrink-0">
-    <Image
-      src={t.image}
-      alt={t.name}
-      fill
-      className="rounded-full object-cover border-2 border-sky-200"
-    />
-  </div>
 
-  <div className="flex flex-col">
-    <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
-    <p className="text-sm text-gray-500">{t.title}</p>
-  </div>
-</div>
+            <div className="flex items-center gap-4 mt-auto">
+              <div className="w-16 h-16 relative flex-shrink-0">
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  fill
+                  className="rounded-full object-cover border-2 border-sky-200"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
+                <p className="text-sm text-gray-500">{t.title}</p>
+              </div>
+            </div>
           </div>
         ))}
       </motion.div>

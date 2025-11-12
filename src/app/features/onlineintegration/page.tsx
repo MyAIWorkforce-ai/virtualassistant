@@ -11,12 +11,12 @@ export default function OnlineIntegration() {
 
      const leftCards = [
     {
-      icon: "/images/booking.png",
+      icon: "/feature-images/booking.png",
       title: "Website Booking Script:",
       desc: "Engage clients insA simple copy-paste snippet lets clients book straight from your website.",
     },
     {
-      icon: "/images/online.png",
+      icon: "/feature-images/online.png",
       title: "24/7 online:",
       desc: "Your clients can reach you anytime — and get answers instantly.",
     },
@@ -24,12 +24,12 @@ export default function OnlineIntegration() {
 
   const rightCards = [
     {
-      icon: "/images/chatbot.png",
+      icon: "/feature-images/chatbot.png",
       title: "Website Chatbot:",
       desc: "Seamlessly connect Clients can chat with your AI in real-time, get answers, and make bookings instantly.",
     },
     {
-      icon: "/images/coverage.png",
+      icon: "/feature-images/coverage.png",
       title: "Phone coverage:",
       desc: "24/7 phone coverage that works as hard as you do. Never send a client to voicemail again.",
     },
@@ -55,7 +55,7 @@ export default function OnlineIntegration() {
             {/* Hero Section */}
             <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 style={{
-                    backgroundImage: "url('/images/online-integration.svg')",
+                    backgroundImage: "url('/feature-images/online-integration.svg')",
                 }}
                  initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -142,7 +142,7 @@ export default function OnlineIntegration() {
 
 <div className="w-full md:w-1/2 flex items-center justify-center relative">
   <Image
-    src="/images/on-image1.svg"
+    src="/feature-images/on-image1.svg"
     alt="Productivity Illustration"
     width={500}
     height={480}
