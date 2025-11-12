@@ -5,48 +5,44 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
-import {
-    fadeUp,
-    fadeInItem,
-    staggerFadeUp,
-} from "../../_components/animations/variantsphyso"
+
 
 export default function OnlineIntegration() {
 
 
     const cards = [
     {
-      icon: "/images/advan.png",
+      icon: "/feature-images/booking.png",
       title: "Advan CRM:",
       desc: "All client data, history, and interactions in one place.",
     },
     {
-      icon: "/images/smart-calender.png",
+      icon: "/feature-images/chatbot.png",
       title: "AI Smart Calendar:",
       desc: "Color-coded, automatically updated, and synced across all devices.",
     },
     {
-      icon: "/images/analytics.png",
+      icon: "/feature-images/online.png",
       title: "Analytics & Insights:",
       desc: "See daily call volumes, number of bookings, cancellations, no-show rates, and assistant performance.",
     },
     {
-      icon: "/images/transcripts.png",
+      icon: "/feature-images/transcripts.png",
       title: "Voice Memo & Transcripts Section:",
       desc: "Quickly review what was said in any call or memo.",
     },
     {
-      icon: "/images/training.png",
+      icon: "/feature-images/training.png",
       title: "Settings & Training:",
       desc: "Tailor your AI to match your services, prices, and tone.",
     },
     {
-      icon: "/images/front-end.png",
+      icon: "/feature-images/front-end.png",
       title: "Front-End Prompts:",
       desc: "Easily update what your AI says to clients on the phone, website, or chat — no tech skills required.",
     },
     {
-      icon: "/images/customisble.png",
+      icon: "/feature-images/coverage.png",
       title: "Fully Customisable Branding:",
       desc: "Upload your business logo, set your theme colours, and brand the dashboard to feel like your own system — not just another generic tool.",
     },
@@ -72,7 +68,7 @@ export default function OnlineIntegration() {
             {/* Hero Section */}
             <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 style={{
-                    backgroundImage: "url('/images/dashboard-image1.png')",
+                    backgroundImage: "url('/feature-images/dashboard-image1.png')",
                 }}
                  initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -106,7 +102,7 @@ It’s not just software — it’s your business’s central control hub.
  <motion.section
                 className="relative flex flex-col md:flex-row items-center justify-between w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 style={{
-                    backgroundImage: "url('/images/dashboard-image2.svg')",
+                    backgroundImage: "url('/feature-images/dashboard-image2.svg')",
                 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +113,7 @@ It’s not just software — it’s your business’s central control hub.
       {/* Right Section */}
                     <div className="w-full md:w-3/5 flex justify-center relative">
                         <Image
-                            src="/images/dashboard-image3.png"
+                            src="/feature-images/dashboard-image3.png"
                             alt="Productivity Illustration"
                             width={500}
                             height={500}

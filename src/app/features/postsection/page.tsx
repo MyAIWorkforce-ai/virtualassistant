@@ -28,7 +28,7 @@ export default function SmartAIassistant() {
             {/* Hero Section */}
             <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
                 style={{
-                    backgroundImage: "url('/images/hero-image.svg')",
+                    backgroundImage: "url('/feature-images/hero-image.svg')",
                 }}
                  initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}

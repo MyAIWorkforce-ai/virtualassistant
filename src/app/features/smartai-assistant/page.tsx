@@ -68,9 +68,9 @@ export default function SmartAIassistant() {
             <motion.section
                 className="relative flex items-center justify-center min-h-[100vh] bg-contain bg-center bg-no-repeat px-6 md:px-12"
                 style={{
-                    backgroundImage: "url('/images/smartai-assistant.png')",
+                    backgroundImage: "url('/feature-images/smartai-assistant.png')",
                     backgroundSize: "120% auto",
-                    //    backgroundSize: "contain",
+                   
                 }}
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ export default function SmartAIassistant() {
             <motion.section
                 className="relative w-full py-20 bg-cover bg-center"
                 style={{
-                    backgroundImage: "url('/images/smartai-instant2.svg')",
+                    backgroundImage: "url('/feature-images/smartai-instant2.svg')",
                 }}
                 initial="hidden"
                 whileInView="visible"
