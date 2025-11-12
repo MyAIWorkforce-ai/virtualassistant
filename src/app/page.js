@@ -320,7 +320,7 @@ const plans = [
 
               <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Link
-                  href="/get-started"
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
                   className="bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
                   Get Started
@@ -905,7 +905,7 @@ Your control centre gives you everything in one place:
             <RotateIn delay={1.2}>
               <div className="mt-10 flex justify-center space-x-4">
                 <Link
-                  href="/free-trial"
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
                   className="bg-[#00A7DE] text-white px-6 py-3 rounded-lg shadow font-medium
                   transition-all duration-300 ease-in-out
                   hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
@@ -914,7 +914,7 @@ Your control centre gives you everything in one place:
                 </Link>
 
                 <Link
-                  href="/schedule-demo"
+                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"
                   className="border border-[#00A7DE] text-[#00A7DE] px-6 py-3 rounded-lg font-medium
                   transition-all duration-300 ease-in-out
                hover:bg-[#00A7DE] hover:text-white
@@ -1237,7 +1237,7 @@ Your control centre gives you everything in one place:
                     </li>
                   ))}
                 </ul>
-
+<Link href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">
                 <button
                   className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
                     plan.highlighted
@@ -1246,7 +1246,7 @@ Your control centre gives you everything in one place:
                   }`}
                 >
                   {plan.button}
-                </button>
+                </button></Link>
               </div>
             </ScaleUp>
           );

@@ -189,14 +189,17 @@ const HospitalityOther = [
       <p className="font-Poppins text-[20px] font-normal text-gray-700 max-w-3xl mb-10 px-15">
         Choose your profession and discover how AI can automate your bookings, reminders, and client management
       </p>
-
+ <Link
+                        href="https://admin.virtualassistant.com.au/register"
+                        target="_blank"
+                        rel="noopener noreferrer">
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="bg-[#0097DA] text-white font-Poppins font-medium text-[18px] px-8 py-3 rounded-full shadow-md hover:bg-[#007EB8] transition"
       >
         Find Your Solution
-      </motion.button>
+      </motion.button></Link>
     </motion.section>
 
 

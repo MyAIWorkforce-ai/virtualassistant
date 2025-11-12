@@ -69,7 +69,7 @@ export default function HomePage() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/get-started"
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
                   className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
                   flex items-center gap-2 justify-center 
                   transition-all duration-300 ease-in-out 
@@ -84,7 +84,9 @@ export default function HomePage() {
                     priority
                   />
                 </Link>
-
+<Link href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+                      target="_blank"
+                      rel="noopener noreferrer">
                 <button
                   className="relative px-6 py-2.5 font-medium text-gray-700 rounded-lg 
                   border border-gray-300 flex items-center gap-2 justify-center
@@ -99,7 +101,7 @@ export default function HomePage() {
                     priority
                   />
                   Book a Demo
-                </button>
+                </button></Link>
               </div>
             </div>
 
