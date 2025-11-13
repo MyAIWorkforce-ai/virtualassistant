@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Metric {
   icon: string;
@@ -56,37 +57,44 @@ export default function HeroSection({
         {description}
       </motion.p>
 
-      {/* BUTTONS */}
-      <motion.div
-        className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-        >
-          Start 14 Day Free Trial
-        </motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-poppins font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-        >
-          Book a Demo
-          <Image
-            src="/industries-images/reuse-icons/demo-button.png"
-            alt="demo"
-            width={14}
-            height={14}
-            priority
-          />
-        </motion.button>
-      </motion.div>
-    </motion.div>
+      {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
+                  className="bg-[#00A7DE] text-white px-6 py-2.5 rounded-lg font-semibold 
+                  flex items-center gap-2 justify-center 
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                >
+                  Start 14 Day Free Trial
+                  <Image
+                    src="/about-images/arrow.png"
+                    alt="Arrow icon for Get Started"
+                    width={12}
+                    height={20}
+                    priority
+                  />
+                </Link>
+<Link href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                <button
+                  className="relative px-6 py-2.5 font-medium text-gray-700 rounded-lg 
+                  border border-gray-300 flex items-center gap-2 justify-center
+                  transition-all duration-300 ease-in-out 
+                  hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:scale-105"
+                >
+                  <Image
+                    src="/about-images/play.png"
+                    alt="Play icon for Watch Demo"
+                    width={12}
+                    height={20}
+                    priority
+                  />
+                  Book a Demo
+                </button></Link>
+              </div>
+            </div>
 
 {/* RIGHT IMAGE */}
 <div className="relative mt-10 md:mt-0 w-full md:flex-1 h-[280px] sm:h-[360px] md:h-[420px] lg:h-[450px] xl:h-[460px] overflow-visible">
