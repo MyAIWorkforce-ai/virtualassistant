@@ -12,7 +12,7 @@ import ProductivityGains from "@/app/components/IndustriesComponents/Productivit
 import ExploreOtherIndustries from "@/app/components/IndustriesComponents/ExploreOtherIndustries";
 import Footer from "@/app/_components/Footer";
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+
 
 
 //METADATA Generator Starts here
