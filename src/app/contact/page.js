@@ -214,7 +214,7 @@ export default function ContactPage() {
     <option>Hairdresser</option>
     <option>Chiropractor</option>
     <option>Dentist</option>
-    <option>Beauty-Therapist</option>
+    <option>BeautyTherapist</option>
   </select>
 </motion.div>
 

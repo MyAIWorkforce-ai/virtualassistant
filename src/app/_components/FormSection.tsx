@@ -174,7 +174,7 @@ export default function FormSection() {
        <option>Hairdresser</option>
        <option>Chiropractor</option>
        <option>Dentist</option>
-       <option>Beauty-Therapist</option>
+       <option>Beauty Therapist</option>
                      </select>
                    </motion.div>
                  </div>

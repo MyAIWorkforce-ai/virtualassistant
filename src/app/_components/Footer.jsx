@@ -160,7 +160,7 @@ const Footer = () => {
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
               {[
-                { name: "Beauty Therapist", href: "/industries/beauty-therapist" },
+                { name: "Beauty Therapist", href: "/industries/beautytherapist" },
                 { name: "Restaurant", href: "/industries/resturant" },
                 { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
                 { name: "Others", href: "/industries/forother" },

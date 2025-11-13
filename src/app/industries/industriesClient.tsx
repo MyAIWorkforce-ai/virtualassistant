@@ -56,7 +56,7 @@ const HealthCarecards = [
     icon: "/industrymain-images/beauty-thera.png",
     title: "Beauty Therapist",
     desc: "Streamlines beauty care scheduling, treatment notes, skincare or wellness reminders, and follow-ups.",
-    link: "/industries/beauty-therapist",
+    link: "/industries/beautytherapist",
   },
   {
     icon: "/industrymain-images/hair-dresser.png",
