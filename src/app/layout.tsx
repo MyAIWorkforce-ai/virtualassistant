@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Virtualassistant.com.au",
-  description: "Powerfull",
+  title: "Transform Your Business with AI-Powered Assistants",
+  description: "Tailored solutions for every industry, designed to save time, cut costs, and boost productivity.",
 };
 
 export default function RootLayout({

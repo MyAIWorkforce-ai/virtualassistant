@@ -5,6 +5,12 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+// NEW helper to clean slugs
+const makeSlug = (name: string) =>
+ name
+ .toLowerCase()
+   .replace(/[^a-z0-9]/g, ""); // removes spaces, &, symbols
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -87,22 +93,30 @@ export default function Navbar() {
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[700px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] grid grid-cols-3 gap-2 p-3">
                 {[
                   ["Physiotherapy","Myotherapist","Personal Trainer","Massage Therapist","Psychology","Chiropractor","Podiatrist","Beauty Therapist"],
-                  ["Hairdresser","Dentist","Osteopaths","Lawyer","Accountant","Consultant","RealEstate Agent","Mechanic"],
+                  ["Hairdresser","Dentist","Osteopaths","Lawyer","Accountant","Consultant","Real Estate Agent","Mechanic"],
                   ["Plumber","Cleaning","Electrician","Resturant","Hotel & Accommodations","For Other"]
                 ].map((column, idx) => (
                   <ul key={idx}>
-                    {column.map((slug) => (
-                      <li key={slug}>
-                        <Link
-                          href={`/industries/${slug}`}
-                          className={`block px-4 py-2 ${
-                            pathname === `/industries/${slug}` ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"
-                          }`}
-                        >
-                          {slug.replace("-", " ").replace(/\b\w/g, (c) => c.toUpperCase())}
-                        </Link>
-                      </li>
-                    ))}
+                    {column.map((name) => {
+
+  // Convert "Massage Therapist" → massagetherapist
+  // Convert "Hotel & Accommodations" → hotelaccommodations
+  const slug = makeSlug(name);
+
+ return (
+    <li key={name}>
+      <Link
+       href={`/industries/${slug}`}
+       className={`block px-4 py-2 ${
+          pathname === `/industries/${slug}`
+             ? "text-[#00A7DE]"
+             : "text-black hover:text-[#00A7DE]"
+        }`}
+      >
+         {name}
+      </Link>     </li>
+   );
+})}
                   </ul>
                 ))}
               </div>

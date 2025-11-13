@@ -277,7 +277,7 @@ const plans = [
         <meta property="og:image" content="/images/card.png" />
         <meta
           property="og:url"
-          content="https://virtual-assistant-website-aus-n7zq.vercel.app/"
+          content="https://virtualassistant.com.au"
         />
       </Head>
       {/* Main section */}
