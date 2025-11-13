@@ -6,40 +6,12 @@ import Navbar from "../_components/Navbar";
 import Footer from "../_components/Footer";
 
 import {
-fadeUp as originalFadeUp,
-fadeInItem as originalFadeInItem,
-blinkButton as originalBlinkButton,
-staggerContainer as originalStaggerFormContainer,
+  fadeUp,
+  fadeInItem,
+  blinkButton,
+  staggerContainer as staggerFormContainer,
 } from "../_components/animations/formanimation";
 import useScrollAnimation from "../_components/animations/scrolleranimation";
-
-// Fix easing type issue by overriding with array-based easing
- const fadeUp = {
-  ...originalFadeUp,
-   visible: {
-    ...originalFadeUp.visible,
-    transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] },
-  },
-};
-
- const fadeInItem = {
-  ...originalFadeInItem,
-  visible: {
-   ...originalFadeInItem.visible,
-  transition: { duration: 0.4, ease: [0.42, 0, 0.58, 1] },
-   },
-};
-
- const blinkButton = {
-  ...originalBlinkButton,
-   hover: {
-  ...originalBlinkButton.hover,
-     transition: { duration: 0.3, ease: [0.42, 0, 0.58, 1], repeat: 0 },
-  },
- };
-const staggerFormContainer = { ...originalStaggerFormContainer };
-
-
 export default function ContactPage() {
   useScrollAnimation();
  
