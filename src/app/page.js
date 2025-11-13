@@ -99,54 +99,65 @@ const plans = [
     price: 300,
     description: "1 User",
     features: [
-      "AI call answering",
-      "10 hours of call time/month",
-      "Basic appointment booking",
-      "Email notifications",
-      "Call transcriptions",
-    ],
-    button: "Start Now",
+  "AI Virtual Assistant 24/7",
+  "Advanced Dashboard with Analytics",
+  "Advanced CRM for all Client Data and History",
+  "AI Powered Smart Calendars",
+  "New Dedicated Number or Call Forwarding Options",
+  "Front End AI Prompt Training for your AI",
+  "AI Appointment Scheduling",
+  "Unlimited Incoming Calls 24/7",
+  "Unlimited Bookings 24/7",
+  "Online Booking Script for Website",
+  "Online Chatbot Script for Website",
+  "Appointment Reminders via SMS and Email",
+  "Calendar Syncing"
+],
+    button: "Start 14 Days Free Trial",
     highlighted: false,
   },
   {
-    name: "Professional",
+    name: "PROFESSIONAL",
     price: 400,
     description: "Upto 3 Users",
     features: [
-      "AI Virtual Assistant 24/7",
-      "Advanced Dashboard with Analytics",
-      "Advanced CRM for all Client Data and History",
-      "AI Powered Smart Calendars",
-      "New Dedicated Number or Call Forwarding Options",
-      "Front End AI Prompt Training for your AI",
-      "AI Appointment Scheduling",
-      "Unlimited Incoming Calls 24/7",
-    ],
-    button: "Start Now",
+  "AI Virtual Assistant 24/7",
+  "Advanced Dashboard with Analytics",
+  "Advanced CRM for all Client Data and History",
+  "AI Powered Smart Calendars",
+  "New Dedicated Number or Call Forwarding Options",
+  "Front End AI Prompt Training for your AI",
+  "AI Appointment Scheduling",
+  "Unlimited Incoming Calls 24/7",
+  "Unlimited Bookings 24/7",
+  "Online Booking Script for Website",
+  "Online Chatbot Script for Website",
+  "Appointment Reminders via SMS and Email",
+  "Calendar Syncing"
+],
+    button: "Start 14 Days Free Trial",
     highlighted: true,
   },
   {
-    name: "Enterprise",
+    name: "ENTERPRISE",
     price: 500,
     description: "Upto 5 Users",
     features: [
-      "Everything in Pro",
-      "Multiple phone lines",
-      "API access",
-      "Custom integrations",
-      "White-labeled solution",
-      "Dedicated account manager",
-      "99.9% uptime SLA",
-    ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Custom Package",
-    price: null,
-    description: "",
-    features: [],
-    button: "Start Now",
+  "AI Virtual Assistant 24/7",
+  "Advanced Dashboard with Analytics",
+  "Advanced CRM for all Client Data and History",
+  "AI Powered Smart Calendars",
+  "New Dedicated Number or Call Forwarding Options",
+  "Front End AI Prompt Training for your AI",
+  "AI Appointment Scheduling",
+  "Unlimited Incoming Calls 24/7",
+  "Unlimited Bookings 24/7",
+  "Online Booking Script for Website",
+  "Online Chatbot Script for Website",
+  "Appointment Reminders via SMS and Email",
+  "Calendar Syncing"
+],
+    button: "Start 14 Days Free Trial",
     highlighted: false,
   },
 ];
@@ -220,13 +231,13 @@ const plans = [
     return () => window.removeEventListener("resize", updateCardCount);
   }, []);
 
-  // Auto-slide every 9 seconds
+  // Auto-slide every 10 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) =>
         prev + cardCount >= testimonials.length ? 0 : prev + cardCount
       );
-    }, 9000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [testimonials.length, cardCount]);
 
