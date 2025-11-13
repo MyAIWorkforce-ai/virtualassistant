@@ -40,14 +40,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: data.meta?.title,
       description: data.meta?.description,
       url: `https://virtualassistant.com.au/industries/${params.slug}`,
-      images: [
-        {
-          url: data.heroSection?.image || "/default-og-image.png",
-          width: 1200,
-          height: 630,
-          alt: data.meta?.title || "Industry Page",
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -62,16 +54,8 @@ export default async function IndustryPage({ params }: { params: { slug: string 
   const data = await getIndustryData(params.slug);
   if (!data) notFound();
 
-  const {
-    heroSection,
-    about,
-    keyBenefits,
-    whyChoose,
-    primaryUses,
-    productivityGains,
-    useCase,
-    form,
-  } = data;
+  const { heroSection, about, keyBenefits, whyChoose, primaryUses, productivityGains, useCase, form } =
+    data;
 
   return (
     <main>
@@ -103,26 +87,13 @@ export default async function IndustryPage({ params }: { params: { slug: string 
       <PrimaryUses heading={primaryUses.heading} items={primaryUses.items} />
 
       {/* PRODUCTIVITY GAINS */}
-      <ProductivityGains
-        heading={productivityGains.heading}
-        cards={productivityGains.cards}
-      />
+      <ProductivityGains heading={productivityGains.heading} cards={productivityGains.cards} />
 
       {/* USE CASE */}
-      <UseCase
-        title={useCase.title}
-        topBox={useCase.topBox}
-        useCases={useCase.useCases}
-      />
+      <UseCase title={useCase.title} topBox={useCase.topBox} useCases={useCase.useCases} />
 
       {/* FORM */}
       <Form title={form.title} subtitle={form.subtitle} />
 
       {/* EXPLORE OTHER INDUSTRIES */}
-      <ExploreOtherIndustries activeSlug={params.slug} />
-
-      {/* FOOTER */}
-      <Footer />
-    </main>
-  );
-}
+      <ExploreOtherIndustries activeSlug={
