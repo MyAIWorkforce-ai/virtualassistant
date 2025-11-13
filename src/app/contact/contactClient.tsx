@@ -1,42 +1,47 @@
 "use client";
 import { useState } from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import Navbar from "../_components/Navbar";
 import Footer from "../_components/Footer";
 
-import {
-fadeUp as originalFadeUp,
-fadeInItem as originalFadeInItem,
-blinkButton as originalBlinkButton,
-staggerContainer as originalStaggerFormContainer,
-} from "../_components/animations/formanimation";
+ import {
+   fadeUp as originalFadeUp,
+ fadeInItem as originalFadeInItem,
+ blinkButton as originalBlinkButton,
+ staggerContainer as originalStaggerFormContainer,
+ } from "../_components/animations/formanimation";
+
+
 import useScrollAnimation from "../_components/animations/scrolleranimation";
 
-// Fix easing type issue by overriding with array-based easing
+// Fix Framer Motion 'ease' type issue using cubicBezier()
+const easeBezier = cubicBezier(0.42, 0, 0.58, 1);
+
  const fadeUp = {
-  ...originalFadeUp,
-   visible: {
-    ...originalFadeUp.visible,
-    transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] },
-  },
+   ...originalFadeUp,
+  visible: {
+  ...originalFadeUp.visible,
+    transition: { duration: 0.6, ease: easeBezier },
+ },
 };
 
  const fadeInItem = {
   ...originalFadeInItem,
   visible: {
    ...originalFadeInItem.visible,
-  transition: { duration: 0.4, ease: [0.42, 0, 0.58, 1] },
-   },
-};
-
- const blinkButton = {
-  ...originalBlinkButton,
-   hover: {
-  ...originalBlinkButton.hover,
-     transition: { duration: 0.3, ease: [0.42, 0, 0.58, 1], repeat: 0 },
+   transition: { duration: 0.4, ease: easeBezier },
   },
  };
+
+ const blinkButton = {
+...originalBlinkButton,
+  hover: {
+   ...originalBlinkButton.hover,
+   transition: { duration: 0.3, ease: easeBezier, repeat: 0 },
+  },
+};
+
 const staggerFormContainer = { ...originalStaggerFormContainer };
 
 
