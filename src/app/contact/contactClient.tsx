@@ -16,16 +16,29 @@ export default function ContactPage() {
   useScrollAnimation();
  
   const [isOpen, setIsOpen] = useState(false);
-  // Form
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    countryCode: "+61",
-    assistantTeam: "",
-    package: "",
-    message: "",
-  });
+
+  // Define a strong type for form data
+interface FormDataType {
+fullName: string;
+email: string;
+phone: string;
+countryCode: string;
+assistantTeam: string;
+package: string;
+message: string;
+}
+
+//Apply type to useState
+const [formData, setFormData] = useState<FormDataType>({
+fullName: "",
+email: "",
+phone: "",
+countryCode: "+61",
+assistantTeam: "",
+package: "",
+message: "",
+});
+
 
   const [errors, setErrors] = useState({
     email: false,
@@ -43,18 +56,19 @@ export default function ContactPage() {
     { code: "+33", country: "FR" },
   ];
 
-  const handleChange = (field, value) => {
-    setFormData({ ...formData, [field]: value });
+//Properly typed handleChange
+const handleChange = (field: keyof FormDataType, value: string) => {
+setFormData({ ...formData, [field]: value });
 
-    if (field === "email") {
-      setErrors({ ...errors, email: !value.includes("@") });
-    }
+if (field === "email") {
+setErrors({ ...errors, email: !value.includes("@") });
+ }
 
-    if (field === "phone") {
-      const regex = /^[0-9]*$/;
-      setErrors({ ...errors, phone: !regex.test(value) });
-    }
-  };
+   if (field === "phone") {
+    const regex = /^[0-9]*$/;
+     setErrors({ ...errors, phone: !regex.test(value) });
+   }
+ };
 
   return (
     <>
