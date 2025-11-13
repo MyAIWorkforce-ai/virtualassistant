@@ -1,5 +1,5 @@
+
 import { notFound } from "next/navigation";
-import Head from "next/head";
 import HeroSection from "@/app/components/IndustriesComponents/HeroSection";
 import AboutUs from "@/app/components/IndustriesComponents/AboutUs";
 import KeyBenefits from "@/app/components/IndustriesComponents/KeyBenefits";
@@ -22,87 +22,65 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
     console.error(`JSON file not found for slug: ${slug} | ${error}`);
     notFound(); 
   }
-
   return (
-    <>
+    <main>
+      {/* NAVBAR */}
+      <Navbar />
 
-      <Head>
-        <title>{data.meta?.title || "Industry Page"}</title>
-        <meta
-          name="description"
-          content={
-            data.meta?.description ||
-            "Explore our AI-powered solutions across industries to boost productivity and efficiency."
-          }
-        />
-        <meta
-          name="keywords"
-          content={
-            data.meta?.keywords ||
-            "AI, Automation, Industry Solutions, Productivity, Smart Tools"
-          }
-        />
-      </Head>
+      {/* HERO SECTION */}
+      <HeroSection {...data.heroSection} />
 
-      <main>
-        {/* NAVBAR */}
-        <Navbar />
+      {/* ABOUT-US SECTION */}
+      <AboutUs
+        heading={data.about.heading}
+        sections={data.about.sections}
+      />
 
-        {/* HERO SECTION */}
-        <HeroSection {...data.heroSection} />
+      {/* KEY BENEFITS */}
+      <KeyBenefits
+        heading={data.keyBenefits.heading}
+        subheading={data.keyBenefits.subheading}
+        cards={data.keyBenefits.cards}
+      />
 
-        {/* ABOUT-US SECTION */}
-        <AboutUs
-          heading={data.about.heading}
-          sections={data.about.sections}
-        />
+      {/* WHY CHOOSE US */}
+      <WhyChoose
+        heading={data.whyChoose.heading}
+        description={data.whyChoose.description}
+        leftbox={data.whyChoose.leftBox}
+        image={data.whyChoose.image}
+      />
 
-        {/* KEY BENEFITS */}
-        <KeyBenefits
-          heading={data.keyBenefits.heading}
-          subheading={data.keyBenefits.subheading}
-          cards={data.keyBenefits.cards}
-        />
+      {/* PRIMARY USES */}
+      <PrimaryUses
+        heading={data.primaryUses.heading}
+        items={data.primaryUses.items}
+      />
 
-        {/* WHY CHOOSE US */}
-        <WhyChoose
-          heading={data.whyChoose.heading}
-          description={data.whyChoose.description}
-          leftbox={data.whyChoose.leftBox}
-          image={data.whyChoose.image}
-        />
+      {/* PRODUCTIVITY GAINS */}
+      <ProductivityGains
+        heading={data.productivityGains.heading}
+        cards={data.productivityGains.cards}
+      />
 
-        {/* PRIMARY USES */}
-        <PrimaryUses
-          heading={data.primaryUses.heading}
-          items={data.primaryUses.items}
-        />
+      {/* USE CASE */}
+      <UseCase
+        title={data.useCase.title}
+        topBox={data.useCase.topBox}
+        useCases={data.useCase.useCases}
+      />
 
-        {/* PRODUCTIVITY GAINS */}
-        <ProductivityGains
-          heading={data.productivityGains.heading}
-          cards={data.productivityGains.cards}
-        />
+      {/* FORM */}
+      <Form
+        title={data.form.title}
+        subtitle={data.form.subtitle}
+      />
 
-        {/* USE CASE */}
-        <UseCase
-          title={data.useCase.title}
-          topBox={data.useCase.topBox}
-          useCases={data.useCase.useCases}
-        />
+      {/* EXPLORE OTHER INDUSTRIES */}
+      <ExploreOtherIndustries activeSlug={slug} />
 
-        {/* FORM */}
-        <Form
-          title={data.form.title}
-          subtitle={data.form.subtitle}
-        />
-
-        {/* EXPLORE OTHER INDUSTRIES */}
-        <ExploreOtherIndustries activeSlug={slug} />
-
-        {/* FOOTER */}
-        <Footer />
-      </main>
-    </>
+      {/* FOOTER */}
+      <Footer />
+    </main>
   );
 }

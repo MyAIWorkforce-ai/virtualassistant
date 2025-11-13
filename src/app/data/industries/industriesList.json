@@ -2,133 +2,133 @@
   {
     "name": "Physiotherapist",
     "slug": "physiotherapy",
-    "image": "/industrymain-images/physio.png",
+    "image": "/industries-images/physiotherapist/hero.png",
     "description": "A virtual assistant that books, reminds, and records, while you focus on your patients."
   },
   {
     "name": "Myotherapist",
     "slug": "myotherapist",
-    "image": "/industrymain-images/mytho.png",
+    "image": "/industries-images/myotherapist/hero.png",
     "description": "Your virtual assistant for stress-free therapy management."
   },
   {
     "name": "Personal Trainer",
     "slug": "personaltrainer",
-    "image": "/industrymain-images/personal-trainer.png",
+    "image": "/industries-images/personaltrainer/hero.png",
     "description": "Power up your training business by automating client scheduling, payment reminders, and progress updates."
   },
   {
     "name": "Massage Therapist",
     "slug": "massagetherapist",
-    "image": "/industrymain-images/massage-thera.png",
+    "image": "/industries-images/massagetherapist/hero.png",
     "description": "Your virtual assistant handles bookings, reminders, and notes, so you can focus on delivering care, not admin."
   },
   {
     "name": "Psychology",
     "slug": "psychology",
-    "image": "/industrymain-images/psycolo.png",
+    "image": "/industries-images/psychology/hero.png",
     "description": "Your virtual assistant supports mental health care by managing session bookings, reminders, progress notes, and follow-up care."
   },
   {
     "name": "Chiropractor",
     "slug": "chiropractor",
-    "image": "/industrymain-images/chiro.png",
+    "image": "/industries-images/chiropractor/hero.png",
     "description": "Your virtual assistant supports your chiropractic practice by handling appointments, reminders, treatment notes, and follow-ups."
   },
   {
     "name": "Podiatrist",
     "slug": "podiatrist",
-    "image": "/industrymain-images/podia.png",
+    "image": "/industries-images/podiatrist/hero.png",
     "description": "Your virtual assistant streamlines podiatry care by managing appointments, recording treatment notes, sending recovery reminders, and scheduling follow-ups."
   },
   {
     "name": "Beauty Therapist",
     "slug": "beauty-therapist",
-    "image": "/industrymain-images/beauty-thera.png",
+    "image": "/industries-images/beauty-therapist/hero.png",
     "description": "Your virtual assistant streamlines beauty care by managing appointments, recording treatment notes, sending skincare or wellness reminders, and follow-ups."
   },
   {
     "name": "Hair Dresser",
     "slug": "hairdresser",
-    "image": "/industrymain-images/hair-dresser.png",
+    "image": "/industries-images/hairdresser/hero.png",
     "description": "Your virtual assistant simplifies hair care by managing bookings, recording style preferences, sending care reminders, and scheduling recurring appointments."
   },
   {
     "name": "Dentist",
     "slug": "dentist",
-    "image": "/industrymain-images/dentist.png",
+    "image": "/industries-images/dentist/hero.png",
     "description": "Your virtual assistant modernizes dental care by managing appointments, recording treatment notes, sending hygiene reminders, and scheduling follow-ups."
   },
   {
     "name": "Osteopaths",
     "slug": "osteopaths",
-    "image": "/industrymain-images/chiro.png",
+    "image": "/industries-images/osteopaths/hero.png",
     "description": "Your virtual assistant modernizes osteopathic care by managing patient bookings, recording session notes, sending appointment reminders, and organizing treatment follow-ups."
   },
   {
     "name": "Lawyer",
     "slug": "lawyer",
-    "image": "/industrymain-images/laywer.png",
+    "image": "/industries-images/lawyer/hero.png",
     "description": "Your virtual assistant modernizes legal practice by managing appointments, recording case notes, tracking deadlines, sending client reminders, and scheduling follow-ups."
   },
   {
     "name": "Accountant",
     "slug": "accountant",
-    "image": "/industrymain-images/accountant.png",
+    "image": "/industries-images/accountant/hero.png",
     "description": "Your virtual assistant modernizes accounting by managing appointments, recording financial notes, tracking deadlines, sending tax reminders, and scheduling client follow-ups."
   },
   {
     "name": "Consultant",
     "slug": "consultant",
-    "image": "/industrymain-images/consultant.png",
+    "image": "/industries-images/consultant/hero.png",
     "description": "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, sending follow-up reminders, and streamlining client communication."
   },
   {
     "name": "Real Estate Agent",
     "slug": "realestateagent",
-    "image": "/industrymain-images/real-estate.png",
+    "image": "/industries-images/realestateagent/hero.png",
     "description": "Your virtual assistant modernizes real estate by managing property viewings, recording client notes, tracking appointment schedules, sending follow-up reminders, and supporting seamless communication."
   },
   {
     "name": "Mechanic",
     "slug": "mechanic",
-    "image": "/industrymain-images/mechanic.png",
+    "image": "/industries-images/mechanic/hero.png",
     "description": "Your virtual assistant modernizes auto care by managing service appointments, recording repair notes, sending maintenance reminders, and scheduling follow-ups."
   },
   {
     "name": "Plumber",
     "slug": "plumber",
-    "image": "/industrymain-images/plumber.png",
+    "image": "/industries-images/plumber/hero.png",
     "description": "Your virtual plumbing assistant modernizes service operations by managing appointments, recording job notes, sending maintenance reminders, and scheduling follow-ups."
   },
   {
     "name": "Cleaning",
     "slug": "cleaning",
-    "image": "/industrymain-images/window.png",
+    "image": "/industries-images/cleaning/hero.png",
     "description": "Your virtual assistant modernizes cleaning businesses by booking jobs, tracking schedules, sending cleaning reminders, and scheduling follow-ups."
   },
   {
     "name": "Electricians",
     "slug": "electricians",
-    "image": "/industrymain-images/electrician.png",
+    "image": "/industries-images/electricians/hero.png",
     "description": "Your virtual assistant modernizes electrical operations by managing appointments, diagnosing, sending safety reminders, and scheduling follow-ups."
   },
   {
     "name": "Restaurant",
     "slug": "restaurant",
-    "image": "/industrymain-images/resturant.png",
+    "image": "/industries-images/restaurant/hero.png",
     "description": "Your virtual assistant modernizes restaurant operations by managing reservations, recording guest preferences, and scheduling follow-ups, so you can focus on great food and service."
   },
   {
     "name": "Hotels & Accommodation",
     "slug": "hotelsaccommodation",
-    "image": "/industrymain-images/hotel.png",
+    "image": "/industries-images/hotelsaccommodation/hero.png",
     "description": "Your virtual assistant modernizes hotel operations by managing bookings, tracking guest preferences, automating reminders, and streamlining communication."
   },
   {
     "name": "For Others",
     "slug": "forothers",
-    "image": "/industrymain-images/other.png",
+    "image": "/industries-images/forothers/hero.png",
     "description": "Your virtual assistant brings intelligent automation to any industry. AI for Others is built to adapt to your business needs, no matter your field."
   }
 ]
