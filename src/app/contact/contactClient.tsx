@@ -15,50 +15,34 @@ import Footer from "../_components/Footer";
 
 import useScrollAnimation from "../_components/animations/scrolleranimation";
 
-// ✅ Fix Framer Motion 'ease' type issue using cubicBezier() and make transitions fully typed
+// Fix Framer Motion 'ease' type issue using cubicBezier()
 const easeBezier = cubicBezier(0.42, 0, 0.58, 1);
 
-// Create typed overrides of the imported variants so any string easings (or deprecated props)
-// inside the original animation file are replaced with type-safe equivalents.
-const fadeUp = {
- ...originalFadeUp,
+ const fadeUp = {
+   ...originalFadeUp,
   visible: {
-  ...((originalFadeUp as any).visible ?? {}),
-  transition: { duration: 0.6, ease: easeBezier },
-},
+  ...originalFadeUp.visible,
+    transition: { duration: 0.6, ease: easeBezier },
+ },
 };
 
-const fadeInItem = {
- ...originalFadeInItem,
- visible: {
-   ...((originalFadeInItem as any).visible ?? {}),
+ const fadeInItem = {
+  ...originalFadeInItem,
+  visible: {
+   ...originalFadeInItem.visible,
    transition: { duration: 0.4, ease: easeBezier },
+  },
+ };
+
+ const blinkButton = {
+...originalBlinkButton,
+  hover: {
+   ...originalBlinkButton.hover,
+   transition: { duration: 0.3, ease: easeBezier, repeat: 0 },
   },
 };
 
-const blinkButton = {
-  ...originalBlinkButton,
-rest: { ...((originalBlinkButton as any).rest ?? { scale: 1, opacity: 1 }) },
- hover: {
-    ...((originalBlinkButton as any).hover ?? { scale: 1.05, opacity: 0.9 }),
-  // Use repeat + repeatType instead of deprecated yoyo, and typed easing
-  transition: { duration: 0.3, repeat: 2, repeatType: "reverse", ease: easeBezier },
- },
-};
-
-const staggerFormContainer = {
-  ...originalStaggerFormContainer,
- visible: {
-   ...((originalStaggerFormContainer as any).visible ?? {}),
-   transition: {
-    // keep stagger config, no string eases here
-    ...( ((originalStaggerFormContainer as any).visible?.transition) ?? {} ),
-    // ensure child staggering remains
-    staggerChildren: ((originalStaggerFormContainer as any).visible?.transition?.staggerChildren) ?? 0.15,
-    delayChildren: ((originalStaggerFormContainer as any).visible?.transition?.delayChildren) ?? 0.2,
-   },
- },
-};
+const staggerFormContainer = { ...originalStaggerFormContainer };
 
 
 export default function ContactPage() {
