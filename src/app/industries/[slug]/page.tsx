@@ -11,9 +11,35 @@ import Navbar from "@/app/_components/Navbar";
 import ProductivityGains from "@/app/components/IndustriesComponents/ProductivityGains";
 import ExploreOtherIndustries from "@/app/components/IndustriesComponents/ExploreOtherIndustries";
 import Footer from "@/app/_components/Footer";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-export default async function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+
+//METADATA Generator Starts here
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  try {
+    const data = require(`@/app/data/industries/${params.slug}.json`);
+
+    return {
+      title: `${data.heroSection.title} | VirtualAssistant.com.au`,
+      description: data.heroSection.description,
+      openGraph: {
+        title: data.heroSection.title,
+        description: data.heroSection.description,
+        images: [data.heroSection.image],
+      },
+    };
+  } catch (err) {
+    return {
+      title: "Industry Not Found",
+      description: "This industry does not exist.",
+    };
+  }
+}
+//METADATA Generator Ends here
+
+export default function IndustryPage({ params }: { params: { slug: string } }) {
+ const { slug } = params;
 
   let data;
   try {
