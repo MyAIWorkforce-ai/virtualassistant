@@ -88,9 +88,9 @@ export default function Home() {
     },
   ];
 
-  // ========================
-  //   Transparent Pricing
-  // ========================
+ // ========================
+// Transparent Pricing State & Plans
+// ========================
 const [billingCycle, setBillingCycle] = useState("monthly");
 
 const plans = [
@@ -205,13 +205,14 @@ const plans = [
   
   ];
 
+   const [activeIndex, setActiveIndex] = useState(0);
   const [cardCount, setCardCount] = useState(3);
-
-  useEffect(() => {
+ useEffect(() => {
     const updateCardCount = () => {
-      if (window.innerWidth < 640) setCardCount(1); // mobile
-      else if (window.innerWidth < 1024) setCardCount(2); // tablet
-      else setCardCount(3); 
+      const width = window.innerWidth;
+      if (width < 640) setCardCount(1); // mobile
+      else if (width < 1024) setCardCount(2); // tablet
+      else setCardCount(3); // desktop
     };
 
     updateCardCount();
@@ -219,19 +220,15 @@ const plans = [
     return () => window.removeEventListener("resize", updateCardCount);
   }, []);
 
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
+  // Auto-slide every 9 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) =>
         prev + cardCount >= testimonials.length ? 0 : prev + cardCount
       );
     }, 9000);
-
     return () => clearInterval(interval);
   }, [testimonials.length, cardCount]);
-
 
   //  =========================
   //   //How it works section
@@ -335,24 +332,18 @@ const plans = [
               </div>
             </motion.div>
 
-        
- <motion.div
-  className="flex justify-center items-center w-full py-20  px-10 lg:w-1/2"
+<motion.div
+  className="flex justify-center items-center w-full py-20 px-6 sm:px-10 lg:w-1/2"
   initial={{ opacity: 0, x: 100 }}
   whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1, ease: "easeOut" }}
+  transition={{ duration: 1, ease: 'easeOut' }}
   viewport={{ once: true }}
 >
   <HeroAnimation>
-  
-    <div className="relative w-[570px] h-[370px] max-w-full -rotate-5 translate-x-[80px] bg-[#00A7DE] py-4  px-10 rounded-2xl overflow-hidden">
+    <div className="relative w-[300px] h-[200px] sm:w-[450px] sm:h-[300px] lg:w-[570px] lg:h-[370px] max-w-full mx-auto sm:translate-x-[0px] lg:translate-x-[80px] -rotate-5 bg-[#00A7DE] py-4 px-10 rounded-2xl overflow-hidden">
       {(() => {
         const [index, setIndex] = React.useState(0);
-        const images = [
-          "/image/tab.png",
-          "/image/tab1.png",
-          "/image/tab2.png",
-        ];
+        const images = ['/image/tab.png', '/image/tab1.png', '/image/tab2.png'];
 
         React.useEffect(() => {
           const interval = setInterval(() => {
@@ -362,7 +353,7 @@ const plans = [
         }, []);
 
         return (
-          <div className="relative w-full  h-full">
+          <div className="relative w-full h-full">
             {images.map((src, i) => (
               <Image
                 key={i}
@@ -372,7 +363,7 @@ const plans = [
                 priority
                 quality={100}
                 className={`object-contain transition-opacity duration-1000 ease-in-out ${
-                  i === index ? "opacity-100" : "opacity-0"
+                  i === index ? 'opacity-100' : 'opacity-0'
                 }`}
               />
             ))}
@@ -382,7 +373,6 @@ const plans = [
     </div>
   </HeroAnimation>
 </motion.div>
-
           </div>
         </section>
       </main>
@@ -1126,11 +1116,13 @@ Your control centre gives you everything in one place:
         </div>
       </section>
 
-      {/* Transparent Pricing */}
-    <ScaleUp>
+ 
+
+{/* Transparent Pricing */}
+<ScaleUp>
   <section id="pricing" className="bg-[#F9FAFB] py-20">
     <div className="max-w-6xl mx-auto px-6 text-center">
-      {/* Heading */}
+    
       <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
         Simple, Transparent Pricing
         <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-5 mb-5"></span>
@@ -1139,7 +1131,7 @@ Your control centre gives you everything in one place:
         Choose the perfect plan for your business needs.
       </p>
 
-      {/* Toggle */}
+    
       <div className="flex justify-center items-center mb-12 space-x-2">
         <span
           className={`cursor-pointer text-sm ${
@@ -1176,21 +1168,15 @@ Your control centre gives you everything in one place:
         </span>
       </div>
 
-      {/* Pricing Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {plans.map((plan, index) => {
-          // Calculate prices dynamically
           const isYearly = billingCycle === "yearly";
           const monthlyPrice = plan.price;
           const yearlyPrice =
-            monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0); // 20% off
+            monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0);
 
           const displayPrice = isYearly ? yearlyPrice : monthlyPrice;
-          const cycleText = isYearly
-            ? "/year"
-            : monthlyPrice
-            ? "/month"
-            : "";
+          const cycleText = isYearly ? "/year" : monthlyPrice ? "/month" : "";
 
           return (
             <ScaleUp key={index} delay={index * 0.1}>
@@ -1212,12 +1198,17 @@ Your control centre gives you everything in one place:
                 </h3>
                 <p className="text-gray-500 mb-4">{plan.description}</p>
 
-                {/* Dynamic Price */}
                 <div className="text-3xl font-bold text-gray-800 mb-6">
                   {displayPrice ? `$${displayPrice}` : "Custom"}
                   <span className="text-base font-normal text-gray-500">
                     {cycleText}
                   </span>
+
+                  {billingCycle === "yearly" && monthlyPrice && (
+                    <span className="block text-sm text-gray-400 mt-1">
+                      (${(monthlyPrice * 0.8).toFixed(0)} / month)
+                    </span>
+                  )}
                 </div>
 
                 <ul className="space-y-3 flex-1">
@@ -1237,16 +1228,22 @@ Your control centre gives you everything in one place:
                     </li>
                   ))}
                 </ul>
-<Link href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">
-                <button
-                  className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
-                    plan.highlighted
-                      ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
-                  }`}
+
+                <Link
+                  href="https://admin.virtualassistant.com.au/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {plan.button}
-                </button></Link>
+                  <button
+                    className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
+                      plan.highlighted
+                        ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                        : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
+                    }`}
+                  >
+                    {plan.button}
+                  </button>
+                </Link>
               </div>
             </ScaleUp>
           );
@@ -1257,58 +1254,59 @@ Your control centre gives you everything in one place:
 </ScaleUp>;
       {/* WHAT OUR CLIENT SAY SECTION */}
 
-<section className="bg-gradient-to-r from-blue-50 to-white py-16 px-15 sm:px-6 lg:px-8 font-poppins">
-  <div className="max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-[#00A7DE] relative inline-block mb-6">
-      What Our Clients Say
-      <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-4"></span>
-    </h2>
-    <p className="text-gray-500 mb-12">
-      Businesses across industries are saving time and improving customer satisfaction
-      <br /> with our virtual receptionist solution.
-    </p>
+ <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-6 sm:px-6 lg:px-8 font-poppins">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-[#00A7DE] relative inline-block mb-6">
+          What Our Clients Say
+          <span className="block w-16 h-1 bg-[#098DC9] rounded-full mx-auto mt-4"></span>
+        </h2>
+        <p className="text-gray-500 mb-12">
+          Businesses across industries are saving time and improving customer satisfaction
+          <br /> with our virtual receptionist solution.
+        </p>
 
-    <div className="overflow-hidden text-left">
-      <motion.div
-        className="flex gap-6"
-        animate={{
-          x: `-${(100 / cardCount) * activeIndex}%`,
-        }}
-        transition={{ type: "spring", stiffness: 80, damping: 20 }}
-      >
-        {testimonials.map((t, i) => (
-          <div
-            key={i}
-            className={`flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between`}
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex gap-6"
+            animate={{
+              x: `-${(100 / cardCount) * activeIndex}%`,
+            }}
+            transition={{ type: "spring", stiffness: 80, damping: 20 }}
           >
-            <div className="flex flex-col mb-6">
-              <div className="mb-5">
-                <Image src={t.stars} alt="Stars" width={300} height={80} />
-              </div>
-              <p className="text-gray-700 text-[16px]">{t.quote}</p>
-            </div>
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className={`flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 bg-white ml:0 p-6 rounded-xl shadow-md flex flex-col justify-between`}
+              >
+                <div className="flex flex-col mb-6">
+                  <div className="mb-5">
+                    <Image src={t.stars} alt="Stars" width={300} height={80} />
+                  </div>
+                  <p className="text-gray-700 text-[16px]">{t.quote}</p>
+                </div>
 
-            <div className="flex items-center gap-4 mt-auto">
-              <div className="w-16 h-16 relative flex-shrink-0">
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  fill
-                  className="rounded-full object-cover border-2 border-sky-200"
-                />
-              </div>
+                <div className="flex items-center gap-4 mt-auto">
+                  <div className="w-16 h-16 relative flex-shrink-0">
+                    <Image
+                      src={t.image}
+                      alt={t.name}
+                      fill
+                      className="rounded-full object-cover border-2 border-sky-200"
+                    />
+                  </div>
 
-              <div className="flex flex-col">
-                <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
-                <p className="text-sm text-gray-500">{t.title}</p>
+                  <div className="flex flex-col">
+                    <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
+                    <p className="text-sm text-gray-500">{t.title}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </motion.div>
-    </div>
-  </div>
-</section>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </section>
+
 
       {/* FOOTER SECTION */}
    <Footer/>

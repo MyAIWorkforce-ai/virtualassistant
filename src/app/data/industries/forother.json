@@ -1,5 +1,11 @@
 {
-  "slug": "physiotherapy",
+  "slug": "forother",
+
+     "meta": {
+    "title": "AI Virtual Receptionist for Any Service-Based Business | VirtualAssistant.com.au",
+    "description": "Transform how you run your business with our AI Virtual Receptionist. Perfect for any service-based business — from trades and healthcare to beauty, fitness, and professional services — available 24/7 to handle calls, bookings, and inquiries automatically.",
+  "keywords": "AI virtual receptionist for service-based businesses,AI receptionist for small businesses,virtual assistant for trades and professionals,AI call answering for any business,automated booking system for service providers,AI phone answering for companies,24/7 receptionist for small and medium businesses,VirtualAssistant.com.au"
+   },
   "heroSection": {
     "tag": "General Services",
     "title": "AI for Others",

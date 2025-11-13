@@ -1,9 +1,8 @@
-
-import TermsOfServices from "./termsandServicesClient";
+import ContactPage from "./contactClient";
 
 export async function generateMetadata() {
   return {
-    title: "Terms of Services — Smart Calendar & Productivity",
+    title: "contactPage — Smart Calendar & Productivity",
     description:
       "Automatically book, confirm and manage meetings using intelligent automation.",
     keywords:
@@ -12,5 +11,5 @@ export async function generateMetadata() {
 }
 
 export default function IndustriesPage() {
-  return <TermsOfServices />;
+  return <ContactPage />;
 }
