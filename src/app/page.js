@@ -318,11 +318,11 @@ const plans = [
                   words={[
                     "AI Virtual Assistant that works, speaks, and feels like your business — 24/7.",
                   ]}
-                  loop={true}
+                  loop={false}
                   cursor
                   cursorStyle="|"
                   typeSpeed={60}
-                  deleteSpeed={50}
+                  // deleteSpeed={50}
                 />
               </h1>
 
