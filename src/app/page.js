@@ -357,7 +357,7 @@ const plans = [
 >
   <HeroAnimation>
   
-    <div className="relative w-[570px] h-[370px] max-w-full -rotate-5 translate-x-[80px] bg-[#00A7DE] py-4  px-10 rounded-2xl overflow-hidden">
+    <div className="relative w-[620px] h-[400px] max-w-full -rotate-5 translate-x-[80px] bg-[#00A7DE] py-4  px-10 rounded-2xl overflow-hidden">
       {(() => {
         const [index, setIndex] = React.useState(0);
         const images = [
