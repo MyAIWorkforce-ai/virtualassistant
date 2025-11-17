@@ -99,68 +99,56 @@ const plans = [
     price: 300,
     description: "1 User",
     features: [
-  "AI Virtual Assistant 24/7",
-  "Advanced Dashboard with Analytics",
-  "Advanced CRM for all Client Data and History",
-  "AI Powered Smart Calendars",
-  "New Dedicated Number or Call Forwarding Options",
-  "Front End AI Prompt Training for your AI",
-  "AI Appointment Scheduling",
-  "Unlimited Incoming Calls 24/7",
-  "Unlimited Bookings 24/7",
-  "Online Booking Script for Website",
-  "Online Chatbot Script for Website",
-  "Appointment Reminders via SMS and Email",
-  "Calendar Syncing"
-],
-    button: "Start 14 Days Free Trial",
+      "AI call answering",
+      "10 hours of call time/month",
+      "Basic appointment booking",
+      "Email notifications",
+      "Call transcriptions",
+    ],
+    button: "Start Now",
     highlighted: false,
   },
   {
-    name: "PROFESSIONAL",
+    name: "Professional",
     price: 400,
     description: "Upto 3 Users",
-    features:[
-  "AI Virtual Assistant 24/7",
-  "Advanced Dashboard with Analytics",
-  "Advanced CRM for all Client Data and History",
-  "AI Powered Smart Calendars",
-  "New Dedicated Number or Call Forwarding Options",
-  "Front End AI Prompt Training for your AI",
-  "AI Appointment Scheduling",
-  "Unlimited Incoming Calls 24/7",
-  "Unlimited Bookings 24/7",
-  "Online Booking Script for Website",
-  "Online Chatbot Script for Website",
-  "Appointment Reminders via SMS and Email",
-  "Calendar Syncing"
-],
-    button: "Start 14 Days Free Trial",
+    features: [
+      "AI Virtual Assistant 24/7",
+      "Advanced Dashboard with Analytics",
+      "Advanced CRM for all Client Data and History",
+      "AI Powered Smart Calendars",
+      "New Dedicated Number or Call Forwarding Options",
+      "Front End AI Prompt Training for your AI",
+      "AI Appointment Scheduling",
+      "Unlimited Incoming Calls 24/7",
+    ],
+    button: "Start Now",
     highlighted: true,
   },
   {
-    name: "ENTERPRISE",
+    name: "Enterprise",
     price: 500,
     description: "Upto 5 Users",
     features: [
-  "AI Virtual Assistant 24/7",
-  "Advanced Dashboard with Analytics",
-  "Advanced CRM for all Client Data and History",
-  "AI Powered Smart Calendars",
-  "New Dedicated Number or Call Forwarding Options",
-  "Front End AI Prompt Training for your AI",
-  "AI Appointment Scheduling",
-  "Unlimited Incoming Calls 24/7",
-  "Unlimited Bookings 24/7",
-  "Online Booking Script for Website",
-  "Online Chatbot Script for Website",
-  "Appointment Reminders via SMS and Email",
-  "Calendar Syncing"
-],
-    button: "Start 14 Days Free Trial",
+      "Everything in Pro",
+      "Multiple phone lines",
+      "API access",
+      "Custom integrations",
+      "White-labeled solution",
+      "Dedicated account manager",
+      "99.9% uptime SLA",
+    ],
+    button: "Start Now",
     highlighted: false,
   },
-
+  {
+    name: "Custom Package",
+    price: null,
+    description: "",
+    features: [],
+    button: "Start Now",
+    highlighted: false,
+  },
 ];
   // =================================
   //   what our client says
@@ -322,7 +310,6 @@ const plans = [
                   cursor
                   cursorStyle="|"
                   typeSpeed={60}
-                  // deleteSpeed={50}
                 />
               </h1>
 
@@ -348,23 +335,20 @@ const plans = [
             </motion.div>
 
         
- <motion.div
-  className="flex justify-center items-center w-full py-20  px-10 lg:w-1/2"
+<motion.div
+  className="flex justify-center items-center w-full py-20 px-6 lg:w-1/2"
   initial={{ opacity: 0, x: 100 }}
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}
   viewport={{ once: true }}
 >
   <HeroAnimation>
-  
-    <div className="relative w-[620px] h-[400px] max-w-full -rotate-5 translate-x-[80px] bg-[#00A7DE] py-4  px-10 rounded-2xl overflow-hidden">
+    <div
+      className=" relative w-[300px] h-[200px] sm:w-[400px] sm:h-[260px] md:w-[500px] md:h-[320px] lg:w-[620px] lg:h-[400px] max-w-full -rotate-5 bg-[#00A7DE] py-4 px-6 rounded-2xl overflow-hidden  mx-auto"
+    >
       {(() => {
         const [index, setIndex] = React.useState(0);
-        const images = [
-          "/image/tab.png",
-          "/image/tab1.png",
-          "/image/tab2.png",
-        ];
+        const images = ["/image/tab.png", "/image/tab1.png", "/image/tab2.png"];
 
         React.useEffect(() => {
           const interval = setInterval(() => {
@@ -374,7 +358,7 @@ const plans = [
         }, []);
 
         return (
-          <div className="relative w-full  h-full">
+          <div className="relative w-full h-full">
             {images.map((src, i) => (
               <Image
                 key={i}
@@ -1139,7 +1123,7 @@ Your control centre gives you everything in one place:
       </section>
 
       {/* Transparent Pricing */}
-    <ScaleUp>
+<ScaleUp>
   <section id="pricing" className="bg-[#F9FAFB] py-20">
     <div className="max-w-6xl mx-auto px-6 text-center">
       {/* Heading */}
@@ -1189,20 +1173,15 @@ Your control centre gives you everything in one place:
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {plans.map((plan, index) => {
-          // Calculate prices dynamically
           const isYearly = billingCycle === "yearly";
           const monthlyPrice = plan.price;
           const yearlyPrice =
             monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0); // 20% off
 
           const displayPrice = isYearly ? yearlyPrice : monthlyPrice;
-          const cycleText = isYearly
-            ? "/year"
-            : monthlyPrice
-            ? "/month"
-            : "";
+          const cycleText = isYearly ? "/year" : monthlyPrice ? "/month" : "";
 
           return (
             <ScaleUp key={index} delay={index * 0.1}>
@@ -1224,12 +1203,18 @@ Your control centre gives you everything in one place:
                 </h3>
                 <p className="text-gray-500 mb-4">{plan.description}</p>
 
-                {/* Dynamic Price */}
+                {/* Dynamic Price with Monthly 20% Discount */}
                 <div className="text-3xl font-bold text-gray-800 mb-6">
                   {displayPrice ? `$${displayPrice}` : "Custom"}
                   <span className="text-base font-normal text-gray-500">
                     {cycleText}
                   </span>
+
+                  {billingCycle === "yearly" && monthlyPrice && (
+                    <span className="block text-sm text-gray-400 mt-1">
+                      (${(monthlyPrice * 0.8).toFixed(0)} / month)
+                    </span>
+                  )}
                 </div>
 
                 <ul className="space-y-3 flex-1">
@@ -1249,16 +1234,22 @@ Your control centre gives you everything in one place:
                     </li>
                   ))}
                 </ul>
-<Link href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">
-                <button
-                  className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
-                    plan.highlighted
-                      ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
-                  }`}
+
+                <Link
+                  href="https://admin.virtualassistant.com.au/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {plan.button}
-                </button></Link>
+                  <button
+                    className={`mt-8 w-full py-3 rounded-lg font-medium transition-all duration-300 ease-in-out ${
+                      plan.highlighted
+                        ? "bg-[#00A7DE] text-white hover:bg-[#098DC9] hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                        : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md hover:scale-105"
+                    }`}
+                  >
+                    {plan.button}
+                  </button>
+                </Link>
               </div>
             </ScaleUp>
           );

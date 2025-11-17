@@ -25,39 +25,51 @@ export default function SmartAIassistant() {
             </Head>
             <Navbar />
             {/*  FIRST SECTION  */}
-            {/* Hero Section */}
-            <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
-                style={{
-                    backgroundImage: "url('/feature-images/hero-image.svg')",
-                }}
-                 initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                {/* Context Container */}
-                <motion.div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 pt-30 mx-auto"
-                 initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}>
-                    <motion.div className="text-white max-w-lg space-y-6">
-                        <motion.div className="inline-block bg-[#E8F6FF] text-[#00A7DE] p-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
-                            Wrap Up Every Session with Ease
-                        </motion.div>
-                        <motion.h1 className="text-3xl md:text-5xl font-bold eading-tight">
-                            Post-Session Tools
-                        </motion.h1>
-                        <motion.p className="text-lg  text-gray-200">
-                            Keep every client interaction organized, documented,  and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
-                        </motion.p>
-                        <motion.button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
-                            Start your free trial
-                        </motion.button>
-                    </motion.div>
-                </motion.div>
+        <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative min-h-[100vh] flex items-end justify-start overflow-hidden"
+>
+  {/* Background Image */}
+  <Image
+    src="/feature-images/smartai-assistant.png"
+    alt="AI Assistant"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-left"
+  />
+  
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
 
-            </motion.section>
+  {/* Card */}
+  <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg
+                  max-w-xl
+                  rounded-tr-[30px] 
+                  mb-0">
+    
+    <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+      AI that talks, helps, and converts
+    </div>
 
+    <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
+      Smart AI Assistant<br />for Clients
+    </h1>
 
+    <p className="text-white/90 leading-relaxed mb-6 font-poppins">
+      Your Smart AI Assistant answers questions, explains services, and 
+      manages client requests with a tone and personality that fits your 
+      brand perfectly. Give your clients the clarity they need, right when 
+      they need it.
+    </p>
+
+    <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
+      Start your free trial
+    </button>
+  </div>
+</motion.section>
             {/*  SECOND SECTION*/}
             <motion.section className="relative flex flex-col items-center justify-center w-full min-h-screen py-24 bg-[#F9FAFB]"
                 initial={{ opacity: 0, y: 20 }}
