@@ -65,37 +65,54 @@ export default function OnlineIntegration() {
             <Navbar />
 
            {/*  FIRST SECTION  */}
-            {/* Hero Section */}
-            <motion.section className="relative flex  w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
-                style={{
-                    backgroundImage: "url('/feature-images/dashboard-image1.png')",
-                }}
-                 initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                {/* Context Container */}
-                <motion.div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 pt-50 mx-auto"
-                 initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}>
-                    <motion.div className="text-white max-w-lg space-y-6">
-                        <motion.div className="inline-block bg-[#E8F6FF] text-[#00A7DE] p-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
-                            The heart of your AI operations
-                        </motion.div>
-                        <motion.h1 className="text-3xl md:text-5xl font-bold eading-tight">
-                          Advanced Dashboard – Your Control Centre
-                        </motion.h1>
-                        <motion.p className="text-lg  text-gray-200">
-                        Take command of your AI operations with one simple, intelligent dashboard. Your Advanced Dashboard brings together client management, analytics, customization, and real-time control — giving you full visibility over how your AI communicates, books, and performs every day.
-It’s not just software — it’s your business’s central control hub.
-                        </motion.p>
-                        <motion.button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
-                            Start your free trial
-                        </motion.button>
-                    </motion.div>
-                </motion.div>
-            </motion.section>
+        <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative min-h-[100vh] flex items-center justify-center overflow-hidden"
+>
+
+  <Image
+    src="/feature-images/smartai-assistant.png"
+    alt="AI Assistant"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-left"
+  />
+  <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
+  <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg 
+                    max-w-xl
+                    rounded-tr-[30px] rounded-br-[30px]
+                    ml-auto md:ml-0 ">
+      
+      <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+        AI that talks, helps, and converts
+      </div>
+
+      <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
+        Smart AI Assistant<br />for Clients
+      </h1>
+
+      <p className="text-white/90 leading-relaxed mb-6 font-poppins">
+        Your Smart AI Assistant answers questions, explains services, and 
+        manages client requests with a tone and personality that fits your 
+        brand perfectly. Give your clients the clarity they need, right when 
+        they need it.
+      </p>
+
+      <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
+        Start your free trial
+      </button>
+    </div>
+  <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div></div>
+
+    {/* Card */}
+  
+  </div>
+</motion.section>
+
 
 
 {/* SECOND SECTION */}

@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import HeroSection from "@/app/components/IndustriesComponents/HeroSection";
 import AboutUs from "@/app/components/IndustriesComponents/AboutUs";
@@ -14,12 +13,11 @@ import Footer from "@/app/_components/Footer";
 import { Metadata } from "next";
 
 
-
-//METADATA Generator Starts here
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  try {
-    const data = require(`@/app/data/industries/${params.slug}.json`);
+  const { slug } = params;
 
+  try {
+    const data = await import(`@/app/data/industries/${slug}.json`);
     return {
       title: `${data.heroSection.title} | VirtualAssistant.com.au`,
       description: data.heroSection.description,
@@ -36,18 +34,19 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
 }
-//METADATA Generator Ends here
 
-export default function IndustryPage({ params }: { params: { slug: string } }) {
- const { slug } = params;
+
+export default async function IndustryPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
 
   let data;
   try {
-    data = require(`@/app/data/industries/${slug}.json`);
+    data = await import(`@/app/data/industries/${slug}.json`);
   } catch (error) {
     console.error(`JSON file not found for slug: ${slug} | ${error}`);
-    notFound(); 
+    notFound();
   }
+
   return (
     <main>
       {/* NAVBAR */}
@@ -57,10 +56,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
       <HeroSection {...data.heroSection} />
 
       {/* ABOUT-US SECTION */}
-      <AboutUs
-        heading={data.about.heading}
-        sections={data.about.sections}
-      />
+      <AboutUs heading={data.about.heading} sections={data.about.sections} />
 
       {/* KEY BENEFITS */}
       <KeyBenefits
@@ -78,29 +74,16 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
       />
 
       {/* PRIMARY USES */}
-      <PrimaryUses
-        heading={data.primaryUses.heading}
-        items={data.primaryUses.items}
-      />
+      <PrimaryUses heading={data.primaryUses.heading} items={data.primaryUses.items} />
 
       {/* PRODUCTIVITY GAINS */}
-      <ProductivityGains
-        heading={data.productivityGains.heading}
-        cards={data.productivityGains.cards}
-      />
+      <ProductivityGains heading={data.productivityGains.heading} cards={data.productivityGains.cards} />
 
       {/* USE CASE */}
-      <UseCase
-        title={data.useCase.title}
-        topBox={data.useCase.topBox}
-        useCases={data.useCase.useCases}
-      />
+      <UseCase title={data.useCase.title} topBox={data.useCase.topBox} useCases={data.useCase.useCases} />
 
       {/* FORM */}
-      <Form
-        title={data.form.title}
-        subtitle={data.form.subtitle}
-      />
+      <Form title={data.form.title} subtitle={data.form.subtitle} />
 
       {/* EXPLORE OTHER INDUSTRIES */}
       <ExploreOtherIndustries activeSlug={slug} />

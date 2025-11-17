@@ -43,25 +43,21 @@ export default function AppointmentScheduling() {
       </Head>
 
       <Navbar />
-
-
 {/* FIRST SECTION */}
 <motion.section
   initial="hidden"
   animate="show"
-  className="relative flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-16 py-12 sm:py-16 md:py-20 overflow-hidden font-[Poppins]"
+  className="relative flex flex-col md:flex-row items-center overflow-hidden font-[Poppins] py-12 sm:py-16 md:py-20"
   style={{
-    backgroundImage: "url('/feature-images/appointmentimage.png')", 
+    backgroundImage: "url('/feature-images/appointmentimage.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   }}
 >
-  {/* Left Side - Image */}
-  <motion.div
-    className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start md:mt-0"
-  >
-    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px]  -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
+  {/* Left Side Image */}
+  <motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
+    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
       <Image
         src="/feature-images/scheduling.png"
         alt="AI Appointment Calendar"
@@ -71,35 +67,31 @@ export default function AppointmentScheduling() {
     </div>
   </motion.div>
 
-  {/* Right Half - Content Box */}
-  <motion.div>
-    {/* Badge */}
-    <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-5 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide  shadow-sm">
-      Smart, Seamless, Always On
+  {/* Right Side Card - Smaller Height */}
+  <motion.div className="relative z-20 bg-white/10 backdrop-blur-xl p-8 sm:p-10 md:p-12 text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]">
+    
+    <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+      AI that talks, helps, and converts
     </div>
 
     {/* Heading */}
-    <h1
-      className="text-2xl sm:text-4xl md:text-[48px] py-10 text-white leading-[110%] font-bold "
-      style={{ fontFamily: "Poppins, sans-serif" }}
-    >
+    <h1 className="text-2xl sm:text-4xl md:text-[48px] font-bold leading-[110%] mb-4">
       AI Appointment Scheduling
     </h1>
 
     {/* Subtext */}
-    <p className="text-sm sm:text-base md:text-lg text-white text-[24px] leading-relaxed max-w-sm sm:max-w-md">
+    <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed mb-6 max-w-sm sm:max-w-md">
       Never miss an appointment or double-book again. Your AI assistant
       automatically manages scheduling, reminders, and rescheduling — keeping
       your calendar full and your clients happy.
     </p>
 
     {/* CTA Button */}
-    <button className="bg-[#00A7DE] text-white px-6 sm:px-7 py- sm:py-3.5 rounded-lg font-semibold shadow-md hover:bg-[#008FCC] transition text-sm sm:text-base">
+    <button className="bg-[#00A7DE] text-white px-6 sm:px-7 py-3.5 rounded-lg font-semibold shadow-md hover:bg-[#008FCC] transition text-sm sm:text-base w-max">
       Start your free trial
     </button>
   </motion.div>
 </motion.section>
-
 
 
 {/* SECOND SECTION */}
