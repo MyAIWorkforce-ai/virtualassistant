@@ -24,7 +24,7 @@ export default function WhyChoose({ heading, description, leftbox, image }: WhyC
     >
       {/* TOP TEXT */}
   <div className="max-w-4xl mx-auto text-center mb-10">
-  <h2 className="font-poppins font-semibold text-[#00A7DE] text-3xl sm:text-4xl md:text-[36px] leading-[150%] whitespace-nowrap">
+  <h2 className="font-poppins font-semibold text-[#00A7DE] text-3xl sm:text-4xl md:text-[36px] leading-[150%] ">
     {heading}
   </h2>
   <p className="font-poppins font-medium text-[20px] text-[#797A7D] text-lg sm:text-xl leading-[150%] text-center">

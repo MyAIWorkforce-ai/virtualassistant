@@ -72,22 +72,19 @@ export default function OnlineIntegration() {
 
   <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg
                   max-w-xl
-                  rounded-tr-[30px] rounded-br-[30px]
+                  rounded-tr-[45px] rounded-br-[45px]
                   mb-0">
     
     <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-      AI that talks, helps, and converts
+     Connect Everywhere, Anytime
     </div>
 
     <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
-      Smart AI Assistant<br />for Clients
+      Online Integration
     </h1>
 
     <p className="text-white/90 leading-relaxed mb-6 font-poppins">
-      Your Smart AI Assistant answers questions, explains services, and 
-      manages client requests with a tone and personality that fits your 
-      brand perfectly. Give your clients the clarity they need, right when 
-      they need it.
+     Your AI assistant goes beyond calls — it seamlessly integrates with your website to deliver real-time bookings, instant responses, and 24/7 engagement.
     </p>
 
     <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">

@@ -2,7 +2,7 @@
   "slug": "myotherapist",
   "heroSection": {
     "tag": "Muscle Therapy",
-    "title": "AI Virtual Receptionist for Myotherapist",
+    "title": "AI for Myotherapist",
     "description": "Your Virtual Assistant for Stress-Free Therapy Management.",
     "buttonText": "Get Started",
       "image": "/industries-images/myotherapist/mytho-main.svg",
@@ -88,13 +88,13 @@
         "icon": "/industries-images/reuse-icons/kb-reliable.png",
         "gradient": "from-[#F2FFFC] to-[#CCFBF1]",
         "title": "Affordable and Reliable",
-        "description": ""
+        "description": "Save money on staff and enjoy consistent support from an assistant that operates 24/7 without breaks."
       },
       {
         "icon": "/industries-images/reuse-icons/kb-boosts.png",
         "gradient": "from-[#F0FFEA] to-[#D9FFC8]",
         "title": "Grow Your Reputation",
-        "description": ": Deliver exceptional service every time, improve online reviews, and grow your clinic’s visibility on Google."
+        "description": "Deliver exceptional service every time, improve online reviews, and grow your clinic’s visibility on Google."
       }
     ]
   },

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import industriesListData from "@/app/data/industries/industriesList.json";
+import industriesList from "@/app/data/industries/industriesList.json";
 
 interface Industry {
   name: string;
@@ -19,7 +19,7 @@ interface ExploreOtherIndustriesProps {
 export default function ExploreOtherIndustries({
   activeSlug,
 }: ExploreOtherIndustriesProps) {
-  const industriesList: Industry[] = industriesListData;
+   const industries: Industry[] = industriesList;
 
   const currentIndex = industriesList.findIndex(
     (industry) => industry.slug === activeSlug

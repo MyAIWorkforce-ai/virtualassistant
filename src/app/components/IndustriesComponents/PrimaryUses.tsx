@@ -101,7 +101,7 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
     textShadow: "0 0 4px rgba(0, 144, 204, 0.25)",
   }}
 >
-  Get you Ai Virtual <br />
+  Get you AI Virtual <br />
 Receptionist set up in <br />
   under 5 minutes.
 </p>
@@ -113,11 +113,13 @@ Receptionist set up in <br />
       height={90}
       
     />
-    <button
-      className="bg-[#00A7DE] text-white text-[14px] mb-18 font-medium rounded-md px-4 py-2"
-    >
-      Start 14 Day Free Trial
-    </button>
+  <button
+  className="bg-[#00A7DE] text-white text-[14px] mb-18 font-medium rounded-md px-4 py-2
+             transition-all duration-300 ease-in-out
+             hover:bg-[#0798c9] hover:shadow-lg hover:scale-105"
+>
+  Start 14 Day Free Trial
+</button>
   </div>
 </div>
 

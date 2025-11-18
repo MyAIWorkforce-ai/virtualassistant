@@ -18,8 +18,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   try {
     const data = await import(`@/app/data/industries/${slug}.json`);
+    const titleWords = data.heroSection.title.split(" ");
+    const thirdWord = titleWords[2] ?? ""; 
     return {
-      title: `${data.heroSection.title} | VirtualAssistant.com.au`,
+      title: `AI Virtual Receptionist for ${thirdWord} | VirtualAssistant.com.au`,
       description: data.heroSection.description,
       openGraph: {
         title: data.heroSection.title,

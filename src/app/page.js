@@ -17,7 +17,7 @@ import Footer from "./_components/Footer";
 
 export default function Home() {
   useScrollAnimation();
-  
+  const [showModal, setShowModal] = useState(false);
   // Hamburger Button
   const [isOpen, setIsOpen] = useState(false);
   // =======================
@@ -99,17 +99,25 @@ const plans = [
     price: 300,
     description: "1 User",
     features: [
-      "AI call answering",
-      "10 hours of call time/month",
-      "Basic appointment booking",
-      "Email notifications",
-      "Call transcriptions",
+      "AI Virtual Assistant 24/7",
+      "Advanced Dashboard with Analytics",
+      "Advanced CRM for all Client Data and History",
+      "AI Powered Smart Calendars",
+      "New Dedicated Number or Call Forwarding Options",
+      "Front End AI Prompt Training for your AI",
+      "AI Appointment Scheduling ",
+      "Unlimited Incoming Calls 24/7 ",
+      "Unlimited Bookings 24/7",
+      "Online Booking Script for Website",
+      "Online Chatbot Script for Website",
+      "Appointment Reminders via SMS and Email",
+      "Calendar Syncing",
     ],
-    button: "Start Now",
+    button: "Start 14 Day Trial",
     highlighted: false,
   },
   {
-    name: "Professional",
+    name: "PROFESSIONAL",
     price: 400,
     description: "Upto 3 Users",
     features: [
@@ -121,32 +129,35 @@ const plans = [
       "Front End AI Prompt Training for your AI",
       "AI Appointment Scheduling",
       "Unlimited Incoming Calls 24/7",
+      "Unlimited Bookings 24/7",
+      "Online Booking Script for Website",
+      "Online Chatbot Script for Website",
+      "Appointment Reminders via SMS and Email",
+      "Calendar Syncing",
     ],
-    button: "Start Now",
+    button: "Start 14 Day Trial",
     highlighted: true,
   },
   {
-    name: "Enterprise",
+    name: "ENTERPRISE",
     price: 500,
     description: "Upto 5 Users",
     features: [
-      "Everything in Pro",
-      "Multiple phone lines",
-      "API access",
-      "Custom integrations",
-      "White-labeled solution",
-      "Dedicated account manager",
-      "99.9% uptime SLA",
+      "AI Virtual Assistant 24/7",
+      "Advanced Dashboard with Analytics",
+      "Advanced CRM for all Client Data and History",
+      "AI Powered Smart Calendars",
+      "New Dedicated Number or Call Forwarding Options",
+      "Front End AI Prompt Training for your AI",
+      "AI Appointment Scheduling",
+      "Unlimited Incoming Calls 24/7",
+      "Unlimited Bookings 24/7",
+      "Online Booking Script for Website",
+      "Online Chatbot Script for Website",
+      "Appointment Reminders via SMS and Email",
+      "Calendar Syncing"
     ],
-    button: "Start Now",
-    highlighted: false,
-  },
-  {
-    name: "Custom Package",
-    price: null,
-    description: "",
-    features: [],
-    button: "Start Now",
+    button: "Start 14 Day Trial",
     highlighted: false,
   },
 ];
@@ -444,12 +455,12 @@ const plans = [
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                   - Answers every call instantly, day or night
-- Unlimited calls & bookings, 24/7
-- Call recordings, summaries & transcripts
-- Professional, consistent service every time
-- Dedicated business number included
-- Call forwarding option with clear step-by-step instructions
+                   - Answers every call instantly, day or night<br/>
+- Unlimited calls & bookings, 24/7<br/>
+- Call recordings, summaries & transcripts<br/>
+- Professional, consistent service every time<br/>
+- Dedicated business number included<br/>
+- Call forwarding option with clear step-by-step instructions<br/>
 
                   </p>
                   <div className="flex items-center mt-3">
@@ -508,9 +519,9 @@ const plans = [
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Fully automated: books, reschedules & cancels appointments
-- works seamlessly with Google Calendar, Outlook Calendar & Cal.com
-- Sends SMS & email confirmations and reminders
+- Fully automated: books, reschedules & cancels appointments<br/>
+- works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
+- Sends SMS & email confirmations and reminders<br/>
 
                   </p>
                   <div className="flex items-center mt-3">
@@ -569,10 +580,10 @@ const plans = [
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Answers questions about your services instantly
-- Explains pricing, availability & directions
-- Handles reschedules or cancellations smoothly
-- Customisable personality: friendly, professional, or casual
+- Answers questions about your services instantly<br/>
+- Explains pricing, availability & directions<br/>
+- Handles reschedules or cancellations smoothly<br/>
+- Customisable personality: friendly, professional, or casual<br/>
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -630,11 +641,11 @@ const plans = [
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Add client notes after each appointment
+- Add client notes after each appointment<br/>
 - Record voice memos that are auto-Transcribed
-& Summarised
-- Upload photos or documents linked to appointments
-- Build a complete client history file automatically
+& Summarised<br/>
+- Upload photos or documents linked to appointments<br/>
+- Build a complete client history file automatically<br/>
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -654,66 +665,73 @@ const plans = [
             </FadeInOnScroll>
 
             {/* Feature 5 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-5-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/branded.png"
-                      alt="Branded dashboard"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className="sr-only">
-                      Branded Dashboard image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/branded-icon.png"
-                      alt="Branded dashboard icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-5-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                     Advanced Dashboard
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-Your control centre gives you everything in one place:
-- Advanced CRM with client data & history
-- AI Smart Calendar that is colour-coded & auto-updating
-- Analytics & insights: calls, bookings, cancellations, no-shows, performance
-- One clean dashboard replaces multiple tools and platforms.
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="thumbs-up"
-                      width={16}
-                      height={16}
-                      priority
-                      aria-hidden="true"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      96% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
+<FadeInOnScroll>
+  <article
+    className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
+    aria-labelledby="feature-5-title"
+  >
+    <HoverSlide>
+      <figure className="m-0">
+        <Image
+          src="/image/branded.png"
+          alt="Branded dashboard"
+          width={400}
+          height={250}
+          priority
+          className="rounded-t-lg w-full h-auto object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+        <figcaption className="sr-only">
+          Branded Dashboard image
+        </figcaption>
+      </figure>
+    </HoverSlide>
+    <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
+      <div className="flex items-center gap-2">
+        <Image
+          src="/image/branded-icon.png"
+          alt="Branded dashboard icon"
+          width={20}
+          height={28}
+          priority
+        />
+        <h3
+          id="feature-5-title"
+          className="text-lg sm:text-1xl font-bold text-black"
+        >
+          Advanced Dashboard
+        </h3>
+      </div>
+      <p className="text-[#797A7D] font-medium mt-2 text-sm">
+        Your control centre gives you everything in one place:
+        - Advanced CRM with client data & history<br/>
+        - AI Smart Calendar that is colour-coded & auto-updating<br/>
+        - Analytics & insights: calls, bookings, cancellations, no-shows, performance<br/>
+        - One clean dashboard replaces multiple tools and platforms.<br/>
+      </p>
+     <button
+  className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
+  onClick={() => setShowModal(true)}
+>
+  Read more...
+</button>
+
+      <div className="flex items-center mt-1">
+        <Image
+          src="/image/thumbs-up.png"
+          alt="thumbs-up"
+          width={16}
+          height={16}
+          priority
+          aria-hidden="true"
+        />
+        <p className="ml-1 text-xs text-[#6B7280]">
+          96% Satisfaction
+        </p>
+      </div>
+    </div>
+  </article>
+</FadeInOnScroll>
 
             {/* Feature 6 */}
             <FadeInOnScroll>
@@ -754,9 +772,9 @@ Your control centre gives you everything in one place:
                     </h3>
                   </div>
                   <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                   - Website booking widget (simple copy & paste script)
-- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)
-- 24/7 online + phone coverage for clients
+                   - Website booking widget (simple copy & paste script)<br/>
+- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
+- 24/7 online + phone coverage for clients<br/>
                   </p>
                   <div className="flex items-center mt-3">
                     <Image
@@ -796,7 +814,29 @@ Your control centre gives you everything in one place:
             }),
           }}
         />
+
+{showModal && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div className="bg-white rounded-lg p-4 max-w-md w-full relative shadow-lg">
+      <button
+        className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        onClick={() => setShowModal(false)}
+      >
+        ✕
+      </button>
+      <h3 className="text-xl text-[#098DC9] font-bold mb-3">Advanced Dashboard - More Details</h3>
+      <p className="text-gray-700 text-sm space-y-2">
+        - Front-End Prompts: Easily update what your AI says to clients on the phone, website, or chat — no tech skills required.<br />
+        - Fully Customisable Branding: Upload your business logo, set your theme colours, and brand the dashboard to feel like your own system — not just another generic tool.
+      </p>
+    </div>
+  </div>
+)}
+
+
       </section>
+
+      
       {/* =============================     
          {/* WHY CHOOSE US SECTION */}
       {/* ===============================*/}
@@ -1173,20 +1213,19 @@ Your control centre gives you everything in one place:
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {plans.map((plan, index) => {
           const isYearly = billingCycle === "yearly";
           const monthlyPrice = plan.price;
           const yearlyPrice =
             monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0); // 20% off
-
           const displayPrice = isYearly ? yearlyPrice : monthlyPrice;
           const cycleText = isYearly ? "/year" : monthlyPrice ? "/month" : "";
 
           return (
             <ScaleUp key={index} delay={index * 0.1}>
               <div
-                className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] ${
+                className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] w-full sm:w-80 ${
                   plan.highlighted
                     ? "border-[#00A7DE] scale-105"
                     : "border-[#797A7D]"
@@ -1203,7 +1242,7 @@ Your control centre gives you everything in one place:
                 </h3>
                 <p className="text-gray-500 mb-4">{plan.description}</p>
 
-                {/* Dynamic Price with Monthly 20% Discount */}
+                {/* Dynamic Price */}
                 <div className="text-3xl font-bold text-gray-800 mb-6">
                   {displayPrice ? `$${displayPrice}` : "Custom"}
                   <span className="text-base font-normal text-gray-500">
@@ -1257,7 +1296,8 @@ Your control centre gives you everything in one place:
       </div>
     </div>
   </section>
-</ScaleUp>;
+</ScaleUp>
+
       {/* WHAT OUR CLIENT SAY SECTION */}
 
 <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-15 sm:px-6 lg:px-8 font-poppins">

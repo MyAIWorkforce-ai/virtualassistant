@@ -7,7 +7,7 @@ import Navbar from "../../_components/Navbar";
 import Footer from "../../_components/Footer";
 
 
-export default function SmartAIassistant() {
+export default function PostSection() {
 
     return (
         <>
@@ -42,27 +42,24 @@ export default function SmartAIassistant() {
   />
   
   {/* Overlay */}
-  <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
+  <div className="absolute inset-0 bg-[#59727B94]/50"></div>
 
   {/* Card */}
-  <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg
-                  max-w-xl
-                  rounded-tr-[30px] 
-                  mb-0">
+  <div className="bg-white/15 backdrop-blur-xl py-8 px-14 text-white shadow-lg
+                  max-w-md 
+                  rounded-tr-[80px] 
+                   mb-0 mx-auto ml-0">
     
     <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-      AI that talks, helps, and converts
+      Wrap Up Every Session with Ease
     </div>
 
     <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
-      Smart AI Assistant<br />for Clients
+     Post-Session Tools
     </h1>
 
     <p className="text-white/90 leading-relaxed mb-6 font-poppins">
-      Your Smart AI Assistant answers questions, explains services, and 
-      manages client requests with a tone and personality that fits your 
-      brand perfectly. Give your clients the clarity they need, right when 
-      they need it.
+     Keep every client interaction organized, documented, and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
     </p>
 
     <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
