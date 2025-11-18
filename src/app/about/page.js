@@ -107,7 +107,7 @@ export default function HomePage() {
 
             {/* Right Image */}
             <motion.div
-              className="flex-1 flex pr-5 justify-center hover items-center"
+              className="flex-1 flex pr-5 justify-center hover items-center mt-12"
               initial={{ opacity: 0, scale: 0.9, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}

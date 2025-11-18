@@ -31,12 +31,12 @@ const Footer = () => {
             priority
             className="mb-4"
           />
-          <p className="text-sm mb-4 text-[#797A7D]  pr-20 leading-relaxed ">
+          <p className="text-sm mb-4 text-[#797A7D] pl-3 pr-20 leading-relaxed ">
             Transforming industries with intelligent virtual assistants.
           </p>
 
           {/* Social Icons */}
-<div className="flex space-x-4 mb-4">
+<div className="flex space-x-4 mb-4 pl-3">
   {[
     { src: "/industries-images/reuse-icons/tiktok.png", alt: "Tiktok", href: "https://www.tiktok.com/@aivirtual.assistant?_r=1&_t=ZS-918GkvshE1q" },
     { src: "/industries-images/reuse-icons/linkedln.png", alt: "LinkedIn", href: "#" },
@@ -140,7 +140,7 @@ const Footer = () => {
             <ul className="space-y-2 text-[#797A7D]">
               {[
                 { name: "Consultant", href: "/industries/consultant" },
-                { name: "Real Estate Agent", href: "/industries/realestateagent" },
+                { name: "Realestate Agent", href: "/industries/realestateagent" },
                 { name: "Mechanic", href: "/industries/mechanic" },
                 { name: "Plumber", href: "/industries/plumber" },
                 { name: "Electrician", href: "/industries/electricians" },

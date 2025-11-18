@@ -120,7 +120,7 @@ const TradesServicescards = [
   },
   {
     icon: "/industrymain-images/plumber.png",
-    title: "Hotels and Accommodation",
+    title: "Plumber",
     desc: "Schedules service calls, manages emergency repairs, and tracks work orders with ease.",
     link: "/industries/hotelsaccommodation",
   },

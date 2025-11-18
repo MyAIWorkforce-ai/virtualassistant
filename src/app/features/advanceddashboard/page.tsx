@@ -81,24 +81,22 @@ export default function OnlineIntegration() {
     className="object-cover object-left"
   />
   <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
-  <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg 
+  <div className="bg-white/15 backdrop-blur-xl mt-12 p-8 text-white shadow-lg 
                     max-w-xl
-                    rounded-tr-[30px] rounded-br-[30px]
+                    rounded-tr-[40px] rounded-br-[40px]
                     ml-auto md:ml-0 ">
       
       <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-        AI that talks, helps, and converts
+      The heart of your AI operations
       </div>
 
       <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
-        Smart AI Assistant<br />for Clients
+        Advanced Dashboard<br/> – Your Control Centre
       </h1>
 
       <p className="text-white/90 leading-relaxed mb-6 font-poppins">
-        Your Smart AI Assistant answers questions, explains services, and 
-        manages client requests with a tone and personality that fits your 
-        brand perfectly. Give your clients the clarity they need, right when 
-        they need it.
+Take command of your AI operations with one simple, intelligent dashboard. Your Advanced Dashboard brings together client management, analytics, customization, and real-time control — giving you full visibility over how your AI communicates, books, and performs every day.
+It’s not just software — it’s your business’s central control hub.
       </p>
 
       <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
