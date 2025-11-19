@@ -80,11 +80,9 @@ export default function SmartAIassistant() {
         sizes="100vw"
         className="object-cover object-left"
       />
-
-      <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10 w-full max-w-6xl mx-auto  mt-20 px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
         <div></div>
-        <div className="bg-white/15 backdrop-blur-xl p-10 rounded-[30px] text-white shadow-lg max-w-xl ">
+        <div className="bg-[rgba(82,85,90,0.35)] backdrop-blur-xl p-10 rounded-[30px] text-white shadow-lg max-w-xl ">
           <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
             AI that talks, helps, and converts
           </div>

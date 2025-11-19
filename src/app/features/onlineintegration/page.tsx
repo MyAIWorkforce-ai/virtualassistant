@@ -13,7 +13,7 @@ export default function OnlineIntegration() {
     {
       icon: "/feature-images/booking.png",
       title: "Website Booking Script:",
-      desc: "Engage clients insA simple copy-paste snippet lets clients book straight from your website.",
+      desc: "A simple copy-paste snippet lets clients book straight from your website.",
     },
     {
       icon: "/feature-images/online.png",
@@ -61,16 +61,16 @@ export default function OnlineIntegration() {
 >
   {/* Background Image */}
   <Image
-    src="/feature-images/smartai-assistant.png"
+    src="/feature-images/online-integration.png"
     alt="AI Assistant"
     fill
     priority
     sizes="100vw"
     className="object-cover object-left"
   />
-  <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
 
-  <div className="bg-white/15 backdrop-blur-xl p-10 text-white shadow-lg
+
+  <div className="bg-[#59727B]/[0.03] backdrop-blur-xl p-10 text-white shadow-lg
                   max-w-xl
                   rounded-tr-[45px] rounded-br-[45px]
                   mb-0">
@@ -188,7 +188,7 @@ export default function OnlineIntegration() {
     {leftCards.map((card, index) => (
       <motion.div
         key={index}
-        className="w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-6 flex flex-col"
+        className="w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-12 flex flex-col"
       >
         {/* Center Icon */}
         <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">
@@ -217,7 +217,7 @@ export default function OnlineIntegration() {
     {rightCards.map((card, index) => (
       <motion.div
         key={index}
-        className="w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-6 flex flex-col"
+        className="w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-12 flex flex-col"
       >
         {/* Center Icon */}
         <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">

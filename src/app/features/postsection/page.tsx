@@ -33,7 +33,7 @@ export default function PostSection() {
 >
   {/* Background Image */}
   <Image
-    src="/feature-images/smartai-assistant.png"
+    src="/feature-images/post-section.png"
     alt="AI Assistant"
     fill
     priority
@@ -41,30 +41,33 @@ export default function PostSection() {
     className="object-cover object-left"
   />
   
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-[#59727B94]/50"></div>
+
 
   {/* Card */}
-  <div className="bg-white/15 backdrop-blur-xl py-8 px-14 text-white shadow-lg
+  <div className="bg-[#59727B]/15 backdrop-blur-xl py-8 px-14 text-white shadow-lg
                   max-w-md 
                   rounded-tr-[80px] 
                    mb-0 mx-auto ml-0">
     
-    <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-      Wrap Up Every Session with Ease
-    </div>
+ <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+    Wrap Up Every Session with Ease
+  </div>
 
-    <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
-     Post-Session Tools
-    </h1>
+{/* Heading */}
+<h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
+ Post-Session Tools
+</h1>
 
-    <p className="text-white/90 leading-relaxed mb-6 font-poppins">
-     Keep every client interaction organized, documented, and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
-    </p>
+{/* Subtext */}
+<p className="text-white/90 leading-relaxed mb-6 font-poppins">
+Keep every client interaction organized, documented, and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
+</p>
 
-    <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
-      Start your free trial
-    </button>
+{/* CTA Button */}
+<button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
+  Start your free trial
+</button>
+
   </div>
 </motion.section>
             {/*  SECOND SECTION*/}
@@ -102,7 +105,7 @@ Smart tools that help you stay organized, informed, and always ready for the nex
                         {
                             icon: "/feature-images/coverage.png",
                             title: "2. Voice Memos ",
-                            desc: "Record a quick voice memo instead of typing, it’s transcribed and attached automatically"
+                            desc: "Record a quick voice memo instead of typing, it’s transcribed, summerised and attached automatically"
                         },
                         {
                             icon: "/feature-images/documents.png",

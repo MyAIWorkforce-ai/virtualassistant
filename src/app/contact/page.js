@@ -261,7 +261,7 @@ export default function ContactPage() {
               Prefer to reach out directly?
             </p>
             <p>
-              📧Email us at:{" "}
+              📧 Email us at:{" "}
               <a
                 href="mailto:Hi@virtualassistant.com.au"
                 className="text-[#797A7D]"
@@ -269,6 +269,14 @@ export default function ContactPage() {
                 Hi@virtualassistant.com.au
               </a>
             </p>
+
+            <p className="flex  justify-center items-center gap-1">
+  📞 Call Us Now:{" "}
+  <a href="tel:+10468068021" className="text-[#797A7D]">
+    +1 (046) 806-8021
+  </a>
+</p>
+            
             <p className="italic mt-6">We typically respond within 24 hours.</p>
             <p className="mt-4 text-sm text-black font-regular">
               Your AI-powered assistant is just one step away. Fill out the
