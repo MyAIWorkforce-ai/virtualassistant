@@ -5,7 +5,7 @@
     "title": "AI for Plumber",
     "description": "Your virtual plumbing assistant modernizes service operations by managing appointments,recording job notes, sending maintenance reminders, and scheduling follow-ups — so you can fix pipes.",
     "buttonText": "Get Started",
-    "image": "/industries-images/plumber/plumber.main.svg",
+    "image": "/industries-images/plumber/plumber.png",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",

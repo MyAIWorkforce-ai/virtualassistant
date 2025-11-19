@@ -16,8 +16,8 @@ export default function Navbar() {
   const industryNames: Record<string, string> = {
     physiotherapy: "Physiotherapist",
     myotherapist: "Myotherapist",
-    personaltrainer: "Massage Therapist",
-    massagetherapist: "Personal Trainer" ,
+    massagetherapist: "Massage Therapist",
+    personaltrainer: "Personal Trainer" ,
     psychology: "Psychologist",
     chiropractor: "Chiropractor",
     podiatrist: "Podiatrist",
@@ -85,10 +85,10 @@ export default function Navbar() {
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[250px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] p-2">
                 <ul>
                   {[
-                    { href: "/features/ai-receptionist", label: "AI-Receptionist" },
-                    { href: "/features/appointmentscheduling", label: "AI-Appointment Scheduling" },
-                    { href: "/features/smartai-assistant", label: "Smart AI-Assistant for Clients" },
-                    { href: "/features/postsection", label: "Post-Session Tools" },
+                    { href: "/features/ai-receptionist", label: "AI Receptionist" },
+                    { href: "/features/appointmentscheduling", label: "AI Appointment Scheduling" },
+                    { href: "/features/smartai-assistant", label: "Smart AI Assistant for Clients" },
+                    { href: "/features/postsection", label: "Post Session Tools" },
                     { href: "/features/onlineintegration", label: "Online Integration" },
                     { href: "/features/advanceddashboard", label: "Advanced Dashboard" },
                   ].map((item) => (

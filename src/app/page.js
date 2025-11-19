@@ -258,10 +258,10 @@ const plans = [
     <>
       {/* Meta Tags */}
       <Head>
-        <title>Transform Your Business with AI-Powered Assistants</title>
+        <title>Australia's Best Al Virtual Receptionist | http://virtualAssistant.com.au</title>
         <meta
           name="description"
-          content="Tailored solutions for every industry, designed to save time, cut costs, and boost productivity."
+          content="Designed to save time, cut costs, and boost productivity.Your Al receptionist sounds human and works, speaks, and feels just like your business.Let us take your calls 24/7 and streamline your admin effortlessly"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
@@ -300,8 +300,7 @@ const plans = [
 
           {/* Content Container */}
           <div className="flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
-            {/* Left Content */}
-            <motion.div
+           <motion.div
               className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -311,20 +310,21 @@ const plans = [
               <h3 className="text-[#00A7DE] font-semibold tracking-wide">
                 Your Business, Always Answered
               </h3>
-
-              <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
-                <Typewriter
-                  words={[
-                    "AI Virtual Assistant that works, speaks, and feels like your business — 24/7.",
-                  ]}
-                  loop={false}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={60}
-                />
-              </h1>
-
-              <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
+ <div className="w-full max-w-[620px] min-h-[260px] overflow-hidden">
+  <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
+    <Typewriter
+      words={[
+        "AI Virtual Assistant that works, speaks, and feels like your business — 24/7.",
+      ]}
+           
+  deleteSpeed={0}
+      cursor
+      cursorStyle="|"
+      typeSpeed={60}
+    />
+  </h1>
+</div>
+ <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
                Never miss a call. Never miss a booking.  Always stay one step ahead.
               </p>
 
@@ -355,7 +355,7 @@ const plans = [
 >
   <HeroAnimation>
     <div
-      className=" relative w-[300px] h-[200px] sm:w-[400px] sm:h-[260px] md:w-[500px] md:h-[320px] lg:w-[620px] lg:h-[400px] max-w-full -rotate-5 bg-[#00A7DE] py-4 px-6 rounded-2xl overflow-hidden  mx-auto"
+      className=" relative w-[300px] h-[200px] sm:w-[400px] sm:h-[260px] md:w-[500px] md:h-[320px] lg:w-[620px] lg:h-[400px] max-w-full -rotate-5 bg-[#00A7DE] py-2 px-2 rounded-2xl overflow-hidden  mx-auto"
     >
       {(() => {
         const [index, setIndex] = React.useState(0);

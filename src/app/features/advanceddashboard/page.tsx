@@ -71,17 +71,16 @@ export default function OnlineIntegration() {
   transition={{ duration: 0.8 }}
   className="relative min-h-[100vh] flex items-center justify-center overflow-hidden"
 >
-
   <Image
-    src="/feature-images/smartai-assistant.png"
-    alt="AI Assistant"
+    src="/feature-images/dashboard-image1.png"
+    alt="dashboard-image"
     fill
     priority
     sizes="100vw"
     className="object-cover object-left"
   />
-  <div className="absolute inset-0 bg-[#0FB4D8]/50"></div>
-  <div className="bg-white/15 backdrop-blur-xl mt-12 p-8 text-white shadow-lg 
+ 
+  <div className=" bg-[#1055A3]/[0.51] backdrop-blur-xl mt-12 p-8 text-white shadow-lg 
                     max-w-xl
                     rounded-tr-[40px] rounded-br-[40px]
                     ml-auto md:ml-0 ">
@@ -105,9 +104,6 @@ It’s not just software — it’s your business’s central control hub.
     </div>
   <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
     <div></div>
-
-    {/* Card */}
-  
   </div>
 </motion.section>
 

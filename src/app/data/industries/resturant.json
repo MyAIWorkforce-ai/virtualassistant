@@ -5,7 +5,7 @@
     "title": "AI for Restaurant",
     "description": "Your virtual assistant modernizes restaurant operations by managing reservations, recording guest preferences, and scheduling follow-ups, so you can focus on great food and service.",
     "buttonText": "Get Started",
-    "image": "/industries-images/resturant/restaurant-main.svg",
+    "image": "/industries-images/resturant/restaurant.png",
     "metrics": [
       {
         "icon": "/icons/stethoscope.svg",
