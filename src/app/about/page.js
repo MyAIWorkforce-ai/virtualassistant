@@ -53,7 +53,7 @@ export default function HomePage() {
           {/* Navbar */}
     <Navbar/>
           {/* Hero Section */}
-          <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-4">
+          <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-4 ">
             {/* Left Content */}
             <div className="flex-1 pl-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

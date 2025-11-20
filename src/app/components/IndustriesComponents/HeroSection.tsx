@@ -50,7 +50,7 @@ export default function HeroSection({
       </motion.div>
 
       {/* Title */}
-      <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 whitespace-nowrap">{title}</motion.h1>
+      <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 ">{title}</motion.h1>
 
       {/* Description */}
       <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6">

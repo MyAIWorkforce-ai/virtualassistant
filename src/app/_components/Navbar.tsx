@@ -44,7 +44,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-[100]">
+    <header className="w-full bg-white shadow-sm sticky top-0 left-0 z-[100] ">
       <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-4 md:px-6">
         <Link href="/" className="flex items-center">
           <Image
@@ -211,7 +211,7 @@ export default function Navbar() {
   }`}
 >
   <div className="flex justify-between items-center p-4 border-b">
-    <Image src="/images/logo1.png" alt="Logo" width={150} height={40} />
+    <Image src="/image/logo1.png" alt="Logo" width={150} height={40} />
     <button onClick={() => setIsOpen(false)}>
       <X size={28} />
     </button>
@@ -248,10 +248,10 @@ export default function Navbar() {
     {mobileFeaturesOpen && (
       <ul className="pl-4 mt-2 space-y-2">
         {[
-          { href: "/features/ai-receptionist", label: "AI-Receptionist" },
-          { href: "/features/appointmentscheduling", label: "AI-Appointment Scheduling" },
-          { href: "/features/smartai-assistant", label: "Smart AI-Assistant for Clients" },
-          { href: "/features/postsection", label: "Post-Session Tools" },
+          { href: "/features/ai-receptionist", label: "AI Receptionist" },
+          { href: "/features/appointmentscheduling", label: "AI Appointment Scheduling" },
+          { href: "/features/smartai-assistant", label: "Smart AI Assistant for Clients" },
+          { href: "/features/postsection", label: "Post Session Tools" },
           { href: "/features/onlineintegration", label: "Online Integration" },
           { href: "/features/advanceddashboard", label: "Advanced Dashboard" },
         ].map((item) => (
@@ -369,7 +369,7 @@ export default function Navbar() {
     </li>
   </ul>
 </div>
-
     </header>
+    
   );
 }

@@ -25,7 +25,7 @@ export default function Home() {
   // =======================
   const industries = [
     {
-      slug: "Physotherapist",
+      slug: "physiotherapy",
       icon: "/industrymain-images/physio.png",
       title: "Physiotherapist",
       desc: "Your AI manages appointment bookings, reminders, follow-ups, and patient records so you spend more time on treatment.",
@@ -34,21 +34,13 @@ export default function Home() {
       slug: "myotherapist",
       icon: "/industrymain-images/mytho.png",
       title: "Myotherapist",
-      desc: (
-        <>
-          Automates client bookings, tracks therapy sessions, and keeps your calendar organized.
-        </>
-      ),
+      desc:"Automates client bookings, tracks therapy sessions, and keeps your calendar organized.",
     },
     {
       slug: "massagetherapist",
       icon: "/industrymain-images/massage-thera.png",
       title: "Massage Therapist",
-      desc: (
-        <>
-          Effortless Bookings for Massage Therapists. Relax your clients while we handle your schedule.
-        </>
-      ),
+      desc: "Effortless Bookings for Massage Therapists. Relax your clients while we handle your schedule.",
     },
     {
       slug: "lawyer",
@@ -57,7 +49,7 @@ export default function Home() {
       desc: "Your virtual assistant modernizes legal practice by managing appointments, recording case notes, tracking deadlines, sending client reminders, and scheduling follow-ups.",
     },
     {
-      slug: "restaurant",
+      slug: "resturant",
       icon: "/industrymain-images/resturant.png",
       title: "Restaurant",
       desc: "Reservation Management Made Easy.  Manages table bookings, cancellations, and automated waitlists.",
@@ -310,7 +302,8 @@ const plans = [
               <h3 className="text-[#00A7DE] font-semibold tracking-wide">
                 Your Business, Always Answered
               </h3>
- <div className="w-full max-w-[620px] min-h-[260px] overflow-hidden">
+ <div className="w-full max-w-full sm:max-w-[620px] min-h-[180px] sm:min-h-[260px] overflow-hidden">
+
   <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
     <Typewriter
       words={[
@@ -324,7 +317,7 @@ const plans = [
     />
   </h1>
 </div>
- <p className="mt-4 text-sm sm:text-base text-[#797A7D]">
+ <p className="mt-2 text-sm sm:text-base text-[#797A7D]">
                Never miss a call. Never miss a booking.  Always stay one step ahead.
               </p>
 
@@ -396,12 +389,12 @@ const plans = [
 
       {/* KEY FEATURES SECTION  */}
 
-      <section id="features"
-        className="py-16 bg-[#F9FAFB]"
-        aria-labelledby="key-features-heading"
-        role="region"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+   <section
+  id="features"
+  className="mt-[74px] sm:mt-[0px] py-16 bg-[#F9FAFB]"
+  aria-labelledby="key-features-heading"
+  role="region"
+><div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Section Title */}
           <h2
             
@@ -832,9 +825,7 @@ const plans = [
     </div>
   </div>
 )}
-
-
-      </section>
+ </section>
 
       
       {/* =============================     

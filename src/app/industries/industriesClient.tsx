@@ -80,7 +80,7 @@ const HealthCarecards = [
     icon: "/industrymain-images/other.png",
     title: "Other",
     desc: "Handles bookings, cancellations, and important calls — ensuring your business stays responsive 24/7.",
-    link: "/industries/other",
+    link: "/industries/forother",
   },
 ];
 
@@ -122,19 +122,19 @@ const TradesServicescards = [
     icon: "/industrymain-images/plumber.png",
     title: "Plumber",
     desc: "Schedules service calls, manages emergency repairs, and tracks work orders with ease.",
-    link: "/industries/hotelsaccommodation",
+    link: "/industries/plumber",
   },
   {
     icon: "/industrymain-images/window.png",
     title: "Window Cleaning",
     desc: "Manages cleaning appointments, handles rescheduling, and tracks repeat clients with ease.",
-    link: "/industries/forother",
+    link: "/industries/cleaning",
   },
     {
     icon: "/industrymain-images/electrician.png",
     title: "Electrician",
     desc: "Assigns electrical service calls, tracks technician availability, and reduces missed appointments.",
-    link: "/industries/forother",
+    link: "/industries/electricians",
   },
 ];
 

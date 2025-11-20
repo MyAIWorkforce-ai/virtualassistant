@@ -3,12 +3,18 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 export default function FormSection() {
+  // Form fields
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [phone, setPhone] = useState("");
   const [countryCode, setCountryCode] = useState("+61");
   const [isPhoneValid, setIsPhoneValid] = useState(true);
+  const [industry, setIndustry] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(""); 
 
+  // Validation
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setEmail(value);
@@ -21,50 +27,65 @@ export default function FormSection() {
     setIsPhoneValid(/^\d{7,15}$/.test(value));
   };
 
-  const staggerParent = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 },
-    },
+  // Submit handler
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!isEmailValid || !isPhoneValid) {
+      setStatus("Please fix errors before submitting.");
+      return;
+    }
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fullName, email, phone, countryCode, industry, message }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("Email sent successfully!");
+        setFullName("");
+        setEmail("");
+        setPhone("");
+        setIndustry("");
+        setMessage("");
+      } else {
+        setStatus(`Failed to send email. ${data}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("Something went wrong.");
+    }
   };
 
-  const staggerChild = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 },
+  // Framer Motion variants
+  const staggerParent = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { staggerChildren: 0.2 } },
   };
+  const staggerChild = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
   return (
     <motion.form
       variants={staggerParent}
       initial="hidden"
       animate="show"
-      className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden"
+      onSubmit={handleSubmit}
+      className="bg-white rounded-lg shadow-md p-8 text-left relative overflow-hidden max-w-3xl mx-auto"
       noValidate
     >
-      {/* Animated sliding gradient */}
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-[#00A7DE]/20 to-[#098DC9]/10 pointer-events-none"
-        animate={{ x: ["-20%", "20%", "-20%"] }}
-        transition={{
-          repeat: Infinity,
-          duration: 10,
-          ease: "easeInOut",
-        }}
-      />
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
         {/* Full Name */}
         <motion.div variants={staggerChild}>
-          <label
-            htmlFor="fullName"
-            className="block text-sm text-black font-medium mb-1"
-          >
+          <label htmlFor="fullName" className="block text-sm text-black font-medium mb-1">
             Full Name
           </label>
           <input
             id="fullName"
             type="text"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
             placeholder="Enter your name"
             className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
             required
@@ -73,10 +94,7 @@ export default function FormSection() {
 
         {/* Email */}
         <motion.div variants={staggerChild}>
-          <label
-            htmlFor="email"
-            className="block text-sm text-black font-medium mb-1"
-          >
+          <label htmlFor="email" className="block text-sm text-black font-medium mb-1">
             Email Address
           </label>
           <input
@@ -88,9 +106,7 @@ export default function FormSection() {
             aria-invalid={!isEmailValid}
             aria-describedby="email-error"
             className={`w-full border rounded-md px-3 py-2 placeholder-gray-300 text-black focus:outline-none focus:ring-2 ${
-              isEmailValid
-                ? "border-[#D1D5DB] focus:ring-[#00A7DE]"
-                : "border-red-500 focus:ring-red-500"
+              isEmailValid ? "border-[#D1D5DB] focus:ring-[#00A7DE]" : "border-red-500 focus:ring-red-500"
             }`}
             required
           />
@@ -103,17 +119,14 @@ export default function FormSection() {
 
         {/* Phone */}
         <motion.div variants={staggerChild}>
-          <label
-            htmlFor="phone"
-            className="block text-sm text-black font-medium mb-1"
-          >
+          <label htmlFor="phone" className="block text-sm text-black font-medium mb-1">
             Phone Number
           </label>
           <div className="flex border border-[#D1D5DB] rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#00A7DE]">
             <select
               value={countryCode}
               onChange={(e) => setCountryCode(e.target.value)}
-              className=" text-black px-3 py-2 border-r border-[#D1D5DB] outline-none"
+              className="text-black px-3 py-2 border-r border-[#D1D5DB] outline-none"
             >
               <option value="+61">🇦🇺 +61</option>
               <option value="+1">🇺🇸 +1</option>
@@ -149,14 +162,13 @@ export default function FormSection() {
 
         {/* Industry */}
         <motion.div variants={staggerChild}>
-          <label
-            htmlFor="industry"
-            className="block text-sm text-black font-medium mb-1"
-          >
+          <label htmlFor="industry" className="block text-sm text-black font-medium mb-1">
             Industry
           </label>
           <select
             id="industry"
+            value={industry}
+            onChange={(e) => setIndustry(e.target.value)}
             className="w-full border border-[#D1D5DB] placeholder-gray-300 text-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
             required
           >
@@ -191,16 +203,15 @@ export default function FormSection() {
 
       {/* Message */}
       <motion.div variants={staggerChild} className="mt-6 relative z-10">
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-black mb-1"
-        >
+        <label htmlFor="message" className="block text-sm font-medium text-black mb-1">
           How can we help?
         </label>
         <textarea
           id="message"
           placeholder="Tell us about your specific needs or challenges"
           rows={4}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           className="w-full border border-[#D1D5DB] text-black placeholder-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00A7DE]"
           required
         />
@@ -216,6 +227,7 @@ export default function FormSection() {
         >
           Submit
         </motion.button>
+        {status && <p className="mt-2 text-sm text-center text-black">{status}</p>}
       </motion.div>
     </motion.form>
   );
