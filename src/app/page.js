@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Navbar from "./_components/Navbar";
 import React, { useState, useEffect, useRef } from "react"; 
 import FadeInOnScroll from "./_components/animations/FadeInScroll";
 import HoverSlide from "./_components/animations/HoverSlider";
@@ -13,7 +12,7 @@ import ScrollSlide from "./_components/animations/scrollslide";
 import RotateIn from "./_components/animations/RotateIn";
 import ScaleUp from "./_components/animations/ScaleUp";
 import useScrollAnimation from "./_components/animations/scrolleranimation";
-import Footer from "./_components/Footer";
+
 
 export default function Home() {
   useScrollAnimation();
@@ -1340,9 +1339,6 @@ const plans = [
     </div>
   </div>
 </section>
-
-      {/* FOOTER SECTION */}
-   <Footer/>
     </>
   );
 }
