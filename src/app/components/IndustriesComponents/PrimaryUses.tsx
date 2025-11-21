@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 interface UseItem {
   icon: string;
@@ -113,13 +115,14 @@ Receptionist set up in <br />
       height={90}
       
     />
-  <button
+  <Link
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"><button
   className="bg-[#00A7DE] text-white text-[14px] mb-18 font-medium rounded-md px-4 py-2
              transition-all duration-300 ease-in-out
              hover:bg-[#0798c9] hover:shadow-lg hover:scale-105"
 >
   Start 14 Day Free Trial
-</button>
+</button></Link>
   </div>
 </div>
 
