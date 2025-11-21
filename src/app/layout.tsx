@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Australia's Best Al Virtual Receptionist | http://virtualAssistant.com.au",
+  title: "Australia's Best Al Virtual Receptionist | VirtualAssistant.com.au",
   description: "Designed to save time, cut costs, and boost productivity.Your Al receptionist sounds human and works, speaks, and feels just like your business.Let us take your calls 24/7 and streamline your admin effortlessly",
 };
 
