@@ -38,37 +38,38 @@ export default function KeyBenefits({ heading, subheading, cards }: KeyBenefitsP
         {subheading}
       </p>
 
-      {/* Cards */}
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8  sm:gap-5 justify-center items-stretch max-w-7xl mx-auto"
-      >
-        {cards.map((card, index) => (
-          <motion.article
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className={`bg-gradient-to-br ${card.gradient} text-black rounded-[16px] p-6 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between w-full min-h-[260px]`}
-          >
-            <div>
-              <Image
-                src={card.icon}
-                alt={card.title}
-                width={56}
-                height={56}
-                className="object-contain mb-3"
-                priority
-              />
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">
-                {card.title}
-              </h3>
-              <p className="text-sm sm:text-sm lg:text-base text-[#797A7D] leading-relaxed text-left">
-                {card.description}
-              </p>
-            </div>
-          </motion.article>
-        ))}
+{/* Cards */}
+<div
+  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-8 sm:gap-5 justify-center items-stretch max-w-7xl mx-auto"
+>
+  {cards.map((card, index) => (
+    <motion.article
+      key={index}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className={`bg-gradient-to-br ${card.gradient} text-black rounded-[16px] p-6 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between w-full min-h-[260px]`}
+    >
+      <div>
+        <Image
+          src={card.icon}
+          alt={card.title}
+          width={56}
+          height={56}
+          className="object-contain mb-3"
+          priority
+        />
+        <h3 className="text-lg sm:text-xl font-semibold mb-2">
+          {card.title}
+        </h3>
+        <p className="text-sm sm:text-sm lg:text-base text-[#797A7D] leading-relaxed text-left">
+          {card.description}
+        </p>
       </div>
+    </motion.article>
+  ))}
+</div>
+
     </motion.section>
   );
 }

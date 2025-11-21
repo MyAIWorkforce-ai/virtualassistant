@@ -3,9 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../_components/Navbar";
-import Footer from "../_components/Footer";
-
 
 export default function MainIndustry() {
 
@@ -80,7 +77,7 @@ const HealthCarecards = [
     icon: "/industrymain-images/other.png",
     title: "Other",
     desc: "Handles bookings, cancellations, and important calls — ensuring your business stays responsive 24/7.",
-    link: "/industries/other",
+    link: "/industries/forother",
   },
 ];
 
@@ -105,7 +102,7 @@ const PerfesstionalServicescards = [
   },
   {
     icon: "/industrymain-images/real-estate.png",
-    title: "Real Estate Agent",
+    title: "Realestate Agent",
     desc: "From Listings to Closings, Streamlines property management, client communication, and sales tracking.",
     link: "/industries/realestateagent",
   },
@@ -116,25 +113,25 @@ const TradesServicescards = [
     icon: "/industrymain-images/mechanic.png",
     title: "Mechanic",
     desc: "Service Scheduling Simplified – Organizes repair appointments, reschedules with ease, and manages waitlists for busy Workshops.",
-    link: "/industries/resturant",
+    link: "/industries/mechanic",
   },
   {
     icon: "/industrymain-images/plumber.png",
     title: "Plumber",
     desc: "Schedules service calls, manages emergency repairs, and tracks work orders with ease.",
-    link: "/industries/hotelsaccommodation",
+    link: "/industries/plumber",
   },
   {
     icon: "/industrymain-images/window.png",
     title: "Window Cleaning",
     desc: "Manages cleaning appointments, handles rescheduling, and tracks repeat clients with ease.",
-    link: "/industries/forother",
+    link: "/industries/cleaning",
   },
     {
     icon: "/industrymain-images/electrician.png",
     title: "Electrician",
     desc: "Assigns electrical service calls, tracks technician availability, and reduces missed appointments.",
-    link: "/industries/forother",
+    link: "/industries/electricians",
   },
 ];
 
@@ -173,7 +170,6 @@ const HospitalityOther = [
                 />
             </Head>
 
-<Navbar/>
 
   <motion.section
       initial={{ opacity: 0, y: 50 }}
@@ -471,8 +467,6 @@ const HospitalityOther = [
                    </motion.div>
             </motion.section>
 
-            {/* Footer */}
-            <Footer />
         </>
     )
 }

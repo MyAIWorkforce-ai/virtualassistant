@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
+
+
 
 
  const cards = [
@@ -42,7 +42,6 @@ export default function AppointmentScheduling() {
         />
       </Head>
 
-      <Navbar />
 {/* FIRST SECTION */}
 <motion.section
   initial="hidden"
@@ -275,7 +274,6 @@ export default function AppointmentScheduling() {
   </button>
 </section>
 
-      <Footer />
     </>
   );
 }

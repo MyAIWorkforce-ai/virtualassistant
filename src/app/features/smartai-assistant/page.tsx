@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
+
 
 
 export default function SmartAIassistant() {
@@ -62,7 +61,7 @@ export default function SmartAIassistant() {
                 />
             </Head>
 
-            <Navbar />
+
             {/*  FIRST SECTION  */}
  <motion.section
       initial={{ opacity: 0, y: 40 }}
@@ -276,8 +275,6 @@ transition={{ duration: 0.8 }}
   </button>
 </motion.section>
 
-                {/* Footer */}
-            <Footer />
         </>
     )
 }

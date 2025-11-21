@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
+
 
 
 export default function PostSection() {
@@ -23,7 +22,7 @@ export default function PostSection() {
                     content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
                 />
             </Head>
-            <Navbar />
+
             {/*  FIRST SECTION  */}
         <motion.section
   initial={{ opacity: 0, y: 40 }}
@@ -316,8 +315,6 @@ Smart tools that help you stay organized, informed, and always ready for the nex
                 </button>
             </motion.section>
 
-            {/* Footer */}
-            <Footer />
         </>
     )
 }

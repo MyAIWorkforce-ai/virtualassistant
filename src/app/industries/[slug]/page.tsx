@@ -6,37 +6,35 @@ import WhyChoose from "@/app/components/IndustriesComponents/WhyChoose";
 import PrimaryUses from "@/app/components/IndustriesComponents/PrimaryUses";
 import UseCase from "@/app/components/IndustriesComponents/UseCase";
 import Form from "@/app/components/IndustriesComponents/Form";
-import Navbar from "@/app/_components/Navbar";
 import ProductivityGains from "@/app/components/IndustriesComponents/ProductivityGains";
 import ExploreOtherIndustries from "@/app/components/IndustriesComponents/ExploreOtherIndustries";
-import Footer from "@/app/_components/Footer";
 import { Metadata } from "next";
 
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const { slug } = params;
 
-  try {
-    const data = await import(`@/app/data/industries/${slug}.json`);
-    const titleWords = data.heroSection.title.split(" ");
-    const thirdWord = titleWords[2] ?? ""; 
-    return {
-      title: `AI Virtual Receptionist for ${thirdWord} | VirtualAssistant.com.au`,
-      description: data.heroSection.description,
-      openGraph: {
-        title: data.heroSection.title,
-        description: data.heroSection.description,
-        images: [data.heroSection.image],
-      },
-    };
-  } catch (err) {
-    return {
-      title: "Industry Not Found",
-      description: "This industry does not exist.",
-    };
-  }
-}
+try {
+  const data = await import(`@/app/data/industries/${slug}.json`);
+  const titleWords = data.heroSection.title.split(" ");
+  const remainingWords = titleWords.slice(2).join(" ");
 
+  return {
+    title: `AI Virtual Receptionist for ${remainingWords} | VirtualAssistant.com.au`,
+    description: data.heroSection.description,
+    openGraph: {
+      title: data.heroSection.title,
+      description: data.heroSection.description,
+      images: [data.heroSection.image],
+    },
+  };
+} catch (err) {
+  return {
+    title: "Industry Not Found",
+    description: "This industry does not exist.",
+  };
+}
+}
 
 export default async function IndustryPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -51,9 +49,7 @@ export default async function IndustryPage({ params }: { params: { slug: string 
 
   return (
     <main>
-      {/* NAVBAR */}
-      <Navbar />
-
+  
       {/* HERO SECTION */}
       <HeroSection {...data.heroSection} />
 
@@ -90,8 +86,7 @@ export default async function IndustryPage({ params }: { params: { slug: string 
       {/* EXPLORE OTHER INDUSTRIES */}
       <ExploreOtherIndustries activeSlug={slug} />
 
-      {/* FOOTER */}
-      <Footer />
+
     </main>
   );
 }

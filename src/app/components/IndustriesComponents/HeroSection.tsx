@@ -35,94 +35,76 @@ export default function HeroSection({
     background: "linear-gradient(to bottom, #0097DA, #00BAF2, #8FD8F8)",
   }}
 >
-  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 border-b border-white">
-    
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 mt-8 border-b border-white gap-10 md:gap-0">
     {/* LEFT CONTENT */}
     <motion.div
-      className="text-white max-w-xl flex flex-col  items-center md:items-start text-center md:text-left"
+      className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      {/* Tag */}
       <motion.div className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow">
         {tag}
       </motion.div>
 
-      {/* Title */}
-      <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 whitespace-nowrap">{title}</motion.h1>
-
-      {/* Description */}
+      <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 ">
+        {title}
+      </motion.h1>
       <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6">
         {description}
       </motion.p>
 
-       {/* BUTTONS */}
-              <motion.div
-                className="flex gap-4 m-6  justify-center items-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-                >
-                  Start 14 Day Free Trial
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-                >
-                  Book a Demo
-                  <Image
-                    src="/industries-images/reuse-icons/demo-button.png"
-                    alt="demo"
-                    width={14}
-                    height={14}
-                    priority
-                  />
-                </motion.button>
-                
-              </motion.div>
+      <motion.div
+        className="flex gap-4 m-6 justify-center items-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Start 14 Day Free Trial
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Book a Demo
+          <Image
+            src="/industries-images/reuse-icons/demo-button.png"
+            alt="demo"
+            width={14}
+            height={14}
+            priority
+          />
+        </motion.button>
+      </motion.div>
     </motion.div>
 
-{/* RIGHT IMAGE */}
-<div className="relative mt-10 md:mt-0 w-full md:flex-1 h-[280px] sm:h-[360px] md:h-[420px] lg:h-[450px] xl:h-[460px] overflow-visible">
-  <motion.div
-    className="absolute -mb-12 bottom-0 flex justify-center md:justify-end items-end w-full h-full z-0"
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-  >
-    <Image
-      src={image}
-      alt={title}
-      width={500}
-      height={500}
-      priority
-      className="
-        w-full
-        max-w-[300px]
-        sm:max-w-[400px]
-        md:max-w-[450px]
-        lg:max-w-[470px]
-        xl:max-w-[480px]
-        2xl:max-w-[500px]
-        h-auto
-        object-contain
-      "
-      style={{ objectPosition: 'right bottom' }}
-    />
-  </motion.div>
-</div>
+    {/* RIGHT IMAGE */}
+    <div className="relative w-full md:flex-1 md:h-[500px] flex items-end md:items-end mt-8 md:mt-0 min-h-[280px]">
+      <motion.div
+        className="absolute bottom-0 right-0 w-full flex justify-center md:justify-end"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <Image
+          src={image}
+          alt={title}
+          width={500}
+          height={500}
+          priority
+          className="object-contain -mb-1 max-w-[300px] sm:max-w-full"
+        />
+      </motion.div>
+    </div>
   </div>
 </motion.section>
-
-
-
 
       {/* ---------------- GRID BACKGROUND ---------------- */}
       <motion.section className="relative w-full h-32 md:h-40 -mt-16 bg-white">
