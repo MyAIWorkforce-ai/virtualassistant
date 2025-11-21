@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Navbar from "../_components/Navbar";
-import Footer from "../_components/Footer";
+
 
 
 export default function TermsOfServices() {
@@ -203,8 +202,6 @@ To let us actually do the job, you agree to: (a) Give us accurate business infor
 
 
 
-            {/* Footer */}
-            <Footer />
         </>
     )
 }
