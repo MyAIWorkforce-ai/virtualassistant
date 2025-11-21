@@ -274,8 +274,6 @@ const plans = [
       {/* Main section */}
 
       <main className="bg-[url('/image/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
-        {/* HEADER */}
-       <Navbar/>
 
         {/* HERO SECTION */}
         <section className="relative w-full h-auto overflow-hidden">
@@ -388,7 +386,6 @@ const plans = [
       </main>
 
       {/* KEY FEATURES SECTION  */}
-
    <section
   id="features"
   className="mt-[74px] sm:mt-[0px] py-16 bg-[#F9FAFB]"

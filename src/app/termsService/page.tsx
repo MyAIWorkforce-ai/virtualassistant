@@ -8,8 +8,6 @@ export default function TermsOfServices() {
 
     return (
         <>
-    
-            <Navbar />
 
 <motion.section
   initial={{ opacity: 0, y: 10 }}

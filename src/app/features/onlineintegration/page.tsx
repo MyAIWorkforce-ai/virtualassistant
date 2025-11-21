@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
+
 
 
 export default function OnlineIntegration() {
@@ -49,7 +48,7 @@ export default function OnlineIntegration() {
                     content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
                 />
             </Head>
-            <Navbar />
+
 
            {/*  FIRST SECTION  */}
            
@@ -318,7 +317,7 @@ A physiotherapy clinic installs the AI booking script on their website.Clients n
             </motion.section>
 
             {/* Footer */}
-            <Footer />
+
         </>
     )
 }

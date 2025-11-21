@@ -1,8 +1,7 @@
 "use client";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
+
 
 const capabilities = [
     {
@@ -54,7 +53,6 @@ export default function AiReceptionist() {
                 />
             </Head>
 
-            <Navbar />
 
 
             {/*  FIRST SECTION  */}
@@ -362,11 +360,6 @@ export default function AiReceptionist() {
 </motion.button>
 
     </motion.section>
-
-
-
-
-            <Footer />
         </>
     );
 }

@@ -2,8 +2,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../_components/Navbar";
-import Footer from "../_components/Footer";
+
 
 import {
   fadeUp,
@@ -84,7 +83,7 @@ export default function ContactPage() {
 
       <div className="min-h-screen bg-gradient-to-r from-sky-100 to-white">
         {/* Header */}
-     <Navbar/>
+
         {/* Main Section */}
         <main className="flex-1 flex flex-col items-center justify-center px-6 py-16">
           {/* Hero */}
@@ -273,7 +272,7 @@ export default function ContactPage() {
             <p className="flex  justify-center items-center gap-1">
   📞 Call Us Now:{" "}
   <a href="tel:+10468068021" className="text-[#797A7D]">
-    +1 (046) 806-8021
+    0468 068 021
   </a>
 </p>
             
@@ -285,8 +284,6 @@ export default function ContactPage() {
           </motion.div>
         </main>
 
-        {/* Footer */}
-     <Footer/>
       </div>
     </>
   );

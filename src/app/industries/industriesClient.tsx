@@ -3,9 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../_components/Navbar";
-import Footer from "../_components/Footer";
-
 
 export default function MainIndustry() {
 
@@ -105,7 +102,7 @@ const PerfesstionalServicescards = [
   },
   {
     icon: "/industrymain-images/real-estate.png",
-    title: "Real Estate Agent",
+    title: "Realestate Agent",
     desc: "From Listings to Closings, Streamlines property management, client communication, and sales tracking.",
     link: "/industries/realestateagent",
   },
@@ -116,7 +113,7 @@ const TradesServicescards = [
     icon: "/industrymain-images/mechanic.png",
     title: "Mechanic",
     desc: "Service Scheduling Simplified – Organizes repair appointments, reschedules with ease, and manages waitlists for busy Workshops.",
-    link: "/industries/resturant",
+    link: "/industries/mechanic",
   },
   {
     icon: "/industrymain-images/plumber.png",
@@ -173,7 +170,6 @@ const HospitalityOther = [
                 />
             </Head>
 
-<Navbar/>
 
   <motion.section
       initial={{ opacity: 0, y: 50 }}
@@ -471,8 +467,6 @@ const HospitalityOther = [
                    </motion.div>
             </motion.section>
 
-            {/* Footer */}
-            <Footer />
         </>
     )
 }

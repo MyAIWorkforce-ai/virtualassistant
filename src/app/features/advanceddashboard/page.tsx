@@ -3,8 +3,6 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Navbar from "../../_components/Navbar";
-import Footer from "../../_components/Footer";
 
 
 export default function OnlineIntegration() {
@@ -62,7 +60,6 @@ export default function OnlineIntegration() {
                     content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
                 />
             </Head>
-            <Navbar />
 
            {/*  FIRST SECTION  */}
         <motion.section
@@ -305,8 +302,6 @@ Your business runs better when everything connects. With the Advanced Dashboard,
                 </button>
 </motion.section>
 
-            {/* Footer */}
-<Footer />
         </>
     )
 }

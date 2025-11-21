@@ -10,8 +10,7 @@ import { fadeUp } from "../_components/animations/variants";
 import useScrollAnimation from "../_components/animations/scrolleranimation";
 import { fadeRight } from "../_components/animations/variants";
 import { scaleFade } from "../_components/animations/variants";
-import Footer from "../_components/Footer";
-import Navbar from "../_components/Navbar";
+
 export default function HomePage() {
   useScrollAnimation();
   // Hamnburger Button
@@ -50,8 +49,7 @@ export default function HomePage() {
 
       <main className="min-h-screen bg-gradient-to-r from-white to-sky-100">
         <ZoomTransition routeKey="home">
-          {/* Navbar */}
-    <Navbar/>
+
           {/* Hero Section */}
           <section className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-4 ">
             {/* Left Content */}
@@ -441,8 +439,6 @@ export default function HomePage() {
                    </motion.div>
           </div>
         </section>
-        {/* FOOTER SECTION */}
-     <Footer/>
       </main>
     </>
   );

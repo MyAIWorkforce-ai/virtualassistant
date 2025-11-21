@@ -181,7 +181,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="https://admin.virtualassistant.com.au/login"
-                className="text-black hover:text-[#00A7DE]"
+               className="text-black px-5 py-2 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
                 Log In
               </Link>
@@ -351,7 +351,7 @@ export default function Navbar() {
     <li>
       <Link
         href="https://admin.virtualassistant.com.au/login"
-        className="text-black hover:text-[#00A7DE]"
+        className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
         onClick={() => setIsOpen(false)}
       >
         Log In
