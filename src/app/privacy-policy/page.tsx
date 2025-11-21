@@ -1,8 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Navbar from "../_components/Navbar";
-import Footer from "../_components/Footer";
-
 
 export default function PrivacyPolicy() {
 
@@ -203,11 +200,6 @@ If you believe your privacy has been compromised, please contact us directly. We
 </div>
       </div>
     </motion.section>
-
-
-
-            {/* Footer */}
-            <Footer />
         </>
     )
 }
