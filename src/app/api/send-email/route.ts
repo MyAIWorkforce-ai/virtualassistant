@@ -3,11 +3,15 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { fullName, email, phone, countryCode, industry, message } = body;
+    const { fullName, email, phone, countryCode, assistantTeam, industry, message } = body;
 
-    if (!fullName || !email || !phone || !industry || !message) {
+
+    const industryValue = assistantTeam || industry;
+
+   
+    if (!fullName || !email || !phone || !industryValue || !message) {
       return NextResponse.json(
-        { success: false, message: "All fields are required" },
+        { success: false, message: "All required fields must be filled" },
         { status: 400 }
       );
     }
@@ -19,15 +23,17 @@ export async function POST(req: NextRequest) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "onboarding@resend.dev",   
-        to: "anamaziz11066@gmail.com",  
-        subject: `New Contact Form Submission from ${fullName}`,
+        from: process.env.RESEND_FROM_EMAIL,
+        to: process.env.RESEND_TO_EMAIL,
+        subject: `VirtualAssistant.com.au`,
         text: `
 Name: ${fullName}
 Email: ${email}
 Phone: ${countryCode} ${phone}
-Industry: ${industry}
+Industry: ${industryValue}
 Message: ${message}
+
+New inquiry from VirtualAssistant.com.au
         `,
       }),
     });

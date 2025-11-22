@@ -55,18 +55,30 @@ export default function AppointmentScheduling() {
   }}
 >
   {/* Left Side Image */}
-  <motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
-    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
-      <Image
-        src="/feature-images/scheduling.png"
-        alt="AI Appointment Calendar"
-        fill
-        className="object-contain drop-shadow-lg opacity-95"
-      />
-    </div>
-  </motion.div>
+<motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
+  <div
+   className="
+    relative
+    w-[220px] h-[220px]
+    sm:w-[320px] sm:h-[320px]
+    md:w-[550px] md:h-[550px]
+    lg:w-[600px] lg:h-[600px]
+    mb-4 sm:-mb-8           
+    md:mb-0 md:-ml-10
+    overflow-visible   
+  "
+>
+    <Image
+      src="/feature-images/scheduling-hero.png"
+      alt="AI Appointment Calendar"
+      fill
+      className="object-contain drop-shadow-lg opacity-95"
+    />
+  </div>
+</motion.div>
 
-  {/* Right Side Card - Smaller Height */}
+
+  {/* Right Side Card -  */}
   <motion.div className="relative z-20 bg-white/10 backdrop-blur-xl p-8 sm:p-10 md:p-12 text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]">
     <div className="text-white max-w-lg space-y-6">
                         <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
