@@ -29,84 +29,51 @@ export default function HeroSection({
   return (
     <>
       {/* ---------------- HERO SECTION ---------------- */}
-<motion.section
-  className="relative w-full bg-cover bg-center overflow-hidden"
-  style={{
-    background: "linear-gradient(to bottom, #0097DA, #00BAF2, #8FD8F8)",
-  }}
->
-  <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 mt-8 border-b border-white gap-10 md:gap-0">
-    {/* LEFT CONTENT */}
-    <motion.div
-      className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <motion.div className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow">
-        {tag}
-      </motion.div>
-
-      <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 ">
-        {title}
-      </motion.h1>
-      <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6">
-        {description}
-      </motion.p>
-
-      <motion.div
-        className="flex gap-4 m-6 justify-center items-center"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"><motion.button
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-        >
-          Start 14 Day Free Trial
-        </motion.button></Link> 
-
-         <Link
-                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"> <motion.button
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-        >
-          Book a Demo
-          <Image
-            src="/industries-images/reuse-icons/demo-button.png"
-            alt="demo"
-            width={14}
-            height={14}
-            priority
-          />
-        </motion.button></Link>
-      </motion.div>
-    </motion.div>
-
-    {/* RIGHT IMAGE */}
-    <div className="relative w-full md:flex-1 md:h-[500px] flex items-end md:items-end mt-8 md:mt-0 min-h-[280px]">
-      <motion.div
-        className="absolute bottom-0 right-0 w-full flex justify-center md:justify-end"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <Image
-          src={image}
-          alt={title}
-          width={1000}
-          height={1000}
-          priority
-          className="object-contain -mb-1 mb-4 max-w-[400px] sm:max-w-full"
-        />
-      </motion.div>
-    </div>
-  </div>
-</motion.section>
+      <motion.section className="relative w-full bg-cover bg-center overflow-hidden" 
+      style={{ background: "linear-gradient(to bottom, #0097DA, #00BAF2, #8FD8F8)", }} >
+         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 mt-8 border-b border-white"> 
+          {/* LEFT CONTENT */} 
+          <motion.div className="text-white max-w-xl flex flex-col items-center md:items-start text-center md:text-left" 
+          initial={{ opacity: 0, y: 30 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8 }} > 
+          <motion.div className="inline-block bg-white text-[#00A7DE] font-medium px-7 py-2 rounded-full mb-4 shadow">
+             {tag}
+              </motion.div>
+              <motion.h1 className="text-3xl sm:text-5xl font-bold mb-4 ">
+                {title}
+                </motion.h1> 
+                <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6"> 
+                  {description} 
+                  </motion.p>
+                   <motion.div className="flex gap-4 m-6 justify-center items-center" 
+                   initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }} >
+ <motion.button 
+ whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }} 
+  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
+  Start 14 Day Free Trial
+   </motion.button> 
+   <motion.button 
+   whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3 }} 
+    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
+     Book a Demo 
+     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
+     </motion.button> 
+     </motion.div> </motion.div>
+      {/* RIGHT IMAGE */}
+      <div className="relative w-full md:flex-1 md:h-[500px] flex items-end md:items-end mt-8 md:mt-0">
+         <motion.div className="absolute bottom-0 right-0 w-full flex justify-center md:justify-end"
+          initial={{ opacity: 0, y: 30 }} 
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }} > 
+          <Image src={image} alt={title} width={500} height={500} priority
+           className="object-contain -mb-1" /> </motion.div> 
+           </div> </div>
+            </motion.section>
 
       {/* ---------------- GRID BACKGROUND ---------------- */}
       <motion.section className="relative w-full h-32 md:h-40 -mt-16 bg-white">
@@ -118,45 +85,45 @@ export default function HeroSection({
       </motion.section>
 
       {/* ---------------- METRICS SECTION ---------------- */}
-<motion.section className="relative z-20 -mt-12 md:-mt-20 flex justify-center px-4 md:px-8 mb-20">
-  <motion.div
-    className="flex flex-wrap justify-around items-center gap-8 border border-[#E5E7EB] rounded-lg p-6 md:p-8 bg-[#FFFFFF] shadow-[0_10px_15px_0px_#0000001A,0_4px_6px_0px_#0000001A] max-w-6xl w-full"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
-  >
-    {metrics.map((item, index) => {
-      const staticIcons = [
-        "/industries-images/reuse-icons/clock.png",
-        "/industries-images/reuse-icons/Frame.png",
-        "/industries-images/reuse-icons/wave.png",
-      ];
-
-      return (
+      <motion.section className="relative z-20 -mt-12 md:-mt-20 flex justify-center px-4 md:px-8 mb-20">
         <motion.div
-          key={index}
-          className="flex flex-col items-center text-center min-w-[100px] flex-1"
+          className="flex flex-wrap justify-around items-center gap-8 border border-[#E5E7EB] rounded-lg p-6 md:p-8 bg-[#FFFFFF] shadow-[0_10px_15px_0px_#0000001A,0_4px_6px_0px_#0000001A] max-w-6xl w-full"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
         >
-          <Image
-            src={staticIcons[index] || "/images/clock.png"}
-            alt={`icon-${index}`}
-            width={32}
-            height={32}
-            className="mb-2"
-            priority
-          />
-          <h2 className="text-[#000000] font-semibold text-3xl md:text-4xl">
-            {item.value}
-          </h2>
-          <p className="text-[#797A7D] text-sm md:text-base mt-2 font-regular">
-            {item.title}
-          </p>
+          {metrics.map((item, index) => {
+            const staticIcons = [
+              "/industries-images/reuse-icons/clock.png",
+              "/industries-images/reuse-icons/Frame.png",
+              "/industries-images/reuse-icons/wave.png",
+            ];
+
+            return (
+              <motion.div
+                key={index}
+                className="flex flex-col items-center text-center min-w-[100px] flex-1"
+              >
+                <Image
+                  src={staticIcons[index] || "/images/clock.png"}
+                  alt={`icon-${index}`}
+                  width={32}
+                  height={32}
+                  className="mb-2"
+                  priority
+                />
+                <h2 className="text-[#000000] font-semibold text-3xl md:text-4xl">
+                  {item.value}
+                </h2>
+                <p className="text-[#797A7D] text-sm md:text-base mt-2 font-regular">
+                  {item.title}
+                </p>
+              </motion.div>
+            );
+          })}
         </motion.div>
-      );
-    })}
-  </motion.div>
-</motion.section>
+      </motion.section>
 
 
     </>

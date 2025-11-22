@@ -55,40 +55,45 @@ export default function AppointmentScheduling() {
   }}
 >
   {/* Left Side Image */}
-  <motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
-    <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] -mb-6 sm:-mb-8 -ml-0 md:-ml-10">
-      <Image
-        src="/feature-images/scheduling.png"
-        alt="AI Appointment Calendar"
-        fill
-        className="object-contain drop-shadow-lg opacity-95"
-      />
-    </div>
-  </motion.div>
+<motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
+  <div
+   className="
+    relative
+    w-[220px] h-[220px]
+    sm:w-[320px] sm:h-[320px]
+    md:w-[550px] md:h-[550px]
+    lg:w-[600px] lg:h-[600px]
+    mb-4 sm:-mb-8           
+    md:mb-0 md:-ml-10
+    overflow-visible   
+  "
+>
+    <Image
+      src="/feature-images/scheduling-hero.png"
+      alt="AI Appointment Calendar"
+      fill
+      className="object-contain drop-shadow-lg opacity-95"
+    />
+  </div>
+</motion.div>
 
-  {/* Right Side Card - Smaller Height */}
+
+  {/* Right Side Card -  */}
   <motion.div className="relative z-20 bg-white/10 backdrop-blur-xl p-8 sm:p-10 md:p-12 text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]">
-    
-    <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-      AI that talks, helps, and converts
-    </div>
-
-    {/* Heading */}
-    <h1 className="text-2xl sm:text-4xl md:text-[48px] font-bold leading-[110%] mb-4">
-      AI Appointment Scheduling
-    </h1>
-
-    {/* Subtext */}
-    <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed mb-6 max-w-sm sm:max-w-md">
-      Never miss an appointment or double-book again. Your AI assistant
-      automatically manages scheduling, reminders, and rescheduling — keeping
-      your calendar full and your clients happy.
-    </p>
-
-    {/* CTA Button */}
-    <button className="bg-[#00A7DE] text-white px-6 sm:px-7 py-3.5 rounded-lg font-semibold shadow-md hover:bg-[#008FCC] transition text-sm sm:text-base w-max">
-      Start your free trial
-    </button>
+    <div className="text-white max-w-lg space-y-6">
+                        <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
+                            Smart, Seamless, Always On
+                        </div>
+                        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+                            AI Appointment Scheduling
+                        </h1> 
+                        <p className="text-lg text-gray-200">
+                         Never miss an appointment or double-book again. Your AI assistant automatically manages scheduling, reminders, and rescheduling — keeping your calendar full and your clients happy.
+                        </p>
+                        <button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
+                            Start your free trial
+                        </button>
+                    </div>
   </motion.div>
 </motion.section>
 

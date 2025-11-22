@@ -92,10 +92,6 @@ export default function OnlineIntegration() {
   </div>
 </motion.section>
 
-
-
-
-
         {/*  SECOND SECTION*/}
  <motion.section
      className="relative flex flex-col md:flex-row bg-[#F9FAFB] items-center justify-between w-full min-h-screen bg-cover bg-center px-6 md:px-12 py-20"
@@ -108,7 +104,7 @@ export default function OnlineIntegration() {
 
 <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto ">
   {/* Left Section */}
-  <div className="w-full md:w-1/2 px-15  align-center space-y-6">
+  <div className="w-full md:w-1/2 px-4 sm:px-6  align-center space-y-6">
     <h2 className="font-Poppins font-bold text-[36px] md:text-[48px] leading-[130%] text-[#00A7DE]">
       Productivity Benefits
     </h2>
@@ -181,13 +177,13 @@ export default function OnlineIntegration() {
         </p>
       </motion.div>
 
-    <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
   {/* Left Column (White Cards) */}
   <div className="space-y-8 flex flex-col items-center">
     {leftCards.map((card, index) => (
       <motion.div
         key={index}
-        className="w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-12 flex flex-col"
+        className="w-full max-w-[364px] h-[270px] bg-[#FFFFFF] rounded-[20px] shadow-md p-12 flex flex-col"
       >
         {/* Center Icon */}
         <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">
@@ -210,13 +206,12 @@ export default function OnlineIntegration() {
       </motion.div>
     ))}
   </div>
-
-  {/* Right Column (Light Blue Cards) */}
+ {/* Right Column (Light Blue Cards) */}
   <div className="space-y-8 flex flex-col items-center">
     {rightCards.map((card, index) => (
       <motion.div
         key={index}
-        className="w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-12 flex flex-col"
+        className="w-full max-w-[364px] h-[270px] bg-[#F1FAFD] rounded-[20px] shadow-md p-12 flex flex-col"
       >
         {/* Center Icon */}
         <div className="w-14 h-14 mb-4 flex items-center justify-center self-center">
@@ -240,56 +235,61 @@ export default function OnlineIntegration() {
     ))}
   </div>
 </div>
+ </motion.section>
+     {/* FORTH SECTION */}
+<motion.section className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 p-20 md:px-12 max-w-7xl mx-auto"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
 
-    </motion.section>
+  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center 
+      gap-10 md:gap-16 px-6 py-12 md:px-12 md:py-20 max-w-7xl mx-auto">
 
-  
-         {/* FORTH SECTION */}
-              <motion.section
-                  className="relative w-full py-15 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-              >
-                  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
-                  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 p-20 md:px-12 max-w-7xl mx-auto">
     {/* LEFT SIDE CARD */}
-                      <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.8 }}
-         className="bg-[#D2EDFD]/90 border border-black/25 rounded-[20px] p-8 w-full md:w-[400px] shadow-md flex flex-col items-center text-center"
-                      >
-                          <h3
-                              className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
-                              Real-World Example
-                          </h3>
- <p className="text-[#797A7D] font-poppins text-base px-6 text-left md:text-[16px] leading-relaxed">
-A physiotherapy clinic installs the AI booking script on their website.Clients now book sessions directly online, receive instant confirmations, and chat with the AI for pre-visit questions.Within weeks, the clinic sees a 25% increase in bookings and fewer
- missed calls — all while staff focus more on care and less on admin.
-                          </p>
-                      </motion.div>
-  
-                      {/* RIGHT SIDE CONTENT */}
-                      <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.8 }}
-                          className="text-left max-w-2xl">
-                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-4">
-                             Why Choose Online <br />Integration? 
-                          </h2>
-  
-                          <ul className=" text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
-                              <li>• Keeps your business accessible 24/7</li>
-                              <li>• Turns your website into a fully functional virtual assistant</li>
-                              <li>• Reduces manual admin work and missed opportunities</li>
-                              <li>• Integrates easily with existing tools and systems</li>
-                              <li>• Enhances client satisfaction with instant support</li>
-                          </ul>
-                      </motion.div>
-                  </div>
-              </motion.section>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="bg-[#D2EDFD]/90 border border-black/25 rounded-[20px] p-8 
+          w-full max-w-[380px] md:w-[400px] 
+          shadow-md flex flex-col items-center text-center"
+    >
+      <h3 className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
+        Real-World Example
+      </h3>
+
+      <p className="text-[#797A7D] font-poppins text-base px-2 md:px-6 text-left leading-relaxed">
+        A physiotherapy clinic installs the AI booking script on their website.
+        Clients now book sessions directly online, receive instant confirmations,
+        and chat with the AI for pre-visit questions. Within weeks, the clinic
+        sees a 25% increase in bookings and fewer missed calls — all while staff
+        focus more on care and less on admin.
+      </p>
+    </motion.div>
+
+    {/* RIGHT SIDE CONTENT */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-left max-w-2xl px-2 md:px-0"
+    >
+      <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-4">
+        Why Choose Online <br /> Integration?
+      </h2>
+
+      <ul className="text-[#797A7D] text-[16px] md:text-[20px] font-poppins leading-[150%]">
+        <li>• Keeps your business accessible 24/7</li>
+        <li>• Turns your website into a fully functional virtual assistant</li>
+        <li>• Reduces manual admin work and missed opportunities</li>
+        <li>• Integrates easily with existing tools and systems</li>
+        <li>• Enhances client satisfaction with instant support</li>
+      </ul>
+    </motion.div>
+  </div>
+</motion.section>
 
             {/* FIFTH SECTION */}
             <motion.section
@@ -315,8 +315,6 @@ A physiotherapy clinic installs the AI booking script on their website.Clients n
                     Start Your Free Trial
                 </button>
             </motion.section>
-
-            {/* Footer */}
 
         </>
     )

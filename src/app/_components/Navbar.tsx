@@ -58,7 +58,8 @@ export default function Navbar() {
 
         <nav className="hidden lg:block">
           <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
-            <li>
+     <div className="flex gap-8 px-10">
+             <li>
               <Link
                 href="/"
                 className={`${isActive("/") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"}`}
@@ -177,8 +178,10 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </li>
+     </div>
 
-            <li>
+        <div className="flex gap-2">
+              <li>
               <Link
                 href="https://admin.virtualassistant.com.au/login"
                className="text-black px-5 py-2 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
@@ -195,6 +198,7 @@ export default function Navbar() {
                 Sign Up
               </Link>
             </li>
+        </div>
           </ul>
         </nav>
 
@@ -351,7 +355,7 @@ export default function Navbar() {
     <li>
       <Link
         href="https://admin.virtualassistant.com.au/login"
-        className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+        className="text-black px-6 py-3 rounded-full font-semibold border-2 mb-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
         onClick={() => setIsOpen(false)}
       >
         Log In
