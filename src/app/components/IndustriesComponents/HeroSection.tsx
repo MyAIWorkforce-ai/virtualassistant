@@ -98,10 +98,10 @@ export default function HeroSection({
         <Image
           src={image}
           alt={title}
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           priority
-          className="object-contain -mb-1 max-w-[300px] sm:max-w-full"
+          className="object-contain -mb-1 mb-4 max-w-[400px] sm:max-w-full"
         />
       </motion.div>
     </div>
