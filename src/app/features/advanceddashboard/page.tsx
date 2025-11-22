@@ -194,88 +194,138 @@ It’s not just software — it’s your business’s central control hub.
 
   {/* Cards Section */}
   <div className="max-w-[1296px] mx-auto flex flex-col gap-2">
-    {cards.map((card, index) => {
-      
-      const bgColors = ["#FFFFFF", "#F1FAFD", "#E9F6FF", "#F8FCFE"];
-      const bgColor = bgColors[index % bgColors.length]; 
+   {cards.map((card, index) => {
+  const bgColors = ["#FFFFFF", "#F1FAFD", "#E9F6FF", "#F8FCFE"];
+  const bgColor = bgColors[index % bgColors.length];
 
-      return (
-        <motion.div
-          key={index}
-          whileHover={{ scale: 1.02, y: -3 }}
-          transition={{ type: "spring", stiffness: 200 }}
-          style={{ backgroundColor: bgColor }}
-          className="w-full md:w-[1200px] h-[80px] rounded-[20px] shadow-md flex items-center gap-4 px-6 md:px-8"
-        >
-          {/* Icon */}
-          <div className="flex items-center justify-center w-10 h-10 shrink-0">
-            <Image src={card.icon} alt={card.title} width={40} height={40} />
-          </div>
+  return (
+    <motion.div
+      key={index}
+      whileHover={{ scale: 1.02, y: -3 }}
+      transition={{ type: "spring", stiffness: 200 }}
+      style={{ backgroundColor: bgColor }}
+      className="
+        w-full 
+        rounded-[20px] 
+        shadow-md 
+        flex 
+        items-start md:items-center 
+        gap-3 sm:gap-6 
+        px-4 sm:px-6 md:px-8 
+        py-4 
+      "
+    >
+      <div className="w-10 h-10 shrink-0 flex items-center justify-center">
+        <Image src={card.icon} alt={card.title} width={40} height={40} />
+      </div>
 
-          {/* Text Content */}
-          <div className="flex flex-col md:flex-row md:items-center md:gap-3 text-left">
-            <h3 className="font-Poppins font-semibold text-[20px] text-[#000000] leading-[100%]">
-              {card.title}
-            </h3>
-            <p className="font-Poppins font-normal text-[16px] text-[#333] leading-[100%] md:pl-3">
-              {card.desc}
-            </p>
-          </div>
-        </motion.div>
-      );
-    })}
+      <div className="flex flex-col">
+        <h3 className="font-Poppins font-semibold text-[18px] sm:text-[20px] text-[#000] leading-[120%]">
+          {card.title}
+        </h3>
+
+        <p className="font-Poppins text-[14px] sm:text-[16px] text-[#333] leading-[140%] mt-1">
+          {card.desc}
+        </p>
+      </div>
+
+    </motion.div>
+  );
+})}
   </div>
 </motion.section>
 
   
          {/* FORTH SECTION */}
- <motion.section
-                  className="relative w-full py-15 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-              >
-                  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
-                  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 p-20 md:px-12 max-w-7xl mx-auto">
+<motion.section
+  className="relative w-full py-15 bg-cover bg-center bg-gradient-to-r from-[#afd7f5] to-[#FFFFFF]"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
 
-                      {/* RIGHT SIDE CONTENT */}
-                      <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.8 }}
-                          className="text-left max-w-2xl">
-                          <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-3">
-                            Why Choose the Advanced  <br />Dashboard? 
-                          </h2>
-  
-                          <ul className=" text-[#797A7D] text-[16px] text-lg md:text-[20px] font-poppins leading-[150%]">
-                              <li>• Combines CRM, analytics, and customization in one hub</li>
-                              <li>• Empowers you to manage and train your AI in real time</li>
-                              <li>• Gives you transparency into every client and assistant interaction</li>
-                              <li>• Adapts to your business — from solo use to large-scale deployment</li>
-                              <li>• Keeps your brand identity front and center</li>
-                          </ul>
-                      </motion.div>
+  <div
+    className="
+      relative z-10 
+      flex flex-col md:flex-row 
+      items-center md:items-center
+      justify-center 
+      gap-10 md:gap-16 
+      px-4 sm:px-6 md:px-12 
+      py-10 md:py-20
+      max-w-7xl mx-auto
+    "
+  >
+    {/* RIGHT TEXT CONTENT */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="
+        text-left 
+        max-w-2xl
+        w-full
+        md:w-auto
+      "
+    >
+      <h2 className="font-poppins font-bold text-[#00A7DE] 
+        text-2xl sm:text-3xl md:text-[48px] 
+        leading-[150%] mb-3 md:mb-3">
+        Why Choose the Advanced <br /> Dashboard?
+      </h2>
+
+      <ul className="
+        text-[#797A7D] 
+        font-poppins 
+        text-[14px] sm:text-[16px] md:text-[20px] 
+        leading-[150%]
+      ">
+        <li>• Combines CRM, analytics, and customization in one hub</li>
+        <li>• Empowers you to manage and train your AI in real time</li>
+        <li>• Gives you transparency into every client and assistant interaction</li>
+        <li>• Adapts to your business — from solo use to large-scale deployment</li>
+        <li>• Keeps your brand identity front and center</li>
+      </ul>
+    </motion.div>
+
     {/* LEFT SIDE CARD */}
-                      <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.8 }}
-         className="bg-[#D2EDFD]/90 border border-black/25 rounded-[20px] p-12 w-full md:w-[400px] shadow-md flex flex-col items-center text-center"
-                      >
-                          <h3
-                              className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
-                            Customization & Branding
-                          </h3>
-  
-                          <p className="text-[#797A7D] font-poppins text-left text-base md:text-[16px] leading-relaxed">
-Your dashboard isn’t just functional — it’s an extension of your brand. Change themes, upload assets, and adjust language so every touchpoint feels consistent with your identity.
-Your clients see professionalism. You see total control.
-                          </p>
-                      </motion.div>
-  
-                  </div>
- </motion.section>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="
+        bg-[#D2EDFD]/90 
+        border border-black/25 
+        rounded-[20px] 
+        p-6 sm:p-8 md:p-12 
+        w-full sm:w-[90%] md:w-[400px] 
+        shadow-md 
+        flex flex-col 
+        items-center text-center
+      "
+    >
+      <h3
+        className="text-xl sm:text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4"
+      >
+        Customization & Branding
+      </h3>
+
+      <p className="
+        text-[#797A7D] 
+        font-poppins 
+        text-left 
+        text-sm sm:text-base md:text-[16px] 
+        leading-relaxed
+      ">
+        Your dashboard isn’t just functional — it’s an extension of your brand.
+        Change themes, upload assets, and adjust language so every touchpoint 
+        feels consistent with your identity. Your clients see professionalism. 
+        You see total control.
+      </p>
+    </motion.div>
+  </div>
+</motion.section>
 
             {/* FIFTH SECTION */}
  <motion.section

@@ -16,7 +16,8 @@ import useScrollAnimation from "./_components/animations/scrolleranimation";
 
 export default function Home() {
   useScrollAnimation();
-  const [showModal, setShowModal] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+ 
   // Hamburger Button
   const [isOpen, setIsOpen] = useState(false);
   // =======================
@@ -670,12 +671,13 @@ const plans = [
           className="rounded-t-lg w-full h-auto object-cover"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <figcaption className="sr-only">
-          Branded Dashboard image
-        </figcaption>
+        <figcaption className="sr-only">Branded Dashboard image</figcaption>
       </figure>
     </HoverSlide>
+
     <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
+
+      {/* Title + Icon */}
       <div className="flex items-center gap-2">
         <Image
           src="/image/branded-icon.png"
@@ -691,20 +693,31 @@ const plans = [
           Advanced Dashboard
         </h3>
       </div>
+
+      {/* Main Text */}
       <p className="text-[#797A7D] font-medium mt-2 text-sm">
         Your control centre gives you everything in one place:
-        - Advanced CRM with client data & history<br/>
-        - AI Smart Calendar that is colour-coded & auto-updating<br/>
-        - Analytics & insights: calls, bookings, cancellations, no-shows, performance<br/>
-        - One clean dashboard replaces multiple tools and platforms.<br/>
+        - Advanced CRM with client data & history<br />
+        - AI Smart Calendar: colour-coded & auto-updating<br />
+        - Analytics: calls, bookings, cancellations, no-shows<br />
+        - One clean dashboard replaces multiple tools.<br />
       </p>
-     <button
-  className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
-  onClick={() => setShowModal(true)}
->
-  Read more...
-</button>
 
+      {expanded && (
+        <div className="mt-3 text-[#797A7D] text-sm animate-[fadeIn_0.3s_ease]">
+          - Front-End Prompts: Update what your AI says across phone, site, and chat.<br />
+          - Fully Customisable Branding: Upload logo, set theme colours, and personalise your system.<br />
+        </div>
+      )}
+
+      <button
+        className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
+        onClick={() => setExpanded(!expanded)}
+      >
+        {expanded ? "Hide" : "Read more..."}
+      </button>
+
+      {/* Rating */}
       <div className="flex items-center mt-1">
         <Image
           src="/image/thumbs-up.png"
@@ -714,13 +727,12 @@ const plans = [
           priority
           aria-hidden="true"
         />
-        <p className="ml-1 text-xs text-[#6B7280]">
-          96% Satisfaction
-        </p>
+        <p className="ml-1 text-xs text-[#6B7280]">96% Satisfaction</p>
       </div>
     </div>
   </article>
 </FadeInOnScroll>
+
 
             {/* Feature 6 */}
             <FadeInOnScroll>
@@ -804,23 +816,6 @@ const plans = [
           }}
         />
 
-{showModal && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-    <div className="bg-white rounded-lg p-4 max-w-md w-full relative shadow-lg">
-      <button
-        className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-        onClick={() => setShowModal(false)}
-      >
-        ✕
-      </button>
-      <h3 className="text-xl text-[#098DC9] font-bold mb-3">Advanced Dashboard - More Details</h3>
-      <p className="text-gray-700 text-sm space-y-2">
-        - Front-End Prompts: Easily update what your AI says to clients on the phone, website, or chat — no tech skills required.<br />
-        - Fully Customisable Branding: Upload your business logo, set your theme colours, and brand the dashboard to feel like your own system — not just another generic tool.
-      </p>
-    </div>
-  </div>
-)}
  </section>
 
       
