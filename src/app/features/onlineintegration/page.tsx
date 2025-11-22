@@ -85,10 +85,14 @@ export default function OnlineIntegration() {
     <p className="text-white/90 leading-relaxed mb-6 font-poppins">
      Your AI assistant goes beyond calls — it seamlessly integrates with your website to deliver real-time bookings, instant responses, and 24/7 engagement.
     </p>
-
-    <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
-      Start your free trial
-    </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
   </div>
 </motion.section>
 
@@ -301,7 +305,6 @@ export default function OnlineIntegration() {
                     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
                 }}
             >
-                {/* Heading */}
                 <h1 className="text-white text-4xl sm:text-5xl  font-poppins font-bold mb-4">
                   Ready to Bring Your AI Online?
                 </h1>
@@ -311,9 +314,14 @@ export default function OnlineIntegration() {
                   Let your website do more — answer questions, take bookings, and connect clients with your business anytime, anywhere.
                 </p>
 
-                <button className="bg-white text-[#01A0E0]  font-poppins font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
-                    Start Your Free Trial
-                </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
             </motion.section>
 
         </>

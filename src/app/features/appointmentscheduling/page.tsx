@@ -46,7 +46,7 @@ export default function AppointmentScheduling() {
 <motion.section
   initial="hidden"
   animate="show"
-  className="relative flex flex-col md:flex-row items-center overflow-hidden font-[Poppins] py-12 sm:py-16 md:py-20"
+  className="relative flex flex-col md:flex-row items-center overflow-hidden font-[Poppins] py-6 sm:py-16 md:py-8"
   style={{
     backgroundImage: "url('/feature-images/appointmentimage.png')",
     backgroundSize: "cover",
@@ -77,24 +77,34 @@ export default function AppointmentScheduling() {
   </div>
 </motion.div>
 
-
-  {/* Right Side Card -  */}
-  <motion.div className="relative z-20 bg-white/10 backdrop-blur-xl p-8 sm:p-10 md:p-12 text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]">
-    <div className="text-white max-w-lg space-y-6">
-                        <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
-                            Smart, Seamless, Always On
-                        </div>
-                        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                            AI Appointment Scheduling
-                        </h1> 
-                        <p className="text-lg text-gray-200">
-                         Never miss an appointment or double-book again. Your AI assistant automatically manages scheduling, reminders, and rescheduling — keeping your calendar full and your clients happy.
-                        </p>
-                        <button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
-                            Start your free trial
-                        </button>
-                    </div>
-  </motion.div>
+<motion.div
+  className="relative z-20 p-8 sm:p-10 md:p-12 font-poppins text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]"
+  style={{
+    background: "linear-gradient(to bottom, #3596D3, #72D0FF)",
+  }}
+>
+  <div className="text-white max-w-lg space-y-6">
+    <div className="inline-block bg-[#E8F6FF] font-poppins text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
+      Smart, Seamless, Always On
+    </div>
+    <h1 className="text-3xl md:text-5xl  font-poppinsfont-bold leading-tight">
+      AI Appointment Scheduling
+    </h1>
+    <p className="text-lg font-poppins text-gray-200">
+      Never miss an appointment or double-book again. Your AI assistant
+      automatically manages scheduling, reminders, and rescheduling —
+      keeping your calendar full and your clients happy.
+    </p>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
+  </div>
+</motion.div>
 </motion.section>
 
 
@@ -128,8 +138,6 @@ export default function AppointmentScheduling() {
         </p>
       </div>
     </motion.div>
-
-    {/* Right Icon Cards */}
     <motion.div className="md:w-1/2 flex flex-col gap-12 justify-center pr-8 md:pr-12">
       {[
         {
@@ -175,16 +183,9 @@ export default function AppointmentScheduling() {
     </motion.div>
   </div>
 </motion.section>
-
-
-
-
-
 {/* THIRD SECTION */}
 <motion.section className="w-full flex flex-col items-center bg-white py-16 px-6 lg:px-24">
-  {/* Row 1 */}
   <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-15 mb-12">
-    {/* Left Card */}
     <div className="lg:w-auto flex justify-center lg:justify-start">
       <div
         className="w-[313px] h-[223px] rounded-[20px] p-15 flex flex-col justify-center 
@@ -203,20 +204,20 @@ export default function AppointmentScheduling() {
         </p>
       </div>
     </div>
-
-    {/* Right: Large Image */}
     <div className="flex-1 flex justify-center lg:justify-end">
-      <div
-        className="relative w-[850px] h-[400px] bg-white overflow-hidden
-                   rounded-[20px] rounded-bl-[110px]
-                   shadow-[-4px_3px_6px_rgba(172,169,169,0.25)]"
-      >
-        <img
-          src="/feature-images/productivity-gains.png"
-          alt="Productivity Gains"
-          className="w-full h-full object-cover"
-        />
-      </div>
+ <div className="flex-1 flex justify-center lg:justify-end">
+  <div
+    className="relative w-full max-w-[850px] h-[400px] sm:h-[300px] xs:h-[220px] bg-white overflow-hidden
+               rounded-[20px] rounded-bl-[110px]
+               shadow-[-4px_3px_6px_rgba(172,169,169,0.25)]"
+  >
+    <img
+      src="/feature-images/productivity-gains.png"
+      alt="Productivity Gains"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
     </div>
   </div>
 
@@ -274,9 +275,14 @@ export default function AppointmentScheduling() {
     reduce cancellations, and deliver a seamless experience to every client.
   </p>
 
-  <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
-    Start Your Free Trial
-  </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
 </section>
 
     </>
