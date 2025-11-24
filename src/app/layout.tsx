@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/_components/Navbar";
 import Footer from "@/app/_components/Footer";
-import ScrollReset from "@/app/_components/ScrollReset";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Australia's Best AI Virtual Receptionist | VirtualAssistant.com.au",
   description: "Tailored for every service-based industry. Designed to save time, cut costs, and boost productivity. Your AI receptionist sounds human and works, speaks, and feels just like your business. Let us take your calls 24/7 and streamline your admin effortlessly",
+  keywords: "best ai virtual receptionist australia, top virtual receptionist service, 24/7 ai call answering australia, ai receptionist for small business, booking automation australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin"
 };
 
 export default function RootLayout({
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <ScrollReset/>
+    
         <Navbar/>
     {children}
     <Footer/>

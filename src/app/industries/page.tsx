@@ -3,11 +3,11 @@ import MainIndustry from "./industriesClient";
 
 export async function generateMetadata() {
   return {
-    title: "Industries we serve | Virtualassistant.com.au",
+    title: "AI Receptionist for Clinics, Tradies & Service Professionals Australia | Virtualassistant.com.au",
     description:
-      "Automatically book, confirm and manage meetings using intelligent automation.",
+      "Trusted by Australian physios, psychologists, beauty clinics, tradies and service professionals—our AI receptionist boosts bookings, answers every call and automates admin so businesses run smoother 24/7.",
     keywords:
-      "AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant",
+      "ai receptionist industries australia, ai receptionist for healthcare, ai for physiotherapists australia, ai receptionist for psychologists, trades business automation, virtual receptionist clinics australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin",
   };
 }
 
