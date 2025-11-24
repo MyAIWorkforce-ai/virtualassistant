@@ -64,15 +64,28 @@ export default function HeroSection({
      <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
      </motion.button> 
      </motion.div> </motion.div>
+
+
       {/* RIGHT IMAGE */}
-      <div className="relative w-full md:flex-1 md:h-[500px] flex items-end md:items-end mt-8 md:mt-0">
-         <motion.div className="absolute bottom-0 right-0 w-full flex justify-center md:justify-end"
-          initial={{ opacity: 0, y: 30 }} 
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }} > 
-          <Image src={image} alt={title} width={500} height={500} priority
-           className="object-contain -mb-1" /> </motion.div> 
-           </div> </div>
+    <motion.div 
+ // Use negative margin to push the container past the right padding (px-12 = 3rem = 12 units)
+  className="relative w-full -mr-6 md:-mr-12 md:h-[500px] flex items-end justify-center md:justify-end mt-8 md:mt-0 pb-0"
+   initial={{ opacity: 0, y: 30 }} 
+   animate={{ opacity: 1, y: 0 }}
+   transition={{ duration: 0.8, delay: 0.2 }}
+ >
+   <Image 
+    src={image} 
+     alt={title} 
+     width={1000} 
+   height={1000} 
+    priority
+     // Image takes 100% of the container height (md:h-[500px]) and scales up to 120% of the column width to break out.
+     className="object-contain h-full w-[120%] md:w-full max-w-none md:max-w-none" 
+  /> 
+</motion.div> 
+           
+           </div>
             </motion.section>
 
       {/* ---------------- GRID BACKGROUND ---------------- */}
