@@ -3,11 +3,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
-
 export default function OnlineIntegration() {
-
-
     const cards = [
     {
       icon: "/feature-images/booking.png",
@@ -94,10 +90,14 @@ export default function OnlineIntegration() {
 Take command of your AI operations with one simple, intelligent dashboard. Your Advanced Dashboard brings together client management, analytics, customization, and real-time control — giving you full visibility over how your AI communicates, books, and performs every day.
 It’s not just software — it’s your business’s central control hub.
       </p>
-
-      <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
-        Start your free trial
-      </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
     </div>
   <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
     <div></div>
@@ -337,19 +337,20 @@ It’s not just software — it’s your business’s central control hub.
                     background: "linear-gradient(to bottom, #0097DA 0%, #00BAF2 50%, #8FDAF8 100%)",
                 }}
             >
-                {/* Heading */}
                 <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4">
                  Ready to Take Control?
                 </h1>
-
-                {/* Subtext */}
                 <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-8">
 Your business runs better when everything connects. With the Advanced Dashboard, your AI assistant, analytics, and brand management come together — seamlessly.
                 </p>
-
-                <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
-                    Start Your Free Trial
-                </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
 </motion.section>
 
         </>

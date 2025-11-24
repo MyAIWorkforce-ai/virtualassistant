@@ -1,8 +1,6 @@
 "use client";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
-
 const capabilities = [
     {
         title: "Always Available",
@@ -35,8 +33,6 @@ const capabilities = [
         icon: "/feature-images/call.png",
     },
 ];
-
-
 export default function AiReceptionist() {
     return (
         <>
@@ -52,40 +48,48 @@ export default function AiReceptionist() {
                     content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
                 />
             </Head>
-
-
-
             {/*  FIRST SECTION  */}
             {/* ----------- HERO SECTION ----------- */}
-            <motion.section
-                className="relative flex items-center justify-center min-h-[100vh] bg-cover bg-center px-6 md:px-12"
-                style={{
-                    backgroundImage: "url('/feature-images/ai-recep-frame1.svg')",
-                }}
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                {/* Content Container */}
-                <div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 py-20">
-                    <div className="text-white max-w-lg space-y-6">
-                        <div className="inline-block bg-[#E8F6FF] text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
-                            Smart, Seamless, Always On
-                        </div>
-                        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                            AI Receptionist-24/7 Coverage
-                        </h1> 
-                        <p className="text-lg text-gray-200">
-                            Never miss a call or opportunity again. Deliver instant, professional phone support—day or night—with our
-                            intelligent AI receptionist answering every customer, every time.
-                        </p>
-                        <button className="bg-white text-[#00A7DE] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm sm:text-base">
-                            Start your free trial
-                        </button>
-                    </div>
-                </div>
-            </motion.section>
+      <motion.section
+  className="relative flex items-center justify-between min-h-[100vh] px-0"
+  style={{
+    background: "linear-gradient(to right, #2A8FE0, #9BC7ED, #9BC7EC)",
+    overflow: "hidden",
+  }}
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+<div className="z-10 flex flex-col justify-center max-w-md md:max-w-lg px-4 md:px-6 py-20 text-white space-y-6">
+  <div className="inline-block bg-[#E0F4FB] text-[#0086B3] px-3 py-1 rounded-full text-xs font-medium font-poppins mb-4 max-w-max">
+    Your Business, Always Open
+  </div>
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
+    AI Receptionist-24/7 Coverage
+  </h1>
+  <p className="text-base md:text-lg text-gray-100 max-w-md">
+    Never miss a Call, Booking or Opportunity again. Deliver instant, professional phone support—day or night—with our intelligent AI receptionist answering every customer, every time.
+  </p>
 
+  <a
+    href="https://admin.virtualassistant.com.au/register"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white text-[#00A7DE] px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center max-w-max"
+  >
+    Start your free trial
+  </a>
+</div>
+{/* Right Image */}
+<div className="absolute bottom-0 right-0 w-full md:w-1/2 h-full mt-10 md:mt-16 overflow-hidden rounded-tl-3xl">
+  <img
+    src="/feature-images/AI-receptionist.png"
+    alt="AI Receptionist"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+</motion.section>
 
             {/* SECOND SECTION */}
             <motion.section
@@ -213,10 +217,6 @@ export default function AiReceptionist() {
 </div>
   </div>
 </motion.section>
-
-
-
-
 {/* FOURTH SECTION */}
 <motion.section
   className="w-full bg-cover bg-center py-20 px-6 flex flex-col items-center justify-center"
@@ -308,8 +308,6 @@ export default function AiReceptionist() {
     </motion.div>
   </div>
 </motion.section>
-
-
 
 {/* FIFTH SECTION */}
  <motion.section

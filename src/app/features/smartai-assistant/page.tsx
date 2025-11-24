@@ -14,7 +14,7 @@ export default function SmartAIassistant() {
             description: "From pricing and services to directions and availability.",
         },
         {
-            icon: "/feature-images/scheduling.png",
+            icon: "/feature-images/schedulinggg.png",
             title: "Handles changes smoothly:",
             description: "Reschedules or cancels without disrupting your day.",
         },
@@ -30,22 +30,6 @@ export default function SmartAIassistant() {
         },
     ];
 
-     const  clientBenefiits =[
-        {title:"Instant Support",
-            description:"Clients get the answers they need immediately, even after hours."
-        },
-          {title:"Consistent Messaging",
-            description:"Every response aligns with your brand voice and standards."
-        },
-          {title:"Reduced Admin Load",
-            description:"Fewer phone calls and emails for your team to handle."
-        },
-          {title:"Higher Conversion Rates",
-            description:"Clients feel confident booking after getting clear, helpful information."
-        }
-    ]
-
-   
     return (
         <>
             {/* SEO Meta */}
@@ -69,7 +53,6 @@ export default function SmartAIassistant() {
       transition={{ duration: 0.8 }}
       className="relative min-h-[100vh] flex items-center justify-center overflow-hidden"
     >
-
       {/* Background Image */}
       <Image
         src="/feature-images/smartai-assistant.png" 
@@ -97,9 +80,14 @@ export default function SmartAIassistant() {
             they need it.
           </p>
 
-          <button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
-            Start your free trial
-          </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
         </div>
 
       </div>
@@ -289,10 +277,14 @@ transition={{ duration: 0.8 }}
  Offer instant, intelligent, and on-brand assistance — anytime, anywhere. Let your AI handle questions and 
  interactions while you focus on delivering great service.
   </p>
-
-  <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
-    Start Your Free Trial
-  </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
 </motion.section>
 
         </>

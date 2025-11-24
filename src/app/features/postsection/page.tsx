@@ -4,8 +4,6 @@ import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
 
-
-
 export default function PostSection() {
 
     return (
@@ -39,9 +37,6 @@ export default function PostSection() {
     sizes="100vw"
     className="object-cover object-left"
   />
-  
-
-
   {/* Card */}
   <div className="bg-[#59727B]/15 backdrop-blur-xl py-8 px-14 text-white shadow-lg
                   max-w-md 
@@ -57,16 +52,17 @@ export default function PostSection() {
  Post-Session Tools
 </h1>
 
-{/* Subtext */}
 <p className="text-white/90 leading-relaxed mb-6 font-poppins">
 Keep every client interaction organized, documented, and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
 </p>
-
-{/* CTA Button */}
-<button className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins">
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
   Start your free trial
-</button>
-
+</a>
   </div>
 </motion.section>
             {/*  SECOND SECTION*/}
@@ -309,10 +305,14 @@ Smart tools that help you stay organized, informed, and always ready for the nex
                 <p className="text-white/90 text-lg max-w-2xl leading-relaxed mb-8">
                     Let your AI handle post-session management — from note-taking to file organization. Focus on your clients, not your paperwork.
                 </p>
-
-                <button className="bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300">
-                    Start Your Free Trial
-                </button>
+<a
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
+>
+  Start your free trial
+</a>
             </motion.section>
 
         </>

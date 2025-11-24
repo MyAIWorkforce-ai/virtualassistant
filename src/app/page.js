@@ -405,395 +405,336 @@ const plans = [
           ></div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Feature 1 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-1-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/ai-receptionist.png"
-                      alt="Receptionist using AI phone handling interface"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className="sr-only">
-                      AI Phone Handling illustration
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/ai-phone-icon.png"
-                      alt="AI phone icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-1-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                      AI Receptionist-24/7
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                   - Answers every call instantly, day or night<br/>
-- Unlimited calls & bookings, 24/7<br/>
-- Call recordings, summaries & transcripts<br/>
-- Professional, consistent service every time<br/>
-- Dedicated business number included<br/>
-- Call forwarding option with clear step-by-step instructions<br/>
-
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="Thumbs Up"
-                      width={16}
-                      height={16}
-                      priority
-                    />
-
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      98% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 2 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-2-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/calender3.png"
-                      alt="Appointment scheduling interface with calendar slots"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className="sr-only">
-                      Appointment Scheduling image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/appointment-icon.png"
-                      alt="Appointment icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-2-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                     AI Appointment Scheduling
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Fully automated: books, reschedules & cancels appointments<br/>
-- works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
-- Sends SMS & email confirmations and reminders<br/>
-
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="thumbs-up"
-                      width={16}
-                      height={16}
-                      priority
-                      aria-hidden="true"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      95% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 3 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-3-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/transcription.png"
-                      alt="Transcription interface showing text from conversation"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className="sr-only">
-                      Smart Transcription image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/transcription-icon.png"
-                      alt="Transcription icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-3-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                    Smart Ai Assistant For Clients
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Answers questions about your services instantly<br/>
-- Explains pricing, availability & directions<br/>
-- Handles reschedules or cancellations smoothly<br/>
-- Customisable personality: friendly, professional, or casual<br/>
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="thumbs-up"
-                      width={16}
-                      height={16}
-                      priority
-                      aria-hidden="true"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      92% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 4 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-4-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/voice-memo.png"
-                      alt="Voice memo capture linked to client file"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className="sr-only">
-                      Voice Memo Capture image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/voice-memo-icon.png"
-                      alt="Voice memo icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-4-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                     Post-Session Tools
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-- Add client notes after each appointment<br/>
-- Record voice memos that are auto-Transcribed
-& Summarised<br/>
-- Upload photos or documents linked to appointments<br/>
-- Build a complete client history file automatically<br/>
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="thumbs-up"
-                      width={16}
-                      height={16}
-                      priority
-                      aria-hidden="true"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      89% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
-
-            {/* Feature 5 */}
-<FadeInOnScroll>
-  <article
-    className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-    aria-labelledby="feature-5-title"
-  >
-    <HoverSlide>
-      <figure className="m-0">
-        <Image
-          src="/image/branded.png"
-          alt="Branded dashboard"
-          width={400}
-          height={250}
-          priority
-          className="rounded-t-lg w-full h-auto object-cover"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <figcaption className="sr-only">Branded Dashboard image</figcaption>
-      </figure>
-    </HoverSlide>
-
-    <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-
-      {/* Title + Icon */}
-      <div className="flex items-center gap-2">
-        <Image
-          src="/image/branded-icon.png"
-          alt="Branded dashboard icon"
-          width={20}
-          height={28}
-          priority
-        />
-        <h3
-          id="feature-5-title"
-          className="text-lg sm:text-1xl font-bold text-black"
-        >
-          Advanced Dashboard
-        </h3>
-      </div>
-
-      {/* Main Text */}
-      <p className="text-[#797A7D] font-medium mt-2 text-sm">
-        Your control centre gives you everything in one place:
-        - Advanced CRM with client data & history<br />
-        - AI Smart Calendar: colour-coded & auto-updating<br />
-        - Analytics: calls, bookings, cancellations, no-shows<br />
-        - One clean dashboard replaces multiple tools.<br />
-      </p>
-
-      {expanded && (
-        <div className="mt-3 text-[#797A7D] text-sm animate-[fadeIn_0.3s_ease]">
-          - Front-End Prompts: Update what your AI says across phone, site, and chat.<br />
-          - Fully Customisable Branding: Upload logo, set theme colours, and personalise your system.<br />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+  {/* Feature 1 */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/ai-receptionist.png"
+            alt="Receptionist using AI phone handling interface"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">
+            AI Phone Handling illustration
+          </figcaption>
+        </figure>
+      </HoverSlide>
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/ai-phone-icon.png"
+            alt="AI phone icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">
+            AI Receptionist-24/7
+          </h3>
         </div>
-      )}
-
-      <button
-        className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
-        onClick={() => setExpanded(!expanded)}
-      >
-        {expanded ? "Hide" : "Read more..."}
-      </button>
-
-      {/* Rating */}
-      <div className="flex items-center mt-1">
-        <Image
-          src="/image/thumbs-up.png"
-          alt="thumbs-up"
-          width={16}
-          height={16}
-          priority
-          aria-hidden="true"
-        />
-        <p className="ml-1 text-xs text-[#6B7280]">96% Satisfaction</p>
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          - Answers every call instantly, day or night<br/>
+          - Unlimited calls & bookings, 24/7<br/>
+          - Call recordings, summaries & transcripts<br/>
+          - Professional, consistent service every time<br/>
+          - Dedicated business number included<br/>
+          - Call forwarding option with clear step-by-step instructions<br/>
+        </p>
+        <div className="flex items-center mt-3">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="Thumbs Up"
+            width={16}
+            height={16}
+            priority
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">98% Satisfaction</p>
+        </div>
       </div>
-    </div>
-  </article>
-</FadeInOnScroll>
+    </article>
+  </FadeInOnScroll>
 
+  {/* Feature 2 */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/calender3.png"
+            alt="Appointment scheduling interface with calendar slots"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">
+            Appointment Scheduling image
+          </figcaption>
+        </figure>
+      </HoverSlide>
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/appointment-icon.png"
+            alt="Appointment icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">
+            AI Appointment Scheduling
+          </h3>
+        </div>
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          - Fully automated: books, reschedules & cancels appointments<br/>
+          - Works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
+          - Sends SMS & email confirmations and reminders<br/>
+        </p>
+        <div className="flex items-center mt-3">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="thumbs-up"
+            width={16}
+            height={16}
+            priority
+            aria-hidden="true"
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">95% Satisfaction</p>
+        </div>
+      </div>
+    </article>
+  </FadeInOnScroll>
 
-            {/* Feature 6 */}
-            <FadeInOnScroll>
-              <article
-                className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-full"
-                aria-labelledby="feature-6-title"
-              >
-                <HoverSlide>
-                  <figure className="m-0">
-                    <Image
-                      src="/image/booking1.png"
-                      alt="White-labeled booking page frontend preview"
-                      width={400}
-                      height={250}
-                      priority
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                    <figcaption className=" text-3xl sr-only">
-                      White-Labeled Booking Page image
-                    </figcaption>
-                  </figure>
-                </HoverSlide>
-                <div className="p-4 sm:p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/image/booking-icon.png"
-                      alt="Booking icon"
-                      width={20}
-                      height={28}
-                      priority
-                    />
-                    <h3
-                      id="feature-6-title"
-                      className="text-lg sm:text-1xl font-bold text-black"
-                    >
-                      Online Integration
-                    </h3>
-                  </div>
-                  <p className="text-[#797A7D] font-medium mt-2 text-sm">
-                   - Website booking widget (simple copy & paste script)<br/>
-- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
-- 24/7 online + phone coverage for clients<br/>
-                  </p>
-                  <div className="flex items-center mt-3">
-                    <Image
-                      src="/image/thumbs-up.png"
-                      alt="thumb-up"
-                      width={16}
-                      height={16}
-                      priority
-                      aria-hidden="true"
-                    />
-                    <p className="ml-1 text-xs text-[#6B7280]">
-                      94% Satisfaction
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </FadeInOnScroll>
+  {/* Feature 3 */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/transcription.png"
+            alt="Transcription interface showing text from conversation"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">
+            Smart Transcription image
+          </figcaption>
+        </figure>
+      </HoverSlide>
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/transcription-icon.png"
+            alt="Transcription icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">
+            Smart Ai Assistant For Clients
+          </h3>
+        </div>
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          - Answers questions about your services instantly<br/>
+          - Explains pricing, availability & directions<br/>
+          - Handles reschedules or cancellations smoothly<br/>
+          - Customisable personality: friendly, professional, or casual<br/>
+        </p>
+        <div className="flex items-center mt-3">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="thumbs-up"
+            width={16}
+            height={16}
+            priority
+            aria-hidden="true"
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">92% Satisfaction</p>
+        </div>
+      </div>
+    </article>
+  </FadeInOnScroll>
+
+  {/* Feature 4 */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/voice-memo.png"
+            alt="Voice memo capture linked to client file"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">
+            Voice Memo Capture image
+          </figcaption>
+        </figure>
+      </HoverSlide>
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/voice-memo-icon.png"
+            alt="Voice memo icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">
+            Post-Session Tools
+          </h3>
+        </div>
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          - Add client notes after each appointment<br/>
+          - Record voice memos that are auto-Transcribed & Summarised<br/>
+          - Upload photos or documents linked to appointments<br/>
+          - Build a complete client history file automatically<br/>
+        </p>
+        <div className="flex items-center mt-3">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="thumbs-up"
+            width={16}
+            height={16}
+            priority
+            aria-hidden="true"
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">89% Satisfaction</p>
+        </div>
+      </div>
+    </article>
+  </FadeInOnScroll>
+
+  {/* Feature 5 - Dashboard Card */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/branded.png"
+            alt="Branded dashboard"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">Branded Dashboard image</figcaption>
+        </figure>
+      </HoverSlide>
+
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/branded-icon.png"
+            alt="Branded dashboard icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">
+            Advanced Dashboard
+          </h3>
+        </div>
+
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          Your control centre gives you everything in one place:<br/>
+          - Advanced CRM with client data & history<br/>
+          - AI Smart Calendar: colour-coded & auto-updating<br/>
+            - One clean dashboard replaces multiple tools.<br/>
+        </p>
+
+        {expanded && (
+          <div className="mt-3 text-[#797A7D] text-sm transition-all duration-300 ease-in-out">
+            - Front-End Prompts: Update what your AI says across phone, site, and chat.<br/>
+            - Fully Customisable Branding: Upload logo, set theme colours, and personalise your system.<br/>
           </div>
+        )}
+
+        <button
+          className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
+          onClick={() => setExpanded(!expanded)}
+        >
+          {expanded ? "Hide" : "Read more..."}
+        </button>
+
+        <div className="flex items-center mt-1">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="thumbs-up"
+            width={16}
+            height={16}
+            priority
+            aria-hidden="true"
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">96% Satisfaction</p>
+        </div>
+      </div>
+    </article>
+  </FadeInOnScroll>
+
+  {/* Feature 6 */}
+  <FadeInOnScroll>
+    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
+      <HoverSlide>
+        <figure className="m-0">
+          <Image
+            src="/image/booking1.png"
+            alt="White-labeled booking page frontend preview"
+            width={400}
+            height={250}
+            priority
+            className="rounded-t-lg w-full h-auto object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <figcaption className="sr-only">White-Labeled Booking Page image</figcaption>
+        </figure>
+      </HoverSlide>
+      <div className="p-4 sm:p-6 flex flex-col text-left">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/image/booking-icon.png"
+            alt="Booking icon"
+            width={20}
+            height={28}
+            priority
+          />
+          <h3 className="text-lg sm:text-1xl font-bold text-black">Online Integration</h3>
+        </div>
+        <p className="text-[#797A7D] font-medium mt-2 text-sm">
+          - Website booking widget (simple copy & paste script)<br/>
+          - Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
+          - 24/7 online + phone coverage for clients<br/>
+        </p>
+        <div className="flex items-center mt-3">
+          <Image
+            src="/image/thumbs-up.png"
+            alt="thumbs-up"
+            width={16}
+            height={16}
+            priority
+            aria-hidden="true"
+          />
+          <p className="ml-1 text-xs text-[#6B7280]">94% Satisfaction</p>
+        </div>
+      </div>
+    </article>
+  </FadeInOnScroll>
+</div>
+
         </div>
         <script
           type="application/ld+json"
