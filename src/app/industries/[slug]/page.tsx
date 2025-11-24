@@ -48,7 +48,7 @@ export default async function IndustryPage({ params }: { params: { slug: string 
   }
 
   return (
-    <main>
+    <main className="pt-24 md:pt-20 lg:pt-16">
   
       {/* HERO SECTION */}
       <HeroSection {...data.heroSection} />

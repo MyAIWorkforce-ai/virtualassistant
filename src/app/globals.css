@@ -38,7 +38,7 @@ body {
 }
 /* Scroll-triggered animation */
 html {
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
 }

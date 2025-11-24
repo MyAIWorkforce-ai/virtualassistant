@@ -81,7 +81,7 @@ export default function HeroSection({
    height={1000} 
     priority
      // Image takes 100% of the container height (md:h-[500px]) and scales up to 120% of the column width to break out.
-     className="object-contain h-full w-[120%] md:w-full max-w-none md:max-w-none" 
+     className="object-contain h-full w-[120%] md:w-full max-w-none md:max-w-none pb-[20px] pr-[17]" 
   /> 
 </motion.div> 
            

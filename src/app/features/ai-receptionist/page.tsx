@@ -84,8 +84,10 @@ export default function AiReceptionist() {
 <div className="absolute bottom-0 right-0 w-full md:w-1/2 h-full mt-10 md:mt-16 overflow-hidden rounded-tl-3xl">
   <img
     src="/feature-images/AI-receptionist.png"
+    height={500}
+    width={500}
     alt="AI Receptionist"
-    className="w-full h-full object-cover"
+    className=""
   />
 </div>
 

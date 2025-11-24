@@ -178,7 +178,7 @@ const HospitalityOther = [
       viewport={{ once: true }}
       className="flex flex-col items-center justify-center text-center bg-gradient-to-r from-[#F0F9FF]  to-[#E8F6FF] py-24 px-6"
     >
-      <h1 className="pt-[72px] font-Poppins font-bold text-[60px] px-50  leading-none text-[#000000] mb-8">
+      <h1 className="pt-20 md:pt-18 lg:pt-14 font-Poppins font-bold text-[60px] px-50  leading-none text-[#000000] mb-8">
         AI Virtual Receptionists & Smart Scheduling for <span className="text-[#00A7DE]">Every Industry</span>
       </h1>
 

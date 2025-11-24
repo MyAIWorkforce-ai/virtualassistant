@@ -275,7 +275,7 @@ const plans = [
       <main className="bg-[url('/image/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
 
         {/* HERO SECTION */}
-        <section className="relative w-full h-auto overflow-hidden">
+        <section className=" relative w-full h-auto overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 -z-10">
             <Image
@@ -288,7 +288,7 @@ const plans = [
           </div>
 
           {/* Content Container */}
-          <div className="flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
+          <div className=" flex flex-col items-center justify-center text-center px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
            <motion.div
               className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left"
               initial={{ opacity: 0, y: 50 }}
@@ -1080,7 +1080,7 @@ const plans = [
 
       {/* Transparent Pricing */}
 <ScaleUp>
-  <section id="pricing" className="scroll-mt-[76px] bg-[#F9FAFB] py-20">
+  <section id="pricing" className="scroll-mt-[150px] md:scroll-mt-[90px] lg:scroll-mt-[72px] bg-[#F9FAFB] py-20">
     <div className="max-w-6xl mx-auto px-6 text-center">
       {/* Heading */}
       <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
