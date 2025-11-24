@@ -31,7 +31,7 @@ export default function Navbar() {
     realestateagent: "Real Estate Agent",
     mechanic: "Mechanic",
     plumber: "Plumber",
-    electricians: "Electricians",
+    electricians: "Electrician",
     cleaning: "Window Cleaning",
     beautytherapist: "Beauty Therapist",
     resturant: "Restaurant",
