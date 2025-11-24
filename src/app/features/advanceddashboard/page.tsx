@@ -7,7 +7,7 @@ export default function OnlineIntegration() {
     const cards = [
     {
       icon: "/feature-images/booking.png",
-      title: "Advan CRM:",
+      title: "Advanced CRM:",
       desc: "All client data, history, and interactions in one place.",
     },
     {
