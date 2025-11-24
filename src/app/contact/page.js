@@ -159,7 +159,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   required
-                  placeholder="Admin Assistant"
+                  placeholder="Enter Your Name"
                   value={formData.fullName}
                   onChange={(e) => handleChange("fullName", e.target.value)}
                   className="w-full border rounded-lg px-4 py-2 border-gray-300 text-black placeholder-gray-300 text-regular focus:outline-none focus:ring-2 focus:ring-sky-500"
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   <input
                     type="tel"
                     required
-                    placeholder="1234567890"
+                    placeholder="Enter Your Phone Number"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
                     className={`flex-1 border-t border-b border-r rounded-r-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
@@ -206,7 +206,7 @@ export default function ContactPage() {
                 <input
                   type="email"
                   required
-                  placeholder="Admin123@gmail.com"
+                  placeholder="Enter Your Email Address"
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   className={`w-full border rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 ${
@@ -260,7 +260,7 @@ export default function ContactPage() {
                 <label className="block text-black text-sm mb-2">Message / Comments</label>
                 <textarea
                   rows={4}
-                  placeholder="Your message..."
+                  placeholder="Tell us Whats on Your Mind?"
                   value={formData.message}
                   onChange={(e) => handleChange("message", e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500"
@@ -302,7 +302,7 @@ export default function ContactPage() {
 
             <p className="flex justify-center items-center gap-1">
               📞 Call Us Now:{" "}
-              <a href="tel:+10468068021" className="text-[#797A7D]">
+              <a href="tel:0468068021" className="text-[#797A7D]">
                 0468 068 021
               </a>
             </p>

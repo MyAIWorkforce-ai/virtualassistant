@@ -1,5 +1,4 @@
 "use client";
-import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -111,7 +110,7 @@ const plans = [
   {
     name: "PROFESSIONAL",
     price: 400,
-    description: "Upto 3 Users",
+    description: "Up to 3 Users",
     features: [
       "AI Virtual Assistant 24/7",
       "Advanced Dashboard with Analytics",
@@ -133,7 +132,7 @@ const plans = [
   {
     name: "ENTERPRISE",
     price: 500,
-    description: "Upto 5 Users",
+    description: "Up to 5 Users",
     features: [
       "AI Virtual Assistant 24/7",
       "Advanced Dashboard with Analytics",
@@ -250,10 +249,10 @@ const plans = [
     <>
       {/* Meta Tags */}
       <Head>
-        <title>Australia's Best Al Virtual Receptionist | http://virtualAssistant.com.au</title>
+        <title>Australia's Best AI Virtual Receptionist | http://virtualAssistant.com.au</title>
         <meta
           name="description"
-          content="Designed to save time, cut costs, and boost productivity.Your Al receptionist sounds human and works, speaks, and feels just like your business.Let us take your calls 24/7 and streamline your admin effortlessly"
+          content="Tailored for every service-based industry. Designed to save time, cut costs, and boost productivity. Your AI receptionist sounds human and works, speaks, and feels just like your business. Let us take your calls 24/7 and streamline your admin effortlessly"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
@@ -300,21 +299,15 @@ const plans = [
               <h3 className="text-[#00A7DE] font-semibold tracking-wide">
                 Your Business, Always Answered
               </h3>
- <div className="w-full max-w-full sm:max-w-[620px] min-h-[180px] sm:min-h-[260px] overflow-hidden">
-
-  <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight">
-    <Typewriter
-      words={[
-        "AI Virtual Assistant that works, speaks, and feels like your business — 24/7.",
-      ]}
-           
-  deleteSpeed={0}
-      cursor
-      cursorStyle="|"
-      typeSpeed={60}
-    />
-  </h1>
-</div>
+ <motion.h1 
+  className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight"
+  initial={{ opacity: 0, y: 30 }}
+   whileInView={{ opacity: 1, y: 0 }}
+   transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }} // Added slight delay to offset tag
+   viewport={{ once: true }}
+ >
+   AI Virtual Assistant that works, speaks, and feels like your business — 24/7.
+ </motion.h1>
  <p className="mt-2 text-sm sm:text-base text-[#797A7D]">
                Never miss a call. Never miss a booking.  Always stay one step ahead.
               </p>
@@ -435,7 +428,7 @@ const plans = [
             priority
           />
           <h3 className="text-lg sm:text-1xl font-bold text-black">
-            AI Receptionist-24/7
+            AI Receptionist - 24/7
           </h3>
         </div>
         <p className="text-[#797A7D] font-medium mt-2 text-sm">
@@ -541,7 +534,7 @@ const plans = [
             priority
           />
           <h3 className="text-lg sm:text-1xl font-bold text-black">
-            Smart Ai Assistant For Clients
+            Smart AI Assistant For Clients
           </h3>
         </div>
         <p className="text-[#797A7D] font-medium mt-2 text-sm">
@@ -716,7 +709,7 @@ const plans = [
         </div>
         <p className="text-[#797A7D] font-medium mt-2 text-sm">
           - Website booking widget (simple copy & paste script)<br/>
-          - Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
+          - Website Chatbot for real-time answering queries, booking appointments or conversations (simple copy & paste script)<br/>
           - 24/7 online + phone coverage for clients<br/>
         </p>
         <div className="flex items-center mt-3">
