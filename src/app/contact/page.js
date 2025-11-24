@@ -126,10 +126,11 @@ export default function ContactPage() {
 
       <div className="min-h-screen bg-gradient-to-r from-sky-100 to-white">
         {/* Main Section */}
-        <main className="flex-1 flex flex-col items-center justify-center px-6 py-16">
+        <main className="flex-1 flex flex-col items-center justify-center px-6 py-10 md:py-16">
+          
           {/* Hero */}
           <motion.div
-            className="text-center max-w-2xl mb-10"
+            className="text-center max-w-2xl mb-10 mt-0" /* removed: mt-6 md:mt-10 */
             variants={fadeUp}
             initial="hidden"
             animate="visible"

@@ -381,10 +381,10 @@ const plans = [
       {/* KEY FEATURES SECTION  */}
    <section
   id="features"
-  className="mt-[74px] sm:mt-[0px] py-16 bg-[#F9FAFB]"
+  className="scroll-mt-[72px] pt-16 pb-16 bg-[#F9FAFB]"
   aria-labelledby="key-features-heading"
   role="region"
-><div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+><div className="scroll-mt-[150px] max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Section Title */}
           <h2
             
@@ -398,7 +398,7 @@ const plans = [
           ></div>
 
           {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ">
   {/* Feature 1 */}
   <FadeInOnScroll>
     <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
@@ -1080,7 +1080,7 @@ const plans = [
 
       {/* Transparent Pricing */}
 <ScaleUp>
-  <section id="pricing" className="bg-[#F9FAFB] py-20">
+  <section id="pricing" className="scroll-mt-[70px] bg-[#F9FAFB] py-20">
     <div className="max-w-6xl mx-auto px-6 text-center">
       {/* Heading */}
       <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">

@@ -173,7 +173,7 @@ export default function FormSection() {
             required
           >
             <option value="" className="text-[#D1D5DB]">
-              Search or select your industry
+              Select your industry
             </option>
             <option>Physiotherapist</option>
             <option>Myotherapist</option>

@@ -71,7 +71,7 @@ const Footer = () => {
           <ul className="space-y-2 text-[#797A7D]">
             {[
               { name: "Home", href: "/" },
-              { name: "Features", href: "" },
+              { name: "Features", href: "/#features" },
               { name: "Industries", href: "/industries" },
               { name: "Pricing", href: "/#pricing" },
               { name: "About", href: "/about" },
