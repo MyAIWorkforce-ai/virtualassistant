@@ -140,7 +140,7 @@ const Footer = () => {
             <ul className="space-y-2 text-[#797A7D]">
               {[
                 { name: "Consultant", href: "/industries/consultant" },
-                { name: "Realestate Agent", href: "/industries/realestateagent" },
+                { name: "Real Estate Agent", href: "/industries/realestateagent" },
                 { name: "Mechanic", href: "/industries/mechanic" },
                 { name: "Plumber", href: "/industries/plumber" },
                 { name: "Electrician", href: "/industries/electricians" },
