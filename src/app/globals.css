@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #ffffff;
+  --nav-height: 74px;
 }
 
 @theme inline {
@@ -27,6 +28,7 @@ body {
 html, body {
   margin: 0;
   padding: 0;
+  /* padding-top: 80px; */
   height: 100%;
   overflow-x: hidden; /* prevent horizontal scroll */
 }
@@ -36,9 +38,13 @@ body {
 }
 /* Scroll-triggered animation */
 html {
+  scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
 }
 /* Adjust this value to match your Navbar's height (e.g., 64px or 80px) */
 :target {
   scroll-margin-top: 80px !important; 
 }
+
+h1, h2, h3, .section-heading { scroll-margin-top: calc(var(--nav-height) + 8px); }

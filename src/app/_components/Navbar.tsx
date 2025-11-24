@@ -45,7 +45,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 left-0 z-[100] ">
+    <header className="w-screen bg-white shadow-sm fixed top-0 left-0 z-[100]">
       <div className="flex justify-between items-center h-[74px] max-w-[1440px] w-full mx-auto px-4 md:px-6">
         <Link href="/" className="flex items-center">
           <Image

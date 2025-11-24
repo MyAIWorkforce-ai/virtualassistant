@@ -124,7 +124,7 @@ export default function ContactPage() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-r from-sky-100 to-white">
+      <div className="pt-[72px] min-h-screen bg-gradient-to-r from-sky-100 to-white">
         {/* Main Section */}
         <main className="flex-1 flex flex-col items-center justify-center px-6 py-10 md:py-16">
           
