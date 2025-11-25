@@ -90,14 +90,24 @@ export default function AdvancedDashboard() {
 Take command of your AI operations with one simple, intelligent dashboard. Your Advanced Dashboard brings together client management, analytics, customization, and real-time control — giving you full visibility over how your AI communicates, books, and performs every day.
 It’s not just software — it’s your business’s central control hub.
       </p>
-<a
-  href="https://admin.virtualassistant.com.au/register"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
->
-  Start your free trial
-</a>
+
+ <motion.div className="flex gap-4   items-center" 
+                   initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }} >
+ <motion.button 
+ whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }} 
+  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
+  Start 14 Day Free Trial
+   </motion.button> 
+   <motion.button 
+   whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3 }} 
+    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
+     Book a Demo 
+     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
+     </motion.button> </motion.div>
     </div>
   <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
     <div></div>

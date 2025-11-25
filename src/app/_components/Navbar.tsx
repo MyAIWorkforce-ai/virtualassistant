@@ -45,7 +45,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-screen bg-white shadow-sm fixed top-0 left-0 z-[100]">
+    <header className="w-screen bg-white shadow-sm fixed top-0 left-0 z-[100] ">
       <div className="flex justify-between items-center h-[74px] max-w-[1250px] w-full mx-auto px-4 md:px-6">
         <Link href="/" className="flex items-center">
           <Image
@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:block">
           {/* CORRECTED: Removed unnecessary wrapper divs that caused structural errors */}
-          <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
+          <ul className="flex items-center space-x-6 lg:space-x-8 text-sm font-medium font-poppins">
             
             {/* Main Links */}
             <li>
@@ -207,7 +207,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Sidebar */}
       <div
         className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-40 overflow-y-auto ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -220,7 +219,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        <ul className="flex flex-col space-y-4 p-6 text-sm font-medium">
+        <ul className="flex flex-col space-y-4  font-poppins p-6 text-sm font-medium font-poppins  text-[14px] leading-[1.44] tracking-[-0.04em]">
           <li>
             <Link
               href="/"
@@ -236,7 +235,7 @@ export default function Navbar() {
             <div className="w-full flex flex-col">
               <button
                 onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
-                className="w-full flex justify-between items-center text-black hover:text-[#00A7DE]"
+                className="w-full flex justify-between items-center text-black hover:text-[#00A7DE] font-poppins font-medium text-[14px] leading-[1.44] tracking-[-0.04em]"
               >
                 {/* CORRECTION: Close menu when clicking the Features link */}
                 <Link href="/#features" className="flex-1 text-left" onClick={() => setIsOpen(false)}>
@@ -250,7 +249,7 @@ export default function Navbar() {
                 />
               </button>
               {mobileFeaturesOpen && (
-                <ul className="pl-4 mt-2 space-y-2">
+                <ul className="pl-4 mt-2 space-y-2 font-poppins font-medium text-[14px] leading-[1.44] tracking-[-0.04em]">
                   {[
                     { href: "/features/ai-receptionist", label: "AI Receptionist" },
                     { href: "/features/appointmentscheduling", label: "AI Appointment Scheduling" },
@@ -282,7 +281,7 @@ export default function Navbar() {
             <div className="w-full flex flex-col">
               <button
                 onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
-                className="w-full flex justify-between items-center text-black hover:text-[#00A7DE]"
+                className="w-full flex justify-between items-center text-black hover:text-[#00A7DE] font-poppins font-medium text-[14px] leading-[1.44] tracking-[-0.04em]"
               >
                 {/* CORRECTION: Close menu when clicking the Industries link */}
                 <Link href="/industries" className="flex-1 text-left" onClick={() => setIsOpen(false)}>
@@ -336,7 +335,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/about"
-              className={`${isActive("/about") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"}`}
+              className={`${isActive("/about") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"} font-poppins font-medium text-[14px] leading-[1.44] tracking-[-0.04em]`}
               onClick={() => setIsOpen(false)}
             >
               About
@@ -346,7 +345,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/contact"
-              className={`${isActive("/contact") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"}`}
+              className={`${isActive("/contact") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"} font-poppins font-medium text-[14px] leading-[1.44] tracking-[-0.04em]`}
               onClick={() => setIsOpen(false)}
             >
               Contact Us
@@ -356,7 +355,7 @@ export default function Navbar() {
           <li className="mt-6 pt-4 border-t">
             <Link
               href="https://admin.virtualassistant.com.au/login"
-              className="text-black px-6 py-3 rounded-full font-semibold border-2 mb-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 block text-center"
+              className="text-black px-6 py-3 rounded-full font-semibold font-poppins border-2 mb-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 block text-center font-poppins  text-[14px] leading-[1.44] tracking-[-0.04em]"
               onClick={() => setIsOpen(false)}
             >
               Log In
@@ -366,7 +365,7 @@ export default function Navbar() {
           <li>
             <Link
               href="https://admin.virtualassistant.com.au/register"
-              className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full block text-center"
+              className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-poppins  text-[14px] leading-[1.44] tracking-[-0.04em] font-poppins font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full block text-center"
               onClick={() => setIsOpen(false)}
             >
               Sign Up

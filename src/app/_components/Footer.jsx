@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { slideUp, slideUpChild, staggerContainer } from "../_components/animations/footer";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,25 +38,20 @@ const Footer = () => {
 
           {/* Social Icons */}
 <div className="flex space-x-4 mb-4 pl-3">
-  {[
-    { src: "/industries-images/reuse-icons/tiktok.png", alt: "Tiktok", href: "https://www.tiktok.com/@aivirtual.assistant?_r=1&_t=ZS-918GkvshE1q" },
-    { src: "/industries-images/reuse-icons/linkedln.png", alt: "LinkedIn", href: "#" },
-    { src: "/industries-images/reuse-icons/facebook.png", alt: "Facebook", href: "#" },
-    { src: "/industries-images/reuse-icons/instagram.png", alt: "Instagram", href: "https://www.instagram.com/aivirtual.assistant?igsh=YjNvcjUxdnY5YXl3" },
-  ].map((icon, i) => (
-    <Link 
-      key={i} 
-      href={icon.href} 
-      target="_blank" 
+ {[
+    { icon: <FaTiktok className="text-[#797A7D] w-5 h-5" />, href: "https://www.tiktok.com/@aivirtual.assistant?_r=1&_t=ZS-918GkvshE1q" },
+    { icon: <FaLinkedinIn className="text-[#797A7D] w-5 h-5" />, href: "#" },
+    { icon: <FaFacebookF className="text-[#797A7D] w-5 h-5" />, href: "#" },
+    { icon: <FaInstagram className="text-[#797A7D] w-5 h-5" />, href: "https://www.instagram.com/aivirtual.assistant?igsh=YjNvcjUxdnY5YXl3" },
+  ].map((item, i) => (
+  <Link
+      key={i}
+      href={item.href}
+      target="_blank"
       rel="noopener noreferrer"
+      className="opacity-80 hover:opacity-100 transition"
     >
-      <Image 
-        src={icon.src} 
-        alt={icon.alt} 
-        width={20} 
-        height={20} 
-        priority 
-      />
+      {item.icon}
     </Link>
   ))}
 </div>

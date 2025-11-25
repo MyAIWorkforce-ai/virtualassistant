@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 interface Metric {
   icon: string;
@@ -46,7 +45,7 @@ export default function HeroSection({
                 <motion.p className="text-lg sm:text-2xl text-[#E0F2FE] mb-6"> 
                   {description} 
                   </motion.p>
-                   <motion.div className="flex gap-4 m-6 justify-center items-center" 
+ <motion.div className="flex gap-4 m-6 justify-center items-center" 
                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.8, delay: 0.2 }} >
@@ -64,9 +63,7 @@ export default function HeroSection({
      <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
      </motion.button> 
      </motion.div> </motion.div>
-
-
-      {/* RIGHT IMAGE */}
+  {/* RIGHT IMAGE */}
     <motion.div 
  // Use negative margin to push the container past the right padding (px-12 = 3rem = 12 units)
   className="relative w-full -mr-6 md:-mr-12 md:h-[500px] flex items-end justify-center md:justify-end mt-8 md:mt-0 pb-0"
