@@ -206,34 +206,33 @@ const plans = [
     },
   
   ];
+// Responsive card count
+const [cardCount, setCardCount] = useState(3);
 
-  const [cardCount, setCardCount] = useState(3);
+useEffect(() => {
+  const updateCardCount = () => {
+    if (window.innerWidth < 640) setCardCount(1);      // mobile
+    else if (window.innerWidth < 1024) setCardCount(2); // tablet
+    else setCardCount(3);                               // desktop
+  };
 
-  useEffect(() => {
-    const updateCardCount = () => {
-      if (window.innerWidth < 640) setCardCount(1); // mobile
-      else if (window.innerWidth < 1024) setCardCount(2); // tablet
-      else setCardCount(3); 
-    };
+  updateCardCount();
+  window.addEventListener("resize", updateCardCount);
+  return () => window.removeEventListener("resize", updateCardCount);
+}, []);
 
-    updateCardCount();
-    window.addEventListener("resize", updateCardCount);
-    return () => window.removeEventListener("resize", updateCardCount);
-  }, []);
+// Active slide
+const [activeIndex, setActiveIndex] = useState(0);
+const totalSlides = Math.ceil(testimonials.length / cardCount);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveIndex((prev) =>
+      prev + 1 >= totalSlides ? 0 : prev + 1
+    );
+  }, 9000);
 
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) =>
-        prev + cardCount >= testimonials.length ? 0 : prev + cardCount
-      );
-    }, 9000);
-
-    return () => clearInterval(interval);
-  }, [testimonials.length, cardCount]);
-
+  return () => clearInterval(interval);
+}, [totalSlides]);
 
   //  =========================
   //   //How it works section
@@ -270,8 +269,6 @@ const plans = [
           content="https://virtualassistant.com.au"
         />
       </Head>
-      {/* Main section */}
-
       <main className="bg-[url('/image/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
 
         {/* HERO SECTION */}
@@ -288,7 +285,7 @@ const plans = [
           </div>
 
           {/* Content Container */}
-          <div className=" flex flex-col items-center justify-center text-center px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
+          <div className=" flex flex-col items-center justify-center text-center mt-20 px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
            <motion.div
               className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left"
               initial={{ opacity: 0, y: 50 }}
@@ -320,61 +317,63 @@ const plans = [
                   Get Started
                 </Link>
 
-                <Link
-                  href="/industries"
-                  className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                >
-                  Explore Industries
-                </Link>
               </div>
             </motion.div>
+      
+<div className="flex flex-col items-center justify-center">
+  <motion.div
+    className="flex justify-center items-center w-full py-10 px-6"
+    initial={{ opacity: 0, x: 100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+    viewport={{ once: true }}
+  >
+    <HeroAnimation>
+      <div
+        className="relative w-[300px] h-[200px] sm:w-[400px] sm:h-[260px] md:w-[500px] md:h-[320px] lg:w-[620px] lg:h-[400px] max-w-full -rotate-5 bg-[#00A7DE] py-2 px-2 rounded-2xl overflow-hidden mx-auto"
+      >
+        {(() => {
+          const [index, setIndex] = React.useState(0);
+          const images = ["/image/tab.png", "/image/tab1.png", "/image/tab2.png"];
 
-        
-<motion.div
-  className="flex justify-center items-center w-full py-20 px-6 lg:w-1/2"
-  initial={{ opacity: 0, x: 100 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1, ease: "easeOut" }}
-  viewport={{ once: true }}
->
-  <HeroAnimation>
-    <div
-      className=" relative w-[300px] h-[200px] sm:w-[400px] sm:h-[260px] md:w-[500px] md:h-[320px] lg:w-[620px] lg:h-[400px] max-w-full -rotate-5 bg-[#00A7DE] py-2 px-2 rounded-2xl overflow-hidden  mx-auto"
-    >
-      {(() => {
-        const [index, setIndex] = React.useState(0);
-        const images = ["/image/tab.png", "/image/tab1.png", "/image/tab2.png"];
+          React.useEffect(() => {
+            const interval = setInterval(() => {
+              setIndex((prev) => (prev + 1) % images.length);
+            }, 4000);
+            return () => clearInterval(interval);
+          }, []);
 
-        React.useEffect(() => {
-          const interval = setInterval(() => {
-            setIndex((prev) => (prev + 1) % images.length);
-          }, 4000);
-          return () => clearInterval(interval);
-        }, []);
+          return (
+            <div className="relative w-full h-full">
+              {images.map((src, i) => (
+                <Image
+                  key={i}
+                  src={src}
+                  alt={`Carousel Image ${i + 1}`}
+                  fill
+                  priority
+                  quality={100}
+                  className={`object-contain transition-opacity duration-1000 ease-in-out ${
+                    i === index ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
+          );
+        })()}
+      </div>
+    </HeroAnimation>
+  </motion.div>
 
-        return (
-          <div className="relative w-full h-full">
-            {images.map((src, i) => (
-              <Image
-                key={i}
-                src={src}
-                alt={`Carousel Image ${i + 1}`}
-                fill
-                priority
-                quality={100}
-                className={`object-contain transition-opacity duration-1000 ease-in-out ${
-                  i === index ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
-          </div>
-        );
-      })()}
-    </div>
-  </HeroAnimation>
-</motion.div>
+  <Link
+    href="/industries"
+    className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+  >
+    Explore Industries
+  </Link>
 
-          </div>
+</div>
+ </div>
         </section>
       </main>
 
@@ -440,13 +439,6 @@ const plans = [
           - Call forwarding option with clear step-by-step instructions<br/>
         </p>
         <div className="flex items-center mt-3">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="Thumbs Up"
-            width={16}
-            height={16}
-            priority
-          />
           <p className="ml-1 text-xs text-[#6B7280]">98% Satisfaction</p>
         </div>
       </div>
@@ -489,16 +481,9 @@ const plans = [
           - Fully automated: books, reschedules & cancels appointments<br/>
           - Works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
           - Sends SMS & email confirmations and reminders<br/>
+          <br/>
         </p>
         <div className="flex items-center mt-3">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="thumbs-up"
-            width={16}
-            height={16}
-            priority
-            aria-hidden="true"
-          />
           <p className="ml-1 text-xs text-[#6B7280]">95% Satisfaction</p>
         </div>
       </div>
@@ -544,14 +529,6 @@ const plans = [
           - Customisable personality: friendly, professional, or casual<br/>
         </p>
         <div className="flex items-center mt-3">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="thumbs-up"
-            width={16}
-            height={16}
-            priority
-            aria-hidden="true"
-          />
           <p className="ml-1 text-xs text-[#6B7280]">92% Satisfaction</p>
         </div>
       </div>
@@ -597,14 +574,6 @@ const plans = [
           - Build a complete client history file automatically<br/>
         </p>
         <div className="flex items-center mt-3">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="thumbs-up"
-            width={16}
-            height={16}
-            priority
-            aria-hidden="true"
-          />
           <p className="ml-1 text-xs text-[#6B7280]">89% Satisfaction</p>
         </div>
       </div>
@@ -631,28 +600,21 @@ const plans = [
 
       <div className="p-4 sm:p-6 flex flex-col text-left">
         <div className="flex items-center gap-2">
-          <Image
-            src="/image/branded-icon.png"
-            alt="Branded dashboard icon"
-            width={20}
-            height={28}
-            priority
-          />
           <h3 className="text-lg sm:text-1xl font-bold text-black">
             Advanced Dashboard
           </h3>
         </div>
 
         <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          Your control centre gives you everything in one place:<br/>
-          - Advanced CRM with client data & history<br/>
-          - AI Smart Calendar: colour-coded & auto-updating<br/>
+          Your control centre gives you everything in one place.<br/>
+          - Advanced CRM with client data & history.<br/>
+          - AI Smart Calendar, colour-coded & auto-updating.<br/>
             - One clean dashboard replaces multiple tools.<br/>
         </p>
 
         {expanded && (
           <div className="mt-3 text-[#797A7D] text-sm transition-all duration-300 ease-in-out">
-            - Front-End Prompts: Update what your AI says across phone, site, and chat.<br/>
+            - Front-End Prompts, Update what your AI says across phone, site, and chat.<br/>
             - Fully Customisable Branding: Upload logo, set theme colours, and personalise your system.<br/>
           </div>
         )}
@@ -665,14 +627,6 @@ const plans = [
         </button>
 
         <div className="flex items-center mt-1">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="thumbs-up"
-            width={16}
-            height={16}
-            priority
-            aria-hidden="true"
-          />
           <p className="ml-1 text-xs text-[#6B7280]">96% Satisfaction</p>
         </div>
       </div>
@@ -711,24 +665,16 @@ const plans = [
           - Website booking widget (simple copy & paste script)<br/>
           - Website Chatbot for real-time answering queries, booking appointments or conversations (simple copy & paste script)<br/>
           - 24/7 online + phone coverage for clients<br/>
+          <br/>
         </p>
         <div className="flex items-center mt-3">
-          <Image
-            src="/image/thumbs-up.png"
-            alt="thumbs-up"
-            width={16}
-            height={16}
-            priority
-            aria-hidden="true"
-          />
           <p className="ml-1 text-xs text-[#6B7280]">94% Satisfaction</p>
         </div>
       </div>
     </article>
   </FadeInOnScroll>
 </div>
-
-        </div>
+ </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -1137,8 +1083,7 @@ const plans = [
             monthlyPrice && (monthlyPrice * 12 * 0.8).toFixed(0); // 20% off
           const displayPrice = isYearly ? yearlyPrice : monthlyPrice;
           const cycleText = isYearly ? "/year" : monthlyPrice ? "/month" : "";
-
-          return (
+ return (
             <ScaleUp key={index} delay={index * 0.1}>
               <div
                 className={`relative bg-white border rounded-2xl shadow-md p-8 flex flex-col text-left transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full min-h-[600px] w-full sm:w-80 ${
@@ -1158,21 +1103,28 @@ const plans = [
                 </h3>
                 <p className="text-gray-500 mb-4">{plan.description}</p>
 
-                {/* Dynamic Price */}
-                <div className="text-3xl font-bold text-gray-800 mb-6">
-                  {displayPrice ? `$${displayPrice}` : "Custom"}
-                  <span className="text-base font-normal text-gray-500">
-                    {cycleText}
-                  </span>
+{/* Dynamic Price */}
+<div className="text-3xl font-bold text-gray-800 mb-6">
+  {displayPrice ? `$${displayPrice}` : "Custom"}
+  <span className="text-base font-normal text-gray-500">
+    {cycleText}
+  </span>
 
-                  {billingCycle === "yearly" && monthlyPrice && (
-                    <span className="block text-sm text-gray-400 mt-1">
-                      (${(monthlyPrice * 0.8).toFixed(0)} / month)
-                    </span>
-                  )}
-                </div>
+  {/* Weekly price (20% off the monthly amount) */}
+  {billingCycle === "monthly" && monthlyPrice && (
+    <span className="block text-sm text-gray-400 mt-1">
+      (${Math.round((monthlyPrice * 0.8) / 4.33)} / week)
+    </span>
+  )}
 
-                <ul className="space-y-3 flex-1">
+  {/* Monthly equivalent when Yearly is selected */}
+  {billingCycle === "yearly" && monthlyPrice && (
+    <span className="block text-sm text-gray-400 mt-1">
+      (${(monthlyPrice * 0.8).toFixed(0)} / month)
+    </span>
+  )}
+</div>
+ <ul className="space-y-3 flex-1">
                   {plan.features.map((feature, i) => (
                     <li
                       key={i}
@@ -1215,8 +1167,7 @@ const plans = [
 </ScaleUp>
 
       {/* WHAT OUR CLIENT SAY SECTION */}
-
-<section className="bg-gradient-to-r from-blue-50 to-white py-16 px-15 sm:px-6 lg:px-8 font-poppins">
+<section className="bg-gradient-to-r from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8 font-poppins">
   <div className="max-w-7xl mx-auto text-center">
     <h2 className="text-4xl font-bold text-[#00A7DE] relative inline-block mb-6">
       What Our Clients Say
@@ -1227,25 +1178,24 @@ const plans = [
       <br /> with our virtual receptionist solution.
     </p>
 
-    <div className="overflow-hidden text-left">
+    {/* Carousel */}
+    <div className="overflow-hidden">
       <motion.div
-        className="flex gap-6"
-        animate={{
-          x: `-${(100 / cardCount) * activeIndex}%`,
-        }}
+        className="flex gap-0 sm:gap-4 lg:gap-6"
+        animate={{ x: `-${activeIndex * 100}%` }} 
         transition={{ type: "spring", stiffness: 80, damping: 20 }}
       >
         {testimonials.map((t, i) => (
           <div
             key={i}
-            className={`flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between`}
+            className="flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between"
           >
-            <div className="flex flex-col mb-6">
-              <div className="mb-5">
-                <Image src={t.stars} alt="Stars" width={300} height={80} />
-              </div>
-              <p className="text-gray-700 text-[16px]">{t.quote}</p>
-            </div>
+          <div className="flex flex-col mb-6">
+  <div className="mb-5 text-yellow-400 text-lg flex justify-start gap-1">
+    ★ ★ ★ ★ ★
+  </div>
+  <p className="text-gray-700 text-[16px]">{t.quote}</p>
+</div>
 
             <div className="flex items-center gap-4 mt-auto">
               <div className="w-16 h-16 relative flex-shrink-0">
@@ -1266,8 +1216,22 @@ const plans = [
         ))}
       </motion.div>
     </div>
+
+    {/* Navigation Dots */}
+    <div className="flex justify-center gap-2 mt-6">
+      {Array.from({ length: totalSlides }).map((_, idx) => (
+        <button
+          key={idx}
+          onClick={() => setActiveIndex(idx)}
+          className={`w-3 h-3 rounded-full ${
+            activeIndex === idx ? "bg-[#00A7DE]" : "bg-gray-300"
+          }`}
+        />
+      ))}
+    </div>
   </div>
 </section>
+
     </>
   );
 }

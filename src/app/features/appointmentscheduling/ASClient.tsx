@@ -3,10 +3,6 @@
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
-
-
-
  const cards = [
     {
       title: "Save Hours of Manual Work:",
@@ -29,7 +25,6 @@ import { motion } from "framer-motion";
 export default function ASClient() {
   return (
     <div className="mt-15">
-      {/* SEO Meta */}
       <Head>
         <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
         <meta
@@ -95,14 +90,24 @@ export default function ASClient() {
       automatically manages scheduling, reminders, and rescheduling —
       keeping your calendar full and your clients happy.
     </p>
-<a
-  href="https://admin.virtualassistant.com.au/register"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
->
-  Start your free trial
-</a>
+ <motion.div className="flex gap-4" 
+                   initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }} >
+ <motion.button 
+ whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }} 
+  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
+  Start 14 Day Free Trial
+   </motion.button> 
+   <motion.button 
+   whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3 }} 
+    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
+     Book a Demo 
+     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
+     </motion.button>
+      </motion.div>
   </div>
 </motion.div>
 </motion.section>

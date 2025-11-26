@@ -39,7 +39,7 @@ export default function ExploreOtherIndustries({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="font-poppins text-[#00A7DE] font-bold text-[51px] leading-[40px] tracking-[0] text-center"
+      className="font-poppins text-[#00A7DE] font-bold text-[51px] leading-[40px] mb-2 tracking-[0] text-center"
     >
       Explore Other Industries
     </motion.h2>

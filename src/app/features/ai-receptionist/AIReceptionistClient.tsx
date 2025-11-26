@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Image from "next/image";
 import { motion } from "framer-motion";
 const capabilities = [
     {
@@ -49,7 +50,7 @@ export default function AIReceptionistClient() {
                 />
             </Head>
             {/*  FIRST SECTION  */}
-            {/* ----------- HERO SECTION ----------- */}
+
       <motion.section
   className="relative flex items-center justify-between min-h-[100vh] px-0"
   style={{
@@ -60,26 +61,36 @@ export default function AIReceptionistClient() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
 >
-<div className="z-10 flex flex-col justify-center max-w-md md:max-w-lg px-4 md:px-6 py-20 text-white space-y-6">
-  <div className="inline-block bg-[#E0F4FB] text-[#0086B3] px-3 py-1 rounded-full text-xs font-medium font-poppins mb-4 max-w-max">
-    Your Business, Always Open
+{/* Left Content */}
+  <div className="z-10 flex flex-col justify-center max-w-full md:max-w-lg text-white space-y-6 pl-4 md:pl-20 lg:pl-16 mt-12">
+    <div className="inline-block bg-[#E0F4FB] text-[#0086B3] px-3 py-1 rounded-full text-xs font-medium font-poppins mb-4 max-w-max">
+      Your Business, Always Open
+    </div>
+    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
+      AI Receptionist-24/7 Coverage
+    </h1>
+    <p className="text-base md:text-lg text-gray-100 max-w-md">
+      Never miss a Call, Booking or Opportunity again. Deliver instant, professional phone support—day or night—with our intelligent AI receptionist answering every customer, every time.
+    </p>
+ <motion.div className="flex gap-4" 
+                   initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.8, delay: 0.2 }} >
+ <motion.button 
+ whileHover={{ scale: 1.05 }}
+  transition={{ duration: 0.3 }} 
+  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
+  Start 14 Day Free Trial
+   </motion.button> 
+   <motion.button 
+   whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3 }} 
+    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
+     Book a Demo 
+     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
+     </motion.button>
+      </motion.div>
   </div>
-  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
-    AI Receptionist-24/7 Coverage
-  </h1>
-  <p className="text-base md:text-lg text-gray-100 max-w-md">
-    Never miss a Call, Booking or Opportunity again. Deliver instant, professional phone support—day or night—with our intelligent AI receptionist answering every customer, every time.
-  </p>
-
-  <a
-    href="https://admin.virtualassistant.com.au/register"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white text-[#00A7DE] px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center max-w-max"
-  >
-    Start your free trial
-  </a>
-</div>
 {/* Right Image */}
 <div className="relative bottom-0 right-0 w-full md:w-1/2 h-full">
   <img
@@ -90,7 +101,6 @@ export default function AIReceptionistClient() {
     className="md:mt-30 md:ml-55 lg:mt-30 lg:ml-55 rounded-lg"
   />
 </div>
-
 </motion.section>
 
             {/* SECOND SECTION */}
