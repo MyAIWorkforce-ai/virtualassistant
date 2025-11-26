@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Australia's Best AI Virtual Receptionist | VirtualAssistant.com.au",
-  description: "Tailored for every service-based industry. Designed to save time, cut costs, and boost productivity. Your AI receptionist sounds human and works, speaks, and feels just like your business. Let us take your calls 24/7 and streamline your admin effortlessly",
+  description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
   keywords: "best ai virtual receptionist australia, top virtual receptionist service, 24/7 ai call answering australia, ai receptionist for small business, booking automation australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin"
 };
 
@@ -28,8 +28,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+         {/* Google Tag Manager */}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDM9BTM7');</script>
+ {/* End Google Tag Manager */}
+      </head>
+      
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-    
+
+{/* Google Tag Manager (noscript) */}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDM9BTM7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ {/* End Google Tag Manager (noscript) */}
+        
         <Navbar/>
     {children}
     <Footer/>
