@@ -39,10 +39,10 @@ const Footer = () => {
           {/* Social Icons */}
 <div className="flex space-x-4 mb-4 pl-3">
  {[
-    { icon: <FaTiktok className="text-[#797A7D] w-5 h-5" />, href: "https://www.tiktok.com/@aivirtual.assistant?_r=1&_t=ZS-918GkvshE1q" },
-    { icon: <FaLinkedinIn className="text-[#797A7D] w-5 h-5" />, href: "#" },
-    { icon: <FaFacebookF className="text-[#797A7D] w-5 h-5" />, href: "#" },
-    { icon: <FaInstagram className="text-[#797A7D] w-5 h-5" />, href: "https://www.instagram.com/aivirtual.assistant?igsh=YjNvcjUxdnY5YXl3" },
+    { icon: <FaTiktok className="text-[#797A7D] w-5 h-5" />, href: "https://www.tiktok.com/@aivirtual.assistant" },
+    { icon: <FaLinkedinIn className="text-[#797A7D] w-5 h-5" />, href: "https://www.linkedin.com/company/virtualassistant-com-au/?viewAsMember=true" },
+    { icon: <FaFacebookF className="text-[#797A7D] w-5 h-5" />, href: "https://www.facebook.com/share/17M463fZ7Z/?mibextid=wwXIfr" },
+    { icon: <FaInstagram className="text-[#797A7D] w-5 h-5" />, href: "https://www.instagram.com/aivirtual.assistant" },
   ].map((item, i) => (
   <Link
       key={i}
