@@ -136,7 +136,7 @@
         "description": "Rapid scheduling for power outages, short circuits, and urgent electrical faults."
       },
       {
-        "icon": "/industries-images/electricians/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
         "description": "Answer common inquiries via chat, voice, or SMS, and assist with troubleshooting and dispatching.."
       }

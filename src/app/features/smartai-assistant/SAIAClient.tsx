@@ -45,74 +45,83 @@ export default function SAIAClient() {
 
 
             {/*  FIRST SECTION  */}
- <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="relative min-h-[100vh] flex items-center justify-center overflow-hidden"
-    >
-      {/* Background Image */}
-      <Image
-        src="/feature-images/smartai-assistant.png" 
-        alt="AI Assistant"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-left"
-      />
-      <div className="relative z-10 w-full max-w-6xl mx-auto  mt-20 px-6 md:px-12 py-20 grid md:grid-cols-2 gap-10 items-center">
-        <div></div>
-        <div className="bg-[rgba(82,85,90,0.35)] backdrop-blur-xl p-10 rounded-[30px] text-white shadow-lg max-w-xl ">
-          <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-            AI that talks, helps, and converts
-          </div>
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative min-h-[100vh] flex items-center justify-center overflow-hidden"
+>
+  {/* Background Image */}
+  <Image
+    src="/feature-images/smartai-assistant.png" 
+    alt="AI Assistant"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-left"
+  />
 
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
-            Smart AI Assistant<br />for Clients
-          </h1>
+  <div className="relative z-10 w-full max-w-6xl mx-auto mt-20 px-4 sm:px-6 md:px-12 py-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+    <div className="w-full h-full"></div>
 
-          <p className="text-white/90 leading-relaxed mb-6 font-poppins">
-            Your Smart AI Assistant answers questions, explains services, and 
-            manages client requests with a tone and personality that fits your 
-            brand perfectly. Give your clients the clarity they need, right when 
-            they need it.
-          </p>
-  {/* BUTTONS */}
-           <motion.div
-             className="flex gap-4 m-3 "
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
-           >
-           <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Start 14 Day Free Trial
-             </motion.button></Link>
-             <Link
-                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Book a Demo
-               <Image
-                 src="/industries-images/reuse-icons/demo-button.png"
-                 alt="demo"
-                 width={14}
-                 height={14}
-                 priority
-               />
-             </motion.button></Link>
-             
- </motion.div>
-        </div>
-
+    <div className="bg-[rgba(82,85,90,0.35)] backdrop-blur-xl p-6 sm:p-8 md:p-10 rounded-[30px] text-white shadow-lg max-w-full md:max-w-xl mx-auto md:mx-0">
+      <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+        AI that talks, helps, and converts
       </div>
-    </motion.section>
+
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug sm:leading-tight md:leading-tight mb-4 font-poppins">
+        Smart AI Assistant<br />for Clients
+      </h1>
+
+      <p className="text-white/90 leading-relaxed mb-6 font-poppins text-sm sm:text-base">
+        Your Smart AI Assistant answers questions, explains services, and 
+        manages client requests with a tone and personality that fits your 
+        brand perfectly. Give your clients the clarity they need, right when 
+        they need it.
+      </p>
+
+{/* BUTTONS */}
+<motion.div
+  className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start items-center"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
+  <Link
+    href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
+  >
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+    >
+      Start 14 Day Free Trial
+    </motion.button>
+  </Link>
+
+  <Link
+    href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"
+  >
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+    >
+      Book a Demo
+      <Image
+        src="/industries-images/reuse-icons/demo-button.png"
+        alt="demo"
+        width={14}
+        height={14}
+        priority
+      />
+    </motion.button>
+  </Link>
+</motion.div>
+
+    </div>
+  </div>
+</motion.section>
 
 
             {/*  SECOND SECTION*/}
