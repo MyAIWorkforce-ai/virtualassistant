@@ -761,7 +761,7 @@ useEffect(() => {
                 {
                   title: "Industry Ready",
                   description:
-                    "From healthcare to wellness, our solution adapts to your industry’s specific needs and requirements.",
+                    "A smart solution that adapts effortlessly to any service industry, no matter your niche.",
                   icon: "/image/Tick-icon.png",
                 },
                 {
