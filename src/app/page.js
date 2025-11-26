@@ -175,8 +175,7 @@ const plans = [
     {
       name: " Hannah Lee",
       title: "Founder, FitWithHannah Coaching",
-      quote:
-"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
+      quote:"My clients are impressed that they can book sessions or ask questions at any time. The AI feels natural and keeps my schedule full — I can’t imagine going back!",
       image: "/image/hannah.png",
       stars: "/image/star5.png",
     },
@@ -310,12 +309,35 @@ useEffect(() => {
               </p>
 
               <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
-                <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer"
-                  className="bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
-                >
-                  Get Started
-                </Link>
+<Link
+  href="https://admin.virtualassistant.com.au/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold 
+             transition-all duration-300 ease-in-out 
+             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 
+             overflow-hidden group
+             hover:py-5"   // <-- Smoothly increases vertical padding
+>
+  {/* Default text */}
+  <span className="block transition-opacity duration-300 group-hover:opacity-0 whitespace-nowrap">
+    Start 14 Day Free Trial
+  </span>
+
+  {/* Hover text */}
+  <span className="absolute inset-0 flex items-center justify-center px-6 text-center leading-tight 
+                   opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+    Create your own Virtual Receptionist in under 5 minutes.
+  </span>
+</Link>
+
+
+ <Link
+     href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"
+    className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+  >
+    Book a Demo
+  </Link>
 
               </div>
             </motion.div>
@@ -438,9 +460,6 @@ useEffect(() => {
           - Dedicated business number included<br/>
           - Call forwarding option with clear step-by-step instructions<br/>
         </p>
-        <div className="flex items-center mt-3">
-          <p className="ml-1 text-xs text-[#6B7280]">98% Satisfaction</p>
-        </div>
       </div>
     </article>
   </FadeInOnScroll>
@@ -477,15 +496,11 @@ useEffect(() => {
             AI Appointment Scheduling
           </h3>
         </div>
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          - Fully automated: books, reschedules & cancels appointments<br/>
-          - Works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
-          - Sends SMS & email confirmations and reminders<br/>
-          <br/>
-        </p>
-        <div className="flex items-center mt-3">
-          <p className="ml-1 text-xs text-[#6B7280]">95% Satisfaction</p>
-        </div>
+    <p className="text-[#797A7D] font-medium mt-3 text-sm">
+  <span className="block mb-1.5">- Fully automated, books, reschedules & cancels appointments</span>
+  <span className="block mb-1.5">- Works seamlessly with Google Calendar, Outlook Calendar & Cal.com</span>
+  <span className="block">- Sends SMS & email confirmations and reminders</span>
+</p>
       </div>
     </article>
   </FadeInOnScroll>
@@ -528,9 +543,6 @@ useEffect(() => {
           - Handles reschedules or cancellations smoothly<br/>
           - Customisable personality: friendly, professional, or casual<br/>
         </p>
-        <div className="flex items-center mt-3">
-          <p className="ml-1 text-xs text-[#6B7280]">92% Satisfaction</p>
-        </div>
       </div>
     </article>
   </FadeInOnScroll>
@@ -573,9 +585,6 @@ useEffect(() => {
           - Upload photos or documents linked to appointments<br/>
           - Build a complete client history file automatically<br/>
         </p>
-        <div className="flex items-center mt-3">
-          <p className="ml-1 text-xs text-[#6B7280]">89% Satisfaction</p>
-        </div>
       </div>
     </article>
   </FadeInOnScroll>
@@ -615,7 +624,7 @@ useEffect(() => {
         {expanded && (
           <div className="mt-3 text-[#797A7D] text-sm transition-all duration-300 ease-in-out">
             - Front-End Prompts, Update what your AI says across phone, site, and chat.<br/>
-            - Fully Customisable Branding: Upload logo, set theme colours, and personalise your system.<br/>
+            - Fully Customisable Branding, Upload logo, set theme colours, and personalise your system.<br/>
           </div>
         )}
 
@@ -625,10 +634,6 @@ useEffect(() => {
         >
           {expanded ? "Hide" : "Read more..."}
         </button>
-
-        <div className="flex items-center mt-1">
-          <p className="ml-1 text-xs text-[#6B7280]">96% Satisfaction</p>
-        </div>
       </div>
     </article>
   </FadeInOnScroll>
@@ -667,9 +672,6 @@ useEffect(() => {
           - 24/7 online + phone coverage for clients<br/>
           <br/>
         </p>
-        <div className="flex items-center mt-3">
-          <p className="ml-1 text-xs text-[#6B7280]">94% Satisfaction</p>
-        </div>
       </div>
     </article>
   </FadeInOnScroll>
@@ -808,7 +810,7 @@ useEffect(() => {
                   transition-all duration-300 ease-in-out
                   hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  Start Free Trial
+                  Start 14 Day Free Trial
                 </Link>
 
                 <Link
@@ -818,7 +820,7 @@ useEffect(() => {
                hover:bg-[#00A7DE] hover:text-white
                  hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
                 >
-                  Schedule Demo
+                  Book a Demo
                 </Link>
               </div>
             </RotateIn>
@@ -1110,12 +1112,12 @@ useEffect(() => {
     {cycleText}
   </span>
 
-  {/* Weekly price (20% off the monthly amount) */}
-  {billingCycle === "monthly" && monthlyPrice && (
-    <span className="block text-sm text-gray-400 mt-1">
-      (${Math.round((monthlyPrice * 0.8) / 4.33)} / week)
-    </span>
-  )}
+{/* Weekly price (Monthly / 4) */}
+{billingCycle === "monthly" && monthlyPrice && (
+  <span className="block text-sm text-gray-400 mt-1">
+    (${Math.round(monthlyPrice / 4)} / week)
+  </span>
+)}
 
   {/* Monthly equivalent when Yearly is selected */}
   {billingCycle === "yearly" && monthlyPrice && (

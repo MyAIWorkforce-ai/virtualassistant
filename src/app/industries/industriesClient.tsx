@@ -169,35 +169,74 @@ const HospitalityOther = [
                     content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
                 />
             </Head>
+<motion.section
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="flex flex-col items-center justify-center text-center 
+             bg-gradient-to-r from-[#F0F9FF] to-[#E8F6FF] 
+             py-20 px-4 md:py-24 md:px-6"
+>
+  <h1
+    className="font-Poppins font-bold mt-6
+               text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px]
+               leading-tight md:leading-none 
+               text-[#000000] mb-6 sm:mb-8"
+  >
+    AI Virtual Receptionists & Smart Scheduling for{" "}
+    <span className="text-[#00A7DE]">Every Industry</span>
+  </h1>
 
+  {/* Subtitle */}
+  <p
+    className="font-Poppins 
+               text-[14px] sm:text-[16px] md:text-[20px] 
+               text-gray-700 
+               max-w-xl sm:max-w-2xl md:max-w-3xl 
+               mb-8 md:mb-10 px-2"
+  >
+    Choose your profession and discover how AI can automate your bookings,
+    reminders, and client management
+  </p>
 
-  <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="flex flex-col items-center justify-center text-center bg-gradient-to-r from-[#F0F9FF]  to-[#E8F6FF] py-24 px-6"
+  {/* Buttons */}
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+    {/* Trial Button */}
+    <Link
+      href="https://admin.virtualassistant.com.au/register"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      <h1 className="pt-20 md:pt-18 lg:pt-14 font-Poppins font-bold text-[60px] px-50  leading-none text-[#000000] mb-8">
-        AI Virtual Receptionists & Smart Scheduling for <span className="text-[#00A7DE]">Every Industry</span>
-      </h1>
-
-      <p className="font-Poppins text-[20px] font-normal text-gray-700 max-w-3xl mb-10 px-15">
-        Choose your profession and discover how AI can automate your bookings, reminders, and client management
-      </p>
- <Link
-                        href="https://admin.virtualassistant.com.au/register"
-                        target="_blank"
-                        rel="noopener noreferrer">
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-[#0097DA] text-white font-Poppins font-medium text-[18px] px-8 py-3 rounded-full shadow-md hover:bg-[#007EB8] transition"
+        className="bg-[#0097DA] text-white font-Poppins font-medium
+                   text-[14px] sm:text-[16px] md:text-[18px]
+                   px-6 py-2.5 sm:px-8 sm:py-3
+                   rounded-full shadow-md
+                   hover:bg-[#007EB8] transition"
       >
-        Find Your Solution
-      </motion.button></Link>
-    </motion.section>
+        Start 14 Day Free Trial
+      </motion.button>
+    </Link>
 
+    {/* Demo Button */}
+    <Link
+      href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black font-Poppins font-medium 
+                 text-[14px] sm:text-[16px] md:text-[18px]
+                 px-6 py-2.5 sm:px-8 sm:py-3
+                 rounded-full border-2 border-[#00A7DE]
+                 transition-all duration-300 ease-in-out
+                 hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+    >
+      Book a Demo
+    </Link>
+  </div>
+</motion.section>
 
  <motion.section
       initial={{ opacity: 0, y: 40 }}

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -72,24 +73,38 @@ export default function AIReceptionistClient() {
     <p className="text-base md:text-lg text-gray-100 max-w-md">
       Never miss a Call, Booking or Opportunity again. Deliver instant, professional phone support—day or night—with our intelligent AI receptionist answering every customer, every time.
     </p>
- <motion.div className="flex gap-4" 
-                   initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                     transition={{ duration: 0.8, delay: 0.2 }} >
- <motion.button 
- whileHover={{ scale: 1.05 }}
-  transition={{ duration: 0.3 }} 
-  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
-  Start 14 Day Free Trial
-   </motion.button> 
-   <motion.button 
-   whileHover={{ scale: 1.05 }}
-    transition={{ duration: 0.3 }} 
-    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
-     Book a Demo 
-     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
-     </motion.button>
-      </motion.div>
+  {/* BUTTONS */}
+           <motion.div
+             className="flex gap-4 m-3 "
+             initial={{ opacity: 0, y: 30 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.2 }}
+           >
+           <Link
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Start 14 Day Free Trial
+             </motion.button></Link>
+             <Link
+                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Book a Demo
+               <Image
+                 src="/industries-images/reuse-icons/demo-button.png"
+                 alt="demo"
+                 width={14}
+                 height={14}
+                 priority
+               />
+             </motion.button></Link>
+             
+ </motion.div>
   </div>
 {/* Right Image */}
 <div className="relative bottom-0 right-0 w-full md:w-1/2 h-full">

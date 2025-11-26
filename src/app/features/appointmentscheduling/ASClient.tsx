@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
@@ -41,7 +41,7 @@ export default function ASClient() {
 <motion.section
   initial="hidden"
   animate="show"
-  className="relative flex flex-col md:flex-row items-center overflow-hidden font-[Poppins] py-6 sm:py-16 md:py-8"
+  className="relative flex flex-col md:flex-row items-center overflow-hidden font-Poppins py-6 sm:py-16 md:py-8"
   style={{
     backgroundImage: "url('/feature-images/appointmentimage.png')",
     backgroundSize: "cover",
@@ -49,7 +49,7 @@ export default function ASClient() {
     backgroundRepeat: "no-repeat",
   }}
 >
-  {/* Left Side Image */}
+
 <motion.div className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-start">
   <div
    className="
@@ -73,16 +73,16 @@ export default function ASClient() {
 </motion.div>
 
 <motion.div
-  className="relative z-20 p-8 sm:p-10 md:p-12 font-poppins text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]"
+  className="relative z-20 p-8 sm:p-10 md:p-12  text-white shadow-lg rounded-l-[30px] w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-0 max-h-[500px]"
   style={{
     background: "linear-gradient(to bottom, #3596D3, #72D0FF)",
   }}
 >
   <div className="text-white max-w-lg space-y-6">
-    <div className="inline-block bg-[#E8F6FF] font-poppins text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
+    <div className="inline-block bg-[#E8F6FF]  text-[#00A7DE] px-4 sm:px-6 py-2 rounded-full font-medium text-xs sm:text-sm tracking-wide shadow-sm">
       Smart, Seamless, Always On
     </div>
-    <h1 className="text-3xl md:text-5xl  font-poppinsfont-bold leading-tight">
+    <h1 className="text-3xl md:text-5xl font-bold leading-tight">
       AI Appointment Scheduling
     </h1>
     <p className="text-lg font-poppins text-gray-200">
@@ -90,24 +90,38 @@ export default function ASClient() {
       automatically manages scheduling, reminders, and rescheduling —
       keeping your calendar full and your clients happy.
     </p>
- <motion.div className="flex gap-4" 
-                   initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                     transition={{ duration: 0.8, delay: 0.2 }} >
- <motion.button 
- whileHover={{ scale: 1.05 }}
-  transition={{ duration: 0.3 }} 
-  className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" > 
-  Start 14 Day Free Trial
-   </motion.button> 
-   <motion.button 
-   whileHover={{ scale: 1.05 }}
-    transition={{ duration: 0.3 }} 
-    className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]" >
-     Book a Demo 
-     <Image src="/industries-images/reuse-icons/demo-button.png" alt="demo" width={14} height={14} priority /> 
-     </motion.button>
-      </motion.div>
+   {/* BUTTONS */}
+           <motion.div
+             className="flex gap-4 m-3 "
+             initial={{ opacity: 0, y: 30 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.2 }}
+           >
+           <Link
+                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Start 14 Day Free Trial
+             </motion.button></Link>
+             <Link
+                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
+               whileHover={{ scale: 1.05 }}
+               transition={{ duration: 0.3 }}
+               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+             >
+               Book a Demo
+               <Image
+                 src="/industries-images/reuse-icons/demo-button.png"
+                 alt="demo"
+                 width={14}
+                 height={14}
+                 priority
+               />
+             </motion.button></Link>
+             
+ </motion.div>
   </div>
 </motion.div>
 </motion.section>
