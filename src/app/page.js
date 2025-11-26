@@ -303,10 +303,10 @@ useEffect(() => {
    transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }} // Added slight delay to offset tag
    viewport={{ once: true }}
  >
-   AI Virtual Assistant that works, speaks, and feels like your business — 24/7.
+   AI Virtual Receptionist for Service Businesses in Australia.
  </motion.h1>
  <p className="mt-2 text-sm sm:text-base text-[#797A7D]">
-               Never miss a call. Never miss a booking.  Always stay one step ahead.
+               Never miss a call, booking or opportunity again!
               </p>
 
               <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
