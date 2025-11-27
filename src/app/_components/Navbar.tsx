@@ -11,8 +11,6 @@ export default function Navbar() {
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
 
   const pathname = usePathname();
-
-
   const industryNames: Record<string, string> = {
     physiotherapy: "Physiotherapist",
     myotherapist: "Myotherapist",
@@ -27,7 +25,6 @@ export default function Navbar() {
     accountant: "Accountant",
     lawyer: "Lawyer",
     consultant: "Consultant",
-    // CORRECTION: Client Issue #4 - Real Estate Agent
     realestateagent: "Real Estate Agent",
     mechanic: "Mechanic",
     plumber: "Plumber",
@@ -43,16 +40,15 @@ export default function Navbar() {
     if (path === "/") return pathname === "/";
     return pathname === path || pathname.startsWith(path);
   };
-
   return (
     <header className="w-screen bg-white shadow-sm fixed top-0 left-0 z-[100] ">
-      <div className="flex justify-between items-center h-[74px] max-w-[1250px] w-full mx-auto px-4 md:px-6">
+      <div className="flex justify-between items-center h-[80px] max-w-[1250px] w-full mx-auto px-4 md:px-6">
         <Link href="/" className="flex items-center">
           <Image
             src="/image/logo1.png"
             alt="YourBrand Logo"
-            width={177}
-            height={40}
+            width={230}
+            height={60}
             className="pl-4"
           />
         </Link>
@@ -184,7 +180,7 @@ export default function Navbar() {
             </li>
             
             {/* Buttons positioned outside the main links, but inside the ul for structure */}
-            <li className="flex gap-2 ml-8"> 
+            <li className="flex items-center justify-center gap-2 ml-8"> 
               <Link
                 href="https://admin.virtualassistant.com.au/login"
                 className="text-black px-5 py-2 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
@@ -193,7 +189,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="https://admin.virtualassistant.com.au/register"
-                className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+                className="bg-[#00A7DE] text-white px-5 py-2 rounded-full  font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
                 Sign Up
               </Link>

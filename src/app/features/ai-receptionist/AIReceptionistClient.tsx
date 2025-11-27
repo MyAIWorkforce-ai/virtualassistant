@@ -91,9 +91,9 @@ export default function AIReceptionistClient() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
-          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+          className="w-[230px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
         >
-          Start 14 Day Free Trial
+          Start your 14 Day Free Trial
         </motion.button>
       </Link>
 
@@ -382,19 +382,24 @@ export default function AIReceptionistClient() {
         <p>•Scales with your business automatically</p>
       </motion.div>
 
-  <motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.98 }}
-  className="flex items-center gap-3 bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300"
+<Link 
+  href="https://admin.virtualassistant.com.au/register" 
+  target="_blank" 
+  rel="noopener noreferrer"
 >
-  <img
-    src="/feature-images/cb.png"
-    alt="Start Icon"
-    className="w-6 h-6"
-  />
-  Start Today
-</motion.button>
-
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+    className="flex items-center gap-3 bg-white text-[#01A0E0] font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-[#E8F6FF] transition-all duration-300"
+  >
+    <img
+      src="/feature-images/cb.png"
+      alt="Start Icon"
+      className="w-6 h-6"
+    />
+    Start your 14 day free Trial
+  </motion.button>
+</Link>
     </motion.section>
         </>
     );

@@ -159,60 +159,66 @@ const plans = [
     {
       name: "Sarah Mitchell",
       title: "Owner, BrightPath Wellness",
-      quote:
-        "Integrating the AI receptionist has completely streamlined our booking process. Clients love the instant responses, and I finally have time to focus on growing my business.",
+      quote: "Integrating the AI receptionist has completely streamlined our booking process. Clients love the instant responses, and I finally have time to focus on growing my business.",
       image: "/image/sarah.png",
-      stars: "/image/star5.png",
     },
          {
       name: "Carlos Rivera",
       title: "Managing Partner, Rivera Legal Group",
-      quote:
-      "The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
+      quote:"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
       image: "/image/carlos.png",
-      stars: "/image/star5.png",
     },
     {
       name: " Hannah Lee",
       title: "Founder, FitWithHannah Coaching",
       quote:"My clients are impressed that they can book sessions or ask questions at any time. The AI feels natural and keeps my schedule full — I can’t imagine going back!",
       image: "/image/hannah.png",
-      stars: "/image/star5.png",
     },
     {
       name: "Daniel Cooper",
       title: "CEO, TechNova Consulting",
-      quote:
-        "We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
+      quote:"We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
       image: "/image/daniel.png",
-      stars: "/image/star4.png",
     },
     {
       name: "Olivia Grant",
       title: "Director, Harmony Therapy Clinic",
-      quote:
-        "The setup was simple, and within days our clients were interacting with the AI like it was a real person. It’s increased bookings and reduced missed calls dramatically.",
+      quote: "The setup was simple, and within days our clients were interacting with the AI like it was a real person. It’s increased bookings and reduced missed calls dramatically.",
       image: "/image/olivia.png",
-      stars: "/image/star5.png",
     },
     {
       name: "Mark Thompson",
       title: "Operations Manager, Summit Accounting",
-      quote:
-       "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
+      quote: "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
       image: "/image/mark.png",
-      stars: "/image/star5.png",
     },
-  
-  ];
-// Responsive card count
-const [cardCount, setCardCount] = useState(3);
+      {
+      name: "Dr. James Wilson",
+      title: "Wellness Clinic Owner",
+      quote:"Since implementing this virtual receptionist, we've increased our appointment bookings by 35% and reduced no-shows. The system is incredibly intuitive and our clients love it.",
+      image: "/image/wilson.png",
+    },
+        {
+      name: "Emily Rodriguez",
+      title: "Law Firm Partner",
+      quote:"The customize feature is a game-changer. Our clients think they're talking to our in-house receptionist, which maintains our professional image while saving us thousands in staffing costs.",
+      image: "/image/emily.png",
+    },
 
+          {
+      name: "Robert Chen",
+      title: "Tech Startup Founder",
+      quote:"The AI technology is impressive. It handles complex scheduling requests and even manages to answer basic questions about our services. It's like having an extra team member who never takes a day off.",
+      image: "/image/chen.png",
+    },
+  ];
+
+const [cardCount, setCardCount] = useState(3);
 useEffect(() => {
   const updateCardCount = () => {
-    if (window.innerWidth < 640) setCardCount(1);      // mobile
-    else if (window.innerWidth < 1024) setCardCount(2); // tablet
-    else setCardCount(3);                               // desktop
+    if (window.innerWidth < 640) setCardCount(1);      
+    else if (window.innerWidth < 1024) setCardCount(2); 
+    else setCardCount(3);                               
   };
 
   updateCardCount();
@@ -286,7 +292,7 @@ useEffect(() => {
           {/* Content Container */}
           <div className=" flex flex-col items-center justify-center text-center mt-20 px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
            <motion.div
-              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left"
+              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left mt-4 lg:-mt-45"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -299,7 +305,7 @@ useEffect(() => {
   className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight"
   initial={{ opacity: 0, y: 30 }}
    whileInView={{ opacity: 1, y: 0 }}
-   transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }} // Added slight delay to offset tag
+   transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }} 
    viewport={{ once: true }}
  >
    AI Virtual Receptionist for Service Businesses in Australia.
@@ -1218,8 +1224,7 @@ useEffect(() => {
                   className="rounded-full object-cover border-2 border-sky-200"
                 />
               </div>
-
-              <div className="flex flex-col">
+ <div className="flex flex-col">
                 <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
                 <p className="text-sm text-gray-500">{t.title}</p>
               </div>
@@ -1228,7 +1233,6 @@ useEffect(() => {
         ))}
       </motion.div>
     </div>
-
     {/* Navigation Dots */}
     <div className="flex justify-center gap-2 mt-6">
       {Array.from({ length: totalSlides }).map((_, idx) => (
