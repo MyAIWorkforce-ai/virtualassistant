@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         from: process.env.RESEND_FROM_EMAIL,
         to: process.env.RESEND_TO_EMAIL,
-        subject: `VirtualAssistant.com.au`,
+        subject: `Website Inquiry`,
         text: `
 Name: ${fullName}
 Email: ${email}
