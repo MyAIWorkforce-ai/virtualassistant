@@ -76,38 +76,40 @@ export default function OIClient() {
     <p className="text-white/90 leading-relaxed mb-6 font-poppins">
      Your AI assistant goes beyond calls — it seamlessly integrates with your website to deliver real-time bookings, instant responses, and 24/7 engagement.
     </p>
-  {/* BUTTONS */}
-           <motion.div
-             className="flex gap-4 m-3 "
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
-           >
-           <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Start 14 Day Free Trial
-             </motion.button></Link>
-             <Link
-                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Book a Demo
-               <Image
-                 src="/industries-images/reuse-icons/demo-button.png"
-                 alt="demo"
-                 width={14}
-                 height={14}
-                 priority
-               />
-             </motion.button></Link>
-             
- </motion.div>
+    {/* Buttons */}
+    <motion.div
+      className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      <Link href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Start 14 Day Free Trial
+        </motion.button>
+      </Link>
+
+      <Link href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Book a Demo
+          <Image
+            src="/industries-images/reuse-icons/demo-button.png"
+            alt="demo"
+            width={14}
+            height={14}
+            priority
+          />
+        </motion.button>
+      </Link>
+    </motion.div>
   </div>
 </motion.section>
 
@@ -255,31 +257,40 @@ export default function OIClient() {
   </div>
 </div>
  </motion.section>
-     {/* FORTH SECTION */}
-<motion.section className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 p-20 md:px-12 max-w-7xl mx-auto"
+{/* FORTH SECTION */}
+<motion.section
+  className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 md:py-20"
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}
 >
-  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
 
-  <div className="relative z-10 flex flex-col md:flex-row items-center justify-center 
-      gap-10 md:gap-16 px-6 py-12 md:px-12 md:py-20 max-w-7xl mx-auto">
+  {/* BACKGROUND OVERLAY */}
+  <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px] -z-10" />
 
-    {/* LEFT SIDE CARD */}
+  {/* MAIN WRAPPER */}
+  <div className="
+    relative flex flex-col md:flex-row items-center justify-between
+    gap-10 md:gap-16
+  ">
+
+    {/* LEFT CARD */}
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="bg-[#D2EDFD]/90 border border-black/25 rounded-[20px] p-8 
-          w-full max-w-[380px] md:w-[400px] 
-          shadow-md flex flex-col items-center text-center"
+      className="
+        bg-[#D2EDFD]/90 border border-black/25 rounded-[20px] shadow-md
+        p-6 sm:p-8
+        w-full max-w-md 
+        text-center md:text-left
+      "
     >
       <h3 className="text-2xl md:text-3xl font-poppins font-bold text-gray-900 mb-4">
         Real-World Example
       </h3>
 
-      <p className="text-[#797A7D] font-poppins text-base px-2 md:px-6 text-left leading-relaxed">
+      <p className="text-[#797A7D] font-poppins text-base leading-relaxed text-left">
         A physiotherapy clinic installs the AI booking script on their website.
         Clients now book sessions directly online, receive instant confirmations,
         and chat with the AI for pre-visit questions. Within weeks, the clinic
@@ -293,22 +304,28 @@ export default function OIClient() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="text-left max-w-2xl px-2 md:px-0"
+      className="w-full max-w-2xl text-center md:text-left px-2"
     >
-      <h2 className="font-poppins font-bold text-[#00A7DE] text-3xl md:text-[48px] leading-[150%] mb-4">
-        Why Choose Online <br /> Integration?
+      <h2 className="
+        font-poppins font-bold text-[#00A7DE]
+        text-3xl sm:text-4xl md:text-[48px]
+        leading-[130%] mb-6
+      ">
+        Why Choose Online <br className="hidden md:block" /> Integration?
       </h2>
-
-      <ul className="text-[#797A7D] text-[16px] md:text-[20px] font-poppins leading-[150%]">
-        <li>• Keeps your business accessible 24/7</li>
-        <li>• Turns your website into a fully functional virtual assistant</li>
-        <li>• Reduces manual admin work and missed opportunities</li>
-        <li>• Integrates easily with existing tools and systems</li>
-        <li>• Enhances client satisfaction with instant support</li>
-      </ul>
+     <ul className="
+    text-[#797A7D] font-poppins leading-[160%]
+    text-[16px] sm:text-[18px] md:text-[20px]">
+  <li>• Keeps your business accessible 24/7</li>
+  <li>• Turns your website into a fully functional virtual assistant</li>
+  <li>• Reduces manual admin work and missed opportunities</li>
+  <li>• Integrates easily with existing tools and systems</li>
+  <li>• Enhances client satisfaction with instant support</li>
+</ul>
     </motion.div>
   </div>
 </motion.section>
+
 
             {/* FIFTH SECTION */}
             <motion.section

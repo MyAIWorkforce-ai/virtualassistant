@@ -136,9 +136,9 @@
         "description": "Rapid triage and scheduling for burst pipes, severe leaks, or gas emergencies."
       },
       {
-        "icon": "/industries-images/plumber/pu-assistant.png",
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
         "title": "AI Assistant",
-        "description": "Answer common customer inquiries via chat, voice, or SMS and help dispatch the right technician.\\\\\\\\\\\\\\\\\\\\"
+        "description": "Answer common customer inquiries via chat, voice, or SMS and help dispatch the right technician."
       }
     ]
   },

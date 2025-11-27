@@ -91,11 +91,7 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
       </div>
     </motion.article>
   ))}
-
-  {/* ADDITIONAL SECTION AT END */}
-  <div className="flex items-center gap-2 mt-2">
-    
-   
+  <div className="flex items-center gap-2 mt-2"> 
 <p
   className="text-[14px] font-poppins pl-5 text-center mt-10"
   style={{

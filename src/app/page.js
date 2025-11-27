@@ -308,38 +308,48 @@ useEffect(() => {
                Never miss a call, booking or opportunity again!
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
-<Link
-  href="https://admin.virtualassistant.com.au/register"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="relative bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold 
-             transition-all duration-300 ease-in-out 
-             hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 
-             overflow-hidden group
-             hover:py-5"   // <-- Smoothly increases vertical padding
->
-  {/* Default text */}
-  <span className="block transition-opacity duration-300 group-hover:opacity-0 whitespace-nowrap">
-    Start 14 Day Free Trial
-  </span>
+<div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
+  <Link
+    href="https://admin.virtualassistant.com.au/register"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold
+               transition-all duration-300 ease-in-out 
+               hover:shadow-[0_0_15px_#00A7DE] hover:scale-105
+               focus:shadow-[0_0_15px_#00A7DE] focus:scale-105
+               active:shadow-[0_0_15px_#00A7DE] active:scale-105
+               overflow-hidden group
+               hover:py-5 focus:py-5 active:py-5"
+  >
+    {/* Default text */}
+    <span className="block transition-opacity duration-300 group-hover:opacity-0 
+                     group-focus:opacity-0 group-active:opacity-0 whitespace-nowrap">
+      Start 14 Day Free Trial
+    </span>
 
-  {/* Hover text */}
-  <span className="absolute inset-0 flex items-center justify-center px-6 text-center leading-tight 
-                   opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-    Create your own Virtual Receptionist in under 5 minutes.
-  </span>
-</Link>
+    {/* Hover/Focus/Active text */}
+    <span className="absolute inset-0 flex items-center justify-center px-6 text-center leading-tight
+                     opacity-0 transition-opacity duration-300
+                     group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100">
+      Create your own Virtual Receptionist in under 5 minutes.
+    </span>
+  </Link>
 
-
- <Link
-     href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"
-    className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
+  <Link
+    href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-black px-6 py-3 rounded-full font-semibold border-2 border-[#00A7DE]
+               transition-all duration-300 ease-in-out
+               hover:shadow-[0_0_15px_#00A7DE] hover:scale-105
+               focus:shadow-[0_0_15px_#00A7DE] focus:scale-105
+               active:shadow-[0_0_15px_#00A7DE] active:scale-105"
   >
     Book a Demo
   </Link>
 
-              </div>
+</div>
+
             </motion.div>
       
 <div className="flex flex-col items-center justify-center">

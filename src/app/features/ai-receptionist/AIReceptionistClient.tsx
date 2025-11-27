@@ -51,9 +51,8 @@ export default function AIReceptionistClient() {
                 />
             </Head>
             {/*  FIRST SECTION  */}
-
-      <motion.section
-  className="relative flex items-center justify-between min-h-[100vh] px-0"
+<motion.section
+  className="relative flex flex-col md:flex-row items-center justify-between mt-20 min-h-[100vh] px-0"
   style={{
     background: "linear-gradient(to right, #2A8FE0, #9BC7ED, #9BC7EC)",
     overflow: "hidden",
@@ -62,61 +61,73 @@ export default function AIReceptionistClient() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
 >
-{/* Left Content */}
-  <div className="z-10 flex flex-col justify-center max-w-full md:max-w-lg text-white space-y-6 pl-4 md:pl-20 lg:pl-16 mt-12">
-    <div className="inline-block bg-[#E0F4FB] text-[#0086B3] px-3 py-1 rounded-full text-xs font-medium font-poppins mb-4 max-w-max">
+
+  {/* Left Content */}
+  <div className="z-10 flex flex-col justify-center max-w-full md:max-w-lg text-white space-y-6 
+    pl-4 md:pl-20 lg:pl-16 
+    mt-6 md:mt-12 
+    text-center md:text-left"
+  >
+    <div className="inline-block bg-[#E0F4FB] text-[#0086B3] px-3 py-1 rounded-full text-xs font-medium font-poppins mb-4 max-w-max mx-auto md:mx-0">
       Your Business, Always Open
     </div>
+
     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
       AI Receptionist-24/7 Coverage
     </h1>
-    <p className="text-base md:text-lg text-gray-100 max-w-md">
+
+    <p className="text-base md:text-lg text-gray-100 max-w-md mx-auto md:mx-0">
       Never miss a Call, Booking or Opportunity again. Deliver instant, professional phone support—day or night—with our intelligent AI receptionist answering every customer, every time.
     </p>
-  {/* BUTTONS */}
-           <motion.div
-             className="flex gap-4 m-3 "
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
-           >
-           <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Start 14 Day Free Trial
-             </motion.button></Link>
-             <Link
-                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Book a Demo
-               <Image
-                 src="/industries-images/reuse-icons/demo-button.png"
-                 alt="demo"
-                 width={14}
-                 height={14}
-                 priority
-               />
-             </motion.button></Link>
-             
- </motion.div>
+
+    {/* BUTTONS */}
+<motion.div
+  className="flex flex-col sm:flex-row gap-4 m-3 items-center md:items-start"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
+      <Link href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Start 14 Day Free Trial
+        </motion.button>
+      </Link>
+
+      <Link href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Book a Demo
+          <Image
+            src="/industries-images/reuse-icons/demo-button.png"
+            alt="demo"
+            width={14}
+            height={14}
+            priority
+          />
+        </motion.button>
+      </Link>
+    </motion.div>
   </div>
-{/* Right Image */}
-<div className="relative bottom-0 right-0 w-full md:w-1/2 h-full">
-  <img
-    src="/feature-images/AI-receptionist.png"
-    height={400}
-    width={350}
-    alt="AI Receptionist"
-    className="md:mt-30 md:ml-55 lg:mt-30 lg:ml-55 rounded-lg"
-  />
-</div>
+
+  {/* Right Image */}
+  <div className="relative bottom-0 right-0 w-full md:w-1/2 h-full flex justify-center md:block">
+    <img
+      src="/feature-images/AI-receptionist.png"
+      height={400}
+      width={350}
+      alt="AI Receptionist"
+      className="w-full max-w-xs mx-auto md:mt-30 md:ml-55 lg:mt-30 lg:ml-55 rounded-lg"
+    />
+  </div>
 </motion.section>
+
 
             {/* SECOND SECTION */}
             <motion.section
