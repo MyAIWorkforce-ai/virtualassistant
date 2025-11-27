@@ -48,13 +48,14 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
             <motion.article
               key={index}
               className="flex items-start gap-3 sm:gap-4">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={40}
-                height={40}
-                priority
-              />
+            <Image
+  src={item.icon}
+  alt={item.title}
+  width={40}
+  height={40}
+  priority
+  className="shrink-0 w-10 h-10 sm:w-12 sm:h-12"
+/>
               <div>
                 <h3 className="text-base font-medium text-gray-900 mb-2">
                   {item.title}
@@ -74,13 +75,14 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
       key={index}
       className="flex items-start gap-3 sm:gap-4"
     >
-      <Image
-        src={item.icon}
-        alt={item.title}
-        width={40}
-        height={40}
-        priority
-      />
+    <Image
+  src={item.icon}
+  alt={item.title}
+  width={40}
+  height={40}
+  priority
+  className="shrink-0 w-10 h-10 sm:w-12 sm:h-12"
+/>
       <div>
         <h3 className="text-base font-medium text-gray-900 mb-2">
           {item.title}
