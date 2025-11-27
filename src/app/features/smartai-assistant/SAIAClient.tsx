@@ -93,9 +93,9 @@ export default function SAIAClient() {
     <motion.button
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
-      className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+      className="w-[230px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
     >
-      Start 14 Day Free Trial
+      Start your 14 Day Free Trial
     </motion.button>
   </Link>
 
@@ -313,7 +313,7 @@ transition={{ duration: 0.8 }}
   rel="noopener noreferrer"
   className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
 >
-  Start your free trial
+  Start your 14 day free trial
 </a>
 </motion.section>
 

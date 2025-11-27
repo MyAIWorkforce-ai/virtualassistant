@@ -19,14 +19,13 @@ export default function PSClient() {
                 />
             </Head>
 
-            {/*  FIRST SECTION  */}
-        <motion.section
+{/*  FIRST SECTION  */}
+<motion.section
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   className="relative min-h-[100vh] flex items-end justify-start overflow-hidden"
->
-  {/* Background Image */}
+>{/* Background Image */}
   <Image
     src="/feature-images/post-section.png"
     alt="AI Assistant"
@@ -35,58 +34,85 @@ export default function PSClient() {
     sizes="100vw"
     className="object-cover object-left"
   />
+
   {/* Card */}
-  <div className="bg-[#59727B]/15 backdrop-blur-xl py-8 px-14 text-white shadow-lg
-                  max-w-md 
-                  rounded-tr-[80px] 
-                   mb-0 mx-auto ml-0">
-    
- <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
-    Wrap Up Every Session with Ease
-  </div>
+  <div
+    className="
+      bg-[#59727B]/15 backdrop-blur-xl py-8 pl-8 text-white shadow-lg
+      rounded-tr-[80px] mb-0 mx-auto ml-0
+      sm:max-w-md 
+      max-w-[92%]         
+      px-5 sm:px-8        
+    "
+  >
+    <div className="inline-block bg-white/80 text-[#0086B3] px-4 py-1 rounded-full text-xs font-medium mb-4 font-poppins">
+      Wrap Up Every Session with Ease
+    </div>
 
-{/* Heading */}
-<h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 font-poppins">
- Post-Session Tools
-</h1>
+    {/* Heading */}
+    <h1 className="text-3xl sm:text-4xl  font-bold leading-tight mb-4 font-poppins">
+      Post-Session Tools
+    </h1>
 
-<p className="text-white/90 leading-relaxed mb-6 font-poppins">
-Keep every client interaction organized, documented, and accessible. Your Virtual AI Assistant makes it effortless to record notes, voice memos, and attachments after each session — building a complete client history that improves service quality and saves you time.
-</p>
-  {/* BUTTONS */}
-           <motion.div
-             className="flex gap-4 m-3 "
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
-           >
-           <Link
-                  href="https://admin.virtualassistant.com.au/register" target="_blank" rel="noopener noreferrer">  <motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white  text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Start 14 Day Free Trial
-             </motion.button></Link>
-             <Link
-                  href="https://calendar.app.google/g5bCnhaSJocufjFr5" target="_blank" rel="noopener noreferrer"><motion.button
-               whileHover={{ scale: 1.05 }}
-               transition={{ duration: 0.3 }}
-               className="w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px]  flex items-center justify-center gap-2 font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
-             >
-               Book a Demo
-               <Image
-                 src="/industries-images/reuse-icons/demo-button.png"
-                 alt="demo"
-                 width={14}
-                 height={14}
-                 priority
-               />
-             </motion.button></Link>
-             
- </motion.div>
+    <p className="text-white/90 leading-relaxed mb-6 font-poppins text-sm sm:text-base">
+      Keep every client interaction organized, documented, and accessible. Your Virtual AI
+      Assistant makes it effortless to record notes, voice memos, and attachments after
+      each session — building a complete client history that improves service quality and
+      saves you time.
+    </p>
+
+    {/* BUTTONS */}
+    <motion.div
+      className="flex flex-col sm:flex-row gap-2 m-3 w-full"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      <Link
+        href="https://admin.virtualassistant.com.au/register"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="
+            w-[230px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px]
+            rounded-[6px] font-Poppins transition-all duration-300
+            hover:shadow-[0_0_15px_#00A7DE]
+          "
+        >
+          Start your 14 Day Free Trial
+        </motion.button>
+      </Link>
+
+      <Link
+        href="https://calendar.app.google/g5bCnhaSJocufjFr5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="
+            w-[159px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px]
+            rounded-[6px] flex items-center justify-center gap-2 font-Poppins
+            transition-all duration-300 hover:shadow-[0_0_15px_#00A7DE]"
+        >
+          Book a Demo
+          <Image
+            src="/industries-images/reuse-icons/demo-button.png"
+            alt="demo"
+            width={14}
+            height={14}
+            priority
+          />
+        </motion.button>
+      </Link>
+    </motion.div>
   </div>
 </motion.section>
+
             {/*  SECOND SECTION*/}
             <motion.section className="relative flex flex-col items-center justify-center w-full min-h-screen py-24 bg-[#F9FAFB]"
                 initial={{ opacity: 0, y: 20 }}
@@ -333,7 +359,7 @@ Smart tools that help you stay organized, informed, and always ready for the nex
   rel="noopener noreferrer"
   className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
 >
-  Start your free trial
+  Start your 14 day free trial
 </a>
             </motion.section>
 

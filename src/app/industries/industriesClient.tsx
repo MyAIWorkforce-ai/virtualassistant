@@ -179,19 +179,19 @@ const HospitalityOther = [
              py-20 px-4 md:py-24 md:px-6"
 >
   <h1
-    className="font-Poppins font-bold mt-6
-               text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px]
+    className="font-Poppins font-bold mt-8 
+               text-[32px] sm:text-[40px] md:text-[45px] lg:text-[48px]
                leading-tight md:leading-none 
-               text-[#000000] mb-6 sm:mb-8"
+               text-[#000000]  mb-6 sm:mb-8"
   >
-    AI Virtual Receptionists & Smart Scheduling for{" "}
-    <span className="text-[#00A7DE]">Every Industry</span>
+    AI Virtual Receptionists & <br/>Smart Scheduling for{" "}
+    <span className="text-[#00A7DE]">Every <br/>Industry</span>
   </h1>
 
   {/* Subtitle */}
   <p
     className="font-Poppins 
-               text-[14px] sm:text-[16px] md:text-[20px] 
+               text-[14px] sm:text-[16px] md:text-[16px] 
                text-gray-700 
                max-w-xl sm:max-w-2xl md:max-w-3xl 
                mb-8 md:mb-10 px-2"
