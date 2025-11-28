@@ -449,7 +449,7 @@ useEffect(() => {
 - Call recordings, summaries & transcripts<br/>
 - Professional, consistent service every time<br/>
 - Dedicated business number included<br/>
-- Call forwarding option with clear step-by-step &nbsp; &nbsp; instructions<br/>
+- Call forwarding option with clear step-by-step &nbsp; instructions<br/>
 
             </p>
           </div>
@@ -480,9 +480,9 @@ useEffect(() => {
             </div>
 
             <p className="text-[#797A7D] font-medium mt-3 text-sm">
-             - Fully automated: books, reschedules & cancels appointments<br/>
-- works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
-- Sends SMS & email confirmations and reminders<br/>
+             - Fully automated: books, reschedules & &nbsp; cancels appointments<br/>
+- works seamlessly with Google Calendar, &nbsp; Outlook Calendar & Cal.com<br/>
+- Sends SMS & email confirmations and &nbsp; reminders<br/>
             </p>
           </div>
         </article>
@@ -511,10 +511,10 @@ useEffect(() => {
               </h3>
             </div>
 <p className="text-[#797A7D] font-medium mt-2 text-sm">
-             - Answers questions about your services instantly<br/>
+             - Answers questions about your services &nbsp; instantly<br/>
 - Explains pricing, availability & directions<br/>
-- Handles reschedules or cancellations smoothly<br/>
-- Customisable personality, friendly, professional, or casual<br/>
+- Handles reschedules or cancellations &nbsp; smoothly<br/>
+- Customisable personality, friendly, &nbsp; professional, or casual<br/>
             </p>
           </div>
         </article>
@@ -543,10 +543,10 @@ useEffect(() => {
             </div>
  <p className="text-[#797A7D] font-medium mt-2 text-sm">
              - Add client notes after each appointment<br/>
-- Record voice memos that are auto-Transcribed
+- Record voice memos that are auto- &nbsp; Transcribed
 & Summarised<br/>
-- Upload photos or documents linked to appointments<br/>
-- Build a complete client history file automatically<br/>
+- Upload photos or documents linked to &nbsp; appointments<br/>
+- Build a complete client history file &nbsp; automatically<br/>
             </p>
           </div>
         </article>
@@ -580,16 +580,16 @@ useEffect(() => {
       <p className="text-[#797A7D] font-medium mt-2 text-sm">
         Your control centre gives you everything in one place:<br/>
         - Advanced CRM with client data & history<br/>
-        - AI Smart Calendar that is colour-coded & auto-updating<br/>
+        - AI Smart Calendar that is colour-coded & &nbsp; auto-updating<br/>
         
       </p>
 
       {expanded && (
         <div className="mt-1 text-[#797A7D] text-sm">
-          - Analytics & insights, calls, bookings, cancellations, no-shows, performance<br/>
-          - One clean dashboard replaces multiple tools and platforms.<br/>
-          - Front-End Prompts, Easily update what your AI says to clients on the phone, website, or chat — no tech skills required.<br/>
-          - Fully Customisable Branding, Upload your business logo, set your theme colours, and brand the dashboard to feel like your own system — not just another generic tool.
+          - Analytics & insights, calls, bookings, &nbsp; cancellations, no-shows, performance<br/>
+          - One clean dashboard replaces multiple tools &nbsp; and platforms.<br/>
+          - Front-End Prompts, Easily update what your &nbsp; AI says to clients on the phone, website, or &nbsp; chat — no tech skills required.<br/>
+          - Fully Customisable Branding, Upload your &nbsp; business logo, set your theme colours, and &nbsp; brand the dashboard to feel like your own &nbsp; system — not just another generic tool.
         </div>
       )}
 
@@ -627,8 +627,8 @@ useEffect(() => {
             </div>
 
             <p className="text-[#797A7D] font-medium mt-2 text-sm">
-             - Website booking widget (simple copy & paste script)<br/>
-- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
+             - Website booking widget (simple copy & paste &nbsp; script)<br/>
+- Website Chatbot for real-time answering &nbsp; Queries, booking appointments or &nbsp; conversations (simple copy & paste script)<br/>
 - 24/7 online + phone coverage for clients<br/>
             </p>
           </div>
