@@ -965,7 +965,7 @@ useEffect(() => {
 
       {/* Transparent Pricing */}
 <ScaleUp>
-  <section id="pricing" className="scroll-mt-[150px] md:scroll-mt-[90px] lg:scroll-mt-[72px] bg-[#F9FAFB] py-20">
+  <section id="pricing" className="scroll-mt-[170px] md:scroll-mt-[90px] lg:scroll-mt-[72px] bg-[#F9FAFB] py-20">
     <div className="max-w-6xl mx-auto px-6 text-center">
       {/* Heading */}
       <h2 className="text-5xl md:text-5xl font-bold text-[#00A7DE] relative inline-block">
