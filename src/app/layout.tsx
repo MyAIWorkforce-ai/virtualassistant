@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Australia's Best AI Virtual Receptionist | VirtualAssistant.com.au",
+    "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
   description:
     "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
   keywords:
