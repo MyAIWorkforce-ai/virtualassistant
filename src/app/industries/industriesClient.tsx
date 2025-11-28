@@ -3,9 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
+import { useLayoutEffect } from "react";
 
 export default function MainIndustry() {
+
+  export default function ScrollToTop() {
+  useLayoutEffect(() => {
+    // wait until next paint to ensure DOM is ready
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    });
+  }, []);
 
 const HealthCarecards = [
   {
