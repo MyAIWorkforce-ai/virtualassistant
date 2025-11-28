@@ -65,7 +65,7 @@ export default function RootLayout({
         />
         <Navbar />
         <ScrollReset />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
