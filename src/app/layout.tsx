@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/_components/Navbar";
 import Footer from "@/app/_components/Footer";
+import ScrollReset from "./utils/scroll-reset";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +64,7 @@ export default function RootLayout({
           }}
         />
         <Navbar />
+        <ScrollReset />
         {children}
         <Footer />
       </body>
