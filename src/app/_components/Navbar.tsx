@@ -178,8 +178,6 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </li>
-            
-            {/* Buttons positioned outside the main links, but inside the ul for structure */}
             <li className="flex items-center justify-center gap-2 ml-8"> 
               <Link
                 href="https://admin.virtualassistant.com.au/login"
@@ -191,7 +189,7 @@ export default function Navbar() {
                 href="https://admin.virtualassistant.com.au/register"
                 className="bg-[#00A7DE] text-white px-5 py-2 rounded-full  font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105"
               >
-                Sign Up
+                Get Started
               </Link>
             </li>
           </ul>
@@ -364,7 +362,7 @@ export default function Navbar() {
               className="bg-[#00A7DE] text-white px-5 py-2 rounded-full font-poppins  text-[14px] leading-[1.44] tracking-[-0.04em] font-poppins font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE] hover:scale-105 w-full block text-center"
               onClick={() => setIsOpen(false)}
             >
-              Sign Up
+              Get Started
             </Link>
           </li>
         </ul>

@@ -102,7 +102,7 @@ const PerfesstionalServicescards = [
   },
   {
     icon: "/industrymain-images/real-estate.png",
-    title: "Realestate Agent",
+    title: "Real Estate Agent",
     desc: "From Listings to Closings, Streamlines property management, client communication, and sales tracking.",
     link: "/industries/realestateagent",
   },
@@ -174,7 +174,7 @@ const HospitalityOther = [
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: true }}
-  className="flex flex-col items-center justify-center text-center 
+  className="flex flex-col items-center justify-center mt-10 text-center 
              bg-gradient-to-r from-[#F0F9FF] to-[#E8F6FF] 
              py-20 px-4 md:py-24 md:px-6"
 >
@@ -479,9 +479,9 @@ const HospitalityOther = [
                      <motion.button
                        whileHover={{ scale: 1.05 }}
                        transition={{ duration: 0.3 }}
-                       className="w-[159px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[12px] leading-[22.5px] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
+                       className="w-[230px] h-[50px] bg-white font-poppins text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
                      >
-                       Start 14 Day Free Trial
+                       Start Your 14 Day Free Trial
                      </motion.button>
                          </Link>
               <Link

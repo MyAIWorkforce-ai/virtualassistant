@@ -93,7 +93,7 @@ export default function AIReceptionistClient() {
           transition={{ duration: 0.3 }}
           className="w-[230px] h-[50px] bg-white text-[#00A7DE] font-[500] text-[16px] leading-[100%] rounded-[6px] font-Poppins transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#00A7DE]"
         >
-          Start your 14 Day Free Trial
+          Start Your 14 Day Free Trial
         </motion.button>
       </Link>
 
@@ -397,7 +397,7 @@ export default function AIReceptionistClient() {
       alt="Start Icon"
       className="w-6 h-6"
     />
-    Start your 14 day free Trial
+    Start Your 14 Day Free Trial
   </motion.button>
 </Link>
     </motion.section>

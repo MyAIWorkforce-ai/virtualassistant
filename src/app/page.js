@@ -78,12 +78,10 @@ export default function Home() {
       desc: "Step into better practice management. Tracks appointments, follow-ups, and organizes treatment schedules.",
     },
   ];
-
   // ========================
   //   Transparent Pricing
   // ========================
 const [billingCycle, setBillingCycle] = useState("monthly");
-
 const plans = [
   {
     name: "SOLO",
@@ -104,7 +102,7 @@ const plans = [
       "Appointment Reminders via SMS and Email",
       "Calendar Syncing",
     ],
-    button: "Start 14 Day Trial",
+    button: "Start Your 14 Day Free Trial",
     highlighted: false,
   },
   {
@@ -126,7 +124,7 @@ const plans = [
       "Appointment Reminders via SMS and Email",
       "Calendar Syncing",
     ],
-    button: "Start 14 Day Trial",
+    button: "Start Your 14 Day Free Trial",
     highlighted: true,
   },
   {
@@ -148,7 +146,7 @@ const plans = [
       "Appointment Reminders via SMS and Email",
       "Calendar Syncing"
     ],
-    button: "Start 14 Day Trial",
+    button: "Start Your 14 Day Free Trial",
     highlighted: false,
   },
 ];
@@ -158,58 +156,51 @@ const plans = [
   const testimonials = [
     {
       name: "Sarah Mitchell",
-      title: "Owner, BrightPath Wellness",
+      title: "Bright Path Wellness",
       quote: "Integrating the AI receptionist has completely streamlined our booking process. Clients love the instant responses, and I finally have time to focus on growing my business.",
-      image: "/image/sarah.png",
     },
          {
       name: "Carlos Rivera",
-      title: "Managing Partner, Rivera Legal Group",
+      title: "Rivera Legal Group",
       quote:"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
-      image: "/image/carlos.png",
     },
     {
       name: " Hannah Lee",
-      title: "Founder, FitWithHannah Coaching",
+      title: " Fit With  Hannah Coaching",
       quote:"My clients are impressed that they can book sessions or ask questions at any time. The AI feels natural and keeps my schedule full — I can’t imagine going back!",
-      image: "/image/hannah.png",
     },
     {
       name: "Daniel Cooper",
-      title: "CEO, TechNova Consulting",
+      title: "Tech Nova Consulting",
       quote:"We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
-      image: "/image/daniel.png",
     },
     {
       name: "Olivia Grant",
-      title: "Director, Harmony Therapy Clinic",
+      title: " Harmony Therapy Clinic",
       quote: "The setup was simple, and within days our clients were interacting with the AI like it was a real person. It’s increased bookings and reduced missed calls dramatically.",
-      image: "/image/olivia.png",
     },
     {
       name: "Mark Thompson",
-      title: "Operations Manager, Summit Accounting",
+      title: " Summit Accounting",
       quote: "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
-      image: "/image/mark.png",
     },
       {
       name: "Dr. James Wilson",
-      title: "Wellness Clinic Owner",
-      quote:"Since implementing this virtual receptionist, we've increased our appointment bookings by 35% and reduced no-shows. The system is incredibly intuitive and our clients love it.",
-      image: "/image/wilson.png",
+      title: "Flow Master Plumbing",
+    quote: "Since integrating VirtualAssistant.com.au, our plumbing business has become far more efficient. The AI handles calls, bookings, and urgent requests instantly—our customers love the quick updates and professional service.",
+      
     },
         {
       name: "Emily Rodriguez",
-      title: "Law Firm Partner",
-      quote:"The customize feature is a game-changer. Our clients think they're talking to our in-house receptionist, which maintains our professional image while saving us thousands in staffing costs.",
-      image: "/image/emily.png",
+      title: "Glow & Grace Beauty Studio",
+      quote: "The AI receptionist has completely transformed how I manage my beauty clinic. Clients get instant answers and book appointments even while I'm in sessions. It feels like having a full-time assistant who never misses a call."
+
     },
 
           {
       name: "Robert Chen",
-      title: "Tech Startup Founder",
-      quote:"The AI technology is impressive. It handles complex scheduling requests and even manages to answer basic questions about our services. It's like having an extra team member who never takes a day off.",
-      image: "/image/chen.png",
+      title: "Clinical Psychologist",
+      quote:"VirtualAssistant.com.au has transformed our practice. Calls, bookings, and reminders are handled seamlessly, letting us focus on clients. Patients love the timely follow-ups, and managing session notes is easier than ever—like having a professional assistant 24/7.",
     },
   ];
 
@@ -290,9 +281,9 @@ useEffect(() => {
           </div>
 
           {/* Content Container */}
-          <div className=" flex flex-col items-center justify-center text-center mt-20 px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
+          <div className=" flex flex-col items-center justify-center text-center mt-8 px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
            <motion.div
-              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left mt-4 lg:-mt-45"
+              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left mt-4 lg:-mt-3"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -302,7 +293,7 @@ useEffect(() => {
                 Your Business, Always Answered
               </h3>
  <motion.h1 
-  className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-tight"
+  className="mt-3 text-3xl sm:text-3xl lg:text-[44px] font-extrabold text-black leading-tight"
   initial={{ opacity: 0, y: 30 }}
    whileInView={{ opacity: 1, y: 0 }}
    transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }} 
@@ -314,33 +305,32 @@ useEffect(() => {
                Never miss a call, booking or opportunity again!
               </p>
 
-<div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
+<div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start items-start">
+  {/* Start 14 Day Free Trial Button */}
   <Link
     href="https://admin.virtualassistant.com.au/register"
     target="_blank"
     rel="noopener noreferrer"
     className="relative bg-[#00A7DE] text-white px-6 py-3 rounded-full font-semibold
-               transition-all duration-300 ease-in-out 
-               hover:shadow-[0_0_15px_#00A7DE] hover:scale-105
+               transition-all duration-300 ease-in-out
+               hover:py-5 hover:shadow-[0_0_15px_#00A7DE] hover:scale-105
                focus:shadow-[0_0_15px_#00A7DE] focus:scale-105
                active:shadow-[0_0_15px_#00A7DE] active:scale-105
-               overflow-hidden group
-               hover:py-5 focus:py-5 active:py-5"
+               overflow-hidden flex justify-center items-center group"
   >
-    {/* Default text */}
-    <span className="block transition-opacity duration-300 group-hover:opacity-0 
-                     group-focus:opacity-0 group-active:opacity-0 whitespace-nowrap">
+    {/* Original text */}
+    <span className="block transition-opacity duration-300 group-hover:opacity-0">
       Start 14 Day Free Trial
     </span>
 
-    {/* Hover/Focus/Active text */}
+    {/* Hover text */}
     <span className="absolute inset-0 flex items-center justify-center px-6 text-center leading-tight
-                     opacity-0 transition-opacity duration-300
-                     group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100">
-      Create your own Virtual Receptionist in under 5 minutes.
+                     opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      Create Your Own Virtual Receptionist in Under 5 Minutes.
     </span>
   </Link>
 
+  {/* Book a Demo Button */}
   <Link
     href="https://calendar.app.google/g5bCnhaSJocufjFr5"
     target="_blank"
@@ -353,10 +343,8 @@ useEffect(() => {
   >
     Book a Demo
   </Link>
-
 </div>
-
-            </motion.div>
+ </motion.div>
       
 <div className="flex flex-col items-center justify-center">
   <motion.div
@@ -415,308 +403,241 @@ useEffect(() => {
         </section>
       </main>
 
-      {/* KEY FEATURES SECTION  */}
-   <section
+{/* KEY FEATURES SECTION */}
+<section
   id="features"
   className="scroll-mt-[72px] pt-16 pb-16 bg-[#F9FAFB]"
   aria-labelledby="key-features-heading"
   role="region"
-><div className="scroll-mt-[150px] max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Section Title */}
-          <h2
-            
-            className="text-3xl sm:text-4xl font-semibold text-[#00A7DE] mb-2"
-          >
-            Key Features
-          </h2>
-          <div
-            className="w-12 h-0.5 bg-[#098DC9] mx-auto mb-6 rounded-full"
-            aria-hidden="true"
-          ></div>
+>
+  <div className="scroll-mt-[150px] max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    {/* Section Title */}
+    <h2 className="text-3xl sm:text-4xl font-semibold text-[#00A7DE] mb-2">
+      Key Features
+    </h2>
+    <div className="w-12 h-0.5 bg-[#098DC9] mx-auto mb-6 rounded-full"></div>
 
-          {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ">
-  {/* Feature 1 */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/ai-receptionist.png"
-            alt="Receptionist using AI phone handling interface"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">
-            AI Phone Handling illustration
-          </figcaption>
-        </figure>
-      </HoverSlide>
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/image/ai-phone-icon.png"
-            alt="AI phone icon"
-            width={20}
-            height={28}
-            priority
-          />
-          <h3 className="text-lg sm:text-1xl font-bold text-black">
-            AI Receptionist - 24/7
-          </h3>
-        </div>
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          - Answers every call instantly, day or night<br/>
-          - Unlimited calls & bookings, 24/7<br/>
-          - Call recordings, summaries & transcripts<br/>
-          - Professional, consistent service every time<br/>
-          - Dedicated business number included<br/>
-          - Call forwarding option with clear step-by-step instructions<br/>
-        </p>
-      </div>
-    </article>
-  </FadeInOnScroll>
+    {/* Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-start ">
 
-  {/* Feature 2 */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/calender3.png"
-            alt="Appointment scheduling interface with calendar slots"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">
-            Appointment Scheduling image
-          </figcaption>
-        </figure>
-      </HoverSlide>
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/image/appointment-icon.png"
-            alt="Appointment icon"
-            width={20}
-            height={28}
-            priority
-          />
-          <h3 className="text-lg sm:text-1xl font-bold text-black">
-            AI Appointment Scheduling
-          </h3>
-        </div>
-    <p className="text-[#797A7D] font-medium mt-3 text-sm">
-  <span className="block mb-1.5">- Fully automated, books, reschedules & cancels appointments</span>
-  <span className="block mb-1.5">- Works seamlessly with Google Calendar, Outlook Calendar & Cal.com</span>
-  <span className="block">- Sends SMS & email confirmations and reminders</span>
-</p>
-      </div>
-    </article>
-  </FadeInOnScroll>
+      {/* Feature 1 */}
+      <FadeInOnScroll>
+        <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-[420px] overflow-hidden">
+          <HoverSlide>
+            <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+              <Image
+                src="/image/ai-receptionist.png"
+                alt="Receptionist using AI phone handling interface"
+                width={400}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+          </HoverSlide>
 
-  {/* Feature 3 */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/transcription.png"
-            alt="Transcription interface showing text from conversation"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">
-            Smart Transcription image
-          </figcaption>
-        </figure>
-      </HoverSlide>
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/image/transcription-icon.png"
-            alt="Transcription icon"
-            width={20}
-            height={28}
-            priority
-          />
-          <h3 className="text-lg sm:text-1xl font-bold text-black">
-            Smart AI Assistant For Clients
-          </h3>
-        </div>
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          - Answers questions about your services instantly<br/>
-          - Explains pricing, availability & directions<br/>
-          - Handles reschedules or cancellations smoothly<br/>
-          - Customisable personality: friendly, professional, or casual<br/>
-        </p>
-      </div>
-    </article>
-  </FadeInOnScroll>
+          <div className="p-4 sm:p-6 flex flex-col text-left flex-grow">
+            <div className="flex items-center gap-2">
+              <Image src="/image/ai-phone-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                AI Receptionist - 24/7
+              </h3>
+            </div>
+<p className="text-[#797A7D] font-medium mt-2 text-sm">
+- Answers every call instantly, day or night<br/>
+- Unlimited calls & bookings, 24/7<br/>
+- Call recordings, summaries & transcripts<br/>
+- Professional, consistent service every time<br/>
+- Dedicated business number included<br/>
+- Call forwarding option with clear step-by-step instructions<br/>
 
-  {/* Feature 4 */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/voice-memo.png"
-            alt="Voice memo capture linked to client file"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">
-            Voice Memo Capture image
-          </figcaption>
-        </figure>
-      </HoverSlide>
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/image/voice-memo-icon.png"
-            alt="Voice memo icon"
-            width={20}
-            height={28}
-            priority
-          />
-          <h3 className="text-lg sm:text-1xl font-bold text-black">
-            Post-Session Tools
-          </h3>
-        </div>
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          - Add client notes after each appointment<br/>
-          - Record voice memos that are auto-Transcribed & Summarised<br/>
-          - Upload photos or documents linked to appointments<br/>
-          - Build a complete client history file automatically<br/>
-        </p>
-      </div>
-    </article>
-  </FadeInOnScroll>
-
-  {/* Feature 5 - Dashboard Card */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/branded.png"
-            alt="Branded dashboard"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">Branded Dashboard image</figcaption>
-        </figure>
-      </HoverSlide>
-
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <h3 className="text-lg sm:text-1xl font-bold text-black">
-            Advanced Dashboard
-          </h3>
-        </div>
-
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          Your control centre gives you everything in one place.<br/>
-          - Advanced CRM with client data & history.<br/>
-          - AI Smart Calendar, colour-coded & auto-updating.<br/>
-            - One clean dashboard replaces multiple tools.<br/>
-        </p>
-
-        {expanded && (
-          <div className="mt-3 text-[#797A7D] text-sm transition-all duration-300 ease-in-out">
-            - Front-End Prompts, Update what your AI says across phone, site, and chat.<br/>
-            - Fully Customisable Branding, Upload logo, set theme colours, and personalise your system.<br/>
+            </p>
           </div>
-        )}
+        </article>
+      </FadeInOnScroll>
 
-        <button
-          className="mt-2 text-sm font-poppins text-[#098DC9] hover:underline self-start"
-          onClick={() => setExpanded(!expanded)}
-        >
-          {expanded ? "Hide" : "Read more..."}
-        </button>
-      </div>
-    </article>
-  </FadeInOnScroll>
+      {/* Feature 2 */}
+      <FadeInOnScroll>
+        <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-[420px] overflow-hidden">
+          <HoverSlide>
+            <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+              <Image
+                src="/image/calender3.png"
+                alt="Appointment scheduling interface"
+                width={400}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+          </HoverSlide>
 
-  {/* Feature 6 */}
-  <FadeInOnScroll>
-    <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col">
-      <HoverSlide>
-        <figure className="m-0">
-          <Image
-            src="/image/booking1.png"
-            alt="White-labeled booking page frontend preview"
-            width={400}
-            height={250}
-            priority
-            className="rounded-t-lg w-full h-auto object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-          <figcaption className="sr-only">White-Labeled Booking Page image</figcaption>
-        </figure>
-      </HoverSlide>
-      <div className="p-4 sm:p-6 flex flex-col text-left">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/image/booking-icon.png"
-            alt="Booking icon"
-            width={20}
-            height={28}
-            priority
-          />
-          <h3 className="text-lg sm:text-1xl font-bold text-black">Online Integration</h3>
-        </div>
-        <p className="text-[#797A7D] font-medium mt-2 text-sm">
-          - Website booking widget (simple copy & paste script)<br/>
-          - Website Chatbot for real-time answering queries, booking appointments or conversations (simple copy & paste script)<br/>
-          - 24/7 online + phone coverage for clients<br/>
-          <br/>
-        </p>
-      </div>
-    </article>
-  </FadeInOnScroll>
-</div>
- </div>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Key Features",
-              description:
-                "Key features like AI phone handling, appointment scheduling, smart transcription, voice memo capture, branded dashboards and white-labeled booking pages.",
-              mainEntity: [
-                { "@type": "Feature", name: "AI Phone Handling" },
-                { "@type": "Feature", name: "Appointment Scheduling" },
-                { "@type": "Feature", name: "Smart Transcription" },
-                { "@type": "Feature", name: "Voice Memo Capture" },
-                { "@type": "Feature", name: "Branded Dashboard" },
-                { "@type": "Feature", name: "White-Labeled Booking Page" },
-              ],
-            }),
-          }}
+          <div className="p-4 sm:p-6 flex flex-col text-left flex-grow">
+            <div className="flex items-center gap-2">
+              <Image src="/image/appointment-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                AI Appointment Scheduling
+              </h3>
+            </div>
+
+            <p className="text-[#797A7D] font-medium mt-3 text-sm">
+             - Fully automated: books, reschedules & cancels appointments<br/>
+- works seamlessly with Google Calendar, Outlook Calendar & Cal.com<br/>
+- Sends SMS & email confirmations and reminders<br/>
+            </p>
+          </div>
+        </article>
+      </FadeInOnScroll>
+
+      {/* Feature 3 */}
+      <FadeInOnScroll>
+        <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-[420px] overflow-hidden">
+          <HoverSlide>
+            <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+              <Image
+                src="/image/transcription.png"
+                alt="Transcription software interface"
+                width={400}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+          </HoverSlide>
+
+          <div className="p-4 sm:p-6 flex flex-col text-left flex-grow">
+            <div className="flex items-center gap-2">
+              <Image src="/image/transcription-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                Smart AI Assistant For Clients
+              </h3>
+            </div>
+<p className="text-[#797A7D] font-medium mt-2 text-sm">
+             - Answers questions about your services instantly<br/>
+- Explains pricing, availability & directions<br/>
+- Handles reschedules or cancellations smoothly<br/>
+- Customisable personality, friendly, professional, or casual<br/>
+            </p>
+          </div>
+        </article>
+      </FadeInOnScroll>
+
+      {/* Feature 4 */}
+      <FadeInOnScroll>
+        <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-[420px] overflow-hidden">
+          <HoverSlide>
+            <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+              <Image
+                src="/image/voice-memo.png"
+                alt="Voice memo capture tool"
+                width={400}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+          </HoverSlide>
+          <div className="p-4 sm:p-6 flex flex-col text-left flex-grow">
+            <div className="flex items-center gap-2">
+              <Image src="/image/voice-memo-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                Post-Session Tools
+              </h3>
+            </div>
+ <p className="text-[#797A7D] font-medium mt-2 text-sm">
+             - Add client notes after each appointment<br/>
+- Record voice memos that are auto-Transcribed
+& Summarised<br/>
+- Upload photos or documents linked to appointments<br/>
+- Build a complete client history file automatically<br/>
+            </p>
+          </div>
+        </article>
+      </FadeInOnScroll>
+
+{/* Feature 5  */}
+<FadeInOnScroll>
+  <article
+    className={`rounded-lg shadow-md border hover:shadow-lg transition flex flex-col overflow-hidden`}
+  >
+    <HoverSlide>
+      <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+        <Image
+          src="/image/branded.png"
+          alt="Dashboard preview"
+          width={400}
+          height={192}
+          className="w-full h-[192px] object-cover" // <-- FIX: fixed height
         />
+      </figure>
+    </HoverSlide>
 
- </section>
+    <div className="p-2 sm:p-6 flex flex-col text-left flex-grow">
+       <div className="flex items-center gap-2">
+              <Image src="/image/branded-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                Advanced Dashboard
+              </h3>
+            </div>
 
-      
+      <p className="text-[#797A7D] font-medium mt-2 text-sm">
+        Your control centre gives you everything in one place:<br/>
+        - Advanced CRM with client data & history<br/>
+        - AI Smart Calendar that is colour-coded & auto-updating<br/>
+        
+      </p>
+
+      {expanded && (
+        <div className="mt-1 text-[#797A7D] text-sm">
+          - Analytics & insights, calls, bookings, cancellations, no-shows, performance<br/>
+          - One clean dashboard replaces multiple tools and platforms.<br/>
+          - Front-End Prompts, Easily update what your AI says to clients on the phone, website, or chat — no tech skills required.<br/>
+          - Fully Customisable Branding, Upload your business logo, set your theme colours, and brand the dashboard to feel like your own system — not just another generic tool.
+        </div>
+      )}
+
+      <button
+        className=" text-sm mt-6 text-[#098DC9] hover:underline self-start"
+        onClick={() => setExpanded(!expanded)}
+      >
+        {expanded ? "Hide" : "Read more..."}
+      </button>
+    </div>
+  </article>
+</FadeInOnScroll>
+
+      {/* Feature 6 */}
+      <FadeInOnScroll>
+        <article className="rounded-lg shadow-md border hover:shadow-lg transition flex flex-col h-[420px] overflow-hidden">
+          <HoverSlide>
+            <figure className="m-0 h-[192px] w-full overflow-hidden rounded-t-lg">
+              <Image
+                src="/image/booking1.png"
+                alt="Website booking widget"
+                width={400}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+          </HoverSlide>
+
+          <div className="p-4 sm:p-6 flex flex-col text-left flex-grow">
+            <div className="flex items-center gap-2">
+              <Image src="/image/booking-icon.png" width={20} height={20} alt="" />
+              <h3 className="text-lg sm:text-1xl font-bold text-black">
+                Online Integration
+              </h3>
+            </div>
+
+            <p className="text-[#797A7D] font-medium mt-2 text-sm">
+             - Website booking widget (simple copy & paste script)<br/>
+- Website Chatbot for real-time answering Queries, booking appointments or conversations (simple copy & paste script)<br/>
+- 24/7 online + phone coverage for clients<br/>
+            </p>
+          </div>
+        </article>
+      </FadeInOnScroll>
+    </div>
+  </div>
+</section>
+
       {/* =============================     
          {/* WHY CHOOSE US SECTION */}
       {/* ===============================*/}
@@ -1199,31 +1120,22 @@ useEffect(() => {
     {/* Carousel */}
     <div className="overflow-hidden">
       <motion.div
-        className="flex gap-0 sm:gap-4 lg:gap-6"
-        animate={{ x: `-${activeIndex * 100}%` }} 
+        className="flex gap-0 sm:gap-4 lg:gap-6 lg:justify-start"
+       animate={{ x: `-${activeIndex * 100}%` }}
         transition={{ type: "spring", stiffness: 80, damping: 20 }}
       >
         {testimonials.map((t, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between"
+            className="flex-shrink-0 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] bg-white p-6 rounded-xl shadow-md flex flex-col justify-between lg:mx-auto"
           >
-          <div className="flex flex-col mb-6">
-  <div className="mb-5 text-yellow-400 text-lg flex justify-start gap-1">
+          <div className="flex flex-col mb-2">
+  <div className="mb-5 text-yellow-400 text-lg flex justify-center gap-1">
     ★ ★ ★ ★ ★
   </div>
   <p className="text-gray-700 text-[16px]">{t.quote}</p>
 </div>
-
-            <div className="flex items-center gap-4 mt-auto">
-              <div className="w-16 h-16 relative flex-shrink-0">
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  fill
-                  className="rounded-full object-cover border-2 border-sky-200"
-                />
-              </div>
+ <div className="flex items-center gap-4 mt-2 justify-center">
  <div className="flex flex-col">
                 <h3 className="font-semibold text-lg text-[#000000]">{t.name}</h3>
                 <p className="text-sm text-gray-500">{t.title}</p>
