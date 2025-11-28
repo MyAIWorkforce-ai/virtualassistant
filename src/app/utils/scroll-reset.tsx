@@ -7,6 +7,7 @@ export default function ScrollReset() {
   const pathname = usePathname();
 
   useEffect(() => {
+    console.log("SCROLL RESET RUNNING for:", pathname);
     // Wait for hydration then scroll
     const timeout = setTimeout(() => {
       window.scrollTo(0, 0);
@@ -17,3 +18,4 @@ export default function ScrollReset() {
 
   return null;
 }
+
