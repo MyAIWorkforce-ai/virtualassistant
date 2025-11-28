@@ -182,7 +182,7 @@ const HospitalityOther = [
     className="font-Poppins font-bold mt-8 
                text-[32px] sm:text-[40px] md:text-[45px] lg:text-[48px]
                leading-tight md:leading-none 
-               text-[#000000]  mb-6 sm:mb-8"
+               text-[#000000] pt-[5px] mb-6 sm:mb-8"
   >
     AI Virtual Receptionists & <br/>Smart Scheduling for{" "}
     <span className="text-[#00A7DE]">Every <br/>Industry</span>
