@@ -7,40 +7,29 @@ export default function ScrollReset() {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log("🚀 ScrollReset MOUNTED");
-  }, []);
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+      console.log("🛑 scrollRestoration disabled");
+    }
 
-  useEffect(() => {
-    const scrollToTop = () => {
+    // Wait for the next paint, then reset scroll
+    const resetScroll = () => {
       console.log("⚡ Reset scroll for route:", pathname);
-      if ("scrollRestoration" in window.history) {
-        window.history.scrollRestoration = "manual";
-        console.log("🛑 scrollRestoration disabled");
-      }
+      window.scrollTo(0, 0);
 
-      // Force scroll multiple times to beat any late browser behavior
-      requestAnimationFrame(() => {
-        console.log("⬆️ Scroll frame 1");
-        window.scrollTo(0, 0);
-        setTimeout(() => {
-          console.log("⬆️ Scroll frame 2");
-          window.scrollTo(0, 0);
-        }, 50);
-        setTimeout(() => {
-          console.log("⬆️ Scroll frame 3");
-          window.scrollTo(0, 0);
-        }, 150);
-      });
+      // Also reset the scroll of main container if needed
+      const main = document.querySelector("main");
+      if (main) main.scrollTop = 0;
     };
 
-    // Reset on first mount + pathname change
-    scrollToTop();
+    // Use two micro-tasks to beat hydration/layout effects
+    const id1 = setTimeout(resetScroll, 0);
+    const id2 = setTimeout(resetScroll, 50);
 
-    // Optional: listen for hash changes too
-    const onHashChange = () => scrollToTop();
-    window.addEventListener("hashchange", onHashChange);
-
-    return () => window.removeEventListener("hashchange", onHashChange);
+    return () => {
+      clearTimeout(id1);
+      clearTimeout(id2);
+    };
   }, [pathname]);
 
   return null;
