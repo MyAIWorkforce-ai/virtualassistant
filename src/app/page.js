@@ -449,7 +449,7 @@ useEffect(() => {
 - Call recordings, summaries & transcripts<br/>
 - Professional, consistent service every time<br/>
 - Dedicated business number included<br/>
-- Call forwarding option with clear step-by-step &nbsp; instructions<br/>
+- Call forwarding option with clear step-by-step <br/> &nbsp; instructions<br/>
 
             </p>
           </div>
