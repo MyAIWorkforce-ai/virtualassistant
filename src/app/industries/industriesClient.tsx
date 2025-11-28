@@ -3,13 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+
 
 export default function MainIndustry() {
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
 
 const HealthCarecards = [
   {
@@ -161,7 +157,7 @@ const HospitalityOther = [
   },
 ];
     return (
-        <>
+        <div classname:"scroll-mt-[50px] md:scroll-mt-[10px] lg:scroll-mt-[10px]">
             {/* SEO Meta */}
             <Head>
                 <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
