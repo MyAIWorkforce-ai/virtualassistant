@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -6,8 +7,12 @@ export default function ScrollReset() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Always scroll to top on route change
-    window.scrollTo(0, 0);
+    // Wait for hydration then scroll
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+
+    return () => clearTimeout(timeout);
   }, [pathname]);
 
   return null;
