@@ -6,6 +6,10 @@ import { motion } from "framer-motion";
 
 export default function MainIndustry() {
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
 const HealthCarecards = [
   {
     icon: "/industrymain-images/physio.png",
