@@ -507,6 +507,6 @@ const HospitalityOther = [
                    </motion.div>
             </motion.section>
 
-        </>
+        </div>
     )
 }
