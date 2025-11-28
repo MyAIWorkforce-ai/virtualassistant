@@ -157,7 +157,7 @@ const HospitalityOther = [
   },
 ];
     return (
-        <div classname:"scroll-mt-[50px] md:scroll-mt-[10px] lg:scroll-mt-[10px]">
+        <div className="scroll-mt-[50px] md:scroll-mt-[10px] lg:scroll-mt-[10px]">
             {/* SEO Meta */}
             <Head>
                 <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
