@@ -481,8 +481,8 @@ useEffect(() => {
 
             <p className="text-[#797A7D] font-medium mt-3 text-sm">
              - Fully automated: books, reschedules & <br/> &nbsp; cancels appointments<br/>
-- works seamlessly with Google Calendar, &nbsp;&nbsp; Outlook Calendar & Cal.com<br/>
-- Sends SMS & email confirmations and &nbsp;&nbsp; reminders<br/>
+- works seamlessly with Google Calendar, <br/> &nbsp; Outlook Calendar & Cal.com<br/>
+- Sends SMS & email confirmations and <br/> &nbsp; reminders<br/>
             </p>
           </div>
         </article>
@@ -511,10 +511,10 @@ useEffect(() => {
               </h3>
             </div>
 <p className="text-[#797A7D] font-medium mt-2 text-sm">
-             - Answers questions about your services &nbsp;&nbsp; instantly<br/>
+             - Answers questions about your services <br/> &nbsp; instantly<br/>
 - Explains pricing, availability & directions<br/>
-- Handles reschedules or cancellations &nbsp;&nbsp; smoothly<br/>
-- Customisable personality, friendly, &nbsp;&nbsp; professional, or casual<br/>
+- Handles reschedules or cancellations <br/> &nbsp; smoothly<br/>
+- Customisable personality, friendly, <br/> &nbsp; professional, or casual<br/>
             </p>
           </div>
         </article>
@@ -543,10 +543,10 @@ useEffect(() => {
             </div>
  <p className="text-[#797A7D] font-medium mt-2 text-sm">
              - Add client notes after each appointment<br/>
-- Record voice memos that are auto- &nbsp;&nbsp; Transcribed
+- Record voice memos that are auto- <br/> &nbsp; Transcribed
 & Summarised<br/>
-- Upload photos or documents linked to &nbsp;&nbsp; appointments<br/>
-- Build a complete client history file &nbsp;&nbsp; automatically<br/>
+- Upload photos or documents linked to <br/> &nbsp; appointments<br/>
+- Build a complete client history file <br/> &nbsp; automatically<br/>
             </p>
           </div>
         </article>
@@ -580,16 +580,16 @@ useEffect(() => {
       <p className="text-[#797A7D] font-medium mt-2 text-sm">
         Your control centre gives you everything in one place:<br/>
         - Advanced CRM with client data & history<br/>
-        - AI Smart Calendar that is colour-coded & &nbsp;&nbsp; auto-updating<br/>
+        - AI Smart Calendar that is colour-coded & <br/> &nbsp; auto-updating<br/>
         
       </p>
 
       {expanded && (
         <div className="mt-1 text-[#797A7D] text-sm">
-          - Analytics & insights, calls, bookings, &nbsp;&nbsp; cancellations, no-shows, performance<br/>
+          - Analytics & insights, calls, bookings, <br/> &nbsp; cancellations, no-shows, performance<br/>
           - One clean dashboard replaces multiple tools &nbsp;&nbsp; and platforms.<br/>
-          - Front-End Prompts, Easily update what your &nbsp;&nbsp; AI says to clients on the phone, website, or &nbsp;&nbsp; chat — no tech skills required.<br/>
-          - Fully Customisable Branding, Upload your &nbsp;&nbsp; business logo, set your theme colours, and &nbsp; brand the dashboard to feel like your own &nbsp;&nbsp; system — not just another generic tool.
+          - Front-End Prompts, Easily update what your &nbsp;&nbsp; AI says to clients on the phone, website, or <br/> &nbsp; chat — no tech skills required.<br/>
+          - Fully Customisable Branding, Upload your <br/> &nbsp; business logo, set your theme colours, and <br/> &nbsp; brand the dashboard to feel like your own <br/> &nbsp; system — not just another generic tool.
         </div>
       )}
 
@@ -628,7 +628,7 @@ useEffect(() => {
 
             <p className="text-[#797A7D] font-medium mt-2 text-sm">
              - Website booking widget (simple copy & paste &nbsp;&nbsp; script)<br/>
-- Website Chatbot for real-time answering &nbsp;&nbsp; Queries, booking appointments or &nbsp;&nbsp; conversations (simple copy & paste script)<br/>
+- Website Chatbot for real-time answering <br/> &nbsp; Queries, booking appointments or <br/> &nbsp; conversations (simple copy & paste script)<br/>
 - 24/7 online + phone coverage for clients<br/>
             </p>
           </div>
