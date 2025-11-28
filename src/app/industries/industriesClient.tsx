@@ -7,7 +7,6 @@ import { useLayoutEffect } from "react";
 
 export default function MainIndustry() {
 
-  export default function ScrollToTop() {
   useLayoutEffect(() => {
     // wait until next paint to ensure DOM is ready
     requestAnimationFrame(() => {
