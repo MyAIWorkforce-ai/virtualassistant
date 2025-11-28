@@ -7,15 +7,17 @@ export default function ScrollReset() {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log("SCROLL RESET RUNNING for:", pathname);
-    // Wait for hydration then scroll
-    const timeout = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
+    // Disable browser auto-scroll restoration
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
 
-    return () => clearTimeout(timeout);
+    // Force reset twice in case UI updates after first tick
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+      setTimeout(() => window.scrollTo(0, 0), 50);
+    });
   }, [pathname]);
 
   return null;
 }
-
