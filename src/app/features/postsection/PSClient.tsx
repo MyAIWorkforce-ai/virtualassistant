@@ -82,7 +82,7 @@ export default function PSClient() {
             hover:shadow-[0_0_15px_#00A7DE]
           "
         >
-          Start your 14 Day Free Trial
+          Start Your 14 Day Free Trial
         </motion.button>
       </Link>
 
@@ -359,7 +359,7 @@ Smart tools that help you stay organized, informed, and always ready for the nex
   rel="noopener noreferrer"
   className="bg-white text-[#00A7DE] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#E8F6FF] transition text-sm font-poppins inline-block text-center"
 >
-  Start your 14 day free trial
+  Start Your 14 Day Free Trial
 </a>
             </motion.section>
 

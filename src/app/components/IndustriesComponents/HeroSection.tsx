@@ -48,7 +48,7 @@ export default function HeroSection({
                   </motion.p>
   {/* BUTTONS */}
            <motion.div
-             className="flex gap-4 mb-2  justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full"
              initial={{ opacity: 0, y: 30 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 0.2 }}
