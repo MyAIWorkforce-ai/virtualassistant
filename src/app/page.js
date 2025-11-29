@@ -13,6 +13,76 @@ import ScaleUp from "./_components/animations/ScaleUp";
 import useScrollAnimation from "./_components/animations/scrolleranimation";
 
 
+export async function generateMetadata() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VirtualAssistant.com.au",
+    "url": "https://virtualassistant.com.au",
+    "logo": "https://virtualassistant.com.au/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/VirtualAssistantAU",
+      "https://www.linkedin.com/company/virtualassistant-au",
+      "https://twitter.com/VirtualAssistantAU"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+61-400-000-000",
+        "contactType": "customer service",
+        "areaServed": "AU",
+        "availableLanguage": ["English"]
+      }
+    ],
+    "description": "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide."
+  };
+
+  return {
+    title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
+     keywords: [
+      "best ai virtual receptionist australia",
+      "top virtual receptionist service",
+      "24/7 ai call answering australia",
+      "ai receptionist for small business",
+      "booking automation australia",
+      "ai receptionist melbourne",
+      "ai receptionist sydney",
+      "ai receptionist brisbane",
+      "ai receptionist perth",
+      "ai receptionist adelaide",
+      "ai receptionist canberra",
+      "ai receptionist hobart",
+      "ai receptionist darwin"
+    ],
+    openGraph: {
+      title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+      description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
+      url: "https://virtualassistant.com.au",
+      images: [
+        {
+          url: "/images/card.png",
+          width: 1200,
+          height: 630,
+        }
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+      description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
+      images: ["/images/card.png"],
+    },
+    other: [
+      {
+        type: "application/ld+json",
+        content: JSON.stringify(schema),
+      }
+    ],
+  };
+}
+
+
 export default function Home() {
   useScrollAnimation();
   const [expanded, setExpanded] = useState(false);
@@ -242,29 +312,7 @@ useEffect(() => {
   // =============================
   return (
     <>
-      {/* Meta Tags */}
-      <Head>
-        <title>Australia's Best AI Virtual Receptionist | http://virtualAssistant.com.au</title>
-        <meta
-          name="description"
-          content="Tailored for every service-based industry. Designed to save time, cut costs, and boost productivity. Your AI receptionist sounds human and works, speaks, and feels just like your business. Let us take your calls 24/7 and streamline your admin effortlessly"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Transform Your Business with AI-Powered Assistants"
-        />
-        <meta
-          property="og:description"
-          content="Tailored solutions for every industry, designed to save time, cut costs, and boost productivity."
-        />
-        <meta property="og:image" content="/images/card.png" />
-        <meta
-          property="og:url"
-          content="https://virtualassistant.com.au"
-        />
-      </Head>
+  
       <main className="bg-[url('/image/Hero.png')] bg-cover bg-center bg-no-repeat w-full min-h-[600px] lg:h-[800px]">
 
         {/* HERO SECTION */}
