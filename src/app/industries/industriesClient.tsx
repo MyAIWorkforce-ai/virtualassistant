@@ -65,7 +65,7 @@ const HealthCarecards = [
   },
   {
     icon: "/industrymain-images/hair-dresser.png",
-    title: "Hair Dresser",
+    title: "Hairdresser",
     desc: "Effortless salon scheduling — manages appointments, client preferences, and reminders seamlessly.",
     link: "/industries/hairdresser",
   },
@@ -77,7 +77,7 @@ const HealthCarecards = [
   },
   {
     icon: "/industrymain-images/physio.png",
-    title: "Osteopaths",
+    title: "Osteopath",
     desc: "Modernizes osteopathic care by managing appointments, recording treatment notes, and organizing follow-ups.",
     link: "/industries/osteopaths",
   },
