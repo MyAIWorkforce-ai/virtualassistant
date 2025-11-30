@@ -24,6 +24,22 @@ export const metadata: Metadata = {
     "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
   keywords:
     "best ai virtual receptionist australia, top virtual receptionist service, 24/7 ai call answering australia, ai receptionist for small business, booking automation australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin",
+
+  openGraph: {
+    title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    description:
+      "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
+    url: "https://www.virtualassistant.com.au",
+    siteName: "VirtualAssistant.com.au",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png", 
+        width: 1200,
+        height: 630,
+        alt: "AI Virtual Receptionist Preview",
+      },
+    ],
 };
 
 export default function RootLayout({
