@@ -460,7 +460,7 @@ useEffect(() => {
 
             <p className="text-[#797A7D] font-medium mt-3 text-sm">
              - Fully automated: books, reschedules & <br/> &nbsp; cancels appointments<br/>
-- works seamlessly with Google Calendar, <br/> &nbsp; Outlook Calendar & Cal.com<br/>
+- Works seamlessly with Google Calendar, <br/> &nbsp; Outlook Calendar & Cal.com<br/>
 - Sends SMS & email confirmations and <br/> &nbsp; reminders<br/>
             </p>
           </div>
