@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/image/logo1.png", 
-      width: {1200},
-        height: {630},
+      width: 1200,
+        height: 630,
         alt: "AI Virtual Receptionist Preview",
       },
     ],},
