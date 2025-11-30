@@ -31,7 +31,7 @@ export default function Navbar() {
     electricians: "Electrician",
     cleaning: "Window Cleaning",
     beautytherapist: "Beauty Therapist",
-    resturant: "Restaurant",
+    resturant: "Restaurant & Takeaway Businesses",
     hotelsaccommodation: "Hotels & Accommodation",
     forother: "Other",
   };
