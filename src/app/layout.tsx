@@ -50,6 +50,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+          {/* Fallback og tags */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation" />
+          <meta property="og:description" content="Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide." />
+          <meta property="og:image" content="https://www.virtualassistant.com.au/og-image.png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+
+        
         {/* Google Tag Manager (head) - injected safely for TSX */}
         <Script
           id="gtm-head"
