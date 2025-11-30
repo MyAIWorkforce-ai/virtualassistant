@@ -193,7 +193,7 @@ const HospitalityOther = [
                text-[#000000] pt-[5px] mb-6 sm:mb-8"
   >
     AI Virtual Receptionists & <br/>Smart Scheduling for{" "}
-    <span className="text-[#00A7DE]"> Every <span className="ml-0 md:ml-3 lg:ml-3"> Industry </span></span>
+    <span className="text-[#00A7DE]"> Every Industry </span>
   </h1>
 
   {/* Subtitle */}
