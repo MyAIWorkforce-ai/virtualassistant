@@ -163,17 +163,17 @@ const plans = [
          {
       name: "Carlos Rivera",
       title: "Rivera Legal Group",
-      quote:"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours — it’s like having a full-time receptionist without the overhead",
+      quote:"The accuracy and professionalism of the AI assistant have been remarkable. Our clients get immediate help, even after hours, it’s like having a full-time receptionist without the overhead",
     },
     {
       name: " Hannah Lee",
       title: " Fit With  Hannah Coaching",
-      quote:"My clients are impressed that they can book sessions or ask questions at any time. The AI feels natural and keeps my schedule full — I can’t imagine going back!",
+      quote:"My clients are impressed that they can book sessions or ask questions at any time. The AI feels natural and keeps my schedule full, I can’t imagine going back!",
     },
     {
       name: "Daniel Cooper",
       title: "Tech Nova Consulting",
-      quote:"We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM — a total game-changer.",
+      quote:"We handle dozens of client calls daily, and this system has improved efficiency and response time. The AI assistant integrates perfectly with our CRM, a total gamechanger.",
     },
     {
       name: "Olivia Grant",
@@ -183,12 +183,12 @@ const plans = [
     {
       name: "Mark Thompson",
       title: " Summit Accounting",
-      quote: "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 — exactly what we needed to modernize our client support.",
+      quote: "This AI receptionist handles our client inquiries flawlessly. It’s efficient, polite, and available 24/7 exactly what we needed to modernize our client support.",
     },
       {
       name: "Dr. James Wilson",
       title: "Flow Master Plumbing",
-    quote: "Since integrating VirtualAssistant.com.au, our plumbing business has become far more efficient. The AI handles calls, bookings, and urgent requests instantly—our customers love the quick updates and professional service.",
+    quote: "Since integrating VirtualAssistant.com.au, our plumbing business has become far more efficient. The AI handles calls, bookings, and urgent requests instantly, our customers love the quick updates and professional service.",
       
     },
         {
@@ -201,7 +201,7 @@ const plans = [
           {
       name: "Robert Chen",
       title: "Clinical Psychologist",
-      quote:"VirtualAssistant.com.au has transformed our practice. Calls, bookings, and reminders are handled seamlessly, letting us focus on clients. Patients love the timely follow-ups, and managing session notes is easier than ever—like having a professional assistant 24/7.",
+      quote:"VirtualAssistant.com.au has transformed our practice. Calls, bookings, and reminders are handled seamlessly, letting us focus on clients. Patients love the timely followups, and managing session notes is easier than ever like having a professional assistant 24/7.",
     },
   ];
 
