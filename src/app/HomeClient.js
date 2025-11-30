@@ -566,7 +566,7 @@ useEffect(() => {
       {expanded && (
         <div className="mt-1 text-[#797A7D] text-sm">
           - Analytics & insights, calls, bookings, <br/> &nbsp; cancellations, no-shows, performance<br/>
-          - One clean dashboard replaces multiple tools &nbsp;&nbsp; and platforms.<br/>
+          - One clean dashboard replaces multiple tools <span className="sm:ml-0 md:ml-2 lg:ml-2"> and </span> platforms.<br/>
           - Front-End Prompts, Easily update what your &nbsp;&nbsp; AI says to clients on the phone, website, or <br/> &nbsp; chat — no tech skills required.<br/>
           - Fully Customisable Branding, Upload your <br/> &nbsp; business logo, set your theme colours, and <br/> &nbsp; brand the dashboard to feel like your own <br/> &nbsp; system — not just another generic tool.
         </div>
