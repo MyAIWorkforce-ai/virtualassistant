@@ -51,7 +51,7 @@ export default function HomeClient() {
     {
       slug: "resturant",
       icon: "/industrymain-images/resturant.png",
-      title: "Restaurant",
+      title: "Restaurant & Takeaway Businesses",
       desc: "Reservation Management Made Easy.  Manages table bookings, cancellations, and automated waitlists.",
     },
     {
