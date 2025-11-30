@@ -830,7 +830,7 @@ useEffect(() => {
           <div className="w-20 h-1 bg-[#098DC9] mx-auto mb-3 rounded-full"></div>
 
           <p className="text-[#797A7D] mb-12 max-w-2xl mx-auto">
-            Our AI assistant handles your calls from start to finish, just like
+            Our AI Assistant handles your calls from start to finish, just like
             a human receptionist.
           </p>
 
