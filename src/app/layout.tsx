@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         height: 630,
         alt: "AI Virtual Receptionist Preview",
       },
-    ],
+    ],},
 };
 
 export default function RootLayout({
