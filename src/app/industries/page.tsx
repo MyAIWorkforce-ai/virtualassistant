@@ -40,9 +40,12 @@ export default function IndustriesPage() {
   return (
     <>
       {/* JSON-LD Schema for SEO */}
-      <script id="industries-schema" type="application/ld+json">
-        {JSON.stringify(industriesSchema)}
-      </script>
+     <script
+  id="industries-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(industriesSchema) }}
+/>
+
 
       {/* Main Industries Component */}
       <MainIndustry />
