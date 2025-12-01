@@ -12,4 +12,27 @@ export async function generateMetadata() {
 
 
 export default function SmartAIassistant() {
-  return <SAIAClient/>}
+const smartAISchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/smart-ai-assistant#service",
+    "url": "https://www.virtualassistant.com.au/smart-ai-assistant",
+    "name": "AI Client Messaging Australia | Automated Replies & Booking Links",
+    "description": "AI client messaging assistant that sends automated replies, booking links and support messages for Australian service businesses.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au" },
+    "areaServed": "Australia",
+    "serviceType": ["AI client messaging","Automated customer support","Booking link automation"]
+  };
+  
+  return(<>
+  
+    <script
+        id="smart-ai-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(smartAISchema) }}
+      />
+  
+  
+  
+  <SAIAClient/>
+  </>); }
