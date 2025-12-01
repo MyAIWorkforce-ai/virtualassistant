@@ -25,7 +25,7 @@ export default function ContactPage() {
   };
  
   return 
-  (
+  ( <>
     <Head>
       <script
         id="contact-schema"
@@ -35,6 +35,7 @@ export default function ContactPage() {
     </Head>
 
  <MainContact/>
-  )  
+        </>
+  );  
  }
     
