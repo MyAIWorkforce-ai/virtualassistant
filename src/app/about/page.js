@@ -1,5 +1,5 @@
 import MainAbout from "./MainAbout";
-import Head from "next/head";
+
 
 
 export async function generateMetadata() {
@@ -26,13 +26,12 @@ export default function HomePage() {
 
   return  (
     <>
-      <Head>
+
       <script
         id="about-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
-      />
-    </Head>  
+      /> 
         
   <MainAbout/>
         </>);
