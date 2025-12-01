@@ -11,4 +11,28 @@ export async function generateMetadata() {
 }
 
 export default function AppointmentScheduling() {
-  return <ASClient/>}
+const appointmentSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/ai-appointment-scheduling#service",
+    "url": "https://www.virtualassistant.com.au/ai-appointment-scheduling",
+    "name": "AI Appointment & Job Scheduling Australia | Automated Bookings 24/7",
+    "description": "AI-powered appointment and job scheduling for Australian service businesses, including bookings, reschedules, cancellations and reminders.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au" },
+    "areaServed": "Australia",
+    "serviceType": ["AI appointment scheduling","AI job scheduling","Automated booking reminders"]
+  };
+
+  
+  return (
+
+<>
+  <script
+        id="ai-appointment-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appointmentSchema) }}
+      />
+
+
+    <ASClient/></>
+  );}
