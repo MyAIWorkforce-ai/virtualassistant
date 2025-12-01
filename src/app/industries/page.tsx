@@ -1,5 +1,6 @@
 import MainIndustry from "./industriesClient";
 import Script from "next/script";
+import Head from "next/head";
 
 export async function generateMetadata() {
   return {
@@ -39,13 +40,14 @@ export default function IndustriesPage() {
 
   return (
     <>
+      <Head>
       {/* JSON-LD Schema for SEO */}
      <script
   id="industries-schema"
   type="application/ld+json"
   dangerouslySetInnerHTML={{ __html: JSON.stringify(industriesSchema) }}
 />
-
+</Head>
 
       {/* Main Industries Component */}
       <MainIndustry />
