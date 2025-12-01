@@ -1,5 +1,5 @@
 import MainContact from "./MainContact";
-import Head from "next/head";
+
 
 
 export async function generateMetadata() {
@@ -28,13 +28,13 @@ export default function ContactPage() {
  
   return 
   ( <>
-    <Head>
+    
       <script
         id="contact-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
-    </Head>
+    
 
  <MainContact/>
         </>
