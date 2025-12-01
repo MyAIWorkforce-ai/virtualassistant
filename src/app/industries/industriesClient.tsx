@@ -165,39 +165,6 @@ const HospitalityOther = [
 ];
     return (
         <div className="scroll-mt-[50px] md:scroll-mt-[10px] lg:scroll-mt-[10px]">
-            {/* JSON Schema */}
-            <Head>
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://www.virtualassistant.com.au/industries#webpage",
-        "url": "https://www.virtualassistant.com.au/industries",
-        "name": "AI Receptionist for Service Industries Australia | Trades, Wellness, Professional & Hospitality",
-        "description": "AI virtual receptionist for Australian trades, wellness, professional services, hospitality, beauty, fitness, childcare and other service-based industries.",
-        "inLanguage": "en-AU",
-        "isPartOf": {
-          "@id": "https://www.virtualassistant.com.au#website"
-        },
-        "mainEntity": {
-          "@type": "ItemList",
-          "itemListElement": [
-            { "@type": "Service", "name": "AI receptionist for trades" },
-            { "@type": "Service", "name": "AI receptionist for wellness & allied health" },
-            { "@type": "Service", "name": "AI receptionist for professional services" },
-            { "@type": "Service", "name": "AI receptionist for hospitality & venues" },
-            { "@type": "Service", "name": "AI receptionist for beauty & personal care" },
-            { "@type": "Service", "name": "AI receptionist for sports, fitness & gyms" },
-            { "@type": "Service", "name": "AI receptionist for childcare & education" }
-          ]
-        }
-      })
-    }}
-  />
-</Head>
-
 <motion.section
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
