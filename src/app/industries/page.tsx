@@ -40,9 +40,9 @@ export default function IndustriesPage() {
   return (
     <>
       {/* JSON-LD Schema for SEO */}
-      <Script id="industries-schema" type="application/ld+json">
+      <script id="industries-schema" type="application/ld+json">
         {JSON.stringify(industriesSchema)}
-      </Script>
+      </script>
 
       {/* Main Industries Component */}
       <MainIndustry />
