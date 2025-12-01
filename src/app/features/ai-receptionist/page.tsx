@@ -12,4 +12,30 @@ export async function generateMetadata() {
 
 
 export default function AiReceptionist() {
-    return <AIReceptionistClient/>}
+
+  const aiReceptionistSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/ai-receptionist#service",
+    "url": "https://www.virtualassistant.com.au/ai-receptionist",
+    "name": "AI Receptionist Australia | 24/7 Call Answering & Automated Client Handling",
+    "description": "AI receptionist for Australian service industries that answers calls, books jobs and manages client communication 24/7.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au", "url": "https://www.virtualassistant.com.au" },
+    "areaServed": ["Australia","Melbourne","Sydney","Brisbane","Perth","Adelaide","Canberra","Hobart","Darwin"],
+    "serviceType": ["AI call answering","Booking automation","Client messaging automation"]
+  };
+  
+    return (
+      <>
+      
+         <script
+        id="ai-receptionist-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aiReceptionistSchema) }}
+      />
+
+          <AIReceptionistClient/>
+      </>);
+      
+      
+    }
