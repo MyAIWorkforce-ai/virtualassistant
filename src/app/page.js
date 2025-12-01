@@ -90,6 +90,27 @@ export default function Home() {
       "url": "https://www.virtualassistant.com.au/wp-content/uploads/hero-image.jpg"
     }
   };
+
+  const pricingSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.virtualassistant.com.au/pricing#webpage",
+    "url": "https://www.virtualassistant.com.au/pricing",
+    "name": "AI Receptionist Pricing Australia | Affordable 24/7 Automation for Service Businesses",
+    "description": "Transparent AI receptionist pricing for Australian service businesses with unlimited calls, bookings and automation.",
+    "inLanguage": "en-AU",
+    "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" },
+    "mainEntity": {
+      "@type": "OfferCatalog",
+      "name": "AI Receptionist Plans",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Starter AI Receptionist Plan", "category": "Service", "areaServed": "Australia" },
+        { "@type": "Offer", "name": "Growth AI Receptionist Plan", "category": "Service", "areaServed": "Australia" },
+        { "@type": "Offer", "name": "Scale AI Receptionist Plan", "category": "Service", "areaServed": "Australia" }
+      ]
+    }
+  };
+
   
   return (
     <>    
@@ -98,6 +119,12 @@ export default function Home() {
         id="home-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
+
+       <script
+        id="pricing-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
       />
     
     
