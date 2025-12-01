@@ -1,4 +1,6 @@
 import MainAbout from "./MainAbout";
+import Head from "next/head";
+
 
 export async function generateMetadata() {
   return {
