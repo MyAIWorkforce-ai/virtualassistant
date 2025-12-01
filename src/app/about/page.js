@@ -23,6 +23,7 @@ export default function HomePage() {
   };
 
   return  (
+    <>
       <Head>
       <script
         id="about-schema"
@@ -31,7 +32,8 @@ export default function HomePage() {
       />
     </Head>  
         
-  <MainAbout/> )
+  <MainAbout/>
+        </>);
 
 }
     
