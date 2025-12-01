@@ -78,7 +78,7 @@ export default function RootLayout({
           }}
         />
 
-                {/* GLOBAL SCHEMA: Organization + Website */}
+                {/* GLOBAL SCHEMA: Organization + Website + Local Business */}
         <Script
           id="global-organization-schema"
           type="application/ld+json"
@@ -124,6 +124,40 @@ export default function RootLayout({
             }),
           }}
         />
+
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "VirtualAssistant.com.au",
+      url: "https://www.virtualassistant.com.au",
+      description:
+        "AI virtual receptionist and automation platform serving Australian service businesses nationwide.",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+      },
+      areaServed: [
+        "Australia",
+        "Melbourne",
+        "Sydney",
+        "Brisbane",
+        "Perth",
+        "Adelaide",
+        "Canberra",
+        "Hobart",
+        "Darwin",
+      ],
+      serviceArea: {
+        "@type": "AdministrativeArea",
+        name: "Australia",
+      },
+    }),
+  }}
+/>
+
         
       </head>
 
