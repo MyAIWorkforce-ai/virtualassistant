@@ -12,4 +12,25 @@ export async function generateMetadata() {
 
 
 export default function PostSection() {
-    return <PSClient/>}
+const postSessionSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/post-session-tools#service",
+    "url": "https://www.virtualassistant.com.au/post-session-tools",
+    "name": "AI Post-Session Tools | Automatic Notes, Summaries & Follow-Ups",
+    "description": "AI tools that generate post-session notes, summaries, follow-up messages and workflows for Australian service providers.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au" },
+    "areaServed": "Australia",
+    "serviceType": ["AI notes automation","Client follow-up automation","Post-session workflow automation"]
+  };
+  
+    return (<>
+          <script
+        id="post-session-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(postSessionSchema) }}
+      />
+    
+    
+    <PSClient/>
+    </>);}
