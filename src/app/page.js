@@ -71,8 +71,37 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+ const homeSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.virtualassistant.com.au/#home",
+    "url": "https://www.virtualassistant.com.au/",
+    "name": "Best AI Virtual Receptionist Australia | 24/7 Call Answering & Job Booking Automation",
+    "description": "VirtualAssistant.com.au provides Australia’s leading AI virtual receptionist for service industries, trades, wellness, hospitality and professional services.",
+    "inLanguage": "en-AU",
+    "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" },
+    "about": [
+      { "@type": "Thing", "name": "AI virtual receptionist Australia" },
+      { "@type": "Thing", "name": "24/7 call answering" },
+      { "@type": "Thing", "name": "booking automation for service businesses" }
+    ],
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://www.virtualassistant.com.au/wp-content/uploads/hero-image.jpg"
+    }
+  };
+  
   return (
-    <>     <HomeClient />  
+    <>    
+    
+     <script
+        id="home-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
+    
+    
+    <HomeClient />  
     </>
   );
 }
