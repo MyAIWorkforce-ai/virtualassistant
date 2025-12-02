@@ -26,18 +26,15 @@ export default function ContactPage() {
     "mainEntity": { "@type": "Organization", "name": "VirtualAssistant.com.au" }
   };
  
-  return 
-  ( <>
-    
-      // <script
-      //   id="contact-schema"
-      //   type="application/ld+json"
-      //   dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
-      // />
-    
+  return (
+    <>
+      <script
+        id="contact-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
 
- <MainContact/>
-        </>
-  );  
- }
-    
+      <MainContact />
+    </>
+  );
+}
