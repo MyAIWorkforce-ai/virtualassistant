@@ -29,11 +29,11 @@ export default function ContactPage() {
   return 
   ( <>
     
-      <script
-        id="contact-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
-      />
+      // <script
+      //   id="contact-schema"
+      //   type="application/ld+json"
+      //   dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      // />
     
 
  <MainContact/>
