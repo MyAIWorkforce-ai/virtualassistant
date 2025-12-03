@@ -12,5 +12,27 @@ export async function generateMetadata() {
 
 
 export default function OnlineIntegration() {
-    return <AdvancedDashboard/>
+  const dashboardSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/advanced-dashboard#service",
+    "url": "https://www.virtualassistant.com.au/advanced-dashboard",
+    "name": "AI Dashboard Australia | Manage Calls, Jobs, Analytics & Client Activity",
+    "description": "Advanced AI dashboard to manage call logs, job bookings, analytics and client activity for Australian service businesses.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au" },
+    "areaServed": "Australia",
+    "serviceType": ["Call tracking and analytics","Booking management analytics","Client activity insights"]
+  };
+  
+    return (<>
+    
+     <script
+        id="advanced-dashboard-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(dashboardSchema) }}
+      />
+    
+    
+    <AdvancedDashboard/>
+    </>); 
   }

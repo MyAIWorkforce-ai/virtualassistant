@@ -157,7 +157,7 @@ const Footer = () => {
             <ul className="space-y-2 text-[#797A7D]">
               {[
                 { name: "Beauty Therapist", href: "/industries/beautytherapist" },
-                { name: "Restaurant", href: "/industries/resturant" },
+                { name: "Restaurant & Takeaway", href: "/industries/resturant" },
                 { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
                 { name: "Others", href: "/industries/forother" },
               ].map((item, i) => (

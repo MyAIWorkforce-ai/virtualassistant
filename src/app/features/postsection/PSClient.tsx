@@ -63,7 +63,7 @@ export default function PSClient() {
 
     {/* BUTTONS */}
     <motion.div
-      className="flex flex-col sm:flex-row gap-2 m-3 w-full"
+      className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-2 m-3 w-full"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2 }}

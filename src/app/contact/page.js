@@ -1,5 +1,7 @@
 import MainContact from "./MainContact";
 
+
+
 export async function generateMetadata() {
   return {
     title: "Contact Us | Book A Demo of Australia’s Most Advanced AI Receptionist",
@@ -12,6 +14,27 @@ export async function generateMetadata() {
 
 
 export default function ContactPage() {
+    const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://www.virtualassistant.com.au/contact#webpage",
+    "url": "https://www.virtualassistant.com.au/contact",
+    "name": "Contact VirtualAssistant.com.au | Book a Demo or Get Support",
+    "description": "Contact VirtualAssistant.com.au to request a demo, ask questions or get support for your AI receptionist.",
+    "inLanguage": "en-AU",
+    "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" },
+    "mainEntity": { "@type": "Organization", "name": "VirtualAssistant.com.au" }
+  };
  
-  return <MainContact/>}
-    
+  return (
+    <>
+      <script
+        id="contact-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+
+      <MainContact />
+    </>
+  );
+}

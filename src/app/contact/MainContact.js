@@ -35,13 +35,7 @@ export default function MainContact() {
 
   const countryCodes = [
     { code: "+61", country: "AU" },
-    { code: "+1", country: "US" },
-    { code: "+44", country: "UK" },
-    { code: "+92", country: "Pk" },
-    { code: "+91", country: "IN" },
-    { code: "+81", country: "JP" },
-    { code: "+49", country: "GE" },
-    { code: "+33", country: "FR" },
+
   ];
 
   const handleChange = (field, value) => {
@@ -250,7 +244,7 @@ export default function MainContact() {
             <option>Electrician</option>
             <option>Window Cleaning</option>
             <option>Beauty Therapist</option>
-            <option>Restaurant</option>
+            <option>Restaurant & Takeaway Businesses</option>
             <option>Hotels & Accommodation</option>
             <option>Others</option>
                 </select>

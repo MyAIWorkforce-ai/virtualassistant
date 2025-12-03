@@ -101,7 +101,7 @@ export default function PrimaryUses({ heading, items }: PrimaryUsesProps) {
     textShadow: "0 0 4px rgba(0, 144, 204, 0.25)",
   }}
 >
-  Get you AI Virtual <br />
+  Get your AI Virtual <br />
 Receptionist set up in <br />
   under 5 minutes.
 </p>

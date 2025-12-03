@@ -1,5 +1,6 @@
-
 import MainIndustry from "./industriesClient";
+import Script from "next/script";
+import Head from "next/head";
 
 export async function generateMetadata() {
   return {
@@ -12,5 +13,44 @@ export async function generateMetadata() {
 }
 
 export default function IndustriesPage() {
-  return <MainIndustry />;
+  const industriesSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.virtualassistant.com.au/industries#webpage",
+    "url": "https://www.virtualassistant.com.au/industries",
+    "name": "AI Receptionist for Service Industries Australia | Trades, Wellness, Professional & Hospitality",
+    "description": "AI virtual receptionist for Australian trades, wellness, professional services, hospitality, beauty, fitness, childcare and other service-based industries.",
+    "inLanguage": "en-AU",
+    "isPartOf": {
+      "@id": "https://www.virtualassistant.com.au#website"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "Service", "name": "AI receptionist for trades" },
+        { "@type": "Service", "name": "AI receptionist for wellness & allied health" },
+        { "@type": "Service", "name": "AI receptionist for professional services" },
+        { "@type": "Service", "name": "AI receptionist for hospitality & venues" },
+        { "@type": "Service", "name": "AI receptionist for beauty & personal care" },
+        { "@type": "Service", "name": "AI receptionist for sports, fitness & gyms" },
+        { "@type": "Service", "name": "AI receptionist for childcare & education" }
+      ]
+    }
+  };
+
+  return (
+    <>
+      <Head>
+      {/* JSON-LD Schema for SEO */}
+     <script
+  id="industries-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(industriesSchema) }}
+/>
+</Head>
+
+      {/* Main Industries Component */}
+      <MainIndustry />
+    </>
+  );
 }

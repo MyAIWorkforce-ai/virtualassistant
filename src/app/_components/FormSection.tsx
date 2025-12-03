@@ -129,15 +129,7 @@ export default function FormSection() {
               className="text-black px-3 py-2 border-r border-[#D1D5DB] outline-none"
             >
               <option value="+61">🇦🇺 +61</option>
-              <option value="+1">🇺🇸 +1</option>
-              <option value="+44">🇬🇧 +44</option>
-              <option value="+92">🇵🇰 +92</option>
-              <option value="+91">🇮🇳 +91</option>
-              <option value="+81">🇯🇵 +81</option>
-              <option value="+971">🇦🇪 +971</option>
-              <option value="+49">🇩🇪 +49</option>
-              <option value="+33">🇫🇷 +33</option>
-              <option value="+86">🇨🇳 +86</option>
+
             </select>
             <input
               id="phone"
@@ -188,15 +180,15 @@ export default function FormSection() {
             <option>Accountant</option>
             <option>Lawyer</option>
             <option>Consultant</option>
-            <option>Realestate Agent</option>
+            <option>Real Estate Agent</option>
             <option>Mechanic</option>
             <option>Plumber</option>
             <option>Electrician</option>
             <option>Window Cleaning</option>
             <option>Beauty Therapist</option>
-            <option>Restaurant</option>
+            <option>Restaurant & Takeaway Businesses</option>
             <option>Hotels & Accommodation</option>
-            <option>Others</option>
+            <option>Other</option>
           </select>
         </motion.div>
       </div>
