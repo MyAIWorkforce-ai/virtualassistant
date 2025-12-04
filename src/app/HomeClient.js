@@ -284,7 +284,7 @@ useEffect(() => {
                Never miss a call, booking or opportunity again!
               </p>
 
-<div className="mt-6 flex flex-col md:flex-row lg:flex-row flex-wrap gap-4 justify-center lg:justify-start items-start">
+<div className="mt-6 w-full flex flex-col md:flex-row lg:flex-row flex-wrap gap-4 justify-center md:justify-center lg:justify-start items-center md:items-center lg:items-start">
   {/* Start 14 Day Free Trial Button */}
   <Link
     href="https://admin.virtualassistant.com.au/register"
