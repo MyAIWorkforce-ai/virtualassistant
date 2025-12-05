@@ -191,7 +191,8 @@ export default function AIReceptionistClient() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
 >
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between pl-20">
+<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:pl-20">
+
 
     {/* LEFT SIDE - 60% */}
     <div className="md:w-[60%] space-y-6 text-center">
