@@ -228,9 +228,7 @@ export default function ASClient() {
     <div className="flex-1 flex justify-center lg:justify-end">
  <div className="flex-1 flex justify-center lg:justify-end">
   <div
-    className="relative w-full max-w-[850px] h-[400px] sm:h-[300px] xs:h-[220px] bg-white overflow-hidden
-               rounded-[20px] rounded-bl-[110px]
-               shadow-[-4px_3px_6px_rgba(172,169,169,0.25)]"
+    className="hidden lg:block relative w-full max-w-[850px] h-[400px] bg-white overflow-hidden rounded-[20px] rounded-bl-[110px] shadow-[-4px_3px_6px_rgba(172,169,169,0.25)]"
   >
     <img
       src="/feature-images/productivity-gains.png"
