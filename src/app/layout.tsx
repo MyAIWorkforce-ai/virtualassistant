@@ -79,51 +79,47 @@ export default function RootLayout({
         />
 
                 {/* GLOBAL SCHEMA: Organization + Website + Local Business */}
-        <Script
-          id="global-organization-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "VirtualAssistant.com.au",
-              url: "https://virtualassistant.com.au/",
-              logo: "https://virtualassistant.com.au/logo.png",
-              sameAs: [
-                "https://www.facebook.com/",
-                "https://www.instagram.com/",
-                "https://www.linkedin.com/",
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                email: "support@virtualassistant.com.au",
-                availableLanguage: ["English"],
-              },
-            }),
-          }}
-        />
+<Script
+  id="organization-schema-client"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.virtualassistant.com.au/#organization",
+      "name": "VirtualAssistant.com.au",
+      "url": "https://www.virtualassistant.com.au/",
+      "logo": "https://www.virtualassistant.com.au/logo.png",
+      "description":
+        "Australian AI Virtual Receptionist providing 24/7 call answering, booking, CRM and automation for service-based businesses.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia",
+      },
+    }),
+  }}
+/>
 
-        <Script
-          id="global-website-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "VirtualAssistant.com.au",
-              url: "https://virtualassistant.com.au/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target:
-                  "https://virtualassistant.com.au/?s={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
+
+<Script
+  id="website-schema-client"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.virtualassistant.com.au/#website",
+      "name": "VirtualAssistant.com.au",
+      "url": "https://www.virtualassistant.com.au/",
+      "publisher": {
+        "@id": "https://www.virtualassistant.com.au/#organization",
+      },
+    }),
+  }}
+/>
+
 
         <script
   type="application/ld+json"
