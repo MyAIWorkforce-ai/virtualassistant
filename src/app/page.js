@@ -26,7 +26,7 @@ export async function generateMetadata() {
   };
 
   return {
-    title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    title: "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
     description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
      keywords: [
       "best ai virtual receptionist australia",
@@ -57,7 +57,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+      title: "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
       description: "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
       images: ["/images/card.png"],
     },
@@ -76,7 +76,7 @@ export default function Home() {
     "@type": "WebPage",
     "@id": "https://www.virtualassistant.com.au/#home",
     "url": "https://www.virtualassistant.com.au/",
-    "name": "Best AI Virtual Receptionist Australia | 24/7 Call Answering & Job Booking Automation",
+    "name": "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
     "description": "VirtualAssistant.com.au provides Australia’s leading AI virtual receptionist for service industries, trades, wellness, hospitality and professional services.",
     "inLanguage": "en-AU",
     "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" },
@@ -96,7 +96,7 @@ export default function Home() {
     "@type": "WebPage",
     "@id": "https://www.virtualassistant.com.au/pricing#webpage",
     "url": "https://www.virtualassistant.com.au/pricing",
-    "name": "AI Receptionist Pricing Australia | Affordable 24/7 Automation for Service Businesses",
+    "name": "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
     "description": "Transparent AI receptionist pricing for Australian service businesses with unlimited calls, bookings and automation.",
     "inLanguage": "en-AU",
     "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" },
