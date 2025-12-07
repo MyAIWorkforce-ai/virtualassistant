@@ -78,7 +78,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "@id": "https://www.virtualassistant.com.au/#service",
+            "@id": "https://www.virtualassistant.com.au/#features",
             name: "AI Virtual Receptionist & Virtual Assistant",
             provider: { "@id": "https://www.virtualassistant.com.au/#organization" },
             areaServed: { "@type": "Country", name: "Australia" },
