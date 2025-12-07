@@ -104,7 +104,7 @@ export default function RootLayout({
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "@id": "https://www.virtualassistant.com.au/#website",
+      "@id": "https://www.virtualassistant.com.au/#",
       name: "VirtualAssistant.com.au",
       url: "https://www.virtualassistant.com.au/",
       publisher: { "@id": "https://www.virtualassistant.com.au/#organization" },
