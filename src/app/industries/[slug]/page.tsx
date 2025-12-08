@@ -21,10 +21,11 @@ try {
 
   return {
     title: `AI Virtual Receptionist for ${remainingWords} | VirtualAssistant.com.au`,
-    description: data.heroSection.description,
+    description: data.heroSection.metaDescription,
+    keywords: data.heroSection.metaKeywords,
     openGraph: {
-      title: data.heroSection.title,
-      description: data.heroSection.description,
+      title: `AI Virtual Receptionist for ${remainingWords} | VirtualAssistant.com.au`,
+      description: data.heroSection.metaDescription,
       images: [data.heroSection.image],
     },
   };
