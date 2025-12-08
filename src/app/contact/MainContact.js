@@ -244,7 +244,7 @@ export default function MainContact() {
             <option>Electrician</option>
             <option>Window Cleaning</option>
             <option>Beauty Therapist</option>
-            <option>Restaurant & Takeaway Businesses</option>
+            <option>Restaurant & Takeaway</option>
             <option>Hotels & Accommodation</option>
             <option>Others</option>
                 </select>

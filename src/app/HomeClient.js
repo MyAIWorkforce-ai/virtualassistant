@@ -51,7 +51,7 @@ export default function HomeClient() {
     {
       slug: "resturant",
       icon: "/industrymain-images/resturant.png",
-      title: "Restaurant & Takeaway Businesses",
+      title: "Restaurant & Takeaway",
       desc: "Reservation Management Made Easy.  Manages table bookings, cancellations, and automated waitlists.",
     },
     {
@@ -262,7 +262,7 @@ useEffect(() => {
           {/* Content Container */}
           <div className=" flex flex-col items-center justify-center text-center mt-8 px-4 py-24 md:py-20 lg:py-16 lg:flex-row lg:text-left lg:justify-between lg:px-8 max-w-7xl mx-auto gap-10">
            <motion.div
-              className="w-full lg:w-1/2 flex flex-col pl-4 items-center lg:items-start text-center lg:text-left mt-4 lg:-mt-3"
+              className="w-full lg:w-1/2 flex flex-col pl-0 md:pl-4 lg:pl-4 items-center lg:items-start text-center lg:text-left mt-4 lg:-mt-3"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -284,7 +284,7 @@ useEffect(() => {
                Never miss a call, booking or opportunity again!
               </p>
 
-<div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start items-start">
+<div className="mt-6 w-full flex flex-col md:flex-row lg:flex-row flex-wrap gap-4 justify-center md:justify-center lg:justify-start items-center md:items-center lg:items-start">
   {/* Start 14 Day Free Trial Button */}
   <Link
     href="https://admin.virtualassistant.com.au/register"

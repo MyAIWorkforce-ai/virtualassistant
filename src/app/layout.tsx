@@ -19,14 +19,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
   description:
     "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
   keywords:
     "best ai virtual receptionist australia, top virtual receptionist service, 24/7 ai call answering australia, ai receptionist for small business, booking automation australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin",
 
   openGraph: {
-    title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    title: "AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au",
     description:
       "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
     url: "https://www.virtualassistant.com.au",
@@ -53,7 +53,7 @@ export default function RootLayout({
 
           {/* Fallback og tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation" />
+          <meta property="og:title" content="AI Virtual Receptionist Australia | 24/7 Call Answering & Booking – VirtualAssistant.com.au" />
           <meta property="og:description" content="Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide." />
           <meta property="og:image" content="https://www.virtualassistant.com.au/og-image.png" />
           <meta property="og:image:width" content="1200" />
@@ -79,51 +79,39 @@ export default function RootLayout({
         />
 
                 {/* GLOBAL SCHEMA: Organization + Website + Local Business */}
-        <Script
-          id="global-organization-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "VirtualAssistant.com.au",
-              url: "https://virtualassistant.com.au/",
-              logo: "https://virtualassistant.com.au/logo.png",
-              sameAs: [
-                "https://www.facebook.com/",
-                "https://www.instagram.com/",
-                "https://www.linkedin.com/",
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                email: "support@virtualassistant.com.au",
-                availableLanguage: ["English"],
-              },
-            }),
-          }}
-        />
+<Script
+  id="organization-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.virtualassistant.com.au/",
+      name: "VirtualAssistant.com.au",
+      url: "https://www.virtualassistant.com.au/",
+      logo: "https://www.virtualassistant.com.au/logo.png",
+      description:
+        "Australian AI Virtual Receptionist providing 24/7 call answering, booking, CRM and automation for service-based businesses.",
+      areaServed: { "@type": "Country", name: "Australia" },
+    }),
+  }}
+/>
 
-        <Script
-          id="global-website-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "VirtualAssistant.com.au",
-              url: "https://virtualassistant.com.au/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target:
-                  "https://virtualassistant.com.au/?s={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
+<Script
+  id="website-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.virtualassistant.com.au/#",
+      name: "VirtualAssistant.com.au",
+      url: "https://www.virtualassistant.com.au/",
+      publisher: { "@id": "https://www.virtualassistant.com.au/" },
+    }),
+  }}
+/>
+
 
         <script
   type="application/ld+json"
