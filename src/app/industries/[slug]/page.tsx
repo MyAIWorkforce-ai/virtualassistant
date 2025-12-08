@@ -12,7 +12,7 @@ import { Metadata } from "next";
 
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
 
 try {
   const data = await import(`@/app/data/industries/${slug}.json`);
@@ -38,7 +38,7 @@ try {
 }
 
 export default async function IndustryPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+  const { slug } =await params;
 
   let data;
   try {
