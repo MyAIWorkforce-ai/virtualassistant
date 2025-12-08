@@ -157,7 +157,7 @@ export default function MainAbout() {
                   {
                     title: "Speech Recognition",
                     description:
-                      "Enabling seamless communication through voice calls and messages to keep you connected with clients.",
+                      "Advanced speech recognition technology converts voice to text with high accuracy, understanding context and nuance.",
                     bgColor: "bg-white",
                     icon: "/about-images/speech.png",
                   },

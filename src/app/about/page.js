@@ -1,5 +1,7 @@
 import MainAbout from "./MainAbout";
 
+
+
 export async function generateMetadata() {
   return {
     title: "About Our AI Receptionist | Australian-Owned Automation For Service Businesses",
@@ -11,6 +13,28 @@ export async function generateMetadata() {
 }
 
 export default function HomePage() {
+   const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://www.virtualassistant.com.au/about#webpage",
+    "url": "https://www.virtualassistant.com.au/about",
+    "name": "About VirtualAssistant.com.au | Australian-Owned AI Receptionist for Service Industries",
+    "description": "Learn about VirtualAssistant.com.au, an Australian-owned AI platform helping service industries automate calls, bookings and client communication.",
+    "inLanguage": "en-AU",
+    "isPartOf": { "@id": "https://www.virtualassistant.com.au#website" }
+  };
 
-  return  <MainAbout/>}
+  return  (
+    <>
+
+      <script
+        id="about-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      /> 
+        
+  <MainAbout/>
+        </>);
+
+}
     

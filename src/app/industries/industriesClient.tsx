@@ -3,8 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { useLayoutEffect } from "react";
 
 export default function MainIndustry() {
+
+  useLayoutEffect(() => {
+    // wait until next paint to ensure DOM is ready
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    });
+  }, []);
 
 const HealthCarecards = [
   {
@@ -57,7 +65,7 @@ const HealthCarecards = [
   },
   {
     icon: "/industrymain-images/hair-dresser.png",
-    title: "Hair Dresser",
+    title: "Hairdresser",
     desc: "Effortless salon scheduling — manages appointments, client preferences, and reminders seamlessly.",
     link: "/industries/hairdresser",
   },
@@ -69,7 +77,7 @@ const HealthCarecards = [
   },
   {
     icon: "/industrymain-images/physio.png",
-    title: "Osteopaths",
+    title: "Osteopath",
     desc: "Modernizes osteopathic care by managing appointments, recording treatment notes, and organizing follow-ups.",
     link: "/industries/osteopaths",
   },
@@ -138,7 +146,7 @@ const TradesServicescards = [
 const HospitalityOther = [
   {
     icon: "/industrymain-images/resturant.png",
-    title: "Restaurant",
+    title: "Restaurant & Takeaway",
     desc: "Reservation Management Made Easy.  Manages table bookings, cancellations, and automated waitlists.",
     link: "/industries/resturant",
   },
@@ -156,19 +164,7 @@ const HospitalityOther = [
   },
 ];
     return (
-        <>
-            {/* SEO Meta */}
-            <Head>
-                <title>AI Appointment Scheduling — Smart Calendar & Productivity</title>
-                <meta
-                    name="description"
-                    content="AI Appointment Scheduling — Automatically book, confirm and manage meetings using intelligent automation to improve productivity and efficiency."
-                />
-                <meta
-                    name="keywords"
-                    content="AI Appointment Scheduling, Smart Calendar, Productivity Gains, Meeting Automation, Booking Assistant"
-                />
-            </Head>
+        <div className="scroll-mt-[50px] md:scroll-mt-[10px] lg:scroll-mt-[10px]">
 <motion.section
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -182,10 +178,10 @@ const HospitalityOther = [
     className="font-Poppins font-bold mt-8 
                text-[32px] sm:text-[40px] md:text-[45px] lg:text-[48px]
                leading-tight md:leading-none 
-               text-[#000000]  mb-6 sm:mb-8"
+               text-[#000000] pt-[5px] mb-6 sm:mb-8"
   >
     AI Virtual Receptionists & <br/>Smart Scheduling for{" "}
-    <span className="text-[#00A7DE]">Every <br/>Industry</span>
+    <span className="text-[#00A7DE]"> Every Industry </span>
   </h1>
 
   {/* Subtitle */}
@@ -506,6 +502,6 @@ const HospitalityOther = [
                    </motion.div>
             </motion.section>
 
-        </>
+        </div>
     )
 }

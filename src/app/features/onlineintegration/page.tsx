@@ -11,4 +11,27 @@ export async function generateMetadata() {
 }
 
 export default function OnlineIntegration() {
-  return <OIClient/>}
+  const integrationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.virtualassistant.com.au/online-integration#service",
+    "url": "https://www.virtualassistant.com.au/online-integration",
+    "name": "AI Integrations Australia | Connect Calendar, CRM, Website & Booking Tools",
+    "description": "Integration services that connect booking platforms, CRMs, calendars and websites to the AI receptionist for full automation.",
+    "provider": { "@type": "Organization", "name": "VirtualAssistant.com.au" },
+    "areaServed": "Australia",
+    "serviceType": ["Calendar integration","CRM integration","Booking system integration","Website automation"]
+  };
+  
+  return (<>
+  
+        <script
+        id="online-integration-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(integrationSchema) }}
+      />
+  
+  
+  
+  <OIClient/>
+  </>);}

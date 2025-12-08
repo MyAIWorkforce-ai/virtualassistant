@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/_components/Navbar";
 import Footer from "@/app/_components/Footer";
+// import ScrollReset from "@/app/utils/scroll-reset";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,11 +19,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Australia's Best AI Virtual Receptionist | VirtualAssistant.com.au",
+    "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
   description:
     "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
   keywords:
     "best ai virtual receptionist australia, top virtual receptionist service, 24/7 ai call answering australia, ai receptionist for small business, booking automation australia, ai receptionist melbourne, ai receptionist sydney, ai receptionist brisbane, ai receptionist perth, ai receptionist adelaide, ai receptionist canberra, ai receptionist hobart, ai receptionist darwin",
+
+  openGraph: {
+    title: "Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation",
+    description:
+      "Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide.",
+    url: "https://www.virtualassistant.com.au",
+    siteName: "VirtualAssistant.com.au",
+    type: "website",
+    images: [
+      {
+        url: "https://www.virtualassistant.com.au/og-image.png", 
+      width: 1200,
+        height: 630,
+        alt: "AI Virtual Receptionist Preview",
+      },
+    ],},
 };
 
 export default function RootLayout({
@@ -33,6 +50,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+          {/* Fallback og tags */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Best AI Virtual Receptionist Australia | 24/7 Call Answering, Booking & Automation" />
+          <meta property="og:description" content="Never miss a call or booking again. VirtualAssistant.com.au delivers Australia’s most advanced AI virtual receptionist—answering calls instantly, securing appointments, managing client messages and driving new revenue for service businesses nationwide." />
+          <meta property="og:image" content="https://www.virtualassistant.com.au/og-image.png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+
+        
         {/* Google Tag Manager (head) - injected safely for TSX */}
         <Script
           id="gtm-head"
@@ -44,12 +71,94 @@ export default function RootLayout({
 
         {/* Microsoft Clarity (head) */}
         <Script
-          id="clarity"
-          strategy="afterInteractive"
+          id="ms-clarity-script"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "ublhev30pz");`,
           }}
         />
+
+                {/* GLOBAL SCHEMA: Organization + Website + Local Business */}
+        <Script
+          id="global-organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "VirtualAssistant.com.au",
+              url: "https://virtualassistant.com.au/",
+              logo: "https://virtualassistant.com.au/logo.png",
+              sameAs: [
+                "https://www.facebook.com/",
+                "https://www.instagram.com/",
+                "https://www.linkedin.com/",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer support",
+                email: "support@virtualassistant.com.au",
+                availableLanguage: ["English"],
+              },
+            }),
+          }}
+        />
+
+        <Script
+          id="global-website-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "VirtualAssistant.com.au",
+              url: "https://virtualassistant.com.au/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://virtualassistant.com.au/?s={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "VirtualAssistant.com.au",
+      url: "https://www.virtualassistant.com.au",
+      description:
+        "AI virtual receptionist and automation platform serving Australian service businesses nationwide.",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+      },
+      areaServed: [
+        "Australia",
+        "Melbourne",
+        "Sydney",
+        "Brisbane",
+        "Perth",
+        "Adelaide",
+        "Canberra",
+        "Hobart",
+        "Darwin",
+      ],
+      serviceArea: {
+        "@type": "AdministrativeArea",
+        name: "Australia",
+      },
+    }),
+  }}
+/>
+
+        
       </head>
 
       <body
