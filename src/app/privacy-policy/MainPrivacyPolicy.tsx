@@ -149,10 +149,22 @@ Our use of Google API data complies with Google’s API Services User Data Polic
           </p>
         </div>
 
+                    <div className="space-y-2">
+          <h2 className="font-poppins font-semibold text-[24px] text-black">
+           11. Use of Google Calendar Data
+          </h2>
+          <p className="font-poppins text-[16px] text-[#797A7D]">
+When you choose to connect your Google Calendar to our platform, we access your Calendar information strictly to provide scheduling and appointment-management features. This may include reading event availability, creating events, and updating or deleting events only when you explicitly perform these actions within our app.
+We do not use Google Calendar data for advertising, data resale, analytics beyond core functionality, or any form of unauthorized sharing.
+We store only the minimum event information required to sync your appointments, and all synced data is securely protected. You may disconnect your Google account at any time, and all access will be immediately revoked. We do not retain your Google Calendar data after disconnection unless required for core functionality requested by you.
+Our use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.
+          </p>
+        </div>
+
 
           <div className="space-y-2">
           <h2 className="font-poppins font-semibold text-[24px] text-black">
-          11. Access and Correction
+          12. Access and Correction
           </h2>
           <p className="font-poppins text-[16px] text-[#797A7D]">
 You can request access to or correction of your personal information by contacting us. We may need to verify your identity before providing access. If we cannot fulfil your request, we’ll explain why in writing.
@@ -161,7 +173,7 @@ You can request access to or correction of your personal information by contacti
        
           <div className="space-y-2">
           <h2 className="font-poppins font-semibold text-[24px] text-black">
-         12. Concerns or Complaints
+         13. Concerns or Complaints
           </h2>
           <p className="font-poppins text-[16px] text-[#797A7D]">
 If you believe your privacy has been compromised, please contact us directly. We will respond within 30 days. If you remain unsatisfied, you may refer your complaint to the Office of the Australian Information Commissioner (OAIC) at www.oaic.gov.au.
@@ -170,7 +182,7 @@ If you believe your privacy has been compromised, please contact us directly. We
 
    <div className="space-y-3">
   <h2 className="font-poppins font-semibold text-[24px] text-black">
-    13. Contact Us
+    14. Contact Us
   </h2>
 
   <div className="font-poppins text-[16px] text-[#797A7D] leading-relaxed">
