@@ -153,7 +153,7 @@ Our use of Google API data complies with Google’s API Services User Data Polic
           <h2 className="font-poppins font-semibold text-[24px] text-black">
            11. Use of Google Calendar Data
           </h2>
-          <p className="font-poppins text-[16px] text-[#797A7D]">
+          <p className="font-poppins text-[16px] text-[#797A7D] text-justify">
 When you choose to connect your Google Calendar to our platform, we access your Calendar information strictly to provide scheduling and appointment-management features. This may include reading event availability, creating events, and updating or deleting events only when you explicitly perform these actions within our app.
 We do not use Google Calendar data for advertising, data resale, analytics beyond core functionality, or any form of unauthorized sharing.
 We store only the minimum event information required to sync your appointments, and all synced data is securely protected. You may disconnect your Google account at any time, and all access will be immediately revoked. We do not retain your Google Calendar data after disconnection unless required for core functionality requested by you.
