@@ -1,0 +1,194 @@
+{
+  "slug": "builders",
+  "heroSection": {
+    "tag": "Construction",
+    "title": "AI for Builders",
+    "metaDescription":"",
+    "metaKeywords":"",
+    "description": "Your AI virtual assistant helps builders manage calls, schedule site inspections, capture job details, track projects, and follow up with clients — so you can focus on building, not admin.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/builders/hero.png",
+    "metrics": [
+      {
+        "value": "30%",
+        "title": "Fewer missed job enquiries with automated call answering"
+      },
+      {
+        "value": "98%",
+        "title": "Reduction in time spent on scheduling and follow-ups"
+      },
+      {
+        "value": "25%",
+        "title": "Higher project conversion with fast, professional responses"
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Builders",
+    "sections": [
+      {
+        "subheading": "Modern Solutions for Modern Builders",
+        "paragraph": "At VirtualAssistant.com.au, we understand that every call to your building business could be a new project, renovation, or site inspection. Our AI Virtual Receptionist ensures every enquiry is answered professionally, capturing job details and booking site visits without interruption."
+      },
+      {
+        "subheading": "Focus on Building, Not Phone Calls",
+        "paragraph": "Your AI Receptionist handles incoming calls, client questions, and scheduling while you’re on-site or after hours. It can answer questions like “Can I book a site inspection?” or “Do you handle renovations or new builds?” while maintaining a professional and friendly tone."
+      },
+      {
+        "subheading": "Never Miss a Job Opportunity",
+        "paragraph": "Whether you’re on the tools, in meetings, or outside business hours, your AI Receptionist is always available. It explains your services — from residential builds to renovations and extensions — and ensures every enquiry is captured and followed up."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Boost your building business with intelligent automation that saves time, captures more leads, and improves client communication.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Professional First Impression",
+        "description": "Your business sounds polished and reliable on every call."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Automated Job Scheduling",
+        "description": "Book site inspections, consultations, and follow-ups automatically."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Customised for Your Business",
+        "description": "Train your AI to match your services, tone, and workflow."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "24/7 Availability",
+        "description": "Never miss a job enquiry, even after hours or on weekends."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-confidential.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Secure & Confidential",
+        "description": "Client details, addresses, and project info are handled safely."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
+        "gradient": "from-[##F9FFEA] to-[##F3FFD7]",
+        "title": "Improved Client Experience",
+        "description": "Clear communication, reminders, and updates build trust."
+      },
+      {
+        "icon": "/industries-images/accountant/kb-automation.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "AI handles repetitive admin tasks so you stay productive."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-retention.png",
+        "gradient": "from-[#F9FEFF] to-[#D8F8FF]",
+        "title": "Higher Client Retention",
+        "description": "Consistent follow-ups keep clients engaged throughout projects."
+      },
+      {
+        "icon": "/industries-images/accountant/kb-history.png",
+        "gradient": "from-[#FEF4FF] to-[#F9D0FF]",
+        "title": "Centralised Job History",
+        "description": "Access past quotes, site notes, and conversations anytime."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Builders Choose VirtualAssistant.com.au",
+    "description": "Builders across Australia trust our AI Virtual Receptionist to manage calls, book site visits, and capture accurate job details. It integrates seamlessly with your scheduling tools and CRM, acting as an extension of your team — not a replacement.",
+    "leftBox": {
+      "heading": "Streamline Job Follow-Ups and Communication",
+      "description": "After each call or site visit, builders can record quick voice notes that are transcribed and summarised automatically. The AI also manages follow-up reminders for quotes, approvals, and project milestones, keeping jobs moving forward."
+    },
+    "image": "/industries-images/builders/whychooseus.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/accountant/pu-accounting.png",
+        "title": "New Build & Renovation Enquiries",
+        "description": "Handle residential and commercial project enquiries efficiently."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "title": "Specialised Construction Services",
+        "description": "Support extensions, knock-down rebuilds, and custom projects."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "title": "Routine Project Updates",
+        "description": "Automate follow-ups for ongoing construction work."
+      },
+       {
+        "icon": "/industries-images/accountant/pu-tracking.png",
+        "title": "Client & Job Tracking",
+        "description": "Log job details, site notes, quotes, and approvals."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer client questions via AI voice or chat instantly."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+      "title": "Automated Follow-Ups",
+      "description": "AI schedules and sends follow-ups for quotes and site visits."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
+      "title": "Smart Reminders",
+      "description": "Reduce delays with reminders for approvals and milestones."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-records.png",
+      "title": "Centralized Records",
+      "description": "Access job history without digging through paperwork."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Site Inspection & Quote Management",
+      "description": "A potential client calls to request a site inspection. The AI books the inspection, captures job details, and sends confirmation automatically."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "AI sends inspection confirmation and reminders"
+      },
+      {
+        "title": "Recurring Alerts",
+        "text": "Follow-ups for quotes and approvals"
+      },
+      {
+        "title": "Job Notes",
+        "text": "Records site details and client requirements"
+      },
+      {
+        "title": "Project Reminders",
+        "text": "Updates clients on timelines and next steps"
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Builders",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}

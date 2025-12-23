@@ -1,0 +1,194 @@
+{
+  "slug": "hvac",
+  "heroSection": {
+    "tag": "HVAC Services",
+    "title": "AI for HVAC Businesses",
+    "metaDescription":"",
+    "metaKeywords":"",
+    "description": "Your AI virtual assistant helps HVAC businesses manage calls, book installations and repairs, capture service details, send reminders, and follow up with customers — so your team stays focused on the job.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/hvac/hero.png",
+    "metrics": [
+      {
+        "value": "35%",
+        "title": "Fewer missed service calls with 24/7 answering"
+      },
+      {
+        "value": "90%",
+        "title": "Reduction in time spent on scheduling and follow-ups"
+      },
+      {
+        "value": "25%",
+        "title": "Higher job bookings with faster response times"
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for HVAC Businesses",
+    "sections": [
+      {
+        "subheading": "Modern Solutions for Modern HVAC Teams",
+        "paragraph": "At VirtualAssistant.com.au, we understand that every call to your HVAC business could be an urgent repair, a new installation, or a maintenance request. Our AI Virtual Receptionist ensures every enquiry is answered promptly and professionally."
+      },
+      {
+        "subheading": "Focus on Service, Not Phone Calls",
+        "paragraph": "Your AI Receptionist handles incoming calls, customer questions, and appointment bookings while your technicians are on-site. It answers questions like “Can I book an AC repair?” or “Do you service heating systems?” with clarity and confidence."
+      },
+      {
+        "subheading": "Never Miss a Service Request",
+        "paragraph": "Whether your team is busy, after hours, or during peak seasons, your AI Receptionist captures every call. It explains your services — from air conditioning and heating to ventilation and maintenance — and books jobs automatically."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Improve efficiency, capture more service calls, and deliver better customer experiences with AI-powered automation.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Professional Call Handling",
+        "description": "Ensures every customer interaction is polite, clear, and consistent."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Automated Appointment Scheduling",
+        "description": "Books repairs, installations, and maintenance visits instantly."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Customised to Your HVAC Business",
+        "description": "Train your AI to match your services, service areas, and workflows."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "24/7 Availability",
+        "description": "Capture emergency calls and after-hours enquiries anytime."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-confidential.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Secure & Reliable",
+        "description": "Customer details and service information are handled securely."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
+        "gradient": "from-[##F9FFEA] to-[##F3FFD7]",
+        "title": "Improved Customer Experience",
+        "description": ""
+      },
+      {
+        "icon": "/industries-images/accountant/kb-automation.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "Reduce admin work for office staff and technicians."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-retention.png",
+        "gradient": "from-[#F9FEFF] to-[#D8F8FF]",
+        "title": "Higher Customer Retention",
+        "description": "Follow-ups and maintenance reminders keep customers loyal."
+      },
+      {
+        "icon": "/industries-images/accountant/kb-history.png",
+        "gradient": "from-[#FEF4FF] to-[#F9D0FF]",
+        "title": "Centralised Service History",
+        "description": "Access past jobs, notes, and customer details instantly."
+      }
+    ]
+},
+ "whyChoose": {
+    "heading": "Why HVAC Businesses Choose VirtualAssistant.com.au",
+    "description": "HVAC companies across Australia trust our AI Virtual Receptionist to manage calls, schedule jobs, and capture accurate service information. It integrates with your scheduling tools and CRM, acting as a reliable extension of your team.",
+    "leftBox": {
+      "heading": "Streamline Service Follow-Ups and Communication",
+      "description": "After each service call, technicians can record quick voice notes that are transcribed and summarised automatically. The AI also sends reminders for maintenance, follow-ups, and future service visits."
+    },
+    "image": "/industries-images/hvac/whychooseus.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/accountant/pu-accounting.png",
+        "title": "HVAC Repairs & Installations",
+        "description": "Manage air conditioning and heating service requests efficiently."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "title": "Specialised HVAC Services",
+        "description": "Support ducting, ventilation, and system upgrades."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "title": "Routine Maintenance Scheduling",
+        "description": "Automate seasonal servicing and maintenance plans."
+      },
+       {
+        "icon": "/industries-images/accountant/pu-tracking.png",
+        "title": "Customer & Job Tracking",
+        "description": "Log service history, job notes, and follow-up actions."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer customer enquiries via AI voice or chat instantly."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+      "title": "Automated Follow-Ups",
+      "description": "AI schedules follow-ups for quotes and completed services."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
+      "title": "Smart Reminders",
+      "description": "Reduce no-shows with service and maintenance reminders."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-records.png",
+      "title": "Centralized Records",
+      "description": "Access customer and job history without manual searches."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "HVAC Service Booking & Follow-Up",
+      "description": "A customer calls to request an air conditioning repair. The AI books the job, captures system details, and sends confirmation automatically."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "AI sends appointment confirmation and reminders"
+      },
+      {
+        "title": "Service Notes",
+        "text": "Records system issues and customer requirements"
+      },
+      {
+        "title": "Recurring Alerts",
+        "text": "Schedules maintenance reminders"
+      },
+      {
+        "title": "Service Updates",
+        "text": "Keeps customers informed on job status"
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for HVAC",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}

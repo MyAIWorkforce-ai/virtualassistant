@@ -1,0 +1,194 @@
+{
+  "slug": "landscapers",
+  "heroSection": {
+    "tag": "Landscaping Services",
+    "title": "AI for Landscapers",
+    "metaDescription":"",
+    "metaKeywords":"",
+    "description": "Your AI virtual assistant helps landscaping businesses manage calls, book site inspections, capture project details, follow up on quotes, and keep jobs moving — while you focus on creating outdoor spaces.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/landscapers/hero.png",
+    "metrics": [
+      {
+        "value": "35%",
+        "title": "Fewer missed job enquiries with 24/7 call answering"
+      },
+      {
+        "value": "90%",
+        "title": "Less time spent on admin and scheduling"
+      },
+      {
+        "value": "30%",
+        "title": "Higher quote acceptance with faster follow-ups"
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Landscapers",
+    "sections": [
+      {
+        "subheading": "Modern Solutions for Modern Landscaping Businesses",
+        "paragraph": "At VirtualAssistant.com.au, we understand that every call to your landscaping business could be a new garden, outdoor renovation, or maintenance job. Our AI Virtual Receptionist ensures every enquiry is answered professionally and captured accurately."
+      },
+      {
+        "subheading": "Focus on Landscaping, Not Phone Calls",
+        "paragraph": "While you’re on-site designing, building, or maintaining landscapes, your AI Receptionist handles incoming calls and questions. It answers enquiries like “Do you do garden design?” or “Can I book a site visit?” with a friendly and professional tone."
+      },
+      {
+        "subheading": "Never Miss a Landscaping Opportunity",
+        "paragraph": "Whether you’re busy, after hours, or on another job, your AI Receptionist makes sure no lead is missed. It explains your services — from garden design and turfing to paving and ongoing maintenance — and books inspections automatically."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Capture more landscaping jobs, reduce admin, and deliver a professional customer experience with AI-powered automation.",
+     "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Professional First Impression",
+        "description": "Every caller receives a friendly, polished response."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Automated Site Visit Booking",
+        "description": "Book consultations, quotes, and follow-ups instantly."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Customised for Your Landscaping Business",
+        "description": "Train your AI to match your services, areas, and workflows."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "24/7 Availability",
+        "description": "Never miss an enquiry — even evenings and weekends."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-confidential.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Secure & Reliable",
+        "description": "Client details, addresses, and project info are handled safely."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
+        "gradient": "from-[#F9FFEA] to-[#F3FFD7]",
+        "title": "Improved Client Experience",
+        "description": "Clear communication builds trust from first contact."
+      },
+      {
+        "icon": "/industries-images/accountant/kb-retention.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "Time-Saving Automation",
+        "description": "Reduce admin workload for you and your team."
+      },
+       {
+        "icon": "/industries-images/accountant/kb-retention.png",
+        "gradient": "from-[#F9FEFF] to-[#D8F8FF]",
+        "title": "Higher Job Conversion",
+        "description": "Fast responses and consistent follow-ups win more work."
+      },
+      {
+        "gradient": "from-[#FEF4FF] to-[#F9D0FF]",
+        "icon": "/industries-images/accountant/kb-history.png",
+        "title": "Centralised Job History",
+        "description": "Access past quotes, site notes, and conversations easily."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Landscapers Choose VirtualAssistant.com.au",
+    "description": "Landscapers across Australia trust our AI Virtual Receptionist to manage calls, book site inspections, and capture accurate project details. It integrates with your scheduling tools and CRM, acting as a reliable extension of your business.",
+    "leftBox": {
+      "heading": "Streamline Quotes and Client Follow-Ups",
+      "description": "After each enquiry or site visit, you can record quick voice notes that are transcribed and summarised automatically. The AI follows up on quotes, approvals, and start dates — helping you secure more landscaping projects faster."
+    },
+    "image": "/industries-images/landscapers/whychooseus.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/accountant/pu-accounting.png",
+        "title": "Garden Design & Landscaping",
+        "description": "Handle new garden and outdoor renovation enquiries."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "title": "Hardscaping & Paving",
+        "description": "Support paving, retaining walls, and structural landscaping."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "title": "Lawn & Garden Maintenance",
+        "description": "Automate recurring maintenance and service bookings."
+      },
+       {
+        "icon": "/industries-images/accountant/pu-tracking.png",
+        "title": "Client & Project Tracking",
+        "description": "Log site details, designs, quotes, and schedules."
+      },
+       {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer customer enquiries via AI voice or chat instantly."
+      }
+    ]
+  },
+ "productivityGains":{
+  "heading": "Productivity Gains",
+  "cards": [
+    {
+      "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+      "title": "Automated Follow-Ups",
+      "description": "AI follows up on quotes and consultations automatically."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-reminders.png",
+      "title": "Smart Reminders",
+      "description": "Reduce delays with reminders for approvals and start dates."
+    },
+    {
+      "icon": "/industries-images/reuse-icons/pg-records.png",
+      "title": "Centralized Records",
+      "description": "Access job history and notes without paperwork."
+    }
+       
+  ]
+},
+
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Site Consultation & Quote Management",
+      "description": "A homeowner calls for a backyard landscaping quote. The AI books a site visit, captures project details, and sends confirmation automatically."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "AI sends consultation confirmation and reminders"
+      },
+      {
+        "title": "Project Notes",
+        "text": "Records design preferences and site requirements"
+      },
+      {
+        "title": "Quote Follow-Ups",
+        "text": "Reminds clients about pending quotes"
+      },
+      {
+        "title": "Project Updates",
+        "text": "Keeps clients informed before work begins"
+      }
+    ]
+  },
+   "form": {
+    "title": "Get Your AI Assistant for Landscapers",
+    "subtitle": "Join thousands of industries who are transforming patient care with our AI solutions."
+  }
+
+}
