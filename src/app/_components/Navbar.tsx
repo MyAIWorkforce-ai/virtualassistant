@@ -135,7 +135,7 @@ export default function Navbar() {
                 {[
                   ["physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor", "podiatrist", "beautytherapist", "hairdresser", "dentist"],
                   ["osteopaths", "lawyer", "accountant", "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians", "resturant"],
-                  [ "hotelsaccommodation", "Barber", "Builders", "Concreters", "HVAC", "Landscapers", "Roofing", "forother"]
+                  [ "hotelsaccommodation", "barber", "builders", "concreters", "hvac", "landscapers", "roofing", "forother"]
                 ].map((column, idx) => (
                   <ul key={idx}>
                     {column.map((slug) => (
