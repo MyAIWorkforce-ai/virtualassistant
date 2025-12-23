@@ -99,6 +99,7 @@ const Footer = () => {
                 { name: "Personal Trainer", href: "/industries/personaltrainer" },
                 { name: "Psychologist", href: "/industries/psychology" },
                 { name: "Chiropractor", href: "/industries/chiropractor" },
+                { name: "Podiatrist", href: "/industries/podiatrist" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-[#00A7DE] transition-colors duration-300">
@@ -114,12 +115,13 @@ const Footer = () => {
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
               {[
-                { name: "Podiatrist", href: "/industries/podiatrist" },
                 { name: "Osteopath", href: "/industries/osteopaths" },
                 { name: "Hairdresser", href: "/industries/hairdresser" },
                 { name: "Dentist", href: "/industries/dentist" },
                 { name: "Accountant", href: "/industries/accountant" },
                 { name: "Lawyer", href: "/industries/lawyer" },
+                { name: "Consultant", href: "/industries/consultant" },
+                { name: "Real Estate Agent", href: "/industries/realestateagent" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-[#00A7DE] transition-colors duration-300">
@@ -135,12 +137,13 @@ const Footer = () => {
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
               {[
-                { name: "Consultant", href: "/industries/consultant" },
-                { name: "Real Estate Agent", href: "/industries/realestateagent" },
                 { name: "Mechanic", href: "/industries/mechanic" },
                 { name: "Plumber", href: "/industries/plumber" },
                 { name: "Electrician", href: "/industries/electricians" },
                 { name: "Window Cleaning", href: "/industries/cleaning" },
+                { name: "Beauty Therapist", href: "/industries/beautytherapist" },
+                { name: "Restaurant & Takeaway", href: "/industries/resturant" },
+                { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-[#00A7DE] transition-colors duration-300">
@@ -155,10 +158,13 @@ const Footer = () => {
           <motion.div variants={slideUpChild}>
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
-              {[
-                { name: "Beauty Therapist", href: "/industries/beautytherapist" },
-                { name: "Restaurant & Takeaway", href: "/industries/resturant" },
-                { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
+              {["Barber", "Builders", "Concreters", "HVAC", "Landscapers", "Roofing"
+                { name: "Barber", href: "/industries/barber" },
+                { name: "Builders", href: "/industries/builders" },
+                { name: "Concreters", href: "/industries/concreters" },
+                { name: "HVAC", href: "/industries/hvac" },
+                { name: "Landscapers", href: "/industries/landscapers" },
+                { name: "Roofing", href: "/industries/roofing" },
                 { name: "Others", href: "/industries/forother" },
               ].map((item, i) => (
                 <li key={i}>
