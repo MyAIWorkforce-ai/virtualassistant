@@ -300,7 +300,7 @@ export default function Navbar() {
                     "physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor",
                     "podiatrist", "beautytherapist", "hairdresser", "dentist", "osteopaths", "lawyer", "accountant",
                     "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians", "resturant",
-                    "hotelsaccommodation", barber", "builders", "Concreters", "hvac", "landscapers", "roofing", "forother",
+                    "hotelsaccommodation", "barber", "builders", "Concreters", "hvac", "landscapers", "roofing", "forother",
                   ].map((slug) => (
                     <li key={slug}>
                       <Link
