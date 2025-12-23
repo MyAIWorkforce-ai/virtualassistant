@@ -158,7 +158,7 @@ const Footer = () => {
           <motion.div variants={slideUpChild}>
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
-              {["Barber", "Builders", "Concreters", "HVAC", "Landscapers", "Roofing"
+              {[
                 { name: "Barber", href: "/industries/barber" },
                 { name: "Builders", href: "/industries/builders" },
                 { name: "Concreters", href: "/industries/concreters" },
