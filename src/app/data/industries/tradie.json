@@ -1,0 +1,191 @@
+{
+  "slug": "tradie",
+  "heroSection": {
+    "tag": "Trade Care",
+    "title": "AI for Tradies",
+    "metaDescription": "Australian built human-like AI Receptionist for Tradies. Answer calls 24/7, reduce admin, capture job enquiries and turn missed calls into paid work. Trusted across Australia.",
+    "metaKeywords": "Human-like AI Receptionist, AI Receptionist for Tradies, Virtual Receptionist Tradie, Virtual Assistant Tradie, AI Receptionist Australia, Virtual Assistant Australia, AI Call Answering Tradies, AI Receptionist Sydney, AI Receptionist Melbourne, AI Receptionist Brisbane, AI Receptionist Perth, AI Receptionist Adelaide, AI Receptionist Canberra, AI Receptionist Hobart, AI Receptionist Darwin",
+    "description": "Your virtual assistant helps tradies manage job bookings, answer calls, capture leads, schedule site visits, and send reminders — so you can stay on the tools, not the phone.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/tradie/tradie.png",
+    "metrics": [
+      {
+        "value": "40%",
+        "title": "Fewer missed job enquiries with 24/7 call answering."
+      },
+      {
+        "value": "90%",
+        "title": "Less time spent on admin, scheduling, and call-backs."
+      },
+      {
+        "value": "30%",
+        "title": "More booked jobs by capturing every lead automatically."
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Tradies",
+    "sections": [
+      {
+        "subheading": "Built for Busy Tradies on the Move",
+        "paragraph": "At VirtualAssistant.com.au, we know tradies are often on-site, driving between jobs, or working hands-on — not answering phones. Our AI Virtual Receptionist ensures every call, enquiry, and booking is handled professionally, so you never miss a job opportunity. Whether you’re a solo tradie or running a growing trade business, our AI adapts to your workflow."
+      },
+      {
+        "subheading": "Spend More Time on the Tools, Not Admin",
+        "paragraph": "Your AI Receptionist answers calls, books jobs, handles reschedules, and responds to common questions like ‘Do you service my area?’, ‘How much does it cost?’, or ‘When can you come out?’ — all in your brand’s tone. It keeps your schedule organised while you focus on delivering quality work."
+      },
+      {
+        "subheading": "Never Miss a Job Enquiry Again",
+        "paragraph": "Missed calls often mean missed income. Your AI Receptionist works 24/7 to capture job requests, emergency call-outs, and quote enquiries — even after hours or on weekends. Every lead is logged, followed up, and ready for you when you’re free."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Power your trade business with smart automation that saves time, wins more jobs, and keeps customers informed.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "Never Miss a Call",
+        "description": "Ensures every customer call and enquiry is answered professionally, even when you’re on-site."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Job Booking & Scheduling",
+        "description": "Automates job bookings, reschedules, and reminders to keep your day running smoothly."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-custom.png",
+        "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
+        "title": "Customised for Your Trade",
+        "description": "Train your AI Receptionist for plumbing, electrical, HVAC, carpentry, landscaping, or any trade service."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-size.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Scales with Your Business",
+        "description": "Ideal for solo tradies, small teams, or growing trade companies."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-availability.png",
+        "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
+        "title": "24/7 Availability",
+        "description": "Captures leads, emergency call-outs, and enquiries outside business hours."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-scheduling.png",
+        "gradient": "from-[#F2FBFF] to-[#DAF4FF]",
+        "title": "Automated Job Reminders",
+        "description": "Sends customers reminders before appointments to reduce no-shows."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-care.png",
+        "gradient": "from-[#FFFDE8] to-[#FFFAD0]",
+        "title": "Better Customer Experience",
+        "description": "Customers receive clear updates, confirmations, and follow-ups automatically."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-automation.png",
+        "gradient": "from-[#EAF9FF] to-[#CCF1FF]",
+        "title": "Time-Saving Automation",
+        "description": "AI handles repetitive admin so you can focus on completing jobs faster."
+      },
+      {
+        "icon": "/industries-images/tradie/kb-revenue.png",
+        "gradient": "from-[#FFF3E5] to-[#FFE9D0]",
+        "title": "Increased Revenue",
+        "description": "Capture more enquiries and turn missed calls into booked jobs."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Tradies Choose VirtualAssistant.com.au",
+    "description": "Tradies across Australia trust VirtualAssistant.com.au to handle their calls, bookings, and enquiries reliably. Our AI Virtual Receptionist integrates seamlessly with your calendar and workflow, ensuring every customer interaction is professional and consistent. You can customise your AI to match your trade, service areas, pricing structure, and availability — so it works exactly like a real receptionist, without the overheads. Let AI handle the admin while you focus on quality workmanship and growing your business.",
+    "leftBox": {
+      "heading": "Simple Job Notes & Follow-Ups",
+      "description": "After each job, you can leave a quick voice note that’s automatically transcribed and saved. Upload job details, customer notes, or follow-up actions so nothing gets forgotten and every customer receives professional follow-up."
+    },
+    "image": "/industries-images/tradie/why-choose.svg"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/reuse-icons/pu-practice.png",
+        "title": "General Trade Services",
+        "description": "Manage job bookings, call-outs, scheduling, and customer enquiries."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "title": "Specialised Trade Work",
+        "description": "Support plumbing, electrical, HVAC, building, roofing, and maintenance services."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "title": "Routine Maintenance",
+        "description": "Automate recurring service reminders and maintenance bookings."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/puu-tracking.png",
+        "title": "Job Tracking",
+        "description": "Track job status, customer details, and follow-up actions."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer common customer questions and capture leads automatically."
+      }
+    ]
+  },
+  "productivityGains": {
+    "heading": "Productivity Gains",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+        "title": "Automated Follow-ups",
+        "description": "Automatically follow up with customers for quotes and confirmations."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pg-reminders.png",
+        "title": "Smart Scheduling",
+        "description": "Reduce gaps and missed appointments with AI-powered scheduling."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pg-records.png",
+        "title": "Centralised Job Records",
+        "description": "Access job history, notes, and customer details instantly."
+      }
+    ]
+  },
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Job Booking & Customer Updates",
+      "description": "A customer calls to book a job and receives confirmations, reminders, and updates automatically via your AI receptionist."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Customers receive immediate booking confirmations."
+      },
+      {
+        "title": "Job Notes",
+        "text": "Records job details, site notes, and customer requests."
+      },
+      {
+        "title": "Automated Follow-ups",
+        "text": "Follows up on quotes and incomplete enquiries."
+      },
+      {
+        "title": "Service Reminders",
+        "text": "Sends reminders for upcoming jobs and maintenance visits."
+      }
+    ]
+  },
+  "form": {
+    "title": "Get Your AI Assistant for Tradies",
+    "subtitle": "Join thousands of tradies using AI to save time, win more jobs, and deliver better customer service."
+  }
+}
