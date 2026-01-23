@@ -1,0 +1,76 @@
+{ 
+  "hero_section":{
+  "page_title": "Insights, Updates & ",
+  "span_title": "AI Reception",
+  "introduction": "Explore the latest insights on AI-powered reception, customer communication, automation, and how businesses across industries are using AI to capture more leads and save time."
+ 
+},
+"blogs_section":{
+  "heading":"Our blog is designed to help businesses understand how",
+  "span_heading":"are transforming the way calls, bookings, and enquiries are handled. From industry-specific use cases to best practices and product updates, you’ll find practical insights you can apply immediately.",
+  "categories": ["All", "AI & Automation", "Virtual Reception", "Industry Insights", "Productivity & Growth", "Product Updates"],
+  "blogs": [
+    {
+      "category": "Virtual Reception",
+      "title": "Why Voicemail Is Costing Your Business Customers",
+      "description": "Customers expect instant responses. Discover why voicemail leads to lost leads — and how AI reception provides a better alternative.",
+      "image_url": "/blogs/why_voicemail.svg",
+      "read_more":""
+    },
+    {
+      "category": "Industry Insights",
+      "title": "How Trades Businesses Use AI to Capture After-Hours Enquiries",
+      "description": "Builders, plumbers, and electricians are using AI reception to handle calls after hours and during on-site work. Here’s how it works.",
+      "image_url": "/blogs/how_to_trade.svg",
+      "read_more":""
+
+    },
+    {
+      "category": "Productivity & Growth",
+      "title": "5 Ways AI Reception Reduces Admin Work Instantly",
+      "description": "From booking appointments to capturing call notes, AI reception can save hours every week. Here are the biggest time-saving benefits.",
+      "image_url": "/blogs/5_way.svg",
+      "read_more":""
+
+    },
+    {
+      "category": "Customer Experience",
+      "title": "What Customers Expect When They Call Your Business in 2026",
+      "description": "Customer expectations are changing fast. Learn what modern callers want — and how AI reception meets those expectations.",
+      "image_url": "/blogs/what_custmor_.svg",
+      "read_more":""
+
+    },
+    {
+      "category": "Industry Insights",
+      "title": "How AI Virtual Receptionists Support Service-Based Businesses",
+      "description": "From healthcare to home services, see how AI reception adapts to different industries and workflows.",
+      "image_url": "/blogs/how_ai.svg",
+      "read_more":""
+
+    },
+    {
+      "category": "Product Updates",
+      "title": "What’s New at VirtualAssistant.com.au",
+      "description": "Stay up to date with the latest features, improvements, and enhancements to our AI Virtual Receptionist platform.",
+      "image_url": "/blogs/whats_new.svg",
+      "read_more":""
+
+    },
+    {
+      "category": "AI & Automation",
+      "title": "How AI Virtual Receptionists Are Replacing Missed Calls Forever",
+      "description": "Missed calls cost businesses more than they realise. Learn how AI Virtual Receptionists answer calls 24/7, capture every enquiry, and turn missed opportunities into booked appointments.",
+      "image_url": "/blogs/ai_automation.svg",
+      "read_more":""
+
+    }
+  ]
+},
+   "cta_section":{
+  "page_title": "Ready to See AI Reception in Action?",
+  "description": "Discover how our AI Virtual Receptionist answers calls, books appointments, and captures enquiries — automatically and around the clock.",
+  "bottom_text": "Want tips delivered straight to your inbox? Follow our updates and stay ahead with AI-powered reception."
+ 
+}
+}
