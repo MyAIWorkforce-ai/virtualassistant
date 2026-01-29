@@ -57,7 +57,7 @@
         "description": "Automates job bookings, reschedules, and reminders to keep your day running smoothly."
       },
       {
-        "icon": "/industries-images/tradie/kb-custom.png",
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
         "gradient": "from-[#FFFBEB] to-[#FEF3C7]",
         "title": "Customised for Your Trade",
         "description": "Train your AI Receptionist for plumbing, electrical, HVAC, carpentry, landscaping, or any trade service."
@@ -69,31 +69,31 @@
         "description": "Ideal for solo tradies, small teams, or growing trade companies."
       },
       {
-        "icon": "/industries-images/tradie/kb-availability.png",
+        "icon": "/industries-images/reuse-icons/kb-support.png",
         "gradient": "from-[#FFF1F2] to-[#FFE4E6]",
         "title": "24/7 Availability",
         "description": "Captures leads, emergency call-outs, and enquiries outside business hours."
       },
       {
-        "icon": "/industries-images/tradie/kb-scheduling.png",
+        "icon": "/industries-images/reuse-icons/kb-experience.png",
         "gradient": "from-[#F2FBFF] to-[#DAF4FF]",
         "title": "Automated Job Reminders",
         "description": "Sends customers reminders before appointments to reduce no-shows."
       },
       {
-        "icon": "/industries-images/tradie/kb-care.png",
+        "icon": "/industries-images/plumber/kb-automation.png",
         "gradient": "from-[#FFFDE8] to-[#FFFAD0]",
         "title": "Better Customer Experience",
         "description": "Customers receive clear updates, confirmations, and follow-ups automatically."
       },
       {
-        "icon": "/industries-images/tradie/kb-automation.png",
+        "icon": "/industries-images/plumber/kb-booking.png",
         "gradient": "from-[#EAF9FF] to-[#CCF1FF]",
         "title": "Time-Saving Automation",
         "description": "AI handles repetitive admin so you can focus on completing jobs faster."
       },
       {
-        "icon": "/industries-images/tradie/kb-revenue.png",
+        "icon": "/industries-images/plumber/kb-records.png",
         "gradient": "from-[#FFF3E5] to-[#FFE9D0]",
         "title": "Increased Revenue",
         "description": "Capture more enquiries and turn missed calls into booked jobs."

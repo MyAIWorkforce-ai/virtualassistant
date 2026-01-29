@@ -43,7 +43,6 @@ const Blogs = () => {
 
 const [activeCategory, setActiveCategory] = useState("All");
  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
-const [showErrorScreen, setShowErrorScreen] = useState(false);
  const filteredPosts =
     activeCategory == "All"
       ? blogs_section.blogs
@@ -54,26 +53,6 @@ const [showErrorScreen, setShowErrorScreen] = useState(false);
   const gridPosts = filteredPosts.filter(
     (post) => post.title !== featuredPost?.title
   );
-
-if (showErrorScreen) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#F9FAFB] px-6 text-center">
-        <h1 className="text-9xl font-bold text-[#E8F6FF] mb-4">404</h1>
-        <h2 className="text-3xl md:text-4xl font-Poppins font-bold text-black mb-4">
-          Page Not Found
-        </h2>
-        <p className="text-[#797A7D] text-lg mb-8 max-w-md">
-          The blog post you are looking for is currently unavailable or has been moved.
-        </p>
-        <button 
-          onClick={() => setShowErrorScreen(false)} 
-          className="bg-[#0097DA] text-white font-Poppins font-medium px-8 py-3 rounded-full shadow-md hover:bg-[#007EB8] transition"
-        >
-          Go Back to Blogs
-        </button>
-      </div>
-    );
-  }
 
 
   return (
@@ -172,11 +151,14 @@ if (showErrorScreen) {
                                 {featuredPost.description}
         </p>
 
-         <button 
-         className="text-[#098DC9] font-bold hover:underline self-start"
-         onClick={() => setShowErrorScreen(true)}>
-                Read More...
-         </button>
+         <a
+                  href="/404"
+                  target="_/blank"
+                  rel="noopener noreferrer"
+                  className="text-[#098DC9] font-bold text-sm hover:underline mt-auto"
+                >
+                  Read More...
+                </a>
             </div>
           </div>
         )}
@@ -209,11 +191,14 @@ if (showErrorScreen) {
                   {post.description}
                         </p>
 
-                <span><button
-                onClick={() => setShowErrorScreen(true)}
-                className="text-[#098DC9] font-bold  text-sm hover:underline mt-auto">
+                <a
+                  href="/404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#098DC9] font-bold text-sm hover:underline mt-auto"
+                >
                   Read More...
-                </button></span>
+                </a>
               </div>
             </motion.div>
           ))}
