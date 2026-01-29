@@ -167,6 +167,7 @@ const Footer = () => {
                 { name: "HVAC", href: "/industries/hvac" },
                 { name: "Landscapers", href: "/industries/landscapers" },
                 { name: "Roofing", href: "/industries/roofing" },
+                { name: "Tradie", href: "/industries/tradie" },
                 { name: "Others", href: "/industries/forother" },
               ].map((item, i) => (
                 <li key={i}>
