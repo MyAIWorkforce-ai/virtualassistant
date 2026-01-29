@@ -108,6 +108,12 @@ const PerfesstionalServicescards = [
     desc: "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, and streamlining client communication.",
     link: "/industries/consultant",
   },
+    {
+    icon: "/industrymain-images/tradie.png",
+    title: "Tradie",
+    desc: "Your virtual assistant helps tradies manage job bookings, answer calls, capture leads, schedule site visits, and send reminders — so you can stay on the tools, not the phone.",
+    link: "/industries/tradie",
+  },
   {
     icon: "/industrymain-images/real-estate.png",
     title: "Real Estate Agent",
