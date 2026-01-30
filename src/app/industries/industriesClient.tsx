@@ -109,7 +109,7 @@ const PerfesstionalServicescards = [
     link: "/industries/consultant",
   },
     {
-    icon: "/industrymain-images/tradie.png",
+    icon: "/industrymain-images/other.png",
     title: "Tradie",
     desc: "Your virtual assistant helps tradies manage job bookings, answer calls, capture leads, schedule site visits, and send reminders — so you can stay on the tools, not the phone.",
     link: "/industries/tradie",

@@ -153,7 +153,7 @@ const [activeCategory, setActiveCategory] = useState("All");
 
          <a
                   href="/404"
-                  target="_/blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#098DC9] font-bold text-sm hover:underline mt-auto"
                 >
