@@ -299,9 +299,9 @@ export default function Navbar() {
                 <ul className="pl-4 mt-2 space-y-1">
                   {[
                     "physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor",
-                    "podiatrist", "beautytherapist", "hairdresser", "dentist", "osteopaths", "lawyer", "accountant",
+                    "podiatrist", "beautytherapist", "hairdresser", "barber", "dentist", "osteopaths", "lawyer", "accountant",
                     "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians", "resturant",
-                    "hotelsaccommodation", "barber", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother",
+                    "hotelsaccommodation", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother",
                   ].map((slug) => (
                     <li key={slug}>
                       <Link
