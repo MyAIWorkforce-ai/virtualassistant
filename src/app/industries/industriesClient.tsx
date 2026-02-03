@@ -82,10 +82,10 @@ const HealthCarecards = [
     link: "/industries/osteopaths",
   },
   {
-    icon: "/industrymain-images/other.png",
-    title: "Other",
-    desc: "Handles bookings, cancellations, and important calls — ensuring your business stays responsive 24/7.",
-    link: "/industries/forother",
+    icon: "/industrymain-images/barber.png",
+    title: "Barber",
+    desc: "Your AI virtual assistant helps barbershops manage calls, book haircuts and grooming appointments, handle client enquiries, and send reminders — so your team can focus on delivering great cuts.",
+    link: "/industries/barber",
   },
 ];
 
