@@ -84,7 +84,7 @@ const HealthCarecards = [
   {
     icon: "/industrymain-images/barber.png",
     title: "Barber",
-    desc: "Your AI virtual assistant helps barbershops manage calls, book haircuts and grooming appointments, handle client enquiries, and send reminders so your team can focus on delivering great cuts.",
+    desc: "Effortless booking for haircuts and grooming, with automated reminders and client enquiries handled.",
     link: "/industries/barber",
   },
 ];
@@ -105,13 +105,13 @@ const PerfesstionalServicescards = [
   {
     icon: "/industrymain-images/consultant.png",
     title: "Consultant",
-    desc: "Your virtual assistant modernizes consulting by managing appointments, recording meeting notes, tracking project deadlines, and streamlining client communication.",
+    desc: "Streamlines scheduling, client communication, meeting notes, and project tracking in one place.",
     link: "/industries/consultant",
   },
     {
     icon: "/industrymain-images/other.png",
     title: "Tradie",
-    desc: "Your virtual assistant helps tradies manage job bookings, answer calls, capture leads, schedule site visits, and send reminders — so you can stay on the tools, not the phone.",
+    desc: "Handles calls, job bookings, site visits, and reminders so you stay focused on the tools.",
     link: "/industries/tradie",
   },
   {
@@ -151,31 +151,31 @@ const TradesServicescards = [
     {
     icon: "/industrymain-images/builder.png",
     title: "Builder",
-    desc: "Your AI virtual assistant helps builders manage calls, schedule site inspections, capture job details, track projects, and follow up with clients so you can focus on building, not admin.",
+    desc: "Manages calls, schedules site inspections, captures job details, and follows up with clients effortlessly.",
     link: "/industries/builders",
   },
       {
     icon: "/industrymain-images/concreter.png",
     title: "Concreter",
-    desc: "Your AI virtual assistant helps concreting businesses manage calls, book site inspections, capture job details, follow up on quotes, and keep projects moving without interrupting work on-site.",
+    desc: "Handles enquiries, books site visits, tracks job details, and follows up on quotes seamlessly.",
     link: "/industries/Concreters",
   },
       {
     icon: "/industrymain-images/hvac.png",
     title: "HVAC",
-    desc: "Your AI virtual assistant helps HVAC businesses manage calls, book installations and repairs, capture service details, send reminders, and follow up with customers so your team stays focused on the job.",
+    desc: "Automates service bookings, captures job details, sends reminders, and manages customer follow-ups.",
     link: "/industries/hvac",
   },
       {
     icon: "/industrymain-images/landscaper.png",
     title: "Landscaper",
-    desc: "Your AI virtual assistant helps landscaping businesses manage calls, book site inspections, capture project details, follow up on quotes, and keep jobs moving while you focus on creating outdoor spaces.",
+    desc: "Organises enquiries, schedules site visits, tracks project details, and manages quote follow-ups.",
     link: "/industries/landscapers",
   },
       {
     icon: "/industrymain-images/roofing.png",
     title: "Roofing",
-    desc: "Your AI virtual assistant helps roofing businesses manage calls, book roof inspections, capture job details, follow up on quotes, and keep projects moving without interrupting on-site work.",
+    desc: "Manages calls, books roof inspections, captures job details, and follows up on quotes with ease.",
     link: "/industries/roofing",
   },
   
