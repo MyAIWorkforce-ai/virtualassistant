@@ -84,7 +84,7 @@ const HealthCarecards = [
   {
     icon: "/industrymain-images/barber.png",
     title: "Barber",
-    desc: "Your AI virtual assistant helps barbershops manage calls, book haircuts and grooming appointments, handle client enquiries, and send reminders — so your team can focus on delivering great cuts.",
+    desc: "Your AI virtual assistant helps barbershops manage calls, book haircuts and grooming appointments, handle client enquiries, and send reminders so your team can focus on delivering great cuts.",
     link: "/industries/barber",
   },
 ];
@@ -147,6 +147,38 @@ const TradesServicescards = [
     desc: "Assigns electrical service calls, tracks technician availability, and reduces missed appointments.",
     link: "/industries/electricians",
   },
+
+    {
+    icon: "/industrymain-images/builder.png",
+    title: "Builder",
+    desc: "Your AI virtual assistant helps builders manage calls, schedule site inspections, capture job details, track projects, and follow up with clients so you can focus on building, not admin.",
+    link: "/industries/builders",
+  },
+      {
+    icon: "/industrymain-images/concreter.png",
+    title: "Concreter",
+    desc: "Your AI virtual assistant helps concreting businesses manage calls, book site inspections, capture job details, follow up on quotes, and keep projects moving without interrupting work on-site.",
+    link: "/industries/Concreters",
+  },
+      {
+    icon: "/industrymain-images/hvac.png",
+    title: "HVAC",
+    desc: "Your AI virtual assistant helps HVAC businesses manage calls, book installations and repairs, capture service details, send reminders, and follow up with customers so your team stays focused on the job.",
+    link: "/industries/hvac",
+  },
+      {
+    icon: "/industrymain-images/landscaper.png",
+    title: "Landscaper",
+    desc: "Your AI virtual assistant helps landscaping businesses manage calls, book site inspections, capture project details, follow up on quotes, and keep jobs moving while you focus on creating outdoor spaces.",
+    link: "/industries/landscapers",
+  },
+      {
+    icon: "/industrymain-images/roofing.png",
+    title: "Roofing",
+    desc: "Your AI virtual assistant helps roofing businesses manage calls, book roof inspections, capture job details, follow up on quotes, and keep projects moving without interrupting on-site work.",
+    link: "/industries/roofing",
+  },
+  
 ];
 
 const HospitalityOther = [
