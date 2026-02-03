@@ -119,13 +119,14 @@ const Footer = () => {
             <ul className="space-y-2 text-[#797A7D]">
               {[
                 { name: "Hairdresser", href: "/industries/hairdresser" },
+                { name: "Barber", href: "/industries/barber" },
                 { name: "Dentist", href: "/industries/dentist" },
                 { name: "Accountant", href: "/industries/accountant" },
                 { name: "Lawyer", href: "/industries/lawyer" },
                 { name: "Consultant", href: "/industries/consultant" },
                 { name: "Real Estate Agent", href: "/industries/realestateagent" },
                 { name: "Mechanic", href: "/industries/mechanic" },
-                { name: "Plumber", href: "/industries/plumber" },
+                
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-[#00A7DE] transition-colors duration-300">
@@ -141,12 +142,12 @@ const Footer = () => {
             <h3 className="font-semibold mt-4 mb-3">&nbsp;</h3>
             <ul className="space-y-2 text-[#797A7D]">
               {[
-               { name: "Electrician", href: "/industries/electricians" },
+                { name: "Plumber", href: "/industries/plumber" },
+                { name: "Electrician", href: "/industries/electricians" },
                 { name: "Window Cleaning", href: "/industries/cleaning" },
                 { name: "Beauty Therapist", href: "/industries/beautytherapist" },
                 { name: "Restaurant & Takeaway", href: "/industries/resturant" },
                 { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
-                { name: "Barber", href: "/industries/barber" },
                 { name: "Builders", href: "/industries/builders" },
               ].map((item, i) => (
                 <li key={i}>
