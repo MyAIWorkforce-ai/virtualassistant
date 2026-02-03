@@ -34,10 +34,10 @@ export default function Navbar() {
     resturant: "Restaurant & Takeaway",
     hotelsaccommodation: "Hotels & Accommodation",
     barber: "Barber",
-    builders: "Builders",
-    Concreters: "Concreters",
+    builders: "Builder",
+    Concreters: "Concreter",
     hvac: "HVAC",
-    landscapers: "Landscapers",
+    landscapers: "Landscaper",
     roofing: "Roofing",
     tradie: "Tradie",
     forother: "Other",
@@ -134,9 +134,9 @@ export default function Navbar() {
 
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[700px] bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out delay-200 z-[100] grid grid-cols-3 gap-2 p-3">
                 {[
-                  ["physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor", "podiatrist", "beautytherapist", "hairdresser", "dentist"],
-                  ["osteopaths", "lawyer", "accountant", "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians", "resturant"],
-                  [ "hotelsaccommodation", "barber", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother"]
+                  ["physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor", "podiatrist", "beautytherapist", "hairdresser", "barber"],
+                  ["dentist", "osteopaths", "lawyer", "accountant", "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians"],
+                  [ "resturant", "hotelsaccommodation", "", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother"]
                 ].map((column, idx) => (
                   <ul key={idx}>
                     {column.map((slug) => (
