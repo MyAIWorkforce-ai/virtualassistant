@@ -76,9 +76,9 @@
       },
       {
         "icon": "/industries-images/reuse-icons/kb-experience.png",
-        "gradient": "from-[##F9FFEA] to-[##F3FFD7]",
+        "gradient": "from-[#F9FFEA] to-[#F3FFD7]",
         "title": "Improved Customer Experience",
-        "description": ""
+        "description": "Customer details and service information are handled securely."
       },
       {
         "icon": "/industries-images/accountant/kb-automation.png",

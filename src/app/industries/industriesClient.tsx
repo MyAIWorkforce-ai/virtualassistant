@@ -82,7 +82,7 @@ const HealthCarecards = [
     link: "/industries/osteopaths",
   },
   {
-    icon: "/industrymain-images/barber.png",
+    icon: "/industrymain-images/hair-dresser.png",
     title: "Barber",
     desc: "Effortless booking for haircuts and grooming, with automated reminders and client enquiries handled.",
     link: "/industries/barber",
@@ -149,31 +149,31 @@ const TradesServicescards = [
   },
 
     {
-    icon: "/industrymain-images/builder.png",
+    icon: "/industrymain-images/podia.png",
     title: "Builder",
     desc: "Manages calls, schedules site inspections, captures job details, and follows up with clients effortlessly.",
     link: "/industries/builders",
   },
       {
-    icon: "/industrymain-images/concreter.png",
+    icon: "/industrymain-images/real-estate.png",
     title: "Concreter",
     desc: "Handles enquiries, books site visits, tracks job details, and follows up on quotes seamlessly.",
     link: "/industries/Concreters",
   },
       {
-    icon: "/industrymain-images/hvac.png",
+    icon: "/industrymain-images/psycolo.png",
     title: "HVAC",
     desc: "Automates service bookings, captures job details, sends reminders, and manages customer follow-ups.",
     link: "/industries/hvac",
   },
       {
-    icon: "/industrymain-images/landscaper.png",
+    icon: "/industrymain-images/chiro.png",
     title: "Landscaper",
     desc: "Organises enquiries, schedules site visits, tracks project details, and manages quote follow-ups.",
     link: "/industries/landscapers",
   },
       {
-    icon: "/industrymain-images/roofing.png",
+    icon: "/industrymain-images/other.png",
     title: "Roofing",
     desc: "Manages calls, books roof inspections, captures job details, and follows up on quotes with ease.",
     link: "/industries/roofing",
