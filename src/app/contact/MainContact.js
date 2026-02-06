@@ -225,7 +225,7 @@ export default function MainContact() {
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none placeholder-gray-300 focus:ring-2 focus:ring-sky-500"
                 >
                   <option value="">Select an industry</option>
-    <option>Physiotherapist</option>
+        <option>Physiotherapist</option>
             <option>Myotherapist</option>
             <option>Massage Therapist</option>
             <option>Personal Trainer</option>
@@ -233,21 +233,28 @@ export default function MainContact() {
             <option>Psychologist</option>
             <option>Chiropractor</option>
             <option>Osteopath</option>
+            <option>Beauty Therapist</option>
             <option>Hairdresser</option>
+            <option>Barber</option>
             <option>Dentist</option>
             <option>Accountant</option>
             <option>Lawyer</option>
             <option>Consultant</option>
-            <option>Realestate Agent</option>
+            <option>Real Estate Agent</option>
             <option>Mechanic</option>
             <option>Plumber</option>
             <option>Electrician</option>
             <option>Window Cleaning</option>
-            <option>Beauty Therapist</option>
-            <option>Restaurant & Takeaway</option>
+            <option>Restaurant & Takeaway Businesses</option>
             <option>Hotels & Accommodation</option>
-            <option>Others</option>
-                </select>
+             <option>Builders</option>
+            <option>Concreters</option>
+            <option>HVAC</option>
+            <option>Landscapers</option>
+            <option>Roofing</option>
+            <option>Tradie</option>
+            <option>Other</option>
+          </select>
               </motion.div>
 
               {/* Message */}
