@@ -177,6 +177,24 @@ export default function Navbar() {
               </Link>
             </li>
 
+             <li>
+              <Link
+                href="/faqs"
+                className={`${isActive("/about") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"}`}
+              >
+                FAQs
+              </Link>
+            </li>
+
+             <li>
+              <Link
+                href="/blogs"
+                className={`${isActive("/about") ? "text-[#00A7DE]" : "text-black hover:text-[#00A7DE]"}`}
+              >
+                Blogs
+              </Link>
+            </li>
+
             <li>
               <Link
                 href="/contact"

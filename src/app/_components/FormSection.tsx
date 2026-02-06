@@ -175,7 +175,9 @@ export default function FormSection() {
             <option>Psychologist</option>
             <option>Chiropractor</option>
             <option>Osteopath</option>
+            <option>Beauty Therapist</option>
             <option>Hairdresser</option>
+            <option>Barber</option>
             <option>Dentist</option>
             <option>Accountant</option>
             <option>Lawyer</option>
@@ -185,9 +187,14 @@ export default function FormSection() {
             <option>Plumber</option>
             <option>Electrician</option>
             <option>Window Cleaning</option>
-            <option>Beauty Therapist</option>
             <option>Restaurant & Takeaway Businesses</option>
             <option>Hotels & Accommodation</option>
+             <option>Builders</option>
+            <option>Concreters</option>
+            <option>HVAC</option>
+            <option>Landscapers</option>
+            <option>Roofing</option>
+            <option>Tradie</option>
             <option>Other</option>
           </select>
         </motion.div>
