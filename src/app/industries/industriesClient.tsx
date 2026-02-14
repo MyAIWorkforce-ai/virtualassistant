@@ -108,12 +108,7 @@ const PerfesstionalServicescards = [
     desc: "Streamlines scheduling, client communication, meeting notes, and project tracking in one place.",
     link: "/industries/consultant",
   },
-    {
-    icon: "/industrymain-images/other.png",
-    title: "Tradie",
-    desc: "Handles calls, job bookings, site visits, and reminders so you stay focused on the tools.",
-    link: "/industries/tradie",
-  },
+
   {
     icon: "/industrymain-images/real-estate.png",
     title: "Real Estate Agent",
@@ -123,7 +118,12 @@ const PerfesstionalServicescards = [
 ];
 
 const TradesServicescards = [
-  {
+      {
+    icon: "/industrymain-images/other.png",
+    title: "Tradie",
+    desc: "Handles calls, job bookings, site visits, and reminders so you stay focused on the tools.",
+    link: "/industries/tradie",
+  },{
     icon: "/industrymain-images/mechanic.png",
     title: "Mechanic",
     desc: "Service Scheduling Simplified – Organizes repair appointments, reschedules with ease, and manages waitlists for busy Workshops.",
