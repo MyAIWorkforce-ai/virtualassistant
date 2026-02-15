@@ -148,7 +148,7 @@ const Footer = () => {
                 { name: "Beauty Therapist", href: "/industries/beautytherapist" },
                 { name: "Restaurant & Takeaway", href: "/industries/resturant" },
                 { name: "Hotels & Accommodation", href: "/industries/hotelsaccommodation" },
-                { name: "Builders", href: "/industries/builders" },
+                { name: "Builder", href: "/industries/builders" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-[#00A7DE] transition-colors duration-300">
@@ -165,9 +165,9 @@ const Footer = () => {
             <ul className="space-y-2 text-[#797A7D]">
               {[
 
-                { name: "Concreters", href: "/industries/concreters" },
+                { name: "Concreter", href: "/industries/concreters" },
                 { name: "HVAC", href: "/industries/hvac" },
-                { name: "Landscapers", href: "/industries/landscapers" },
+                { name: "Landscaper", href: "/industries/landscapers" },
                 { name: "Roofing", href: "/industries/roofing" },
                 { name: "Tradie", href: "/industries/tradie" },
                 { name: "Others", href: "/industries/forother" },
