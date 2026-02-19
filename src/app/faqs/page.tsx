@@ -1,4 +1,4 @@
-"use clien"
+"use client"
 import React from "react";
 import data from "@/app/data/faqs.json";
 import { motion } from "framer-motion";
