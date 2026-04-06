@@ -169,6 +169,7 @@ const Footer = () => {
                 { name: "HVAC", href: "/industries/hvac" },
                 { name: "Landscaper", href: "/industries/landscapers" },
                 { name: "Roofing", href: "/industries/roofing" },
+                { name: "Painter", href: "/industries/painter" },
                 { name: "Tradie", href: "/industries/tradie" },
                 { name: "Others", href: "/industries/forother" },
               ].map((item, i) => (
