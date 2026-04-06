@@ -179,7 +179,7 @@ const TradesServicescards = [
     link: "/industries/roofing",
   },
   {
-    icon: "/industrymain-images/other.png",
+    icon: "/industrymain-images/window.png",
     title: "Painter",
     desc: "Captures quote requests, books site visits, follows up on quotes, and answers calls 24/7 so no job is missed.",
     link: "/industries/painter",
