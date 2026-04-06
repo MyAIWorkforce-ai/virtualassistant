@@ -1,0 +1,166 @@
+{
+  "slug": "painter",
+  "heroSection": {
+    "tag": "Trades",
+    "title": "AI for Painters",
+    "metaDescription": "AI virtual receptionist for painters and painting contractors in Australia. Capture more quotes, manage bookings, and answer client calls 24/7 \u2014 so you can focus on the job.",
+    "metaKeywords": "ai receptionist for painters australia, virtual receptionist painting contractor, ai for painting business, painter booking automation, painting quote management ai, ai call answering painter australia",
+    "description": "Your AI virtual assistant helps painters capture quote requests, manage bookings, answer client calls after hours, and follow up on jobs \u2014 so you can focus on painting, not paperwork.",
+    "buttonText": "Get Started",
+    "image": "/industries-images/builders/hero.png",
+    "metrics": [
+      {
+        "value": "35%",
+        "title": "More quote requests captured with 24/7 call answering"
+      },
+      {
+        "value": "90%",
+        "title": "Reduction in missed calls during jobs and after hours"
+      },
+      {
+        "value": "28%",
+        "title": "Higher job conversion with fast, professional follow-ups"
+      }
+    ]
+  },
+  "about": {
+    "heading": "AI Virtual Receptionist for Painters",
+    "sections": [
+      {
+        "subheading": "Never Miss a Quote Request Again",
+        "paragraph": "At VirtualAssistant.com.au, we understand that painting businesses live and die by their quote pipeline. Our AI Virtual Receptionist answers every call professionally \u2014 capturing job details, property size, and contact information while you're on-site with a brush in hand."
+      },
+      {
+        "subheading": "Handle Calls While You're On the Tools",
+        "paragraph": "Your AI Receptionist manages incoming calls, client enquiries, and booking requests while you're working. It can answer questions like 'Do you do interior and exterior?' or 'Can I book a free quote?' and schedule appointments directly into your calendar."
+      },
+      {
+        "subheading": "Professional First Impressions, Every Time",
+        "paragraph": "Whether you're painting a house in the suburbs or managing a commercial site, your AI Receptionist ensures every potential client gets a prompt, professional response \u2014 day or night. Never lose a job to a competitor just because you couldn't answer the phone."
+      }
+    ]
+  },
+  "keyBenefits": {
+    "heading": "Key Benefits",
+    "subheading": "Grow your painting business with intelligent automation that captures more leads, books more jobs, and keeps clients happy.",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/kb-efficiency.png",
+        "gradient": "from-[#FAF5FF] to-[#F3E8FF]",
+        "title": "24/7 Quote Capture",
+        "description": "Capture every quote request \u2014 even after hours and weekends when clients call."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kbb-management.png",
+        "gradient": "from-[#ECFEFF] to-[#CFFAFE]",
+        "title": "Automated Scheduling",
+        "description": "Book on-site quote visits and follow-up calls automatically without lifting a finger."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-firm.png",
+        "gradient": "from-[#FFF7ED] to-[#FFEDD5]",
+        "title": "Professional Image",
+        "description": "Sound like a larger, established painting company on every single call."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/kb-secure.png",
+        "gradient": "from-[#F0FDF4] to-[#DCFCE7]",
+        "title": "Never Miss a Job",
+        "description": "Stop losing work to competitors just because you were on a ladder when the phone rang."
+      }
+    ]
+  },
+  "whyChoose": {
+    "heading": "Why Painters Choose VirtualAssistant.com.au",
+    "description": "Our AI Virtual Receptionist is trusted by painters and painting contractors across Australia \u2014 from sole traders and small crews to larger commercial painting businesses. It integrates seamlessly with your scheduling and quoting systems, ensuring every call is answered professionally and every job opportunity is captured. Your AI Receptionist can be trained to your specific services \u2014 interior, exterior, residential, commercial, colour consulting \u2014 and reflects your brand in every interaction. Whether you're on a ladder or managing multiple sites, let AI handle the phones so you can focus on delivering quality paintwork.",
+    "leftBox": {
+      "heading": "Capture Every Quote Request Automatically",
+      "description": "When a client calls, your AI Receptionist gathers all the details you need \u2014 property address, job type, size estimate, preferred timeline \u2014 and books the quote visit directly into your calendar. No back and forth, no missed calls, no lost jobs. All enquiry details are recorded and available whenever you need them."
+    },
+    "image": "/industries-images/builders/hero.png"
+  },
+  "primaryUses": {
+    "heading": "Primary Uses",
+    "items": [
+      {
+        "icon": "/industries-images/reuse-icons/pu-practice.png",
+        "title": "Quote Request Capture",
+        "description": "Gather job details \u2014 property type, size, interior/exterior, preferred timeline \u2014 and book the quote visit."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-services.png",
+        "title": "After-Hours Answering",
+        "description": "Answer calls at night and on weekends when you're offline, so no job opportunity slips through."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-collection.png",
+        "title": "Client Follow-Up",
+        "description": "Automatically follow up on quotes sent \u2014 reminding clients and nudging them to confirm the job."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/puu-tracking.png",
+        "title": "Job Scheduling",
+        "description": "Coordinate start dates, access arrangements, and prep requirements directly with clients."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pu-assistant.png",
+        "title": "AI Assistant",
+        "description": "Answer common questions like 'Do you do commercial jobs?' or 'What paint brands do you use?'"
+      }
+    ]
+  },
+  "productivityGains": {
+    "heading": "Productivity Gains",
+    "cards": [
+      {
+        "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+        "title": "Automated Quote Follow-Ups",
+        "description": "Save hours each week with automated follow-up messages to clients after quotes are sent."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pg-reminders.png",
+        "title": "Zero Missed Calls",
+        "description": "Every call answered professionally \u2014 no more losing jobs because you were up a ladder."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pg-follow-up.png",
+        "title": "Faster Booking Process",
+        "description": "Clients can book a quote visit in minutes \u2014 no back and forth calls needed."
+      },
+      {
+        "icon": "/industries-images/reuse-icons/pg-reminders.png",
+        "title": "24/7 Availability",
+        "description": "Your AI receptionist works evenings and weekends when most competitors are unavailable."
+      }
+    ]
+  },
+  "useCase": {
+    "title": "Example Use Case",
+    "topBox": {
+      "heading": "Quote Request & Job Booking",
+      "description": "A homeowner calls after hours asking about exterior painting. Your AI receptionist answers, captures the property details, and books a free quote inspection for the following morning."
+    },
+    "useCases": [
+      {
+        "title": "Instant Confirmation",
+        "text": "Client receives an automatic confirmation with the quote visit time and your contact details."
+      },
+      {
+        "title": "Job Details Captured",
+        "text": "Property address, size estimate, paint preferences, and urgency all recorded before you arrive."
+      },
+      {
+        "title": "Follow-Up Automated",
+        "text": "After the quote is sent, a follow-up message goes out automatically if there's no response in 48 hours."
+      },
+      {
+        "title": "Booking Reminders",
+        "text": "Client receives reminders before the quote visit so no-shows are minimised and your time is protected."
+      }
+    ]
+  },
+  "form": {
+    "title": "Get Your AI Assistant for Painters",
+    "subtitle": "Join painters across Australia who are capturing more quotes, booking more jobs, and growing their business with AI \u2014 without adding staff."
+  }
+}

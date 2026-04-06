@@ -194,6 +194,7 @@ export default function FormSection() {
             <option>HVAC</option>
             <option>Landscapers</option>
             <option>Roofing</option>
+            <option>Painter</option>
             <option>Tradie</option>
             <option>Other</option>
           </select>

@@ -130,5 +130,11 @@
     "slug": "forothers",
     "image": "/industrymain-images/other.png",
     "description": "Your virtual assistant brings intelligent automation to any industry. AI for Others is built to adapt to your business needs, no matter your field."
+  },
+  {
+    "name": "Painter",
+    "slug": "painter",
+    "image": "/industrymain-images/builder.png",
+    "description": "Never miss a quote request again \u2014 your AI receptionist captures every call while you're on the job."
   }
 ]

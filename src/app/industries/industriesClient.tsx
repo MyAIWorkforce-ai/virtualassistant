@@ -178,7 +178,12 @@ const TradesServicescards = [
     desc: "Manages calls, books roof inspections, captures job details, and follows up on quotes with ease.",
     link: "/industries/roofing",
   },
-  
+  {
+    icon: "/industrymain-images/builder.png",
+    title: "Painter",
+    desc: "Captures quote requests, books site visits, follows up on quotes, and answers calls 24/7 so no job is missed.",
+    link: "/industries/painter",
+  },
 ];
 
 const HospitalityOther = [

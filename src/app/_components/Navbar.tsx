@@ -39,6 +39,7 @@ export default function Navbar() {
     hvac: "HVAC",
     landscapers: "Landscaper",
     roofing: "Roofing",
+    painter: "Painter",
     tradie: "Tradie",
     forother: "Other",
   };
@@ -136,7 +137,7 @@ export default function Navbar() {
                 {[
                   ["physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor", "podiatrist", "beautytherapist", "hairdresser", "barber"],
                   ["dentist", "osteopaths", "lawyer", "accountant", "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians"],
-                  [ "resturant", "hotelsaccommodation", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother"]
+                  [ "resturant", "hotelsaccommodation", "builders", "Concreters", "hvac", "landscapers", "roofing", "painter", "tradie", "forother"]
                 ].map((column, idx) => (
                   <ul key={idx}>
                     {column.map((slug) => (
@@ -319,7 +320,7 @@ export default function Navbar() {
                     "physiotherapy", "myotherapist", "personaltrainer", "massagetherapist", "psychology", "chiropractor",
                     "podiatrist", "beautytherapist", "hairdresser", "barber", "dentist", "osteopaths", "lawyer", "accountant",
                     "consultant", "realestateagent", "mechanic", "plumber", "cleaning", "electricians", "resturant",
-                    "hotelsaccommodation", "builders", "Concreters", "hvac", "landscapers", "roofing", "tradie", "forother",
+                    "hotelsaccommodation", "builders", "Concreters", "hvac", "landscapers", "roofing", "painter", "tradie", "forother",
                   ].map((slug) => (
                     <li key={slug}>
                       <Link
